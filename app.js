@@ -9,7 +9,7 @@ const util = require('util');
 require('./lib/init')
   .startP(__dirname)
   .then(() => {
-    require('./lib/webserver');
+    require('./lib/web/webserver');
 
     process.on('exit', () => {});
 
