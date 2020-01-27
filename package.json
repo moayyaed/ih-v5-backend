@@ -1,0 +1,33 @@
+{
+  "name": "ih-backend-D",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha **/*.test.js --exit"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "deep-equal": "^1.0.1",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.3",
+    "express-jwt": "^5.3.1",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.2.2",
+    "morgan": "^1.9.0",
+    "nedb": "^1.8.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "ws": "^7.2.0"
+  },
+  "devDependencies": {
+    "expect": "^24.9.0",
+    "mocha": "^4.1.0",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  },
+  "author": "Intra LLC",
+  "license": "MIT"
+}
