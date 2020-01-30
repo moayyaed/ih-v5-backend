@@ -819,5 +819,7 @@
   { "id": "Snippet", "note": "Snippet" },
   { "id": "UseSnippet", "note": "Use snippet to get values" },
   { "id": "SnipPeriod", "note": "Snippet launch period" },
-  { "id": "SnipDependencies", "note": "Snippet Dependencies" }
+  { "id": "SnipDependencies", "note": "Snippet Dependencies" },
+  { "id": "DATASOURCE", "note": "Data Sources" },
+  { "id": "ANALYTICS", "note": "Analytics" }
 ]

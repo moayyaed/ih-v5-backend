@@ -743,9 +743,13 @@
   { "id": "DeviceProperty", "note": "Device property" },
   { "id": "Dev_HideInMobile", "note": "Hide in mobile interface" },
   { "id": "UserBasedFilter", "note": "User Account Based Filter" },
-  { "id": "Acshort", "note": "Table filtering" }
+  { "id": "Acshort", "note": "Table filtering" },
+  { "id": "User_Place", "note": "Access Places" },
+  { "id": "Snippet", "note": "Snippet" },
+  { "id": "UseSnippet", "note": "Use snippet to get values" },
+  { "id": "SnipPeriod", "note": "Snippet launch period" },
+  { "id": "SnipDependencies", "note": "Snippet Dependencies" },
+  { "id": "DATASOURCE", "note": "Data Sources" },
+  { "id": "ANALYTICS", "note": "Analytics" }
 
-
-
-  
 ]

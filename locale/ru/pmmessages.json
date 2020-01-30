@@ -826,6 +826,8 @@
   { "id": "Snippet", "note": "Сниппет" },
   { "id": "UseSnippet", "note": "Для получения значений использовать сниппет" },
   { "id": "SnipPeriod", "note": "Период запуска сниппета" },
-  { "id": "SnipDependencies", "note": "Зависимости сниппета" }
+  { "id": "SnipDependencies", "note": "Зависимости сниппета" },
+  { "id": "DATASOURCE", "note": "Источники данных" },
+  { "id": "ANALYTICS", "note": "Аналитика" }
 
 ]

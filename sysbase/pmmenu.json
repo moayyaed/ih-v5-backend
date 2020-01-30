@@ -1,10 +1,10 @@
 [
-  { "id": "1", "route": "devices", "title": "Устройства", "tooltip": "Устройства", "icon": "" },
-  { "id": "2", "route": "visualization", "title": "Визуализация", "tooltip": "Визуализация", "icon": "" },
-  { "id": "3", "route": "scripts", "title": "Сценарии", "tooltip": "Сценарии", "icon": "" },
-  { "id": "4", "route": "datasource", "title": "Источники данных", "tooltip": "Источники данных", "icon": "" },
-  { "id": "6", "route": "analytics", "title": "Аналитика", "tooltip": "Аналитика", "icon": "" },
-  { "id": "7", "route": "access", "title": "Доступ", "tooltip": "Доступ", "icon": "" },
-  { "id": "8", "route": "database", "title": "База данных", "tooltip": "База данных", "icon": "" },
-  { "id": "9", "route": "resources", "title": "Ресурсы", "tooltip": "Ресурсы", "icon": "" }
+  { "id": "1", "route": "devices", "title": "$Devices", "tooltip": "$Devices", "icon": "" },
+  { "id": "2", "route": "visualization", "title": "$VISUALIZATION", "tooltip": "$VISUALIZATION", "icon": "" },
+  { "id": "3", "route": "scripts", "title": "$Scenes", "tooltip": "$Scenes", "icon": "" },
+  { "id": "4", "route": "datasource", "title": "$DATASOURCE", "tooltip": "$DATASOURCE", "icon": "" },
+  { "id": "6", "route": "analytics", "title": "$ANALYTICS", "tooltip": "$ANALYTICS", "icon": "" },
+  { "id": "7", "route": "access", "title": "$ACCESS", "tooltip": "$ACCESS", "icon": "" },
+  { "id": "8", "route": "database", "title": "$DB", "tooltip": "$DB", "icon": "" },
+  { "id": "9", "route": "resources", "title": "$Resources", "tooltip": "$Resources", "icon": "" }
 ]
