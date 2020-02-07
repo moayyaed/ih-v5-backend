@@ -1,0 +1,19 @@
+{
+  "common": {
+    "popup": {
+      "main": [
+        { "id": "1", "type": "divider", "title": "Edit" }
+      ]
+   
+    }
+  },
+
+  "visualization": {
+    "popup": {
+      "main": [
+        { "id": "1", "type": "divider", "title": "Add Layout" }
+      ]
+
+    }
+  }
+}

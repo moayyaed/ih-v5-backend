@@ -8,7 +8,6 @@
     },
   
    "rules": {
-        "no-var":0,
         "vars-on-top":0,
         "no-use-before-define":0,
         "global-require":0,
@@ -33,6 +32,8 @@
         "no-underscore-dangle":0,
         "no-new-func":0,
         "arrow-parens":0,
+        "no-await-in-loop":0,
+        "no-restricted-syntax":0,
         "jsx-a11y/href-no-hash":0,
         "jsx-a11y/img-has-alt":0
    } 
