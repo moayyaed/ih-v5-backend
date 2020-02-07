@@ -49,7 +49,7 @@
         { "id": "1", "type": "divider", "title": "Add place" },
         { "id": "2", "type": "item", "title": "Add device" },
         { "id": "3", "type": "item", "icon": "duplicate", "text": "Duplicate", "label": "⌘A" },
-        { "id": "4", "type": "item", "icon": "clipboard", "text": "Rename", "label": "⌘R" },
+        { "id": "4", "type": "item", "icon": "clipboard", "text": "Rename", "command": "rename", "label": "⌘R"},
         { "id": "5", "type": "item", "text": "Move", "label": "⌘M" },
         { "id": "6", "type": "item", "text": "Delete", "label": "⌘D" }
       ]
