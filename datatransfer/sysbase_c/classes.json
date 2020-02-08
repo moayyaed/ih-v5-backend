@@ -1,0 +1,8 @@
+[
+  {"id":"SensorD","name":"$SensorD"},
+  {"id":"SensorA","name":"$SensorA"},
+  {"id":"ActorD","name":"$ActorD"},
+  {"id":"ActorA","name":"$ActorA"},
+  {"id":"ActorE","name":"$ActorE"},
+  {"id":"Meter","name":"$Meter"}   
+]

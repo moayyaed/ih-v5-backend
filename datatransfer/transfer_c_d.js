@@ -8,6 +8,13 @@ const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
 
+const appconfig = require('../lib/appconfig');
+
+
+
+
+ 
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
@@ -17,22 +24,34 @@ let project_c;
 let project_d;
 
 (async () => {
-  project_c = await question('Папка или полный путь к проекту v4 (C): ');
-  project_d = await question('Папка или полный путь к проекту v5 (D): ');
+  const folder_c = await question('Имя папки проекта v4 (C): ');
+  const folder_d = await question('Имя папки проекта v5 (D): ');
 
   // TODO - могли задать полный путь!
-  project_c = path.join('/var/lib/intrahouse-c/projects', project_c);
-  project_d = path.join('/var/lib/intrahouse-d/projects/', project_d);
+  project_c = path.join('/var/lib/intrahouse-c/projects', folder_c);
+  project_d = path.join('/var/lib/intrahouse-d/projects/', folder_d);
 
-  console.log('Start trasfer from ' + project_c + ' to ' + project_d);
 
   // TODO Если новый проект не существует, создать структуру папок
+   // Папки и файлы проектов общедоступны
+   process.umask(0);
+   const appdir = path.join(__dirname, '../') ; // Это путь к app.js
+   const configdir = path.join(appdir, '../') ; // Это путь к config.json в папке intrahouse-d
+   
+  // Но имя проекта будет другое, не из config!!!
+   appconfig.start(appdir,configdir, folder_d );
 
-  // TODO Если файлы данных не существуют, создать и заполнить начальными значениями
+   console.log('Start trasfer from ' + project_c + ' to ' + project_d);   
+   console.log('lang='+appconfig.get('lang'));
+
+   transfer('classes', 'lists', 'jbase');
+   transfer('types', 'types', 'jbase');
 
   // transfer('places', 'lists', 'jbase');
   // transfer('rooms', 'lists', 'jbase');
-  transfer('devref', 'devices', 'jbase');
+  // transfer('devref', 'devices', 'jbase');
+  // transfer('spaces', 'lists', 'jbase');
+  // transfer('layouts', 'layouts', 'jbase');
 
   rl.close();
 })();
@@ -48,8 +67,9 @@ function question(str) {
 function transfer(source, target, folder) {
   try {
     // Считать файл
-    const cfilename = path.join(project_c, folder, source + '.json');
-    const data = JSON.parse(fs.readFileSync(cfilename, 'utf8'));
+    // const cfilename = path.join(project_c, folder, source + '.json');
+    // const data = JSON.parse(fs.readFileSync(cfilename, 'utf8'));
+    const data = getSourceData(source, folder);
 
     // сформировать строку
     let str = getRootItem(source);
@@ -71,6 +91,22 @@ function transfer(source, target, folder) {
   }
 }
 
+function getSourceData(source, folder) {
+  const sysfiles = ['classes', 'types'];
+  if (sysfiles.includes(source)) {
+    // Считать, перевести??
+    const cfilename = path.join('./sysbase_c' ,source+'.json');
+    const data = JSON.parse(fs.readFileSync(cfilename, 'utf8'));
+    appconfig.translateSys(data);
+    console.dir(data);
+    return data;
+  }
+  
+  // Считать файл из проекта
+  const cfilename = path.join(project_c, folder, source + '.json');
+  return JSON.parse(fs.readFileSync(cfilename, 'utf8'));
+}
+
 function getRootItem(source) {
   let robj = {};
   switch (source) {
@@ -78,6 +114,9 @@ function getRootItem(source) {
       robj = { _id: 'place', list: 'place', parent: 0, order: 0, name: 'All ' + source };
       break;
 
+    case 'spaces':
+        robj = { _id: 'layoutgroup', list: 'layoutgroup', parent: 0, order: 0, name: 'All ' + source };
+        break;
     default:
       robj = '';
   }
@@ -105,9 +144,30 @@ function formRecord(source, target, item) {
       robj = {_id: 'd' + item.id, parent, order: item.order, dn: item.dn, name: item.dn +' '+item.name};
       break;
 
+    case 'spaces': // => lists- layoutgroup
+       
+        robj = { _id: 's' + item.id, list: 'layoutgroup', parent: 'layoutgroup', order: item.order, name: item.name };
+        break;
+    
+    case 'layouts': // 
+        parent = item.space ? 's' + item.space : 'layoutgroup';
+        robj = { _id: 'l' + item.id, parent, order: item.order , name: item.name, txt: item.txt};
+        break;
+  
+    case 'classes': // => lists- typegroup
+       
+        robj = { _id: item.id, list: 'typegroup', parent: 'typegroup', order: item.order, name: item.name };
+        break;
+
+    case 'types': 
+        robj = { _id: 't'+item.id, parent: item.cl, order: item.order, name: item.name };
+        break;
+
     default:
       robj = '';
       console.log('Not found source ' + source);
   }
   return robj ? JSON.stringify(robj) + '\n' : '';
 }
+
+// auxiliary - вспомогательный, добавочный, дополнительный
