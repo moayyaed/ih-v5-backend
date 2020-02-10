@@ -11,7 +11,10 @@
   "visualization": {
     "popup": {
       "main": [
-        { "id": "1", "type": "divider", "title": "Add Layout" }
+        { "id": "1", "type": "item", "text": "Добавить", "command": "add" },
+        { "id": "2", "type": "item", "text": "Добавить копию", "command": "duplicate" },
+        { "id": "3", "type": "item", "icon": "Изменить", "text": "Rename", "command": "rename", "label": "⌘R"},
+        { "id": "4", "type": "item", "text": "Удалить", "command": "delete" }
       ]
 
     }
