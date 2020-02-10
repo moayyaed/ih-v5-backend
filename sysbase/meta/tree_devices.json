@@ -65,7 +65,7 @@
         "main": [
           { "id": "1", "type": "divider", "title": "Add" },
           { "id": "2", "type": "item", "text": "New  device" },
-          { "id": "3", "type": "item", "icon": "Duplicate  device", "text": "Duplicate", "label": "⌘A" },
+          { "id": "3", "type": "item", "text": "Duplicate", "label": "⌘A" },
 
           { "id": "4", "type": "divider", "title": "Edit" },
 
@@ -83,7 +83,7 @@
         "main": [
           { "id": "1", "type": "divider", "title": "Add" },
           { "id": "2", "type": "item", "text": "New folder" },
-          { "id": "3", "type": "item", "icon": "Duplicate folder", "text": "Duplicate", "label": "⌘A" },
+          { "id": "3", "type": "item", "text": "Duplicate", "label": "⌘A" },
           { "id": "4", "type": "item", "text": "New type" },
 
           { "id": "5", "type": "divider", "title": "Edit" },
@@ -100,7 +100,7 @@
         "main": [
           { "id": "1", "type": "divider", "title": "Add" },
           { "id": "2", "type": "item", "text": "New type" },
-          { "id": "3", "type": "item", "icon": "Duplicate type", "text": "Duplicate", "label": "⌘A" },
+          { "id": "3", "type": "item", "text": "Duplicate", "label": "⌘A" },
 
           { "id": "4", "type": "divider", "title": "Edit" },
 
