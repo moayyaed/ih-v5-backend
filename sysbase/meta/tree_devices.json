@@ -44,25 +44,70 @@
     }
   },
   "devicesByPlace": {
-    "popup": {
-      "main": [
-        { "id": "1", "type": "divider", "title": "Add place" },
-        { "id": "2", "type": "item", "title": "Add device" },
-        { "id": "3", "type": "item", "icon": "duplicate", "text": "Duplicate", "label": "⌘A" },
-        { "id": "4", "type": "item", "icon": "clipboard", "text": "Rename", "command": "rename", "label": "⌘R"},
-        { "id": "5", "type": "item", "text": "Move", "label": "⌘M" },
-        { "id": "6", "type": "item", "text": "Delete", "label": "⌘D" }
-      ]
+    "parent": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "divider", "title": "Add" },
+          { "id": "2", "type": "item", "title": "New folder" },
+          { "id": "3", "type": "item", "icon": "Duplicate folder", "text": "Duplicate", "label": "⌘A" },
+          { "id": "4", "type": "item", "title": "New device" },
+          { "id": "5", "type": "divider", "title": "Edit" },
+
+          { "id": "6", "type": "item", "icon": "clipboard", "text": "Rename", "command": "rename", "label": "⌘R" },
+
+          { "id": "7", "type": "item", "text": "Delete", "label": "⌘D" }
+        ]
+      },
+      "defaultComponent": "folder"
+    },
+    "child": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "divider", "title": "Add" },
+          { "id": "2", "type": "item", "title": "New  device" },
+          { "id": "3", "type": "item", "icon": "Duplicate  device", "text": "Duplicate", "label": "⌘A" },
+
+          { "id": "4", "type": "divider", "title": "Edit" },
+
+          { "id": "5", "type": "item", "icon": "clipboard", "text": "Rename", "command": "rename", "label": "⌘R" },
+
+          { "id": "6", "type": "item", "text": "Delete", "label": "⌘D" }
+        ]
+      },
+      "defaultComponent": "options"
     }
   },
   "typesByGroup": {
+    "parent": {
     "popup": {
       "main": [
-        { "id": "1", "type": "divider", "title": "Edit" },
-        { "id": "2", "type": "item", "icon": "cut", "text": "Cut", "label": "⌘X" },
-        { "id": "3", "type": "item", "icon": "duplicate", "text": "Copy", "label": "⌘C" },
-        { "id": "4", "type": "item", "icon": "clipboard", "text": "Paste", "label": "⌘V", "disabled": true }
+        { "id": "1", "type": "divider", "title": "Add" },
+        { "id": "2", "type": "item", "title": "New folder" },
+        { "id": "3", "type": "item", "icon": "Duplicate folder", "text": "Duplicate", "label": "⌘A" },
+        { "id": "4", "type": "item", "title": "New type" },
+        { "id": "5", "type": "divider", "title": "Edit" },
+
+        { "id": "6", "type": "item", "icon": "clipboard", "text": "Rename", "command": "rename", "label": "⌘R" },
+
+        { "id": "7", "type": "item", "text": "Delete", "label": "⌘D" }
       ]
-    }
+    },
+    "defaultComponent": "folder"
+  },
+  "child": {
+    "popup": {
+      "main": [
+        { "id": "1", "type": "divider", "title": "Add" },
+        { "id": "2", "type": "item", "title": "New type" },
+        { "id": "3", "type": "item", "icon": "Duplicate type", "text": "Duplicate", "label": "⌘A" },
+    
+        { "id": "4", "type": "divider", "title": "Edit" },
+
+        { "id": "5", "type": "item", "icon": "clipboard", "text": "Rename", "command": "rename", "label": "⌘R" },
+
+        { "id": "6", "type": "item", "text": "Delete", "label": "⌘D" }
+      ]
+    },
+    "defaultComponent": "options"
   }
 }
