@@ -1,6 +1,6 @@
 [
-  { "id": "1", "route": "devices", "title": "$Devices", "tooltip": "$Devices", "icon": "" },
-  { "id": "2", "route": "visualization", "title": "$VISUALIZATION", "tooltip": "$VISUALIZATION", "icon": "" },
+  { "id": "1", "route": "dev", "title": "$Devices", "tooltip": "$Devices", "icon": "" },
+  { "id": "2", "route": "vis", "title": "$VISUALIZATION", "tooltip": "$VISUALIZATION", "icon": "" },
   { "id": "3", "route": "scripts", "title": "$Scenes", "tooltip": "$Scenes", "icon": "" },
   { "id": "4", "route": "datasource", "title": "$DATASOURCE", "tooltip": "$DATASOURCE", "icon": "" },
   { "id": "6", "route": "analytics", "title": "$ANALYTICS", "tooltip": "$ANALYTICS", "icon": "" },

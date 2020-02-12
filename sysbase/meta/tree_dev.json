@@ -43,7 +43,7 @@
       "shapes": [{ "id": "23", "type": "item", "icon": "full-circle", "text": "Full circle" }]
     }
   },
-  "devicesByPlace": {
+  "devices": {
     "parent": {
       "popup": {
         "main": [
@@ -58,7 +58,7 @@
           { "id": "7", "type": "item", "text": "Delete", "label": "⌘D" }
         ]
       },
-      "defaultComponent": "folder"
+      "defaultComponent": "folderview"
     },
     "child": {
       "popup": {
@@ -74,10 +74,10 @@
           { "id": "6", "type": "item", "text": "Delete", "label": "⌘D" }
         ]
       },
-      "defaultComponent": "options"
+      "defaultComponent": "deviceview"
     }
   },
-  "typesByGroup": {
+  "types": {
     "parent": {
       "popup": {
         "main": [
@@ -93,7 +93,7 @@
           { "id": "7", "type": "item", "text": "Delete", "label": "⌘D" }
         ]
       },
-      "defaultComponent": "folder"
+      "defaultComponent": "folderview"
     },
     "child": {
       "popup": {
@@ -109,7 +109,7 @@
           { "id": "6", "type": "item", "text": "Delete", "label": "⌘D" }
         ]
       },
-      "defaultComponent": "options"
+      "defaultComponent": "typeview"
     }
   }
 }
