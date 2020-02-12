@@ -1,0 +1,7 @@
+{
+  "tabs": [
+    { "id": "tabTypeProps", "title": "Свойства", "component": [{ "id": "formTypeProps", "type": "form" }] },
+    { "id": "tabTypeAux", "title": "Начальные значения" , "component": [{ "id": "formTypeAux", "type": "form" }] }
+  ],
+  "defaultTab": "tabTypeProps"
+}

@@ -1,0 +1,9 @@
+{
+  "tabs": [
+    { "id": "tabDeviceCommon", "title": "Свойства", "component": [{ "id": "formDeviceCommon", "type": "form" }] },
+    { "id": "tabDeviceChannel", "title": "Каналы", "component": [{ "id": "formDeviceChannel", "type": "form" }] },
+    { "id": "TabDeviceDb", "title": "БД", "component": [{ "id": "formDeviceDb", "type": "form" }] }
+  ],
+
+  "defaultTab": "tabDeviceCommon"
+}
