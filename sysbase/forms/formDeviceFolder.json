@@ -1,0 +1,20 @@
+{
+  "properties": {
+    "id": {
+      "order": 0,
+      "name": "ID",
+      "type": "STRING",
+      "disabled": "id"
+    },
+    "name": {
+      "order": 1,
+      "name": "$Name",
+      "type": "STRING"
+    },
+    "txt": {
+      "order": 2,
+      "name": "$Comment",
+      "type": "STRING"
+    }
+  }
+}

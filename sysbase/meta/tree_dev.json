@@ -58,7 +58,7 @@
           { "id": "7", "type": "item", "text": "Delete", "label": "⌘D" }
         ]
       },
-      "defaultComponent": "folderview"
+      "defaultComponent": "devicefolder"
     },
     "child": {
       "popup": {
@@ -93,7 +93,7 @@
           { "id": "7", "type": "item", "text": "Delete", "label": "⌘D" }
         ]
       },
-      "defaultComponent": "folderview"
+      "defaultComponent": "typefolder"
     },
     "child": {
       "popup": {

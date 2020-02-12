@@ -1,0 +1,34 @@
+{
+  "properties": {
+    "dn": {
+      "order": 0,
+      "name": "$Dev_Id",
+      "type": "STRING"
+    },
+
+    "name": {
+      "order": 1,
+      "name": "$Name",
+      "type": "STRING"
+    },
+
+    "type": {
+      "order": 2,
+      "name": "$Dev_Type",
+      "type": "STRING"
+    },
+
+    "place": {
+      "order": 3,
+      "name": "$Place",
+      "type": "STRING"
+    },
+   
+    "mu": {
+      "order": 4,
+      "name": "$Dev_Mu",
+      "type": "STRING"
+    }
+  },
+  "table":"devices"
+}
