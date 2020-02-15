@@ -50,8 +50,8 @@ let project_d;
   // transfer('spaces', 'lists', 'jbase');
   // transfer('layouts', 'layouts', 'jbase');
 
-  // create('typeprops', 'jbase');
-  create('devprops', 'jbase');
+  create('typeprops', 'jbase');
+  // create('devprops', 'jbase');
   // let res = tut.createDevprops(project_d);
 
   rl.close();

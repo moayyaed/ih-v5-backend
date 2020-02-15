@@ -1,29 +1,39 @@
 /**
- * ih-backend-D
+ * Main ih-backend-d.
  *
- *  Main
+ *  app.js
  */
 
 const util = require('util');
+const init = require('./lib/init');
+const holder = require('./lib/holder');
 
-
-require('./lib/init')(__dirname)
+init(__dirname)
   .then(() => {
-    require('./lib/web/webserver');
-
-    process.on('exit', () => {});
-
-    process.on('SIGINT', () => {
-      process.exit(0);
-    });
-
-    process.on('uncaughtException', err => {
-      console.log('ERR: uncaughtException ' + util.inspect(err));
-    });
+    holder.start();
+  })
+  .then(() => {
+    require('./lib/web/webserver').start(holder);
   })
   .catch(e => {
     console.log('ERR: FATAL ERROR. ' + util.inspect(e));
     setTimeout(() => {
       process.exit();
     }, 500);
+  });
+
+  process.on('exit', () => {
+    if (holder) holder.emit('finish');
+  });
+
+  process.on('SIGINT', () => {
+    process.exit(0);
+  });
+
+  process.on('uncaughtException', err => {
+    console.log('ERR: uncaughtException ' + util.inspect(err));
+  });
+
+  process.on('unhandledRejection', (reason, promise) => {
+    console.log('ERR: Unhandled Rejection at:', promise, 'reason:', reason);
   });

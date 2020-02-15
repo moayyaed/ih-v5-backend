@@ -15,6 +15,7 @@
     "form": "formTypeFolder"
   },
   "type": { "store": "db", "collection": "types", "form": "formTypeProps" },
+  "typeprops": { "store": "db", "collection": "typeprops", "form": "formTypeProps" },
   "layoutgroup": {
     "store": "db",
     "collection": "lists",

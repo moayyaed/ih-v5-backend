@@ -87,7 +87,7 @@ function createTypeprops() {
   data.forEach(typeitem => {
     const clProps = clObj[typeitem.cl].props;
     clProps.forEach((pItem, idx) => {
-      const pobj = Object.assign({ id: 't' + typeitem.id + '_' + idx, type: 't' + typeitem.id }, pItem);
+      const pobj = Object.assign({ _id: 't' + typeitem.id + '_' + idx, type: 't' + typeitem.id }, pItem);
       str += JSON.stringify(pobj) + '\n';
     });
   });
@@ -121,7 +121,7 @@ function createDevprops(project_d) {
       // Найдем нужный тип и добавим свойства
       if (tpMap.has(item.type)) {
         tpMap.get(item.type).forEach(propItem => {
-        const pobj = { id: item.dn + '_' +propItem.prop, dn: item.dn, prop:propItem.prop, chan:{}, aux:{} };
+        const pobj = { _id: item.dn + '_' +propItem.prop, dn: item.dn, prop:propItem.prop, chan:{}, aux:{} };
         str += JSON.stringify(pobj) + '\n';
         });
       } else {
