@@ -14,7 +14,7 @@
     "defRootTitle": "Типы",
     "form": "formTypeFolder"
   },
-  "type": { "store": "db", "collection": "types", "form": "formTypeProps" },
+  "type": { "store": "db", "collection": "types", "form": "formTypeCommon" },
   "typeprops": { "store": "db", "collection": "typeprops", "form": "formTypeProps" },
   "layoutgroup": {
     "store": "db",

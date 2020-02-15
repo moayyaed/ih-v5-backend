@@ -1,0 +1,11 @@
+{
+  "properties": {
+   
+    "name": {
+      "order": 1,
+      "name": "$Name",
+      "type": "STRING"
+    }
+  },
+  "default":{"name":"New type"}
+}

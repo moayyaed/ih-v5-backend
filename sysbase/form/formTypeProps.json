@@ -1,11 +1,16 @@
 {
   "properties": {
-   
+    "prop": {
+      "order": 1,
+      "name": "$Property",
+      "type": "STRING"
+    },
+
     "name": {
       "order": 1,
       "name": "$Name",
       "type": "STRING"
     }
   },
-  "default":{"name":"New type"}
+  "default":{ "prop":"newprop", "name":"New prop"}
 }
