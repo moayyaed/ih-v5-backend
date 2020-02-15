@@ -18,7 +18,7 @@
       "type": "STRING"
     },
 
-    "place": {
+    "parent": {
       "order": 3,
       "name": "$Place",
       "type": "STRING"
@@ -30,5 +30,6 @@
       "type": "STRING"
     }
   },
-  "table":"devices"
+
+  "default":{"dn":"", "name":"New device", "type":"", "parent":"", "mu":""}
 }

@@ -2,14 +2,14 @@
   "dev": ["devices", "types"],
   "devices": {
     "branch": { "table": "place", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } },
-    "leaf": { "table": "device", "propmap": { "_id": "id", "name": "title", "place": "parent", "order": "order" } }
+    "leaf": { "table": "device", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
   },
   "types": {
     "branch": {
       "table": "typegroup",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     },
-    "leaf": { "table": "type", "propmap": { "_id": "id", "name": "title", "tgroup": "parent" } }
+    "leaf": { "table": "type", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
   },
   "vis": {
     "branch": {
@@ -18,8 +18,7 @@
     },
     "leaf": {
       "table": "layout",
-      "propmap": { "_id": "id", "name": "title", "level": "parent" },
-      "propext": { "component": "table" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     }
   },
   "scripts": {
@@ -29,7 +28,7 @@
     },
     "leaf": {
       "table": "script",
-      "propmap": { "_id": "id", "name": "title", "level": "parent" }
+      "propmap": { "_id": "id", "name": "title", "level": "parent", "order": "order" }
     }
   },
   "datasource": {
@@ -39,8 +38,7 @@
     },
     "leaf": {
       "table": "datasource",
-      "propmap": { "_id": "id", "name": "title", "level": "parent" },
-      "propext": { "component": "table" }
+      "propmap": { "_id": "id", "name": "title", "level": "parent", "order": "order" }
     }
   }
 }

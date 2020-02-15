@@ -1,15 +1,11 @@
 {
   "properties": {
-    "dn": {
-      "order": 0,
-      "name": "ID",
-      "type": "STRING"
-    },
-
+   
     "name": {
       "order": 1,
       "name": "$Name",
       "type": "STRING"
     }
-  }
+  },
+  "default":{"name":"New type"}
 }

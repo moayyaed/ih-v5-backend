@@ -16,5 +16,6 @@
       "name": "$Comment",
       "type": "STRING"
     }
-  }
+  },
+  "default":{"name":"New folder", "txt":""}
 }
