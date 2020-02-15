@@ -17,5 +17,6 @@
       "type": "STRING"
     }
   },
+  "table":"typegroup",
   "default":{"name":"New folder", "txt":""}
 }

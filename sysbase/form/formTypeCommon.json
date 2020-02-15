@@ -7,5 +7,6 @@
       "type": "STRING"
     }
   },
-  "default":{"name":"New type"}
+  "default":{"name":"New type"},
+  "table":"type"
 }

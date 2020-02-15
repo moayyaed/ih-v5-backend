@@ -3,19 +3,17 @@
     "store": "db",
     "collection": "lists",
     "filter": { "list": "place" },
-    "defRootTitle": "Все",
-    "form": "formDeviceFolder"
+    "defRootTitle": "Все"
   },
-  "device": { "store": "db", "collection": "devices", "form": "formDeviceCommon" },
+  "device": { "store": "db", "collection": "devices"},
   "typegroup": {
     "store": "db",
     "collection": "lists",
     "filter": { "list": "typegroup" },
-    "defRootTitle": "Типы",
-    "form": "formTypeFolder"
+    "defRootTitle": "Типы"
   },
-  "type": { "store": "db", "collection": "types", "form": "formTypeCommon" },
-  "typeprops": { "store": "db", "collection": "typeprops", "form": "formTypeProps" },
+  "type": { "store": "db", "collection": "types" },
+  "typeprops": { "store": "db", "collection": "typeprops"},
   "layoutgroup": {
     "store": "db",
     "collection": "lists",

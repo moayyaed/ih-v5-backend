@@ -12,5 +12,10 @@
       "type": "STRING"
     }
   },
-  "default":{ "prop":"newprop", "name":"New prop"}
+
+  "keytable":"type",
+  "reltable":"typeprops",
+  "key":"type",
+  "multi":true,
+  "default":{ "type":"", "prop":"newprop", "name":"New prop"}
 }

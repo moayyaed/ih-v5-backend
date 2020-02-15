@@ -17,5 +17,6 @@
       "type": "STRING"
     }
   },
+  "table":"place",
   "default":{"name":"New folder", "txt":""}
 }

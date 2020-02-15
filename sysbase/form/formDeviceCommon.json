@@ -30,6 +30,6 @@
       "type": "STRING"
     }
   },
-
+  "table":"device",
   "default":{"dn":"", "name":"New device", "type":"", "parent":"", "mu":""}
 }
