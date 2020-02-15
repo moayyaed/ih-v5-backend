@@ -22,14 +22,8 @@
       "order": 3,
       "name": "$Place",
       "type": "STRING"
-    },
-   
-    "mu": {
-      "order": 4,
-      "name": "$Dev_Mu",
-      "type": "STRING"
     }
   },
   "table":"device",
-  "default":{"dn":"", "name":"New device", "type":"", "parent":"", "mu":""}
+  "default":{"dn":"", "name":"New device", "type":"", "parent":""}
 }
