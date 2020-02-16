@@ -1,6 +1,7 @@
 /**
  *
  */
+const util = require('util');
 const fs = require('fs');
 const path = require('path');
 
@@ -37,11 +38,20 @@ function formRecord(source, target, item) {
       break;
 
     case 'devref':
-      if (item.place) {
-        parent = 'p' + item.place + (item.room ? 'r' + item.room : '');
-      } else parent = 'place';
-
-      robj = { _id: 'd' + item.id, parent, order: item.order, type:'t'+item.type, dn: item.dn, name: item.dn + ' ' + item.name };
+      /** 
+        if (item.place) {
+          parent = 'p' + item.place + (item.room ? 'r' + item.room : '');
+        } else parent = 'place';
+        */
+      parent = item.place ? 'p' + item.place + (item.room ? 'r' + item.room : '') : 'place';
+      robj = {
+        _id: 'd' + item.id,
+        parent,
+        order: item.order,
+        type: 't' + item.type,
+        dn: item.dn,
+        name: item.dn + ' ' + item.name
+      };
       break;
 
     case 'spaces': // => lists- layoutgroup
@@ -94,50 +104,147 @@ function createTypeprops() {
   return str;
 }
 
-function createDevprops(project_d) {
-  const tpMap = new Map();
-  const typepropfile = path.join(project_d, 'jbase', 'typeprops.db');
-  const tstr = fs.readFileSync(typepropfile, 'utf8');
-  const tparr = tstr.split('\n');
-  tparr.forEach(sItem => {
-    sItem = hut.allTrim(sItem);
-    if (sItem) {
-      const tpItem = JSON.parse(sItem);
-      if (!tpMap.has(tpItem.type)) tpMap.set(tpItem.type, []);
-      tpMap.get(tpItem.type).push(tpItem);
-    }
-  });
-  
+/**
+ *  devref содержал флаги и значения (min, max, ..флаги записи в БД) в целом для устройства:
+ *    {dn, min, max, decdig, mu, db, dbraw, dbline, dbdelta, dbcalc_type, dbforce, dbwrite_need_on }
+ *   Сейчас нужно для каждого свойства отдельно, внутри свойства  aux
+ *   Добавляем для свойства value и опционально для setpoint (min, max, mu)
+ *   id тот же что и в devices
+ *    {id, aux:{value:{min:20, max:50, dig:2, mu:'C'}, setpoint:{min:20, max:50, mu:'C'}}
+ *   Здесь же будут сохраняться свойства-параметры (не динамические?) {id, myparam1:45,myparam2:85, aux:{..}}
+ *
+ * @param {Array of Objects} devrefData - данные из devref
+ * @param {String} project_d
+ */
+function createDevprops(devrefData, project_d) {
   let str = '';
+
+  // Нужен, чтобы найти id  устройства - т к dn сейчас уже не id!!
   const devicesfile = path.join(project_d, 'jbase', 'devices.db');
   const dstr = fs.readFileSync(devicesfile, 'utf8');
-  const dparr = dstr.split('\n');
-  dparr.forEach(sItem => {
-    sItem = hut.allTrim(sItem);
-    console.log(sItem);
-    if (sItem) {
-      const item = JSON.parse(sItem);
-      
-      // Найдем нужный тип и добавим свойства
-      if (tpMap.has(item.type)) {
-        tpMap.get(item.type).forEach(propItem => {
-        const pobj = { _id: item.dn + '_' +propItem.prop, dn: item.dn, prop:propItem.prop, chan:{}, aux:{} };
-        str += JSON.stringify(pobj) + '\n';
-        });
-      } else {
-        console.log('Type not found:'+item.type);
-      }
+  const darr = dstr.split('\n');
+
+  // Вывернуть по  dn
+  const deviceObj = hut.arrayToObject(
+    darr.filter(item => hut.allTrim(item)).map(item => JSON.parse(item)),
+    'dn'
+  );
+
+  devrefData.forEach(item => {
+    // Найдем id устройства по dn
+    const did = deviceObj[item.dn]._id;
+    console.log(item.dn + ' did=' + did);
+
+    if (!did) {
+      console.log('NOT FOUND id for ' + item.dn + ' in ' + devicesfile);
+    } else {
+      str += formPropRecord(did, item);
     }
   });
 
   return str;
-  // const devicesfile = path.join(project_d, 'jbase',  'devices.db');
 }
+
+function formPropRecord(did, item) {
+  const pobj = { _id: did };
+  const aux = [];
+  const vObj = {prop:'value', mu:item.mu || '', db:item.db ? 1 : 0 };
+
+  if (isAnalog(item)) {
+    vObj.min = item.min != undefined ? item.min : null;
+    vObj.max = item.max != undefined ? item.max : null;
+    vObj.dig = item.decdig || 0;
+  }
+  aux.push(vObj);
+
+  if (isAnalog(item)) {
+    const sObj = {prop:'setpoint', mu:item.mu || '' };
+    sObj.min = item.min != undefined ? item.min : null;
+    sObj.max = item.max != undefined ? item.max : null;
+    aux.push(sObj);
+  }
+
+  pobj.aux = aux;
+  
+  return JSON.stringify(pobj) + '\n';
+}
+
+/**
+ *  devcurrent содержал значения свойств в целом для устройства:
+ *    {dn, aval, devref, auto, blk }
+ *   Сейчас нужно для каждого свойства отдельно, внутри свойства  raw?
+ *   id тот же что и в devices
+ *    {id, raw:[{prop:value, val:20, ts:1578990909, src:'modbus'}, {prop:setpoint, val:22, ts, src:}]
+ 
+ * @param {Array of Objects} devcurData - данные из devcurrent
+ * @param {String} project_d
+ */
+function createDevcurrent(devcurData, project_d) {
+  let str = '';
+
+  // Нужен, чтобы найти id  устройства - т к dn сейчас уже не id!!
+  const devicesfile = path.join(project_d, 'jbase', 'devices.db');
+  const dstr = fs.readFileSync(devicesfile, 'utf8');
+  const darr = dstr.split('\n');
+
+  // Вывернуть по  dn
+  const deviceObj = hut.arrayToObject(
+    darr.filter(item => hut.allTrim(item)).map(item => JSON.parse(item)),
+    'dn'
+  );
+
+  devcurData.forEach(item => {
+    // Найдем id устройства по dn
+    console.log(item.id );
+    const did = deviceObj[item.id] ? deviceObj[item.id]._id : '';
+   
+
+    if (!did) {
+      console.log('NOT FOUND id for ' + item.id + ' in ' + devicesfile);
+    } else {
+      str += formCurRecord(did, item);
+    }
+  });
+
+  return str;
+}
+
+function formCurRecord(did, item) {
+  const pobj = { _id: did };
+  const raw = [];
+  
+  let val;
+  if (item.aval != undefined) {
+    val = item.aval;
+  } else if (item.dval != undefined){
+    val = item.dval;
+  }
+  if (val != undefined) raw.push({prop:'value', val, ts:item.lastts, src:''});
+
+  ['auto', 'defval', 'blk'].forEach(prop => {
+    if (item[prop] != undefined) raw.push({prop:getNewProp(prop), val:item[prop], ts:item.lastts, src:''});
+  })
+
+  pobj.raw = raw;
+  
+  return JSON.stringify(pobj) + '\n';
+}
+
+function getNewProp(prop) {
+  return (prop == 'defval') ? 'setpoint' : prop;
+}
+
+function isAnalog(item) {
+  return item.cl == 'SensorA' || item.cl == 'ActorA';
+}
+
+
 
 module.exports = {
   getRootItem,
   formRecord,
   getSysDataFile,
   createTypeprops,
-  createDevprops
+  createDevprops,
+  createDevcurrent
 };

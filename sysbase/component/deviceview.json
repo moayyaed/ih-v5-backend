@@ -1,6 +1,8 @@
 {
   "tabs": [
-    { "id": "tabDeviceCommon", "title": "Свойства", "component": [{ "id": "formDeviceCommon", "type": "form" }] },
+    { "id": "tabDeviceCommon", "title": "Общие данные", "component": [{ "id": "formDeviceCommon", "type": "form" }] },
+    { "id": "tabDeviceAux", "title": "Свойства", "component": [{ "id": "formDeviceAux", "type": "form" }] },
+    { "id": "tabDeviceCurrent", "title": "Текущие значения", "component": [{ "id": "formDeviceCurrent", "type": "form" }] },
     { "id": "tabDeviceChannel", "title": "Каналы", "component": [{ "id": "formDeviceChannel", "type": "form" }] },
     { "id": "TabDeviceDb", "title": "БД", "component": [{ "id": "formDeviceDb", "type": "form" }] }
   ],

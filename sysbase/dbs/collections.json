@@ -11,7 +11,8 @@
     }
   },
   "devices": { "folder": "jbasepath" },
-  "deviceprops": { "folder": "jbasepath" },
+  "devprops": { "folder": "jbasepath" },
+  "devcurrent": { "folder": "operativepath" },
   "types": { "folder": "jbasepath" },
   "typeprops": { "folder": "jbasepath" },
   "layouts": { "folder": "jbasepath" },

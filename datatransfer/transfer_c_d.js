@@ -50,8 +50,9 @@ let project_d;
   // transfer('spaces', 'lists', 'jbase');
   // transfer('layouts', 'layouts', 'jbase');
 
-  create('typeprops', 'jbase');
+  // create('typeprops', 'jbase');
   // create('devprops', 'jbase');
+  create('devcurrent', 'operative');
   // let res = tut.createDevprops(project_d);
 
   rl.close();
@@ -101,7 +102,10 @@ function create(target, folder) {
         break;
 
       case 'devprops':
-        str = tut.createDevprops(project_d);
+        str = tut.createDevprops(getSourceData('devref', folder), project_d);
+        break;
+      case 'devcurrent':
+        str = tut.createDevcurrent(getSourceData('devcurrent', folder), project_d);
         break;
       default:
     }
@@ -125,68 +129,5 @@ function getSourceData(source, folder) {
   const cfilename = path.join(project_c, folder, source + '.json');
   return JSON.parse(fs.readFileSync(cfilename, 'utf8'));
 }
-
-/*
-function getRootItem(source) {
-  let robj = {};
-  switch (source) {
-    case 'places':
-      robj = { _id: 'place', list: 'place', parent: 0, order: 0, name: 'All ' + source };
-      break;
-
-    case 'spaces':
-      robj = { _id: 'layoutgroup', list: 'layoutgroup', parent: 0, order: 0, name: 'All ' + source };
-      break;
-    default:
-      robj = '';
-  }
-  return robj ? JSON.stringify(robj) + '\n' : '';
-}
-
-function formRecord(source, target, item) {
-  let robj = {};
-  let parent;
-  switch (source) {
-    case 'places':
-      robj = { _id: 'p' + item.id, list: 'place', parent: 'place', order: item.order, name: item.name };
-      break;
-
-    case 'rooms':
-      parent = 'p' + item.place;
-      robj = { _id: 'p' + item.place + 'r' + item.id, list: 'place', parent, order: item.order, name: item.name };
-      break;
-
-    case 'devref':
-      if (item.place) {
-        parent = 'p' + item.place + (item.room ? 'r' + item.room : '');
-      } else parent = 'place';
-
-      robj = { _id: 'd' + item.id, parent, order: item.order, dn: item.dn, name: item.dn + ' ' + item.name };
-      break;
-
-    case 'spaces': // => lists- layoutgroup
-      robj = { _id: 's' + item.id, list: 'layoutgroup', parent: 'layoutgroup', order: item.order, name: item.name };
-      break;
-
-    case 'layouts': //
-      parent = item.space ? 's' + item.space : 'layoutgroup';
-      robj = { _id: 'l' + item.id, parent, order: item.order, name: item.name, txt: item.txt };
-      break;
-
-    case 'classes': // => lists- typegroup
-      robj = { _id: item.id, list: 'typegroup', parent: 'typegroup', order: item.order, name: item.name };
-      break;
-
-    case 'types':
-      robj = { _id: 't' + item.id, parent: item.cl, order: item.order, name: item.name };
-      break;
-
-    default:
-      robj = '';
-      console.log('Not found source ' + source);
-  }
-  return robj ? JSON.stringify(robj) + '\n' : '';
-}
-*/
 
 // auxiliary - вспомогательный, добавочный, дополнительный

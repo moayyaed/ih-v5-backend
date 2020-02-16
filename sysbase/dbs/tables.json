@@ -6,6 +6,8 @@
     "defRootTitle": "Все"
   },
   "device": { "store": "db", "collection": "devices"},
+  "devprops": { "store": "db", "collection": "devprops"},
+  "devcurrent": { "store": "db", "collection": "devcurrent"},
   "typegroup": {
     "store": "db",
     "collection": "lists",

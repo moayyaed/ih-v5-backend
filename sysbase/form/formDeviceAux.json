@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "prop": {
+      "order": 1,
+      "name": "$Property",
+      "type": "STRING"
+    },
+
+    "min": {
+      "order": 2,
+      "name": "Min",
+      "type": "NUMBER"
+    },
+    "max": {
+      "order": 3,
+      "name": "Min",
+      "type": "NUMBER"
+    },
+    "mu": {
+      "order": 4,
+      "name": "Единица измерения",
+      "type": "STRING"
+    },
+    "dig": {
+      "order": 5,
+      "name": "Цифр после запятой",
+      "type": "NUMBER"
+    }
+
+  },
+
+  "table":"devprops",
+  "multi":true,
+  "default":{ "aux":"*"}
+}
