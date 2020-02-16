@@ -17,7 +17,7 @@
           { "id": "6", "type": "item", "text": "Добавить", "command": "addLeaf" }
         ]
       },
-      "defaultComponent": "folder"
+      "defaultComponent": "layoutfolder"
     },
 
     "child": {
@@ -30,7 +30,7 @@
           { "id": "5", "type": "item", "text": "Удалить", "command": "delete" }
         ]
       },
-      "defaultComponent": "options"
+      "defaultComponent": "layoutview"
     }
   }
 }
