@@ -133,8 +133,6 @@ function createDevprops(devrefData, project_d) {
   devrefData.forEach(item => {
     // Найдем id устройства по dn
     const did = deviceObj[item.dn]._id;
-    console.log(item.dn + ' did=' + did);
-
     if (!did) {
       console.log('NOT FOUND id for ' + item.dn + ' in ' + devicesfile);
     } else {
@@ -245,46 +243,62 @@ function createDevhard(devhardData, project_d) {
   const devicesfile = path.join(project_d, 'jbase', 'devices.db');
   const deviceObj = getDeviceObj(devicesfile);
 
+  const complexMap = new Map();
   devhardData.forEach(item => {
-    if (item.dn && item.unit && item.chan) {
-      // Найдем id устройства по dn
-      console.log(item.dn);
-      const did = deviceObj[item.dn] ? deviceObj[item.dn]._id : '';
-
-      if (!did) {
-        console.log('NOT FOUND id for ' + item.id + ' in ' + devicesfile);
+    if (item.dn && item.unit) {
+      
+      if (item.complex) {
+        // Нужно собрать по одному устройству - dval, on/off
+        // {"id":"896","prop":"off","unit":"wip5","dn":"H306","complex":true,"value":"1","desc":"DO",""chan":"_off_H306_PL31","calc":"","nofb":false,"op":"W"},
+        // {"id":"941","prop":"dval","unit":"wip5","dn":"H306","complex":true,"value":"","desc":"DI","chan":"_r_H306_PL31","calc":"","nofb":false,"op":"R"},
+        // {"id":"943","prop":"on","unit":"wip5","dn":"H306","complex":true,"value":"1","desc":"DO","chan":"_on_H306_PL31","calc":"","nofb":false,"op":"W"},
+        if (!complexMap.has(item.dn))  complexMap.set(item.dn, []);
+        complexMap.get(item.dn).push(item);
       } else {
-        str += formHardRecord(did, item);
+        // Найдем id устройства по dn
+        console.log(item.dn);
+        const did = deviceObj[item.dn] ? deviceObj[item.dn]._id : '';
+
+        if (!did) {
+          console.log('NOT FOUND id for ' + item.id + ' in ' + devicesfile);
+        } else {
+          str += formHardRecord(did, item);
+        }
       }
     }
   });
 
+  // Сформировать из комплексных каналов ( wip)
+  
   return str;
 }
 
 function formHardRecord(did, item) {
-  const hard = getHardObjForUnit(item);
-  if (!hard) return '';
+  if (item.complex) return '';
 
+  if (!item.chan) item.chan = item.dn;
   const pobj = {
     _id: did,
     did,
-    prop:'value',
+    prop: 'value',
     unit: item.unit,
     chan: item.chan,
-    hard,
     inv: item.inv,
     calc: item.calc,
     desc: item.desc
   };
 
-  // if ((item.desc == 'DO' || item.desc == 'AO') && item.actions) {
-  if (item.actions) {
-    let actions;
-    actions = hut.clone(item.actions, actions);
-    pobj.hard.actions = actions;
+  const hard = getHardObjForUnit(item);
+  // Может и не быть - например wip
+  if (hard) {
+    pobj.hard = hard;
+    // if ((item.desc == 'DO' || item.desc == 'AO') && item.actions) {
+    if (item.actions) {
+      let actions;
+      actions = hut.clone(item.actions, actions);
+      pobj.hard.actions = actions;
+    }
   }
-
   return JSON.stringify(pobj) + '\n';
 }
 
@@ -293,8 +307,47 @@ function getHardObjForUnit(item) {
   switch (plugin) {
     case 'mqttclient':
       return { topic: item.topic };
+    // {"unit":"mqttclient1","topic":"/MT8102iE/Analog_Position_Carriage","actions":[{"act":"on","topic":"/devices/dn/command","message":"on"},{"act":"off","topic":"/devices/dn/command","message":"off"}]},
     case 'modbus':
-        return { address: item.address, vartype:item.vartype, fcr:item.fcr, ks:item.ks,ks0:item.ks0};  
+      // {"unit":"modbus2", "vartype":"float","usek":false,"ks":100,"ks0":0, "gr":true,"pollp":true,"kh0":0,"address":"6","fcr":"3","useactions":false,"actions":[{"act":"on","address":"0x0000","vartype":"bool","value":""}],"kh":100,"nofb":false,"unitid":1},
+      return {
+        address: item.address,
+        vartype: item.vartype,
+        usek: item.usek,
+        gr: item.gr,
+        pollp: item.pollp,
+        fcr: item.fcr,
+        ks: item.ks,
+        ks0: item.ks0,
+        kh0: item.kh0,
+        kh: item.kh,
+        unitid: item.unitid,
+        useactions: item.useactions
+      };
+
+    case 'ping':
+      // {"unit":"ping1","lost":0,"interval":15,"ip":"192.168.103.61"}
+      return { ip: item.ip, interval: item.interval, lost: item.lost };
+
+    case 'snmp':
+      // {"unit":"snmp1","get_oid":"1.3.6.1.2.1.33.1.3.3.1.3.1","interval":5,"parentid":"774","number":false, "parse":"String(value)","trap_oid":"","table_oid":"1.3.6.1.2.1.2.2","type":"get","actions":[{"act":"on","oid":"1.3.6.1.4.1.2.6.2.2.1.2.1","type":"Integer","value":"1"}]}
+      return {
+        get_oid: item.get_oid,
+        interval: item.interval,
+        parentid: item.parentid,
+        number: item.number,
+        parse: item.parse,
+        trap_oid: item.trap_oid,
+        table_oid: item.table_oid,
+        type: item.type
+      };
+
+    case 'wip':
+      // {"unit":"wip5", "complex":false,"chan":"_r_DD304_PL31","calc":"","nofb":false,"op":""},
+      // а если complex - нужно собирать по всему файлу!!
+
+      return '';
+
     default:
   }
 }

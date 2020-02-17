@@ -1,29 +1,17 @@
 {
-  "properties": {
-    "dn": {
-      "order": 0,
-      "name": "$Dev_Id",
-      "type": "STRING"
-    },
+  "grid": [
+    { "id": "p1", "xs": 6, "class": "main", "table":"device" },
+    { "id": "p2", "xs": 6, "class": "main", "table":"device" },
+    { "id": "p3", "xs": 12, "class": "main" }
+  ],
+  "spacing": 10,
 
-    "name": {
-      "order": 1,
-      "name": "$Name",
-      "type": "STRING"
-    },
-
-    "type": {
-      "order": 2,
-      "name": "$Dev_Type",
-      "type": "STRING"
-    },
-
-    "parent": {
-      "order": 3,
-      "name": "$Place",
-      "type": "STRING"
-    }
-  },
-  "table":"device",
-  "default":{"dn":"", "name":"New device", "type":"", "parent":""}
+  "p1": [
+    { "prop": "dn", "title": "$Dev_Id", "type": "string" },
+    { "prop": "name", "title": "$Name", "type": "string" },
+    { "prop": "type", "title": "$Dev_Type", "type": "droplist", "data":"typeList" },
+    { "prop": "parent_name", "title": "$Place", "type": "string", "readonly": true }
+  ],
+  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
+  "p3": [{"title": "$DeviceProperty", "type": "table", "id":"devicecommonTable" }]
 }
