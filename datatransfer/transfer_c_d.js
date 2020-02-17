@@ -52,8 +52,8 @@ let project_d;
 
   // create('typeprops', 'jbase');
   // create('devprops', 'jbase');
-  create('devcurrent', 'operative');
-  // let res = tut.createDevprops(project_d);
+  create('devhard', 'jbase');
+  // create('devcurrent', 'operative');
 
   rl.close();
 })();
@@ -103,6 +103,10 @@ function create(target, folder) {
 
       case 'devprops':
         str = tut.createDevprops(getSourceData('devref', folder), project_d);
+        break;
+
+      case 'devhard':
+        str = tut.createDevhard(getSourceData('devhard', folder), project_d);
         break;
       case 'devcurrent':
         str = tut.createDevcurrent(getSourceData('devcurrent', folder), project_d);

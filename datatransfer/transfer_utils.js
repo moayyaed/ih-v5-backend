@@ -148,7 +148,7 @@ function createDevprops(devrefData, project_d) {
 function formPropRecord(did, item) {
   const pobj = { _id: did };
   const aux = [];
-  const vObj = {prop:'value', mu:item.mu || '', db:item.db ? 1 : 0 };
+  const vObj = { prop: 'value', mu: item.mu || '', db: item.db ? 1 : 0 };
 
   if (isAnalog(item)) {
     vObj.min = item.min != undefined ? item.min : null;
@@ -158,14 +158,14 @@ function formPropRecord(did, item) {
   aux.push(vObj);
 
   if (isAnalog(item)) {
-    const sObj = {prop:'setpoint', mu:item.mu || '' };
+    const sObj = { prop: 'setpoint', mu: item.mu || '' };
     sObj.min = item.min != undefined ? item.min : null;
     sObj.max = item.max != undefined ? item.max : null;
     aux.push(sObj);
   }
 
   pobj.aux = aux;
-  
+
   return JSON.stringify(pobj) + '\n';
 }
 
@@ -195,9 +195,8 @@ function createDevcurrent(devcurData, project_d) {
 
   devcurData.forEach(item => {
     // Найдем id устройства по dn
-    console.log(item.id );
+    console.log(item.id);
     const did = deviceObj[item.id] ? deviceObj[item.id]._id : '';
-   
 
     if (!did) {
       console.log('NOT FOUND id for ' + item.id + ' in ' + devicesfile);
@@ -212,33 +211,113 @@ function createDevcurrent(devcurData, project_d) {
 function formCurRecord(did, item) {
   const pobj = { _id: did };
   const raw = [];
-  
+
   let val;
   if (item.aval != undefined) {
     val = item.aval;
-  } else if (item.dval != undefined){
+  } else if (item.dval != undefined) {
     val = item.dval;
   }
-  if (val != undefined) raw.push({prop:'value', val, ts:item.lastts, src:''});
+  if (val != undefined) raw.push({ prop: 'value', val, ts: item.lastts, src: '' });
 
   ['auto', 'defval', 'blk'].forEach(prop => {
-    if (item[prop] != undefined) raw.push({prop:getNewProp(prop), val:item[prop], ts:item.lastts, src:''});
-  })
+    if (item[prop] != undefined) raw.push({ prop: getNewProp(prop), val: item[prop], ts: item.lastts, src: '' });
+  });
 
   pobj.raw = raw;
-  
+
   return JSON.stringify(pobj) + '\n';
 }
 
+/**
+ *  devhard содержит связки dn - unit, chan, если complex=false
+ * 
+ *   Сейчас нужно для каждого свойства отдельно всегда (обычно prop:value)
+ *   id - новый, подряд, did тот же что и в devices
+ *    {id, did, prop, unit, chan, <inv,...>, hard:{... actions:[{act:on,...},..]} 
+ 
+ * @param {Array of Objects} devcurData - данные из devcurrent
+ * @param {String} project_d
+ */
+function createDevhard(devhardData, project_d) {
+  let str = '';
+  // Нужен, чтобы найти id  устройства - т к dn сейчас уже не id!!
+  const devicesfile = path.join(project_d, 'jbase', 'devices.db');
+  const deviceObj = getDeviceObj(devicesfile);
+
+  devhardData.forEach(item => {
+    if (item.dn && item.unit && item.chan) {
+      // Найдем id устройства по dn
+      console.log(item.dn);
+      const did = deviceObj[item.dn] ? deviceObj[item.dn]._id : '';
+
+      if (!did) {
+        console.log('NOT FOUND id for ' + item.id + ' in ' + devicesfile);
+      } else {
+        str += formHardRecord(did, item);
+      }
+    }
+  });
+
+  return str;
+}
+
+function formHardRecord(did, item) {
+  const hard = getHardObjForUnit(item);
+  if (!hard) return '';
+
+  const pobj = {
+    _id: did,
+    did,
+    prop:'value',
+    unit: item.unit,
+    chan: item.chan,
+    hard,
+    inv: item.inv,
+    calc: item.calc,
+    desc: item.desc
+  };
+
+  // if ((item.desc == 'DO' || item.desc == 'AO') && item.actions) {
+  if (item.actions) {
+    let actions;
+    actions = hut.clone(item.actions, actions);
+    pobj.hard.actions = actions;
+  }
+
+  return JSON.stringify(pobj) + '\n';
+}
+
+function getHardObjForUnit(item) {
+  const plugin = hut.removeLastNumFromStr(item.unit);
+  switch (plugin) {
+    case 'mqttclient':
+      return { topic: item.topic };
+    case 'modbus':
+        return { address: item.address, vartype:item.vartype, fcr:item.fcr, ks:item.ks,ks0:item.ks0};  
+    default:
+  }
+}
+
+function getDeviceObj(devicesfile) {
+  // Нужен, чтобы найти id  устройства - т к dn сейчас уже не id!!
+  const dstr = fs.readFileSync(devicesfile, 'utf8');
+  const darr = dstr.split('\n');
+
+  // Вывернуть по  dn
+  return hut.arrayToObject(
+    darr.filter(item => hut.allTrim(item)).map(item => JSON.parse(item)),
+    'dn'
+  );
+}
+
 function getNewProp(prop) {
-  return (prop == 'defval') ? 'setpoint' : prop;
+  return prop == 'defval' ? 'setpoint' : prop;
 }
 
 function isAnalog(item) {
   return item.cl == 'SensorA' || item.cl == 'ActorA';
 }
-
-
 
 module.exports = {
   getRootItem,
@@ -246,5 +325,6 @@ module.exports = {
   getSysDataFile,
   createTypeprops,
   createDevprops,
+  createDevhard,
   createDevcurrent
 };
