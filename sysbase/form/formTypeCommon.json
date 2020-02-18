@@ -1,12 +1,51 @@
 {
-  "properties": {
-   
-    "name": {
-      "order": 1,
-      "name": "$Name",
-      "type": "STRING"
+  "grid": [
+    { "id": "p1", "xs": 6, "class": "main", "table": "type" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "type" },
+    { "id": "p3", "xs": 12, "class": "main", "height": 250 }
+  ],
+  "spacing": 10,
+
+  "p1": [
+    { "prop": "_id", "title": "ID", "type": "string", "readonly": true },
+    { "prop": "name", "title": "$Name", "type": "string" }
+  ],
+  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
+  "p3": [
+    {
+      "title": "$DeviceProperty",
+      "type": "table",
+      "prop": "typepropsTable",
+
+      "columns": [
+        { "prop": "prop", "title": "$DeviceProperty", "type": "string" },
+        {
+          "prop": "vtype",
+          "title": "Var type",
+          "type": "droplist",
+          "data": [
+            { "id": "B", "label": "Boolean" },
+            { "id": "N", "label": "Number" },
+            { "id": "S", "label": "String" }
+          ]
+        },
+        {
+          "prop": "op",
+          "title": "Oper",
+          "type": "droplist",
+          "data": [
+            { "id": "r", "label": "Read only" },
+            { "id": "rw", "label": "Read/Write" },
+            { "id": "w", "label": "Write only" },
+            { "id": "c", "label": "Calculate" },
+            { "id": "S", "label": "String" }
+          ]
+        },
+        { "prop": "min", "title": "Min", "type": "number" },
+        { "prop": "max", "title": "Max", "type": "number" },
+        { "prop": "dig", "title": "$Decdig", "type": "number" },
+        { "prop": "mu", "title": "$Dev_Mu", "type": "string" }
+      ]
     }
-  },
-  "default":{"name":"New type"},
-  "table":"type"
+  ]
 }

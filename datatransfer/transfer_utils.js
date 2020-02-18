@@ -38,11 +38,7 @@ function formRecord(source, target, item) {
       break;
 
     case 'devref':
-      /** 
-        if (item.place) {
-          parent = 'p' + item.place + (item.room ? 'r' + item.room : '');
-        } else parent = 'place';
-        */
+     
       parent = item.place ? 'p' + item.place + (item.room ? 'r' + item.room : '') : 'place';
       robj = {
         _id: 'd' + item.id,
@@ -67,9 +63,11 @@ function formRecord(source, target, item) {
       robj = { _id: item.id, list: 'typegroup', parent: 'typegroup', order: item.order, name: item.name };
       break;
 
-    case 'types':
+    /* case 'types':
       robj = { _id: 't' + item.id, parent: item.cl, order: item.order, name: item.name };
+      // Добавить props
       break;
+     */
 
     default:
       robj = '';
@@ -86,7 +84,7 @@ function getSysDataFile(source) {
   return data;
 }
 
-function createTypeprops() {
+function createTypes() {
   const classes = getSysDataFile('classes');
   const clObj = hut.arrayToObject(classes, 'id'); // Вывернуть
 
@@ -94,12 +92,19 @@ function createTypeprops() {
 
   // сформировать строку
   let str = '';
-  data.forEach(typeitem => {
-    const clProps = clObj[typeitem.cl].props;
+  let order = 100;
+  data.forEach(item => {
+    const robj = { _id: 't' + item.id, parent: item.cl, order, name: item.name };
+    robj.props = clObj[item.cl].props;
+    str += JSON.stringify(robj) + '\n';
+    order += 100;
+    /*
     clProps.forEach((pItem, idx) => {
       const pobj = Object.assign({ _id: 't' + typeitem.id + '_' + idx, type: 't' + typeitem.id }, pItem);
       str += JSON.stringify(pobj) + '\n';
     });
+    */
+
   });
   return str;
 }
@@ -376,7 +381,7 @@ module.exports = {
   getRootItem,
   formRecord,
   getSysDataFile,
-  createTypeprops,
+  createTypes,
   createDevprops,
   createDevhard,
   createDevcurrent

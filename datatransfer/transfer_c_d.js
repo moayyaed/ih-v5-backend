@@ -43,16 +43,15 @@ let project_d;
   console.log('lang=' + appconfig.get('lang'));
 
   // transfer('classes', 'lists', 'jbase');
-  // transfer('types', 'types', 'jbase');
   // transfer('places', 'lists', 'jbase');
   // transfer('rooms', 'lists', 'jbase');
   // transfer('devref', 'devices', 'jbase');
   // transfer('spaces', 'lists', 'jbase');
   // transfer('layouts', 'layouts', 'jbase');
 
-  // create('typeprops', 'jbase');
+  create('types', 'jbase');
   // create('devprops', 'jbase');
-  create('devhard', 'jbase');
+  // create('devhard', 'jbase');
   // create('devcurrent', 'operative');
 
   rl.close();
@@ -97,8 +96,8 @@ function create(target, folder) {
   try {
     let str = '';
     switch (target) {
-      case 'typeprops':
-        str = tut.createTypeprops();
+      case 'types':
+        str = tut.createTypes();
         break;
 
       case 'devprops':

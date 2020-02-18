@@ -1,0 +1,31 @@
+[
+  {"id":"SensorD","name":"$SensorD", "props":[
+    {"prop":"value", "name":"$Value", "vtype":"B", "op":"r"},
+    {"prop":"blk", "name":"$Blk", "vtype":"B", "op":"rw"}
+  ]},
+  {"id":"SensorA","name":"$SensorA", "props":[
+    {"prop":"value", "name":"$Value", "vtype":"B", "op":"r"},
+    {"prop":"setpoint", "name":"$Setpoint", "vtype":"N", "op":"rw"},
+    {"prop":"state", "name":"$State", "vtype":"N", "op":"c"}
+  ]},
+  {"id":"ActorD","name":"$ActorD", "props":[
+    {"prop":"value", "name":"$Value", "vtype":"B", "op":"r"},
+    {"prop":"auto", "name":"Auto", "vtype":"B", "op":"rw"},
+    {"prop":"blk", "name":"$Blk", "vtype":"B", "op":"rw"},
+    {"prop":"state", "name":"$State", "vtype":"N", "op":"c"}
+  ]},
+  {"id":"ActorA","name":"$ActorA", "props":[
+    {"prop":"value", "name":"$Value", "vtype":"B", "op":"r"},
+    {"prop":"setpoint", "name":"$Setpoint", "vtype":"N", "op":"rw"},
+    {"prop":"auto", "name":"Auto", "vtype":"B", "op":"rw"},
+    {"prop":"blk", "name":"$Blk", "vtype":"B", "op":"rw"},
+    {"prop":"state", "name":"$State", "vtype":"N", "op":"c"}
+  ]},
+  {"id":"ActorE","name":"$ActorE", "props":[
+    {"prop":"value", "name":"$Value", "vtype":"B", "op":"r"},
+    {"prop":"state", "name":"$State", "vtype":"N", "op":"c"}
+  ]},
+  {"id":"Meter","name":"$Meter", "props":[
+    {"prop":"value", "name":"$Value", "vtype":"B", "op":"r"}
+  ]}   
+]

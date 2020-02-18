@@ -15,7 +15,6 @@
   "devhard": { "folder": "jbasepath" },
   "devcurrent": { "folder": "operativepath" },
   "types": { "folder": "jbasepath" },
-  "typeprops": { "folder": "jbasepath" },
   "layouts": { "folder": "jbasepath" },
   "scripts": { "folder": "jbasepath" },
   "users": { "folder": "privatepath" },

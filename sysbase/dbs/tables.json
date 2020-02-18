@@ -16,7 +16,6 @@
     "defRootTitle": "Типы"
   },
   "type": { "store": "db", "collection": "types" },
-  "typeprops": { "store": "db", "collection": "typeprops"},
   "layoutgroup": {
     "store": "db",
     "collection": "lists",
