@@ -9,6 +9,7 @@
   "devprops": { "store": "db", "collection": "devprops"},
   "devhard": { "store": "db", "collection": "devhard"},
   "devcurrent": { "store": "db", "collection": "devcurrent"},
+
   "typegroup": {
     "store": "db",
     "collection": "lists",
@@ -30,8 +31,23 @@
     "defRootTitle": "Сценарии"
   },
   "script": { "store": "db", "collection": "scripts" },
-  "datasourcegroup": { "store": "db", "collection": "lists", "filter": { "list": "datasourcegroup" } },
-  "datasource": { "store": "db", "collection": "datasources" },
+
+  "plugingroup": {
+    "store": "db",
+    "collection": "lists",
+    "filter": { "list": "plugingroup" },
+    "defRootTitle": "Плагины"
+  },
+
+  "snippetroup": {
+    "store": "db",
+    "collection": "lists",
+    "filter": { "list": "snippetroup" },
+    "defRootTitle": "Сниппеты"
+  },
+
+  "units": { "store": "db", "collection": "units" },
+  "snippets": { "store": "db", "collection": "snippets" },
   "user": { "store": "db", "collection": "users" },
   "token": { "store": "db", "collection": "tokens" }
 }

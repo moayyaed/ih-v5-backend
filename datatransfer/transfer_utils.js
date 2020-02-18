@@ -63,11 +63,12 @@ function formRecord(source, target, item) {
       robj = { _id: item.id, list: 'typegroup', parent: 'typegroup', order: item.order, name: item.name };
       break;
 
-    /* case 'types':
-      robj = { _id: 't' + item.id, parent: item.cl, order: item.order, name: item.name };
-      // Добавить props
+    case 'units':
+      robj = {_id:item.id, parent:item.plugin};
+      Object.keys(item).forEach(prop => {
+        if (!prop.endsWith('_')) robj[prop] = item[prop];
+      });
       break;
-     */
 
     default:
       robj = '';

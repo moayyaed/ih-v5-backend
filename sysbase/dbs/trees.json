@@ -31,14 +31,26 @@
       "propmap": { "_id": "id", "name": "title", "level": "parent", "order": "order" }
     }
   },
-  "datasource": {
+  "datasource": ["plugins"],
+  "plugins":{
     "branch": {
-      "table": "datasourcegroup",
+      "table": "plugingroup",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     },
     "leaf": {
-      "table": "datasource",
-      "propmap": { "_id": "id", "name": "title", "level": "parent", "order": "order" }
+      "table": "units",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+    }
+  },
+
+  "snippets":{
+    "branch": {
+      "table": "snippetgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+    },
+    "leaf": {
+      "table": "snippets",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     }
   }
 }

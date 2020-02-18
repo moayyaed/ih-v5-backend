@@ -48,8 +48,10 @@ let project_d;
   // transfer('devref', 'devices', 'jbase');
   // transfer('spaces', 'lists', 'jbase');
   // transfer('layouts', 'layouts', 'jbase');
+  // transfer('units', 'units', 'jbase');
+  createPluginGroups();
 
-  create('types', 'jbase');
+  // create('types', 'jbase');
   // create('devprops', 'jbase');
   // create('devhard', 'jbase');
   // create('devcurrent', 'operative');
@@ -131,6 +133,36 @@ function getSourceData(source, folder) {
   // Считать файл из проекта
   const cfilename = path.join(project_c, folder, source + '.json');
   return JSON.parse(fs.readFileSync(cfilename, 'utf8'));
+}
+
+function createPluginGroups() {
+  try {
+    // Считать файл units
+    const data = getSourceData('units', 'jbase');
+
+    // Выбрать уникальные плагины
+    const plSet = new Set();
+    data.forEach(item => {
+      plSet.add(item.plugin);
+    });
+
+    let str = '';
+    let order = 100;
+    for (const plugin of plSet) {
+      str += JSON.stringify({_id: plugin, list:'plugingroup', parent:'plugingroup', order, name:plugin.toUpperCase()}) + '\n';
+      order += 100;
+    }
+  
+
+    // Записать в файл
+    const dfilename = path.join(project_d, 'jbase',   'lists.db');
+
+    fs.appendFileSync(dfilename, str);
+    console.log(str);
+    console.log('Data was appended to file' + dfilename + '. Str len=' + str.length);
+  } catch (e) {
+    console.log(util.inspect(e));
+  }
 }
 
 // auxiliary - вспомогательный, добавочный, дополнительный
