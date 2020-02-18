@@ -3,5 +3,5 @@
     { "id": "tabPluginCommon", "title": "Экземпляр плагина", "component": [{ "id": "formPluginCommon", "type": "form" }] }
   ],
 
-  "defaultTab": "tabluginCommon"
+  "defaultTab": "tabPluginCommon"
 }
