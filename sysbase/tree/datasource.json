@@ -76,40 +76,5 @@
       },
       "defaultComponent": "pluginview"
     }
-  },
-  "snippets": {
-    "parent": {
-      "popup": {
-        "main": [
-          { "id": "1", "type": "divider", "title": "Add" },
-          { "id": "2", "type": "item", "text": "New folder" },
-          { "id": "3", "type": "item", "text": "Duplicate", "label": "⌘A" },
-          { "id": "4", "type": "item", "text": "New type" },
-
-          { "id": "5", "type": "divider", "title": "Edit" },
-
-          { "id": "6", "type": "item", "icon": "clipboard", "text": "Rename", "command": "rename", "label": "⌘R" },
-
-          { "id": "7", "type": "item", "text": "Delete", "label": "⌘D" }
-        ]
-      },
-      "defaultComponent": "snippetfolder"
-    },
-    "child": {
-      "popup": {
-        "main": [
-          { "id": "1", "type": "divider", "title": "Add" },
-          { "id": "2", "type": "item", "text": "New type" },
-          { "id": "3", "type": "item", "text": "Duplicate", "label": "⌘A" },
-
-          { "id": "4", "type": "divider", "title": "Edit" },
-
-          { "id": "5", "type": "item", "icon": "clipboard", "text": "Rename", "command": "rename", "label": "⌘R" },
-
-          { "id": "6", "type": "item", "text": "Delete", "label": "⌘D" }
-        ]
-      },
-      "defaultComponent": "snippetview"
-    }
   }
 }
