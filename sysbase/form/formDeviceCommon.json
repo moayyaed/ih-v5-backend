@@ -1,7 +1,7 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table":"device" },
-    { "id": "p2", "xs": 6, "class": "main", "table":"device" },
+    { "id": "p1", "xs": 6, "class": "main", "table": "device" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "device" },
     { "id": "p3", "xs": 12, "class": "main" }
   ],
   "spacing": 10,
@@ -9,9 +9,22 @@
   "p1": [
     { "prop": "dn", "title": "$Dev_Id", "type": "string" },
     { "prop": "name", "title": "$Name", "type": "string" },
-    { "prop": "type", "title": "$Dev_Type", "type": "droplist", "data":"typeList" },
+    { "prop": "type", "title": "$Dev_Type", "type": "droplist", "data": "typeList" },
     { "prop": "parent_name", "title": "$Place", "type": "string", "readonly": true }
   ],
   "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
-  "p3": [{"title": "$DeviceProperty", "type": "table", "id":"devicecommonTable" }]
+  "p3": [
+    {
+      "title": "$DeviceProperty",
+      "type": "table",
+      "id": "devicecommonTable",
+      "columns": [
+        { "prop": "prop", "title": "$DeviceProperty", "type": "string" },
+        { "prop": "min", "title": "Min", "type": "number" },
+        { "prop": "max", "title": "Max", "type": "number" },
+        { "prop": "dig", "title": "$Decdig", "type": "number" },
+        { "prop": "mu", "title": "$Dev_Mu", "type": "string" }
+      ]
+    }
+  ]
 }
