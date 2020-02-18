@@ -1,6 +1,6 @@
 {
   "typeList": {
     "table": "type",
-    "propmap": { "_id": "id", "name": "label" }
+    "propmap": { "_id": "id", "name": "title" }
   }
 }
