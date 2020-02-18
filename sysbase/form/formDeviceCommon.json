@@ -17,7 +17,8 @@
     {
       "title": "$DeviceProperty",
       "type": "table",
-      "id": "devicecommonTable",
+      "prop": "devicecommonTable",
+      
       "columns": [
         { "prop": "prop", "title": "$DeviceProperty", "type": "string" },
         { "prop": "min", "title": "Min", "type": "number" },
