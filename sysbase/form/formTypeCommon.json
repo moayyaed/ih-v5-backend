@@ -18,10 +18,11 @@
       "prop": "typepropsTable",
 
       "columns": [
-        { "prop": "prop", "title": "$DeviceProperty", "type": "string" },
+        { "prop": "prop", "title": "$Devprop_Id", "type": "string" },
+        { "prop": "name", "title": "$Name", "type": "string" },
         {
           "prop": "vtype",
-          "title": "Var type",
+          "title": "$Devprop_Type",
           "type": "droplist",
           "data": [
             { "id": "B", "label": "Boolean" },
@@ -31,7 +32,7 @@
         },
         {
           "prop": "op",
-          "title": "Oper",
+          "title": "$Operations",
           "type": "droplist",
           "data": [
             { "id": "r", "label": "Read only" },
