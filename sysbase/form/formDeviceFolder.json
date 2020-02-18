@@ -1,7 +1,7 @@
 {
   "grid": [
     { "id": "p1", "xs": 12, "class": "main", "table": "place" },
-    { "id": "p2", "xs": 12, "class": "main", "table": "place" }
+    { "id": "p2", "xs": 12, "class": "main", "table": "place", "hight":250 }
   ],
   "spacing": 10,
 
