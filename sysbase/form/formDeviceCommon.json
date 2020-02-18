@@ -2,7 +2,7 @@
   "grid": [
     { "id": "p1", "xs": 6, "class": "main", "table": "device" },
     { "id": "p2", "xs": 6, "class": "main", "table": "device" },
-    { "id": "p3", "xs": 12, "class": "main" }
+    { "id": "p3", "xs": 12, "class": "main", "hight":250 }
   ],
   "spacing": 10,
 
