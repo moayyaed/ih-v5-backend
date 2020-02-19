@@ -7,8 +7,8 @@
   "spacing": 10,
 
   "p1": [
-    { "prop": "_id", "title": "ID", "type": "string", "readonly": true },
-    { "prop": "name", "title": "$Name", "type": "string" }
+    { "prop": "_id", "title": "ID", "type": "input", "readonly": true },
+    { "prop": "name", "title": "$Name", "type": "input" }
   ],
   "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
   "p3": [
@@ -18,8 +18,8 @@
       "prop": "typepropsTable",
 
       "columns": [
-        { "prop": "prop", "title": "$Devprop_Id", "type": "string" },
-        { "prop": "name", "title": "$Name", "type": "string" },
+        { "prop": "prop", "title": "$Devprop_Id", "type": "input" },
+        { "prop": "name", "title": "$Name", "type": "input" },
         {
           "prop": "vtype",
           "title": "$Devprop_Type",
@@ -45,7 +45,7 @@
         { "prop": "min", "title": "Min", "type": "number" },
         { "prop": "max", "title": "Max", "type": "number" },
         { "prop": "dig", "title": "$Decdig", "type": "number" },
-        { "prop": "mu", "title": "$Dev_Mu", "type": "string" }
+        { "prop": "mu", "title": "$Dev_Mu", "type": "input" }
       ]
     }
   ]

@@ -1,22 +1,12 @@
 {
-  "properties": {
-    "id": {
-      "order": 0,
-      "name": "ID",
-      "type": "STRING",
-      "disabled": "id"
-    },
-    "name": {
-      "order": 1,
-      "name": "$Name",
-      "type": "STRING"
-    },
-    "txt": {
-      "order": 2,
-      "name": "$Comment",
-      "type": "STRING"
-    }
-  },
-  "table":"layoutgroup",
-  "default":{"name":"New folder", "txt":""}
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "layoutgroup" },
+    { "id": "p2", "xs": 12, "class": "main", "table": "layoutgroup", "height":250 }
+  ],
+  "spacing": 10,
+
+  "p1": [{ "prop": "name", "title": "$Name", "type": "input" }],
+  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
 }
+
+  

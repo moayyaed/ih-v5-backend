@@ -5,6 +5,6 @@
   ],
   "spacing": 10,
 
-  "p1": [{ "prop": "name", "title": "$Name", "type": "string" }],
+  "p1": [{ "prop": "name", "title": "$Name", "type": "input" }],
   "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
 }
