@@ -10,6 +10,7 @@
     { "prop": "dn", "title": "$Dev_Id", "type": "input" },
     { "prop": "name", "title": "$Name", "type": "input" },
     { "prop": "type", "title": "$Dev_Type", "type": "droplist", "data": "typeList" },
+    { "prop": "test", "title": "Test Static Droplist", "type": "droplist", "data": [{"id":"1", "title":"Раз"},{"id":"2", "title":"Два"},{"id":"3", "title":"Три"} ]},
     { "prop": "parent_name", "title": "$Place", "type": "text" }
   ],
   "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
