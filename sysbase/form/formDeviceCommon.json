@@ -20,15 +20,15 @@
       "prop": "devicecommonTable",
       
       "columns": [
-        { "prop": "prop", "title": "$DeviceProperty", "type": "input", "readonly": true },
+        { "prop": "prop", "title": "$DeviceProperty", "type": "text" },
         { "prop": "min", "title": "Min", "type": "number" },
         { "prop": "max", "title": "Max", "type": "number" },
         { "prop": "dig", "title": "$Decdig", "type": "number" },
         { "prop": "mu", "title": "$Dev_Mu", "type": "input" },
-        { "prop": "unit", "title": "$Plugin", "type": "text", "readonly": true },
-        { "prop": "chan", "title": "$Channel", "type": "text", "readonly": true },
-        { "prop": "val", "title": "$Value", "type": "number", "readonly": true },
-        { "prop": "ts", "title": "$Time", "type": "text", "readonly": true }
+        { "prop": "unit", "title": "$Plugin", "type": "text"  },
+        { "prop": "chan", "title": "$Channel", "type": "dialog", "dialogId": "dialogChannel" },
+        { "prop": "val", "title": "$Value", "type": "text" },
+        { "prop": "ts", "title": "$Time", "type": "text" }
       ]
     }
   ]

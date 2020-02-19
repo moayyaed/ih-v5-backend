@@ -64,7 +64,7 @@ function formRecord(source, target, item) {
       break;
 
     case 'units':
-      robj = {_id:item.id, parent:item.plugin};
+      robj = {_id:item.id, parent:'plugin_'+item.plugin};
       Object.keys(item).forEach(prop => {
         if (!prop.endsWith('_')) robj[prop] = item[prop];
       });

@@ -48,8 +48,8 @@ let project_d;
   // transfer('devref', 'devices', 'jbase');
   // transfer('spaces', 'lists', 'jbase');
   // transfer('layouts', 'layouts', 'jbase');
-  // transfer('units', 'units', 'jbase');
-  createPluginGroups();
+  transfer('units', 'units', 'jbase');
+  // createPluginGroups();
 
   // create('types', 'jbase');
   // create('devprops', 'jbase');
@@ -149,7 +149,7 @@ function createPluginGroups() {
     let str = '';
     let order = 100;
     for (const plugin of plSet) {
-      str += JSON.stringify({_id: plugin, list:'plugingroup', parent:'plugingroup', order, name:plugin.toUpperCase()}) + '\n';
+      str += JSON.stringify({_id: 'plugin_'+plugin, list:'plugingroup', parent:'plugingroup', order, name:plugin.toUpperCase()}) + '\n';
       order += 100;
     }
   
