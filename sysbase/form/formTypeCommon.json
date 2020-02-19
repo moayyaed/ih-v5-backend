@@ -25,9 +25,9 @@
           "title": "$Devprop_Type",
           "type": "droplist",
           "data": [
-            { "id": "B", "label": "Boolean" },
-            { "id": "N", "label": "Number" },
-            { "id": "S", "label": "String" }
+            { "id": "B", "title": "Boolean" },
+            { "id": "N", "title": "Number" },
+            { "id": "S", "title": "String" }
           ]
         },
         {
@@ -35,11 +35,11 @@
           "title": "$Operations",
           "type": "droplist",
           "data": [
-            { "id": "r", "label": "Read only" },
-            { "id": "rw", "label": "Read/Write" },
-            { "id": "w", "label": "Write only" },
-            { "id": "c", "label": "Calculate" },
-            { "id": "S", "label": "String" }
+            { "id": "r", "title": "Read only" },
+            { "id": "rw", "title": "Read/Write" },
+            { "id": "w", "title": "Write only" },
+            { "id": "c", "title": "Calculate" },
+            { "id": "S", "title": "String" }
           ]
         },
         { "prop": "min", "title": "Min", "type": "number" },
