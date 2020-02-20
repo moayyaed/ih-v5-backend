@@ -18,8 +18,8 @@
       "prop": "typepropsTable",
 
       "columns": [
-        { "prop": "prop", "title": "$Devprop_Id", "type": "input" },
-        { "prop": "name", "title": "$Name", "type": "input" },
+        { "prop": "prop", "title": "$Devprop_Id", "type": "input", "width":150 },
+        { "prop": "name", "title": "$Name", "type": "input", "width":250 },
         {
           "prop": "vtype",
           "title": "$Devprop_Type",
@@ -28,7 +28,8 @@
             { "id": "B", "title": "Boolean" },
             { "id": "N", "title": "Number" },
             { "id": "S", "title": "String" }
-          ]
+          ],
+          "width":100
         },
         {
           "prop": "op",
@@ -40,12 +41,13 @@
             { "id": "w", "title": "Write only" },
             { "id": "c", "title": "Calculate" },
             { "id": "S", "title": "String" }
-          ]
+          ],
+          "width":100
         },
-        { "prop": "min", "title": "Min", "type": "number" },
-        { "prop": "max", "title": "Max", "type": "number" },
-        { "prop": "dig", "title": "$Decdig", "type": "number" },
-        { "prop": "mu", "title": "$Dev_Mu", "type": "input" }
+        { "prop": "min", "title": "Min", "type": "number", "width":50 },
+        { "prop": "max", "title": "Max", "type": "number", "width":50 },
+        { "prop": "dig", "title": "$Decdig", "type": "number", "width":100 },
+        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width":100 }
       ]
     }
   ]
