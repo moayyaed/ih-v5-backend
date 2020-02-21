@@ -17,6 +17,7 @@
     "defRootTitle": "Типы"
   },
   "type": { "store": "db", "collection": "types" },
+  "typepropsTable": { "store": "virt", "collection": "types", "genfield":"props" },
   "layoutgroup": {
     "store": "db",
     "collection": "lists",
