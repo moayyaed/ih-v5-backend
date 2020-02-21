@@ -48,11 +48,11 @@ let project_d;
   // transfer('devref', 'devices', 'jbase');
   // transfer('spaces', 'lists', 'jbase');
   // transfer('layouts', 'layouts', 'jbase');
-  transfer('units', 'units', 'jbase');
+  // transfer('units', 'units', 'jbase');
   // createPluginGroups();
 
   // create('types', 'jbase');
-  // create('devprops', 'jbase');
+  create('devprops', 'jbase');
   // create('devhard', 'jbase');
   // create('devcurrent', 'operative');
 

@@ -151,21 +151,21 @@ function createDevprops(devrefData, project_d) {
 
 function formPropRecord(did, item) {
   const pobj = { _id: did };
-  const aux = [];
-  const vObj = { prop: 'value', mu: item.mu || '', db: item.db ? 1 : 0 };
+  const aux = {};
+  const vObj = {  mu: item.mu || '', db: item.db ? 1 : 0 };
 
   if (isAnalog(item)) {
     vObj.min = item.min != undefined ? item.min : null;
     vObj.max = item.max != undefined ? item.max : null;
     vObj.dig = item.decdig || 0;
   }
-  aux.push(vObj);
+  aux.value = vObj;
 
   if (isAnalog(item)) {
-    const sObj = { prop: 'setpoint', mu: item.mu || '' };
+    const sObj = { mu: item.mu || '' };
     sObj.min = item.min != undefined ? item.min : null;
     sObj.max = item.max != undefined ? item.max : null;
-    aux.push(sObj);
+    aux.setpoint = sObj;
   }
 
   pobj.aux = aux;
