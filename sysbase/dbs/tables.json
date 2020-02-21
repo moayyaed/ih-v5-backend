@@ -9,7 +9,7 @@
   "devprops": { "store": "db", "collection": "devprops"},
   "devhard": { "store": "db", "collection": "devhard"},
   "devcurrent": { "store": "db", "collection": "devcurrent"},
-
+  "devicecommonTable":{ "store": "virt", "collection": "devprops", "genfield":"aux" },
   "typegroup": {
     "store": "db",
     "collection": "lists",
