@@ -1,0 +1,7 @@
+{
+  "tabs": [
+    { "id": "tabReportCommon", "title": "Отчет", "component": [{ "id": "formReportCommon", "type": "form" }] }
+   
+  ],
+  "defaultTab": "tabReportCommon"
+}

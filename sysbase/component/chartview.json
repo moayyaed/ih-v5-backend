@@ -1,0 +1,7 @@
+{
+  "tabs": [
+    { "id": "tabChartCommon", "title": "График", "component": [{ "id": "formChartCommon", "type": "form" }] }
+   
+  ],
+  "defaultTab": "tabChartCommon"
+}
