@@ -49,6 +49,24 @@
 
   "units": { "store": "db", "collection": "units" },
   "snippets": { "store": "db", "collection": "snippets" },
+
+  "chartgroup": {
+    "store": "db",
+    "collection": "lists",
+    "filter": { "list": "chartgroup" },
+    "defRootTitle": "Графики"
+  },
+
+  "reportgroup": {
+    "store": "db",
+    "collection": "lists",
+    "filter": { "list": "reportgroup" },
+    "defRootTitle": "Отчеты"
+  },
+
+  "charts": { "store": "db", "collection": "charts" },
+  "reports": { "store": "db", "collection": "reports" },
+
   "user": { "store": "db", "collection": "users" },
   "token": { "store": "db", "collection": "tokens" }
 }

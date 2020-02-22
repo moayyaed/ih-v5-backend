@@ -8,6 +8,33 @@ const path = require('path');
 const hut = require('../lib/utils/hut');
 const appconfig = require('../lib/appconfig');
 
+function createFromMainAndSlave(main, slave, linkname, parent) {
+  let str = '';
+  // Сформировать по chartid (repid) 
+  const slaveObj = {};
+  let order = 1;
+  slave.forEach(item => {
+    const mainid = item[linkname];
+    if (!slaveObj[mainid]) slaveObj[mainid] = {};
+    delete item.id;
+    slaveObj[mainid]['p'+order] = item;
+    order++;
+  });
+
+  main.forEach(item => {
+    const id = item.id;
+    delete item.id;
+    const slaveItem = slaveObj[id];
+    str += formСombinedRecord(String(id), item, slaveItem, parent);
+  });
+  return str;
+}
+
+function formСombinedRecord(_id, item, slaveItem, parent) {
+  const pobj = Object.assign({ _id, parent }, item, {props:slaveItem} );
+  return JSON.stringify(pobj) + '\n';
+}
+
 function getRootItem(source) {
   let robj = {};
   switch (source) {
@@ -38,7 +65,6 @@ function formRecord(source, target, item) {
       break;
 
     case 'devref':
-     
       parent = item.place ? 'p' + item.place + (item.room ? 'r' + item.room : '') : 'place';
       robj = {
         _id: 'd' + item.id,
@@ -64,7 +90,7 @@ function formRecord(source, target, item) {
       break;
 
     case 'units':
-      robj = {_id:item.id, parent:'plugin_'+item.plugin};
+      robj = { _id: item.id, parent: 'plugin_' + item.plugin };
       Object.keys(item).forEach(prop => {
         if (!prop.endsWith('_')) robj[prop] = item[prop];
       });
@@ -105,7 +131,6 @@ function createTypes() {
       str += JSON.stringify(pobj) + '\n';
     });
     */
-
   });
   return str;
 }
@@ -152,7 +177,7 @@ function createDevprops(devrefData, project_d) {
 function formPropRecord(did, item) {
   const pobj = { _id: did };
   const aux = {};
-  const vObj = {  mu: item.mu || '', db: item.db ? 1 : 0 };
+  const vObj = { mu: item.mu || '', db: item.db ? 1 : 0 };
 
   if (isAnalog(item)) {
     vObj.min = item.min != undefined ? item.min : null;
@@ -252,13 +277,12 @@ function createDevhard(devhardData, project_d) {
   const complexMap = new Map();
   devhardData.forEach(item => {
     if (item.dn && item.unit) {
-      
       if (item.complex) {
         // Нужно собрать по одному устройству - dval, on/off
         // {"id":"896","prop":"off","unit":"wip5","dn":"H306","complex":true,"value":"1","desc":"DO",""chan":"_off_H306_PL31","calc":"","nofb":false,"op":"W"},
         // {"id":"941","prop":"dval","unit":"wip5","dn":"H306","complex":true,"value":"","desc":"DI","chan":"_r_H306_PL31","calc":"","nofb":false,"op":"R"},
         // {"id":"943","prop":"on","unit":"wip5","dn":"H306","complex":true,"value":"1","desc":"DO","chan":"_on_H306_PL31","calc":"","nofb":false,"op":"W"},
-        if (!complexMap.has(item.dn))  complexMap.set(item.dn, []);
+        if (!complexMap.has(item.dn)) complexMap.set(item.dn, []);
         complexMap.get(item.dn).push(item);
       } else {
         // Найдем id устройства по dn
@@ -275,7 +299,7 @@ function createDevhard(devhardData, project_d) {
   });
 
   // Сформировать из комплексных каналов ( wip)
-  
+
   return str;
 }
 
@@ -379,6 +403,7 @@ function isAnalog(item) {
 }
 
 module.exports = {
+  createFromMainAndSlave,
   getRootItem,
   formRecord,
   getSysDataFile,

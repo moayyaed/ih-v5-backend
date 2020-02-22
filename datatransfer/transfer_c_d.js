@@ -52,9 +52,11 @@ let project_d;
   // createPluginGroups();
 
   // create('types', 'jbase');
-  create('devprops', 'jbase');
+  // create('devprops', 'jbase');
   // create('devhard', 'jbase');
   // create('devcurrent', 'operative');
+  create('charts', 'jbase');
+  create('reports', 'jbase');
 
   rl.close();
 })();
@@ -112,6 +114,23 @@ function create(target, folder) {
       case 'devcurrent':
         str = tut.createDevcurrent(getSourceData('devcurrent', folder), project_d);
         break;
+
+      case 'charts':
+        str = tut.createFromMainAndSlave(
+          getSourceData('chartlist', folder),
+          getSourceData('charts', folder),
+          'chartid',
+          'chartgroup'
+        );
+        break;
+        case 'reports':
+          str = tut.createFromMainAndSlave(
+            getSourceData('reportlist', folder),
+            getSourceData('reportcolumns', folder),
+            'repid',
+            'reportgroup'
+          );
+          break;
       default:
     }
 
@@ -149,13 +168,19 @@ function createPluginGroups() {
     let str = '';
     let order = 100;
     for (const plugin of plSet) {
-      str += JSON.stringify({_id: 'plugin_'+plugin, list:'plugingroup', parent:'plugingroup', order, name:plugin.toUpperCase()}) + '\n';
+      str +=
+        JSON.stringify({
+          _id: 'plugin_' + plugin,
+          list: 'plugingroup',
+          parent: 'plugingroup',
+          order,
+          name: plugin.toUpperCase()
+        }) + '\n';
       order += 100;
     }
-  
 
     // Записать в файл
-    const dfilename = path.join(project_d, 'jbase',   'lists.db');
+    const dfilename = path.join(project_d, 'jbase', 'lists.db');
 
     fs.appendFileSync(dfilename, str);
     console.log(str);

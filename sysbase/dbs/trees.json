@@ -52,5 +52,26 @@
       "table": "snippets",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     }
-  }
+  },
+  "analytics":["charts","reports"],
+  "charts":{
+    "branch": {
+      "table": "chartgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+    },
+    "leaf": {
+      "table": "charts",
+      "propmap": { "_id": "id", "id": "title", "parent": "parent", "order": "order" }
+    }
+  },
+  "reports":{
+    "branch": {
+      "table": "reportgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+    },
+    "leaf": {
+      "table": "reports",
+      "propmap": { "_id": "id", "id": "title", "parent": "parent", "order": "order" }
+    }
+  },
 }
