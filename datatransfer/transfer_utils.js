@@ -12,17 +12,21 @@ function createFromMainAndSlave(main, slave, linkname, parent) {
   let str = '';
   // Сформировать по chartid (repid) 
   const slaveObj = {};
-  let order = 1;
+  let pn = 1;
+ 
   slave.forEach(item => {
     const mainid = item[linkname];
     if (!slaveObj[mainid]) slaveObj[mainid] = {};
     delete item.id;
-    slaveObj[mainid]['p'+order] = item;
-    order++;
+    slaveObj[mainid]['p'+pn] = item;
+    pn++;
   });
 
+  let order = 100;
   main.forEach(item => {
     const id = item.id;
+    item.order = order;
+    order += 100;
     delete item.id;
     const slaveItem = slaveObj[id];
     str += formСombinedRecord(String(id), item, slaveItem, parent);

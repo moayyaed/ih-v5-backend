@@ -61,7 +61,7 @@
     },
     "leaf": {
       "table": "charts",
-      "propmap": { "_id": "id", "id": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     }
   },
   "reports":{
@@ -71,7 +71,7 @@
     },
     "leaf": {
       "table": "reports",
-      "propmap": { "_id": "id", "id": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     }
-  },
+  }
 }

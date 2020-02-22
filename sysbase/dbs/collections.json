@@ -21,6 +21,9 @@
   "types": { "folder": "jbasepath" },
   "layouts": { "folder": "jbasepath" },
   "scripts": { "folder": "jbasepath" },
+  "charts": { "folder": "jbasepath" },
+  "reports": { "folder": "jbasepath" },
+
   "users": { "folder": "privatepath" },
   "tokens": { "folder": "privatepath" }
 }
