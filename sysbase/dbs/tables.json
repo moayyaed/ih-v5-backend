@@ -65,6 +65,8 @@
   },
 
   "charts": { "store": "db", "collection": "charts" },
+  "chartTable":{ "store": "virt", "collection": "charts", "genfield":"props" },
+  
   "reports": { "store": "db", "collection": "reports" },
 
   "user": { "store": "db", "collection": "users" },
