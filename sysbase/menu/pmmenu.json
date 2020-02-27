@@ -1,10 +1,10 @@
 [
-  { "id": "1", "route": "dev", "title": "$Devices", "tooltip": "$Devices", "icon": "" },
-  { "id": "2", "route": "vis", "title": "$VISUALIZATION", "tooltip": "$VISUALIZATION", "icon": "" },
-  { "id": "3", "route": "scripts", "title": "$Scenes", "tooltip": "$Scenes", "icon": "" },
-  { "id": "4", "route": "datasource", "title": "$DATASOURCE", "tooltip": "$DATASOURCE", "icon": "" },
-  { "id": "6", "route": "analytics", "title": "$ANALYTICS", "tooltip": "$ANALYTICS", "icon": "" },
-  { "id": "7", "route": "access", "title": "$ACCESS", "tooltip": "$ACCESS", "icon": "" },
-  { "id": "8", "route": "database", "title": "$DB", "tooltip": "$DB", "icon": "" },
-  { "id": "9", "route": "resources", "title": "$Resources", "tooltip": "$Resources", "icon": "" }
+  { "id": "1", "route": "dev", "title": "$Devices", "tooltip": "$Devices", "icon": "dev" },
+  { "id": "2", "route": "vis", "title": "$VISUALIZATION", "tooltip": "$VISUALIZATION", "icon": "vis" },
+  { "id": "3", "route": "scripts", "title": "$Scenes", "tooltip": "$Scenes", "icon": "scripts" },
+  { "id": "4", "route": "datasource", "title": "$DATASOURCE", "tooltip": "$DATASOURCE", "icon": "datasource" },
+  { "id": "6", "route": "analytics", "title": "$ANALYTICS", "tooltip": "$ANALYTICS", "icon": "analytics" },
+  { "id": "7", "route": "access", "title": "$ACCESS", "tooltip": "$ACCESS", "icon": "access" },
+  { "id": "8", "route": "database", "title": "$DB", "tooltip": "$DB", "icon": "database" },
+  { "id": "9", "route": "resources", "title": "$Resources", "tooltip": "$Resources", "icon": "resources" }
 ]
