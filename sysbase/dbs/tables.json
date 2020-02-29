@@ -5,19 +5,37 @@
     "filter": { "list": "place" },
     "defRootTitle": "Все"
   },
-  "device": { "store": "db", "collection": "devices"},
-  "devprops": { "store": "db", "collection": "devprops"},
-  "devhard": { "store": "db", "collection": "devhard"},
-  "devcurrent": { "store": "db", "collection": "devcurrent"},
-  "devicecommonTable":{ "store": "virt", "collection": "devprops", "genfield":"aux" },
+  "device": { "store": "db", "collection": "devices" },
+  "devprops": { "store": "db", "collection": "devprops", "genfield": "aux" },
+  "devhard": { "store": "db", "collection": "devhard" },
+  "devcurrent": { "store": "db", "collection": "devcurrent" },
+  "devicecommonTable": { "store": "virt", "collection": "devprops", "genfield": "aux" },
   "typegroup": {
     "store": "db",
     "collection": "lists",
     "filter": { "list": "typegroup" },
     "defRootTitle": "Типы"
   },
-  "type": { "store": "db", "collection": "types" },
-  "typepropsTable": { "store": "virt", "collection": "types", "genfield":"props" },
+
+  "type": {
+    "store": "db",
+    "collection": "types",
+    "genfield": "props",
+
+    "validator": {
+      "main": {
+        "name": { "required": true, "empty": false, "description": "must be not empty string" }
+      },
+      "props": {
+        "name": { "required": true, "type": "string", "empty": false, "description": "must be not empty string" },
+        "vtype": { "required": true, "type": "string", "empty": false, "description": "must be not empty string" },
+        "op": { "required": true, "type": "string", "empty": false, "description": "must be not empty string" },
+        "min": { "type": "number", "description": "must be less than or equal to the max", "spec": "minmax" },
+        "max": { "type": "number", "description": "must be greater than or equal to the min", "spec": "minmax" }
+      }
+    }
+  },
+
   "layoutgroup": {
     "store": "db",
     "collection": "lists",
@@ -64,10 +82,9 @@
     "defRootTitle": "Отчеты"
   },
 
-  "charts": { "store": "db", "collection": "charts" },
-  "chartTable":{ "store": "virt", "collection": "charts", "genfield":"props" },
-  
-  "reports": { "store": "db", "collection": "reports" },
+  "charts": { "store": "db", "collection": "charts", "genfield": "props" },
+
+  "reports": { "store": "db", "collection": "reports", "genfield": "props" },
 
   "user": { "store": "db", "collection": "users" },
   "token": { "store": "db", "collection": "tokens" }

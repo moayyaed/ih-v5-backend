@@ -17,6 +17,7 @@
       "title": "Channels",
       "type": "table",
       "prop": "channelTable",
+      "table":"unitchannelsTable",
       
       "columns": [
        

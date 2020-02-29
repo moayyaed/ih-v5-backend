@@ -16,6 +16,7 @@
     {
       "title": "$Charts",
       "type": "table",
+      "table": "charts",
       "prop": "chartTable",
       
       "columns": [
