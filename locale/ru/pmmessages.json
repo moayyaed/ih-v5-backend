@@ -831,6 +831,9 @@
   { "id": "SnipPeriod", "note": "Период запуска сниппета" },
   { "id": "SnipDependencies", "note": "Зависимости сниппета" },
   { "id": "DATASOURCE", "note": "Источники данных" },
-  { "id": "ANALYTICS", "note": "Аналитика" }
+  { "id": "ANALYTICS", "note": "Аналитика" },
+  { "id": "mustBeNotEmptyString", "note": "строка не должна быть пустой" },
+  { "id": "mustBeLessToMax", "note": "значение не может быть меньше max" },
+  { "id": "mustBeGreaterToMin", "note": "значение не может быть больше min" }
 
 ]

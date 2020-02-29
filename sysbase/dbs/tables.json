@@ -24,14 +24,14 @@
 
     "validator": {
       "main": {
-        "name": { "required": true, "empty": false, "description": "must be not empty string" }
+        "name": { "required": true, "empty": false, "description": "$mustBeNotEmptyString" }
       },
       "props": {
-        "name": { "required": true, "type": "string", "empty": false, "description": "must be not empty string" },
-        "vtype": { "required": true, "type": "string", "empty": false, "description": "must be not empty string" },
-        "op": { "required": true, "type": "string", "empty": false, "description": "must be not empty string" },
-        "min": { "type": "number", "description": "must be less than or equal to the max", "spec": "minmax" },
-        "max": { "type": "number", "description": "must be greater than or equal to the min", "spec": "minmax" }
+        "name": { "required": true, "type": "string", "empty": false, "description": "$mustBeNotEmptyString" },
+        "vtype": { "required": true, "type": "string", "empty": false, "description": "$mustBeNotEmptyString" },
+        "op": { "required": true, "type": "string", "empty": false, "description": "$mustBeNotEmptyString" },
+        "min": { "type": "number", "description": "$mustBeLessToMax", "spec": "minmax" },
+        "max": { "type": "number", "description": "$mustBeGreaterToMin", "spec": "minmax" }
       }
     }
   },
