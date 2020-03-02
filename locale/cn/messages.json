@@ -203,5 +203,6 @@
   { "id": "SETPOINT", "note": "Setpoint" },
   { "id": "Block", "note": "Block" },
   { "id": "UnBlock", "note": "Unblock" },
-  { "id": "PluginDataUpload", "note": "Upload Plugin Data" }
+  { "id": "PluginDataUpload", "note": "Upload Plugin Data" },
+  { "id": "FailUpdate", "note": "Failed to save data!" }
 ]

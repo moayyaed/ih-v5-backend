@@ -3,18 +3,21 @@
     "store": "db",
     "collection": "lists",
     "filter": { "list": "place" },
-    "defRootTitle": "Все"
+    "defRootTitle": "Все",
+    "default": { "name": "New place" }
   },
-  "device": { "store": "db", "collection": "devices" },
-  "devprops": { "store": "db", "collection": "devprops", "genfield": "aux" },
+
+  "device": { "store": "db", "collection": "devices", "default": { "name": "Новое устройство" } },
+  "devprops": { "store": "db", "collection": "devprops", "genfield": "aux", "default": { "aux": {} } },
   "devhard": { "store": "db", "collection": "devhard" },
   "devcurrent": { "store": "db", "collection": "devcurrent" },
-  "devicecommonTable": { "store": "virt", "collection": "devprops", "genfield": "aux" },
+  "devicecommonTable": { "store": "db", "collection": "devprops", "genfield": "aux" },
   "typegroup": {
     "store": "db",
     "collection": "lists",
     "filter": { "list": "typegroup" },
-    "defRootTitle": "Типы"
+    "defRootTitle": "Типы",
+    "default": { "name": "Новая папка" }
   },
 
   "type": {
@@ -33,58 +36,66 @@
         "min": { "type": "number", "description": "$mustBeLessToMax", "spec": "minmax" },
         "max": { "type": "number", "description": "$mustBeGreaterToMin", "spec": "minmax" }
       }
-    }
+    },
+
+    "default": { "name": "New type", "props": { "value": { "name": "Значение", "vtype": "B", "op": "r" } } }
   },
 
   "layoutgroup": {
     "store": "db",
     "collection": "lists",
     "filter": { "list": "layoutgroup" },
-    "defRootTitle": "Экраны"
+    "defRootTitle": "Экраны",
+    "default": { "name": "Новая папка" }
   },
-  "layout": { "store": "db", "collection": "layouts" },
+  "layout": { "store": "db", "collection": "layouts", "default": { "name": "Новый экран" } },
   "scriptgroup": {
     "store": "db",
     "collection": "lists",
     "filter": { "list": "scriptgroup" },
-    "defRootTitle": "Сценарии"
+    "defRootTitle": "Сценарии",
+    "default": { "name": "Новая папка" }
   },
-  "script": { "store": "db", "collection": "scripts" },
+  "script": { "store": "db", "collection": "scripts", "default": { "name": "Новый сценарий" } },
 
   "plugingroup": {
     "store": "db",
     "collection": "lists",
     "filter": { "list": "plugingroup" },
-    "defRootTitle": "Плагины"
+    "defRootTitle": "Плагины",
+    "default": { "name": "Новая папка" }
   },
 
-  "snippetroup": {
+  "snippetgroup": {
     "store": "db",
     "collection": "lists",
     "filter": { "list": "snippetroup" },
-    "defRootTitle": "Сниппеты"
+    "defRootTitle": "Сниппеты",
+    "default": { "name": "Новая папка" }
   },
 
-  "units": { "store": "db", "collection": "units" },
-  "snippets": { "store": "db", "collection": "snippets" },
+  "units": { "store": "db", "collection": "units", "default": { "name": "Новый плагин" } },
+  "snippets": { "store": "db", "collection": "snippets", "default": { "name": "Новый сниппет" } },
 
   "chartgroup": {
     "store": "db",
     "collection": "lists",
     "filter": { "list": "chartgroup" },
-    "defRootTitle": "Графики"
+    "defRootTitle": "Графики",
+    "default": { "name": "Новая папка" }
   },
 
   "reportgroup": {
     "store": "db",
     "collection": "lists",
     "filter": { "list": "reportgroup" },
-    "defRootTitle": "Отчеты"
+    "defRootTitle": "Отчеты",
+    "default": { "name": "Новая папка" }
   },
 
-  "charts": { "store": "db", "collection": "charts", "genfield": "props" },
+  "charts": { "store": "db", "collection": "charts", "genfield": "props", "default": { "name": "Новый график" } },
 
-  "reports": { "store": "db", "collection": "reports", "genfield": "props" },
+  "reports": { "store": "db", "collection": "reports", "genfield": "props", "default": { "name": "Новый отчет" } },
 
   "user": { "store": "db", "collection": "users" },
   "token": { "store": "db", "collection": "tokens" }

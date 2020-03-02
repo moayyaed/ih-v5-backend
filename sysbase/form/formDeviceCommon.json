@@ -2,7 +2,7 @@
   "grid": [
     { "id": "p1", "xs": 6, "class": "main", "table": "device" },
     { "id": "p2", "xs": 6, "class": "main", "table": "device" },
-    { "id": "p3", "xs": 12, "class": "main", "height":250 }
+    { "id": "p3", "xs": 12, "class": "main", "table": "devicecommonTable", "height": 250 }
   ],
   "spacing": 10,
 
@@ -18,17 +18,17 @@
       "title": "$DeviceProperty",
       "type": "table",
       "prop": "devicecommonTable",
-      
+
       "columns": [
-        { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width":150},
-        { "prop": "min", "title": "Min", "type": "number", "width":50 },
-        { "prop": "max", "title": "Max", "type": "number", "width":50 },
-        { "prop": "dig", "title": "$Decdig", "type": "number", "width":50 },
-        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width":100 },
-        { "prop": "unit", "title": "$Plugin", "type": "text", "width":150  },
-        { "prop": "chan", "title": "$Channel", "type": "link", "width":150, "dialogId": "dialogChannel" },
-        { "prop": "val", "title": "$Value", "type": "text", "width":100 },
-        { "prop": "ts", "title": "$Time", "type": "text", "width":200 }
+        { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 150 },
+        { "prop": "min", "title": "Min", "type": "number", "width": 50 },
+        { "prop": "max", "title": "Max", "type": "number", "width": 50 },
+        { "prop": "dig", "title": "$Decdig", "type": "number", "width": 50 },
+        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 100 },
+        { "prop": "unit", "title": "$Plugin", "type": "text", "width": 150 },
+        { "prop": "chan", "title": "$Channel", "type": "link", "width": 150, "dialogId": "dialogChannel" },
+        { "prop": "val", "title": "$Value", "type": "text", "width": 100 },
+        { "prop": "ts", "title": "$Time", "type": "text", "width": 200 }
       ]
     }
   ]

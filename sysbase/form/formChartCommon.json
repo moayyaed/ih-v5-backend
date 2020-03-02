@@ -2,7 +2,7 @@
   "grid": [
     { "id": "p1", "xs": 6, "class": "main", "table": "charts" },
     { "id": "p2", "xs": 6, "class": "main", "table": "charts" },
-    { "id": "p3", "xs": 12, "class": "main", "height":250 }
+    { "id": "p3", "xs": 12, "class": "main", "table": "charts", "height":250 }
   
   ],
   "spacing": 10,
@@ -16,7 +16,6 @@
     {
       "title": "$Charts",
       "type": "table",
-      "table": "charts",
       "prop": "chartTable",
       
       "columns": [

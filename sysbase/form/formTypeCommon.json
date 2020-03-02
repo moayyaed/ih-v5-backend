@@ -2,7 +2,7 @@
   "grid": [
     { "id": "p1", "xs": 6, "class": "main", "table": "type" },
     { "id": "p2", "xs": 6, "class": "main", "table": "type" },
-    { "id": "p3", "xs": 12, "class": "main", "height": 250 }
+    { "id": "p3", "xs": 12, "class": "main", "table": "type", "height": 250 }
   ],
   "spacing": 10,
 
@@ -15,12 +15,11 @@
     {
       "title": "$DeviceProperty",
       "type": "table",
-      "table": "type",
       "prop": "typepropsTable",
 
       "columns": [
-        { "prop": "prop", "title": "$Devprop_Id", "type": "input", "width":150 },
-        { "prop": "name", "title": "$Name", "type": "input", "width":250 },
+        { "prop": "prop", "title": "$Devprop_Id", "type": "input", "width": 150 },
+        { "prop": "name", "title": "$Name", "type": "input", "width": 250 },
         {
           "prop": "vtype",
           "title": "$Devprop_Type",
@@ -30,7 +29,7 @@
             { "id": "N", "title": "Number" },
             { "id": "S", "title": "String" }
           ],
-          "width":100
+          "width": 100
         },
         {
           "prop": "op",
@@ -43,12 +42,12 @@
             { "id": "c", "title": "Calculate" },
             { "id": "S", "title": "String" }
           ],
-          "width":100
+          "width": 100
         },
-        { "prop": "min", "title": "Min", "type": "number", "width":50 },
-        { "prop": "max", "title": "Max", "type": "number", "width":50 },
-        { "prop": "dig", "title": "$Decdig", "type": "number", "width":100 },
-        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width":100 }
+        { "prop": "min", "title": "Min", "type": "number", "width": 50 },
+        { "prop": "max", "title": "Max", "type": "number", "width": 50 },
+        { "prop": "dig", "title": "$Decdig", "type": "number", "width": 100 },
+        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 100 }
       ]
     }
   ]

@@ -210,6 +210,7 @@
   { "id": "NoDeleteHardChannel", "note": "Для удаления используйте команды плагина!" },
 
   { "id": "dailyCleaning", "note": "Удалить старые таблицы из БД" },
-  { "id": "PluginDataUpload", "note": "Загрузить данные плагина" }
+  { "id": "PluginDataUpload", "note": "Загрузить данные плагина" },
+  { "id": "FailUpdate", "note": "Не удалось сохранить данные!" }
 
 ]

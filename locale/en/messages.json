@@ -208,5 +208,6 @@
   { "id": "NoDeleteHardChannel", "note": "Use the plugin commands!" },
 
   { "id": "dailyCleaning", "note": "Remove old tables from Database" },
-  { "id": "PluginDataUpload", "note": "Upload Plugin Data" }
+  { "id": "PluginDataUpload", "note": "Upload Plugin Data" },
+  { "id": "FailUpdate", "note": "Failed to save data!" }
 ]
