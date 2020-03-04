@@ -834,6 +834,9 @@
   { "id": "ANALYTICS", "note": "Аналитика" },
   { "id": "mustBeNotEmptyString", "note": "строка не должна быть пустой" },
   { "id": "mustBeLessToMax", "note": "значение не может быть меньше max" },
-  { "id": "mustBeGreaterToMin", "note": "значение не может быть больше min" }
+  { "id": "mustBeGreaterToMin", "note": "значение не может быть больше min" },
+  { "id": "NewFolder", "note": "Новая папка" },
+  { "id": "NewType", "note": "Новый тип" },
+  { "id": "NewDevice", "note": "Новое устройство" }
 
 ]

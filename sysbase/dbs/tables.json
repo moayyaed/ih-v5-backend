@@ -4,10 +4,10 @@
     "collection": "lists",
     "filter": { "list": "place" },
     "defRootTitle": "Все",
-    "default": { "name": "New place" }
+    "default": { "name": "$NewFolder" }
   },
 
-  "device": { "store": "db", "collection": "devices", "default": { "name": "Новое устройство" } },
+  "device": { "store": "db", "collection": "devices", "default": { "name": "$NewDevice" } },
   "devprops": { "store": "db", "collection": "devprops", "genfield": "aux", "default": { "aux": {} } },
   "devhard": { "store": "db", "collection": "devhard" },
   "devcurrent": { "store": "db", "collection": "devcurrent" },
@@ -17,7 +17,7 @@
     "collection": "lists",
     "filter": { "list": "typegroup" },
     "defRootTitle": "Типы",
-    "default": { "name": "Новая папка" }
+    "default": { "name": "$NewFolder" }
   },
 
   "type": {
@@ -38,7 +38,7 @@
       }
     },
 
-    "default": { "name": "New type", "props": { "value": { "name": "Значение", "vtype": "B", "op": "r" } } }
+    "default": { "name": "$NewType", "props": { "value": { "name": "Значение", "vtype": "B", "op": "r" } } }
   },
 
   "layoutgroup": {
@@ -46,7 +46,7 @@
     "collection": "lists",
     "filter": { "list": "layoutgroup" },
     "defRootTitle": "Экраны",
-    "default": { "name": "Новая папка" }
+    "default": { "name": "$NewFolder" }
   },
   "layout": { "store": "db", "collection": "layouts", "default": { "name": "Новый экран" } },
   "scriptgroup": {
@@ -54,7 +54,7 @@
     "collection": "lists",
     "filter": { "list": "scriptgroup" },
     "defRootTitle": "Сценарии",
-    "default": { "name": "Новая папка" }
+    "default": { "name": "$NewFolder" }
   },
   "script": { "store": "db", "collection": "scripts", "default": { "name": "Новый сценарий" } },
 
@@ -63,7 +63,7 @@
     "collection": "lists",
     "filter": { "list": "plugingroup" },
     "defRootTitle": "Плагины",
-    "default": { "name": "Новая папка" }
+    "default": { "name": "$NewFolder" }
   },
 
   "snippetgroup": {
@@ -71,7 +71,7 @@
     "collection": "lists",
     "filter": { "list": "snippetroup" },
     "defRootTitle": "Сниппеты",
-    "default": { "name": "Новая папка" }
+    "default": { "name": "$NewFolder" }
   },
 
   "units": { "store": "db", "collection": "units", "default": { "name": "Новый плагин" } },
@@ -82,7 +82,7 @@
     "collection": "lists",
     "filter": { "list": "chartgroup" },
     "defRootTitle": "Графики",
-    "default": { "name": "Новая папка" }
+    "default": { "name": "$NewFolder" }
   },
 
   "reportgroup": {
@@ -90,7 +90,7 @@
     "collection": "lists",
     "filter": { "list": "reportgroup" },
     "defRootTitle": "Отчеты",
-    "default": { "name": "Новая папка" }
+    "default": { "name": "$NewFolder" }
   },
 
   "charts": { "store": "db", "collection": "charts", "genfield": "props", "default": { "name": "Новый график" } },
