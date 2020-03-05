@@ -4,7 +4,8 @@
     "collection": "lists",
     "filter": { "list": "place" },
     "defRootTitle": "Все",
-    "default": { "name": "$NewFolder" }
+    "default": { "name": "$NewFolder" },
+    "ruleID":{"pref":"p", "len":4}
   },
 
   "device": { "store": "db", "collection": "devices", "default": { "name": "$NewDevice" } },
