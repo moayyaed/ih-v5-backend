@@ -4,7 +4,7 @@
     { "id": "p2", "xs": 12, "class": "main", "table": "place", "height":250 }
   ],
   "spacing": 10,
-  "breadcrumbs":"devices",
+  "breadcrumbs":{"tree":"devices","component":"devicefolder"},
 
   "p1": [{ "prop": "name", "title": "$Name", "type": "input" }],
   "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
