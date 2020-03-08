@@ -5,10 +5,15 @@
     "filter": { "list": "place" },
     "defRootTitle": "Все",
     "default": { "name": "$NewFolder" },
-    "ruleID":{"pref":"p", "len":4}
+    "ruleID": { "pref": "dg", "len": 3 }
   },
 
-  "device": { "store": "db", "collection": "devices", "default": { "name": "$NewDevice" } },
+  "device": {
+    "store": "db",
+    "collection": "devices",
+    "default": { "name": "$NewDevice" },
+    "ruleID": { "pref": "d", "len": 4 }
+  },
   "devprops": { "store": "db", "collection": "devprops", "genfield": "aux", "default": { "aux": {} } },
   "devhard": { "store": "db", "collection": "devhard" },
   "devcurrent": { "store": "db", "collection": "devcurrent" },
@@ -18,7 +23,8 @@
     "collection": "lists",
     "filter": { "list": "typegroup" },
     "defRootTitle": "Типы",
-    "default": { "name": "$NewFolder" }
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "tg", "len": 3 }
   },
 
   "type": {
@@ -39,7 +45,8 @@
       }
     },
 
-    "default": { "name": "$NewType", "props": { "value": { "name": "Значение", "vtype": "B", "op": "r" } } }
+    "default": { "name": "$NewType", "props": { "value": { "name": "Значение", "vtype": "B", "op": "r" } } },
+    "ruleID":{"pref":"t", "len":3}
   },
 
   "layoutgroup": {
@@ -47,24 +54,27 @@
     "collection": "lists",
     "filter": { "list": "layoutgroup" },
     "defRootTitle": "Экраны",
-    "default": { "name": "$NewFolder" }
+    "default": { "name": "$NewFolder" },
+    "ruleID":{"pref":"lg", "len":3}
   },
-  "layout": { "store": "db", "collection": "layouts", "default": { "name": "Новый экран" } },
+  "layout": { "store": "db", "collection": "layouts", "default": { "name": "Новый экран" },  "ruleID":{"pref":"l", "len":3} },
   "scriptgroup": {
     "store": "db",
     "collection": "lists",
     "filter": { "list": "scriptgroup" },
     "defRootTitle": "Сценарии",
-    "default": { "name": "$NewFolder" }
+    "default": { "name": "$NewFolder" },
+    "ruleID":{"pref":"sg", "len":3}
   },
-  "script": { "store": "db", "collection": "scripts", "default": { "name": "Новый сценарий" } },
+  "script": { "store": "db", "collection": "scripts", "default": { "name": "Новый сценарий" }, "ruleID":{"pref":"s", "len":3} },
 
   "plugingroup": {
     "store": "db",
     "collection": "lists",
     "filter": { "list": "plugingroup" },
     "defRootTitle": "Плагины",
-    "default": { "name": "$NewFolder" }
+    "default": { "name": "$NewFolder" },
+    "ruleID":{"pref":"pg", "len":3}
   },
 
   "snippetgroup": {
@@ -72,18 +82,20 @@
     "collection": "lists",
     "filter": { "list": "snippetroup" },
     "defRootTitle": "Сниппеты",
-    "default": { "name": "$NewFolder" }
+    "default": { "name": "$NewFolder" },
+    "ruleID":{"pref":"sng", "len":3}
   },
 
-  "units": { "store": "db", "collection": "units", "default": { "name": "Новый плагин" } },
-  "snippets": { "store": "db", "collection": "snippets", "default": { "name": "Новый сниппет" } },
+  "units": { "store": "db", "collection": "units", "default": { "name": "Новый плагин" }, "ruleID":{"pref":"u", "len":3} },
+  "snippets": { "store": "db", "collection": "snippets", "default": { "name": "Новый сниппет" }, "ruleID":{"pref":"sn", "len":3}  },
 
   "chartgroup": {
     "store": "db",
     "collection": "lists",
     "filter": { "list": "chartgroup" },
     "defRootTitle": "Графики",
-    "default": { "name": "$NewFolder" }
+    "default": { "name": "$NewFolder" },
+    "ruleID":{"pref":"cg", "len":3} 
   },
 
   "reportgroup": {
@@ -91,12 +103,13 @@
     "collection": "lists",
     "filter": { "list": "reportgroup" },
     "defRootTitle": "Отчеты",
-    "default": { "name": "$NewFolder" }
+    "default": { "name": "$NewFolder" },
+    "ruleID":{"pref":"rg", "len":3} 
   },
 
-  "charts": { "store": "db", "collection": "charts", "genfield": "props", "default": { "name": "Новый график" } },
+  "charts": { "store": "db", "collection": "charts", "genfield": "props", "default": { "name": "Новый график" },   "ruleID":{"pref":"c", "len":3}  },
 
-  "reports": { "store": "db", "collection": "reports", "genfield": "props", "default": { "name": "Новый отчет" } },
+  "reports": { "store": "db", "collection": "reports", "genfield": "props", "default": { "name": "Новый отчет" },  "ruleID":{"pref":"r", "len":3}  },
 
   "user": { "store": "db", "collection": "users" },
   "token": { "store": "db", "collection": "tokens" }
