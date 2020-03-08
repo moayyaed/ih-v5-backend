@@ -45,7 +45,10 @@ let project_d;
   // transfer('classes', 'lists', 'jbase');
   // transfer('places', 'lists', 'jbase');
   // transfer('rooms', 'lists', 'jbase');
+
   // transfer('devref', 'devices', 'jbase');
+    transferDevices('devref', 'devices', 'jbase');
+  
   // transfer('spaces', 'lists', 'jbase');
   // transfer('layouts', 'layouts', 'jbase');
   // transfer('units', 'units', 'jbase');
@@ -55,8 +58,8 @@ let project_d;
   // create('devprops', 'jbase');
   // create('devhard', 'jbase');
   // create('devcurrent', 'operative');
-  create('charts', 'jbase');
-  create('reports', 'jbase');
+  // create('charts', 'jbase');
+  // create('reports', 'jbase');
 
   rl.close();
 })();
@@ -69,7 +72,20 @@ function question(str) {
   });
 }
 
-function transfer(source, target, folder) {
+function transferDevices(source, target, folder) {
+  // Добавить список подсистем как объект
+  const data = getSourceData('subsystems', 'jbase');
+  let subsObj = {};
+  if (data) {
+    data.forEach(item => {
+      if (item.id && item.name) subsObj[item.id] = item.name;
+    });
+  }
+
+  transfer(source, target, folder, subsObj);
+}
+
+function transfer(source, target, folder, extObj) {
   try {
     // Считать файл
     // const cfilename = path.join(project_c, folder, source + '.json');
@@ -82,7 +98,7 @@ function transfer(source, target, folder) {
     data.forEach(item => {
       order += 100;
       item.order = order;
-      str += tut.formRecord(source, target, item);
+      str += tut.formRecord(source, target, item, extObj);
     });
 
     // Записать в новый файл

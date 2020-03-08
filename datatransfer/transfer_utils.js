@@ -10,15 +10,15 @@ const appconfig = require('../lib/appconfig');
 
 function createFromMainAndSlave(main, slave, linkname, parent) {
   let str = '';
-  // Сформировать по chartid (repid) 
+  // Сформировать по chartid (repid)
   const slaveObj = {};
   let pn = 1;
- 
+
   slave.forEach(item => {
     const mainid = item[linkname];
     if (!slaveObj[mainid]) slaveObj[mainid] = {};
     delete item.id;
-    slaveObj[mainid]['p'+pn] = item;
+    slaveObj[mainid]['p' + pn] = item;
     pn++;
   });
 
@@ -35,7 +35,7 @@ function createFromMainAndSlave(main, slave, linkname, parent) {
 }
 
 function formСombinedRecord(_id, item, slaveItem, parent) {
-  const pobj = Object.assign({ _id, parent }, item, {props:slaveItem} );
+  const pobj = Object.assign({ _id, parent }, item, { props: slaveItem });
   return JSON.stringify(pobj) + '\n';
 }
 
@@ -55,9 +55,10 @@ function getRootItem(source) {
   return robj ? JSON.stringify(robj) + '\n' : '';
 }
 
-function formRecord(source, target, item) {
+function formRecord(source, target, item, extObj) {
   let robj = {};
   let parent;
+  let ext;
   switch (source) {
     case 'places':
       robj = { _id: 'p' + item.id, list: 'place', parent: 'place', order: item.order, name: item.name };
@@ -70,13 +71,15 @@ function formRecord(source, target, item) {
 
     case 'devref':
       parent = item.place ? 'p' + item.place + (item.room ? 'r' + item.room : '') : 'place';
+      ext = item.subs && extObj[item.subs] ? [extObj[item.subs]] : [];
       robj = {
         _id: 'd' + item.id,
         parent,
         order: item.order,
         type: 't' + item.type,
         dn: item.dn,
-        name: item.dn + ' ' + item.name
+        name: item.dn + ' ' + item.name,
+        tags: ext
       };
       break;
 
