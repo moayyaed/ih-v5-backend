@@ -8,9 +8,8 @@
   "breadcrumbs": { "tree": "types" },
 
   "p1": [
-    { "prop": "_id", "title": "ID", "type": "input", "readonly": true },
     { "prop": "name", "title": "$Name", "type": "input" },
-    { "prop": "ID", "title": "ID", "type": "text" },
+    { "prop": "_id", "title": "ID", "type": "text" },
     { "prop": "order", "title": "Order", "type": "text" },
     { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist" }
   ],
