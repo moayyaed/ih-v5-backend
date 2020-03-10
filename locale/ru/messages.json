@@ -212,6 +212,7 @@
   { "id": "dailyCleaning", "note": "Удалить старые таблицы из БД" },
   { "id": "PluginDataUpload", "note": "Загрузить данные плагина" },
   { "id": "FailUpdate", "note": "Не удалось сохранить данные!" },
-  { "id": "FolderLostInvOper", "note": "Папка lost+found служебная, операция не может быть выполнена!" }
+  { "id": "FolderLostInvOper", "note": "Папка lost+found служебная, операция не может быть выполнена!" },
+  { "id": "FolderRootOrNotFound", "note": "Не удалось выполнить операцию!"}
 
 ]

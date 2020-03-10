@@ -205,5 +205,6 @@
   { "id": "UnBlock", "note": "Unblock" },
   { "id": "PluginDataUpload", "note": "Upload Plugin Data" },
   { "id": "FailUpdate", "note": "Failed to save data!" },
-  { "id": "FolderLostInvOper", "note": "Invalid operation for folder 'lost+found'!" }
+  { "id": "FolderLostInvOper", "note": "Invalid operation for folder 'lost+found'!" },
+  { "id": "FolderRootOrNotFound", "note": "Operation failed!"}
 ]
