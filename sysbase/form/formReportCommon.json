@@ -5,6 +5,7 @@
     { "id": "p3", "xs": 12, "class": "main", "table": "reports", "height": 250 }
   ],
   "spacing": 10,
+  "breadcrumbs": { "tree": "reports" },
 
   "p1": [
     { "prop": "_id", "title": "ID", "type": "input", "readonly": true },

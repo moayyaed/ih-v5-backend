@@ -5,6 +5,7 @@
     { "id": "p3", "xs": 12, "class": "main", "table":"unitchannelsTable", "height":250 }
   ],
   "spacing": 10,
+  "breadcrumbs": { "tree": "plugins" },
 
   "p1": [
     { "prop": "plugin", "title": "Plugin", "type": "text" },

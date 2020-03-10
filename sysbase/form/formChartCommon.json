@@ -6,6 +6,7 @@
   
   ],
   "spacing": 10,
+  "breadcrumbs": { "tree": "charts" },
 
   "p1": [
     { "prop": "_id", "title": "ID", "type": "input", "readonly": true },
