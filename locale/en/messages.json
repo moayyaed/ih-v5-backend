@@ -209,5 +209,6 @@
 
   { "id": "dailyCleaning", "note": "Remove old tables from Database" },
   { "id": "PluginDataUpload", "note": "Upload Plugin Data" },
-  { "id": "FailUpdate", "note": "Failed to save data!" }
+  { "id": "FailUpdate", "note": "Failed to save data!" },
+  { "id": "FolderLostInvOper", "note": "Invalid operation for folder 'lost+found'!" }
 ]
