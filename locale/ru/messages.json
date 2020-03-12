@@ -213,6 +213,8 @@
   { "id": "PluginDataUpload", "note": "Загрузить данные плагина" },
   { "id": "FailUpdate", "note": "Не удалось сохранить данные!" },
   { "id": "FolderLostInvOper", "note": "Папка lost+found служебная, операция не может быть выполнена!" },
-  { "id": "FolderRootOrNotFound", "note": "Не удалось выполнить операцию!"}
+  { "id": "FolderRootOrNotFound", "note": "Не удалось выполнить операцию!"},
+  { "id": "OnlyOneRootForCopy", "note": "Копировать можно только внутри одного дерева!"}
+
 
 ]

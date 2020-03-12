@@ -211,5 +211,7 @@
   { "id": "PluginDataUpload", "note": "Upload Plugin Data" },
   { "id": "FailUpdate", "note": "Failed to save data!" },
   { "id": "FolderLostInvOper", "note": "Invalid operation for folder 'lost+found'!" },
-  { "id": "FolderRootOrNotFound", "note": "Operation failed!"}
+  { "id": "FolderRootOrNotFound", "note": "Operation failed!"},
+  { "id": "OnlyOneRootForCopy", "note": "You can only copy inside one tree!"}
+
 ]
