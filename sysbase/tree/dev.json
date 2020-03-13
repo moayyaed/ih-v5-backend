@@ -77,20 +77,19 @@
       "defaultComponent": "deviceview"
     }
   },
+
   "types": {
     "parent": {
       "popup": {
         "main": [
-          { "id": "1", "type": "divider", "title": "Add" },
-          { "id": "2", "type": "item", "text": "New folder" },
-          { "id": "3", "type": "item", "text": "Duplicate", "label": "⌘A" },
-          { "id": "4", "type": "item", "text": "New type" },
-
-          { "id": "5", "type": "divider", "title": "Edit" },
-
-          { "id": "6", "type": "item", "icon": "clipboard", "text": "Rename", "command": "rename", "label": "⌘R" },
-
-          { "id": "7", "type": "item", "text": "Delete", "label": "⌘D" }
+         
+          { "id": "1", "type": "item", "text": "New type", "command": "addNode"},
+          { "id": "2", "type": "item", "text": "New folder", "command": "addFolder"},
+          { "id": "3", "type": "divider"},
+          { "id": "4", "type": "item", "text": "Copy", "command": "copy"},
+          { "id": "5", "type": "item", "text": "Paste", "command": "paste", "check":"disablePaste"},
+          { "id": "6", "type": "divider"},
+          { "id": "7", "type": "item", "text": "Delete", "command": "delete" }
         ]
       },
       "defaultComponent": "typefolder"
@@ -98,15 +97,13 @@
     "child": {
       "popup": {
         "main": [
-          { "id": "1", "type": "divider", "title": "Add" },
-          { "id": "2", "type": "item", "text": "New type" },
-          { "id": "3", "type": "item", "text": "Duplicate", "label": "⌘A" },
-
-          { "id": "4", "type": "divider", "title": "Edit" },
-
-          { "id": "5", "type": "item", "icon": "clipboard", "text": "Rename", "command": "rename", "label": "⌘R" },
-
-          { "id": "6", "type": "item", "text": "Delete", "label": "⌘D" }
+          { "id": "1", "type": "item", "text": "New type", "command": "addNode"},
+          { "id": "2", "type": "item", "text": "New folder", "command": "addFolder"},
+          { "id": "3", "type": "divider"},
+          { "id": "4", "type": "item", "text": "Copy", "command": "copy"},
+          { "id": "5", "type": "item", "text": "Paste", "command": "paste", "check":"disablePaste"},
+          { "id": "6", "type": "divider"},
+          { "id": "7", "type": "item", "text": "Delete", "command": "delete" }
         ]
       },
       "defaultComponent": "typeview"
