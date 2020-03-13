@@ -3,59 +3,57 @@
     "popup": {
       "main": [
         { "id": "1", "type": "divider", "title": "Edit" },
-        { "id": "2", "type": "item", "icon": "cut", "text": "Cut", "label": "⌘X" },
-        { "id": "3", "type": "item", "icon": "duplicate", "text": "Copy", "label": "⌘C" },
-        { "id": "4", "type": "item", "icon": "clipboard", "text": "Paste", "label": "⌘V", "disabled": true },
-        { "id": "5", "type": "divider", "title": "Text" },
+        { "id": "2", "type": "item", "icon": "cut", "title": "Cut", "label": "⌘X" },
+        { "id": "3", "type": "item", "icon": "duplicate", "title": "Copy", "label": "⌘C" },
+        { "id": "4", "type": "item", "icon": "clipboard", "title": "Paste", "label": "⌘V", "disabled": true },
+        { "id": "5", "type": "divider", "title": "title" },
         {
           "id": "6",
           "type": "items",
           "childs": "aligment",
           "disabled": true,
           "icon": "align-left",
-          "text": "Alignment"
+          "title": "Alignment"
         },
-        { "id": "7", "type": "items", "childs": "style", "icon": "style", "text": "Style" },
-        { "id": "8", "type": "items", "childs": "miscellaneous", "icon": "asterisk", "text": "Miscellaneous" }
+        { "id": "7", "type": "items", "childs": "style", "icon": "style", "title": "Style" },
+        { "id": "8", "type": "items", "childs": "miscellaneous", "icon": "asterisk", "title": "Miscellaneous" }
       ],
       "aligment": [
-        { "id": "9", "type": "item", "icon": "align-left", "text": "Left" },
-        { "id": "10", "type": "item", "icon": "align-center", "text": "Center" },
-        { "id": "11", "type": "item", "icon": "align-right", "text": "Right" },
-        { "id": "12", "type": "item", "icon": "align-justify", "text": "Justify" }
+        { "id": "9", "type": "item", "icon": "align-left", "title": "Left" },
+        { "id": "10", "type": "item", "icon": "align-center", "title": "Center" },
+        { "id": "11", "type": "item", "icon": "align-right", "title": "Right" },
+        { "id": "12", "type": "item", "icon": "align-justify", "title": "Justify" }
       ],
       "style": [
-        { "id": "13", "type": "item", "icon": "bold", "text": "Bold" },
-        { "id": "14", "type": "item", "icon": "italic", "text": "Italic" },
-        { "id": "15", "type": "item", "icon": "underline", "text": "Underline" }
+        { "id": "13", "type": "item", "icon": "bold", "title": "Bold" },
+        { "id": "14", "type": "item", "icon": "italic", "title": "Italic" },
+        { "id": "15", "type": "item", "icon": "underline", "title": "Underline" }
       ],
       "miscellaneous": [
-        { "id": "16", "type": "item", "icon": "badge", "text": "Badge" },
-        { "id": "17", "type": "item", "icon": "book", "text": "Long items will truncate when they reach max-width" },
-        { "id": "18", "type": "items", "childs": "other", "icon": "more", "text": "Look in here for even more items" }
+        { "id": "16", "type": "item", "icon": "badge", "title": "Badge" },
+        { "id": "17", "type": "item", "icon": "book", "title": "Long items will truncate when they reach max-width" },
+        { "id": "18", "type": "items", "childs": "other", "icon": "more", "title": "Look in here for even more items" }
       ],
       "other": [
-        { "id": "19", "type": "item", "icon": "briefcase", "text": "Briefcase" },
-        { "id": "20", "type": "item", "icon": "calculator", "text": "Calculator" },
-        { "id": "21", "type": "item", "icon": "dollar", "text": "Dollar" },
-        { "id": "22", "type": "items", "childs": "shapes", "icon": "dot", "text": "Shapes" }
+        { "id": "19", "type": "item", "icon": "briefcase", "title": "Briefcase" },
+        { "id": "20", "type": "item", "icon": "calculator", "title": "Calculator" },
+        { "id": "21", "type": "item", "icon": "dollar", "title": "Dollar" },
+        { "id": "22", "type": "items", "childs": "shapes", "icon": "dot", "title": "Shapes" }
       ],
-      "shapes": [{ "id": "23", "type": "item", "icon": "full-circle", "text": "Full circle" }]
+      "shapes": [{ "id": "23", "type": "item", "icon": "full-circle", "title": "Full circle" }]
     }
   },
   "devices": {
     "parent": {
       "popup": {
         "main": [
-          { "id": "1", "type": "divider", "title": "Add" },
-          { "id": "2", "type": "item", "text": "New folder" },
-          { "id": "3", "type": "item", "text": "Duplicate", "label": "⌘A" },
-          { "id": "4", "type": "item", "text": "New device" },
-          { "id": "5", "type": "divider", "title": "Edit" },
-
-          { "id": "6", "type": "item", "icon": "clipboard", "text": "Rename", "command": "rename", "label": "⌘R" },
-
-          { "id": "7", "type": "item", "text": "Delete", "label": "⌘D" }
+          { "id": "1", "type": "item", "title": "New device", "command": "addNode"},
+          { "id": "2", "type": "item", "title": "New folder", "command": "addFolder"},
+          { "id": "3", "type": "divider"},
+          { "id": "4", "type": "item", "title": "Copy", "command": "copy"},
+          { "id": "5", "type": "item", "title": "Paste", "command": "paste", "check":"disablePaste"},
+          { "id": "6", "type": "divider"},
+          { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
         ]
       },
       "defaultComponent": "devicefolder"
@@ -63,15 +61,13 @@
     "child": {
       "popup": {
         "main": [
-          { "id": "1", "type": "divider", "title": "Add" },
-          { "id": "2", "type": "item", "text": "New  device" },
-          { "id": "3", "type": "item", "text": "Duplicate", "label": "⌘A" },
-
-          { "id": "4", "type": "divider", "title": "Edit" },
-
-          { "id": "5", "type": "item", "icon": "clipboard", "text": "Rename", "command": "rename", "label": "⌘R" },
-
-          { "id": "6", "type": "item", "text": "Delete", "label": "⌘D" }
+          { "id": "1", "type": "item", "title": "New device", "command": "addNode"},
+          { "id": "2", "type": "item", "title": "New folder", "command": "addFolder"},
+          { "id": "3", "type": "divider"},
+          { "id": "4", "type": "item", "title": "Copy", "command": "copy"},
+          { "id": "5", "type": "item", "title": "Paste", "command": "paste", "check":"disablePaste"},
+          { "id": "6", "type": "divider"},
+          { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
         ]
       },
       "defaultComponent": "deviceview"
@@ -83,13 +79,13 @@
       "popup": {
         "main": [
          
-          { "id": "1", "type": "item", "text": "New type", "command": "addNode"},
-          { "id": "2", "type": "item", "text": "New folder", "command": "addFolder"},
+          { "id": "1", "type": "item", "title": "New type", "command": "addNode"},
+          { "id": "2", "type": "item", "title": "New folder", "command": "addFolder"},
           { "id": "3", "type": "divider"},
-          { "id": "4", "type": "item", "text": "Copy", "command": "copy"},
-          { "id": "5", "type": "item", "text": "Paste", "command": "paste", "check":"disablePaste"},
+          { "id": "4", "type": "item", "title": "Copy", "command": "copy"},
+          { "id": "5", "type": "item", "title": "Paste", "command": "paste", "check":"disablePaste"},
           { "id": "6", "type": "divider"},
-          { "id": "7", "type": "item", "text": "Delete", "command": "delete" }
+          { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
         ]
       },
       "defaultComponent": "typefolder"
@@ -97,13 +93,13 @@
     "child": {
       "popup": {
         "main": [
-          { "id": "1", "type": "item", "text": "New type", "command": "addNode"},
-          { "id": "2", "type": "item", "text": "New folder", "command": "addFolder"},
+          { "id": "1", "type": "item", "title": "New type", "command": "addNode"},
+          { "id": "2", "type": "item", "title": "New folder", "command": "addFolder"},
           { "id": "3", "type": "divider"},
-          { "id": "4", "type": "item", "text": "Copy", "command": "copy"},
-          { "id": "5", "type": "item", "text": "Paste", "command": "paste", "check":"disablePaste"},
+          { "id": "4", "type": "item", "title": "Copy", "command": "copy"},
+          { "id": "5", "type": "item", "title": "Paste", "command": "paste", "check":"disablePaste"},
           { "id": "6", "type": "divider"},
-          { "id": "7", "type": "item", "text": "Delete", "command": "delete" }
+          { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
         ]
       },
       "defaultComponent": "typeview"
