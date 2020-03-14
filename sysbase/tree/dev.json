@@ -2,45 +2,8 @@
   "common": {
     "popup": {
       "main": [
-        { "id": "1", "type": "divider", "title": "Edit" },
-        { "id": "2", "type": "item", "icon": "cut", "title": "Cut", "label": "⌘X" },
-        { "id": "3", "type": "item", "icon": "duplicate", "title": "Copy", "label": "⌘C" },
-        { "id": "4", "type": "item", "icon": "clipboard", "title": "Paste", "label": "⌘V", "disabled": true },
-        { "id": "5", "type": "divider", "title": "title" },
-        {
-          "id": "6",
-          "type": "items",
-          "childs": "aligment",
-          "disabled": true,
-          "icon": "align-left",
-          "title": "Alignment"
-        },
-        { "id": "7", "type": "items", "childs": "style", "icon": "style", "title": "Style" },
-        { "id": "8", "type": "items", "childs": "miscellaneous", "icon": "asterisk", "title": "Miscellaneous" }
-      ],
-      "aligment": [
-        { "id": "9", "type": "item", "icon": "align-left", "title": "Left" },
-        { "id": "10", "type": "item", "icon": "align-center", "title": "Center" },
-        { "id": "11", "type": "item", "icon": "align-right", "title": "Right" },
-        { "id": "12", "type": "item", "icon": "align-justify", "title": "Justify" }
-      ],
-      "style": [
-        { "id": "13", "type": "item", "icon": "bold", "title": "Bold" },
-        { "id": "14", "type": "item", "icon": "italic", "title": "Italic" },
-        { "id": "15", "type": "item", "icon": "underline", "title": "Underline" }
-      ],
-      "miscellaneous": [
-        { "id": "16", "type": "item", "icon": "badge", "title": "Badge" },
-        { "id": "17", "type": "item", "icon": "book", "title": "Long items will truncate when they reach max-width" },
-        { "id": "18", "type": "items", "childs": "other", "icon": "more", "title": "Look in here for even more items" }
-      ],
-      "other": [
-        { "id": "19", "type": "item", "icon": "briefcase", "title": "Briefcase" },
-        { "id": "20", "type": "item", "icon": "calculator", "title": "Calculator" },
-        { "id": "21", "type": "item", "icon": "dollar", "title": "Dollar" },
-        { "id": "22", "type": "items", "childs": "shapes", "icon": "dot", "title": "Shapes" }
-      ],
-      "shapes": [{ "id": "23", "type": "item", "icon": "full-circle", "title": "Full circle" }]
+        { "id": "1", "type": "divider", "title": "Edit" }
+      ]
     }
   },
   "devices": {
