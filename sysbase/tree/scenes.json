@@ -8,7 +8,7 @@
     }
   },
 
-  "scene": {
+  "scenes": {
     "parent": {
       "popup": {
         "main": [
