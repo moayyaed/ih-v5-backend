@@ -1,10 +1,10 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "type" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "type" }
+    { "id": "p1", "xs": 6, "class": "main", "table": "scenegroup" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "scenegroup" }
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "types" },
+  "breadcrumbs": { "tree": "scenes" },
 
   "p1": [
     { "prop": "name", "title": "$Name", "type": "input" },

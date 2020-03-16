@@ -4,7 +4,7 @@
     { "id": "p2", "xs": 6, "class": "main", "table": "scene" }
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "types" },
+  "breadcrumbs": { "tree": "scenes" },
 
   "p1": [
     { "prop": "name", "title": "$Name", "type": "input" },
