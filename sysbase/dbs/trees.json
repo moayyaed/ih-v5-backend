@@ -27,7 +27,7 @@
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     },
     "leaf": {
-      "table": "scenes",
+      "table": "scene",
       "propmap": { "_id": "id", "name": "title", "level": "parent", "order": "order" }
     }
   },
