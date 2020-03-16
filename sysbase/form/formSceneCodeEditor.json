@@ -1,0 +1,12 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "scene" }
+   
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "scenes" },
+
+  "p1": [
+    { "prop": "code", "title": "Code", "type": "code" }
+  ]
+}

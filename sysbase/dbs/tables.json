@@ -66,7 +66,7 @@
     "default": { "name": "$NewFolder" },
     "ruleID":{"pref":"sg", "len":3}
   },
-  "script": { "store": "db", "collection": "scripts", "default": { "name": "Новый сценарий" }, "ruleID":{"pref":"s", "len":3} },
+  "scene": { "store": "db", "collection": "scenes", "default": { "name": "Новый сценарий" }, "ruleID":{"pref":"scen", "len":3} },
 
   "plugingroup": {
     "store": "db",

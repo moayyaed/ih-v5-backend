@@ -1,0 +1,57 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 6, "class": "main", "table": "type" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "type" },
+    { "id": "p3", "xs": 12, "class": "main", "table": "type", "height": 250 }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "types" },
+
+  "p1": [
+    { "prop": "name", "title": "$Name", "type": "input" },
+    { "prop": "_id", "title": "ID", "type": "text" },
+    { "prop": "order", "title": "Order", "type": "text" },
+    { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist" }
+  ],
+  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
+  "p3": [
+    {
+      "title": "$DeviceProperty",
+      "type": "table",
+      "prop": "typepropsTable",
+
+      "columns": [
+        { "prop": "prop", "title": "$Devprop_Id", "type": "input", "width": 150 },
+        { "prop": "name", "title": "$Name", "type": "input", "width": 250 },
+        {
+          "prop": "vtype",
+          "title": "$Devprop_Type",
+          "type": "droplist",
+          "data": [
+            { "id": "B", "title": "Boolean" },
+            { "id": "N", "title": "Number" },
+            { "id": "S", "title": "String" }
+          ],
+          "width": 100
+        },
+        {
+          "prop": "op",
+          "title": "$Operations",
+          "type": "droplist",
+          "data": [
+            { "id": "r", "title": "Read only" },
+            { "id": "rw", "title": "Read/Write" },
+            { "id": "w", "title": "Write only" },
+            { "id": "c", "title": "Calculate" },
+            { "id": "S", "title": "String" }
+          ],
+          "width": 100
+        },
+        { "prop": "min", "title": "Min", "type": "number", "width": 50 },
+        { "prop": "max", "title": "Max", "type": "number", "width": 50 },
+        { "prop": "dig", "title": "$Decdig", "type": "number", "width": 100 },
+        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 100 }
+      ]
+    }
+  ]
+}

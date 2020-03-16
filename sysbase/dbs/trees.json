@@ -21,13 +21,13 @@
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     }
   },
-  "scripts": {
+  "scenes": {
     "branch": {
-      "table": "scriptgroup",
+      "table": "scenegroup",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     },
     "leaf": {
-      "table": "script",
+      "table": "scenes",
       "propmap": { "_id": "id", "name": "title", "level": "parent", "order": "order" }
     }
   },
