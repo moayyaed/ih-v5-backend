@@ -58,10 +58,11 @@
     "ruleID":{"pref":"lg", "len":3}
   },
   "layout": { "store": "db", "collection": "layouts", "default": { "name": "Новый экран" },  "ruleID":{"pref":"l", "len":3} },
-  "scriptgroup": {
+
+  "scenegroup": {
     "store": "db",
     "collection": "lists",
-    "filter": { "list": "scriptgroup" },
+    "filter": { "list": "scenegroup" },
     "defRootTitle": "Сценарии",
     "default": { "name": "$NewFolder" },
     "ruleID":{"pref":"sg", "len":3}
