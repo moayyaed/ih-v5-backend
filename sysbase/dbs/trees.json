@@ -28,7 +28,7 @@
     },
     "leaf": {
       "table": "scene",
-      "propmap": { "_id": "id", "name": "title", "level": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     }
   },
   "datasource": ["plugins"],
