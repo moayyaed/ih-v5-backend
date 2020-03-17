@@ -18,6 +18,7 @@
   "devhard": { "store": "db", "collection": "devhard" },
   "devcurrent": { "store": "db", "collection": "devcurrent" },
   "devicecommonTable": { "store": "db", "collection": "devprops", "genfield": "aux" },
+  "unitchannelsTable": { "store": "virt", "collection": "devhard" },
   "typegroup": {
     "store": "db",
     "collection": "lists",

@@ -1,7 +1,8 @@
 {
   "grid": [
     { "id": "p1", "xs": 6, "class": "main", "table": "units" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "units" }
+    { "id": "p2", "xs": 6, "class": "main", "table": "units" },
+    { "id": "p3", "xs": 12, "class": "main", "table":"unitchannelsTable", "height":250 }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "plugins" },
@@ -11,5 +12,20 @@
     { "prop": "id", "title": "$Name", "type": "text" }
   
   ],
-  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
+  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
+  "p3": [
+    {
+      "title": "Channels",
+      "type": "table",
+      "prop": "unitchannelsTable",
+
+      "columns": [
+
+        { "prop": "chan", "title": "Channel", "type": "string" },
+        { "prop": "did", "title": "$Device", "type": "string", "readonly": true },
+        { "prop": "prop", "title": "$DeviceProperty", "type": "string", "readonly": true },
+        { "prop": "unit", "title": "Unit", "type": "string", "readonly": true }
+      ]
+    }
+  ]
 }
