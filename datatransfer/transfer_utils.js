@@ -80,7 +80,7 @@ function formRecord(source, target, item, extObj) {
       break;
 
     case 'rooms':
-      parent = 'p' + item.place;
+      parent = 'dg' + item.place;
       robj = { _id: 'dg' + item.place + 'r' + item.id, list: 'place', parent, order: item.order, name: item.name };
       break;
 
@@ -107,7 +107,7 @@ function formRecord(source, target, item, extObj) {
 
     case 'layouts': //
       _id = getNewId('l', 3, item.id);
-      parent = item.space ? 's' + item.space : 'layoutgroup';
+      parent = item.space ? getNewId('lg', 3, item.space) : 'layoutgroup';
       robj = { _id, parent, order: item.order, name: item.name, txt: item.txt };
       break;
 
@@ -187,26 +187,27 @@ function createDevices(devrefData, project_d, extObj) {
 
   console.log('typeObj=' + util.inspect(typeObj));
    */
-
+  let order = 1000;
   devrefData.forEach(item => {
-    const dobj = formDeviceFromDevref(item, extObj);
+    const dobj = formDeviceFromDevref(item, order, extObj);
     // const tobj = typeObj[item.type];
     // if (!tobj) throw { message: 'Not found type for item ' + util.inspect(item) };
     dobj.props = formProps(item);
     str += JSON.stringify(dobj) + '\n';
+    order += 1000;
   });
 
   return str;
 }
 
-function formDeviceFromDevref(item, extObj) {
+function formDeviceFromDevref(item, order, extObj) {
   const parent = item.place ? 'dg' + item.place + (item.room ? 'r' + item.room : '') : 'place';
   const ext = item.subs && extObj[item.subs] ? [extObj[item.subs]] : [];
 
   return {
     _id: getNewId('d', 4, item.id),
     parent,
-    order: item.order,
+    order,
     // type: 't' + item.type,
     type: getNewId('t', 3, item.type),
     dn: item.dn,

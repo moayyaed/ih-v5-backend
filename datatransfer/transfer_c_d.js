@@ -43,22 +43,22 @@ let project_d;
   console.log('lang=' + appconfig.get('lang'));
 
   // transfer дописывает в один файл
-  /** 
+
   transfer('classes', 'lists', 'jbase');
   transfer('places', 'lists', 'jbase');
   transfer('rooms', 'lists', 'jbase');
   transfer('spaces', 'lists', 'jbase');
   transferPluginGroups();
-
+  /**
   // create создает заново
   create('layouts', 'jbase');
   create('units', 'jbase');
   create('types', 'jbase');
   create('charts', 'jbase');
   create('reports', 'jbase');
-
-  create('devices', 'jbase');
 */
+  create('devices', 'jbase');
+
  create('devhard', 'jbase');
   // - create('devcurrent', 'operative');
 
