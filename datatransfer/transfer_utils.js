@@ -84,22 +84,6 @@ function formRecord(source, target, item, extObj) {
       robj = { _id: 'dg' + item.place + 'r' + item.id, list: 'place', parent, order: item.order, name: item.name };
       break;
 
-    case 'devref':
-      parent = item.place ? 'dg' + item.place + (item.room ? 'r' + item.room : '') : 'place';
-      ext = item.subs && extObj[item.subs] ? [extObj[item.subs]] : [];
-      _id = getNewId('d', 4, item.id);
-      robj = {
-        _id,
-        parent,
-        order: item.order,
-        // type: 't' + item.type,
-        type: getNewId('t', 3, item.item.type),
-        dn: item.dn,
-        name: item.name,
-        tags: ext
-      };
-      break;
-
     case 'spaces': // => lists- layoutgroup
       _id = getNewId('lg', 3, item.id);
       robj = { _id, list: 'layoutgroup', parent: 'layoutgroup', order: item.order, name: item.name };
@@ -173,7 +157,16 @@ function createTypes() {
 
 function createDevices(devrefData, project_d, extObj) {
   let str = '';
-  // Из типов взять prop
+  // Проверить, что parent есть, иначе в корень
+  const filename = path.join(project_d, 'jbase', 'lists.db');
+  const liststr = fs.readFileSync(filename, 'utf8');
+  const arr = liststr.split('\n');
+
+  // Вывернуть по  _id
+  const placeObj = hut.arrayToObject(
+    arr.filter(item => hut.allTrim(item)).map(item => JSON.parse(item)),
+    '_id'
+  );
   /*
   const typesfile = path.join(project_d, 'jbase', 'types.db');
   const tstr = fs.readFileSync(typesfile, 'utf8');
@@ -189,19 +182,34 @@ function createDevices(devrefData, project_d, extObj) {
    */
   let order = 1000;
   devrefData.forEach(item => {
-    const dobj = formDeviceFromDevref(item, order, extObj);
+    const parent = getParent(item);
+    const dobj = formDeviceFromDevref(item, parent, order, extObj);
     // const tobj = typeObj[item.type];
     // if (!tobj) throw { message: 'Not found type for item ' + util.inspect(item) };
     dobj.props = formProps(item);
     str += JSON.stringify(dobj) + '\n';
     order += 1000;
   });
-
   return str;
+
+  function getParent(item) {
+    let res = 'place';
+    let x;
+    if (item.place) {
+      x = 'dg' + item.place;
+      if (placeObj[x]) {
+        res = x;
+        if (item.room) {
+          x += 'r' + item.room;
+          if (placeObj[x]) res = x;
+        }
+      }
+    }
+    return res;
+  }
 }
 
-function formDeviceFromDevref(item, order, extObj) {
-  const parent = item.place ? 'dg' + item.place + (item.room ? 'r' + item.room : '') : 'place';
+function formDeviceFromDevref(item, parent, order, extObj) {
   const ext = item.subs && extObj[item.subs] ? [extObj[item.subs]] : [];
 
   return {
@@ -234,7 +242,6 @@ function formProps(item) {
   }
   return pobj;
 }
-
 
 /**
  *  devcurrent содержал значения свойств в целом для устройства:

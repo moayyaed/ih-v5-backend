@@ -43,26 +43,29 @@ let project_d;
   console.log('lang=' + appconfig.get('lang'));
 
   // transfer дописывает в один файл
-
+  /** 
   transfer('classes', 'lists', 'jbase');
   transfer('places', 'lists', 'jbase');
   transfer('rooms', 'lists', 'jbase');
   transfer('spaces', 'lists', 'jbase');
   transferPluginGroups();
-  /**
+*/
+
+  
   // create создает заново
+  
   create('layouts', 'jbase');
+     /** 
   create('units', 'jbase');
   create('types', 'jbase');
   create('charts', 'jbase');
   create('reports', 'jbase');
-*/
-  create('devices', 'jbase');
-
- create('devhard', 'jbase');
-  // - create('devcurrent', 'operative');
-
+  */
+  // create('devices', 'jbase');
+  
+  // create('devhard', 'jbase');
  
+  // - create('devcurrent', 'operative');
 
   rl.close();
 })();
@@ -128,7 +131,6 @@ function create(target, folder) {
   try {
     let str = '';
     let sObj;
-
 
     switch (target) {
       case 'types':
