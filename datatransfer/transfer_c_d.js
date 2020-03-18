@@ -42,24 +42,27 @@ let project_d;
   console.log('Start trasfer from ' + project_c + ' to ' + project_d);
   console.log('lang=' + appconfig.get('lang'));
 
-  // transfer('classes', 'lists', 'jbase');
-  // transfer('places', 'lists', 'jbase');
-  // transfer('rooms', 'lists', 'jbase');
+  // transfer дописывает в один файл
+  /** 
+  transfer('classes', 'lists', 'jbase');
+  transfer('places', 'lists', 'jbase');
+  transfer('rooms', 'lists', 'jbase');
+  transfer('spaces', 'lists', 'jbase');
+  transferPluginGroups();
 
-  // transfer('devref', 'devices', 'jbase');
-    transferDevices('devref', 'devices', 'jbase');
-  
-  // transfer('spaces', 'lists', 'jbase');
-  // transfer('layouts', 'layouts', 'jbase');
-  // transfer('units', 'units', 'jbase');
-  // createPluginGroups();
+  // create создает заново
+  create('layouts', 'jbase');
+  create('units', 'jbase');
+  create('types', 'jbase');
+  create('charts', 'jbase');
+  create('reports', 'jbase');
 
-  // create('types', 'jbase');
-  // create('devprops', 'jbase');
-  // create('devhard', 'jbase');
-  // create('devcurrent', 'operative');
-  // create('charts', 'jbase');
-  // create('reports', 'jbase');
+  create('devices', 'jbase');
+*/
+ create('devhard', 'jbase');
+  // - create('devcurrent', 'operative');
+
+ 
 
   rl.close();
 })();
@@ -72,38 +75,33 @@ function question(str) {
   });
 }
 
-function transferDevices(source, target, folder) {
-  // Добавить список подсистем как объект
-  const data = getSourceData('subsystems', 'jbase');
-  let subsObj = {};
-  if (data) {
-    data.forEach(item => {
-      if (item.id && item.name) subsObj[item.id] = item.name;
+function getSourceAsObj(source, folder) {
+  // const extdata = getSourceData('subsystems', 'jbase');
+  const extdata = getSourceData(source, folder);
+  const sObj = {};
+  if (extdata) {
+    extdata.forEach(item => {
+      if (item.id && item.name) sObj[item.id] = item.name;
     });
   }
-
-  transfer(source, target, folder, subsObj);
+  return sObj;
 }
 
 function transfer(source, target, folder, extObj) {
   try {
-    // Считать файл
-    // const cfilename = path.join(project_c, folder, source + '.json');
-    // const data = JSON.parse(fs.readFileSync(cfilename, 'utf8'));
     const data = getSourceData(source, folder);
 
     // сформировать строку
-    let str = tut.getRootItem(source);
+    // let str = tut.getRootItem(source);  - Можно не делать, сделает основной движок
+    let str = '';
     let order = 0;
     data.forEach(item => {
-      order += 100;
+      order += 1000;
       item.order = order;
       str += tut.formRecord(source, target, item, extObj);
     });
 
-    // Записать в новый файл
     const dfilename = path.join(project_d, folder, target + '.db');
-
     fs.appendFileSync(dfilename, str);
     console.log(str);
     console.log('Data was appended to file' + dfilename + '. Str len=' + str.length);
@@ -112,16 +110,34 @@ function transfer(source, target, folder, extObj) {
   }
 }
 
+function formAllRecordsStr(source, target, folder) {
+  let str = '';
+
+  const data = getSourceData(source, folder);
+
+  let order = 0;
+  data.forEach(item => {
+    order += 1000;
+    item.order = order;
+    str += tut.formRecord(source, target, item);
+  });
+  return str;
+}
+
 function create(target, folder) {
   try {
     let str = '';
+    let sObj;
+
+
     switch (target) {
       case 'types':
         str = tut.createTypes();
         break;
 
-      case 'devprops':
-        str = tut.createDevprops(getSourceData('devref', folder), project_d);
+      case 'devices':
+        sObj = getSourceAsObj('subsystems', folder);
+        str = tut.createDevices(getSourceData('devref', folder), project_d, sObj);
         break;
 
       case 'devhard':
@@ -136,17 +152,27 @@ function create(target, folder) {
           getSourceData('chartlist', folder),
           getSourceData('charts', folder),
           'chartid',
-          'chartgroup'
+          'chartgroup',
+          { pref: 'c', len: 3 }
         );
         break;
-        case 'reports':
-          str = tut.createFromMainAndSlave(
-            getSourceData('reportlist', folder),
-            getSourceData('reportcolumns', folder),
-            'repid',
-            'reportgroup'
-          );
-          break;
+      case 'reports':
+        str = tut.createFromMainAndSlave(
+          getSourceData('reportlist', folder),
+          getSourceData('reportcolumns', folder),
+          'repid',
+          'reportgroup',
+          { pref: 'r', len: 3 }
+        );
+        break;
+
+      case 'layouts':
+        str = formAllRecordsStr('layouts', target, folder);
+        break;
+
+      case 'units':
+        str = formAllRecordsStr('units', target, folder);
+        break;
       default:
     }
 
@@ -170,7 +196,7 @@ function getSourceData(source, folder) {
   return JSON.parse(fs.readFileSync(cfilename, 'utf8'));
 }
 
-function createPluginGroups() {
+function transferPluginGroups() {
   try {
     // Считать файл units
     const data = getSourceData('units', 'jbase');

@@ -11,7 +11,7 @@
     "id": "SensorA",
     "name": "$SensorA",
     "props": {
-      "value": { "name": "$Value", "vtype": "B", "op": "r" },
+      "value": { "name": "$Value", "vtype": "N", "op": "r" },
       "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "rw" },
       "state": { "name": "$State", "vtype": "N", "op": "c" }
     }
@@ -30,7 +30,7 @@
     "id": "ActorA",
     "name": "$ActorA",
     "props": {
-      "value": { "name": "$Value", "vtype": "B", "op": "r" },
+      "value": { "name": "$Value", "vtype": "N", "op": "r" },
       "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "rw" },
       "auto": { "name": "Auto", "vtype": "B", "op": "rw" },
       "blk": { "name": "$Blk", "vtype": "B", "op": "rw" },
@@ -41,7 +41,7 @@
     "id": "ActorE",
     "name": "$ActorE",
     "props": {
-      "value": { "name": "$Value", "vtype": "B", "op": "r" },
+      "value": { "name": "$Value", "vtype": "N", "op": "r" },
       "state": { "name": "$State", "vtype": "N", "op": "c" }
     }
   },
@@ -49,7 +49,7 @@
     "id": "Meter",
     "name": "$Meter",
     "props": {
-      "value": { "name": "$Value", "vtype": "B", "op": "r" }
+      "value": { "name": "$Value", "vtype": "N", "op": "r" }
     }
   }
 ]

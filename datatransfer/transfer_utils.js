@@ -1,6 +1,7 @@
 /**
- *
+ *  transfer_utils.js
  */
+
 const util = require('util');
 const fs = require('fs');
 const path = require('path');
@@ -8,13 +9,24 @@ const path = require('path');
 const hut = require('../lib/utils/hut');
 const appconfig = require('../lib/appconfig');
 
-function createFromMainAndSlave(main, slave, linkname, parent) {
+/**
+ *
+ * @param {*} main - data from main table  = getSourceData('chartlist', folder)
+ * @param {*} slave - data from slave table  = getSourceData('charts', folder)
+ * @param {*} linkname - 'chartid'
+ * @param {*} parent - 'chartgroup'
+ * @param {*} ruleId - {pref:'r', len:3}
+ *
+ */
+
+function createFromMainAndSlave(main, slave, linkname, parent, ruleId) {
   let str = '';
   // Сформировать по chartid (repid)
   const slaveObj = {};
-  let pn = 1;
+  let pn; // Порядковый номер в нижней табличке преобразуется в свойство px?
 
   slave.forEach(item => {
+    pn = 1;
     const mainid = item[linkname];
     if (!slaveObj[mainid]) slaveObj[mainid] = {};
     delete item.id;
@@ -24,12 +36,13 @@ function createFromMainAndSlave(main, slave, linkname, parent) {
 
   let order = 100;
   main.forEach(item => {
-    const id = item.id;
     item.order = order;
     order += 100;
+
+    const _id = getNewId(ruleId.pref, ruleId.len, item.id);
+    const slaveItem = slaveObj[item.id];
     delete item.id;
-    const slaveItem = slaveObj[id];
-    str += formСombinedRecord(String(id), item, slaveItem, parent);
+    str += formСombinedRecord(_id, item, slaveItem, parent);
   });
   return str;
 }
@@ -59,45 +72,52 @@ function formRecord(source, target, item, extObj) {
   let robj = {};
   let parent;
   let ext;
+  let _id;
   switch (source) {
+    // places - id будет dgxx или dgxxryy, хотя дальше будет dg000
     case 'places':
-      robj = { _id: 'p' + item.id, list: 'place', parent: 'place', order: item.order, name: item.name };
+      robj = { _id: 'dg' + item.id, list: 'place', parent: 'place', order: item.order, name: item.name };
       break;
 
     case 'rooms':
       parent = 'p' + item.place;
-      robj = { _id: 'p' + item.place + 'r' + item.id, list: 'place', parent, order: item.order, name: item.name };
+      robj = { _id: 'dg' + item.place + 'r' + item.id, list: 'place', parent, order: item.order, name: item.name };
       break;
 
     case 'devref':
-      parent = item.place ? 'p' + item.place + (item.room ? 'r' + item.room : '') : 'place';
+      parent = item.place ? 'dg' + item.place + (item.room ? 'r' + item.room : '') : 'place';
       ext = item.subs && extObj[item.subs] ? [extObj[item.subs]] : [];
+      _id = getNewId('d', 4, item.id);
       robj = {
-        _id: 'd' + item.id,
+        _id,
         parent,
         order: item.order,
-        type: 't' + item.type,
+        // type: 't' + item.type,
+        type: getNewId('t', 3, item.item.type),
         dn: item.dn,
-        name: item.dn + ' ' + item.name,
+        name: item.name,
         tags: ext
       };
       break;
 
     case 'spaces': // => lists- layoutgroup
-      robj = { _id: 's' + item.id, list: 'layoutgroup', parent: 'layoutgroup', order: item.order, name: item.name };
+      _id = getNewId('lg', 3, item.id);
+      robj = { _id, list: 'layoutgroup', parent: 'layoutgroup', order: item.order, name: item.name };
       break;
 
     case 'layouts': //
+      _id = getNewId('l', 3, item.id);
       parent = item.space ? 's' + item.space : 'layoutgroup';
-      robj = { _id: 'l' + item.id, parent, order: item.order, name: item.name, txt: item.txt };
+      robj = { _id, parent, order: item.order, name: item.name, txt: item.txt };
       break;
 
-    case 'classes': // => lists- typegroup
+    case 'classes': // => lists- typegroup, но id по старому - SensorD,....
       robj = { _id: item.id, list: 'typegroup', parent: 'typegroup', order: item.order, name: item.name };
       break;
 
     case 'units':
-      robj = { _id: item.id, parent: 'plugin_' + item.plugin };
+      _id = getNewId('u', 3, item.id);
+      robj = { _id, parent: 'plugin_' + item.plugin };
       Object.keys(item).forEach(prop => {
         if (!prop.endsWith('_')) robj[prop] = item[prop];
       });
@@ -126,18 +146,14 @@ function createTypes() {
 
   // сформировать строку
   let str = '';
-  let order = 100;
+  let order = 1000;
+  let _id;
   data.forEach(item => {
-    const robj = { _id: 't' + item.id, parent: item.cl, order, name: item.name };
+    _id = getNewId('t', 3, item.id);
+    const robj = { _id, parent: item.cl, order, name: item.name };
     robj.props = clObj[item.cl].props;
     str += JSON.stringify(robj) + '\n';
-    order += 100;
-    /*
-    clProps.forEach((pItem, idx) => {
-      const pobj = Object.assign({ _id: 't' + typeitem.id + '_' + idx, type: 't' + typeitem.id }, pItem);
-      str += JSON.stringify(pobj) + '\n';
-    });
-    */
+    order += 1000;
   });
   return str;
 }
@@ -145,65 +161,79 @@ function createTypes() {
 /**
  *  devref содержал флаги и значения (min, max, ..флаги записи в БД) в целом для устройства:
  *    {dn, min, max, decdig, mu, db, dbraw, dbline, dbdelta, dbcalc_type, dbforce, dbwrite_need_on }
- *   Сейчас нужно для каждого свойства отдельно, внутри свойства  aux
+ *   Сейчас нужно для каждого свойства отдельно, внутри свойства  props
  *   Добавляем для свойства value и опционально для setpoint (min, max, mu)
- *   id тот же что и в devices
- *    {id, aux:{value:{min:20, max:50, dig:2, mu:'C'}, setpoint:{min:20, max:50, mu:'C'}}
- *   Здесь же будут сохраняться свойства-параметры (не динамические?) {id, myparam1:45,myparam2:85, aux:{..}}
+
+ *    {_id:'d001', dn:'TEMP1', props:{value:{min:20, max:50, dig:2, mu:'C'}, setpoint:{min:20, max:50, mu:'C'}}
+ *   TODO Здесь же будут сохраняться свойства-параметры (не динамические?) {id, myparam1:45,myparam2:85, aux:{..}}
  *
  * @param {Array of Objects} devrefData - данные из devref
  * @param {String} project_d
  */
-function createDevprops(devrefData, project_d) {
+
+function createDevices(devrefData, project_d, extObj) {
   let str = '';
+  // Из типов взять prop
+  /*
+  const typesfile = path.join(project_d, 'jbase', 'types.db');
+  const tstr = fs.readFileSync(typesfile, 'utf8');
+  const tarr = tstr.split('\n');
 
-  // Нужен, чтобы найти id  устройства - т к dn сейчас уже не id!!
-  const devicesfile = path.join(project_d, 'jbase', 'devices.db');
-  const dstr = fs.readFileSync(devicesfile, 'utf8');
-  const darr = dstr.split('\n');
-
-  // Вывернуть по  dn
-  const deviceObj = hut.arrayToObject(
-    darr.filter(item => hut.allTrim(item)).map(item => JSON.parse(item)),
-    'dn'
+  // Вывернуть по  _id
+  const typeObj = hut.arrayToObject(
+    tarr.filter(item => hut.allTrim(item)).map(item => JSON.parse(item)),
+    '_id'
   );
 
+  console.log('typeObj=' + util.inspect(typeObj));
+   */
+
   devrefData.forEach(item => {
-    // Найдем id устройства по dn
-    const did = deviceObj[item.dn]._id;
-    if (!did) {
-      console.log('NOT FOUND id for ' + item.dn + ' in ' + devicesfile);
-    } else {
-      str += formPropRecord(did, item);
-    }
+    const dobj = formDeviceFromDevref(item, extObj);
+    // const tobj = typeObj[item.type];
+    // if (!tobj) throw { message: 'Not found type for item ' + util.inspect(item) };
+    dobj.props = formProps(item);
+    str += JSON.stringify(dobj) + '\n';
   });
 
   return str;
 }
 
-function formPropRecord(did, item) {
-  const pobj = { _id: did };
-  const aux = {};
-  const vObj = { mu: item.mu || '', db: item.db ? 1 : 0 };
+function formDeviceFromDevref(item, extObj) {
+  const parent = item.place ? 'dg' + item.place + (item.room ? 'r' + item.room : '') : 'place';
+  const ext = item.subs && extObj[item.subs] ? [extObj[item.subs]] : [];
 
-  if (isAnalog(item)) {
-    vObj.min = item.min != undefined ? item.min : null;
-    vObj.max = item.max != undefined ? item.max : null;
-    vObj.dig = item.decdig || 0;
-  }
-  aux.value = vObj;
-
-  if (isAnalog(item)) {
-    const sObj = { mu: item.mu || '' };
-    sObj.min = item.min != undefined ? item.min : null;
-    sObj.max = item.max != undefined ? item.max : null;
-    aux.setpoint = sObj;
-  }
-
-  pobj.aux = aux;
-
-  return JSON.stringify(pobj) + '\n';
+  return {
+    _id: getNewId('d', 4, item.id),
+    parent,
+    order: item.order,
+    // type: 't' + item.type,
+    type: getNewId('t', 3, item.type),
+    dn: item.dn,
+    name: item.name,
+    tags: ext
+  };
 }
+
+function formProps(item) {
+  const pobj = {};
+
+  // Переносим только для value и setpont - опционально
+  // TODO Нужно еще как-то перенести состояния??  devstates => state с алгоритмом по умолчанию??
+
+  pobj.value = { db: item.db ? 1 : 0, mu: item.mu || '' };
+  if (isAnalog(item)) {
+    pobj.value.min = item.min != undefined ? item.min : null;
+    pobj.value.max = item.max != undefined ? item.max : null;
+    pobj.value.dig = item.decdig || 0;
+
+    pobj.setpoint = { mu: item.mu || '' };
+    pobj.setpoint.min = item.min != undefined ? item.min : null;
+    pobj.setpoint.max = item.max != undefined ? item.max : null;
+  }
+  return pobj;
+}
+
 
 /**
  *  devcurrent содержал значения свойств в целом для устройства:
@@ -269,7 +299,7 @@ function formCurRecord(did, item) {
  *  devhard содержит связки dn - unit, chan, если complex=false
  * 
  *   Сейчас нужно для каждого свойства отдельно всегда (обычно prop:value)
- *   id - новый, подряд, did тот же что и в devices
+ *   id - новый, подряд, did= devices._id
  *    {id, did, prop, unit, chan, <inv,...>, hard:{... actions:[{act:on,...},..]} 
  
  * @param {Array of Objects} devcurData - данные из devcurrent
@@ -401,6 +431,10 @@ function getDeviceObj(devicesfile) {
   );
 }
 
+function getNewId(pref, len, oldId) {
+  return isNaN(oldId) ? oldId : pref + String(Number(oldId)).padStart(len, '0');
+}
+
 function getNewProp(prop) {
   return prop == 'defval' ? 'setpoint' : prop;
 }
@@ -415,7 +449,7 @@ module.exports = {
   formRecord,
   getSysDataFile,
   createTypes,
-  createDevprops,
+  createDevices,
   createDevhard,
   createDevcurrent
 };
