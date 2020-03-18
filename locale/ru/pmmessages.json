@@ -837,6 +837,8 @@
   { "id": "mustBeGreaterToMin", "note": "значение не может быть больше min" },
   { "id": "NewFolder", "note": "Новая папка" },
   { "id": "NewType", "note": "Новый тип" },
-  { "id": "NewDevice", "note": "Новое устройство" }
+  { "id": "NewDevice", "note": "Новое устройство" },
+  { "id": "Ruledn_pref", "note": "Префикс при именовании нового устройства" },
+  { "id": "Ruledn_len", "note": "Длина при именовании нового устройства " }
 
 ]

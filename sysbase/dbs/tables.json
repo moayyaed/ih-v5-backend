@@ -11,13 +11,12 @@
   "device": {
     "store": "db",
     "collection": "devices",
-    "default": { "name": "$NewDevice" },
     "ruleID": { "pref": "d", "len": 4 }
   },
-  "devprops": { "store": "db", "collection": "devprops", "genfield": "aux", "default": { "aux": {} } },
+ 
   "devhard": { "store": "db", "collection": "devhard" },
   "devcurrent": { "store": "db", "collection": "devcurrent" },
-  "devicecommonTable": { "store": "db", "collection": "devprops", "genfield": "aux" },
+  "devicecommonTable": { "store": "db", "collection": "devices", "genfield": "props" },
   "unitchannelsTable": { "store": "virt", "collection": "devhard" },
   "typegroup": {
     "store": "db",
