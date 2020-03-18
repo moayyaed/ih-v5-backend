@@ -2,7 +2,7 @@
   "dev": ["devices", "types"],
   "devices": {
     "branch": { "table": "place", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } },
-    "leaf": { "table": "device", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
+    "leaf": { "table": "device", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "dn":"dn" } }
   },
   "types": {
     "branch": {
