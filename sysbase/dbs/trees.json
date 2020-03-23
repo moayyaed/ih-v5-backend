@@ -43,6 +43,17 @@
     }
   },
 
+  "channels":{
+    "branch": {
+      "table": "chgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+    },
+    "leaf": {
+      "table": "devhard",
+      "propmap": { "_id": "id", "id": "title", "parent": "parent", "order": "order" }
+    }
+  },
+
   "snippets":{
     "branch": {
       "table": "snippetgroup",

@@ -14,6 +14,16 @@
     "ruleID": { "pref": "d", "len": 4 }
   },
  
+  "chgroup": {
+    "store": "db",
+    "collection": "lists",
+    "filter": { "list": "chgroup" },
+    "defRootTitle": "Каналы",
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "chgr", "len": 3 }
+  },
+  "channels": { "store": "db", "collection": "devhard" },
+
   "devhard": { "store": "db", "collection": "devhard" },
   "devcurrent": { "store": "db", "collection": "devcurrent" },
   "devicecommonTable": { "store": "db", "collection": "devices", "genfield": "props" },

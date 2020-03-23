@@ -1,7 +1,7 @@
 {
   "tabs": [
-    { "id": "tabPluginCommon", "title": "Экземпляр плагина", "component": [{ "id": "formPluginCommon", "type": "form" }] }
+    { "id": "tabUnitParams",  "title": "Параметры плагина", "component": [{ "id": "formPluginCommon", "type": "form" }]  },
+    { "id": "tabUnitChannels",  "title": "Каналы", "component": [{ "id": "formUnitChannels", "type": "form" }]  }
   ],
-
-  "defaultTab": "tabPluginCommon"
+  "defaultTab": "tabUnitParams"
 }
