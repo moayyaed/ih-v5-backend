@@ -1,16 +1,18 @@
 {
   "grid": [
-    { "id": "p0", "xs": 12, "class": "main", "height": "fill", "padding": 4 },
-    { "id": "p1", "xs": 6, "class": "main", "table": "unitchannelsTable" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "unitchannelsTable" },
-    { "id": "p3", "xs": 12, "class": "main", "table": "unitchannelsTable", "height": 250 }
+    { "id": "p1", "xs": 6, "class": "main", "table": "devhard" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "devhard" },
+    { "id": "p3", "xs": 12, "class": "main", "table": "devhard", "height": 250 }
   ],
   "spacing": 4,
 
-  "p0": [{ "prop": "code", "title": "Code", "type": "code" }],
+  "p1": [{ "prop": "chan", "title": "$Channel", "type": "input" },
+    { "prop": "unit", "title": "$Unit", "type": "text" },
+    { "prop": "did", "title": "Device ID", "type": "text" },
+    { "prop": "prop", "title": "Device property", "type": "text" }
+  ],
 
-  "p1": [{ "prop": "name", "title": "$Name", "type": "input" }],
-  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
+  "p2": [{ "prop": "desc", "title": "$Comment", "type": "textarea" }],
 
   "p3": [
     {

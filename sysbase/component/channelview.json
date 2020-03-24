@@ -1,12 +1,12 @@
 {
 
     "grid": [
-      { "id": "p1", "xs": 6, "class": "main", "table": "unitchannelsTable" },
-      { "id": "p2", "xs": 6, "class": "main", "table": "unitchannelsTable" }
+      { "id": "p1", "xs": 6, "class": "main", "table": "devhard" },
+      { "id": "p2", "xs": 6, "class": "main", "table": "devhard" }
      
     ],
     "spacing": 10,
-    "breadcrumbs": { "tree": "channels" },
+
     "p1": [
       { "prop": "name", "title": "$Name", "type": "input" }
      
