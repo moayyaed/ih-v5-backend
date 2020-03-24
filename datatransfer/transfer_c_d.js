@@ -54,7 +54,7 @@ let project_d;
   
   // create создает заново
   
-  create('layouts', 'jbase');
+  // create('layouts', 'jbase');
      /** 
   create('units', 'jbase');
   create('types', 'jbase');
@@ -63,7 +63,7 @@ let project_d;
   */
   // create('devices', 'jbase');
   
-  // create('devhard', 'jbase');
+  create('devhard', 'jbase');
  
   // - create('devcurrent', 'operative');
 

@@ -347,7 +347,7 @@ function createDevhard(devhardData, project_d) {
 
   return str;
 }
-
+/** 
 function formHardRecord(did, item) {
   if (item.complex) return '';
 
@@ -367,7 +367,7 @@ function formHardRecord(did, item) {
   // Может и не быть - например wip
   if (hard) {
     pobj.hard = hard;
-    // if ((item.desc == 'DO' || item.desc == 'AO') && item.actions) {
+    
     if (item.actions) {
       let actions;
       actions = hut.clone(item.actions, actions);
@@ -376,6 +376,39 @@ function formHardRecord(did, item) {
   }
   return JSON.stringify(pobj) + '\n';
 }
+*/
+
+
+function formHardRecord(did, item) {
+  if (item.complex) return '';
+
+  if (!item.chan) item.chan = item.dn;
+  const pobj = {
+    _id: did,
+    did,
+    prop: 'value',
+    unit: item.unit,
+    chan: item.chan,
+    inv: item.inv,
+    calc: item.calc,
+    desc: item.desc
+  };
+
+  const hard = getHardObjForUnit(item);
+  // Может и не быть - например wip
+  let robj;
+  if (hard) {
+    robj = Object.assign(pobj, hard);
+    
+    if (item.actions) {
+      let actions;
+      actions = hut.clone(item.actions, actions);
+      robj.actions = actions;
+    }
+  } else robj = pobj;
+  return JSON.stringify(robj) + '\n';
+}
+
 
 function getHardObjForUnit(item) {
   const plugin = hut.removeLastNumFromStr(item.unit);

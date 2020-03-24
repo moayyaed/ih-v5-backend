@@ -2,7 +2,7 @@
   "grid": [
     { "id": "p1", "xs": 6, "class": "main", "table": "devhard" },
     { "id": "p2", "xs": 6, "class": "main", "table": "devhard" },
-    { "id": "p3", "xs": 12, "class": "main", "table": "devhard", "height": 250 }
+    { "id": "p3", "xs": 12, "class": "main", "table": "devhard" }
   ],
   "spacing": 4,
 
@@ -15,17 +15,6 @@
   "p2": [{ "prop": "desc", "title": "$Comment", "type": "textarea" }],
 
   "p3": [
-    {
-      "title": "Channels",
-      "type": "table",
-      "prop": "unitchannelsTable",
-
-      "columns": [
-        { "prop": "chan", "title": "Channel", "type": "string" },
-        { "prop": "did", "title": "$Device", "type": "string", "readonly": true },
-        { "prop": "prop", "title": "$DeviceProperty", "type": "string", "readonly": true },
-        { "prop": "unit", "title": "Unit", "type": "string", "readonly": true }
-      ]
-    }
+   
   ]
 }
