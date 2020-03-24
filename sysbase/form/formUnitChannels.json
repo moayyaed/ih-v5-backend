@@ -8,6 +8,6 @@
   "breadcrumbs": { "tree": "plugins" },
 
   "p1": [
-    { "prop": "channelsTree", "title": "", "type": "pluginform1", "data":"channel_$$$"}
+    { "prop": "channelsTree", "title": "", "type": "pluginform1", "data":"channels"}
   ]
 }

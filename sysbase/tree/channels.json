@@ -1,0 +1,40 @@
+{
+  "common": {
+    "popup": {
+      "main": [
+        { "id": "1", "type": "item", "title": "New channel", "command": "addNode" },
+        { "id": "2", "type": "item", "title": "New folder", "command": "addFolder" }
+      ]
+    }
+  },
+  "channels": {
+    "parent": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "New channel", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "New folder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "Copy", "command": "copy" },
+          { "id": "5", "type": "item", "title": "Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "6", "type": "divider" },
+          { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
+        ]
+      },
+      "defaultComponent": "channelfolder"
+    },
+    "child": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "New plugin", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "New folder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "Copy", "command": "copy" },
+          { "id": "5", "type": "item", "title": "Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "6", "type": "divider" },
+          { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
+        ]
+      },
+      "defaultComponent": "channelview"
+    }
+  }
+}
