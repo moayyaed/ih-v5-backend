@@ -2,7 +2,10 @@
   "dev": ["devices", "types"],
   "devices": {
     "branch": { "table": "place", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } },
-    "leaf": { "table": "device", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "dn":"dn" } }
+    "leaf": {
+      "table": "device",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "dn": "dn" }
+    }
   },
   "types": {
     "branch": {
@@ -32,7 +35,7 @@
     }
   },
   "datasource": ["plugins"],
-  "plugins":{
+  "plugins": {
     "branch": {
       "table": "plugingroup",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
@@ -43,9 +46,9 @@
     }
   },
 
-  "channels":{
+  "channels": {
     "branch": {
-      "table": "chgroup",
+      "table": "devhard",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     },
     "leaf": {
@@ -54,7 +57,7 @@
     }
   },
 
-  "snippets":{
+  "snippets": {
     "branch": {
       "table": "snippetgroup",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
@@ -64,8 +67,8 @@
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     }
   },
-  "analytics":["charts","reports"],
-  "charts":{
+  "analytics": ["charts", "reports"],
+  "charts": {
     "branch": {
       "table": "chartgroup",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
@@ -75,7 +78,7 @@
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     }
   },
-  "reports":{
+  "reports": {
     "branch": {
       "table": "reportgroup",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
