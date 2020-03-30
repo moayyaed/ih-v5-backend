@@ -7,6 +7,7 @@
   "spacing": 4,
 
   "p1": [{ "prop": "chan", "title": "$Channel", "type": "input" },
+    { "prop": "order", "title": "Order", "type": "input" },
     { "prop": "unit", "title": "$Unit", "type": "text" },
     { "prop": "did", "title": "Device ID", "type": "text" },
     { "prop": "prop", "title": "Device property", "type": "text" }
