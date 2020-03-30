@@ -10,6 +10,7 @@
   
     "p1": [
       { "prop": "chan", "title": "$Name", "type": "input" },
+      { "prop": "_id", "title": "ID", "type": "text" },
       { "prop": "order", "title": "Order", "type": "input" }
      
     ],
