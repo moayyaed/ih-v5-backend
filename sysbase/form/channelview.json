@@ -10,7 +10,7 @@
     { "prop": "_id", "title": "ID", "type": "text" },
     { "prop": "order", "title": "Order", "type": "input" },
     { "prop": "unit", "title": "$Unit", "type": "text" },
-    { "prop": "devlink", "title": "Link To Device Property", "type": "channel" }
+    { "prop": "devlink", "title": "Link To Device Property", "type": "devlink" }
   ],
 
   "p2": [{ "prop": "desc", "title": "$Comment", "type": "textarea" }],
