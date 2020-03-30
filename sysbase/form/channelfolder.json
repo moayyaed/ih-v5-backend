@@ -9,7 +9,7 @@
     "breadcrumbs": { "tree": "channels" },
   
     "p1": [
-      { "prop": "name", "title": "$Name", "type": "input" },
+      { "prop": "chan", "title": "$Name", "type": "input" },
       { "prop": "order", "title": "Order", "type": "input" }
      
     ],

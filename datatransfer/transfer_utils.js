@@ -319,6 +319,10 @@ function createDevhard(devhardData, project_d) {
   const devicesfile = path.join(project_d, 'jbase', 'devices.db');
   const deviceObj = getDeviceObj(devicesfile);
 
+  // Упорядочить по chan и генерировать order подряд
+  devhardData.sort(hut.byorder('chan'));
+  let order = 1000;
+
   const complexMap = new Map();
   devhardData.forEach(item => {
     if (item.dn && item.unit) {
@@ -337,13 +341,15 @@ function createDevhard(devhardData, project_d) {
         if (!did) {
           console.log('NOT FOUND id for ' + item.id + ' in ' + devicesfile);
         } else {
+          item.order = order;
           str += formHardRecord(did, item);
+          order += 1000;
         }
       }
     }
   });
 
-  // Сформировать из комплексных каналов ( wip)
+  // TODO Сформировать из комплексных каналов ( wip)
 
   return str;
 }
@@ -391,7 +397,8 @@ function formHardRecord(did, item) {
     chan: item.chan,
     inv: item.inv,
     calc: item.calc,
-    desc: item.desc
+    desc: item.desc,
+    order: item.order
   };
 
   const hard = getHardObjForUnit(item);
