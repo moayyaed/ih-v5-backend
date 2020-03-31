@@ -1,10 +1,11 @@
 {
   "dev": ["devices", "types"],
   "devices": {
-    "branch": { "table": "place", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } },
+    "branch": { "table": "place", 
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } },
     "leaf": {
       "table": "device",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "dn": "dn" }
+      "propmap": { "_id": "id", "title": "title", "parent": "parent", "order": "order", "dn": "dn" }
     }
   },
   "types": {
@@ -49,11 +50,11 @@
   "channels": {
     "branch": {
       "table": "devhard",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "title": "title", "parent": "parent", "order": "order" }
     },
     "leaf": {
       "table": "devhard",
-      "propmap": { "_id": "id", "id": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "id": "title", "title": "title", "parent": "parent", "order": "order" }
     }
   },
 
