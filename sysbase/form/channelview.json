@@ -11,6 +11,8 @@
     { "prop": "_id", "title": "ID", "type": "text" },
     { "prop": "order", "title": "Order", "type": "input" },
     { "prop": "unit", "title": "$Unit", "type": "text" },
+    { "prop": "did", "title": "$Device ID", "type": "text" },
+    { "prop": "prop", "title": "$Device prop", "type": "text" },
     {
       "prop": "devlink",
       "title": "$LinkToDeviceProperty",
