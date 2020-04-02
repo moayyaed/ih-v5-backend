@@ -6,16 +6,21 @@
   ],
   "spacing": 4,
 
-  "p1": [{ "prop": "chan", "title": "$Channel", "type": "input" },
+  "p1": [
+    { "prop": "chan", "title": "$Channel", "type": "input" },
     { "prop": "_id", "title": "ID", "type": "text" },
     { "prop": "order", "title": "Order", "type": "input" },
     { "prop": "unit", "title": "$Unit", "type": "text" },
-    { "prop": "devlink", "title": "Link To Device Property", "type": "devlink" }
+    {
+      "prop": "devlink",
+      "title": "$LinkToDeviceProperty",
+      "type": "smartbutton",
+      "command": "dialog",
+      "params": { "title": "$LinkToDeviceProperty", "type": "tree", "id":"devices", "dialog":"devicelink" }
+    }
   ],
 
   "p2": [{ "prop": "desc", "title": "$Comment", "type": "textarea" }],
 
-  "p3": [
-   
-  ]
+  "p3": []
 }

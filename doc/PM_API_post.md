@@ -1,39 +1,60 @@
 
-OLD
-{ "method": "insert", "type": "tree", "id": "dev", 
-  "payload": {
-      "types": { 
-       "nodes":[{"parentid":"SensorD", "previd":"x100" <,"popupid":"t230">}]
-       "folders":[{"parentid":"SensorD", "previd":"x100" <,"popupid":"t230">}]
-    }
-  }
-}
+# POST запросы на редактирование данных
 
-NEW
+## Операции вставки, перемещения, копирования в деревьях (type:'tree' | 'subtree')
+
+**Точка вставки** - это родительская папка + узел внутри
+
+  "parentid":"SensorD" - родительская папка 
+  "previd":"t100" - узел внутри, после которого будет вставка 
+
+
+**tree** - Дерево,возможно, состоящее из нескольких деревьев (корневых узлов).
+
+  Корневые узлы жестко заданы, на верхний уровень добавление невозможно.
+  
+  Одновременно выполяется операция только внутри одного корневого узла, 
+  имя которого определяется в payload   
+
+  Родительская папка "parentid" должна быть определена и принадлежать этому корневому узлу!
+
+**subtree** - Дерево может иметь на верхнем уровне множество узлов, общего корня нет.
+
+  На верхний уровень добавление выполняется с parentid:0
+  
+
+- "method": "insert", "type": "tree"
+
+  Вставить в дерево, возможно, состоящее из нескольких корневых узлов
+
+```
 { "method": "insert", "type": "tree", "id": "dev", 
  "parentid":"SensorD", // Для tree обязательно, если нет - ошибка
- "previd":"x100", // Точка вставки внутри parentnode. Если нет - вниз. Если не найден узел - ошибка (вниз?)
+ "previd":"x100",
   "payload": {
       "types": { 
-       "nodes":[{"title":"New node" <,"popupid":"t230">}] // title никакой роли не играет,чтобы не пусто было
+       "nodes":[{"title":"New node" <,"popupid":"t230">}] // title никакой роли не играет,чтобы не пусто было. Можно не вставлять, если есть popupid. Пустой объект тоже можно
        "folders":[{{"title":"New folder" <,"popupid":"t230">}]
     }
   }
 }
+```
 
 OLD
 { "method": "insert", "type": "subtree", "id": "channels", "navnodeid":"modbus1",
   "payload": 
-      [{"parentid":"folder1"|0|null, "previd":"ch_42", "popupid":"node|folder"}]
+      [{"parentid":"folder1"|0|null, «order»:1000, "popupid":"node|folder"}]
 }
+
 
 NEW
 { "method": "insert", "type": "subtree", "id": "channels", "navnodeid":"modbus1",
  "parentid":"folder1", // Для subtree не обязательно, если нет  или 0|null - на верхний уровень
- "previd":"x100", // Точка вставки внутри parentnode. Если нет - вниз
+ "previd":"x100",
  "payload":
-      [{"popupid":"node|folder"}]
+       [{"popupid":"node|folder"}]
 }
+————
 
 OLD
 { "method": "copypaste", "type": "tree", "id": "dev",
@@ -50,8 +71,8 @@ OLD
 
 NEW
 { "method": "copypaste", "type": "tree", "id": "dev",
-  "parentid":"ActorD", 
-  "previd":"t500", 
+  "parentid":"ActorD", // Меняется только имя свойства  
+  "previd":"t500", // Здесь не order, а id
   "payload": {
       "types": {
         "folders":[{"nodeid":"SensorD"}], 
@@ -60,6 +81,7 @@ NEW
     }
   }
 }
+————
 
 OLD
 { "method": "copypaste", "type": "subtree", "id": "channels", "navnodeid":"modbus1",
@@ -71,74 +93,3 @@ OLD
         "seq":["ch_1", "folderx", "ch_2"] 
     }
   }
-}
-
-NEW
-{ "method": "copypaste", "type": "subtree", "id": "channels", "navnodeid":"modbus1",
-  "parentid":"newfolder1"|0|null, 
-  "previd":"ch_0", 
-  "payload": {
-        "folders":[{"nodeid":"folderx"}], 
-        "nodes":[{"nodeid":"ch_1"},{"nodeid":"ch_2"}],  
-        "seq":["ch_1", "folderx", "ch_2"] 
-    }
-  }
-}
-
-OLD
-{ "method": "update", "type": "tree", "id": "dev",
-  "payload": {
-    "types": { 
-      "folders":[{"nodeid":"SensorD", "previd":"t100"}], // перенос внутри папки
-      "nodes":[{"nodeid":"t200", "parentid":"SensorA",  "previd":"t200"}]  // ИЛИ перенос с изменением папки
-    }
-  }
-}
-
-NEW
-{ "method": "update", "type": "tree", "id": "dev",
-  "parentid":"SensorA", // Перенос между папками. Если не указано - перенос внутри папки. 
-  "previd":"ch_0", // Точка вставки. Если нет - в конец
-  "payload": {
-    "types": { 
-      "folders":[{"nodeid":"SensorD"}], 
-      "nodes":[{"nodeid":"t200"}]  
-    }
-  }
-}
-
-OLD
-{ "method": "update", "type": "subtree", "id": "channels", "navnodeid":"modbus1",
-  "payload": {
-      [{"nodeid":"t200", "previd":"t100"}], // перенос внутри папки
-      [{"nodeid":"t200", "parentid":"folder2",  "previd":"t200"}]  // перенос между папками
-    }
-  }
-}
-
-NEW
-{"method": "update", "type": "subtree", "id": "channels", "navnodeid":"modbus1",
- "parentid":"folder2", // Перенос между папками. Если не указано - перенос внутри папки. Если = 0|null - перенос на верхний уровень
- "previd":"ch_0", // Точка вставки. Если нет - в конец
-  "payload": {
-      [{"nodeid":"t200"}],
-    }
-  }
-}
-
-ОСТАЕТСЯ КАК БЫЛО
-{ "method": "remove", "type": "tree", "id": "dev",
-  "payload": {
-    "types": { 
-      "folders":[{"nodeid":"SensorD"}],
-      "nodes":[{"nodeid":"t200"}]  
-    }
-  }
-}
-
-{ "method": "remove", "type": "subtree", "id": "dev",
-  "payload": {
-      "folders":[{"nodeid":"folderx"}],
-      "nodes":[{"nodeid":"ch_1"}]  
-  }
-}
