@@ -6,9 +6,9 @@
     { "id": "p2", "xs": 6, "class": "main"}
   ],
   "spacing": 10,
-  
+
   "h1": [
-    { "prop": "sysinfo", "title": "System Info", "type": "header" }
+    { "prop": "sysinfo", "title": "System Info", "type": "header", "size":"h4" }
   ],
 
   "h2": [
