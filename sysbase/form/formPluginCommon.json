@@ -8,8 +8,10 @@
   "breadcrumbs": { "tree": "plugins" },
 
   "p1": [
-    { "prop": "plugin", "title": "Plugin", "type": "text" },
-    { "prop": "id", "title": "$Name", "type": "text" }
+    { "prop": "plugin", "title": "Plugin", "type": "text", "hide":"p1.test" },
+    { "prop": "id", "title": "$Name", "type": "text" },
+    { "prop": "test", "title": "Test", "type": "input" }
+
   
   ],
   "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
