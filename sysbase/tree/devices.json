@@ -17,7 +17,7 @@
           { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
         ]
       },
-      "defaultComponent": "devicelinkfolder"
+      "defaultComponent": null
     },
     "child": {
       "popup": {
