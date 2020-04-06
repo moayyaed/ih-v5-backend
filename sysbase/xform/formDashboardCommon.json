@@ -1,10 +1,17 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main"}
+    { "id": "p1", "xs": 6, "class": "main"},
+    { "id": "p2", "xs": 6, "class": "main"}
   ],
   "spacing": 10,
-
+ 
   "p1": [
+    { "prop": "uptime", "title": "IH Uptime", "type": "text" },
+    { "prop": "osUptime", "title": "OS Uptime", "type": "text" },
+    { "prop": "osMemory", "title": "OS Memory", "type": "text" }
+   
+  ],
+  "p2": [
     { "prop": "platform", "title": "Platform", "type": "text" },
     { "prop": "arch", "title": "Arch", "type": "text" },
     { "prop": "ip", "title": "IP", "type": "text" },
