@@ -1,8 +1,13 @@
 {
   "grid": [
-    { "id": "p1", "xs": 12, "class": "main"}
+    { "id": "p1", "xs": 6, "class": "main"}
   ],
   "spacing": 10,
 
-  "p1": [{ "prop": "name", "title": "$Name", "type": "text" }]
+  "p1": [
+    { "prop": "platform", "title": "Platform", "type": "text" },
+    { "prop": "arch", "title": "Arch", "type": "text" },
+    { "prop": "ip", "title": "IP", "type": "text" },
+    { "prop": "cpuTemp", "title": "IP", "type": "text" }
+  ]
 }
