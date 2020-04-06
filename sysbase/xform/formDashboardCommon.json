@@ -1,10 +1,20 @@
 {
   "grid": [
+    { "id": "h1", "xs": 6},
+    { "id": "h2", "xs": 6},
     { "id": "p1", "xs": 6, "class": "main"},
     { "id": "p2", "xs": 6, "class": "main"}
   ],
   "spacing": 10,
- 
+  
+  "h1": [
+    { "prop": "sysinfo", "title": "System Info", "type": "header" }
+  ],
+
+  "h2": [
+    { "prop": "processinfo", "title": "Process Info", "type": "header" }
+  ],
+
   "p1": [
     { "prop": "uptime", "title": "IH Uptime", "type": "text" },
     { "prop": "osUptime", "title": "OS Uptime", "type": "text" },
