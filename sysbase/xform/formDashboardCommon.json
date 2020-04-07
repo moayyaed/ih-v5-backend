@@ -1,30 +1,55 @@
 {
   "grid": [
-    { "id": "h1", "xs": 6},
-    { "id": "h2", "xs": 6},
-    { "id": "p1", "xs": 6, "class": "main"},
-    { "id": "p2", "xs": 6, "class": "main"}
+    { "id": "h1", "xs": 3},
+    { "id": "h2", "xs": 3},
+    { "id": "h3", "xs": 3},
+    { "id": "h4", "xs": 3},
+    { "id": "p1", "xs": 3, "class": "main"},
+    { "id": "p2", "xs": 3, "class": "main"},
+    { "id": "p3", "xs": 3, "class": "main"},
+    { "id": "p4", "xs": 3, "class": "main"}
   ],
   "spacing": 10,
 
   "h1": [
-    { "prop": "sysinfo", "title": "System Info", "type": "header", "size":"h4" }
+    { "prop": "sysinfo", "title": "System Info", "type": "header", "size":"h6" }
   ],
 
   "h2": [
-    { "prop": "processinfo", "title": "Process Info", "type": "header" }
+    { "prop": "processinfo", "title": "Memory Info", "type": "header" }
+  ],
+
+  "h3": [
+    { "prop": "projectinfo", "title": "Project Info", "type": "header" }
+  ],
+
+  "h4": [
+    { "prop": "uptimeinfo", "title": "UpTime", "type": "header" }
   ],
 
   "p1": [
-    { "prop": "uptime", "title": "IH Uptime", "type": "text" },
-    { "prop": "osUptime", "title": "OS Uptime", "type": "text" },
-    { "prop": "osMemory", "title": "OS Memory", "type": "text" }
-   
-  ],
-  "p2": [
     { "prop": "platform", "title": "Platform", "type": "text" },
     { "prop": "arch", "title": "Arch", "type": "text" },
     { "prop": "ip", "title": "IP", "type": "text" },
-    { "prop": "cpuTemp", "title": "IP", "type": "text" }
+    { "prop": "cpuTemp", "title": "CPU Temperature", "type": "text" }
+   
+  ],
+  "p2": [
+    { "prop": "osMemory", "title": "OS Total/Free", "type": "text" },
+    { "prop": "rss", "title": "Process Resident Memory Size", "type": "text" },
+    { "prop": "heapTotal", "title": "Process Heap Total", "type": "text" },
+    { "prop": "heapUsed", "title": "Process Heap Used", "type": "text" }
+  ],
+  "p3": [
+    { "prop": "project", "title": "Platform", "type": "text" },
+    { "prop": "qDevices", "title": "Devices", "type": "text" },
+    { "prop": "qChannels", "title": "Channels", "type": "text" },
+    { "prop": "qMnemos", "title": "Mnemoschemes", "type": "text" }
+  ],
+  "p4": [
+    { "prop": "osUptime", "title": "OS Uptime", "type": "text" },
+    { "prop": "uptime", "title": "IH Uptime", "type": "text" }
+   
+   
   ]
 }
