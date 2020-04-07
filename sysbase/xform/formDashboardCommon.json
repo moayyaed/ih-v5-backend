@@ -16,15 +16,15 @@
   ],
 
   "h2": [
-    { "prop": "processinfo", "title": "Memory Info", "type": "header" }
+    { "prop": "processinfo", "title": "Memory Info", "type": "header", "size":"h6"  }
   ],
 
   "h3": [
-    { "prop": "projectinfo", "title": "Project Info", "type": "header" }
+    { "prop": "projectinfo", "title": "Project Info", "type": "header", "size":"h6"  }
   ],
 
   "h4": [
-    { "prop": "uptimeinfo", "title": "UpTime", "type": "header" }
+    { "prop": "uptimeinfo", "title": "Uptime", "type": "header", "size":"h6"  }
   ],
 
   "p1": [
@@ -41,7 +41,7 @@
     { "prop": "heapUsed", "title": "Process Heap Used", "type": "text" }
   ],
   "p3": [
-    { "prop": "project", "title": "Platform", "type": "text" },
+    { "prop": "project", "title": "Project", "type": "text" },
     { "prop": "qDevices", "title": "Devices", "type": "text" },
     { "prop": "qChannels", "title": "Channels", "type": "text" },
     { "prop": "qMnemos", "title": "Mnemoschemes", "type": "text" }
