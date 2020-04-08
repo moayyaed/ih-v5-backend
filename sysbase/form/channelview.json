@@ -1,18 +1,12 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "devhard" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "devhard" },
-    { "id": "p3", "xs": 12, "class": "main", "table": "devhard" }
+    { "id": "p1", "xs": 12, "class": "main", "table": "devhard" },
+    { "id": "p2", "xs": 12, "class": "main", "table": "devhard", "height": 250 }
   ],
   "spacing": 4,
 
   "p1": [
     { "prop": "chan", "title": "$Channel", "type": "input" },
-    { "prop": "_id", "title": "ID", "type": "text" },
-    { "prop": "order", "title": "Order", "type": "input" },
-    { "prop": "unit", "title": "$Unit", "type": "text" },
-    { "prop": "did", "title": "$Device ID", "type": "text" },
-    { "prop": "prop", "title": "$Device prop", "type": "text" },
     {
       "prop": "devlink",
       "title": "$LinkToDeviceProperty",
@@ -22,7 +16,5 @@
     }
   ],
 
-  "p2": [{ "prop": "desc", "title": "$Comment", "type": "textarea" }],
-
-  "p3": []
+  "p2": [{ "prop": "desc", "title": "$Comment", "type": "textarea" }]
 }
