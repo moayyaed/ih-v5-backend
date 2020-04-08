@@ -1,7 +1,7 @@
 {
   "tabs": [
     { "id": "tabLayoutCommon", "title": "Описание", "component": [{ "id": "formLayoutCommon", "type": "form" }] },
-    { "id": "tabLayoutEditor", "title": "Редактор", "component": [{ "id": "leditor", "type": "orm" }] }
+    { "id": "tabLayoutEditor", "title": "Редактор", "component": [{ "id": "formLayout", "type": "form" }] }
   ],
   "defaultTab": "tabLayoutCommon"
 }
