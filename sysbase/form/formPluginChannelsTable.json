@@ -1,0 +1,23 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"unitchannelsTable", "height":250 }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "plugins" },
+
+  "p1": [
+    {
+      "title": "Channels",
+      "type": "table",
+      "prop": "unitchannelsTable",
+
+      "columns": [
+
+        { "prop": "chan", "title": "Channel", "type": "string" },
+        { "prop": "did", "title": "$Device", "type": "string", "readonly": true },
+        { "prop": "prop", "title": "$DeviceProperty", "type": "string", "readonly": true },
+        { "prop": "unit", "title": "Unit", "type": "string", "readonly": true }
+      ]
+    }
+  ]
+}
