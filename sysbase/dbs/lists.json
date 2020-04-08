@@ -2,5 +2,9 @@
   "typeList": {
     "table": "type",
     "propmap": { "_id": "id", "name": "title" }
+  },
+  "deviceList": {
+    "table": "device",
+    "propmap": { "_id": "id", "name": "name", "dn":"dn" }
   }
 }
