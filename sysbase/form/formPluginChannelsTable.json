@@ -14,7 +14,7 @@
       "columns": [
 
         { "prop": "chan", "title": "Channel", "type": "text" },
-        { "prop": "did", "title": "$Device", "type": "text" },
+        { "prop": "did", "title": "$Device", "type": "link", "command":"forward"  },
         { "prop": "prop", "title": "$DeviceProperty", "type": "text" },
         { "prop": "unit", "title": "Unit", "type": "text" }
       ]

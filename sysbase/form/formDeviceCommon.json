@@ -29,7 +29,7 @@
         { "prop": "dig", "title": "$Decdig", "type": "number", "width": 50 },
         { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 100 },
         { "prop": "unit", "title": "$Plugin", "type": "text", "width": 150 },
-        { "prop": "chan", "title": "$Channel", "type": "link", "width": 150, "command": "dialogTree", "commandparam":"devicedialog"  },
+        { "prop": "chan", "title": "$Channel", "type": "text", "width": 150 },
         { "prop": "val", "title": "$Value", "type": "text", "width": 100 },
         { "prop": "ts", "title": "$Time", "type": "text", "width": 200 }
       ]
