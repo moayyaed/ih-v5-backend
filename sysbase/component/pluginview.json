@@ -6,7 +6,7 @@
       "component": [{ "id": "formPluginCommon", "type": "form" }]
     },
     { "id": "tabUnitChannels", "title": "Каналы", "component": [{ "id": "formUnitChannels", "type": "form" }] },
-    { "id": "tabChannelsTable", "title": "Таблица", "component": [{ "id": "formPluginChannelsTable", "type": "form" }] }
+    { "id": "tabChannelsTable", "title": "Таблица каналов", "component": [{ "id": "formPluginChannelsTable", "type": "form" }] }
   ],
   "defaultTab": "tabUnitParams"
 }
