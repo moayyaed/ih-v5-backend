@@ -214,7 +214,11 @@
   { "id": "FailUpdate", "note": "Не удалось сохранить данные!" },
   { "id": "FolderLostInvOper", "note": "Папка lost+found служебная, операция не может быть выполнена!" },
   { "id": "FolderRootOrNotFound", "note": "Не удалось выполнить операцию!"},
-  { "id": "OnlyOneRootForCopy", "note": "Копировать можно только внутри одного дерева!"}
+  { "id": "OnlyOneRootForCopy", "note": "Копировать можно только внутри одного дерева!"},
 
+  { "id": "mustBeNotEmptyString", "note": "строка не должна быть пустой" },
+  { "id": "mustBeLessToMax", "note": "значение не может быть меньше max" },
+  { "id": "mustBeGreaterToMin", "note": "значение не может быть больше min" },
+  { "id": "mustBeUnique", "note": "значение должно быть уникально" }
 
 ]

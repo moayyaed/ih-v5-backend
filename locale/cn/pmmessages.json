@@ -754,9 +754,7 @@
   { "id": "SnipDependencies", "note": "Snippet Dependencies" },
   { "id": "DATASOURCE", "note": "Data Sources" },
   { "id": "ANALYTICS", "note": "Analytics" },
-  { "id": "mustBeNotEmptyString", "note": "must be not empty string" },
-  { "id": "mustBeLessToMax", "note": "must be less than or equal to the max" },
-  { "id": "mustBeGreaterToMin", "note": "must be greater than or equal to the min" },
+
   { "id": "NewFolder", "note": "New Folder" },
   { "id": "NewType", "note": "New Type" },
   { "id": "NewDevice", "note": "New Device" }

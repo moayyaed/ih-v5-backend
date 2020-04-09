@@ -207,5 +207,10 @@
   { "id": "FailUpdate", "note": "Failed to save data!" },
   { "id": "FolderLostInvOper", "note": "Invalid operation for folder 'lost+found'!" },
   { "id": "FolderRootOrNotFound", "note": "Operation failed!"},
-  { "id": "OnlyOneRootForCopy", "note": "You can only copy inside one tree!"}
+  { "id": "OnlyOneRootForCopy", "note": "You can only copy inside one tree!"},
+
+  { "id": "mustBeNotEmptyString", "note": "must be not empty string" },
+  { "id": "mustBeLessToMax", "note": "must be less than or equal to the max" },
+  { "id": "mustBeGreaterToMin", "note": "must be greater than or equal to the min" },
+  { "id": "mustBeUnique", "note": "the value must be unique" }
 ]

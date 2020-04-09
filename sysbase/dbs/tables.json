@@ -11,7 +11,13 @@
   "device": {
     "store": "db",
     "collection": "devices",
-    "ruleID": { "pref": "d", "len": 4 }
+    "ruleID": { "pref": "d", "len": 4 },
+    "validator": {
+      "main": {
+        "name": { "required": true, "notempty": true},
+        "dn": { "required": true, "notempty": true, "unique": true}
+      }
+    }
   },
  
   "chgroup": {
@@ -44,14 +50,14 @@
 
     "validator": {
       "main": {
-        "name": { "required": true, "empty": false, "description": "$mustBeNotEmptyString" }
+        "name": { "required": true, "notempty": true}
       },
       "props": {
-        "name": { "required": true, "type": "string", "empty": false, "description": "$mustBeNotEmptyString" },
-        "vtype": { "required": true, "type": "string", "empty": false, "description": "$mustBeNotEmptyString" },
-        "op": { "required": true, "type": "string", "empty": false, "description": "$mustBeNotEmptyString" },
-        "min": { "type": "number", "description": "$mustBeLessToMax", "spec": "minmax" },
-        "max": { "type": "number", "description": "$mustBeGreaterToMin", "spec": "minmax" }
+        "name": { "required": true, "type": "string", "notempty": true },
+        "vtype": { "required": true, "type": "string", "notempty": true},
+        "op": { "required": true, "type": "string", "notempty": true },
+        "min": { "type": "number", "spec": "min" },
+        "max": { "type": "number", "spec": "max" }
       }
     },
 
