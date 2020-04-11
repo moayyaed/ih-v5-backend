@@ -1,6 +1,6 @@
 {
   "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table":"devicesTable", "height":"fill"}
+    { "id": "p1", "xs": 12, "class": "main", "table":"devicesTreeTable", "height":"fill"}
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "devdevices" },
@@ -9,13 +9,16 @@
     {
       "title": "Devices",
       "type": "table",
-      "prop": "devicesTable",
+      "prop": "devicesTreeTable",
 
       "columns": [
 
-        { "prop": "dn", "title": "$Dev_Id", "type": "link", "command":"forward",  "width": 500  },
-        { "prop": "type", "title": "Type", "type": "text" },
-        { "prop": "tags", "title": "Tags", "type": "text" }
+        { "prop": "title", "title": "", "type": "link", "command":"forward",  "width": 200  },
+        { "prop": "dn", "title": "$Dev_Id", "type": "text",  "width": 100 },
+        { "prop": "name", "title": "$Name", "type": "text",  "width": 200 }, 
+        { "prop": "type", "title": "$Type", "type": "text",  "width": 200 },
+        { "prop": "tags", "title": "Tags", "type": "text",  "width": 200 },
+        { "prop": "path", "title": "", "type": "text",  "width": 200 }
       ]
     }
   ]
