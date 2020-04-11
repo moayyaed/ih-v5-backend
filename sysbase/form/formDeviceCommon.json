@@ -5,7 +5,7 @@
     { "id": "p3", "xs": 12, "class": "main", "table": "devicecommonTable", "height": 250 }
   ],
   "spacing": 10,
-  "breadcrumbs":{"tree":"devices"},
+  "breadcrumbs":{"tree":"devdevices"},
 
   "p1": [
     { "prop": "dn", "title": "$Dev_Id", "type": "input" },

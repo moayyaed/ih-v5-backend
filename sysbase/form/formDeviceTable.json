@@ -3,7 +3,7 @@
     { "id": "p1", "xs": 12, "class": "main", "table":"devicesTable", "height":"fill"}
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "devices" },
+  "breadcrumbs": { "tree": "devdevices" },
 
   "p1": [
     {

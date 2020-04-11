@@ -3,7 +3,7 @@
     { "id": "p1", "xs": 12, "class": "main"}
   ],
   "spacing": 10,
-  "breadcrumbs":{"tree":"devices"},
+  "breadcrumbs":{"tree":"devdevices"},
 
   "p1": [{ "prop": "name", "title": "$Name", "type": "text" }]
 }

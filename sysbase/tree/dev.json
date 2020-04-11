@@ -4,7 +4,7 @@
       "main": [{ "id": "1", "type": "divider", "title": "Edit" }]
     }
   },
-  "devices": {
+  "devdevices": {
     "parent": {
       "popup": {
         "main": [
