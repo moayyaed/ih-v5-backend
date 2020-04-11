@@ -32,6 +32,7 @@
 
   "devhard": { "store": "db", "collection": "devhard" },
   "devcurrent": { "store": "db", "collection": "devcurrent" },
+  "devicesTable": { "store": "db", "collection": "devices", "rows":true },
   "devicecommonTable": { "store": "db", "collection": "devices", "genfield": "props" },
   "unitchannelsTable": { "store": "db", "collection": "devhard", "rows":true },
   "typegroup": {

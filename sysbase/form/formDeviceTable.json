@@ -1,0 +1,22 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"devicesTable", "height":"fill"}
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "devices" },
+
+  "p1": [
+    {
+      "title": "Devices",
+      "type": "table",
+      "prop": "devicesTable",
+
+      "columns": [
+
+        { "prop": "dn", "title": "$Dev_Id", "type": "link", "command":"forward",  "width": 500  },
+        { "prop": "type", "title": "Type", "type": "text" },
+        { "prop": "tags", "title": "Tags", "type": "text" }
+      ]
+    }
+  ]
+}
