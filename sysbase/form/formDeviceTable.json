@@ -16,7 +16,7 @@
         { "prop": "title", "title": "", "type": "link", "command":"forward",  "width": 200  },
         { "prop": "dn", "title": "$Dev_Id", "type": "text",  "width": 100 },
         { "prop": "name", "title": "$Name", "type": "text",  "width": 200 }, 
-        { "prop": "type", "title": "$Type", "type": "text",  "width": 200 },
+        { "prop": "type", "title": "$Type", "type": "link",  "command":"forward", "width": 200 },
         { "prop": "tags", "title": "Tags", "type": "text",  "width": 200 },
         { "prop": "path", "title": "", "type": "text",  "width": 200 }
       ]
