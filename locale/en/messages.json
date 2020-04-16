@@ -214,7 +214,8 @@
   { "id": "FolderRootOrNotFound", "note": "Operation failed!"},
   { "id": "OnlyOneRootForCopy", "note": "You can only copy inside one tree!"},
 
-  { "id": "mustBeNotEmptyString", "note": "must be not empty string" },
+  { "id": "mustBeNotEmpty", "note": "must be not empty" },
+  { "id": "mustBeValidId", "note": "invalid value" },
   { "id": "mustBeLessToMax", "note": "must be less than or equal to the max" },
   { "id": "mustBeGreaterToMin", "note": "must be greater than or equal to the min" },
   { "id": "mustBeUnique", "note": "the value must be unique" }

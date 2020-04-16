@@ -22,7 +22,8 @@
       "prop": "typepropsTable",
 
       "columns": [
-        { "prop": "prop", "title": "$Devprop_Id", "type": "input", "width": 150 },
+    
+        { "prop": "newid", "title": "$Devprop_Id", "type": "input", "width": 150 },
         { "prop": "name", "title": "$Name", "type": "input", "width": 250 },
         {
           "prop": "vtype",

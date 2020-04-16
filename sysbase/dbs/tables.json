@@ -51,12 +51,13 @@
 
     "validator": {
       "main": {
-        "name": { "required": true, "notempty": true}
+        "name": { "notempty": true}
       },
       "props": {
-        "name": { "required": true, "type": "string", "notempty": true },
-        "vtype": { "required": true, "type": "string", "notempty": true},
-        "op": { "required": true, "type": "string", "notempty": true },
+        "newid": { "notempty": true, "validid": true },
+        "name": { "notempty": true },
+        "vtype": { "notempty": true},
+        "op": { "notempty": true },
         "min": { "type": "number", "spec": "min" },
         "max": { "type": "number", "spec": "max" }
       }
