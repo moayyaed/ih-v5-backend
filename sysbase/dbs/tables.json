@@ -14,12 +14,12 @@
     "ruleID": { "pref": "d", "len": 4 },
     "validator": {
       "main": {
-        "name": { "required": true, "notempty": true},
-        "dn": { "required": true, "notempty": true, "unique": true}
+        "name": { "required": true, "notempty": true },
+        "dn": { "required": true, "notempty": true, "unique": true }
       }
     }
   },
- 
+
   "chgroup": {
     "store": "db",
     "collection": "lists",
@@ -32,9 +32,23 @@
 
   "devhard": { "store": "db", "collection": "devhard" },
   "devcurrent": { "store": "db", "collection": "devcurrent" },
-  "devicesTreeTable": { "store": "tree", "tree": "devdevices", "rows":true },
-  "devicecommonTable": { "store": "db", "collection": "devices", "genfield": "props" },
-  "unitchannelsTable": { "store": "db", "collection": "devhard", "rows":true },
+
+  "devicesTreeTable": { "store": "tree", "tree": "devdevices", "rows": true },
+
+  "devicecommonTable": {
+    "store": "db",
+    "collection": "devices",
+    "genfield": "props",
+    "validator": {
+      "props": {
+        "newid": { "notempty": true, "validid": true },
+        "min": { "type": "number", "spec": "min" },
+        "max": { "type": "number", "spec": "max" }
+      }
+    }
+  },
+
+  "unitchannelsTable": { "store": "db", "collection": "devhard", "rows": true },
   "typegroup": {
     "store": "db",
     "collection": "lists",
@@ -51,12 +65,12 @@
 
     "validator": {
       "main": {
-        "name": { "notempty": true}
+        "name": { "notempty": true }
       },
       "props": {
         "newid": { "notempty": true, "validid": true },
         "name": { "notempty": true },
-        "vtype": { "notempty": true},
+        "vtype": { "notempty": true },
         "op": { "notempty": true },
         "min": { "type": "number", "spec": "min" },
         "max": { "type": "number", "spec": "max" }
@@ -64,18 +78,23 @@
     },
 
     "default": { "name": "$NewType", "props": { "value": { "name": "Значение", "vtype": "B", "op": "r" } } },
-    "ruleID":{"pref":"t", "len":3}
+    "ruleID": { "pref": "t", "len": 3 }
   },
-  "typesTreeTable": { "store": "tree", "tree": "types",  "collection": "types", "rows":true },
+  "typesTreeTable": { "store": "tree", "tree": "types", "collection": "types", "rows": true },
   "layoutgroup": {
     "store": "db",
     "collection": "lists",
     "filter": { "list": "layoutgroup" },
     "defRootTitle": "Экраны",
     "default": { "name": "$NewFolder" },
-    "ruleID":{"pref":"lg", "len":3}
+    "ruleID": { "pref": "lg", "len": 3 }
   },
-  "layout": { "store": "db", "collection": "layouts", "default": { "name": "Новый экран" },  "ruleID":{"pref":"l", "len":3} },
+  "layout": {
+    "store": "db",
+    "collection": "layouts",
+    "default": { "name": "Новый экран" },
+    "ruleID": { "pref": "l", "len": 3 }
+  },
 
   "scenegroup": {
     "store": "db",
@@ -83,9 +102,14 @@
     "filter": { "list": "scenegroup" },
     "defRootTitle": "Сценарии",
     "default": { "name": "$NewFolder" },
-    "ruleID":{"pref":"sg", "len":3}
+    "ruleID": { "pref": "sg", "len": 3 }
   },
-  "scene": { "store": "db", "collection": "scenes", "default": { "name": "Новый сценарий" }, "ruleID":{"pref":"scen", "len":3} },
+  "scene": {
+    "store": "db",
+    "collection": "scenes",
+    "default": { "name": "Новый сценарий" },
+    "ruleID": { "pref": "scen", "len": 3 }
+  },
 
   "plugingroup": {
     "store": "db",
@@ -93,7 +117,7 @@
     "filter": { "list": "plugingroup" },
     "defRootTitle": "Плагины",
     "default": { "name": "$NewFolder" },
-    "ruleID":{"pref":"pg", "len":3}
+    "ruleID": { "pref": "pg", "len": 3 }
   },
 
   "snippetgroup": {
@@ -102,11 +126,21 @@
     "filter": { "list": "snippetroup" },
     "defRootTitle": "Сниппеты",
     "default": { "name": "$NewFolder" },
-    "ruleID":{"pref":"sng", "len":3}
+    "ruleID": { "pref": "sng", "len": 3 }
   },
 
-  "units": { "store": "db", "collection": "units", "default": { "name": "Новый плагин" }, "ruleID":{"pref":"u", "len":3} },
-  "snippets": { "store": "db", "collection": "snippets", "default": { "name": "Новый сниппет" }, "ruleID":{"pref":"sn", "len":3}  },
+  "units": {
+    "store": "db",
+    "collection": "units",
+    "default": { "name": "Новый плагин" },
+    "ruleID": { "pref": "u", "len": 3 }
+  },
+  "snippets": {
+    "store": "db",
+    "collection": "snippets",
+    "default": { "name": "Новый сниппет" },
+    "ruleID": { "pref": "sn", "len": 3 }
+  },
 
   "chartgroup": {
     "store": "db",
@@ -114,7 +148,7 @@
     "filter": { "list": "chartgroup" },
     "defRootTitle": "Графики",
     "default": { "name": "$NewFolder" },
-    "ruleID":{"pref":"cg", "len":3} 
+    "ruleID": { "pref": "cg", "len": 3 }
   },
 
   "reportgroup": {
@@ -123,12 +157,24 @@
     "filter": { "list": "reportgroup" },
     "defRootTitle": "Отчеты",
     "default": { "name": "$NewFolder" },
-    "ruleID":{"pref":"rg", "len":3} 
+    "ruleID": { "pref": "rg", "len": 3 }
   },
 
-  "charts": { "store": "db", "collection": "charts", "genfield": "props", "default": { "name": "Новый график" },   "ruleID":{"pref":"c", "len":3}  },
+  "charts": {
+    "store": "db",
+    "collection": "charts",
+    "genfield": "props",
+    "default": { "name": "Новый график" },
+    "ruleID": { "pref": "c", "len": 3 }
+  },
 
-  "reports": { "store": "db", "collection": "reports", "genfield": "props", "default": { "name": "Новый отчет" },  "ruleID":{"pref":"r", "len":3}  },
+  "reports": {
+    "store": "db",
+    "collection": "reports",
+    "genfield": "props",
+    "default": { "name": "Новый отчет" },
+    "ruleID": { "pref": "r", "len": 3 }
+  },
 
   "user": { "store": "db", "collection": "users" },
   "token": { "store": "db", "collection": "tokens" }
