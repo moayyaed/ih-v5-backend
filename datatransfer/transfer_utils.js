@@ -384,7 +384,6 @@ function formHardRecord(did, item) {
 }
 */
 
-
 function formHardRecord(did, item) {
   if (item.complex) return '';
 
@@ -406,16 +405,20 @@ function formHardRecord(did, item) {
   let robj;
   if (hard) {
     robj = Object.assign(pobj, hard);
-    
-    if (item.actions) {
-      let actions;
-      actions = hut.clone(item.actions, actions);
+
+    if (item.actions && Array.isArray(item.actions)) {
+      const actions = {};
+      // Перенос как вложенный объект:
+      // actions:[{act:'on', type:'int' },..] => actions:{on:{type:'int'}}
+      // actions = hut.clone(item.actions, actions);
+      item.actions.forEach(el => {
+        if (el.act) actions[el.act] = el;
+      });
       robj.actions = actions;
     }
   } else robj = pobj;
   return JSON.stringify(robj) + '\n';
 }
-
 
 function getHardObjForUnit(item) {
   const plugin = hut.removeLastNumFromStr(item.unit);

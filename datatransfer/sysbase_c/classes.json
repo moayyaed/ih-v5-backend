@@ -4,6 +4,7 @@
     "name": "$SensorD",
     "props": {
       "value": { "name": "$Value", "vtype": "B", "op": "r" },
+      "state": { "name": "$State", "vtype": "N", "op": "c" },
       "blk": { "name": "$Blk", "vtype": "B", "op": "rw" }
     }
   },
@@ -12,8 +13,8 @@
     "name": "$SensorA",
     "props": {
       "value": { "name": "$Value", "vtype": "N", "op": "r" },
-      "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "rw" },
-      "state": { "name": "$State", "vtype": "N", "op": "c" }
+      "state": { "name": "$State", "vtype": "N", "op": "c" },
+      "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "rw" }
     }
   },
   {
@@ -21,9 +22,9 @@
     "name": "$ActorD",
     "props": {
       "value": { "name": "$Value", "vtype": "B", "op": "r" },
+      "state": { "name": "$State", "vtype": "N", "op": "c" },
       "auto": { "name": "Auto", "vtype": "B", "op": "rw" },
-      "blk": { "name": "$Blk", "vtype": "B", "op": "rw" },
-      "state": { "name": "$State", "vtype": "N", "op": "c" }
+      "blk": { "name": "$Blk", "vtype": "B", "op": "rw" }
     }
   },
   {
@@ -31,10 +32,10 @@
     "name": "$ActorA",
     "props": {
       "value": { "name": "$Value", "vtype": "N", "op": "r" },
+      "state": { "name": "$State", "vtype": "N", "op": "c" },
       "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "rw" },
       "auto": { "name": "Auto", "vtype": "B", "op": "rw" },
-      "blk": { "name": "$Blk", "vtype": "B", "op": "rw" },
-      "state": { "name": "$State", "vtype": "N", "op": "c" }
+      "blk": { "name": "$Blk", "vtype": "B", "op": "rw" }
     }
   },
   {
