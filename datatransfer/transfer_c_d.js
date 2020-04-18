@@ -61,9 +61,9 @@ let project_d;
   create('charts', 'jbase');
   create('reports', 'jbase');
   */
-  // create('devices', 'jbase');
+  create('devices', 'jbase');
   
-  create('devhard', 'jbase');
+  // create('devhard', 'jbase');
  
   // - create('devcurrent', 'operative');
 

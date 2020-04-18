@@ -156,6 +156,10 @@ function createTypes() {
  */
 
 function createDevices(devrefData, project_d, extObj) {
+  // Свойства формировать на основе классов (которые уже перенесены в типы)
+  const classes = getSysDataFile('classes');
+  const clObj = hut.arrayToObject(classes, 'id');
+
   let str = '';
   // Проверить, что parent есть, иначе в корень
   const filename = path.join(project_d, 'jbase', 'lists.db');
@@ -167,26 +171,15 @@ function createDevices(devrefData, project_d, extObj) {
     arr.filter(item => hut.allTrim(item)).map(item => JSON.parse(item)),
     '_id'
   );
-  /*
-  const typesfile = path.join(project_d, 'jbase', 'types.db');
-  const tstr = fs.readFileSync(typesfile, 'utf8');
-  const tarr = tstr.split('\n');
 
-  // Вывернуть по  _id
-  const typeObj = hut.arrayToObject(
-    tarr.filter(item => hut.allTrim(item)).map(item => JSON.parse(item)),
-    '_id'
-  );
-
-  console.log('typeObj=' + util.inspect(typeObj));
-   */
   let order = 1000;
   devrefData.forEach(item => {
     const parent = getParent(item);
     const dobj = formDeviceFromDevref(item, parent, order, extObj);
     // const tobj = typeObj[item.type];
     // if (!tobj) throw { message: 'Not found type for item ' + util.inspect(item) };
-    dobj.props = formProps(item);
+
+    dobj.props = formProps(item, Object.keys(clObj[item.cl].props));
     str += JSON.stringify(dobj) + '\n';
     order += 1000;
   });
@@ -224,9 +217,12 @@ function formDeviceFromDevref(item, parent, order, extObj) {
   };
 }
 
-function formProps(item) {
+function formProps(item, propArr) {
   const pobj = {};
-
+  propArr.forEach(prop => {
+    pobj[prop] = formOneProp(item, prop);
+  });
+  /*
   // Переносим только для value и setpont - опционально
   // TODO Нужно еще как-то перенести состояния??  devstates => state с алгоритмом по умолчанию??
 
@@ -240,7 +236,30 @@ function formProps(item) {
     pobj.setpoint.min = item.min != undefined ? item.min : null;
     pobj.setpoint.max = item.max != undefined ? item.max : null;
   }
+  */
+
   return pobj;
+}
+function formOneProp(item, prop) {
+  let mmObj;
+  if (isAnalog(item)) {
+    mmObj = {};
+    mmObj.min = item.min != undefined ? item.min : null;
+    mmObj.max = item.max != undefined ? item.max : null;
+    mmObj.dig = item.decdig || 0;
+    mmObj.mu = item.mu || '';
+  }
+
+  switch (prop) {
+    case 'value':
+      return Object.assign({ db: item.db ? 1 : 0 }, mmObj);
+
+    case 'setpoint':
+      return Object.assign({ db: 0 }, mmObj, { dig: 0 });
+
+    default:
+      return { db: 0 };
+  }
 }
 
 /**
