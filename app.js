@@ -15,10 +15,10 @@ init(__dirname)
     holder.start();
   })
   .then(() => {
-    webserver(holder);
+    sceneserver(holder);
   })
   .then(() => {
-    sceneserver(holder);
+    webserver(holder);
   })
   .catch(e => {
     console.log('ERR: FATAL ERROR. ' + util.inspect(e));
