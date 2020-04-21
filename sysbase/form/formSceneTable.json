@@ -13,8 +13,8 @@
 
       "columns": [
 
-        { "prop": "title", "title": "", "type": "link", "command":"forward",  "width": 200  },
-        { "prop": "name", "title": "$Name", "type": "input",  "width": 200 }, 
+        { "prop": "title", "title": "", "type": "link", "command":"forward",  "width": 400  },
+        { "prop": "name", "title": "$Name", "type": "input",  "width": 400 }, 
         { "prop": "tags", "title": "Tags", "type": "text",  "width": 200 },
         { "prop": "path", "title": "", "type": "text",  "width": 200 }
       ]

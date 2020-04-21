@@ -6,5 +6,9 @@
   "deviceList": {
     "table": "device",
     "propmap": { "_id": "id", "name": "name", "dn":"dn", "tags":"tags", "type":"type" }
+  },
+  "sceneList": {
+    "table": "scene",
+    "propmap": { "_id": "id", "name": "name", "tags":"tags", "status":"status" }
   }
 }
