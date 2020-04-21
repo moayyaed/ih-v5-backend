@@ -111,6 +111,13 @@
   },
   "scenesTreeTable": { "store": "tree", "tree": "scenes", "rows": true },
 
+  "scenecallTable": {
+    "store": "db",
+    "collection": "scenes",
+    "genfield": "calls"
+    
+  },
+
   "plugingroup": {
     "store": "db",
     "collection": "lists",

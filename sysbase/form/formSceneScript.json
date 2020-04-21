@@ -30,6 +30,7 @@
       "type": "table",
       "popupenable":true,
       "prop": "scenecallTable",
+      "genfield": "calls",
 
       "columns": [
     
