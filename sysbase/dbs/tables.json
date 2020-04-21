@@ -107,9 +107,9 @@
   "scene": {
     "store": "db",
     "collection": "scenes",
-    "default": { "name": "Новый сценарий" },
     "ruleID": { "pref": "scen", "len": 3 }
   },
+  "scenesTreeTable": { "store": "tree", "tree": "scenes", "rows": true },
 
   "plugingroup": {
     "store": "db",

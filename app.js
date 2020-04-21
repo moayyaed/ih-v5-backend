@@ -7,13 +7,18 @@
 const util = require('util');
 const init = require('./lib/init');
 const holder = require('./lib/holder');
+const sceneserver = require('./lib/scene/sceneserver');
+const webserver = require('./lib/web/webserver');
 
 init(__dirname)
   .then(() => {
     holder.start();
   })
   .then(() => {
-    require('./lib/web/webserver').start(holder);
+    sceneserver(holder);
+  })
+  .then(() => {
+    webserver(holder);
   })
   .catch(e => {
     console.log('ERR: FATAL ERROR. ' + util.inspect(e));
