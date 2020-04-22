@@ -95,6 +95,12 @@ function formRecord(source, target, item, extObj) {
       robj = { _id, parent, order: item.order, name: item.name, txt: item.txt };
       break;
 
+    case 'mnemoschemes': //
+      _id = getNewId('mn', 3, item.id);
+      parent = 'viscontgroup';
+      robj = { _id, parent, order: item.order, name: item.name, txt: item.txt };
+      break;
+
     case 'classes': // => lists- typegroup, но id по старому - SensorD,....
       robj = { _id: item.id, list: 'typegroup', parent: 'typegroup', order: item.order, name: item.name };
       break;

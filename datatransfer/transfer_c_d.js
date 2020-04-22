@@ -55,13 +55,15 @@ let project_d;
   // create создает заново
   
   // create('layouts', 'jbase');
+   create('visconts', 'jbase');
+
      /** 
   create('units', 'jbase');
   create('types', 'jbase');
   create('charts', 'jbase');
   create('reports', 'jbase');
   */
-  create('devices', 'jbase');
+  // create('devices', 'jbase');
   
   // create('devhard', 'jbase');
  
@@ -171,6 +173,11 @@ function create(target, folder) {
       case 'layouts':
         str = formAllRecordsStr('layouts', target, folder);
         break;
+
+      case 'visconts':
+          str = formAllRecordsStr('mnemoschemes', target, folder);
+          break;
+   
 
       case 'units':
         str = formAllRecordsStr('units', target, folder);
