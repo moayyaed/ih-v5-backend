@@ -14,12 +14,12 @@
       "title": "Состояние",
       "type": "droplist",
       "data": [
-        { "id": "0", "title": "Development" },
+        { "id": "0", "title": "Draft" },
         { "id": "1", "title": "Work" },
         { "id": "2", "title": "Blocked" }
       ]
     },
-    { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist" },
+    { "prop": "reqts", "title": "Updated", "type": "text" },
     { "prop": "_id", "title": "File", "type": "text" }
    
   ],
