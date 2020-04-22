@@ -81,6 +81,7 @@
     "ruleID": { "pref": "t", "len": 3 }
   },
   "typesTreeTable": { "store": "tree", "tree": "types", "collection": "types", "rows": true },
+
   "layoutgroup": {
     "store": "db",
     "collection": "lists",
@@ -89,12 +90,46 @@
     "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "lg", "len": 3 }
   },
+
   "layout": {
     "store": "db",
     "collection": "layouts",
     "default": { "name": "Новый экран" },
     "ruleID": { "pref": "l", "len": 3 }
   },
+
+ "viscontgroup": {
+    "store": "db",
+    "collection": "lists",
+    "filter": { "list": "viscontgroup" },
+    "defRootTitle": "Контейнеры",
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "vcg", "len": 3 }
+  },
+
+  "viscont": {
+    "store": "db",
+    "collection": "visconts",
+    "default": { "name": "Новый контейнер" },
+    "ruleID": { "pref": "vc", "len": 3 }
+  },
+
+  "vistemplategroup": {
+    "store": "db",
+    "collection": "lists",
+    "filter": { "list": "vistemplategroup" },
+    "defRootTitle": "Шаблоны",
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "vtg", "len": 3 }
+  },
+
+  "vistemplate": {
+    "store": "db",
+    "collection": "vistemplates",
+    "default": { "name": "Новый шаблон" },
+    "ruleID": { "pref": "vt", "len": 3 }
+  },
+  
 
   "scenegroup": {
     "store": "db",

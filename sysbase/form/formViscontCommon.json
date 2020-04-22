@@ -1,0 +1,11 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "viscont" },
+    { "id": "p2", "xs": 12, "class": "main", "table": "viscont", "height":250 }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "viscont" },
+
+  "p1": [{ "prop": "name", "title": "$Name", "type": "input" }],
+  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
+}

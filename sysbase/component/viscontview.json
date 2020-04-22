@@ -1,0 +1,7 @@
+{
+  "tabs": [
+    { "id": "tabViscontCommon", "title": "Описание", "component": [{ "id": "formViscontCommon", "type": "form" }] },
+    { "id": "tabViscontEditor", "title": "Редактор", "component": [{ "id": "formViscont", "type": "form" }] }
+  ],
+  "defaultTab": "tabViscontCommon"
+}

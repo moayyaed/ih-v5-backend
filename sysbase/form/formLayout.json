@@ -4,7 +4,7 @@
    
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "vis" },
+  "breadcrumbs": { "tree": "layout" },
 
   "p1": [
     { "prop": "layout", "title": "Layout", "type": "layout" }

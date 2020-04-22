@@ -1,0 +1,12 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "viscont", "height":"fill", "padding":4 }
+   
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "viscont" },
+
+  "p1": [
+    { "prop": "viscont", "title": "Container", "type": "layout" }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabViscontFolder",  "title": "Свойства папки", "component": [{ "id": "formViscontFolder", "type": "form" }]  }
+  ],
+  "defaultTab": "tabViscontFolder"
+}
