@@ -9,6 +9,6 @@
   },
   "sceneList": {
     "table": "scene",
-    "propmap": { "_id": "id", "name": "name", "tags":"tags", "status":"status" }
+    "propmap": { "_id": "id", "name": "name", "tags":"tags", "status":"status", "multi":"multi" }
   }
 }

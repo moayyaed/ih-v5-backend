@@ -14,6 +14,7 @@
   "vistemplates": { "folder": "jbasepath" },
 
   "scenes": { "folder": "jbasepath" },
+  "scenecalls": { "folder": "jbasepath" },
   "charts": { "folder": "jbasepath" },
   "reports": { "folder": "jbasepath" },
 

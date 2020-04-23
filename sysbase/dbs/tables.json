@@ -139,6 +139,7 @@
     "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "sg", "len": 3 }
   },
+
   "scene": {
     "store": "db",
     "collection": "scenes",
@@ -146,11 +147,10 @@
   },
   "scenesTreeTable": { "store": "tree", "tree": "scenes", "rows": true },
 
-  "scenecallTable": {
+  "scenecall": {
     "store": "db",
-    "collection": "scenes",
-    "genfield": "calls"
-    
+    "collection": "scenecalls",
+    "ruleID": { "pref": "call", "len": 3 }
   },
 
   "plugingroup": {

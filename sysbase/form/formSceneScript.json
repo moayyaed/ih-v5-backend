@@ -1,8 +1,9 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "scene" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "scene" },
-    { "id": "p3", "xs": 12, "class": "main", "table": "scene", "height": 250, "hide":"1==1" }
+    { "id": "p1", "xs": 4, "class": "main", "table": "scene" },
+    { "id": "p2", "xs": 4, "class": "main", "table": "scene" },
+    { "id": "p3", "xs": 4, "class": "main", "table": "scene" },
+    { "id": "p4", "xs": 12, "class": "main", "table": "scenecall", "height": 250, "hide":"1==1" }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "scenes" },
@@ -21,16 +22,23 @@
     },
     { "prop": "reqts", "title": "Updated", "type": "text" },
     { "prop": "_id", "title": "File", "type": "text" }
-   
   ],
-  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
-  "p3": [
+
+  "p2": [
+    { "prop": "devs", "title": "Устройства сценария", "type": "text" },
+    { "prop": "realdevs", "title": "Устройства системы", "type": "text" },
+    { "prop": "triggers", "title": "Триггеры", "type": "text" }
+  ],
+
+  "p3": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
+  
+  "p4": [
     {
       "title": "",
       "type": "table",
       "popupenable":true,
-      "prop": "scenecallTable",
-      "genfield": "calls",
+      "prop": "scenecall",
+   
 
       "columns": [
     
