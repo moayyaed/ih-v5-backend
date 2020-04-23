@@ -55,7 +55,7 @@ let project_d;
   // create создает заново
   
   // create('layouts', 'jbase');
-   create('visconts', 'jbase');
+  // create('visconts', 'jbase');
 
      /** 
   create('units', 'jbase');
@@ -66,6 +66,7 @@ let project_d;
   // create('devices', 'jbase');
   
   // create('devhard', 'jbase');
+  create('scenecalls', 'jbase');
  
   // - create('devcurrent', 'operative');
 
@@ -182,6 +183,10 @@ function create(target, folder) {
       case 'units':
         str = formAllRecordsStr('units', target, folder);
         break;
+
+      case 'scenecalls':
+          str = formAllRecordsStr('scenecall', target, folder);
+          break;
       default:
     }
 

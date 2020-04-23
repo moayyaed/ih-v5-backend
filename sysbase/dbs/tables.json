@@ -150,6 +150,7 @@
   "scenecall": {
     "store": "db",
     "collection": "scenecalls",
+    "rows": true,
     "ruleID": { "pref": "call", "len": 3 }
   },
 

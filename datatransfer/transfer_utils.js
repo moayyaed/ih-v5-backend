@@ -101,6 +101,15 @@ function formRecord(source, target, item, extObj) {
       robj = { _id, parent, order: item.order, name: item.name, txt: item.txt };
       break;
 
+    case 'scenecall': //
+      _id = getNewId('call', 3, item.id);
+      const sid = item.scene;
+      delete item.id;
+      delete item.scene;
+      delete item.order;
+      robj = { _id, sid, ...item };
+      break;  
+
     case 'classes': // => lists- typegroup, но id по старому - SensorD,....
       robj = { _id: item.id, list: 'typegroup', parent: 'typegroup', order: item.order, name: item.name };
       break;
@@ -112,6 +121,7 @@ function formRecord(source, target, item, extObj) {
         if (!prop.endsWith('_')) robj[prop] = item[prop];
       });
       break;
+      
 
     default:
       robj = '';
