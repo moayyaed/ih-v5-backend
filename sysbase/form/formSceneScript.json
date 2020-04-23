@@ -3,7 +3,7 @@
     { "id": "p1", "xs": 4, "class": "main", "table": "scene" },
     { "id": "p2", "xs": 4, "class": "main", "table": "scene" },
     { "id": "p3", "xs": 4, "class": "main", "table": "scene" },
-    { "id": "p4", "xs": 12, "class": "main", "table": "scenecall", "height": 250, "hide":"1==1" }
+    { "id": "p4", "xs": 12, "class": "main", "table": "scenecall", "height": 250 }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "scenes" },
@@ -38,32 +38,8 @@
       "type": "table",
       "popupenable":true,
       "prop": "scenecall",
-   
-
-      "columns": [
+      "columns": []
     
-        {
-          "prop": "dev1",
-          "title": "Device 1",
-          "type": "droplist",
-          "data": "deviceList",
-          "width": 300
-        },
-        {
-          "prop": "dev2",
-          "title": "Device 2",
-          "type": "droplist",
-          "data": "deviceList",
-          "width": 300
-        },
-        {
-          "prop": "dev3",
-          "title": "Device 3",
-          "type": "droplist",
-          "data": "deviceList",
-          "width": 300
-        }
-      ]
     }
   ]
 }
