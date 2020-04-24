@@ -25,7 +25,7 @@
   ],
 
   "p2": [
-    { "prop": "devs", "title": "Устройства сценария", "type": "text" },
+    { "prop": "devs", "title": "Устройства сценария", "type": "text", "hide":"data.p2.realdevs" },
     { "prop": "realdevs", "title": "Устройства системы", "type": "text", "hide":"!data.p2.realdevs" },
     { "prop": "triggers", "title": "Триггеры", "type": "text" }
   ],
