@@ -3,8 +3,8 @@
     { "id": "p1", "xs": 6, "class": "main", "table": "scene" },
     { "id": "p2", "xs": 6, "class": "main", "table": "scene" },
     { "id": "p3", "xs": 12, "class": "main", "table": "scenecall", "height": 300 },
-    { "id": "p4", "xs": 4, "class": "main", "table": "scene" },
-    { "id": "p5", "xs": 8, "class": "main", "table": "scene" }
+    { "id": "p4", "xs": 6, "class": "main", "table": "scene" },
+    { "id": "p5", "xs": 6, "class": "main", "table": "scene" }
   
   ],
   "spacing": 10,
