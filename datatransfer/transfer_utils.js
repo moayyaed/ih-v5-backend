@@ -100,7 +100,7 @@ function formRecord(source, target, item, extObj) {
       parent = 'viscontgroup';
       robj = { _id, parent, order: item.order, name: item.name, txt: item.txt };
       break;
-
+/*
     case 'scenecall': //
       _id = getNewId('call', 3, item.id);
       const sid = item.scene;
@@ -108,7 +108,8 @@ function formRecord(source, target, item, extObj) {
       delete item.scene;
       delete item.order;
       robj = { _id, sid, ...item };
-      break;  
+      break;
+*/
 
     case 'classes': // => lists- typegroup, но id по старому - SensorD,....
       robj = { _id: item.id, list: 'typegroup', parent: 'typegroup', order: item.order, name: item.name };
@@ -121,7 +122,6 @@ function formRecord(source, target, item, extObj) {
         if (!prop.endsWith('_')) robj[prop] = item[prop];
       });
       break;
-      
 
     default:
       robj = '';
@@ -292,6 +292,7 @@ function createDevcurrent(devcurData, project_d) {
   let str = '';
 
   // Нужен, чтобы найти id  устройства - т к dn сейчас уже не id!!
+  /*
   const devicesfile = path.join(project_d, 'jbase', 'devices.db');
   const dstr = fs.readFileSync(devicesfile, 'utf8');
   const darr = dstr.split('\n');
@@ -301,14 +302,16 @@ function createDevcurrent(devcurData, project_d) {
     darr.filter(item => hut.allTrim(item)).map(item => JSON.parse(item)),
     'dn'
   );
+ */
 
+  const deviceObj = genDeviceMap(project_d);
   devcurData.forEach(item => {
     // Найдем id устройства по dn
     console.log(item.id);
     const did = deviceObj[item.id] ? deviceObj[item.id]._id : '';
 
     if (!did) {
-      console.log('NOT FOUND id for ' + item.id + ' in ' + devicesfile);
+      console.log('NOT FOUND id for ' + item.id + ' in devices.db');
     } else {
       str += formCurRecord(did, item);
     }
@@ -338,6 +341,46 @@ function formCurRecord(did, item) {
   return JSON.stringify(pobj) + '\n';
 }
 
+function genDeviceMap(project_d) {
+  // Нужен, чтобы найти id  устройства - т к dn сейчас уже не id!!
+  const devicesfile = path.join(project_d, 'jbase', 'devices.db');
+  const dstr = fs.readFileSync(devicesfile, 'utf8');
+  const darr = dstr.split('\n');
+
+  // Вывернуть по  dn
+  return hut.arrayToObject(
+    darr.filter(item => hut.allTrim(item)).map(item => JSON.parse(item)),
+    'dn'
+  );
+}
+
+function createScenecalls(scenecallData, project_d) {
+  let str = '';
+
+  const deviceObj = genDeviceMap(project_d);
+  scenecallData.forEach(item => {
+    const robj = { _id: getNewId('call', 3, item.id), sid: item.scene };
+
+    delete item.id;
+    delete item.scene;
+    delete item.order;
+
+    // Найдем did устройства по dn для КАЖДОГО параметра!!
+    Object.keys(item).forEach(prop => {
+      const dn = item[prop];
+      const did = deviceObj[dn] ? deviceObj[dn]._id : '';
+
+      if (!did) {
+        console.log('NOT FOUND id for dn=' + dn + ' in devices.db');
+      } else {
+        robj[prop] = did;
+      }
+    });
+    str += JSON.stringify(robj) + '\n';
+  });
+
+  return str;
+}
 /**
  *  devhard содержит связки dn - unit, chan, если complex=false
  * 
@@ -537,5 +580,6 @@ module.exports = {
   createTypes,
   createDevices,
   createDevhard,
-  createDevcurrent
+  createDevcurrent,
+  createScenecalls
 };

@@ -185,7 +185,8 @@ function create(target, folder) {
         break;
 
       case 'scenecalls':
-          str = formAllRecordsStr('scenecall', target, folder);
+          // str = formAllRecordsStr('scenecall', target, folder);
+          str = tut.createScenecalls(getSourceData('scenecall', folder), project_d);
           break;
       default:
     }
