@@ -30,7 +30,7 @@ let project_d;
   project_c = path.join('/var/lib/intrahouse-c/projects', folder_c);
   project_d = path.join('/var/lib/intrahouse-d/projects/', folder_d);
 
-  // TODO Если новый проект не существует, создать структуру папок
+  // Если новый проект не существует, создать структуру папок
   // Папки и файлы проектов общедоступны
   process.umask(0);
   const appdir = path.join(__dirname, '../'); // Это путь к app.js

@@ -100,7 +100,7 @@ function formRecord(source, target, item, extObj) {
       parent = 'viscontgroup';
       robj = { _id, parent, order: item.order, name: item.name, txt: item.txt };
       break;
-/*
+    /*
     case 'scenecall': //
       _id = getNewId('call', 3, item.id);
       const sid = item.scene;
@@ -238,21 +238,6 @@ function formProps(item, propArr) {
   propArr.forEach(prop => {
     pobj[prop] = formOneProp(item, prop);
   });
-  /*
-  // Переносим только для value и setpont - опционально
-  // TODO Нужно еще как-то перенести состояния??  devstates => state с алгоритмом по умолчанию??
-
-  pobj.value = { db: item.db ? 1 : 0, mu: item.mu || '' };
-  if (isAnalog(item)) {
-    pobj.value.min = item.min != undefined ? item.min : null;
-    pobj.value.max = item.max != undefined ? item.max : null;
-    pobj.value.dig = item.decdig || 0;
-
-    pobj.setpoint = { mu: item.mu || '' };
-    pobj.setpoint.min = item.min != undefined ? item.min : null;
-    pobj.setpoint.max = item.max != undefined ? item.max : null;
-  }
-  */
 
   return pobj;
 }
