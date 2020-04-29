@@ -10,5 +10,9 @@
   "sceneList": {
     "table": "scene",
     "propmap": { "_id": "id", "name": "name", "tags":"tags", "status":"status", "multi":"multi" }
+  },
+  "containerList": {
+    "table": "viscont",
+    "propmap": { "_id": "id", "name": "title", "tags":"tags" }
   }
 }
