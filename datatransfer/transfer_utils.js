@@ -158,6 +158,23 @@ function createTypes() {
   return str;
 }
 
+function createVistemplates() {
+  
+  const data = getSysDataFile('types');
+  // сформировать строку
+  const parent = 'vistemplategroup'; // все в корень
+  let str = '';
+  let order = 1000;
+  let _id;
+  data.forEach(item => {
+    _id = getNewId('vt', 3, item.id);
+    const robj = { _id, parent, order, name: item.name };
+    str += JSON.stringify(robj) + '\n';
+    order += 1000;
+  });
+  return str;
+}
+
 /**
  *  devref содержал флаги и значения (min, max, ..флаги записи в БД) в целом для устройства:
  *    {dn, min, max, decdig, mu, db, dbraw, dbline, dbdelta, dbcalc_type, dbforce, dbwrite_need_on }
@@ -566,5 +583,6 @@ module.exports = {
   createDevices,
   createDevhard,
   createDevcurrent,
-  createScenecalls
+  createScenecalls,
+  createVistemplates
 };

@@ -56,6 +56,7 @@ let project_d;
   
   // create('layouts', 'jbase');
   // create('visconts', 'jbase');
+  create('vistemplates', 'jbase');
 
      /** 
   create('units', 'jbase');
@@ -66,7 +67,7 @@ let project_d;
   // create('devices', 'jbase');
   
   // create('devhard', 'jbase');
-  create('scenecalls', 'jbase');
+  // create('scenecalls', 'jbase');
  
   // - create('devcurrent', 'operative');
 
@@ -178,8 +179,11 @@ function create(target, folder) {
       case 'visconts':
           str = formAllRecordsStr('mnemoschemes', target, folder);
           break;
-   
 
+      case 'vistemplates':   
+          str = tut.createVistemplates();
+          break;
+          
       case 'units':
         str = formAllRecordsStr('units', target, folder);
         break;
