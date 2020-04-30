@@ -1,5 +1,5 @@
 {
-  "dev": ["devdevices", "types"],
+  "dev": ["devdevices", "types", "handlers"],
 
   "devdevices": {
     "branch": { "table": "place", 
@@ -15,6 +15,14 @@
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     },
     "leaf": { "table": "type", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
+  },
+
+  "handlers": {
+    "branch": {
+      "table": "handlergroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+    },
+    "leaf": { "table": "handler", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
   },
   
   "devices": {

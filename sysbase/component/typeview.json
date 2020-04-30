@@ -1,6 +1,7 @@
 {
   "tabs": [
-    { "id": "tabTypeCommon", "title": "Описание", "component": [{ "id": "formTypeCommon", "type": "form" }] }
+    { "id": "tabTypeCommon", "title": "Тип", "component": [{ "id": "formTypeCommon", "type": "form" }] },
+    { "id": "tabTypeShowHandlers", "title": "Обработка значений", "component": [{ "id": "formTypeShowHandlers", "type": "form" }] }
    
   ],
   "defaultTab": "tabTypeCommon"

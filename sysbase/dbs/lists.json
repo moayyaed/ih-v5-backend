@@ -11,6 +11,10 @@
     "table": "scene",
     "propmap": { "_id": "id", "name": "name", "tags":"tags", "status":"status", "multi":"multi" }
   },
+  "handlerList": {
+    "table": "handler",
+    "propmap": { "_id": "id", "name": "title",  "status":"status" }
+  },
   "containerList": {
     "table": "viscont",
     "propmap": { "_id": "id", "name": "title", "tags":"tags" }

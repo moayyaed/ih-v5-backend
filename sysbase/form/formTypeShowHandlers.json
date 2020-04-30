@@ -1,0 +1,12 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "type", "height": 600 }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "types" },
+
+  "p1": [
+    { "prop": "showhandlers", "title": "Просмотр функций-обработчиков", "type": "textarea" }
+  ]
+  
+}

@@ -1,0 +1,39 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 6, "class": "main", "table": "handler", "padding": 0 },
+    { "id": "p2", "xs": 3, "class": "main", "table": "handler", "padding": 0 },
+    { "id": "p3", "xs": 3, "class": "main", "table": "handler", "padding": 0 },
+    { "id": "p4", "xs": 12, "class": "main", "table": "handler", "padding": 0, "hide": "!data.p1.errstr" },
+    { "id": "p5", "xs": 12, "class": "main", "table": "handler", "height": "fill", "padding": 4 }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "handlers" },
+
+  "p1": [{ "prop": "name", "title": "$Name", "type": "input" }],
+  "p2": [
+    {
+      "prop": "oper",
+      "title": "Операция",
+      "type": "droplist",
+      "data": [
+        { "id": "r", "title": "При получении значения" },
+        { "id": "w", "title": "При отправке значения" },
+        { "id": "c", "title": "Вычисляемое поле" }
+      ]
+    }
+  ],
+  "p3": [
+    {
+      "prop": "status",
+      "title": "Состояние",
+      "type": "droplist",
+      "data": [
+        { "id": "0", "title": "Draft" },
+        { "id": "1", "title": "Work" },
+        { "id": "2", "title": "Blocked" }
+      ]
+    }
+  ],
+  "p4": [{ "prop": "errstr", "title": "", "type": "text" }],
+  "p5": [{ "prop": "handler", "title": "Code", "type": "code" }]
+}

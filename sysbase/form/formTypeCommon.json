@@ -23,8 +23,8 @@
 
       "columns": [
     
-        { "prop": "newid", "title": "$Devprop_Id", "type": "input", "width": 150 },
-        { "prop": "name", "title": "$Name", "type": "input", "width": 250 },
+        { "prop": "newid", "title": "$Devprop_Id", "type": "input", "width": 120 },
+        { "prop": "name", "title": "$Name", "type": "input", "width": 200 },
         {
           "prop": "vtype",
           "title": "$Devprop_Type",
@@ -44,15 +44,17 @@
             { "id": "r", "title": "Read only" },
             { "id": "rw", "title": "Read/Write" },
             { "id": "w", "title": "Write only" },
-            { "id": "c", "title": "Calculate" },
-            { "id": "S", "title": "String" }
+            { "id": "c", "title": "Calculate" }
           ],
           "width": 100
         },
         { "prop": "min", "title": "Min", "type": "number", "width": 50 },
         { "prop": "max", "title": "Max", "type": "number", "width": 50 },
         { "prop": "dig", "title": "$Decdig", "type": "number", "width": 100 },
-        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 100 }
+        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 50 },
+        { "prop": "onread", "title": "При получении данных", "type": "droplist", "data":"readhandlers", "width": 200 },
+        { "prop": "onwrite", "title": "При отправке данных", "type": "droplist", "data":"writehandlers", "width": 200 }
+
       ]
     }
   ]

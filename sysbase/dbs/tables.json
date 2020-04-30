@@ -154,6 +154,22 @@
     "ruleID": { "pref": "call", "len": 3 }
   },
 
+  "handlergroup": {
+    "store": "db",
+    "collection": "lists",
+    "filter": { "list": "handlergroup" },
+    "defRootTitle": "Функции-обработчики",
+    "default": { "name": "$NewFolde" },
+    "ruleID": { "pref": "fng", "len": 3 }
+  },
+
+  "handler": {
+    "store": "db",
+    "collection": "handlers",
+    "ruleID": { "pref": "fun", "len": 3 }
+  },
+
+
   "plugingroup": {
     "store": "db",
     "collection": "lists",

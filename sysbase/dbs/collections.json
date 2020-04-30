@@ -15,6 +15,9 @@
 
   "scenes": { "folder": "jbasepath" },
   "scenecalls": { "folder": "jbasepath" },
+
+  "handlers": { "folder": "jbasepath" },
+
   "charts": { "folder": "jbasepath" },
   "reports": { "folder": "jbasepath" },
 
