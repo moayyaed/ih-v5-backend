@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabVistemplateFolder",  "title": "Свойства папки", "component": [{ "id": "formVistemplateFolder", "type": "form" }]  }
+  ],
+  "defaultTab": "abVistemplateFolder"
+}

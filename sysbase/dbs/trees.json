@@ -26,7 +26,7 @@
     }
   },
 
-  "vis": ["layout", "viscont"],
+  "vis": ["layout", "viscont", "vistemplate"],
 
   "viscont": {
     "branch": {

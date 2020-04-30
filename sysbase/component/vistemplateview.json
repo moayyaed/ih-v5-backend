@@ -1,0 +1,7 @@
+{
+  "tabs": [
+    { "id": "tabVistemplateCommon", "title": "Описание", "component": [{ "id": "formVistemplateCommon", "type": "form" }] },
+    { "id": "tabVistemplateEditor", "title": "Редактор", "component": [{ "id": "formVistemplate", "type": "form" }] }
+  ],
+  "defaultTab": "tabVistemplateCommon"
+}

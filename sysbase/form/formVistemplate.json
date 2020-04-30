@@ -1,0 +1,12 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "vistemplate", "height":"fill", "padding":4 }
+   
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "vistemplate" },
+
+  "p1": [
+    { "prop": "template", "title": "Template", "type": "template" }
+  ]
+}
