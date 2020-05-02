@@ -116,8 +116,10 @@ function formRecord(source, target, item, extObj) {
       break;
 
     case 'units':
+      parent  = item.id != item.plugin ? 'plugin_' + item.plugin : 'plugingroup';
       _id = getNewId('u', 3, item.id);
-      robj = { _id, parent: 'plugin_' + item.plugin };
+      // robj = { _id, parent: 'plugin_' + item.plugin };
+      robj = { _id, parent };
       Object.keys(item).forEach(prop => {
         if (!prop.endsWith('_')) robj[prop] = item[prop];
       });

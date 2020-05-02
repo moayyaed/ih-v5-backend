@@ -180,6 +180,14 @@
     "ruleID": { "pref": "pg", "len": 3 }
   },
 
+  "unitgroup": {
+    "store": "db",
+    "collection": "units",
+    "filter": { "folder": 1 },
+    "defRootTitle": "Плагины",
+    "ruleID": { "pref": "pg", "len": 3 }
+  },
+
   "snippetgroup": {
     "store": "db",
     "collection": "lists",

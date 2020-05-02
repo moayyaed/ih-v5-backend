@@ -82,7 +82,7 @@
   "datasource": ["plugins"],
   "plugins": {
     "branch": {
-      "table": "plugingroup",
+      "table": "unitgroup",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     },
     "leaf": {

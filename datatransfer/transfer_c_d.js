@@ -56,10 +56,11 @@ let project_d;
   
   // create('layouts', 'jbase');
   // create('visconts', 'jbase');
-  create('vistemplates', 'jbase');
+  // create('vistemplates', 'jbase');
 
-     /** 
+    
   create('units', 'jbase');
+   /** 
   create('types', 'jbase');
   create('charts', 'jbase');
   create('reports', 'jbase');
@@ -185,7 +186,7 @@ function create(target, folder) {
           break;
           
       case 'units':
-        str = formAllRecordsStr('units', target, folder);
+        str = formPluginFolders()+formAllRecordsStr('units', target, folder);
         break;
 
       case 'scenecalls':
@@ -223,7 +224,7 @@ function transferPluginGroups() {
     // Выбрать уникальные плагины
     const plSet = new Set();
     data.forEach(item => {
-      plSet.add(item.plugin);
+      if (item.id != item.plugin) plSet.add(item.plugin);
     });
 
     let str = '';
@@ -232,7 +233,7 @@ function transferPluginGroups() {
       str +=
         JSON.stringify({
           _id: 'plugin_' + plugin,
-          list: 'plugingroup',
+          folder:1,
           parent: 'plugingroup',
           order,
           name: plugin.toUpperCase()
@@ -251,4 +252,44 @@ function transferPluginGroups() {
   }
 }
 
+
+function formPluginFolders() {
+   // Все будет храниться в units, корневая тоже
+   let str =  JSON.stringify({
+    _id: 'plugingroup',
+    folder:1,
+    parent: 0,
+    name: 'Plugins'
+  }) + '\n';
+
+  try {
+    // Считать файл units
+    const data = getSourceData('units', 'jbase');
+
+    // Выбрать плагины НЕ single - только для них делаю папки
+    const plSet = new Set();
+    data.forEach(item => {
+      if (item.id != item.plugin) plSet.add(item.plugin);
+    });
+
+    
+
+    let order = 100;
+    for (const plugin of plSet) {
+      str +=
+        JSON.stringify({
+          _id: 'plugin_' + plugin,
+          folder:1,
+          parent: 'plugingroup',
+          order,
+          name: plugin.toUpperCase()
+        }) + '\n';
+      order += 100;
+    }
+
+  } catch (e) {
+    console.log(util.inspect(e));
+  }
+  return str;
+}
 // auxiliary - вспомогательный, добавочный, дополнительный
