@@ -255,12 +255,14 @@ function transferPluginGroups() {
 
 function formPluginFolders() {
    // Все будет храниться в units, корневая тоже
+   const rootId = "unitgroup";
    let str =  JSON.stringify({
-    _id: 'plugingroup',
+    _id: rootId,
     folder:1,
     parent: 0,
     name: 'Plugins'
   }) + '\n';
+
 
   try {
     // Считать файл units
@@ -280,7 +282,7 @@ function formPluginFolders() {
         JSON.stringify({
           _id: 'plugin_' + plugin,
           folder:1,
-          parent: 'plugingroup',
+          parent: rootId,
           order,
           name: plugin.toUpperCase()
         }) + '\n';
