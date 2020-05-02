@@ -83,11 +83,11 @@
   "plugins": {
     "branch": {
       "table": "unitgroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder":"folder" }
     },
     "leaf": {
       "table": "units",
-      "propmap": { "_id": "id", "id": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "id": "title", "parent": "parent", "order": "order", "folder":"folder" }
     }
   },
 

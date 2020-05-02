@@ -188,6 +188,13 @@
     "ruleID": { "pref": "pg", "len": 3 }
   },
 
+  "units": {
+    "store": "db",
+    "collection": "units",
+    "default": { "name": "Новый плагин" },
+    "ruleID": { "pref": "u", "len": 3 }
+  },
+
   "snippetgroup": {
     "store": "db",
     "collection": "lists",
@@ -197,12 +204,7 @@
     "ruleID": { "pref": "sng", "len": 3 }
   },
 
-  "units": {
-    "store": "db",
-    "collection": "units",
-    "default": { "name": "Новый плагин" },
-    "ruleID": { "pref": "u", "len": 3 }
-  },
+  
   "snippets": {
     "store": "db",
     "collection": "snippets",
