@@ -4,13 +4,13 @@
 ------------------------------------------------------------------------------------------------ 
 holder Events      | webserver | deviceserver| pluginserver| sceneserver| trendserver| logserver
 ------------------------------------------------------------------------------------------------
-get:devicedata     |           | listen      |  emit       |            | listen     |
-changed:devicedata | listen    |  emit       |             | listen     | listen     | listen
+get:device:data    |           | listen      |  emit       |            | listen     |
+changed:device:data| listen    |  emit       | listen      | listen     | listen     | listen
                    |           |             |             |            |            |
-get:devicecommand  |  emit     | listen      |             |            |            |
-send:devicecommand |           |  emit       | listen      |   emit     |            | listen
+get:device:command |  emit     | listen      |             |            |            |
+send:device:command|           |  emit       | listen      |   emit     |            | listen
                    |           |             |             |            |            |
-send:plugincommand |  emit     |             | listen      |   emit     |            | listen
+send:plugin:command|  emit     |             | listen      |   emit     |            | listen
                    |           |             |             |            |            |
 start:plugin       |  emit     |             | listen      |   emit     |            |
 stop:plugin        |  emit     |             | listen      |   emit     |            |
