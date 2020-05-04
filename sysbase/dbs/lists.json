@@ -6,11 +6,18 @@
   "deviceList": {
     "table": "device",
     "propmap": { "_id": "id", "name": "name", "dn":"dn", "tags":"tags", "type":"type" }
+  },  
+
+  "unitList": {
+    "table": "units",
+    "propmap": { "_id": "id", "name": "name", "plugin":"plugin" }
   },
+
   "sceneList": {
     "table": "scene",
     "propmap": { "_id": "id", "name": "name", "tags":"tags", "status":"status", "multi":"multi" }
   },
+
   "handlerList": {
     "table": "handler",
     "propmap": { "_id": "id", "name": "title",  "status":"status" }

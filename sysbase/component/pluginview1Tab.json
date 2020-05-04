@@ -1,0 +1,10 @@
+{
+  "tabs": [
+    {
+      "id": "tabUnitParams",
+      "title": "Параметры плагина",
+      "component": [{ "id": "formPluginCommon", "type": "form" }]
+    }
+  ],
+  "defaultTab": "tabUnitParams"
+}
