@@ -1,6 +1,6 @@
 {
   "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table": "type", "height": 'fill' }
+    { "id": "p1", "xs": 12, "class": "main", "table": "type", "height": "fill" }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "types" },
