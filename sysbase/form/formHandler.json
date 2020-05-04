@@ -4,7 +4,7 @@
     { "id": "p2", "xs": 3, "class": "main", "table": "handler", "padding": 0 },
     { "id": "p3", "xs": 3, "class": "main", "table": "handler", "padding": 0 },
     { "id": "p4", "xs": 12, "class": "main", "table": "handler", "padding": 0, "hide": "!data.p1.errstr" },
-    { "id": "p5", "xs": 12, "class": "main", "table": "handler", "height": "fill", "calc": -86, "padding": 4 }
+    { "id": "p5", "xs": 12, "class": "main", "table": "handler", "height": "fill", "calc": -96, "padding": 4 }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "handlers" },
