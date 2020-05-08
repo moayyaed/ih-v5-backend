@@ -10,6 +10,7 @@ const init = require('./lib/init');
 const deviceserver = require('./lib/device/deviceserver');
 const pluginserver = require('./lib/plugin/pluginserver');
 const sceneserver = require('./lib/scene/sceneserver');
+const trendserver = require('./lib/trend/trendserver');
 const webserver = require('./lib/web/webserver');
 const EventEmitter = require('events');
 
@@ -25,6 +26,9 @@ init(__dirname)
   })
   .then(() => {
     sceneserver(holder);
+  })
+  .then(() => {
+    trendserver(holder);
   })
   .then(() => {
     webserver(holder);
