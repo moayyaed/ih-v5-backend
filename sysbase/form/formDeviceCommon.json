@@ -5,13 +5,13 @@
     { "id": "p3", "xs": 12, "class": "main", "table": "devicecommonTable", "height": 250 }
   ],
   "spacing": 10,
-  "breadcrumbs":{"tree":"devdevices"},
+  "breadcrumbs": { "tree": "devdevices" },
 
   "p1": [
     { "prop": "dn", "title": "$Dev_Id", "type": "input" },
     { "prop": "name", "title": "$Name", "type": "input" },
-    { "prop": "type", "title": "$Dev_Type", "type": "droplist", "data":"typeList" },
-    { "prop": "tags", "title": "Tags", "type": "tags", "data":"taglist" }
+    { "prop": "type", "title": "$Dev_Type", "type": "droplist", "data": "typeList" },
+    { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist" }
   ],
   "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
   "p3": [
@@ -21,15 +21,22 @@
       "prop": "devicecommonTable",
 
       "columns": [
-        { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 150 },
+        { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 100 },
+
+        { "prop": "type_propname", "title": "$Name", "type": "link", "width": 100, "command": "forward"  },
+        { "prop": "type_vtype", "title": "$Type", "type": "link", "width": 50, "command": "forward"  },
+        { "prop": "type_op", "title": "$Type", "type": "link", "width": 50, "command": "forward"  },
+        
         { "prop": "min", "title": "Min", "type": "number", "width": 50 },
         { "prop": "max", "title": "Max", "type": "number", "width": 50 },
         { "prop": "dig", "title": "$Decdig", "type": "number", "width": 50 },
         { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 100 },
-        { "prop": "unit", "title": "$Plugin", "type": "text", "width": 150 },
-        { "prop": "chan", "title": "$Channel", "type": "link", "width": 150, "command":"forward"  },
-        { "prop": "val", "title": "$Value", "type": "text", "width": 100 },
-        { "prop": "ts", "title": "$Time", "type": "text", "width": 200 }
+        { "prop": "unit", "title": "$Plugin", "type": "text", "width": 100 },
+        { "prop": "chan", "title": "$Channel", "type": "link", "width": 150, "command": "forward" },
+        { "prop": "realtime_dev_val", "title": "Значение", "type": "text", "width": 64 },
+        { "prop": "realtime_dev_ts", "title": "Время", "type": "text", "width": 150 },
+        { "prop": "realtime_dev_cts", "title": "Изменение", "type": "text", "width": 128 },
+        { "prop": "realtime_dev_err", "title": "Ошибка", "type": "text", "width": 128 }
       ]
     }
   ]
