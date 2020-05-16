@@ -1,8 +1,5 @@
 {
-  "grid": [
-   
-    { "id": "p1", "xs": 12, "class": "main", "table": "devicedbTable", "height": 500 }
-  ],
+  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "devicedbTable", "height": 500 }],
   "spacing": 10,
   "breadcrumbs": { "tree": "devdevices" },
 
@@ -10,16 +7,41 @@
     {
       "title": "Save to DB",
       "type": "table",
-      "popupenable":false,
+      "popupenable": false,
       "prop": "devicedbTable",
 
       "columns": [
-        { "prop": "prop", "title": "$DeviceProperty", "type": "droplist", "data":"propList", "width": 100 },
-        { "prop": "min", "title": "Min", "type": "number", "width": 50 },
-        { "prop": "max", "title": "Max", "type": "number", "width": 50 },
-        { "prop": "dig", "title": "$Decdig", "type": "number", "width": 50 },
-        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 100 }
-   
+        { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 100 },
+        {
+          "prop": "dbmet",
+          "title": "$Dev_dbmet",
+          "type": "droplist",
+          "data": [
+            { "id": 0, "title": "$NotSave" },
+            { "id": 1, "title": "$OnChange" },
+            { "id": 2, "title": "$AllValues" },
+            { "id": 3, "title": "$Periodically" }
+          ]
+        },
+
+        { "prop": "dbtm", "title": "$Dev_dbtm", "type": "number" },
+
+        {
+          "prop": "dbcalc_type",
+          "title": "$Dev_calc_type",
+          "type": "droplist",
+          "data": [
+            { "id": "last", "title": "Last" },
+            { "id": "min", "title": "Min" },
+            { "id": "max", "title": "Max" },
+            { "id": "minmax", "title": "Min&Max" },
+            { "id": "average", "title": "Average" }
+          ]
+        },
+
+        { "prop": "dbdelta", "title": "$Dev_dbdelta", "type": "number" },
+
+        { "prop": "dbforce", "title": "$Dev_dbforce", "type": "number" }
       ]
     }
   ]

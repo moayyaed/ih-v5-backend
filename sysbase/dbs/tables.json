@@ -50,7 +50,13 @@
 
   "devicedbTable": {
     "store": "db",
-    "collection": "devicedb"
+    "collection": "devicedb",
+    "genfield": "props",
+    "validator": {
+      "props": {
+        "newid": { "notempty": true }
+      }
+    }
   },
   
   "unitchannelsTable": { "store": "db", "collection": "devhard", "rows": true },

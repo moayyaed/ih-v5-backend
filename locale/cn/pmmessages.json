@@ -389,6 +389,7 @@
   { "id": "Dev_HasBlk", "note": "设备不能被锁定" },
   { "id": "Dev_Twotariff", "note": "双速率电表" },
   { "id": "DB", "note": "数据库" },
+  { "id": "NotSave", "note": "Do not save" },
   { "id": "OnChange", "note": "On Change" },
   { "id": "AllValues", "note": "All Values" },
   { "id": "Periodically", "note": "Periodically" },
