@@ -48,6 +48,11 @@
     }
   },
 
+  "devicedbTable": {
+    "store": "db",
+    "collection": "devicedb"
+  },
+  
   "unitchannelsTable": { "store": "db", "collection": "devhard", "rows": true },
   "typegroup": {
     "store": "db",

@@ -1,7 +1,7 @@
 {
   "lists": { "folder": "jbasepath" },
   "devices": { "folder": "jbasepath" },
-  "devprops": { "folder": "jbasepath" },
+  "devicedb": { "folder": "jbasepath" },
   "devhard": { "folder": "jbasepath" },
   "devcurrent": { "folder": "operativepath" },
 
