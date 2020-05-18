@@ -31,6 +31,7 @@
           "title": "$Dev_calc_type",
           "type": "droplist",
           "data": [
+            { "id": "-", "title": "" },
             { "id": "last", "title": "Last" },
             { "id": "min", "title": "Min" },
             { "id": "max", "title": "Max" },
