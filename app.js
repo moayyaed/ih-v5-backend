@@ -7,6 +7,7 @@
 const util = require('util');
 const init = require('./lib/init');
 
+const dbadapter = require('./lib/dbhistory/dbadapter');
 const deviceserver = require('./lib/device/deviceserver');
 const pluginserver = require('./lib/plugin/pluginserver');
 const sceneserver = require('./lib/scene/sceneserver');
@@ -16,8 +17,10 @@ const EventEmitter = require('events');
 
 const holder = new EventEmitter();
 
-
 init(__dirname)
+  .then(() => {
+    dbadapter(holder);
+  })
   .then(() => {
     deviceserver(holder);
   })
@@ -40,18 +43,18 @@ init(__dirname)
     }, 500);
   });
 
-  process.on('exit', () => {
-    if (holder) holder.emit('finish');
-  });
+process.on('exit', () => {
+  if (holder) holder.emit('finish');
+});
 
-  process.on('SIGINT', () => {
-    process.exit(0);
-  });
+process.on('SIGINT', () => {
+  process.exit(0);
+});
 
-  process.on('uncaughtException', err => {
-    console.log('ERR: uncaughtException ' + util.inspect(err));
-  });
+process.on('uncaughtException', err => {
+  console.log('ERR: uncaughtException ' + util.inspect(err));
+});
 
-  process.on('unhandledRejection', (reason, promise) => {
-    console.log('ERR: Unhandled Rejection at:', promise, 'reason:', reason);
-  });
+process.on('unhandledRejection', (reason, promise) => {
+  console.log('ERR: Unhandled Rejection at:', promise, 'reason:', reason);
+});
