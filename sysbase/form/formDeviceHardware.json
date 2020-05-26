@@ -1,0 +1,31 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main" },
+    { "id": "p2", "xs": 12, "class": "main", "table": "devicehwTable", "height": 500 }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "devdevices" },
+  "p1": [{ "prop": "info", "title": "$Name", "type": "text" }],
+  "p2": [
+    {
+      "title": "Save to DB",
+      "type": "table",
+      "popupenable": false,
+      "prop": "devicedbTable",
+
+      "columns": [
+        { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 100 },
+        {
+          "prop": "unit",
+          "title": "Unit",
+          "type": "text"
+        },
+        {
+          "prop": "chan",
+          "title": "Channel",
+          "type": "input"
+        }
+      ]
+    }
+  ]
+}

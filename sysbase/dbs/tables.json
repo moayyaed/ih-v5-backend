@@ -58,6 +58,14 @@
       }
     }
   },
+
+  "devicehwTable": {
+    "store": "db",
+    "collection": "devices",
+    "genfield": "props",
+    "rows": true
+    
+  },
   
   "unitchannelsTable": { "store": "db", "collection": "devhard", "rows": true },
   "typegroup": {

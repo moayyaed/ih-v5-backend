@@ -1,6 +1,7 @@
 {
   "tabs": [
     { "id": "tabDeviceCommon", "title": "Устройство", "component": [{ "id": "formDeviceCommon", "type": "form" }] },
+    { "id": "tabDeviceHardware", "title": "Источник данных", "component": [{ "id": "formDeviceHardware", "type": "form" }] },
     { "id": "tabDeviceDb", "title": "Запись в БД", "component": [{ "id": "formDeviceDb", "type": "form" }] }
   ],
 
