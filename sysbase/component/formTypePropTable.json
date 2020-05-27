@@ -1,0 +1,56 @@
+{
+  "grid": [
+    { "id": "p3", "xs": 12, "class": "main", "table": "type", "height": "fill" }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "types" },
+
+ 
+  "p3": [
+    {
+      "title": "$DeviceProperty",
+      "type": "table",
+      "popupenable":true,
+      "prop": "typepropsTable",
+
+      "columns": [
+    
+        { "prop": "newid", "title": "$Devprop_Id", "type": "input", "width": 128 },
+        { "prop": "name", "title": "$Name", "type": "input", "width": 128 },
+        {
+          "prop": "vtype",
+          "title": "$Devprop_Type",
+          "type": "droplist",
+          "data": [
+            { "id": "B", "title": "B -Boolean" },
+            { "id": "N", "title": "N -Number" },
+            { "id": "S", "title": "S -String" },
+            { "id": "C", "title": "C -Command" }
+
+          ],
+          "width": 128
+        },
+        {
+          "prop": "op",
+          "title": "$Operations",
+          "type": "droplist",
+          "data": [
+            { "id": "r", "title": "R  -Read only"},
+            { "id": "rw", "title": "RW-Read/Write" },
+            { "id": "w", "title": "W  -Write only" },
+            { "id": "c", "title": "C -Calculate" }
+          ],
+          "width": 128
+        },
+        { "prop": "min", "title": "Min", "type": "number", "width": 50 },
+        { "prop": "max", "title": "Max", "type": "number", "width": 50 },
+        { "prop": "dig", "title": "$Decdig", "type": "number", "width": 100 },
+        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 50 },
+        { "prop": "onread", "title": "При получении данных", "type": "droplist", "data":"readhandlers", "width": 250 },
+        { "prop": "oncommand", "title": "Выполнение команды", "type": "droplist", "data":"readhandlers", "width": 250 },
+        { "prop": "onwrite", "title": "При отправке данных", "type": "droplist", "data":"writehandlers", "width": 250 }
+
+      ]
+    }
+  ]
+}
