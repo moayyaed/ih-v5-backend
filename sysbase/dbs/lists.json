@@ -22,6 +22,12 @@
     "table": "handler",
     "propmap": { "_id": "id", "name": "title",  "status":"status" }
   },
+
+  "layoutList": {
+    "table": "layout",
+    "propmap": { "_id": "id", "name": "title", "tags":"tags" }
+  },
+
   "containerList": {
     "table": "viscont",
     "propmap": { "_id": "id", "name": "title", "tags":"tags" }
