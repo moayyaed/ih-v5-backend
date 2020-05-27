@@ -53,6 +53,7 @@
         { "prop": "dig", "title": "$Decdig", "type": "number", "width": 100 },
         { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 50 },
         { "prop": "onread", "title": "При получении данных", "type": "droplist", "data":"readhandlers", "width": 250 },
+        { "prop": "oncommand", "title": "Выполнение команды", "type": "droplist", "data":"readhandlers", "width": 250 },
         { "prop": "onwrite", "title": "При отправке данных", "type": "droplist", "data":"writehandlers", "width": 250 }
 
       ]
