@@ -1,0 +1,6 @@
+{
+  "grid": [{ "id": "p2", "xs": 12, "class": "main", "table": "deviceprops", "height": 100 }],
+  "spacing": 4,
+
+  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
+}

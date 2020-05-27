@@ -48,6 +48,13 @@
     }
   },
 
+  "deviceprops": {
+    "store": "db",
+    "collection": "devices",
+    "genfield": "props"
+  },
+  
+
   "devicedbTable": {
     "store": "db",
     "collection": "devicedb",
@@ -263,6 +270,15 @@
     "genfield": "props",
     "default": { "name": "Новый отчет" },
     "ruleID": { "pref": "r", "len": 3 }
+  },
+
+  "usergroup": {
+    "store": "db",
+    "collection": "lists",
+    "filter": { "list": "usergroup" },
+    "defRootTitle": "Пользователи",
+    "default": { "name": "New User" },
+    "ruleID": { "pref": "ug", "len": 3 }
   },
 
   "user": { "store": "db", "collection": "users" },

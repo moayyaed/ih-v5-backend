@@ -1,0 +1,20 @@
+{
+  "common": {
+    "parent": {
+      "popup": {
+        "main": [
+         
+        ]
+      },
+      "defaultComponent": "devproptochannellink"
+    },
+    "child": {
+      "popup": {
+        "main": [
+          
+        ]
+      },
+      "defaultComponent": "devproptochannellink"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "tabs": [
+    { "id": "tabUserCommon", "title": "Учетная запись", "component": [{ "id": "formUserCommon", "type": "form" }] }
+   
+  ],
+  "defaultTab": "tabUserCommon"
+}

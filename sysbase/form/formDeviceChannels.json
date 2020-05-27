@@ -1,0 +1,12 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "deviceprops", "height":"fill", "padding":4 }
+   
+  ],
+  
+  "spacing": 10,
+  "breadcrumbs": { "tree": "devdevices" },
+  "p1": [
+    { "prop": "propsTree", "title": "", "type": "pluginform1", "data":"deviceprops"}
+  ]
+}

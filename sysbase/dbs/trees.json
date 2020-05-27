@@ -79,6 +79,7 @@
       "propmap": { "_id": "id", "name": "name", "title": "title", "parent": "parent", "order": "order" }
     }
   },
+
   "datasource": ["plugins"],
   "plugins": {
     "branch": {
@@ -102,6 +103,16 @@
       "propmap": { "_id": "id", "id": "title", "title": "title", "parent": "parent", "order": "order" }
     }
   },
+
+  "access": ["users"],
+  "users": {
+    "branch": {
+      "table": "usergroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+    },
+    "leaf": { "table": "user", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
+  },
+  
 
   "snippets": {
     "branch": {
