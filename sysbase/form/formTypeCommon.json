@@ -32,7 +32,9 @@
           "data": [
             { "id": "B", "title": "B -Boolean" },
             { "id": "N", "title": "N -Number" },
-            { "id": "S", "title": "S -String" }
+            { "id": "S", "title": "S -String" },
+            { "id": "C", "title": "C -Command" }
+
           ],
           "width": 128
         },
@@ -41,7 +43,7 @@
           "title": "$Operations",
           "type": "droplist",
           "data": [
-            { "id": "r", "title": "R  -Read only" },
+            { "id": "r", "title": "R  -Read only"},
             { "id": "rw", "title": "RW-Read/Write" },
             { "id": "w", "title": "W  -Write only" },
             { "id": "c", "title": "C -Calculate" }
