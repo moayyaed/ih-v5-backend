@@ -20,7 +20,7 @@
 
   "handlerList": {
     "table": "handler",
-    "propmap": { "_id": "id", "name": "title",  "status":"status" }
+    "propmap": { "_id": "id", "name": "title",  "status":"status", "oper":"oper" }
   },
 
   "layoutList": {

@@ -15,7 +15,7 @@
       "columns": [
         { "prop": "newid", "title": "$Devprop_Id", "type": "input", "width": 128 },
         { "prop": "name", "title": "$Name", "type": "input", "width": 128 },
-        { "prop": "oncommand", "title": "Виртуальная команда", "type": "droplist", "data":"readhandlers", "width": 250 },
+        { "prop": "oncommand", "title": "Виртуальная команда", "type": "droplist", "data":"commandhandlers", "width": 250 },
         { "prop": "onwrite", "title": "При отправке данных", "type": "droplist", "data": "writehandlers", "width": 250 }
       ]
     }

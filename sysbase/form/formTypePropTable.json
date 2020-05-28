@@ -44,10 +44,10 @@
         },
         { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide":"data.vtype.id != 'N'"},
         { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide":"data.vtype.id != 'N'"},
-        { "prop": "dig", "title": "$Decdig", "type": "number", "width": 100 },
-        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 50, "hide":"data.newid == 'value'"},
+        { "prop": "dig", "title": "$Decdig", "type": "number", "width": 100, "hide":"data.vtype.id != 'N'" },
+        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 50 },
         { "prop": "onread", "title": "При получении данных", "type": "droplist", "data":"readhandlers", "width": 250 },
-        { "prop": "onwrite", "title": "При отправке данных", "type": "droplist", "data":"writehandlers", "width": 250 }
+        { "prop": "onwrite", "title": "При отправке данных", "type": "droplist", "data":"writehandlers", "width": 250, "hide":"data.op.id == 'c' || data.op.id == 'r'" }
 
       ]
     }
