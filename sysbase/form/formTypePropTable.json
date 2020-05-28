@@ -42,10 +42,10 @@
           ],
           "width": 128
         },
-        { "prop": "min", "title": "Min", "type": "number", "width": 50, "disable":"data.vtype != 'N'"},
-        { "prop": "max", "title": "Max", "type": "number", "width": 50, "disable":"data.vtype != 'N'"},
+        { "prop": "min", "title": "Min", "type": "number", "width": 50, "disable":"data.vtype.id != 'N'"},
+        { "prop": "max", "title": "Max", "type": "number", "width": 50, "disable":"data.vtype.id != 'N'"},
         { "prop": "dig", "title": "$Decdig", "type": "number", "width": 100 },
-        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 50 },
+        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 50, "disable":"data.newid == 'value'"},
         { "prop": "onread", "title": "При получении данных", "type": "droplist", "data":"readhandlers", "width": 250 },
         { "prop": "onwrite", "title": "При отправке данных", "type": "droplist", "data":"writehandlers", "width": 250 }
 
