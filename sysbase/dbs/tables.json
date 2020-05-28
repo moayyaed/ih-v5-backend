@@ -217,6 +217,10 @@
     "ruleID": { "pref": "u", "len": 3 }
   },
 
+  "selectplugin":{
+    "store": "none"
+  },
+
   "snippetgroup": {
     "store": "db",
     "collection": "lists",

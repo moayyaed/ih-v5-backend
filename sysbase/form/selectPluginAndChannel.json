@@ -1,0 +1,11 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "selectplugin" }
+  ],
+  "spacing": 4,
+
+  "p1": [
+    { "prop": "unit", "title": "$Unit", "type": "droplist", "data":"unitList" }
+   
+  ]
+}
