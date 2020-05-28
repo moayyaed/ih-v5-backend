@@ -1,0 +1,23 @@
+{
+  "grid": [{ "id": "p3", "xs": 12, "class": "main", "table": "type", "height": "fill" }],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "types" },
+
+  "p3": [
+    {
+      "title": "$DeviceProperty",
+      "type": "table",
+      "popupenable": true,
+      "prop": "typepropsTable",
+      "genfield": "props",
+      "genfilter": { "command": 1 },
+
+      "columns": [
+        { "prop": "newid", "title": "$Devprop_Id", "type": "input", "width": 128 },
+        { "prop": "name", "title": "$Name", "type": "input", "width": 128 },
+        { "prop": "oncommand", "title": "Виртуальная команда", "type": "droplist", "data":"readhandlers", "width": 250 },
+        { "prop": "onwrite", "title": "При отправке данных", "type": "droplist", "data": "writehandlers", "width": 250 }
+      ]
+    }
+  ]
+}

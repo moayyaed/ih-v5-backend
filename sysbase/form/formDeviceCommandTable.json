@@ -1,0 +1,29 @@
+{
+  "grid": [
+  
+    { "id": "p3", "xs": 12, "class": "main", "table": "devicecommonTable", "height": "fill" }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "devdevices" },
+
+  "p3": [
+    {
+      "title": "$DeviceProperty",
+      "type": "table",
+      "prop": "devicecommonTable",
+      "genfield":"props",
+
+      "columns": [
+        { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 100 },
+
+        { "prop": "type_propname", "title": "$Name", "type": "link", "width": 100, "command": "forward"  },
+    
+        { "prop": "type_op", "title": "$Type", "type": "link", "width": 50, "command": "forward"  },
+      
+        { "prop": "unit", "title": "$Plugin", "type": "text", "width": 100 },
+        { "prop": "chan", "title": "$Channel", "type": "link", "width": 150, "command": "forward" }
+      
+      ]
+    }
+  ]
+}

@@ -12,6 +12,8 @@
       "type": "table",
       "popupenable":true,
       "prop": "typepropsTable",
+      "genfield":"props",
+      "genfilter":{"command":"!def"},
 
       "columns": [
     
@@ -22,11 +24,9 @@
           "title": "$Devprop_Type",
           "type": "droplist",
           "data": [
-            { "id": "B", "title": "B -Boolean" },
-            { "id": "N", "title": "N -Number" },
-            { "id": "S", "title": "S -String" },
-            { "id": "C", "title": "C -Command" }
-
+            { "id": "B", "title": "Boolean" },
+            { "id": "N", "title": "Number" },
+            { "id": "S", "title": "String" }
           ],
           "width": 128
         },
@@ -42,12 +42,11 @@
           ],
           "width": 128
         },
-        { "prop": "min", "title": "Min", "type": "number", "width": 50 },
-        { "prop": "max", "title": "Max", "type": "number", "width": 50 },
+        { "prop": "min", "title": "Min", "type": "number", "width": 50, "disable":"data.vtype != 'N'"},
+        { "prop": "max", "title": "Max", "type": "number", "width": 50, "disable":"data.vtype != 'N'"},
         { "prop": "dig", "title": "$Decdig", "type": "number", "width": 100 },
         { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 50 },
         { "prop": "onread", "title": "При получении данных", "type": "droplist", "data":"readhandlers", "width": 250 },
-        { "prop": "oncommand", "title": "Выполнение команды", "type": "droplist", "data":"readhandlers", "width": 250 },
         { "prop": "onwrite", "title": "При отправке данных", "type": "droplist", "data":"writehandlers", "width": 250 }
 
       ]

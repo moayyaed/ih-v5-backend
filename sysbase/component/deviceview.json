@@ -1,6 +1,8 @@
 {
   "tabs": [
     { "id": "tabDeviceCommon", "title": "Устройство", "component": [{ "id": "formDeviceCommon", "type": "form" }] },
+    { "id": "tabDevicePropTable", "title": "Свойства", "component": [{ "id": "formDevicePropTable", "type": "form" }] },
+    { "id": "tabDeviceCommandTable", "title": "Команды", "component": [{ "id": "formDeviceCommandTable", "type": "form" }] },
     { "id": "tabDeviceHardware", "title": "Источник данных", "component": [{ "id": "formDeviceChannels", "type": "form" }] },
     { "id": "tabDeviceDb", "title": "Запись в БД", "component": [{ "id": "formDeviceDb", "type": "form" }] }
   ],
