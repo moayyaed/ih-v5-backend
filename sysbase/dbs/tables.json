@@ -289,5 +289,5 @@
       }
     }
   },
-  "token": { "store": "db", "collection": "tokens" }
+  "tokens": { "store": "db", "collection": "tokens" }
 }
