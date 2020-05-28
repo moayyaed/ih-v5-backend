@@ -48,7 +48,7 @@
     }
   },
 
-  "deviceprops": {
+  "devicepropswithlinks": {
     "store": "db",
     "collection": "devices",
     "genfield": "props"
