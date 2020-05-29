@@ -12,7 +12,7 @@
          
         ]
       },
-      "defaultComponent": "pluginfolder"
+      "defaultComponent": "channellink"
     },
     "child": {
       "popup": {
@@ -20,7 +20,7 @@
          
         ]
       },
-      "defaultComponent": "pluginview"
+      "defaultComponent": "channellink"
     }
   }
 }
