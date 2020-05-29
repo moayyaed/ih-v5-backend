@@ -10,7 +10,7 @@
 
   "unitList": {
     "table": "units",
-    "propmap": { "_id": "id", "name": "name", "plugin":"plugin" }
+    "propmap": { "_id": "id", "name": "name", "plugin":"plugin", "folder":"folder" }
   },
 
   "sceneList": {
