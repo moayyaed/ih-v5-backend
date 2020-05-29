@@ -12,7 +12,7 @@
       "title": "Привязка к каналу",
       "type": "smartbutton",
       "command": "dialog",
-      "params": { "title": "Привязка к каналу", "type": "tree", "id":"plugins", "dialog":"channellink" }
+      "params": { "title": "Привязка к каналу", "type": "tree", "id":"pluginsd", "dialog":"channellink" }
     }
   ],
 

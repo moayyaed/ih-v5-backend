@@ -12,7 +12,7 @@
          
         ]
       },
-      "defaultComponent": "channellink"
+      "defaultComponent": null
     },
     "child": {
       "popup": {
