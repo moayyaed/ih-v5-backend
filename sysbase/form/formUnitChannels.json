@@ -1,13 +1,18 @@
 {
-  "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table": "channels", "height":"fill", "padding":4 }
-   
-  ],
-  
+  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "channels", "height": "fill", "padding": 4 }],
+
   "spacing": 10,
   "breadcrumbs": { "tree": "plugins" },
 
   "p1": [
-    { "prop": "channelsTree", "title": "", "type": "pluginform1", "data":"channels"}
+    {
+      "prop": "channelsTree",
+      "title": "",
+      "type": "subtree",
+      "data": "channels",
+      "leftTitle": "Channels",
+      "rightTitle": "Properties",
+      "toolbar": true
+    }
   ]
 }
