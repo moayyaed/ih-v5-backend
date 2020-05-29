@@ -1,12 +1,27 @@
 {
   "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table": "devicepropswithlinks", "height":"fill", "padding":4 }
-   
+    {
+      "id": "p1",
+      "xs": 12,
+      "class": "main",
+      "table": "devicepropswithlinks",
+      "height": "fill",
+      "padding": 4
+    }
   ],
-  
   "spacing": 10,
-  "breadcrumbs": { "tree": "devdevices" },
+  "breadcrumbs": {
+    "tree": "devdevices"
+  },
   "p1": [
-    { "prop": "propsTree", "title": "", "type": "subtree", "data":"devicepropswithlinks", "leftTitle": "Properties", "rightTitle": "Settings", "toolbar": false }
+    {
+      "prop": "propsTree",
+      "title": "",
+      "type": "subtree",
+      "data": "devicepropswithlinks",
+      "leftTitle": "Properties",
+      "rightTitle": "Settings",
+      "toolbar": false
+    }
   ]
 }
