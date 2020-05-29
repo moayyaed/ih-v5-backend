@@ -7,6 +7,6 @@
   "spacing": 10,
   "breadcrumbs": { "tree": "devdevices" },
   "p1": [
-    { "prop": "propsTree", "title": "", "type": "subtree", "data":"devicepropswithlinks", leftTitle: "Properties", rightTitle: "Settings", toolbar: false }
+    { "prop": "propsTree", "title": "", "type": "subtree", "data":"devicepropswithlinks", "leftTitle": "Properties", "rightTitle": "Settings", "toolbar": false }
   ]
 }
