@@ -1,7 +1,7 @@
 {
   "grid": [
    
-    { "id": "p3", "xs": 12, "class": "main", "table": "devicecommonTable", "height": 250 }
+    { "id": "p3", "xs": 12, "class": "main", "table": "devicecommonTable", "height": "fill" }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "devdevices" },
