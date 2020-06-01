@@ -195,6 +195,7 @@ function createDevices(devrefData, project_d, extObj) {
   // Свойства формировать на основе классов (которые уже перенесены в типы)
   const classes = getSysDataFile('classes');
   const clObj = hut.arrayToObject(classes, 'id');
+  console.log('clObj='+util.inspect(clObj));
 
   let str = '';
   // Проверить, что parent есть, иначе в корень
@@ -214,7 +215,7 @@ function createDevices(devrefData, project_d, extObj) {
     const dobj = formDeviceFromDevref(item, parent, order, extObj);
     // const tobj = typeObj[item.type];
     // if (!tobj) throw { message: 'Not found type for item ' + util.inspect(item) };
-
+    console.log('item ='+util.inspect(item));
     dobj.props = formProps(item, Object.keys(clObj[item.cl].props));
     str += JSON.stringify(dobj) + '\n';
     order += 1000;

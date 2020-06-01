@@ -47,8 +47,40 @@
     }
   },
   {
+    "id": "ActorV",
+    "name": "$ActorV",
+    "props": {
+      "value": { "name": "$Value", "vtype": "N", "op": "r" },
+      "state": { "name": "$State", "vtype": "N", "op": "c" },
+      "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "rw" },
+      "auto": { "name": "Auto", "vtype": "B", "op": "rw" },
+      "blk": { "name": "$Blk", "vtype": "B", "op": "rw" }
+    }
+  },
+  {
     "id": "Meter",
     "name": "$Meter",
+    "props": {
+      "value": { "name": "$Value", "vtype": "N", "op": "r" }
+    }
+  },
+  {
+    "id": "SSwitch",
+    "name": "$SSwitch",
+    "props": {
+      "value": { "name": "$Value", "vtype": "N", "op": "r" }
+    }
+  },
+  {
+    "id": "Regime",
+    "name": "$Regime",
+    "props": {
+      "value": { "name": "$Value", "vtype": "N", "op": "r" }
+    }
+  },
+  {
+    "id": "Var",
+    "name": "$Var",
     "props": {
       "value": { "name": "$Value", "vtype": "N", "op": "r" }
     }
