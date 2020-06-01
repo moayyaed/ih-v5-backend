@@ -212,10 +212,11 @@ function createDevices(devrefData, project_d, extObj) {
   let order = 1000;
   devrefData.forEach(item => {
     const parent = getParent(item);
+    console.log('item ='+util.inspect(item));
     const dobj = formDeviceFromDevref(item, parent, order, extObj);
     // const tobj = typeObj[item.type];
     // if (!tobj) throw { message: 'Not found type for item ' + util.inspect(item) };
-    console.log('item ='+util.inspect(item));
+    console.log('dobj ='+util.inspect(dobj));
     dobj.props = formProps(item, Object.keys(clObj[item.cl].props));
     str += JSON.stringify(dobj) + '\n';
     order += 1000;
@@ -588,5 +589,7 @@ module.exports = {
   createDevhard,
   createDevcurrent,
   createScenecalls,
-  createVistemplates
+  createVistemplates,
+  isAnalog,
+  getNewId
 };

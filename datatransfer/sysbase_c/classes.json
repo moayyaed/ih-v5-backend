@@ -47,8 +47,15 @@
     }
   },
   {
+    "id": "Meter",
+    "name": "$Meter",
+    "props": {
+      "value": { "name": "$Value", "vtype": "N", "op": "r" }
+    }
+  },
+  {
     "id": "ActorV",
-    "name": "$ActorV",
+    "name": "ActorV",
     "props": {
       "value": { "name": "$Value", "vtype": "N", "op": "r" },
       "state": { "name": "$State", "vtype": "N", "op": "c" },
@@ -58,29 +65,8 @@
     }
   },
   {
-    "id": "Meter",
-    "name": "$Meter",
-    "props": {
-      "value": { "name": "$Value", "vtype": "N", "op": "r" }
-    }
-  },
-  {
     "id": "SSwitch",
-    "name": "$SSwitch",
-    "props": {
-      "value": { "name": "$Value", "vtype": "N", "op": "r" }
-    }
-  },
-  {
-    "id": "Regime",
-    "name": "$Regime",
-    "props": {
-      "value": { "name": "$Value", "vtype": "N", "op": "r" }
-    }
-  },
-  {
-    "id": "Var",
-    "name": "$Var",
+    "name": "SSwitch",
     "props": {
       "value": { "name": "$Value", "vtype": "N", "op": "r" }
     }

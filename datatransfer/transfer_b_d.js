@@ -11,6 +11,7 @@ const readline = require('readline');
 const appconfig = require('../lib/appconfig');
 const hut = require('../lib/utils/hut');
 const tut = require('./transfer_utils');
+const tuberry = require('./transfer_berry_utils');
 
 const sysfiles = ['classes', 'types'];
 
@@ -18,7 +19,6 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
-
 
 let lang;
 let project_c;
@@ -46,27 +46,26 @@ let project_d;
   console.log('lang=' + lang);
 
   // transfer дописывает в один файл
-  
+
   // transfer('classes', 'lists', 'jbase');
   // transfer('places', 'lists', 'jbase');
   // transfer('rooms', 'lists', 'jbase');
   // transfer('spaces', 'lists', 'jbase');
   // transferPluginGroups();
 
-
   // create создает заново
+  // create('types', 'jbase');
 
   // create('layouts', 'jbase');
   // create('visconts', 'jbase');
   // create('vistemplates', 'jbase');
 
-  // create('units', 'jbase');
-  
-  // create('types', 'jbase');
+  create('units', 'jbase');
+
   // create('charts', 'jbase');
   // create('reports', 'jbase');
-  
-  create('devices', 'jbase');
+
+  // create('devices', 'jbase');
 
   // create('devhard', 'jbase');
   // create('scenecalls', 'jbase');
@@ -147,17 +146,27 @@ function create(target, folder) {
     let sObj;
 
     switch (target) {
+      // Berry!!
       case 'types':
+        // К стандартным типам добавить типы из hman
         str = tut.createTypes();
+        str += tuberry.createTypesFromHman(getSourceData('hmanPLC', 'jbase'), 'PLC');
+
         break;
 
       case 'devices':
         sObj = getSourceAsObj('subsystems', folder);
-        str = tut.createDevices(getSourceData('devref', folder), project_d, sObj);
+
+        str = tuberry.createDevices(
+          getSourceData('devref', folder),
+          project_d,
+          sObj,
+          getSourceData('hmanPLC', 'jbase')
+        );
         break;
 
       case 'devhard':
-        str = tut.createDevhard(getSourceData('devhard', folder), project_d);
+        str = tuberry.createDevhardFromHdev(getSourceData('hdevPLC', 'jbase'), 'PLC');
         break;
       case 'devcurrent':
         str = tut.createDevcurrent(getSourceData('devcurrent', folder), project_d);
@@ -195,7 +204,8 @@ function create(target, folder) {
         break;
 
       case 'units':
-        str = formPluginFolders() + formAllRecordsStr('units', target, folder);
+        // str = formPluginFolders() + formAllRecordsStr('units', target, folder);
+        str = formAllRecordsStr('units', target, folder);
         break;
 
       case 'scenecalls':
@@ -208,46 +218,11 @@ function create(target, folder) {
     // Записать в новый файл
     const dfilename = path.join(project_d, folder, target + '.db');
     fs.writeFileSync(dfilename, str);
-    console.log(str);
+    // console.log(str);
     console.log('Data was appended to file' + dfilename + '. Str len=' + str.length);
   } catch (e) {
     console.log(util.inspect(e));
   }
-}
-
-// Changed for BERRY!!
-function getSourceData(source, folder) {
-  if (sysfiles.includes(source)) {
-    return tut.getSysDataFile(source);
-  }
-
-  // Считать файл из проекта
-  const cfilename = path.join(project_c, folder, source + '.json');
-  const data = JSON.parse(fs.readFileSync(cfilename, 'utf8'));
-
-  if (Array.isArray(data) && data.length) {
-    // num=> id, num:0 - не берем!
-    // name может быть object
-    // Если есть order - сортировать по order
-   const arr = [];
-    let hasOrder;
-    data.forEach(item => {
-      if (item.num != "0") {
-        if (item.name) {
-          item.name = getNameProp(item.name);
-        } else if (item.note) {
-          item.name = getNameProp(item.note); // devref:{dn, note:}
-        }
-        if (item.kind) item.cl = item.kind;
-        arr.push({id:item.num, ...item});
-        hasOrder = !!item.order;
-      }
-    });
-    return hasOrder ? arr.sort(hut.byorder('order')) : arr;
-  } 
-  return data;
-  
-  
 }
 
 function transferPluginGroups() {
@@ -325,3 +300,38 @@ function formPluginFolders() {
   return str;
 }
 // auxiliary - вспомогательный, добавочный, дополнительный
+
+// Changed for BERRY!!
+function getSourceData(source, folder) {
+  if (sysfiles.includes(source)) {
+    return tut.getSysDataFile(source);
+  }
+
+  // Считать файл из проекта
+  const cfilename = path.join(project_c, folder, source + '.json');
+  const data = JSON.parse(fs.readFileSync(cfilename, 'utf8'));
+
+  if (Array.isArray(data) && data.length) {
+    // num=> id, num:0 - не берем!
+    // name может быть object
+    // Если есть order - сортировать по order
+    const arr = [];
+    let hasOrder;
+    data.forEach(item => {
+      if (item.num != '0') {
+        if (item.name) {
+          item.name = getNameProp(item.name);
+        } else if (item.note) {
+          item.name = getNameProp(item.note); // devref:{dn, note:}
+        }
+        if (item.kind) item.cl = item.kind;
+        if (item.subsystem) item.subs = item.subsystem;
+        const id = source == 'devref' ? item.dn : item.num;
+        arr.push({ id, ...item });
+        hasOrder = !!item.order;
+      }
+    });
+    return hasOrder ? arr.sort(hut.byorder('order')) : arr;
+  }
+  return data;
+}
