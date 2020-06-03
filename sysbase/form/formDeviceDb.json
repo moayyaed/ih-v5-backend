@@ -13,23 +13,18 @@
       "columns": [
         { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 100 },
         {
-          "prop": "db",
-          "title": "Сохранять в БД",
-          "type": "cb"
-        },
-        {
           "prop": "dbmet",
           "title": "Метод сохранения",
           "type": "droplist",
           "data": [
-            { "id": 0, "title": "$OnChange" },
-            { "id": 1, "title": "$AllValues" },
-            { "id": 2, "title": "$Periodically" }
-          ],
-          "hide":"!data.db"
+            { "id": 0, "title": "$NotSave" },
+            { "id": 1, "title": "$OnChange" },
+            { "id": 2, "title": "$AllValues" },
+            { "id": 3, "title": "$Periodically" }
+          ]
         },
 
-        { "prop": "dbtm", "title": "$Dev_dbtm", "type": "number", "hide":"!data.db || data.dbmet<2" },
+        { "prop": "dbtm", "title": "$Dev_dbtm", "type": "number", "hide":"!data.dbmet || data.dbmet.id<3" },
 
         {
           "prop": "dbcalc_type",
@@ -43,12 +38,12 @@
             { "id": "minmax", "title": "Min&Max" },
             { "id": "average", "title": "Average" }
           ],
-          "hide":"!data.db || data.dbmet<2" 
+          "hide":"!data.dbmet || data.dbmet.id<3" 
         },
 
-        { "prop": "dbdelta", "title": "$Dev_dbdelta", "type": "number","hide":"!data.db || data.dbmet>0"  },
+        { "prop": "dbdelta", "title": "$Dev_dbdelta", "type": "number","hide":"!data.dbmet || data.dbmet.id!=1"  },
 
-        { "prop": "dbforce", "title": "$Dev_dbforce", "type": "number","hide":"!data.db || data.dbmet>0" }
+        { "prop": "dbforce", "title": "$Dev_dbforce", "type": "number","hide":"!data.dbmet || data.dbmet.id!=1" }
       ]
     }
   ]
