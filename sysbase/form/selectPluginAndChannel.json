@@ -1,10 +1,10 @@
 {
   "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table": "device" }
+    { "id": "plink", "xs": 12, "class": "main", "table": "device" }
   ],
   "spacing": 4,
 
-  "p1": [
+  "plink": [
    
     {
       "prop": "chanlink",
