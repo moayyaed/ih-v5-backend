@@ -6,7 +6,7 @@
          
         ]
       },
-      "defaultComponent": "devproptochannellink"
+      "defaultComponent": null
     },
     "child": {
       "popup": {

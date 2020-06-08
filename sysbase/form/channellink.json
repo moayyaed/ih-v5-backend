@@ -1,7 +1,6 @@
 {
   "grid": [
-    { "id": "plink", "xs": 12, "class": "main", "table": "device" },
-    { "id": "p2", "xs": 12, "class": "main", "table": "devhard", "height": 100 }
+    { "id": "plink", "xs": 12, "class": "main", "table": "devhard" }
   ],
   "spacing": 4,
 
@@ -13,7 +12,5 @@
       "command": "dialog",
       "params": { "title": "Привязка к каналу", "type": "tree", "id":"pluginsd", "dialog":"channellink" }
     }
-  ],
-
-  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
+  ]
 }
