@@ -151,7 +151,7 @@ devlink: {
 
 ------------------------------------------------------
 
-## Свойство устройства <-> Канал
+## Свойство устройства <-> Канал   
 
 ### 1. Запрос дерева свойств устройства
 
@@ -214,7 +214,7 @@ devlink: {
 ```
 <=  Элемент данных smartbutton chanlink - привязки еще нет, но надо передать anchor
 ```
-chanlink: {title: "", value: "", anchor: "d0194.state"}
+chanlink: {title: "", value: "", anchor: "d0194.state", path:""}
 ```
 Будет выведен элемент с возможностью перехода в диалог (tree:pluginsd, dialog:channellink)
 
@@ -242,17 +242,27 @@ chanlink: {
   anchor: "d0194.value"
   title: "wip1._r_UPS2_OUT_PL16"
   value: {unit: "wip1", chan: "_r_UPS2_OUT_PL16"}
+  path:{
+    path: "datasource/plugins/pluginview/wip1/tabUnitChannels/channelview.wip1/d0132"
+    title: "wip1._r_UPS2_OUT_PL16"
+  }
 }
 ```
 
 Можно редактировать запись для канала - при сохранении будет штатное сохранение
-Или (и?) сбросить привязку через через smartbutton - при сохранении формы получим ??
- 
+Или (и?) сбросить привязку через через smartbutton - при сохранении формы при сброшенной связке должны получить   value:{did:'', prop:''} или value:""
+
+payload:{p1:{chanlink:{
+  value:'' // ????
+}}}
+
 
 ### 3. Переход в диалоговое окно при нажатии на smartbutton 
 
 Переход происходит только если привязки нет - smartbutton field пуст
-Иначе происходит очистка ссылки без отправки на сервер
+Иначе происходит очистка ссылки без отправки на сервер - chanlink.value=""
+
+И потом все же выполняется переход!
 
 => Запрос метаданных диалога (дерева)
 ```
@@ -282,9 +292,9 @@ pluginsd: {
 
 Метаданные не запрашиваются, есть встроенный fronend компонент ?? channellink
 
-=> Запрос данных - каналы плагина с возможными привязками 
+=> Запрос данных - каналы плагина с возможными привязками. anchor берется из smartbutton
 ```
-/api/admin?method=get&type=link&id=channellink&nodeid=mqttclient1&anchor=
+/api/admin?method=get&type=link&id=channellink&nodeid=mqttclient1&anchor=d001.setpoint
 ```
 
 <=  Массив данных properties возвращается в ответ на  method=get&type=link
@@ -343,20 +353,19 @@ title: "mqttclient1.New channel"
 
 => Отправляются данные методом POST /api/admin стандартным методом update
 
-  body:{method: "update", type: "form", id: "channelview.mqttclient1", nodeid: "d0588", payload:...}
+  body:{
+  method: "update", 
+  type: "form", 
+  id: "channelview.mqttclient1", 
+  nodeid: "d0588.setpoint", 
+  rowid:xxxx, // !!!!! - если была привязка через диалог и форма была запрошена с исп rowid!!
+  payload:...}
 
-Элемент формы в payload при изменении devlink - присылается все обратно. 
-Нужно только value?? так как запись в devhard  известна (при создании в дереве запись уже создана и имеет постоянный id ) 
+Элемент формы в payload при изменении chanlink
+Нужно только value?? так как фактически меняем запись в devhard  
 
 ```
-devlink: {
-  anchor: "mqttclient1.Counter_Thing"
-  dialognodeid: "d0494"
-  did: "d0494"
-  dn: "UPS_1_Input_V_L1"
-  name: "UPS1 - Напряжение на входе (L1)"
-  prop: "state"
-  title: "UPS_1_Input_V_L1 ▪︎ UPS1 - Напряжение на входе (L1) ▪︎ state"
+chanlink: {
   value: {did: "d0494", prop: "state"}
 }
 ```
