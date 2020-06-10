@@ -30,7 +30,16 @@
   },
   "channels": { "store": "db", "collection": "devhard" },
 
-  "devhard": { "store": "db", "collection": "devhard" },
+  "devhard": {
+    "store": "db", 
+    "collection": "devhard",
+    "validator": {
+      "main": {
+        "chan": { "custom": true }
+      }
+    }
+  },
+
   "devcurrent": { "store": "db", "collection": "devcurrent" },
 
   "devicesTreeTable": { "store": "tree", "tree": "devdevices", "rows": true },
