@@ -163,36 +163,26 @@ devlink: {
 <=  Элемент subtree - свойство устройства, id=did.prop
 
 Включает component(имя формы), которая будет вызвана 
+Поскольку дерево не перезагружается, имя компонента будет одно и то же-channellink:
+Построение формы channellink выполняется динамически в зависимости от фактической привязки
 
-В зависимости от того, привязано свойство или нет, будут разные имена формы
-
-Если свойство не привязано - channellink:
-```
-{id: "d0803.state"
- order: 2
- title: "state"
- component: "channellink"
-}
-```
-
-Если свойство привязано к каналу плагина emuls1 - channellink.emuls1:
 ```
 {
   id: "d0803.value"
   order: 1
   title: "value"
-  component: "channellink.emuls1"
+  component: "channellink"
 }
 ```
 
-### 2. Запрос формы при клике на свойство
-
-### 2.1 Если свойство не привязано к каналу
+### 2. Запрос формы при клике на свойство в дереве
 
 => Запрос формы 
 ```
 /api/admin?method=getmeta&type=form&id=channellink&nodeid=d0803.auto
 ```
+
+### 2.1 Если свойство не привязано к каналу - вернется только форма со smartbutton 
 
 <=  Элемент формы со smartbutton, привязки еще нет
 ```
@@ -208,33 +198,15 @@ devlink: {
 }
 ```
 
-=> Запрос данных формы: 
-```
-/api/admin?method=get&type=form&id=channellink&nodeid=d0803.auto
-```
-<=  Элемент данных smartbutton chanlink - привязки еще нет, но надо передать anchor
+<=  Элемент данных smartbutton chanlink - привязки еще нет, но есть anchor
 ```
 chanlink: {title: "", value: "", anchor: "d0194.state", path:""}
 ```
+
 Будет выведен элемент с возможностью перехода в диалог (tree:pluginsd, dialog:channellink)
 
 
-### 2.2 Если свойство привязано к каналу
-
-=> Запрос формы 
-```
-/api/admin?method=getmeta&type=form&id=channellink.emuls1&nodeid=d0803.value
-```
-
-<=  Элемент формы со smartbutton - д б такой же
-
-ПЛЮС форма редактирования канала от плагина
-
-
-=> Запрос данных формы 
-```
-/api/admin?method=get&type=form&id=channellink.emuls1&nodeid=d0803.value
-```
+### 2.2 Если свойство привязано к каналу - вернется форма со smartbutton объединенная с формой канала (channelform)
 
 <=  Элемент данных smartbutton - привязка есть
 ```
@@ -252,9 +224,11 @@ chanlink: {
 Можно редактировать запись для канала - при сохранении будет штатное сохранение
 Или (и?) сбросить привязку через через smartbutton - при сохранении формы при сброшенной связке должны получить   value:{did:'', prop:''} или value:""
 
-payload:{p1:{chanlink:{
-  value:'' // ????
-}}}
+payload:{p1:{
+  chanlink:{
+    value:'' // ????
+  }
+}}
 
 
 ### 3. Переход в диалоговое окно при нажатии на smartbutton 
@@ -301,53 +275,28 @@ pluginsd: {
 
 ```
 properties: [
+
   // Канал уже привязан
   {enable: false, 
   id: "d0583" // devhard._id
   link: "PST_Analog_Pressure_Power_Cylinder ▪︎ Давление.value" // Привязка уже есть
   prop: "mqttclient1.Pressure_Power_Cylinder"
-  setreq: null
+  formreq: null
   title: "mqttclient1.Pressure_Power_Cylinder"},  
 
-// Канал не привязан
+// Канал не привязан, существует
   {enable: true
   id: "-7Y4ZPfB6" // devhard._id
-  link: ""
-  prop: "mqttclient1.New channel"
-  setreq: {method: "set", type: "link", id: "channellink", nodeid: "mqttclient1",…}
-    id: "channellink"
-    link: "function anchor() { [native code] }"
-    method: "set"
-nodeid: "mqttclient1"
-prop: "mqttclient1.New channel"
-refresh: "channellink.mqttclient1"
-rowid: "-7Y4ZPfB6"
-type: "link"
-title: "mqttclient1.New channel"
-  {
-  clear: true
-  clearreq: {method: "clear", type: "link", id: "devicelink", nodeid: "d0805", prop: "value",…}
-  did: "d0805"
-  dn: "DN005"
-  enable: false
-  link: "modbus2.newchannal"
-  name: "Датчик универсальный бинарный"
-  prop: "value"
-  result: {
-    anchor: "mqttclient1.Counter_Thing"
-    dialognodeid: "d0805"
-    did: "d0805"
-    dn: "DN005"
-    name: "Датчик универсальный бинарный"
-    prop: "value"
-    title: "DN005 ▪︎ Датчик универсальный бинарный ▪︎ value"
-    value: {did: "d0805", prop: "value"}
-  }
-  select: false
-  title: "DN005 ▪︎ Датчик универсальный бинарный ▪︎ value"
+  prop: "mqttclient1.mychannel"
+  formreq: {
+   id: "mqttclient1.mychannel"
+   nodeid: "d001.setpoint"
+   rowid: "-7Y4ZPfB6" // это запись о канале, к которой будет выполнена привязка
 },...]
 ```
-По кнопке OK в диалоге передача на сервер не выполняется, привяязка придет только по кнопке Сохранить
+По кнопке OK в диалоге нужно перезапросить форму на основании formreq:
+
+
 
 ### 5. По кнопке Сохранить на форме channelview.<mqttclient1>
 
