@@ -435,39 +435,33 @@ function createDevhard(devhardData, project_d) {
   });
 
   // TODO Сформировать из комплексных каналов ( wip)
+  complexMap.forEach((arr, dn) => {
+    const did = deviceObj[dn] ? deviceObj[dn]._id : '';
+    if (did) {
+      arr.forEach(item => {
+        const prop = item.prop == 'dval' ? 'value' : item.prop;
+        const cobj = {
+          _id: did+'_'+prop,
+          did,
+          prop,
+          unit: item.unit,
+          chan: item.chan,
+          desc: item.desc,
+          order: item.order,
+          r: (item.op == 'R') ? 1 : 0,
+          w: (item.op == 'W') ? 1 : 0,
+          value:item.value // Значение для команды
+        };
+        str += JSON.stringify(cobj) + '\n';
+      });
+    }
+
+  });
+
 
   return str;
 }
-/** 
-function formHardRecord(did, item) {
-  if (item.complex) return '';
 
-  if (!item.chan) item.chan = item.dn;
-  const pobj = {
-    _id: did,
-    did,
-    prop: 'value',
-    unit: item.unit,
-    chan: item.chan,
-    inv: item.inv,
-    calc: item.calc,
-    desc: item.desc
-  };
-
-  const hard = getHardObjForUnit(item);
-  // Может и не быть - например wip
-  if (hard) {
-    pobj.hard = hard;
-    
-    if (item.actions) {
-      let actions;
-      actions = hut.clone(item.actions, actions);
-      pobj.hard.actions = actions;
-    }
-  }
-  return JSON.stringify(pobj) + '\n';
-}
-*/
 
 function formHardRecord(did, item) {
   if (item.complex) return '';
@@ -482,15 +476,44 @@ function formHardRecord(did, item) {
     inv: item.inv,
     calc: item.calc,
     desc: item.desc,
-    order: item.order
+    order: item.order,
+    r: 1,
+    w: (item.desc == 'DO' || item.desc == 'AO') ? 1 : 0
   };
 
   const hard = getHardObjForUnit(item);
+  const commands = [];
   // Может и не быть - например wip
   let robj;
   if (hard) {
     robj = Object.assign(pobj, hard);
 
+    if (item.actions && Array.isArray(item.actions) && pobj.w) {
+      // Сформировать отдельные каналы для on/off. 
+      // TODO Если set - присоедить команду записи к текущему каналу??
+
+      item.actions.forEach(el => {
+        if (el.act == 'set') {
+          // 
+        } else {
+          const act = el.act;
+          const aObj = {
+            _id: did+'_'+act,
+            did,
+            prop: act,
+            unit: item.unit,
+            chan: item.chan+'_'+act,
+            r: 0,
+            w: 1
+          };
+          commands.push({...el, ...aObj})
+          console.log('COMMANDs'+util.inspect(commands));
+
+        }
+      });
+    }
+
+    /*
     if (item.actions && Array.isArray(item.actions)) {
       const actions = {};
       // Перенос как вложенный объект:
@@ -501,14 +524,22 @@ function formHardRecord(did, item) {
       });
       robj.actions = actions;
     }
+    */
+
   } else robj = pobj;
-  return JSON.stringify(robj) + '\n';
+
+  let str = JSON.stringify(robj) + '\n';
+  commands.forEach(command => {
+    str += JSON.stringify(command) + '\n';
+  })
+  return str;
 }
 
 function getHardObjForUnit(item) {
   const plugin = hut.removeLastNumFromStr(item.unit);
   switch (plugin) {
     case 'mqttclient':
+
       return { topic: item.topic };
     // {"unit":"mqttclient1","topic":"/MT8102iE/Analog_Position_Carriage","actions":[{"act":"on","topic":"/devices/dn/command","message":"on"},{"act":"off","topic":"/devices/dn/command","message":"off"}]},
     case 'modbus':

@@ -24,7 +24,10 @@
       "value": { "name": "$Value", "vtype": "B", "op": "r" },
       "state": { "name": "$State", "vtype": "N", "op": "c" },
       "auto": { "name": "Auto", "vtype": "B", "op": "rw" },
-      "blk": { "name": "$Blk", "vtype": "B", "op": "rw" }
+      "blk": { "name": "$Blk", "vtype": "B", "op": "rw" },
+      "on": { "name": "$on", "command":1},
+      "off": { "name": "$off", "command":1},
+      "toggle": { "name": "$toggle", "command":1}
     }
   },
   {
@@ -35,7 +38,10 @@
       "state": { "name": "$State", "vtype": "N", "op": "c" },
       "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "rw" },
       "auto": { "name": "Auto", "vtype": "B", "op": "rw" },
-      "blk": { "name": "$Blk", "vtype": "B", "op": "rw" }
+      "blk": { "name": "$Blk", "vtype": "B", "op": "rw" },
+      "on": { "name": "$on", "command":1},
+      "off": { "name": "$off", "command":1},
+      "toggle": { "name": "$toggle", "command":1}
     }
   },
   {
@@ -44,6 +50,7 @@
     "props": {
       "value": { "name": "$Value", "vtype": "N", "op": "r" },
       "state": { "name": "$State", "vtype": "N", "op": "c" }
+     
     }
   },
   {
@@ -61,7 +68,10 @@
       "state": { "name": "$State", "vtype": "N", "op": "c" },
       "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "rw" },
       "auto": { "name": "Auto", "vtype": "B", "op": "rw" },
-      "blk": { "name": "$Blk", "vtype": "B", "op": "rw" }
+      "blk": { "name": "$Blk", "vtype": "B", "op": "rw" },
+      "on": { "name": "$on", "command":1},
+      "off": { "name": "$off", "command":1},
+      "toggle": { "name": "$toggle", "command":1}
     }
   },
   {

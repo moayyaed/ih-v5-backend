@@ -59,18 +59,19 @@ let project_d;
   // create('vistemplates', 'jbase');
 
     
-  create('units', 'jbase');
-   /** 
-  create('types', 'jbase');
-  create('charts', 'jbase');
-  create('reports', 'jbase');
-  */
+  // create('units', 'jbase');
+  
+  // create('types', 'jbase');
+ 
   // create('devices', 'jbase');
   
-  // create('devhard', 'jbase');
+  create('devhard', 'jbase');
   // create('scenecalls', 'jbase');
  
   // - create('devcurrent', 'operative');
+  // create('charts', 'jbase');
+  // create('reports', 'jbase');
+  
 
   rl.close();
 })();
