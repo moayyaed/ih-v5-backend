@@ -16,12 +16,12 @@
       "columns": [
         { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 100 },
 
-        { "prop": "type_propname", "title": "$Name", "type": "link", "width": 100, "command": "forward"  },
+        { "prop": "type_propname", "title": "$Name", "type": "link", "width": 200, "command": "forward"  },
     
-        { "prop": "type_op", "title": "$Type", "type": "link", "width": 50, "command": "forward"  },
+        { "prop": "type_op", "title": "$Type", "type": "link", "width": 100, "command": "forward"  },
       
         { "prop": "unit", "title": "$Plugin", "type": "text", "width": 100 },
-        { "prop": "chan", "title": "$Channel", "type": "link", "width": 150, "command": "forward" }
+        { "prop": "chan", "title": "$Channel", "type": "link", "width": 250, "command": "forward" }
       
       ]
     }
