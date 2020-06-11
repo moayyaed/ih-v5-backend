@@ -1,7 +1,7 @@
 {
   "grid": [
   
-    { "id": "p3", "xs": 12, "class": "main", "table": "devicecommonTable", "height": "fill" }
+    { "id": "p3", "xs": 12, "class": "main", "table": "devicecommandTable", "height": "fill" }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "devdevices" },
@@ -10,7 +10,7 @@
     {
       "title": "$DeviceProperty",
       "type": "table",
-      "prop": "devicecommonTable",
+      "prop": "devicecommandTable",
       "genfield":"props",
 
       "columns": [

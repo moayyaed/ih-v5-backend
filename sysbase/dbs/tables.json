@@ -57,6 +57,12 @@
     }
   },
 
+  "devicecommandTable": {
+    "store": "db",
+    "collection": "devices",
+    "genfield": "props"
+  },
+
   "devicepropswithlinks": {
     "store": "db",
     "collection": "devices",
