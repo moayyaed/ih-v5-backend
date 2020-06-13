@@ -7,7 +7,7 @@
   "breadcrumbs": { "tree": "devdevices" },
 
   "p1": [
-    { "prop": "dn", "title": "Dev_Id???", "type": "input" },
+    { "prop": "dn", "title": "$Dev_Id", "type": "input" },
     { "prop": "name", "title": "$Name", "type": "input" },
     { "prop": "type", "title": "$Dev_Type", "type": "droplist", "data": "typeList" },
     { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist" }
