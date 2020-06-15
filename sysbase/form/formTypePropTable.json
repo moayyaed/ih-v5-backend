@@ -31,10 +31,10 @@
           "title": "$Operations",
           "type": "droplist",
           "data": [
-            { "id": "r", "title": "R  -Read only" },
-            { "id": "rw", "title": "RW-Read/Write" },
-            { "id": "w", "title": "W  -Write only" },
-            { "id": "c", "title": "C -Calculate" }
+            { "id": "r", "title": "Read only" },
+            { "id": "rw", "title": "Read/Write" },
+            { "id": "w", "title": "Write only" },
+            { "id": "c", "title": "Calculate" }
           ],
           "width": 128
         },
@@ -45,7 +45,7 @@
         { "prop": "onread", "title": "Функция-обработчик", "type": "droplist", "data": "readhandlers", "width": 250 },
         {
           "prop": "when",
-          "title": "Запуск",
+          "title": "Запуск функции",
           "type": "droplist",
           "data": [
             { "id": "0", "title": "При изменении данных" },
