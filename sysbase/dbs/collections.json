@@ -3,6 +3,7 @@
   "devices": { "folder": "jbasepath" },
   "devicedb": { "folder": "jbasepath" },
   "devhard": { "folder": "jbasepath" },
+  "pluginextra": { "folder": "jbasepath" },
   "devcurrent": { "folder": "operativepath" },
 
   "units": { "folder": "jbasepath" },

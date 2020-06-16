@@ -88,6 +88,8 @@
   },
 
   "unitchannelsTable": { "store": "db", "collection": "devhard", "rows": true },
+  "unitextTable": { "store": "db", "collection": "pluginextra", "rows": true },
+
   "typegroup": {
     "store": "db",
     "collection": "lists",

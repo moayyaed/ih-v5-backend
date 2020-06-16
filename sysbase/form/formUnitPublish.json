@@ -1,0 +1,23 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"unitextTable", "height":"fill"}
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "plugins" },
+
+  "p1": [
+    {
+      "title": "Publish",
+      "type": "table",
+      "prop": "unitextTable",
+      "popupenable": true,
+
+      "columns": [
+
+        { "prop": "did", "title": "$Device", "type": "droplist", "data":"deviceList",  "width": 250  },
+        { "prop": "prop", "title": "$DeviceProperty", "type": "droplist", "data":[{"id":"value", "title":"value"}], "width": 200 },
+        { "prop": "topic", "title": "Topic", "type": "input", "width": 200 }
+      ]
+    }
+  ]
+}

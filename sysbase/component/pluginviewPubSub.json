@@ -1,0 +1,17 @@
+{
+  "tabs": [
+    {
+      "id": "tabUnitParams",
+      "title": "Параметры плагина",
+      "component": [{ "id": "formPluginCommon", "type": "form" }]
+    },
+    { "id": "tabUnitChannels", "title": "Каналы", "component": [{ "id": "formUnitChannels", "type": "form" }] },
+    {
+      "id": "tabChannelsTable",
+      "title": "Таблица каналов",
+      "component": [{ "id": "formPluginChannelsTable", "type": "form" }]
+    },
+    { "id": "tabUnitPublish", "title": "Публикация", "component": [{ "id": "formUnitPublish", "type": "form" }] }
+  ],
+  "defaultTab": "tabUnitParams"
+}
