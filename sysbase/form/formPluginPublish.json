@@ -15,8 +15,8 @@
       "columns": [
 
         { "prop": "did", "title": "$Device", "type": "droplist", "data":"deviceList",  "width": 250  },
-        { "prop": "prop", "title": "$DeviceProperty", "type": "droplist", "data":[{"id":"value", "title":"value"}], "width": 200 },
-        { "prop": "topic", "title": "Topic", "type": "input", "width": 200 }
+        { "prop": "prop", "title": "$DeviceProperty", "type": "droplist", "data":[{"id":"value", "title":"value"}, {"id":"on", "title":"on"}, {"id":"off", "title":"off"}], "width": 100 }
+       
       ]
     }
   ]
