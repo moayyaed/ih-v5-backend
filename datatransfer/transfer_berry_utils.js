@@ -12,22 +12,25 @@ const hut = require('../lib/utils/hut');
 const appconfig = require('../lib/appconfig');
 
 function createTypesFromHman(hmanData, pref) {
-  const data = hmanData[0]; // 0 элемент - description
-
-  // сформировать строку
   let str = '';
-  let order = 1000;
+  if (hmanData && hmanData.length > 1) {
+    const data = hmanData[0]; // 0 элемент - description
 
-  Object.keys(data).forEach(key => {
-    if (typeof data[key] == 'object') {
-      const _id = pref + '_' + key;
-      const item = data[key];
-      const robj = { _id, parent: item.kind, order, name: item.name + ' (' + pref + ')', txt: item.comment };
-      robj.props = getTypeProps(item.props);
-      str += JSON.stringify(robj) + '\n';
-      order += 1000;
-    }
-  });
+    // сформировать строку
+
+    let order = 1000;
+
+    Object.keys(data).forEach(key => {
+      if (typeof data[key] == 'object') {
+        const _id = pref + '_' + key;
+        const item = data[key];
+        const robj = { _id, parent: item.kind, order, name: item.name + ' (' + pref + ')', txt: item.comment };
+        robj.props = getTypeProps(item.props);
+        str += JSON.stringify(robj) + '\n';
+        order += 1000;
+      }
+    });
+  }
   return str;
 }
 
@@ -93,8 +96,11 @@ function createDevices(devrefData, project_d, extObj, hmanPLC) {
   // [{description:1,...},
   // {"id":"DT302", "cm":"TEMPPT1000","PLCIO":"IA11.1" },
   // ...]
-  hmanPLC.shift();
-  const hmanObj = hut.arrayToObject(hmanPLC, 'id');
+  let hmanObj;
+  if (hmanPLC) {
+    hmanPLC.shift();
+    hmanObj = hut.arrayToObject(hmanPLC, 'id');
+  }
 
   let str = '';
 
@@ -125,7 +131,7 @@ function createDevices(devrefData, project_d, extObj, hmanPLC) {
   return str;
 
   function getType(item) {
-    return hmanObj[item.dn] ? 'PLC_' + hmanObj[item.dn].cm : tut.getNewId('t', 3, item.type);
+    return hmanObj && hmanObj[item.dn] ? 'PLC_' + hmanObj[item.dn].cm : tut.getNewId('t', 3, item.type);
   }
 
   function getParent(item) {

@@ -47,27 +47,27 @@ let project_d;
 
   // transfer дописывает в один файл
 
-  // transfer('classes', 'lists', 'jbase');
-  // transfer('places', 'lists', 'jbase');
-  // transfer('rooms', 'lists', 'jbase');
-  // transfer('spaces', 'lists', 'jbase');
-  // transferPluginGroups();
+  transfer('classes', 'lists', 'jbase');
+  transfer('places', 'lists', 'jbase');
+  transfer('rooms', 'lists', 'jbase');
+  transfer('spaces', 'lists', 'jbase');
+  transferPluginGroups();
 
   // create создает заново
-  // create('types', 'jbase');
+  create('types', 'jbase');
 
-  // create('layouts', 'jbase');
-  // create('visconts', 'jbase');
-  // create('vistemplates', 'jbase');
+  create('layouts', 'jbase');
+  create('visconts', 'jbase');
+  create('vistemplates', 'jbase');
 
   create('units', 'jbase');
 
   // create('charts', 'jbase');
   // create('reports', 'jbase');
 
-  // create('devices', 'jbase');
+  create('devices', 'jbase');
 
-  // create('devhard', 'jbase');
+  create('devhard', 'jbase');
   // create('scenecalls', 'jbase');
 
   // - create('devcurrent', 'operative');
@@ -150,6 +150,7 @@ function create(target, folder) {
       case 'types':
         // К стандартным типам добавить типы из hman
         str = tut.createTypes();
+
         str += tuberry.createTypesFromHman(getSourceData('hmanPLC', 'jbase'), 'PLC');
 
         break;
@@ -166,7 +167,8 @@ function create(target, folder) {
         break;
 
       case 'devhard':
-        str = tuberry.createDevhardFromHdev(getSourceData('hdevPLC', 'jbase'), 'PLC');
+        // str = tuberry.createDevhardFromHdev(getSourceData('hdevPLC', 'jbase'), 'PLC');
+
         break;
       case 'devcurrent':
         str = tut.createDevcurrent(getSourceData('devcurrent', folder), project_d);
@@ -306,9 +308,15 @@ function getSourceData(source, folder) {
   if (sysfiles.includes(source)) {
     return tut.getSysDataFile(source);
   }
-
+ 
+  
   // Считать файл из проекта
   const cfilename = path.join(project_c, folder, source + '.json');
+  if (!fs.existsSync(cfilename)) {
+    console.log('File not found: '+cfilename);
+    return [];
+  }
+
   const data = JSON.parse(fs.readFileSync(cfilename, 'utf8'));
 
   if (Array.isArray(data) && data.length) {
