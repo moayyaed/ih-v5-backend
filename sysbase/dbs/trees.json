@@ -125,7 +125,24 @@
     },
     "leaf": { "table": "user", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
   },
-  
+
+  "resources": ["images"],
+  "images": {
+    "branch": {
+      "table": "imagegroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+    },
+    "leaf": { "table": "images", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
+  },
+
+  "database": ["dbopt"],
+  "dbopt": {
+    "branch": {
+      "table": "dboptgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+    },
+    "leaf": { "table": "dbopt", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
+  },
 
   "snippets": {
     "branch": {
@@ -137,6 +154,7 @@
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     }
   },
+
   "analytics": ["charts", "reports"],
   "charts": {
     "branch": {

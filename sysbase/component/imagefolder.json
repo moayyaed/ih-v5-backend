@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabImageFolder",  "title": "Свойства папки", "component": [{ "id": "formImageFolder", "type": "form" }]  }
+  ],
+  "defaultTab": "tabImageFolder"
+}

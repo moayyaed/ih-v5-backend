@@ -18,6 +18,8 @@
   "scenecalls": { "folder": "jbasepath" },
 
   "handlers": { "folder": "jbasepath" },
+  "images": { "folder": "jbasepath" },
+  "dbopt": { "folder": "jbasepath" },
 
   "charts": { "folder": "jbasepath" },
   "reports": { "folder": "jbasepath" },

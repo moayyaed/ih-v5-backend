@@ -310,5 +310,35 @@
       }
     }
   },
+
+  "imagegroup": {
+    "store": "db",
+    "collection": "lists",
+    "filter": { "list": "imagegroup" },
+    "defRootTitle": "Изображения",
+    "default": { "name": "New Folder" },
+    "ruleID": { "pref": "img", "len": 3 }
+  },
+
+  "images": {
+    "store": "db",
+    "collection": "images"
+  },
+
+  "dboptgroup": {
+    "store": "db",
+    "collection": "lists",
+    "filter": { "list": "dboptgroup" },
+    "defRootTitle": "БД",
+    "default": { "name": "New Folder" },
+    "ruleID": { "pref": "db", "len": 1 }
+  },
+
+  "dbopt": {
+    "store": "db",
+    "collection": "dbopt"
+  },
+
+
   "tokens": { "store": "db", "collection": "tokens" }
 }
