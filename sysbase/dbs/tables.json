@@ -325,6 +325,8 @@
     "collection": "images"
   },
 
+  "imagesTreeTable": { "store": "tree", "tree": "images", "rows": true },
+
   "dboptgroup": {
     "store": "db",
     "collection": "lists",

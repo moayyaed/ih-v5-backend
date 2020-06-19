@@ -1,6 +1,7 @@
 {
   "tabs": [
-    { "id": "tabImageFolder",  "title": "Свойства папки", "component": [{ "id": "formImageFolder", "type": "form" }]  }
+    { "id": "tabImageFolder",  "title": "Свойства папки", "component": [{ "id": "formImageFolder", "type": "form" }]  },
+    { "id": "tabDeviceTable",  "title": "Таблица", "component": [{ "id": "formImageTable", "type": "form" }]  }
   ],
   "defaultTab": "tabImageFolder"
 }

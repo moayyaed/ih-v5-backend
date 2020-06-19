@@ -1,0 +1,22 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"imagesTreeTable", "height":"fill"}
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "images" },
+
+  "p1": [
+    {
+      "title": "Images",
+      "type": "table",
+      "prop": "imagesTreeTable",
+
+      "columns": [
+
+        { "prop": "title", "title": "Title", "type": "link", "command":"forward",  "width": 300  },
+        { "prop": "size", "title": "Size", "type": "text",  "width": 200  },
+        { "prop": "path", "title": "Path", "type": "text",  "width": 300 }
+      ]
+    }
+  ]
+}
