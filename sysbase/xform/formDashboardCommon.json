@@ -26,9 +26,10 @@
   "p3": [
     { "prop": "projectinfo", "title": "Project Info", "type": "header", "size":"h6"  },
     { "prop": "project", "title": "Project", "type": "text" },
-    { "prop": "qDevices", "title": "Devices", "type": "text" },
-    { "prop": "qChannels", "title": "Channels", "type": "text" },
-    { "prop": "qMnemos", "title": "Mnemoschemes", "type": "text" }
+    { "prop": "types", "title": "Types", "type": "text" },
+    { "prop": "devices", "title": "Devices", "type": "text" },
+    { "prop": "devhard", "title": "Channels", "type": "text" }
+  
   ],
   "p4": [
     { "prop": "uptimeinfo", "title": "Uptime", "type": "header", "size":"h6"  },
