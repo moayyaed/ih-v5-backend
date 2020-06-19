@@ -19,8 +19,6 @@
         { "prop": "type_propname", "title": "$Name", "type": "link", "width": 200, "command": "forward"  },
     
         { "prop": "type_op", "title": "$Type", "type": "link", "width": 100, "command": "forward"  },
-        { "prop": "dir", "title": "Команда плагина", "type": "cb", "width": 100},
-      
         { "prop": "unit", "title": "$Plugin", "type": "text", "width": 100 },
         { "prop": "chan", "title": "$Channel", "type": "link", "width": 250, "command": "forward" }
       

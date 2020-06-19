@@ -17,7 +17,6 @@
         { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 100 },
 
         { "prop": "type_propname", "title": "$Name", "type": "link", "width": 100, "command": "forward"  },
-        { "prop": "type_vtype", "title": "$Type", "type": "link", "width": 50, "command": "forward"  },
         { "prop": "type_op", "title": "$Type", "type": "link", "width": 50, "command": "forward"  },
         
         { "prop": "min", "title": "Min", "type": "number", "width": 50 },
