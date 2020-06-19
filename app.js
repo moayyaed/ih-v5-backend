@@ -13,6 +13,7 @@ const pluginserver = require('./lib/plugin/pluginserver');
 const sceneserver = require('./lib/scene/sceneserver');
 const trendserver = require('./lib/trend/trendserver');
 const webserver = require('./lib/web/webserver');
+const resserver = require('./lib/resource/resourceserver');
 const EventEmitter = require('events');
 
 const holder = new EventEmitter();
@@ -20,6 +21,9 @@ const holder = new EventEmitter();
 init(__dirname)
   .then(() => {
     deviceserver(holder);
+  })
+  .then(() => {
+    resserver(holder);
   })
   .then(() => {
     pluginserver(holder);
