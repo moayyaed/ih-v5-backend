@@ -116,22 +116,54 @@ function formRecord(source, target, item, extObj) {
       break;
 
     case 'units':
-      const rootId = "unitgroup";
-      parent  = item.id != item.plugin ? 'plugin_' + item.plugin : rootId;
-      _id = getNewId('u', 3, item.id);
-      // robj = { _id, parent: 'plugin_' + item.plugin };
-      robj = { _id, parent };
-      Object.keys(item).forEach(prop => {
-        if (!prop.endsWith('_') && !['laststart_str', 'laststop_str', 'errstr'].includes(prop)) robj[prop] = item[prop];
-      });
+      robj = getUnitObj(item, 'unitgroup')
       break;
 
+    case 'scengroups': // BERRY => lists- scenegroup
+      robj = { _id: 'sg'+item.id, list: 'scenegroup', parent: 'scenegroup', order: item.order, name: item.name };
+      break;
+
+
+    case 'linescen': // BERRY => linescen-> scenes
+    // {id: 3,  name: 'Перезагрузка роутеров',group: 2};
+    // { _id: 'line3', status: '1',name: 'Перезагрузка роутеров', parent: 'sg2', version: '4',multi: 0};
+      robj = { _id: 'line'+item.id, parent: 'sg'+item.group, status: '1', txt:item.description || '', order: item.order, name: item.name, version: '4',multi: 0};
+      break;
+    case 'onscen': // BERRY => onscen-> scenes
+     // Групп нет, все в корень
+      // { _id: 'line3', status: '1',name: 'Перезагрузка роутеров', parent: 'sg2', version: '4',multi: 0};
+        robj = { _id: item.id, parent: 'scenegroup', status: '1', txt:item.description || '', order: item.order, name: item.name || item.id, version: '4',multi: 0};
+        break;
     default:
       robj = '';
-      console.log('Not found source ' + source);
+      console.log('formRecord: Not found source ' + source);
   }
   return robj ? JSON.stringify(robj) + '\n' : '';
 }
+
+function getScenesObj(item) {
+  return { _id: item.id, parent: item.parent || 'scenegroup', status: '1', txt:item.description || '', order: item.order, name: item.name || item.id, version: '4',multi: 0};
+}
+
+function getUnitObj(item, rootId) {
+  let parent;
+  let plugin;
+  if (item.plugin) {
+    parent  = item.id != item.plugin ? 'plugin_' + item.plugin : rootId;
+    plugin = item.plugin;
+  } else {
+    parent  = rootId;
+    plugin = item.id;
+  }
+
+  const _id = getNewId('u', 3, item.id);
+  const robj = { _id, parent, plugin };
+  Object.keys(item).forEach(prop => {
+    if (!prop.endsWith('_') && !['laststart_str', 'laststop_str', 'errstr'].includes(prop)) robj[prop] = item[prop];
+  });
+  return robj;
+}
+
 
 function getSysDataFile(source) {
   // Считать, перевести??
@@ -622,5 +654,6 @@ module.exports = {
   createScenecalls,
   createVistemplates,
   isAnalog,
-  getNewId
+  getNewId,
+  getScenesObj
 };

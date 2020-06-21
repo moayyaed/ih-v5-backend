@@ -111,22 +111,24 @@ function createDevices(devrefData, project_d, extObj, hmanPLC) {
   let order = 1000;
   devrefData.forEach(item => {
     console.log('item =' + util.inspect(item));
-    const type = getType(item);
-    const dobj = {
-      _id: item.id,
-      parent: getParent(item),
-      order,
-      type,
-      dn: item.dn,
-      name: item.name,
-      tags: getTags(item, extObj)
-    };
-    console.log('dobj =' + util.inspect(dobj));
-    if (typesObj[type] && typesObj[type].props) {
-      dobj.props = formProps(item, Object.keys(typesObj[type].props));
+    if (!item.sys) {
+      const type = getType(item);
+      const dobj = {
+        _id: item.id,
+        parent: getParent(item),
+        order,
+        type,
+        dn: item.dn,
+        name: item.name,
+        tags: getTags(item, extObj)
+      };
+      console.log('dobj =' + util.inspect(dobj));
+      if (typesObj[type] && typesObj[type].props) {
+        dobj.props = formProps(item, Object.keys(typesObj[type].props));
+      }
+      str += JSON.stringify(dobj) + '\n';
+      order += 1000;
     }
-    str += JSON.stringify(dobj) + '\n';
-    order += 1000;
   });
   return str;
 
@@ -213,18 +215,20 @@ function formOneProp(item, prop) {
   },
   */
 
-function createDevhardFromHdev(hdevData, unit) {
+function createDevhardFromHdev(hdevData, unit, devhardObj) {
   let str = '';
 
   let order = 1000;
 
   hdevData.forEach(item => {
     if (item.id && item.props) {
-      const did = item.id;
+      const did = devhardObj[item.id] ? devhardObj[item.id].dn : '';
+      if (!did) console.log(unit+'  NOT FOUND chan '+item.id+' in devhard!')
+      
       item.props.forEach(propItem => {
         const chan = item.id + '_' + propItem.name;
         const hitem = { ...propItem };
-        const prop = getPropName(propItem.name);
+        const prop = did ? getPropName(propItem.name) : '';
         delete hitem.name;
         const robj = { _id: unit + '_' + chan, unit, chan, did, prop, ...hitem };
 

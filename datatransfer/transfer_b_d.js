@@ -10,8 +10,11 @@ const readline = require('readline');
 
 const appconfig = require('../lib/appconfig');
 const hut = require('../lib/utils/hut');
+const fileutil = require('../lib/utils/fileutil');
+
 const tut = require('./transfer_utils');
 const tuberry = require('./transfer_berry_utils');
+const tuberry_scenes = require('./transfer_berry_scenes');
 
 const sysfiles = ['classes', 'types'];
 
@@ -46,13 +49,17 @@ let project_d;
   console.log('lang=' + lang);
 
   // transfer дописывает в один файл
-
+  /*
   transfer('classes', 'lists', 'jbase');
   transfer('places', 'lists', 'jbase');
   transfer('rooms', 'lists', 'jbase');
   transfer('spaces', 'lists', 'jbase');
   transferPluginGroups();
+  */
 
+  // transfer('scengroups', 'lists', 'jbase'); // only Berry
+
+  /*
   // create создает заново
   create('types', 'jbase');
 
@@ -66,11 +73,22 @@ let project_d;
   // create('reports', 'jbase');
 
   create('devices', 'jbase');
+  */
 
-  create('devhard', 'jbase');
+  // create('devhard', 'jbase');
   // create('scenecalls', 'jbase');
 
   // - create('devcurrent', 'operative');
+
+  // Генерировать сценарии. В в scenes НЕ дописывать, при перезагрузке должны сами взяться
+  // НЕТ - нужно вписать группу? Сделать операцией transfer
+  genLineScenes();
+  // transfer('linescen', 'scenes', 'jbase');
+
+  // genOnScenes();
+  // transfer('onscen', 'scenes', 'jbase');
+
+  // genSceneFromScenebase();
 
   rl.close();
 })();
@@ -140,6 +158,65 @@ function formAllRecordsStr(source, target, folder) {
   return str;
 }
 
+function genLineScenes() {
+  const data = getSourceData('linescen', 'jbase');
+  data.forEach(item => {
+    const scriptStr = tuberry_scenes.createLineScene(item);
+    const filename = path.join(project_d, 'scenes', 'script', 'line' + item.id + '.js');
+    // fs.writeFileSync(filename, scriptStr);
+    console.log('file:' + filename + '\n');
+    console.log(scriptStr);
+  });
+}
+
+function genOnScenes() {
+  const data = getSourceData('onscen', 'jbase');
+  // "id": "onDP202_1"
+  data.forEach(item => {
+    const scriptStr = tuberry_scenes.createOnScene(item);
+    const filename = path.join(project_d, 'scenes', 'script', item.id + '.js');
+    fs.writeFileSync(filename, scriptStr);
+    console.log('file:' + filename + '\n');
+    console.log(scriptStr);
+  });
+}
+
+function genSceneFromScenebase() {
+  // Считать все файлы из папки. Повторить для каждого файла
+  const folder = path.join(project_c, 'scenbase');
+  const files = fileutil.readFolderSync(folder, { ext: 'json' });
+
+  files.forEach(file => {
+    const data = getSourceData(file, 'scenbase');
+    let str = '';
+    let order = 10;
+    data.forEach(item => {
+      item.id = item.scenname;
+      item.name = item.note;
+      item.order = order;
+      order += 10;
+      const scriptStr = tuberry_scenes.createSceneFromScenebase(item);
+
+      const filename = path.join(project_d, 'scenes', 'script', item.id + '.js');
+      // fs.writeFileSync(filename, scriptStr);
+      console.log('file:' + filename + '\n');
+      console.log(scriptStr);
+      const robj = tut.getScenesObj(item);
+      str += robj ? JSON.stringify(robj) + '\n' : '';
+    });
+
+    // Нужно добавить в scenes
+    // Записать в файл
+    /*
+   const dfilename = path.join(project_d, 'jbase', 'scenes.db');
+
+   fs.appendFileSync(dfilename, str);
+   */
+    console.log(str);
+    // console.log('Data was appended to file' + dfilename + '. Str len=' + str.length);
+  });
+}
+
 function create(target, folder) {
   try {
     let str = '';
@@ -168,6 +245,13 @@ function create(target, folder) {
 
       case 'devhard':
         // str = tuberry.createDevhardFromHdev(getSourceData('hdevPLC', 'jbase'), 'PLC');
+
+        // Получить devhard для unit
+        const unit = 'PLC';
+        const devhard = getSourceData('devhard', 'jbase');
+        const darr = devhard.filter(item => item.unit == unit);
+        const hObj = hut.arrayToObject(darr, 'chan'); // Вывернуть по chan
+        str = tuberry.createDevhardFromHdev(getSourceData('hdevPLC', 'jbase'), unit, hObj);
 
         break;
       case 'devcurrent':
@@ -308,12 +392,12 @@ function getSourceData(source, folder) {
   if (sysfiles.includes(source)) {
     return tut.getSysDataFile(source);
   }
- 
-  
+
   // Считать файл из проекта
-  const cfilename = path.join(project_c, folder, source + '.json');
+  const file = source.indexOf('.') > 0 ?  source : source + '.json';
+  const cfilename = path.join(project_c, folder, file);
   if (!fs.existsSync(cfilename)) {
-    console.log('File not found: '+cfilename);
+    console.log('File not found: ' + cfilename);
     return [];
   }
 

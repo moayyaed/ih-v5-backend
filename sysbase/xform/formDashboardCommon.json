@@ -28,7 +28,8 @@
     { "prop": "project", "title": "Project", "type": "text" },
     { "prop": "types", "title": "Types", "type": "text" },
     { "prop": "devices", "title": "Devices", "type": "text" },
-    { "prop": "devhard", "title": "Channels", "type": "text" }
+    { "prop": "devhard", "title": "Channels", "type": "text" },
+    { "prop": "scenes", "title": "Scenes", "type": "text" }
   
   ],
   "p4": [
