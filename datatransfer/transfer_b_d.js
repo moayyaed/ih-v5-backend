@@ -59,10 +59,10 @@ let project_d;
 
   // transfer('scengroups', 'lists', 'jbase'); // only Berry
 
-  /*
+  
   // create создает заново
   create('types', 'jbase');
-
+ /*
   create('layouts', 'jbase');
   create('visconts', 'jbase');
   create('vistemplates', 'jbase');
@@ -82,7 +82,7 @@ let project_d;
 
   // Генерировать сценарии. В в scenes НЕ дописывать, при перезагрузке должны сами взяться
   // НЕТ - нужно вписать группу? Сделать операцией transfer
-  genLineScenes();
+  // genLineScenes();
   // transfer('linescen', 'scenes', 'jbase');
 
   // genOnScenes();

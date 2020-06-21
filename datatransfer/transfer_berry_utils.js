@@ -43,43 +43,51 @@ function getTypeProps(proparr) {
   if (proparr) {
     proparr.forEach(item => {
       if (item.name == 'on' || item.name == 'off') {
-        res[item.name] = { command: 1, name: item.name };
+        res[item.name] = { op:'cmd', name: item.name };
       } else {
         let propName;
         let vtype;
         let name;
+        let op;
         switch (item.name) {
           case 'dval':
             propName = 'value';
             vtype = 'B';
+            op = 'rw';
             name = appconfig.getMessage('Value');
             break;
           case 'aval':
             propName = 'value';
             vtype = 'N';
+            op = 'rw';
             name = appconfig.getMessage('Value');
             break;
           case 'defval':
             propName = 'setpont';
             vtype = 'N';
+            op = 'calc';
             name = appconfig.getMessage('Setpoint');
             break;
           case 'auto':
             propName = 'auto';
             vtype = 'B';
+            op = 'rw';
             name = 'Auto';
             break;
           case 'blk':
             propName = 'blk';
             vtype = 'B';
+            op = 'rw';
             name = appconfig.getMessage('Blk');
             break;
           default:
             propName = item.name;
             vtype = 'N';
+            op = 'rw';
             name = item.name;
         }
-        const op = item.r && item.w ? 'rw' : item.r ? 'r' : 'w';
+        // const op = item.r && item.w ? 'rw' : item.r ? 'r' : 'w';
+        
         res[propName] = { name, vtype, op };
       }
     });

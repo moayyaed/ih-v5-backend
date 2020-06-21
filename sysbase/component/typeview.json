@@ -2,7 +2,6 @@
   "tabs": [
     { "id": "tabTypeCommon", "title": "Тип", "component": [{ "id": "formTypeCommon", "type": "form" }] },
     { "id": "tabTypeProps", "title": "Свойства", "component": [{ "id": "formTypePropTable", "type": "form" }] },
-    { "id": "tabTypeCommands", "title": "Команды", "component": [{ "id": "formTypeCommandTable", "type": "form" }] },
     { "id": "tabTypeShowHandlers", "title": "Функции", "component": [{ "id": "formTypeShowHandlers", "type": "form" }] },
     { "id": "tabTypeDevicesTable", "title": "Используется для устройств", "component": [{ "id": "formTypeDevicesTable", "type": "form" }] }
    

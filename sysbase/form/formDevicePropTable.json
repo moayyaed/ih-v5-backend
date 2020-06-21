@@ -16,13 +16,13 @@
       "columns": [
         { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 100 },
 
-        { "prop": "type_propname", "title": "$Name", "type": "link", "width": 100, "command": "forward"  },
-        { "prop": "type_op", "title": "$Type", "type": "link", "width": 50, "command": "forward"  },
+        { "prop": "type_propname", "title": "$Name", "type": "link", "width": 150, "command": "forward"  },
+        { "prop": "type_op", "title": "$Type", "type": "link", "width": 100, "command": "forward"  },
         
-        { "prop": "min", "title": "Min", "type": "number", "width": 50 },
-        { "prop": "max", "title": "Max", "type": "number", "width": 50 },
-        { "prop": "dig", "title": "$Decdig", "type": "number", "width": 50 },
-        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 100 },
+        { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide":"!data.type_op.title.includes('Number')" },
+        { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide":"!data.type_op.title.includes('Number')"  },
+        { "prop": "dig", "title": "$Decdig", "type": "number", "width": 80, "hide":"!data.type_op.title.includes('Number')"  },
+        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 80,  "hide":"!data.type_op.title.includes('Number')"  },
         { "prop": "unit", "title": "$Plugin", "type": "text", "width": 100 },
         { "prop": "chan", "title": "$Channel", "type": "link", "width": 150, "command": "forward" },
         { "prop": "realtime_dev_val", "title": "Значение", "type": "text", "width": 64 },

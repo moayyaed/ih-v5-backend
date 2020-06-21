@@ -61,11 +61,11 @@ let project_d;
     
   // create('units', 'jbase');
   
-  // create('types', 'jbase');
+  create('types', 'jbase');
  
   // create('devices', 'jbase');
   
-  create('devhard', 'jbase');
+  // create('devhard', 'jbase');
   // create('scenecalls', 'jbase');
  
   // - create('devcurrent', 'operative');

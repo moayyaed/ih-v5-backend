@@ -10,39 +10,42 @@
       "popupenable": true,
       "prop": "typepropsTable",
       "genfield": "props",
-      "genfilter": { "command": "!def" },
 
       "columns": [
         { "prop": "newid", "title": "$Devprop_Id", "type": "input", "width": 128 },
         { "prop": "name", "title": "$Name", "type": "input", "width": 128 },
+
         {
-          "prop": "vtype",
+          "prop": "op",
           "title": "$Devprop_Type",
           "type": "droplist",
           "data": [
-            { "id": "B", "title": "Boolean" },
+            { "id": "rw", "title": "Value" },
+            { "id": "calc", "title": "Calculated value" },
+            { "id": "par", "title": "Parameter" },
+            { "id": "cmd", "title": "Command" }
+          ],
+          "width": 128
+        },
+
+        {
+          "prop": "vtype",
+          "title": "Тип переменной",
+          "type": "droplist",
+          "data": [
+            { "id": "B", "title": "Bool" },
             { "id": "N", "title": "Number" },
             { "id": "S", "title": "String" }
           ],
-          "width": 128
+          "width": 128,
+          "hide": "data.op.id == 'cmd'"
         },
-        {
-          "prop": "op",
-          "title": "$Operations",
-          "type": "droplist",
-          "data": [
-            { "id": "r", "title": "Read only" },
-            { "id": "rw", "title": "Read/Write" },
-            { "id": "w", "title": "Write only" },
-            { "id": "c", "title": "Calculate" }
-          ],
-          "width": 128
-        },
+
         { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide": "data.vtype.id != 'N'" },
         { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide": "data.vtype.id != 'N'" },
         { "prop": "dig", "title": "$Decdig", "type": "number", "width": 100, "hide": "data.vtype.id != 'N'" },
-        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 50 },
-        { "prop": "onread", "title": "Функция-обработчик", "type": "droplist", "data": "readhandlers", "width": 250 },
+        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 50, "hide": "data.vtype.id != 'N'" },
+        { "prop": "onread", "title": "Функция значения", "type": "droplist", "data": "readhandlers", "width": 250, "hide": "data.op.id == 'cmd'" },
         {
           "prop": "when",
           "title": "Запуск функции",
@@ -53,9 +56,10 @@
             { "id": "2", "title": "По таймеру" }
           ],
           "width": 250,
-          "hide": "data.op.id != 'c'"
+          "hide": "data.op.id != 'calc'"
         },
-        { "prop": "trigger", "title": "Свойства-триггеры", "type": "input", "width": 250, "hide": "data.op.id != 'c'" }
+        { "prop": "trigger", "title": "Свойства-триггеры", "type": "input", "width": 250, "hide": "data.op.id != 'calc'" },
+        { "prop": "oncommand", "title": "Функция команды", "type": "droplist", "data": "commandhandlers", "width": 250, "hide": "data.op.id != 'cmd'" }
       ]
     }
   ]

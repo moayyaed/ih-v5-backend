@@ -3,8 +3,8 @@
     "id": "SensorD",
     "name": "$SensorD",
     "props": {
-      "value": { "name": "$Value", "vtype": "B", "op": "r" },
-      "state": { "name": "$State", "vtype": "N", "op": "c" },
+      "value": { "name": "$Value", "vtype": "B", "op": "rw" },
+      "state": { "name": "$State", "vtype": "N", "op": "calc" },
       "blk": { "name": "$Blk", "vtype": "B", "op": "rw" }
     }
   },
@@ -12,8 +12,8 @@
     "id": "SensorA",
     "name": "$SensorA",
     "props": {
-      "value": { "name": "$Value", "vtype": "N", "op": "r" },
-      "state": { "name": "$State", "vtype": "N", "op": "c" },
+      "value": { "name": "$Value", "vtype": "N", "op": "rw" },
+      "state": { "name": "$State", "vtype": "N", "op": "calc" },
       "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "rw" }
     }
   },
@@ -21,35 +21,35 @@
     "id": "ActorD",
     "name": "$ActorD",
     "props": {
-      "value": { "name": "$Value", "vtype": "B", "op": "r" },
-      "state": { "name": "$State", "vtype": "N", "op": "c" },
+      "value": { "name": "$Value", "vtype": "B", "op": "rw" },
+      "state": { "name": "$State", "vtype": "N", "op": "calc" },
       "auto": { "name": "Auto", "vtype": "B", "op": "rw" },
       "blk": { "name": "$Blk", "vtype": "B", "op": "rw" },
-      "on": { "name": "$on", "command":1},
-      "off": { "name": "$off", "command":1},
-      "toggle": { "name": "$toggle", "command":1}
+      "on": { "name": "$on", "op": "cmd"},
+      "off": { "name": "$off",  "op": "cmd"},
+      "toggle": { "name": "$toggle",  "op": "cmd"}
     }
   },
   {
     "id": "ActorA",
     "name": "$ActorA",
     "props": {
-      "value": { "name": "$Value", "vtype": "N", "op": "r" },
-      "state": { "name": "$State", "vtype": "N", "op": "c" },
+      "value": { "name": "$Value", "vtype": "N", "op": "rw" },
+      "state": { "name": "$State", "vtype": "N", "op": "calc" },
       "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "rw" },
       "auto": { "name": "Auto", "vtype": "B", "op": "rw" },
       "blk": { "name": "$Blk", "vtype": "B", "op": "rw" },
-      "on": { "name": "$on", "command":1},
-      "off": { "name": "$off", "command":1},
-      "toggle": { "name": "$toggle", "command":1}
+      "on": { "name": "$on", "op": "cmd"},
+      "off": { "name": "$off", "op": "cmd"},
+      "toggle": { "name": "$toggle", "op": "cmd"}
     }
   },
   {
     "id": "ActorE",
     "name": "$ActorE",
     "props": {
-      "value": { "name": "$Value", "vtype": "N", "op": "r" },
-      "state": { "name": "$State", "vtype": "N", "op": "c" }
+      "value": { "name": "$Value", "vtype": "N", "op": "rw" },
+      "state": { "name": "$State", "vtype": "N", "op": "calc" }
      
     }
   },
@@ -57,28 +57,28 @@
     "id": "Meter",
     "name": "$Meter",
     "props": {
-      "value": { "name": "$Value", "vtype": "N", "op": "r" }
+      "value": { "name": "$Value", "vtype": "N", "op": "rw" }
     }
   },
   {
     "id": "ActorV",
     "name": "ActorV",
     "props": {
-      "value": { "name": "$Value", "vtype": "N", "op": "r" },
-      "state": { "name": "$State", "vtype": "N", "op": "c" },
+      "value": { "name": "$Value", "vtype": "N", "op": "rw" },
+      "state": { "name": "$State", "vtype": "N", "op": "calc" },
       "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "rw" },
       "auto": { "name": "Auto", "vtype": "B", "op": "rw" },
       "blk": { "name": "$Blk", "vtype": "B", "op": "rw" },
-      "on": { "name": "$on", "command":1},
-      "off": { "name": "$off", "command":1},
-      "toggle": { "name": "$toggle", "command":1}
+      "on": { "name": "$on", "op": "cmd"},
+      "off": { "name": "$off", "op": "cmd"},
+      "toggle": { "name": "$toggle", "op": "cmd"}
     }
   },
   {
     "id": "SSwitch",
     "name": "SSwitch",
     "props": {
-      "value": { "name": "$Value", "vtype": "N", "op": "r" }
+      "value": { "name": "$Value", "vtype": "N", "op": "rw" }
     }
   }
 ]
