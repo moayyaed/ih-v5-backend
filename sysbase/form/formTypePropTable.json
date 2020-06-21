@@ -41,11 +41,7 @@
           "hide": "data.op.id == 'cmd'"
         },
 
-        { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide": "data.vtype.id != 'N'" },
-        { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide": "data.vtype.id != 'N'" },
-        { "prop": "dig", "title": "$Decdig", "type": "number", "width": 100, "hide": "data.vtype.id != 'N'" },
-        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 50, "hide": "data.vtype.id != 'N'" },
-        { "prop": "onread", "title": "Функция значения", "type": "droplist", "data": "readhandlers", "width": 250, "hide": "data.op.id == 'cmd'" },
+        { "prop": "fname", "title": "Функция", "type": "droplist", "data": "handlers", "width": 250 },
         {
           "prop": "when",
           "title": "Запуск функции",
@@ -59,7 +55,11 @@
           "hide": "data.op.id != 'calc'"
         },
         { "prop": "trigger", "title": "Свойства-триггеры", "type": "input", "width": 250, "hide": "data.op.id != 'calc'" },
-        { "prop": "oncommand", "title": "Функция команды", "type": "droplist", "data": "commandhandlers", "width": 250, "hide": "data.op.id != 'cmd'" }
+        { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide": "data.vtype.id != 'N'" },
+        { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide": "data.vtype.id != 'N'" },
+        { "prop": "dig", "title": "$Decdig", "type": "number", "width": 100, "hide": "data.vtype.id != 'N'" },
+        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 50, "hide": "data.vtype.id != 'N'" }
+       
       ]
     }
   ]
