@@ -59,10 +59,9 @@ let project_d;
 
   // transfer('scengroups', 'lists', 'jbase'); // only Berry
 
-  
   // create создает заново
-  create('types', 'jbase');
- /*
+  // create('types', 'jbase');
+  /*
   create('layouts', 'jbase');
   create('visconts', 'jbase');
   create('vistemplates', 'jbase');
@@ -89,6 +88,7 @@ let project_d;
   // transfer('onscen', 'scenes', 'jbase');
 
   // genSceneFromScenebase();
+  genSceneFromScenepat();
 
   rl.close();
 })();
@@ -181,6 +181,50 @@ function genOnScenes() {
   });
 }
 
+// Шаблонные сценарии
+// ПАПКА scenpat находится в сервере, нужно ее перенести в проект вручную?
+function genSceneFromScenepat() {
+  // Считать все файлы из папки. Повторить для каждого файла
+  const folder = path.join(project_c, 'scenpat');
+  // const files = fileutil.readFolderSync(folder, { ext: 'pat' });
+  const files = ['fm_lightdd.pat'];
+  files.forEach(file => {
+    let data = getSourceData(file, 'scenpat');
+    let str = '';
+    let order = 10;
+    console.log('FILE = ' + file);
+    
+
+    if (!Array.isArray(data)) data = [data];
+
+      data.forEach(item => {
+        item.id = item.patname;
+        item.name = getNameProp(item.patnote);
+        item.description = getNameProp(item.comment);
+        item.order = order;
+        order += 10;
+        console.log('item = ' + util.inspect(item));
+        const scriptStr = tuberry_scenes.createSceneFromScenepat(item, lang);
+
+        const filename = path.join(project_d, 'scenes', 'script', item.id + '.js');
+        // fs.writeFileSync(filename, scriptStr);
+        console.log('file:' + filename + '\n');
+        console.log(scriptStr);
+        // const robj = tut.getScenesObj(item);
+        // str += robj ? JSON.stringify(robj) + '\n' : '';
+      });
+    
+    // Нужно добавить в scenes
+    // Записать в файл
+    /*
+   const dfilename = path.join(project_d, 'jbase', 'scenes.db');
+
+   fs.appendFileSync(dfilename, str);
+   */
+    // console.log(str);
+    // console.log('Data was appended to file' + dfilename + '. Str len=' + str.length);
+  });
+}
 function genSceneFromScenebase() {
   // Считать все файлы из папки. Повторить для каждого файла
   const folder = path.join(project_c, 'scenbase');
@@ -394,7 +438,7 @@ function getSourceData(source, folder) {
   }
 
   // Считать файл из проекта
-  const file = source.indexOf('.') > 0 ?  source : source + '.json';
+  const file = source.indexOf('.') > 0 ? source : source + '.json';
   const cfilename = path.join(project_c, folder, file);
   if (!fs.existsSync(cfilename)) {
     console.log('File not found: ' + cfilename);
