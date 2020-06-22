@@ -21,8 +21,8 @@
           "type": "droplist",
           "data": [
             { "id": "rw", "title": "Value" },
-            { "id": "calc", "title": "Calculated value" },
             { "id": "par", "title": "Parameter" },
+            { "id": "calc", "title": "Calculated" },
             { "id": "cmd", "title": "Command" }
           ],
           "width": 128
