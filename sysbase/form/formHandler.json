@@ -9,28 +9,19 @@
   "spacing": 10,
   "breadcrumbs": { "tree": "handlers" },
 
-  "p1": [{ "prop": "name", "title": "$Name", "type": "input" }],
+  "p1": [{ "prop": "name", "title": "$Name", "type": "text" }],
   "p2": [
     {
-      "prop": "oper",
-      "title": "Операция",
-      "type": "droplist",
-      "data": [
-        { "id": "r", "title": "onRead" },
-        { "id": "c", "title": "Command" }
-      ]
+      "prop": "type",
+      "title": "Обработчик",
+      "type": "text"
     }
   ],
   "p3": [
     {
-      "prop": "status",
-      "title": "Состояние",
-      "type": "droplist",
-      "data": [
-        { "id": "0", "title": "Draft" },
-        { "id": "1", "title": "Work" },
-        { "id": "2", "title": "Blocked" }
-      ]
+      "prop": "_id",
+      "title": "Файл",
+      "type": "text"
     }
   ],
   "p4": [{ "prop": "errstr", "title": "", "type": "text" }],
