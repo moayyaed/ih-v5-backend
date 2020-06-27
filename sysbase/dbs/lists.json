@@ -18,11 +18,6 @@
     "propmap": { "_id": "id", "name": "name", "tags":"tags", "status":"status", "multi":"multi" }
   },
 
-  "handlerList": {
-    "table": "handler",
-    "propmap": { "_id": "id", "name": "title",  "status":"status", "oper":"oper" }
-  },
-
   "layoutList": {
     "table": "layout",
     "propmap": { "_id": "id", "name": "title", "tags":"tags" }
@@ -31,5 +26,14 @@
   "containerList": {
     "table": "viscont",
     "propmap": { "_id": "id", "name": "title", "tags":"tags" }
+  },
+
+  "handlerList": {
+    "table": "handler",
+    "propmap": { "_id": "id", "name": "title",  "status":"status", "oper":"oper" }
+  },
+  "handlerTypeList": {
+    "data":[{"id":"read", "title":"onRead"}, {"id":"calculate", "title":"Calculate"}, {"id":"command", "title":"Command"}]
+    
   }
 }
