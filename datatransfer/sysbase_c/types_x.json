@@ -1,0 +1,155 @@
+[
+  {
+    "id": "100",
+    "cl": "SensorD",
+    "patdn": "SENSOR",
+    "name": "$TYPE_SENSOR"
+  },
+  {
+    "id": "110",
+    "cl": "SensorD",
+    "patdn": "SMOTION",
+    "name": "$TYPE_SMOTION"
+  },
+  {
+    "id": "111",
+    "cl": "SensorD",
+    "patdn": "SGERKON",
+    "name": "$TYPE_SGERKON"
+  },
+  {
+    "id": "120",
+    "cl": "SensorD",
+    "patdn": "SLEAKAGE",
+    "name": "$TYPE_SLEAKAGE"
+  },
+  {
+    "id": "140",
+    "cl": "SensorD",
+    "patdn": "SFIRE",
+    "name": "$TYPE_SFIRE"
+  },
+
+  {
+    "id": "150",
+    "cl": "SensorD",
+    "patdn": "SDARKNESS",
+    "name": "$TYPE_SDARKNESS"
+  },
+
+  {
+    "id": "200",
+    "cl": "SensorA",
+    "patdn": "SENSORA",
+    "name": "$TYPE_SENSORA"
+  },
+  {
+    "id": "210",
+    "cl": "SensorA",
+    "patdn": "STEMP",
+    "name": "$TYPE_STEMP"
+  },
+  {
+    "id": "230",
+    "cl": "SensorA",
+    "patdn": "SHUMIDITY",
+    "name": "$TYPE_SHUMIDITY"
+  },
+  {
+    "id": "400",
+    "cl": "Meter",
+    "patdn": "METER",
+    "name": "$TYPE_METER"
+  },
+  {
+    "id": "500",
+    "cl": "ActorD",
+    "patdn": "ACTOR",
+    "name": "$TYPE_ACTOR"
+  },
+  {
+    "id": "501",
+    "cl": "ActorA",
+    "patdn": "ACTORA",
+    "name": "$TYPE_ACTORA"
+  },
+  {
+    "id": "510",
+    "cl": "ActorD",
+    "patdn": "LAMP",
+    "name": "$TYPE_LAMP"
+  },
+  {
+    "id": "520",
+    "cl": "ActorA",
+    "patdn": "DIMM",
+    "name": "$TYPE_DIMM"
+  },
+
+  {
+    "id": "530",
+    "cl": "ActorA",
+    "patdn": "RGBLAMP",
+    "name": "$TYPE_RGBLAMP"
+  },
+  {
+    "id": "534",
+    "cl": "ActorA",
+    "patdn": "RGBALAMP",
+    "name": "$TYPE_RGBALAMP"
+  },
+  {
+    "id": "535",
+    "cl": "ActorA",
+    "patdn": "RGBWWLAMP",
+    "name": "$TYPE_RGBWWLAMP"
+  },
+  {
+    "id": "550",
+    "cl": "ActorD",
+    "patdn": "SOCKET",
+    "name": "$TYPE_SOCKET"
+  },
+  {
+    "id": "610",
+    "cl": "ActorD",
+    "patdn": "RADIATOR",
+    "name": "$TYPE_RADIATOR"
+  },
+  {
+    "id": "620",
+    "cl": "ActorD",
+    "patdn": "RADIATOR",
+    "name": "$TYPE_TP"
+  },
+  {
+    "id": "630",
+    "cl": "ActorD",
+    "patdn": "VENT",
+    "name": "$TYPE_VENT"
+  },
+  {
+    "id": "670",
+    "cl": "ActorD",
+    "patdn": "CONDV",
+    "name": "$TYPE_CONDV"
+  },
+  {
+    "id": "710",
+    "cl": "ActorD",
+    "patdn": "WATER",
+    "name": "$TYPE_WATER_NC"
+  },
+  {
+    "id": "800",
+    "cl": "ActorE",
+    "patdn": "SWITCH",
+    "name": "$TYPE_SWITCH"
+  },
+  {
+    "id": "9100",
+    "cl": "SensorD",
+    "patdn": "UNIT_SENSOR",
+    "name": "$TYPE_UNIT_SENSOR"
+  }
+]

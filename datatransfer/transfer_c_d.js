@@ -43,35 +43,30 @@ let project_d;
   console.log('lang=' + appconfig.get('lang'));
 
   // transfer дописывает в один файл
-  /** 
+/*
   transfer('classes', 'lists', 'jbase');
   transfer('places', 'lists', 'jbase');
   transfer('rooms', 'lists', 'jbase');
   transfer('spaces', 'lists', 'jbase');
   transferPluginGroups();
 */
-
-  
   // create создает заново
-  
+/*
+  create('types', 'jbase');
+  create('devices', 'jbase');
+  create('units', 'jbase');
+*/
+  create('devhard', 'jbase');
+
   // create('layouts', 'jbase');
   // create('visconts', 'jbase');
   // create('vistemplates', 'jbase');
 
-    
-  // create('units', 'jbase');
-  
-  create('types', 'jbase');
- 
-  // create('devices', 'jbase');
-  
-  // create('devhard', 'jbase');
   // create('scenecalls', 'jbase');
- 
+
   // - create('devcurrent', 'operative');
   // create('charts', 'jbase');
   // create('reports', 'jbase');
-  
 
   rl.close();
 })();
@@ -179,21 +174,21 @@ function create(target, folder) {
         break;
 
       case 'visconts':
-          str = formAllRecordsStr('mnemoschemes', target, folder);
-          break;
+        str = formAllRecordsStr('mnemoschemes', target, folder);
+        break;
 
-      case 'vistemplates':   
-          str = tut.createVistemplates();
-          break;
-          
+      case 'vistemplates':
+        str = tut.createVistemplates();
+        break;
+
       case 'units':
-        str = formPluginFolders()+formAllRecordsStr('units', target, folder);
+        str = formPluginFolders() + formAllRecordsStr('units', target, folder);
         break;
 
       case 'scenecalls':
-          // str = formAllRecordsStr('scenecall', target, folder);
-          str = tut.createScenecalls(getSourceData('scenecall', folder), project_d);
-          break;
+        // str = formAllRecordsStr('scenecall', target, folder);
+        str = tut.createScenecalls(getSourceData('scenecall', folder), project_d);
+        break;
       default:
     }
 
@@ -234,7 +229,7 @@ function transferPluginGroups() {
       str +=
         JSON.stringify({
           _id: 'plugin_' + plugin,
-          folder:1,
+          folder: 1,
           parent: 'plugingroup',
           order,
           name: plugin.toUpperCase()
@@ -253,17 +248,16 @@ function transferPluginGroups() {
   }
 }
 
-
 function formPluginFolders() {
-   // Все будет храниться в units, корневая тоже
-   const rootId = "unitgroup";
-   let str =  JSON.stringify({
-    _id: rootId,
-    folder:1,
-    parent: 0,
-    name: 'Plugins'
-  }) + '\n';
-
+  // Все будет храниться в units, корневая тоже
+  const rootId = 'unitgroup';
+  let str =
+    JSON.stringify({
+      _id: rootId,
+      folder: 1,
+      parent: 0,
+      name: 'Plugins'
+    }) + '\n';
 
   try {
     // Считать файл units
@@ -275,21 +269,18 @@ function formPluginFolders() {
       if (item.id != item.plugin) plSet.add(item.plugin);
     });
 
-    
-
     let order = 100;
     for (const plugin of plSet) {
       str +=
         JSON.stringify({
           _id: 'plugin_' + plugin,
-          folder:1,
+          folder: 1,
           parent: rootId,
           order,
           name: plugin.toUpperCase()
         }) + '\n';
       order += 100;
     }
-
   } catch (e) {
     console.log(util.inspect(e));
   }

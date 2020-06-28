@@ -184,7 +184,8 @@ function createTypes() {
   let order = 1000;
   let _id;
   data.forEach(item => {
-    _id = getNewId('t', 3, item.id);
+    // _id = getNewId('t', 3, item.id);
+    _id = item.id;
     const robj = { _id, parent: item.cl, order, name: item.name };
     robj.props = clObj[item.cl].props;
     str += JSON.stringify(robj) + '\n';
@@ -280,7 +281,8 @@ function formDeviceFromDevref(item, parent, order, extObj) {
     parent,
     order,
     // type: 't' + item.type,
-    type: getNewId('t', 3, item.type),
+    // type: getNewId('t', 3, item.type),
+    type: 't'+item.cl, // tSensorA
     dn: item.dn,
     name: item.name,
     tags: ext
@@ -296,15 +298,16 @@ function formProps(item, propArr) {
   return pobj;
 }
 function formOneProp(item, prop) {
-  let mmObj;
+  let mmObj = {};
   if (isAnalog(item)) {
-    mmObj = {};
+   
     mmObj.min = item.min != undefined ? item.min : null;
     mmObj.max = item.max != undefined ? item.max : null;
     mmObj.dig = item.decdig || 0;
     mmObj.mu = item.mu || '';
   }
-
+  return mmObj;
+ /*
   switch (prop) {
     case 'value':
       return Object.assign({ db: item.db ? 1 : 0 }, mmObj);
@@ -315,6 +318,7 @@ function formOneProp(item, prop) {
     default:
       return { db: 0 };
   }
+  */
 }
 
 /**
@@ -459,7 +463,8 @@ function createDevhard(devhardData, project_d) {
           console.log('NOT FOUND id for ' + item.id + ' in ' + devicesfile);
         } else {
           item.order = order;
-          str += formHardRecord(did, item);
+          str += formHardRecord(did, item, deviceObj[item.dn].props.value ? 'value' : 'state');
+
           order += 1000;
         }
       }
@@ -495,14 +500,14 @@ function createDevhard(devhardData, project_d) {
 }
 
 
-function formHardRecord(did, item) {
+function formHardRecord(did, item, prop) {
   if (item.complex) return '';
 
   if (!item.chan) item.chan = item.dn;
   const pobj = {
     _id: did,
     did,
-    prop: 'value',
+    prop,
     unit: item.unit,
     chan: item.chan,
     inv: item.inv,

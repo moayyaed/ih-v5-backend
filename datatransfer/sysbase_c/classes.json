@@ -3,9 +3,8 @@
     "id": "SensorD",
     "name": "$SensorD",
     "props": {
-      "value": { "name": "$Value", "vtype": "B", "op": "rw" },
-      "state": { "name": "$State", "vtype": "N", "op": "calc" },
-      "blk": { "name": "$Blk", "vtype": "B", "op": "rw" }
+      "state": { "name": "$State", "vtype": "B", "op": "rw" },
+      "blk": { "name": "$Blk", "vtype": "B", "op": "par" }
     }
   },
   {
@@ -13,18 +12,16 @@
     "name": "$SensorA",
     "props": {
       "value": { "name": "$Value", "vtype": "N", "op": "rw" },
-      "state": { "name": "$State", "vtype": "N", "op": "calc" },
-      "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "rw" }
+      "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "par" }
     }
   },
   {
     "id": "ActorD",
     "name": "$ActorD",
     "props": {
-      "value": { "name": "$Value", "vtype": "B", "op": "rw" },
-      "state": { "name": "$State", "vtype": "N", "op": "calc" },
-      "auto": { "name": "Auto", "vtype": "B", "op": "rw" },
-      "blk": { "name": "$Blk", "vtype": "B", "op": "rw" },
+      "state": { "name": "$State", "vtype": "B", "op": "rw" },
+      "auto": { "name": "Auto", "vtype": "B", "op": "par" },
+      "blk": { "name": "$Blk", "vtype": "B", "op": "par" },
       "on": { "name": "$on", "op": "cmd"},
       "off": { "name": "$off",  "op": "cmd"},
       "toggle": { "name": "$toggle",  "op": "cmd"}
@@ -36,9 +33,9 @@
     "props": {
       "value": { "name": "$Value", "vtype": "N", "op": "rw" },
       "state": { "name": "$State", "vtype": "N", "op": "calc" },
-      "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "rw" },
-      "auto": { "name": "Auto", "vtype": "B", "op": "rw" },
-      "blk": { "name": "$Blk", "vtype": "B", "op": "rw" },
+      "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "par" },
+      "auto": { "name": "Auto", "vtype": "B", "op": "par" },
+      "blk": { "name": "$Blk", "vtype": "B", "op": "par" },
       "on": { "name": "$on", "op": "cmd"},
       "off": { "name": "$off", "op": "cmd"},
       "toggle": { "name": "$toggle", "op": "cmd"}
@@ -66,9 +63,9 @@
     "props": {
       "value": { "name": "$Value", "vtype": "N", "op": "rw" },
       "state": { "name": "$State", "vtype": "N", "op": "calc" },
-      "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "rw" },
-      "auto": { "name": "Auto", "vtype": "B", "op": "rw" },
-      "blk": { "name": "$Blk", "vtype": "B", "op": "rw" },
+      "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "par" },
+      "auto": { "name": "Auto", "vtype": "B", "op": "par" },
+      "blk": { "name": "$Blk", "vtype": "B", "op": "par" },
       "on": { "name": "$on", "op": "cmd"},
       "off": { "name": "$off", "op": "cmd"},
       "toggle": { "name": "$toggle", "op": "cmd"}

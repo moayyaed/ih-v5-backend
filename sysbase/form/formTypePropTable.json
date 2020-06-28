@@ -20,7 +20,7 @@
           "title": "$Devprop_Type",
           "type": "droplist",
           "data": [
-            { "id": "rw", "title": "Value" },
+            { "id": "rw", "title": "Data" },
             { "id": "par", "title": "Parameter" },
             { "id": "calc", "title": "Calculated" },
             { "id": "cmd", "title": "Command" }
