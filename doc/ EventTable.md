@@ -4,7 +4,11 @@
 ----------------------------------------------------------------------------------------------------------- 
 holder Events       | webserver | deviceserver| pluginserver| sceneserver| trendserver|logserver|alertserver
 ------------------------------------------------------------------------------------------------------------
-get:device:data     |           | listen      |  emit       |            | listen     |         |
+received:unit:data  |           |             | emit/listen |            |            |         |
+accepted:unit:data  |           |             | emit/listen |            |            |         |
+                    |           |             |             |            |            |         |
+received:device:data|           | listen      |  emit       |            |            |         |          
+accepted:device:data|           |  emit       |             |            | listen     |         |
 changed:device:data | listen    |  emit       | listen      | listen     | listen     | listen  |
                     |           |             |             |            |            |         |
 removed:devlink     |           |  emit       | listen      |            |            | listen  |
