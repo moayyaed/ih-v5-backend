@@ -1,5 +1,5 @@
 {
-  "grid": [{ "id": "p3", "xs": 12, "class": "main", "table": "type", "height": "fill" }],
+  "grid": [{ "id": "p3", "xs": 12, "class": "main", "table": "typepropsTable", "height": "fill" }],
   "spacing": 10,
   "breadcrumbs": { "tree": "types" },
 

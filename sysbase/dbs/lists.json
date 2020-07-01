@@ -1,39 +1,49 @@
 {
   "typeList": {
     "table": "type",
-    "propmap": { "_id": "id", "name": "title", "tags":"tags" }
+    "propmap": { "_id": "id", "name": "title", "tags": "tags" }
   },
   "deviceList": {
     "table": "device",
-    "propmap": { "_id": "id", "name": "name", "dn":"dn", "tags":"tags", "type":"type" }
-  },  
+    "propmap": { "_id": "id", "name": "name", "dn": "dn", "tags": "tags", "type": "type" }
+  },
 
   "unitList": {
     "table": "units",
-    "propmap": { "_id": "id", "name": "name", "plugin":"plugin", "folder":"folder" }
+    "propmap": { "_id": "id", "name": "name", "plugin": "plugin", "folder": "folder" }
   },
 
   "sceneList": {
     "table": "scene",
-    "propmap": { "_id": "id", "name": "name", "tags":"tags", "status":"status", "multi":"multi" }
+    "propmap": { "_id": "id", "name": "name", "tags": "tags", "status": "status", "multi": "multi" }
   },
 
   "layoutList": {
     "table": "layout",
-    "propmap": { "_id": "id", "name": "title", "tags":"tags" }
+    "propmap": { "_id": "id", "name": "title", "tags": "tags" }
   },
 
   "containerList": {
     "table": "viscont",
-    "propmap": { "_id": "id", "name": "title", "tags":"tags" }
+    "propmap": { "_id": "id", "name": "title", "tags": "tags" }
   },
 
   "handlerList": {
+    "data": [
+      { "id": "def_rw_N", "title": "Default: check Number, check Range, round" },
+      { "id": "def_rw_B", "title": "Default: check Bool" },
+      { "id": "def_cmd_on", "title": "Default: value => 1" },
+      { "id": "def_cmd_off", "title": "Default: value => 0" },
+      { "id": "def_cmd_toggle", "title": "Default: toggle on/off" }
+    ],
     "table": "handler",
-    "propmap": { "_id": "id", "name": "title",  "status":"status", "oper":"oper" }
+    "propmap": { "_id": "id", "name": "title", "status": "status", "oper": "oper" }
   },
   "handlerTypeList": {
-    "data":[{"id":"read", "title":"onRead"}, {"id":"calculate", "title":"Calculate"}, {"id":"command", "title":"Command"}]
-    
+    "data": [
+      { "id": "read", "title": "onRead" },
+      { "id": "calculate", "title": "Calculate" },
+      { "id": "command", "title": "Command" }
+    ]
   }
 }

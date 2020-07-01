@@ -56,13 +56,13 @@ let project_d;
   create('devices', 'jbase');
   create('units', 'jbase');
 */
-  create('devhard', 'jbase');
+  // create('devhard', 'jbase');
 
   // create('layouts', 'jbase');
   // create('visconts', 'jbase');
   // create('vistemplates', 'jbase');
 
-  // create('scenecalls', 'jbase');
+  create('scenecalls', 'jbase');
 
   // - create('devcurrent', 'operative');
   // create('charts', 'jbase');
