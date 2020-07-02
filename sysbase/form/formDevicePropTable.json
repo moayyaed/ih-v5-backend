@@ -19,7 +19,7 @@
         { "prop": "type_propname", "title": "$Name", "type": "text", "width": 150 },
         { "prop": "type_op", "title": "Тип свойства", "type": "text", "width": 100  },
 
-        { "prop": "source", "title": "Источник", "type": "link", "width": 250, "command": "forward" },
+        { "prop": "source", "title": "Источник свойства", "type": "link", "width": 250, "command": "forward" },
         { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide":"!data.type_op.includes('Number')" },
         { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide":"!data.type_op.includes('Number')"  },
         { "prop": "dig", "title": "$Decdig", "type": "number", "width": 80, "hide":"!data.type_op.includes('Number')"  },
