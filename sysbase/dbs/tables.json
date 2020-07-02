@@ -63,6 +63,11 @@
     "genfield": "props"
   },
 
+  "devicesceneTable":{
+    "store": "none"
+  },
+
+
   "devicepropswithlinks": {
     "store": "db",
     "collection": "devices",
