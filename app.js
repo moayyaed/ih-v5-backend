@@ -38,7 +38,7 @@ init(__dirname)
     webserver(holder);
   })
   .catch(e => {
-    console.log('ERR: FATAL ERROR. ' + util.inspect(e));
+    console.log('ERROR: FATAL ERROR. ' + util.inspect(e));
     setTimeout(() => {
       process.exit();
     }, 500);
@@ -53,9 +53,9 @@ process.on('SIGINT', () => {
 });
 
 process.on('uncaughtException', err => {
-  console.log('ERR: uncaughtException ' + util.inspect(err));
+  console.log('ERROR: uncaughtException ' + util.inspect(err));
 });
 
 process.on('unhandledRejection', (reason, promise) => {
-  console.log('ERR: Unhandled Rejection at:', promise, 'reason:', reason);
+  console.log('ERROR: Unhandled Rejection at:', promise, 'reason:', reason);
 });
