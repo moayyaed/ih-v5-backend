@@ -15,6 +15,8 @@
 
       "columns": [
         { "prop": "container_id", "title": "ID", "type": "text", "width": 200 },
+       
+        { "prop": "container_name", "title": "$Name", "type": "link", "width": 250, "command": "forward"  },
         { "prop": "content_str", "title": "$Name", "type": "text", "width": 750 }
       ]
     }
