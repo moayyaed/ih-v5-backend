@@ -67,6 +67,9 @@
     "store": "none"
   },
 
+  "devicevisTable":{
+    "store": "none"
+  },
 
   "devicepropswithlinks": {
     "store": "db",

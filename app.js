@@ -104,7 +104,7 @@ init(__dirname)
     await webserver(holder);
     console.log('INFO: webserver started ' );
   } catch (err) {
-    console.log('ERROR: APP Exception ' + util.inspect(err));
+    console.log('ERROR: Main App Exception ' + util.inspect(err));
     setTimeout(() => {
       process.exit();
     }, 500);

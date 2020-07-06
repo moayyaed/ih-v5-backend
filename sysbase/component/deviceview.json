@@ -8,6 +8,7 @@
       "component": [{ "id": "formDeviceChannels", "type": "form" }]
     },
     { "id": "tabDeviceScene", "title": "Сценарии", "component": [{ "id": "formDeviceScene", "type": "form" }] },
+    { "id": "tabDeviceVis", "title": "Ссылки на визуализацию", "component": [{ "id": "formDeviceVis", "type": "form" }] },
     { "id": "tabDeviceDb", "title": "Запись в БД", "component": [{ "id": "formDeviceDb", "type": "form" }] }
   ],
 

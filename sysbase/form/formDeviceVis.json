@@ -1,0 +1,22 @@
+{
+  "grid": [
+   
+    { "id": "p3", "xs": 12, "class": "main", "table": "devicevisTable", "height": "fill" }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "devdevices" },
+
+  "p3": [
+    {
+      "title": "$DeviceProperty",
+      "type": "table",
+      "prop": "devicevisTable",
+    
+
+      "columns": [
+        { "prop": "container_id", "title": "ID", "type": "text", "width": 200 },
+        { "prop": "content_str", "title": "$Name", "type": "text", "width": 750 }
+      ]
+    }
+  ]
+}
