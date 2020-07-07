@@ -24,7 +24,7 @@
   },
 
   "containerList": {
-    "table": "viscont",
+    "table": "container",
     "propmap": { "_id": "id", "name": "title", "tags": "tags" }
   },
 

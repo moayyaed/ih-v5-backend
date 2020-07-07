@@ -182,7 +182,7 @@
     "ruleID": { "pref": "vcg", "len": 3 }
   },
 
-  "viscont": {
+  "container": {
     "store": "db",
     "collection": "visconts",
     "default": { "name": "Новый контейнер" },
@@ -198,7 +198,7 @@
     "ruleID": { "pref": "vtg", "len": 3 }
   },
 
-  "vistemplate": {
+  "template": {
     "store": "db",
     "collection": "vistemplates",
     "default": { "name": "Новый шаблон" },

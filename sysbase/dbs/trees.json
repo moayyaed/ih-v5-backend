@@ -43,7 +43,7 @@
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     },
     "leaf": {
-      "table": "viscont",
+      "table": "container",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     }
   },
@@ -54,7 +54,7 @@
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     },
     "leaf": {
-      "table": "vistemplate",
+      "table": "template",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     }
   },
