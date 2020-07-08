@@ -30,14 +30,14 @@
 
   "handlerList": {
     "data": [
-      { "id": "def_rw_N", "title": "Default: check Number, check Range, round" },
-      { "id": "def_rw_B", "title": "Default: check Bool" },
-      { "id": "def_cmd_on", "title": "Default: value => 1" },
-      { "id": "def_cmd_off", "title": "Default: value => 0" },
-      { "id": "def_cmd_toggle", "title": "Default: toggle on/off" }
+      { "id": "def_rw_N", "title": "Default: check Number, check Range, round", "type":"read"},
+      { "id": "def_rw_B", "title": "Default: check Bool", "type":"read" },
+      { "id": "def_cmd_on", "title": "Default: value => 1", "type":"command" },
+      { "id": "def_cmd_off", "title": "Default: value => 0", "type":"command" },
+      { "id": "def_cmd_toggle", "title": "Default: toggle on/off", "type":"command" }
     ],
     "table": "handler",
-    "propmap": { "_id": "id", "name": "title", "status": "status", "oper": "oper" }
+    "propmap": { "_id": "id", "name": "title", "status": "status", "type": "type" }
   },
   "handlerTypeList": {
     "data": [

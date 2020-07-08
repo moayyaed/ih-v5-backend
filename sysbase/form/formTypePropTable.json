@@ -22,7 +22,7 @@
           "data": [
             { "id": "rw", "title": "Data" },
             { "id": "par", "title": "Parameter" },
-            { "id": "calc", "title": "Calculated" },
+            { "id": "calc", "title": "Calculate" },
             { "id": "cmd", "title": "Command" }
           ],
           "width": 128
@@ -48,8 +48,7 @@
           "type": "droplist",
           "data": [
             { "id": "0", "title": "При изменении данных" },
-            { "id": "1", "title": "При получении данных" },
-            { "id": "2", "title": "По таймеру" }
+            { "id": "1", "title": "При получении данных" }
           ],
           "width": 250,
           "hide": "data.op.id != 'calc'"
