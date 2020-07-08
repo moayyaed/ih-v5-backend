@@ -1,0 +1,20 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"handlertypesTable", "height":"fill"}
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "handlers"  },
+
+  "p1": [
+    {
+      "title": "Types",
+      "type": "table",
+      "prop": "handlertypesTable",
+
+      "columns": [
+        { "prop": "type_link", "title": "$Type", "type": "link", "command":"forward",  "width": 500  },
+        { "prop": "prop", "title": "$Property", "type": "text",  "width": 200 }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 {
   "tabs": [
-    { "id": "tabHandlerCommon", "title": "Функция-обработчик", "component": [{ "id": "formHandler", "type": "form" }] }
+    { "id": "tabHandlerCommon", "title": "Функция-обработчик", "component": [{ "id": "formHandler", "type": "form" }] },
+    { "id": "tabHandlerTypesTable", "title": "Используется для типов", "component": [{ "id": "formHandlerTypesTable", "type": "form" }] }
   ],
   "defaultTab": "tabHandlerCommon"
 }

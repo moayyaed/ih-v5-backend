@@ -233,7 +233,7 @@
     "collection": "lists",
     "filter": { "list": "handlergroup" },
     "defRootTitle": "Функции-обработчики",
-    "default": { "name": "$NewFolde" },
+    "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "fng", "len": 3 }
   },
 
@@ -242,6 +242,8 @@
     "collection": "handlers",
     "ruleID": { "pref": "fun", "len": 3 }
   },
+
+  "handlertypesTable": { "store": "db", "collection": "types", "rows": true },
 
   "plugingroup": {
     "store": "db",
