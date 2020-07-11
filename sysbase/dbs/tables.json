@@ -119,7 +119,6 @@
       "props": {
         "newid": { "notempty": true, "validid": true },
         "name": { "notempty": true },
-        "vtype": { "notempty": true },
         "op": { "notempty": true },
         "min": { "type": "number", "spec": "min" },
         "max": { "type": "number", "spec": "max" }
