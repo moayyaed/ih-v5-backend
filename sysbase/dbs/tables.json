@@ -267,6 +267,8 @@
     "ruleID": { "pref": "u", "len": 3 }
   },
 
+  "unitsTreeTable": { "store": "tree", "tree": "plugins", "collection": "units", "rows": true },
+
   "selectplugin":{
     "store": "none"
   },
@@ -375,5 +377,7 @@
   },
 
 
-  "tokens": { "store": "db", "collection": "tokens" }
+  "tokens": { "store": "db", "collection": "tokens" },
+
+  "alerts": { "store": "db", "collection": "alerts" }
 }

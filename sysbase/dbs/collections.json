@@ -6,6 +6,8 @@
   "pluginextra": { "folder": "jbasepath" },
   "devcurrent": { "folder": "operativepath" },
 
+  "alerts": { "folder": "jbasepath" },
+
   "units": { "folder": "jbasepath" },
   "snippets": { "folder": "jbasepath" },
 
