@@ -32,6 +32,7 @@
     "data": [
       { "id": "def_rw_N", "title": "Default: check Number, check Range, round", "type": "read" },
       { "id": "def_rw_B", "title": "Default: check Bool", "type": "read" },
+      { "id": "def_rw_S", "title": "Default: JSON.stringify", "type": "read" },
       { "id": "def_cmd_value_on", "title": "Default: value => 1", "type": "command" },
       { "id": "def_cmd_value_off", "title": "Default: value => 0", "type": "command" },
       { "id": "def_cmd_state_on", "title": "Default: state => 1", "type": "command" },
