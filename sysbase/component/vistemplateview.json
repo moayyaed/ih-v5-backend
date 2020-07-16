@@ -1,7 +1,8 @@
 {
   "tabs": [
     { "id": "tabVistemplateCommon", "title": "Описание", "component": [{ "id": "formVistemplateCommon", "type": "form" }] },
-    { "id": "tabVistemplateEditor", "title": "Редактор", "component": [{ "id": "formVistemplate", "type": "form" }] }
+    { "id": "tabVistemplateEditor", "title": "Редактор", "component": [{ "id": "formVistemplate", "type": "form" }] },
+    { "id": "tabVistemplateUsage", "title": "Использование", "component": [{ "id": "formVistemplateUsage", "type": "form" }] }
   ],
   "defaultTab": "tabVistemplateCommon"
 }

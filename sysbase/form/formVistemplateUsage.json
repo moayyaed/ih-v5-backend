@@ -1,0 +1,24 @@
+
+{
+  "grid": [
+   
+    { "id": "p3", "xs": 12, "class": "main", "table": "templateusageTable", "height": "fill" }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "vistemplate" },
+
+  "p3": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "templateusageTable",
+    
+
+      "columns": [
+       
+        { "prop": "container_name", "title": "Размещение", "type": "link", "width": 250, "command": "forward"  },
+        { "prop": "element", "title": "Элемент", "type": "text", "width": 950 }
+      ]
+    }
+  ]
+}

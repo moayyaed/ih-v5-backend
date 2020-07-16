@@ -203,6 +203,11 @@
     "ruleID": { "pref": "vt", "len": 3 }
   },
 
+
+  "templateusageTable":{
+    "store": "none"
+  },
+
   "scenegroup": {
     "store": "db",
     "collection": "lists",
