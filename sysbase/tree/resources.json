@@ -4,6 +4,7 @@
       "main": [{ "id": "1", "type": "divider", "title": "Edit" }]
     }
   },
+
   "images": {
     "parent": {
       "popup": {
@@ -22,6 +23,100 @@
         ]
       },
       "defaultComponent": "imageview"
+    }
+  },
+
+  "vistemplate": {
+    "parent": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "New template", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "New folder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "Copy", "command": "copy" },
+          { "id": "5", "type": "item", "title": "Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "6", "type": "divider" },
+          { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
+        ]
+      },
+      "defaultComponent": "vistemplatefolder"
+    },
+
+    "child": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "New template", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "New folder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "Copy", "command": "copy" },
+          { "id": "5", "type": "item", "title": "Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "6", "type": "divider" },
+          { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
+        ]
+      },
+      "defaultComponent": "vistemplateview"
+    }
+  },
+
+  "types": {
+    "parent": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "New type", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "New folder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "Copy", "command": "copy" },
+          { "id": "5", "type": "item", "title": "Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "6", "type": "divider" },
+          { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
+        ]
+      },
+      "defaultComponent": "typefolder"
+    },
+    "child": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "New type", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "New folder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "Copy", "command": "copy" },
+          { "id": "5", "type": "item", "title": "Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "6", "type": "divider" },
+          { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
+        ]
+      },
+      "defaultComponent": "typeview"
+    }
+  },
+
+  "handlers": {
+    "parent": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "remote", "title": "New handler", "command": "addNodeByContext", "popupid": "handlerTypeList" },
+          { "id": "2", "type": "item", "title": "New folder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "Copy", "command": "copy" },
+          { "id": "5", "type": "item", "title": "Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "6", "type": "divider" },
+          { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
+        ]
+      },
+      "defaultComponent": "handlerfolder"
+    },
+    "child": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "remote", "title": "New handler", "command": "addNodeByContext", "popupid": "handlerTypeList" },
+          { "id": "2", "type": "item", "title": "New folder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "Copy", "command": "copy" },
+          { "id": "5", "type": "item", "title": "Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "6", "type": "divider" },
+          { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
+        ]
+      },
+      "defaultComponent": "handlerview"
     }
   }
 

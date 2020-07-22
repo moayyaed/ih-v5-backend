@@ -1,5 +1,5 @@
 {
-  "dev": ["devdevices", "types", "handlers"],
+  "dev": ["devdevices"],
 
   "devdevices": {
     "branch": { "table": "place", 
@@ -35,7 +35,7 @@
     "expanded":true
   },
 
-  "vis": ["layout", "viscont", "vistemplate"],
+  "vis": ["layout", "viscont"],
 
   "viscont": {
     "branch": {
@@ -126,7 +126,7 @@
     "leaf": { "table": "user", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
   },
 
-  "resources": ["images"],
+  "resources": ["images", "vistemplate", "types", "handlers"],
   "images": {
     "branch": {
       "table": "imagegroup",
