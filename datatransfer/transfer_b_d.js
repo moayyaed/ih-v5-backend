@@ -56,23 +56,27 @@ let project_d;
   transfer('spaces', 'lists', 'jbase');
   transferPluginGroups();
   */
+  
 
   // transfer('scengroups', 'lists', 'jbase'); // only Berry
 
   // create создает заново
   // create('types', 'jbase');
+  // create('devices', 'jbase');
   /*
   create('layouts', 'jbase');
   create('visconts', 'jbase');
   create('vistemplates', 'jbase');
 
-  create('units', 'jbase');
+  
 
   // create('charts', 'jbase');
   // create('reports', 'jbase');
 
-  create('devices', 'jbase');
+  
   */
+ 
+  create('units', 'jbase');
 
   // create('devhard', 'jbase');
   // create('scenecalls', 'jbase');
@@ -88,7 +92,7 @@ let project_d;
   // transfer('onscen', 'scenes', 'jbase');
 
   // genSceneFromScenebase();
-  genSceneFromScenepat();
+  // genSceneFromScenepat();
 
   rl.close();
 })();

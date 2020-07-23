@@ -159,7 +159,9 @@ function getUnitObj(item, rootId) {
   const _id = getNewId('u', 3, item.id);
   const robj = { _id, parent, plugin };
   Object.keys(item).forEach(prop => {
-    if (!prop.endsWith('_') && !['laststart_str', 'laststop_str', 'errstr'].includes(prop)) robj[prop] = item[prop];
+    if (!prop.endsWith('_') && !['laststart_str', 'laststop_str', 'errstr', 'folder'].includes(prop)) robj[prop] = item[prop];
+    robj.active = 1;
+    robj.suspend = 1;
   });
   return robj;
 }

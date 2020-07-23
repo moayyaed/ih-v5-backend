@@ -43,7 +43,7 @@ function getTypeProps(proparr) {
   if (proparr) {
     proparr.forEach(item => {
       if (item.name == 'on' || item.name == 'off') {
-        res[item.name] = { op:'cmd', name: item.name };
+        res[item.name] = { op: 'cmd', name: item.name };
       } else {
         let propName;
         let vtype;
@@ -87,7 +87,7 @@ function getTypeProps(proparr) {
             name = item.name;
         }
         // const op = item.r && item.w ? 'rw' : item.r ? 'r' : 'w';
-        
+
         res[propName] = { name, vtype, op };
       }
     });
@@ -118,30 +118,42 @@ function createDevices(devrefData, project_d, extObj, hmanPLC) {
 
   let order = 1000;
   devrefData.forEach(item => {
-    console.log('item =' + util.inspect(item));
-    if (!item.sys) {
+   
+    if (!item.sys && !item.nosave) {
       const type = getType(item);
-      const dobj = {
-        _id: item.id,
-        parent: getParent(item),
-        order,
-        type,
-        dn: item.dn,
-        name: item.name,
-        tags: getTags(item, extObj)
-      };
-      console.log('dobj =' + util.inspect(dobj));
-      if (typesObj[type] && typesObj[type].props) {
-        dobj.props = formProps(item, Object.keys(typesObj[type].props));
+      if (type) {
+        const dobj = {
+          _id: item.id,
+          parent: getParent(item),
+          order,
+          type,
+          dn: item.dn,
+          name: item.name,
+          tags: getTags(item, extObj)
+        };
+        console.log('dobj =' + util.inspect(dobj));
+        if (typesObj[type] && typesObj[type].props) {
+          dobj.props = formProps(item, Object.keys(typesObj[type].props));
+        }
+        str += JSON.stringify(dobj) + '\n';
+        order += 1000;
       }
-      str += JSON.stringify(dobj) + '\n';
-      order += 1000;
     }
   });
   return str;
 
   function getType(item) {
-    return hmanObj && hmanObj[item.dn] ? 'PLC_' + hmanObj[item.dn].cm : tut.getNewId('t', 3, item.type);
+    // return hmanObj && hmanObj[item.dn] ? 'PLC_' + hmanObj[item.dn].cm : tut.getNewId('t', 3, item.type);
+    let type;
+    if (item.cl) {
+      type = 't' + item.cl;
+
+      if (!typesObj[type]) {
+        type = '';
+        console.log('Skip device ' + item.dn + ', kind:' + item.cl);
+      }
+    }
+    return hmanObj && hmanObj[item.dn] ? 'PLC_' + hmanObj[item.dn].cm : type;
   }
 
   function getParent(item) {
@@ -231,8 +243,8 @@ function createDevhardFromHdev(hdevData, unit, devhardObj) {
   hdevData.forEach(item => {
     if (item.id && item.props) {
       const did = devhardObj[item.id] ? devhardObj[item.id].dn : '';
-      if (!did) console.log(unit+'  NOT FOUND chan '+item.id+' in devhard!')
-      
+      if (!did) console.log(unit + '  NOT FOUND chan ' + item.id + ' in devhard!');
+
       item.props.forEach(propItem => {
         const chan = item.id + '_' + propItem.name;
         const hitem = { ...propItem };
