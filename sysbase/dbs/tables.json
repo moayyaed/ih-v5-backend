@@ -40,8 +40,6 @@
     }
   },
 
-  "devcurrent": { "store": "db", "collection": "devcurrent" },
-
   "devicesTreeTable": { "store": "tree", "tree": "devdevices", "rows": true },
 
   "devicecommonTable": {
@@ -383,6 +381,10 @@
 
 
   "tokens": { "store": "db", "collection": "tokens" },
+  "devcurrent": { "store": "db", "collection": "devcurrent" },
+
+  "pluginlog": { "store": "db", "collection": "pluginlog" },
+  "userlog": { "store": "db", "collection": "userlog" },
 
   "alerts": { "store": "db", "collection": "alerts" }
 }
