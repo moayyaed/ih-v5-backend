@@ -383,6 +383,9 @@
   "tokens": { "store": "db", "collection": "tokens" },
   "devcurrent": { "store": "db", "collection": "devcurrent" },
 
+  "devicelog": { "store": "db", "collection": "devicelog" },
+  "devicelogTable":{ "store": "tree", "tree": "devdevices", "collection": "devices", "rows": true },
+
   "pluginlog": { "store": "db", "collection": "pluginlog" },
   "pluginlogTable":{ "store": "tree", "tree": "plugins", "collection": "units", "rows": true },
 

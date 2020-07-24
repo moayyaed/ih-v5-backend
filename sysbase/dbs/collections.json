@@ -24,7 +24,8 @@
   "charts": { "folder": "jbasepath" },
   "reports": { "folder": "jbasepath" },
 
-  "pluginlog": { "folder": "operativepath" },
+  "devicelog": { "folder": "operativepath", "ensureIndex":"ts", "expireAfterSeconds": 600 },
+  "pluginlog": { "folder": "operativepath", "ensureIndex":"ts", "expireAfterSeconds": 86400},
   "devcurrent": { "folder": "operativepath" },
 
   "users": { "folder": "privatepath" },

@@ -1,0 +1,26 @@
+{
+  "grid": [
+  
+    { "id": "p3", "xs": 12, "class": "main", "table": "devicelogTable", "height": "fill" }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "devdevices" },
+
+  "p3": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "devicelogTable",
+     
+
+      "columns": [
+        { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 150 },
+        { "prop": "did_prop", "title": "Устройство", "type": "link", "width": 250, "command": "forward"  },
+     
+        { "prop": "val", "title": "Значение", "type": "text" ,  "width": 100},
+        { "prop": "cmd", "title": "Команда", "type": "text" ,  "width": 100},
+        { "prop": "src", "title": "Отправитель", "type": "text" ,  "width": 150}
+      ]
+    }
+  ]
+}
