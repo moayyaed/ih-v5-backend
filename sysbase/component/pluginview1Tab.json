@@ -4,7 +4,8 @@
       "id": "tabUnitParams",
       "title": "Параметры плагина",
       "component": [{ "id": "formPluginCommon", "type": "form" }]
-    }
+    },
+    { "id": "tabPluginLogTable", "title": "Журнал", "component": [{ "id": "formPluginLogTable", "type": "form" }] }
   ],
   "defaultTab": "tabUnitParams"
 }

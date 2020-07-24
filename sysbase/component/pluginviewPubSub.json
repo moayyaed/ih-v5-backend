@@ -11,7 +11,8 @@
       "title": "Таблица каналов",
       "component": [{ "id": "formPluginChannelsTable", "type": "form" }]
     },
-    { "id": "tabUnitPublish", "title": "Публикация", "component": [{ "id": "formPluginPublish", "type": "form" }] }
+    { "id": "tabUnitPublish", "title": "Публикация", "component": [{ "id": "formPluginPublish", "type": "form" }] },
+    { "id": "tabPluginLogTable", "title": "Журнал", "component": [{ "id": "formPluginLogTable", "type": "form" }] }
   ],
   "defaultTab": "tabUnitParams"
 }

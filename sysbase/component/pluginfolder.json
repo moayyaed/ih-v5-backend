@@ -1,6 +1,7 @@
 {
   "tabs": [
-    { "id": "tabPluginFolder",  "title": "Плагин", "component": [{ "id": "formPluginFolder", "type": "form" }]  }
+    { "id": "tabPluginFolder",  "title": "Плагины", "component": [{ "id": "formPluginFolder", "type": "form" }]  },
+    { "id": "tabPluginLogTable", "title": "Журнал", "component": [{ "id": "formPluginLogTable", "type": "form" }] }
   ],
   "defaultTab": "tabPluginFolder"
 }

@@ -384,6 +384,8 @@
   "devcurrent": { "store": "db", "collection": "devcurrent" },
 
   "pluginlog": { "store": "db", "collection": "pluginlog" },
+  "pluginlogTable":{ "store": "tree", "tree": "plugins", "collection": "units", "rows": true },
+
   "userlog": { "store": "db", "collection": "userlog" },
 
   "alerts": { "store": "db", "collection": "alerts" }
