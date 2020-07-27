@@ -28,7 +28,6 @@
         },
         { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 80, "hide": "!data.type_op.includes('Number')" },
         { "prop": "unit", "title": "$Plugin", "type": "text", "width": 100 },
-        { "prop": "chan", "title": "$Channel", "type": "link", "width": 150, "command": "forward" },
         {
           "prop": "chan",
           "title": "Привязка к каналу",
