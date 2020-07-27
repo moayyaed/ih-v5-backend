@@ -1,8 +1,5 @@
 {
-  "grid": [
-   
-    { "id": "p3", "xs": 12, "class": "main", "table": "devicecommonTable", "height": "fill" }
-  ],
+  "grid": [{ "id": "p3", "xs": 12, "class": "main", "table": "devicecommonTable", "height": "fill" }],
   "spacing": 10,
   "breadcrumbs": { "tree": "devdevices" },
 
@@ -11,21 +8,34 @@
       "title": "$DeviceProperty",
       "type": "table",
       "prop": "devicecommonTable",
-      "genfield":"props",
+      "genfield": "props",
 
       "columns": [
         { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 100 },
 
         { "prop": "type_propname", "title": "$Name", "type": "text", "width": 150 },
-        { "prop": "type_op", "title": "Тип свойства", "type": "text", "width": 100  },
+        { "prop": "type_op", "title": "Тип свойства", "type": "text", "width": 100 },
 
         { "prop": "source", "title": "Источник свойства", "type": "link", "width": 250, "command": "forward" },
-        { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide":"!data.type_op.includes('Number')" },
-        { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide":"!data.type_op.includes('Number')"  },
-        { "prop": "dig", "title": "$Decdig", "type": "number", "width": 80, "hide":"!data.type_op.includes('Number')"  },
-        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 80,  "hide":"!data.type_op.includes('Number')"  },
+        { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide": "!data.type_op.includes('Number')" },
+        { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide": "!data.type_op.includes('Number')" },
+        {
+          "prop": "dig",
+          "title": "$Decdig",
+          "type": "number",
+          "width": 80,
+          "hide": "!data.type_op.includes('Number')"
+        },
+        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 80, "hide": "!data.type_op.includes('Number')" },
         { "prop": "unit", "title": "$Plugin", "type": "text", "width": 100 },
         { "prop": "chan", "title": "$Channel", "type": "link", "width": 150, "command": "forward" },
+        {
+          "prop": "chan",
+          "title": "Привязка к каналу",
+          "type": "smartbutton",
+          "command": "dialog",
+          "params": { "title": "Привязка к каналу", "type": "tree", "id": "pluginsd", "dialog": "channellink" }
+        },
         { "prop": "realtime_dev_val", "title": "Значение", "type": "text", "width": 64 },
         { "prop": "realtime_dev_ts", "title": "Время", "type": "text", "width": 150 },
         { "prop": "realtime_dev_cts", "title": "Изменение", "type": "text", "width": 128 },
