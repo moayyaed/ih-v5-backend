@@ -8,13 +8,15 @@ const util = require('util');
 const init = require('./lib/init');
 
 // const dbadapter = require('./lib/dbhistory/dbadapter');
-const deviceserver = require('./lib/device/deviceserver');
+const deviceservice = require('./lib/device/deviceservice');
 const logserver = require('./lib/log/logserver');
-const pluginserver = require('./lib/plugin/pluginserver');
-const sceneserver = require('./lib/scene/sceneserver');
-const trendserver = require('./lib/trend/trendserver');
+const pluginservice = require('./lib/plugin/pluginservice');
+const sceneservice = require('./lib/scene/sceneservice');
+const trendservice = require('./lib/trend/trendservice');
+
 const webserver = require('./lib/web/webserver');
 const resserver = require('./lib/resource/resourceserver');
+
 const EventEmitter = require('events');
 
 (async () => {
@@ -32,11 +34,12 @@ const EventEmitter = require('events');
   try {
     await init(__dirname);
     await logserver(holder);
-    await deviceserver(holder);
+    await deviceservice(holder);
     await resserver(holder);
-    await pluginserver(holder);
-    await sceneserver(holder);
-    await trendserver(holder);
+    await pluginservice(holder);
+    await sceneservice(holder);
+    await trendservice(holder);
+
     await webserver(holder);
   } catch (err) {
     console.log('ERROR: Main App Exception ' + util.inspect(err));
