@@ -9,7 +9,6 @@ const init = require('./lib/init');
 
 // const dbadapter = require('./lib/dbhistory/dbadapter');
 const deviceservice = require('./lib/device/deviceservice');
-const logserver = require('./lib/log/logserver');
 const pluginservice = require('./lib/plugin/pluginservice');
 const sceneservice = require('./lib/scene/sceneservice');
 const trendservice = require('./lib/trend/trendservice');
@@ -33,7 +32,6 @@ const EventEmitter = require('events');
  
   try {
     await init(__dirname);
-    await logserver(holder);
     await deviceservice(holder);
     await resserver(holder);
     await pluginservice(holder);

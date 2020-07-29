@@ -38,7 +38,7 @@ changed:alert       |listen(sub)|             |listen(sub)  |            |      
 
 ```
 ------------------------------------------------------------------------------------------------ 
-dm Events           |datamanager| devicemate| pluginmate| scenemate  | trendmate  | logserver
+dm Events           |datamanager| devicemate| pluginmate| scenemate  | trendmate  | 
 -------------------------------------------------------------------------------------------------
 inserted:<tablename>| emit      | listen      | listen  |            | listen     |
 updated:<tablename> | emit      | listen      | listen  | listen     | listen     | 
