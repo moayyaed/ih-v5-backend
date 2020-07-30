@@ -3,9 +3,10 @@
     "table": "type",
     "propmap": { "_id": "id", "name": "title", "tags": "tags" }
   },
+  
   "deviceList": {
     "table": "device",
-    "propmap": { "_id": "id", "name": "name", "dn": "dn", "tags": "tags", "type": "type" }
+    "propmap": { "_id": "id", "name": "name", "dn": "dn", "tags": "tags", "type": "type", "sys":"sys" }
   },
 
   "unitList": {
