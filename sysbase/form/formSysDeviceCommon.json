@@ -1,0 +1,12 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "sysdeviceTable" }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "sysdevices" },
+
+  "p1": [
+    { "prop": "dn", "title": "$Dev_Id", "type": "text" },
+    { "prop": "name", "title": "$Name", "type": "text" }
+  ]
+}

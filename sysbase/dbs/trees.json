@@ -1,5 +1,5 @@
 {
-  "dev": ["devdevices"],
+  "dev": ["devdevices", "sysdevices"],
 
   "devdevices": {
     "branch": { "table": "place", 

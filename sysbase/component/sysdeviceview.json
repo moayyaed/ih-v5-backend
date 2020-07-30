@@ -1,10 +1,11 @@
 {
   "tabs": [
-    { "id": "tabDeviceScene", "title": "Сценарии", "component": [{ "id": "formDeviceScene", "type": "form" }] },
-    { "id": "tabDeviceVis", "title": "Ссылки на визуализацию", "component": [{ "id": "formDeviceVis", "type": "form" }] },
-    { "id": "tabDeviceDb", "title": "Запись в БД", "component": [{ "id": "formDeviceDb", "type": "form" }] },
-    { "id": "tabDeviceLog",  "title": "Журнал", "component": [{ "id": "formDeviceLogTable", "type": "form" }]  }
+    { "id": "tabSysDeviceCommon", "title": "Системный индикатор", "component": [{ "id": "formSysDeviceCommon", "type": "form" }] },
+    { "id": "tabSysDeviceScene", "title": "Сценарии", "component": [{ "id": "formSysDeviceScene", "type": "form" }] },
+    { "id": "tabSysDeviceVis", "title": "Ссылки на визуализацию", "component": [{ "id": "formSysDeviceVis", "type": "form" }] },
+    { "id": "tabSysDeviceDb", "title": "Запись в БД", "component": [{ "id": "formSysDeviceDb", "type": "form" }] },
+    { "id": "tabSysDeviceLog",  "title": "Журнал", "component": [{ "id": "formSysDeviceLogTable", "type": "form" }]  }
   ],
 
-  "defaultTab": "tabDeviceLog"
+  "defaultTab": "tabSysDeviceLog"
 }

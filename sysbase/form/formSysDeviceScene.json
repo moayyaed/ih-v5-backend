@@ -1,0 +1,23 @@
+{
+  "grid": [
+   
+    { "id": "p3", "xs": 12, "class": "main", "table": "devicesceneTable", "height": "fill" }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "sysdevices" },
+
+  "p3": [
+    {
+      "title": "$DeviceProperty",
+      "type": "table",
+      "prop": "devicesceneTable",
+    
+
+      "columns": [
+        { "prop": "scene_id", "title": "ID", "type": "text", "width": 200 },
+
+        { "prop": "scene_name", "title": "$Name", "type": "link", "width": 550, "command": "forward"  }
+      ]
+    }
+  ]
+}

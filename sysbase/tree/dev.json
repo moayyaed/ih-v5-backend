@@ -33,5 +33,13 @@
       },
       "defaultComponent": "deviceview"
     }
+  },
+  "sysdevices": {
+    "parent": {
+      "defaultComponent": "devicefolder"
+    },
+    "child": {
+      "defaultComponent": "sysdeviceview"
+    }
   }
 }
