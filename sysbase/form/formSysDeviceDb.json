@@ -1,0 +1,50 @@
+{
+  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "devicedbTable", "height": 500 }],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "sysdevices" },
+
+  "p1": [
+    {
+      "title": "Save to DB",
+      "type": "table",
+      "popupenable": false,
+      "prop": "devicedbTable",
+
+      "columns": [
+        { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 100 },
+        {
+          "prop": "dbmet",
+          "title": "Метод сохранения",
+          "type": "droplist",
+          "data": [
+            { "id": 0, "title": "$NotSave" },
+            { "id": 1, "title": "$OnChange" },
+            { "id": 2, "title": "$AllValues" },
+            { "id": 3, "title": "$Periodically" }
+          ]
+        },
+
+        { "prop": "dbtm", "title": "$Dev_dbtm", "type": "number", "hide":"!data.dbmet || data.dbmet.id<3" },
+
+        {
+          "prop": "dbcalc_type",
+          "title": "$Dev_calc_type",
+          "type": "droplist",
+          "data": [
+            { "id": "-", "title": "" },
+            { "id": "last", "title": "Last" },
+            { "id": "min", "title": "Min" },
+            { "id": "max", "title": "Max" },
+            { "id": "minmax", "title": "Min&Max" },
+            { "id": "average", "title": "Average" }
+          ],
+          "hide":"!data.dbmet || data.dbmet.id<3" 
+        },
+
+        { "prop": "dbdelta", "title": "$Dev_dbdelta", "type": "number","hide":"!data.dbmet || data.dbmet.id!=1"  },
+
+        { "prop": "dbforce", "title": "$Dev_dbforce", "type": "number","hide":"!data.dbmet || data.dbmet.id!=1" }
+      ]
+    }
+  ]
+}

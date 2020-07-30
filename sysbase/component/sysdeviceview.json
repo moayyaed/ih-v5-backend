@@ -7,5 +7,5 @@
     { "id": "tabSysDeviceLog",  "title": "Журнал", "component": [{ "id": "formSysDeviceLogTable", "type": "form" }]  }
   ],
 
-  "defaultTab": "tabSysDeviceLog"
+  "defaultTab": "tabSysDeviceCommon"
 }
