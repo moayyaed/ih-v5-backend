@@ -9,6 +9,15 @@
       "propmap": { "_id": "id", "name": "name", "title": "title", "parent": "parent", "order": "order", "dn": "dn" }
     }
   },
+
+  "sysdevices": {
+    "branch": {
+      "table": "sysdevicegroupTable",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+    },
+    "leaf": { "table": "sysdeviceTable", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
+  },
+
   "types": {
     "branch": {
       "table": "typegroup",
@@ -25,7 +34,9 @@
     "leaf": { "table": "handler", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
   },
   
-  "devices": {
+  "devices": ["devicesExp", "sysdevices"],
+
+  "devicesExp": {
     "branch": { "table": "place", 
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } },
     "leaf": {

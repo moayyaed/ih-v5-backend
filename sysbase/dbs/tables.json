@@ -69,6 +69,14 @@
     "store": "none"
   },
 
+  "sysdeviceTable":{
+    "store": "none"
+  },
+
+  "sysdevicegroupTable":{
+    "store": "none"
+  },
+
   "devicepropswithlinks": {
     "store": "db",
     "collection": "devices",
