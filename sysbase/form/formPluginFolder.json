@@ -15,7 +15,7 @@
 
       "columns": [
         { "prop": "name", "title": "$Name", "type": "text",  "width": 150 },
-        { "prop": "status", "title": "Состояние", "type": "text",  "width": 150 },
+        { "prop": "state", "title": "Состояние", "type": "text",  "width": 150 },
         { "prop": "laststart", "title": "Время запуска", "type": "text",  "width": 150 },
         { "prop": "laststop", "title": "Время останова", "type": "text",  "width": 150 },
         { "prop": "uptime", "title": "Uptime", "type": "text",  "width": 150 },

@@ -50,5 +50,13 @@
       { "id": "calculate", "title": "Calculate" },
       { "id": "command", "title": "Command" }
     ]
+  },
+  "unitStateList": {
+    "data": [
+      { "id": 0, "title": "Run error" },
+      { "id": 1, "title": "Suspended" },
+      { "id": 2, "title": "Working" },
+      { "id": 3, "title": "Stopped" }
+    ]
   }
 }
