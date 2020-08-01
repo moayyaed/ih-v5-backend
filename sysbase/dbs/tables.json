@@ -15,7 +15,9 @@
     "validator": {
       "main": {
         "name": { "required": true, "notempty": true },
-        "dn": { "required": true, "notempty": true, "unique": true }
+        "dn": { "required": true, "notempty": true, "unique": true },
+        "type": { "required": true, "notempty": true }
+
       }
     }
   },
