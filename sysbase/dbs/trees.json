@@ -35,6 +35,7 @@
   },
   
   "devices": ["devicesExp", "sysdevices"],
+  "elements": ["devicesExp", "sysdevices"],
 
   "devicesExp": {
     "branch": { "table": "place", 
