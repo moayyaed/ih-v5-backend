@@ -13,9 +13,9 @@
 
       "columns": [
 
-        { "prop": "title", "title": "Title", "type": "link", "command":"forward",  "width": 300  },
-        { "prop": "size", "title": "Size", "type": "text",  "width": 200  },
-        { "prop": "path", "title": "Path", "type": "text",  "width": 300 }
+        { "prop": "name", "title": "Имя файла", "type": "text",  "width": 300  },
+        { "prop": "path", "title": "Папка", "type": "text",  "width": 300 },
+        { "prop": "error", "title": "", "type": "text",  "width": 200  }
       ]
     }
   ]
