@@ -9,6 +9,11 @@
     "propmap": { "_id": "id", "name": "name", "dn": "dn", "tags": "tags", "type": "type", "sys":"sys" }
   },
 
+  "globalList": {
+    "table": "globals",
+    "propmap": { "_id": "id", "name": "name", "dn": "dn", "defval": "defval", "setdef": "setdef"}
+  },
+
   "unitList": {
     "table": "units",
     "propmap": { "_id": "id", "name": "name", "plugin": "plugin", "folder": "folder" }

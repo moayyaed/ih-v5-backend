@@ -23,5 +23,13 @@
       
       "defaultComponent": "devicelink"
     }
+  },
+  "globals": {
+    "parent": {
+      "defaultComponent": null
+    },
+    "child": {
+      "defaultComponent": "devicelink"
+    }
   }
 }

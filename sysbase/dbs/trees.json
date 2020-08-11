@@ -42,7 +42,7 @@
     "leaf": { "table": "handler", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
   },
   
-  "devices": ["devicesExp", "sysdevices"],
+  "devices": ["devicesExp", "sysdevices", "globals"],
   "elements": ["devicesExp", "sysdevices"],
 
   "devicesExp": {

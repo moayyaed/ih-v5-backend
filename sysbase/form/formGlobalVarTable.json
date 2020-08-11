@@ -1,0 +1,23 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"globalsTreeTable", "height":"fill"}
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "globals" },
+
+  "p1": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "globalsTreeTable",
+
+      "columns": [
+
+        { "prop": "title", "title": "", "type": "link", "command":"forward",  "width": 200  },
+        { "prop": "dn", "title": "$Var_Id", "type": "text",  "width": 200 },
+        { "prop": "value", "title": "$Value", "type": "text",  "width": 100 },
+        { "prop": "path", "title": "", "type": "text",  "width": 200 }
+      ]
+    }
+  ]
+}

@@ -32,8 +32,7 @@
         "dn": { "required": true, "notempty": true, "unique": true }
 
       }
-    },
-    "default": { "dn": "newvar",  "name":"New variable"}
+    }
   },
 
   "chgroup": {
@@ -57,6 +56,7 @@
   },
 
   "devicesTreeTable": { "store": "tree", "tree": "devdevices", "rows": true },
+  "globalsTreeTable": { "store": "tree", "tree": "globals", "rows": true },
   "sysdevicesTreeTable": { "store": "tree", "tree": "sysdevices", "rows": true },
 
   "devicecommonTable": {

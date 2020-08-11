@@ -622,7 +622,7 @@
   { "id": "Scene", "note": "Сценарий" },
   { "id": "Widget", "note": "Виджет" },
   { "id": "State", "note": "Состояние" },
-  { "id": "DefaultValue", "note": "Начальное значение" },
+  { "id": "DefaultValue", "note": "Значение по умолчанию" },
   { "id": "Value", "note": "Значение" },
   { "id": "Setpoint", "note": "Уставка" },
   { "id": "Blk", "note": "Флаг блокировки" },
@@ -839,7 +839,10 @@
   { "id": "NewDevice", "note": "Новое устройство" },
   { "id": "Ruledn_pref", "note": "Префикс при именовании нового устройства" },
   { "id": "Ruledn_len", "note": "Длина при именовании нового устройства " },
-  { "id": "LinkToDeviceProperty", "note": "Привязка к устройcтву" }
+  { "id": "LinkToDeviceProperty", "note": "Привязка к устройcтву" },
+  { "id": "Var_Id", "note": "Имя переменной" },
+  { "id": "SetDef", "note": "Присваивать значение по умолчанию при старте сервера" }
+  
 
 
 ]

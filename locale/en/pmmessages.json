@@ -617,7 +617,7 @@
   { "id": "Scene", "note": "Scene" },
   { "id": "Widget", "note": "Widget" },
   { "id": "State", "note": "State" },
-  { "id": "DefaultValue", "note": "Initial Value" },
+  { "id": "DefaultValue", "note": "Default Value" },
   { "id": "Value", "note": "Value" },
   { "id": "Setpoint", "note": "Setpoint" },
   { "id": "Blk", "note": "Block flag" },
@@ -829,5 +829,8 @@
   { "id": "NewFolder", "note": "New Folder" },
   { "id": "NewType", "note": "New Type" },
   { "id": "NewDevice", "note": "New Device" },
-  { "id": "LinkToDeviceProperty", "note": "Link To Device Property" }
+  { "id": "LinkToDeviceProperty", "note": "Link To Device Property" },
+  { "id": "Var_Id", "note": "Variable Name" },
+  { "id": "SetDef", "note": "Set default value on server start" }
+
 ]
