@@ -1,5 +1,5 @@
 {
-  "dev": ["devdevices", "sysdevices"],
+  "dev": ["devdevices", "sysdevices", "globals"],
 
   "devdevices": {
     "branch": { "table": "place", 
@@ -16,6 +16,14 @@
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     },
     "leaf": { "table": "sysdeviceTable", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
+  },
+
+  "globals": {
+    "branch": {
+      "table": "globalgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+    },
+    "leaf": { "table": "globals", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
   },
 
   "types": {

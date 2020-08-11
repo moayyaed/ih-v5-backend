@@ -1,0 +1,11 @@
+{
+  "tabs": [
+    { "id": "tabGlobalVarCommon", "title": "Переменная", "component": [{ "id": "formGlobalVarCommon", "type": "form" }] },
+    { "id": "tabGlobalVarScene", "title": "Сценарии", "component": [{ "id": "formGlobalVarScene", "type": "form" }] },
+    { "id": "tabGlobalVarVis", "title": "Ссылки на визуализацию", "component": [{ "id": "formGlobalVarVis", "type": "form" }] },
+    { "id": "tabGlobalVarDb", "title": "Запись в БД", "component": [{ "id": "formGlobalVarDb", "type": "form" }] },
+    { "id": "tabGlobalVarLog",  "title": "Журнал", "component": [{ "id": "formGlobalVarLogTable", "type": "form" }]  }
+  ],
+
+  "defaultTab": "tabGlobalVarCommon"
+}

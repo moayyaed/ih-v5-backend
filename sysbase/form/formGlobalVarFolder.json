@@ -1,0 +1,14 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "globalgroup" },
+    { "id": "p2", "xs": 12, "class": "main", "table": "globalgroup", "height": 250 }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "globals" },
+
+  "p1": [
+    { "prop": "name", "title": "$Name", "type": "input" }
+  
+  ],
+  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
+}

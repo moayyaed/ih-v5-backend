@@ -1,6 +1,7 @@
 {
   "lists": { "folder": "jbasepath" },
   "devices": { "folder": "jbasepath" },
+  "globals": { "folder": "jbasepath" },
   "devicedb": { "folder": "jbasepath" },
   "devhard": { "folder": "jbasepath" },
   "pluginextra": { "folder": "jbasepath" },

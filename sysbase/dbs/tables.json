@@ -22,6 +22,20 @@
     }
   },
 
+  "globals": {
+    "store": "db",
+    "collection": "globals",
+    "ruleID": { "pref": "gl", "len": 3 },
+    "validator": {
+      "main": {
+        "name": { "required": true, "notempty": true },
+        "dn": { "required": true, "notempty": true, "unique": true }
+
+      }
+    },
+    "default": { "dn": "newvar",  "name":"New variable"}
+  },
+
   "chgroup": {
     "store": "db",
     "collection": "lists",
@@ -43,6 +57,7 @@
   },
 
   "devicesTreeTable": { "store": "tree", "tree": "devdevices", "rows": true },
+  "sysdevicesTreeTable": { "store": "tree", "tree": "sysdevices", "rows": true },
 
   "devicecommonTable": {
     "store": "db",
@@ -366,6 +381,15 @@
     "defRootTitle": "Изображения",
     "default": { "name": "New Folder" },
     "ruleID": { "pref": "img", "len": 3 }
+  },
+
+  "globalgroup": {
+    "store": "db",
+    "collection": "lists",
+    "filter": { "list": "globalgroup" },
+    "defRootTitle": "Переменные проекта",
+    "default": { "name": "New Folder" },
+    "ruleID": { "pref": "glg", "len": 3 }
   },
 
   "images": {

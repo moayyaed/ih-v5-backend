@@ -1,0 +1,7 @@
+{
+  "tabs": [
+    { "id": "tabSysDeviceFolder",  "title": "Свойства папки", "component": [{ "id": "formSysDeviceFolder", "type": "form" }]  }
+   
+  ],
+  "defaultTab": "tabSysDeviceFolder"
+}
