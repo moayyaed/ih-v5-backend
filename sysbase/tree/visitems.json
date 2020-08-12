@@ -11,7 +11,7 @@
     },
     "child": {
      
-      "defaultComponent": "elementlink"
+      "defaultComponent": "devicelink"
     }
   },
   "sysdevices": {
@@ -21,7 +21,7 @@
     },
     "child": {
       
-      "defaultComponent": "elementlink"
+      "defaultComponent": "devicelink"
     }
   },
   "globals": {
@@ -29,7 +29,7 @@
       "defaultComponent": null
     },
     "child": {
-      "defaultComponent": "elementlink"
+      "defaultComponent": "devicelink"
     }
   }
 }

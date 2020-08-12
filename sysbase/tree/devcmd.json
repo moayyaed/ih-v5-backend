@@ -9,7 +9,7 @@
       "defaultComponent": null
     },
     "child": {
-      "defaultComponent": "cmdlink"
+      "defaultComponent": "devicelink"
     }
   }
 }
