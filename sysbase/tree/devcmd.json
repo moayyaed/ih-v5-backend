@@ -6,12 +6,10 @@
   },
   "devicesExp": {
     "parent": {
-     
       "defaultComponent": null
     },
     "child": {
-     
-      "defaultComponent": "devicelink"
+      "defaultComponent": "cmdlink"
     }
   }
 }
