@@ -92,6 +92,8 @@
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     }
   },
+  
+  "layoutx":["layout"],
 
   "scenes": {
     "branch": {
