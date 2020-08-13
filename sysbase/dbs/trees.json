@@ -93,7 +93,7 @@
     }
   },
 
-  "layoutx":["layout"],
+  "layoutx": ["layout"],
 
   "scenes": {
     "branch": {
@@ -106,9 +106,9 @@
     }
   },
 
-"scriptx":["scenes"],
+  "scriptx": ["scenes"],
 
-"datasource": ["plugins"],
+  "datasource": ["plugins"],
   "plugins": {
     "branch": {
       "table": "unitgroup",
@@ -127,7 +127,22 @@
       "component": 1
     }
   },
-  "pluginx": ["plugins"],
+
+  "pluginx": {
+    "branch": {
+      "table": "unitgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "units",
+      "propmap": {
+        "_id": "id",
+        "id": "title",
+        "parent": "parent",
+        "order": "order"
+      }
+    }
+  },
 
   "pluginsd": {
     "branch": {
