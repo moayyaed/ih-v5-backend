@@ -1,0 +1,10 @@
+{
+  "grid": [{ "id": "p1", "xs": 12, "class": "main" }],
+  "spacing": 10,
+
+  "p1": [
+    { "prop": "param1", "title": "Command String Parameter", "type": "input", "default":"param1" },
+    { "prop": "param2", "title": "Command Number  Parameter", "type": "number", "default":42 },
+    { "prop": "param3", "title": "Command CheckBox", "type": "cb", "default":1 }
+  ]
+}

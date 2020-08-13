@@ -1,0 +1,15 @@
+{
+  "common": {
+    "popup": {}
+  },
+
+  "scenes": {
+    "parent": {
+      "defaultComponent": null
+    },
+
+    "child": {
+      "defaultComponent": "formScriptx"
+    }
+  }
+}

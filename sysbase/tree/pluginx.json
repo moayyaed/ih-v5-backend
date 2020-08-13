@@ -1,0 +1,15 @@
+{
+  "common": {
+    "popup": {}
+  },
+
+  "plugins": {
+    "parent": {
+      "defaultComponent": null
+    },
+
+    "child": {
+      "defaultComponent": "formPluginx"
+    }
+  }
+}

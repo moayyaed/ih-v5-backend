@@ -108,7 +108,7 @@
 
 "scriptx":["scenes"],
 
-  "datasource": ["plugins"],
+"datasource": ["plugins"],
   "plugins": {
     "branch": {
       "table": "unitgroup",
@@ -127,6 +127,7 @@
       "component": 1
     }
   },
+  "pluginx": ["plugins"],
 
   "pluginsd": {
     "branch": {
