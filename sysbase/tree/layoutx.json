@@ -9,8 +9,7 @@
     },
 
     "child": {
-      "defaultComponent": "options",
-      "formid": "formLayoutx"
+      "defaultComponent": "formLayoutx"
     }
   }
 }
