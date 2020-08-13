@@ -10,18 +10,7 @@
 
     "child": {
       "defaultComponent": "options",
-
-      "options": {
-        "grid": [{ "id": "p1", "xs": 12, "class": "main" }],
-        "spacing": 10,
-
-        "p1": [{ "prop": "name", "title": "$Name", "type": "input" }]
-      },
-      "data": {
-        "p1": {
-          "name": "test"
-        }
-      }
+      "formid": "formLayoutx"
     }
   }
 }
