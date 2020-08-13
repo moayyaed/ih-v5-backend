@@ -2,5 +2,8 @@
   "grid": [{ "id": "p1", "xs": 12, "class": "main" }],
   "spacing": 10,
 
-  "p1": [{ "prop": "name", "title": "$Name", "type": "input" }]
+  "p1": [
+    { "prop": "param1", "title": "Parameter 1", "type": "input", "default":"test param1" },
+    { "prop": "param2", "title": "Parameter 1", "type": "input", "default":"test param2" }
+  ]
 }
