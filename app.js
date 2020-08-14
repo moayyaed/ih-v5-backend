@@ -17,7 +17,7 @@ const trendservice = require('./lib/trend/trendservice');
 
 
 const webserver = require('./lib/web/webserver');
-
+const dm = require('./lib/datamanager');
 
 const EventEmitter = require('events');
 
@@ -35,6 +35,8 @@ const EventEmitter = require('events');
  
   try {
     await init(__dirname);
+    holder.dm = dm;
+    
     await deviceservice(holder);
     await resservice(holder);
     await pluginservice(holder);
