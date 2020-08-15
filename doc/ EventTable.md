@@ -2,7 +2,7 @@
 
 ```
 ----------------------------------------------------------------------------------------------------------- 
-holder Events       | webserver |deviceservice|pluginservice|sceneservice|trendservice|alertservice|
+holder Events       | webserver |deviceservice|pluginservice|sceneservice|trendservice|alertservice|gservice
 ------------------------------------------------------------------------------------------------------------
 received:unit:data  |           |             | emit/listen |            |            |            |
 accepted:unit:data  |           |             | emit/listen |            |            |            |
@@ -10,6 +10,7 @@ accepted:unit:data  |           |             | emit/listen |            |      
 received:device:data|           | listen      |  emit       |            |            |            |          
 accepted:device:data|           |  emit       |             |            | listen     |            |
 changed:device:data | listen    |  emit       | listen      | listen     | listen     |            |
+changed:globals     | listen    |             |             | listen     | listen     |            | emit
                     |           |             |             |            |            |            |
 removed:devlink     |           |  emit       | listen      |            |            |            |
                     |           |             |             |            |            |            |

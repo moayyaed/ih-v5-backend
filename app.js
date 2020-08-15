@@ -8,6 +8,7 @@ const util = require('util');
 const init = require('./lib/init');
 
 // const dbadapter = require('./lib/dbhistory/dbadapter');
+const globalvarservice = require('./lib/globalvar/globalvarservice');
 const deviceservice = require('./lib/device/deviceservice');
 const resservice = require('./lib/resource/resourceservice');
 const pluginservice = require('./lib/plugin/pluginservice');
@@ -37,6 +38,7 @@ const EventEmitter = require('events');
     await init(__dirname);
     holder.dm = dm;
     
+    await globalvarservice(holder);
     await deviceservice(holder);
     await resservice(holder);
     await pluginservice(holder);
