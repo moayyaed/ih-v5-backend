@@ -3,6 +3,6 @@
   "spacing": 10,
 
   "p1": [
-    { "prop": "param", "title": "Script Parameter", "type": "input", "default":"test Script Parameter" }
+    { "prop": "param", "title": "Script Parameter", "type": "input", "default":"" }
   ]
 }
