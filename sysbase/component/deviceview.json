@@ -1,12 +1,12 @@
 {
   "tabs": [
-    { "id": "tabDeviceCommon", "title": "Устройство", "component": [{ "id": "formDeviceCommon", "type": "form" }] },
-    { "id": "tabDevicePropTable", "title": "Свойства", "component": [{ "id": "formDevicePropTable", "type": "form" }] },
-    { "id": "tabDeviceScene", "title": "Сценарии", "component": [{ "id": "formDeviceScene", "type": "form" }] },
-    { "id": "tabDeviceVis", "title": "Ссылки на визуализацию", "component": [{ "id": "formDeviceVis", "type": "form" }] },
-    { "id": "tabDeviceDb", "title": "Запись в БД", "component": [{ "id": "formDeviceDb", "type": "form" }] },
-    { "id": "tabDeviceLog",  "title": "Журнал", "component": [{ "id": "formDeviceLogTable", "type": "form" }]  }
+    { "id": "tabCommon", "title": "Устройство", "component": [{ "id": "formDeviceCommon", "type": "form" }] },
+    { "id": "tabTable", "title": "Свойства", "component": [{ "id": "formDevicePropTable", "type": "form" }] },
+    { "id": "tabScene", "title": "Сценарии", "component": [{ "id": "formDeviceScene", "type": "form" }] },
+    { "id": "tabVis", "title": "Ссылки на визуализацию", "component": [{ "id": "formDeviceVis", "type": "form" }] },
+    { "id": "tabDb", "title": "Запись в БД", "component": [{ "id": "formDeviceDb", "type": "form" }] },
+    { "id": "tabLog",  "title": "Журнал", "component": [{ "id": "formDeviceLogTable", "type": "form" }]  }
   ],
 
-  "defaultTab": "tabDeviceCommon"
+  "defaultTab": "tabCommon"
 }

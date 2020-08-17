@@ -1,11 +1,11 @@
 {
   "tabs": [
-    { "id": "tabSysDeviceCommon", "title": "Системный индикатор", "component": [{ "id": "formSysDeviceCommon", "type": "form" }] },
+    { "id": "tabCommon", "title": "Системный индикатор", "component": [{ "id": "formSysDeviceCommon", "type": "form" }] },
     { "id": "tabSysDeviceScene", "title": "Сценарии", "component": [{ "id": "formSysDeviceScene", "type": "form" }] },
     { "id": "tabSysDeviceVis", "title": "Ссылки на визуализацию", "component": [{ "id": "formSysDeviceVis", "type": "form" }] },
     { "id": "tabSysDeviceDb", "title": "Запись в БД", "component": [{ "id": "formSysDeviceDb", "type": "form" }] },
     { "id": "tabSysDeviceLog",  "title": "Журнал", "component": [{ "id": "formSysDeviceLogTable", "type": "form" }]  }
   ],
 
-  "defaultTab": "tabSysDeviceCommon"
+  "defaultTab": "tabCommon"
 }
