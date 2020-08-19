@@ -53,8 +53,8 @@
   },
 
   "devices": ["devicesExp"],
-  "elements": ["devicesExp", "sysdevices", "globals"],
-  "visitems": ["devicesExp", "sysdevices", "globals"],
+  "elements": ["devicesExp", "sysdevices", "globals", "locals"],
+  "visitems": ["devicesExp", "sysdevices", "globals", "locals"],
   "devcmd": ["devicesExp"],
 
   "devicesExp": {
