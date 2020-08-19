@@ -14,6 +14,11 @@
     "propmap": { "_id": "id", "name": "name", "dn": "dn", "defval": "defval", "setdef": "setdef"}
   },
 
+  "localList": {
+    "table": "locals",
+    "propmap": { "_id": "id", "name": "name", "dn": "dn", "defval": "defval"}
+  },
+
   "unitList": {
     "table": "units",
     "propmap": { "_id": "id", "name": "name", "plugin": "plugin", "folder": "folder" }
