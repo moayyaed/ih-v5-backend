@@ -28,7 +28,7 @@
   {"id":"WRONGPWD",  "note":"无效密码!"},
   {"id":"INVALIDPWD", "note": "Insufficient password!" },
   {"id":"NEEDAUTH",  "note":"Authentication Required!"},
-  {"id":"WRONGTOKEN",  "note":"会话过期, 需要重新认证!"},
+  {"id":"INVALIDTOKEN",  "note":"会话过期, 需要重新认证!"},
   {"id":"ADMINMUSTEXISTS",  "note":"你必须拥有管理员权限!"},
   {"id":"SCRIPTHASSCENE",  "note":"脚本被联动使用!"},
   {"id":"SCRIPTINSCHEDULE",  "note":"脚本被包含在计划中"},

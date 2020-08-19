@@ -35,6 +35,37 @@
     }
   },
 
+  "globalgroup": {
+    "store": "db",
+    "collection": "lists",
+    "filter": { "list": "globalgroup" },
+    "defRootTitle": "Глобальные переменные",
+    "default": { "name": "New Folder" },
+    "ruleID": { "pref": "glg", "len": 3 }
+  },
+
+  "locals": {
+    "store": "db",
+    "collection": "locals",
+    "ruleID": { "pref": "local", "len": 3 },
+    "validator": {
+      "main": {
+        "name": { "required": true, "notempty": true },
+        "dn": { "required": true, "notempty": true, "unique": true }
+
+      }
+    }
+  },
+
+  "localgroup": {
+    "store": "db",
+    "collection": "lists",
+    "filter": { "list": "localgroup" },
+    "defRootTitle": "Локальные переменные",
+    "default": { "name": "New Folder" },
+    "ruleID": { "pref": "localg", "len": 3 }
+  },
+
   "chgroup": {
     "store": "db",
     "collection": "lists",
@@ -57,6 +88,8 @@
 
   "devicesTreeTable": { "store": "tree", "tree": "devdevices", "rows": true },
   "globalsTreeTable": { "store": "tree", "tree": "globals", "rows": true },
+  "localsTreeTable": { "store": "tree", "tree": "locals", "rows": true },
+
   "sysdevicesTreeTable": { "store": "tree", "tree": "sysdevices", "rows": true },
 
   "devicecommonTable": {
@@ -381,15 +414,6 @@
     "defRootTitle": "Изображения",
     "default": { "name": "New Folder" },
     "ruleID": { "pref": "img", "len": 3 }
-  },
-
-  "globalgroup": {
-    "store": "db",
-    "collection": "lists",
-    "filter": { "list": "globalgroup" },
-    "defRootTitle": "Переменные проекта",
-    "default": { "name": "New Folder" },
-    "ruleID": { "pref": "glg", "len": 3 }
   },
 
   "images": {

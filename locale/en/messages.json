@@ -28,7 +28,7 @@
   {"id":"WRONGPWD",  "note":"Invalid password!"},
   {"id":"INVALIDPWD", "note": "Insufficient password!" },
   {"id":"NEEDAUTH",  "note":"Authentication Required!"},
-  {"id":"WRONGTOKEN",  "note":"The session is out of date. Authentication Required!"},
+  {"id":"INVALIDTOKEN",  "note":"The session is out of date. Authentication Required!"},
   {"id":"ADMINMUSTEXISTS",  "note":"You must have at least one entry with administration rights!"},
   {"id":"SCRIPTHASSCENE",  "note":"Script has a working scene!"},
   {"id":"SCRIPTINSCHEDULE",  "note":"Script is included in the schedule"},

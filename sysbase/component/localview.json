@@ -1,0 +1,7 @@
+{
+  "tabs": [
+    { "id": "tabCommon", "title": "Переменная", "component": [{ "id": "formLocalVarCommon", "type": "form" }] }
+  ],
+
+  "defaultTab": "tabCommon"
+}
