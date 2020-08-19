@@ -31,5 +31,13 @@
     "child": {
       "defaultComponent": "elementlink"
     }
+  },
+  "locals": {
+    "parent": {
+      "defaultComponent": null
+    },
+    "child": {
+      "defaultComponent": "elementlink"
+    }
   }
 }

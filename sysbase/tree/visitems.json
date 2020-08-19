@@ -31,5 +31,13 @@
     "child": {
       "defaultComponent": "devicelink"
     }
+  },
+  "locals": {
+    "parent": {
+      "defaultComponent": null
+    },
+    "child": {
+      "defaultComponent": "devicelink"
+    }
   }
 }
