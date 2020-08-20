@@ -1,0 +1,8 @@
+{
+  "grid": [{ "id": "p1", "xs": 12, "class": "main" }],
+  "spacing": 10,
+
+  "p1": [
+    { "prop": "param", "title": "Value", "type": "input", "default":0 }
+  ]
+}
