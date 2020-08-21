@@ -11,7 +11,7 @@
     },
     "child": {
      
-      "defaultComponent": "setvalue"
+      "defaultComponent": "elementlink"
     }
   },
   "globals": {
@@ -19,7 +19,7 @@
       "defaultComponent": null
     },
     "child": {
-      "defaultComponent": "setvalue"
+      "defaultComponent": "elementlink"
     }
   },
   "locals": {
@@ -27,7 +27,7 @@
       "defaultComponent": null
     },
     "child": {
-      "defaultComponent": "setvalue"
+      "defaultComponent": "elementlink"
     }
   }
 }
