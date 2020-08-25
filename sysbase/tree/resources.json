@@ -11,7 +11,7 @@
         "main": [
           { "id": "2", "type": "item", "title": "New folder", "command": "addFolder" },
           { "id": "3", "type": "item", "title": "Load image", "command": "upload", "param": "image" },
-          { "id": "3", "type": "divider" },
+          { "id": "5", "type": "divider" },
           { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
         ]
       },
