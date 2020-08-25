@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabImageView",  "title": "Изображение", "component": [{ "id": "formImageView", "type": "form" }]  }
+  ],
+  "defaultTab": "tabImageView"
+}
