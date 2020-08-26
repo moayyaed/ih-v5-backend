@@ -1,0 +1,13 @@
+{
+  "common": {
+    "popup": {
+      "main": [{ "id": "1", "type": "divider", "title": "Edit" }]
+    }
+  },
+
+  "imagegroup": {
+    "parent": {
+      "defaultComponent": "imagegrid"
+    }
+  }
+}

@@ -181,6 +181,14 @@
     "leaf": { "table": "images", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
   },
 
+  "imagegroup": {
+    "branch": {
+      "table": "imagegroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+    },
+    "leaf":  { "table":""}
+  },
+
   "database": ["dbopt"],
   "dbopt": {
     "branch": {
