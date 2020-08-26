@@ -186,7 +186,8 @@
       "table": "imagegroup",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     },
-    "leaf":  { "table":""}
+    "leaf":  { "table":""},
+    "expanded": true
   },
 
   "database": ["dbopt"],
