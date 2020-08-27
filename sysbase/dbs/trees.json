@@ -44,6 +44,14 @@
     "leaf": { "table": "type", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
   },
 
+  "typeprops": {
+    "branch": {
+      "table": "typepropsTable",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+    },
+    "leaf": { "table": "typepropsTable", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
+  },
+
   "handlers": {
     "branch": {
       "table": "handlergroup",
