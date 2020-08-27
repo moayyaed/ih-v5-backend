@@ -5,7 +5,8 @@
   "spacing": 10,
 
   "p1": [
-    { "prop": "showhandlers", "title": "Функция-обработчик", "type": "script", "disabled": false }
+    { "prop": "op", "title": "Тип свойства", "type": "text" },
+    { "prop": "handler", "title": "Функция-обработчик", "type": "script", "disabled": false }
   ]
   
 }
