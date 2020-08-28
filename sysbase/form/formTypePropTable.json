@@ -41,19 +41,17 @@
           "hide": "data.op.id == 'cmd'"
         },
 
-        { "prop": "fname", "title": "Функция", "type": "droplist", "data": "handlers", "width": 250 },
         {
-          "prop": "when",
-          "title": "Запуск функции",
+          "prop": "fuse",
+          "title": "Обработчик",
           "type": "droplist",
           "data": [
-            { "id": "0", "title": "При изменении данных" },
-            { "id": "1", "title": "При получении данных" }
+            { "id": 0, "title": "Встроенный" },
+            { "id": 1, "title": "Не используется" },
+            { "id": 2, "title": "Пользовательский" }
           ],
-          "width": 250,
-          "hide": "data.op.id != 'calc'"
+          "width": 250
         },
-        { "prop": "trigger", "title": "Свойства-триггеры", "type": "input", "width": 250, "hide": "data.op.id != 'calc'" },
         { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide": "data.vtype.id != 'N'" },
         { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide": "data.vtype.id != 'N'" },
         { "prop": "dig", "title": "$Decdig", "type": "number", "width": 100, "hide": "data.vtype.id != 'N'" },

@@ -180,7 +180,7 @@
     "leaf": { "table": "user", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
   },
 
-  "resources": ["images", "vistemplate", "types", "handlers"],
+  "resources": ["images", "vistemplate", "types"],
   "images": {
     "branch": {
       "table": "imagegroup",
