@@ -7,7 +7,6 @@
   "breadcrumbs": { "tree": "images" },
 
   "p1": [
-    { "prop": "name", "title": "$Name", "type": "text" },
     { "prop": "image", "title": "$Image", "type": "image" }
   ]
  
