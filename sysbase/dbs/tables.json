@@ -421,6 +421,22 @@
     "collection": "images"
   },
 
+  "dialoggroup": {
+    "store": "db",
+    "collection": "lists",
+    "filter": { "list": "dialoggroup" },
+    "defRootTitle": "Диалоги",
+    "default": { "name": "New Folder" },
+    "ruleID": { "pref": "digroup", "len": 3 }
+  },
+
+  "dialog": {
+    "store": "db",
+    "ruleID": { "pref": "di", "len": 4 },
+    "default": { "name": "Новый диалог" },
+    "collection": "dialogs"
+  },
+
   "imagesTreeTable": { "store": "tree", "tree": "images", "rows": true },
 
   "dboptgroup": {

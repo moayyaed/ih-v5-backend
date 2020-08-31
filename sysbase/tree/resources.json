@@ -88,17 +88,11 @@
     }
   },
 
-  "handlers": {
+  "dialog": {
     "parent": {
       "popup": {
         "main": [
-          {
-            "id": "1",
-            "type": "remote",
-            "title": "New handler",
-            "command": "addNodeByContext",
-            "popupid": "handlerTypeList"
-          },
+          { "id": "1", "type": "item", "title": "New dialog", "command": "addNode" },
           { "id": "2", "type": "item", "title": "New folder", "command": "addFolder" },
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "Copy", "command": "copy" },
@@ -107,18 +101,12 @@
           { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
         ]
       },
-      "defaultComponent": "handlerfolder"
+      "defaultComponent": "dialogfolder"
     },
     "child": {
       "popup": {
         "main": [
-          {
-            "id": "1",
-            "type": "remote",
-            "title": "New handler",
-            "command": "addNodeByContext",
-            "popupid": "handlerTypeList"
-          },
+          { "id": "1", "type": "item", "title": "New dialog", "command": "addNode" },
           { "id": "2", "type": "item", "title": "New folder", "command": "addFolder" },
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "Copy", "command": "copy" },
@@ -127,7 +115,7 @@
           { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
         ]
       },
-      "defaultComponent": "handlerview"
+      "defaultComponent": "dialogview"
     }
   }
 }

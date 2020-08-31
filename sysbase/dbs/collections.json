@@ -22,6 +22,7 @@
 
   "handlers": { "folder": "jbasepath" },
   "images": { "folder": "jbasepath" },
+  "dialogs": { "folder": "jbasepath" },
   "dbopt": { "folder": "jbasepath" },
 
   "charts": { "folder": "jbasepath" },

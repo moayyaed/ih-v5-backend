@@ -180,7 +180,8 @@
     "leaf": { "table": "user", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
   },
 
-  "resources": ["images", "vistemplate", "types"],
+  "resources": ["images", "vistemplate", "dialog", "types"],
+
   "images": {
     "branch": {
       "table": "imagegroup",
@@ -196,6 +197,14 @@
     },
     "leaf":  { "table":""},
     "expanded": true
+  },
+
+  "dialog": {
+    "branch": {
+      "table": "dialoggroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+    },
+    "leaf": { "table": "dialog", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
   },
 
   "database": ["dbopt"],

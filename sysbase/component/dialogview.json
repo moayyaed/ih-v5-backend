@@ -1,0 +1,7 @@
+{
+  "tabs": [
+    { "id": "tabDialogCommon", "title": "Описание", "component": [{ "id": "formDialogCommon", "type": "form" }] },
+    { "id": "tabDialogEditor", "title": "Редактор", "component": [{ "id": "formDialog", "type": "form" }] }
+  ],
+  "defaultTab": "tabDialogCommon"
+}
