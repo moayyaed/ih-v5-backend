@@ -1,12 +1,14 @@
 {
   "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table": "type", "height": "fill", "padding": 4 }
+    { "id": "p1", "xs": 12, "class": "main", "table": "typepropsTable", "height": "fill", "padding": 4 }
   ],
   "spacing": 10,
 
+
   "p1": [
-    { "prop": "op", "title": "Тип свойства", "type": "text" },
-    { "prop": "handler", "title": "Функция-обработчик", "type": "script", "disabled": true }
+    { "prop": "op", "title": "Тип свойства", "type": "text", "hide": "true" },
+    { "prop": "fuse", "title": "Обработчик", "type": "text" },
+    { "prop": "handler", "title": "Функция-обработчик", "type": "script", "disabled": true,  "hide": "data.fuse == 1" }
   ]
   
 }
