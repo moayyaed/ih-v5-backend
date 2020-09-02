@@ -31,12 +31,17 @@
 
   "layoutList": {
     "table": "layout",
-    "propmap": { "_id": "id", "name": "title", "tags": "tags" }
+    "propmap": { "_id": "id", "name": "title" }
   },
 
   "containerList": {
     "table": "container",
-    "propmap": { "_id": "id", "name": "title", "tags": "tags" }
+    "propmap": { "_id": "id", "name": "title" }
+  },
+
+  "dialogList": {
+    "table": "dialog",
+    "propmap": { "_id": "id", "name": "title" }
   },
 
   "handlerList": {

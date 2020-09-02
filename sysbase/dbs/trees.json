@@ -199,6 +199,8 @@
     "expanded": true
   },
 
+  "dialogx": ["dialog"], 
+  
   "dialog": {
     "branch": {
       "table": "dialoggroup",

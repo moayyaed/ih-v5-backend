@@ -1,0 +1,15 @@
+{
+  "common": {
+    "popup": {}
+  },
+
+  "layout": {
+    "parent": {
+      "defaultComponent": null
+    },
+
+    "child": {
+      "defaultComponent": "formDialogx"
+    }
+  }
+}
