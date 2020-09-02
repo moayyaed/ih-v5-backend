@@ -5,6 +5,6 @@
   "p1": [
     { "prop": "op", "title": "Тип свойства", "type": "text", "hide": "true" },
     { "prop": "fuse", "title": "Обработчик", "type": "text" },
-    { "prop": "handler", "title": "Функция-обработчик", "type": "script", "disabled": true, "hide": "data.op != 'rw'" }
+    { "prop": "handler", "title": "Функция-обработчик", "type": "script", "disabled": true, "hide": "data.p1.op != 'rw'" }
   ]
 }
