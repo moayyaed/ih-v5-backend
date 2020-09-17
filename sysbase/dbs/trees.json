@@ -64,6 +64,7 @@
   "elements": ["devicesExp", "sysdevices", "globals", "locals"],
   "elementsAndVistemplates": ["devicesExp", "sysdevices", "globals", "locals", "vistemplate"],
   "visitems": ["devicesExp", "sysdevices", "globals", "locals"],
+  "visitemsAndVistemplates": ["devicesExp", "sysdevices", "globals", "locals", "vistemplate"],
   "setitems": ["devicesExp", "globals", "locals"],
 
   "devcmd": ["devicesExp"],
