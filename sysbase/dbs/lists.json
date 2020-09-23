@@ -64,13 +64,16 @@
     "table": "handler",
     "propmap": { "_id": "id", "name": "title", "status": "status", "type": "type" }
   },
-  "handlerTypeList": {
+
+  "fuseList": {
     "data": [
-      { "id": "read", "title": "onRead" },
-      { "id": "calculate", "title": "Calculate" },
-      { "id": "command", "title": "Command" }
+      { "id": 0, "title": "Не используется" },
+      { "id": 1, "title": "Встроенный" },
+      { "id": 2, "title": "Пользовательский" }
     ]
   },
+
+
   "unitStateList": {
     "data": [
       { "id": 0, "title": "Run error" },

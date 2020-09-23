@@ -181,7 +181,7 @@
       }
     },
 
-    "default": { "name": "$NewType", "props": { "value": { "name": "Значение", "vtype": "B", "op": "rw", "fuse":0 } } },
+    "default": { "name": "$NewType", "props": { "value": { "name": "Значение", "vtype": "B", "op": "rw", "fuse":1 } } },
     "ruleID": { "pref": "t", "len": 3 }
   },
 

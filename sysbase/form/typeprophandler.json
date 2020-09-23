@@ -4,7 +4,8 @@
 
   "p1": [
     { "prop": "op", "title": "Тип свойства", "type": "text", "hide": "true" },
-    { "prop": "fuse", "title": "Обработчик", "type": "text" },
-    { "prop": "handler", "title": "Функция-обработчик", "type": "script", "disabled": true, "hide": "data.p1.op != 'rw'" }
+    { "prop": "fuse", "title": "Обработчик", "type": "text", "hide": "true" },
+    { "prop": "fuse_name", "title": "Обработчик", "type": "text" },
+    { "prop": "handler", "title": "Функция-обработчик", "type": "script", "disabled": false, "hide": "!data.p1.fuse" }
   ]
 }
