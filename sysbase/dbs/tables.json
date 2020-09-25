@@ -17,7 +17,6 @@
         "name": { "required": true, "notempty": true },
         "dn": { "required": true, "notempty": true, "unique": true },
         "type": { "required": true, "notempty": true }
-
       }
     }
   },
@@ -30,7 +29,6 @@
       "main": {
         "name": { "required": true, "notempty": true },
         "dn": { "required": true, "notempty": true, "unique": true }
-
       }
     }
   },
@@ -52,7 +50,6 @@
       "main": {
         "name": { "required": true, "notempty": true },
         "dn": { "required": true, "notempty": true, "unique": true }
-
       }
     }
   },
@@ -77,7 +74,7 @@
   "channels": { "store": "db", "collection": "devhard" },
 
   "devhard": {
-    "store": "db", 
+    "store": "db",
     "collection": "devhard",
     "validator": {
       "main": {
@@ -111,19 +108,19 @@
     "genfield": "props"
   },
 
-  "devicesceneTable":{
+  "devicesceneTable": {
     "store": "none"
   },
 
-  "devicevisTable":{
+  "devicevisTable": {
     "store": "none"
   },
 
-  "sysdeviceTable":{
+  "sysdeviceTable": {
     "store": "none"
   },
 
-  "sysdevicegroupTable":{
+  "sysdevicegroupTable": {
     "store": "none"
   },
 
@@ -181,11 +178,14 @@
       }
     },
 
-    "default": { "name": "$NewType", "props": { "value": { "name": "Значение", "vtype": "B", "op": "rw", "fuse":1 } } },
+    "default": {
+      "name": "$NewType",
+      "props": { "value": { "name": "Значение", "vtype": "B", "op": "rw", "fuse": 1 } }
+    },
     "ruleID": { "pref": "t", "len": 3 }
   },
 
-  "typepropsTable":{
+  "typepropsTable": {
     "store": "db",
     "collection": "types",
     "genfield": "props",
@@ -205,7 +205,6 @@
 
     "default": { "name": "$NewType", "props": { "value": { "name": "Значение", "vtype": "B", "op": "r" } } },
     "ruleID": { "pref": "t", "len": 3 }
-
   },
 
   "typesTreeTable": { "store": "tree", "tree": "types", "collection": "types", "rows": true },
@@ -259,8 +258,7 @@
     "ruleID": { "pref": "vt", "len": 3 }
   },
 
-
-  "templateusageTable":{
+  "templateusageTable": {
     "store": "none"
   },
 
@@ -285,21 +283,6 @@
     "collection": "scenecalls",
     "rows": true,
     "ruleID": { "pref": "call", "len": 3 }
-  },
-
-  "handlergroup": {
-    "store": "db",
-    "collection": "lists",
-    "filter": { "list": "handlergroup" },
-    "defRootTitle": "Функции-обработчики",
-    "default": { "name": "$NewFolder" },
-    "ruleID": { "pref": "fng", "len": 3 }
-  },
-
-  "handler": {
-    "store": "db",
-    "collection": "handlers",
-    "ruleID": { "pref": "fun", "len": 3 }
   },
 
   "handlertypesTable": { "store": "db", "collection": "types", "rows": true },
@@ -330,7 +313,7 @@
 
   "unitsTreeTable": { "store": "tree", "tree": "plugins", "collection": "units", "rows": true },
 
-  "selectplugin":{
+  "selectplugin": {
     "store": "none"
   },
 
@@ -453,15 +436,14 @@
     "collection": "dbopt"
   },
 
-
   "tokens": { "store": "db", "collection": "tokens" },
   "devcurrent": { "store": "db", "collection": "devcurrent" },
 
   "devicelog": { "store": "db", "collection": "devicelog" },
-  "devicelogTable":{ "store": "tree", "tree": "devdevices", "collection": "devices", "rows": true },
+  "devicelogTable": { "store": "tree", "tree": "devdevices", "collection": "devices", "rows": true },
 
   "pluginlog": { "store": "db", "collection": "pluginlog" },
-  "pluginlogTable":{ "store": "tree", "tree": "plugins", "collection": "units", "rows": true },
+  "pluginlogTable": { "store": "tree", "tree": "plugins", "collection": "units", "rows": true },
 
   "userlog": { "store": "db", "collection": "userlog" },
 

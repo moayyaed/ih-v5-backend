@@ -51,7 +51,8 @@
         { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide": "data.vtype.id != 'N'" },
         { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide": "data.vtype.id != 'N'" },
         { "prop": "dig", "title": "$Decdig", "type": "number", "width": 100, "hide": "data.vtype.id != 'N'" },
-        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 50, "hide": "data.vtype.id != 'N'" }
+        { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 50, "hide": "data.vtype.id != 'N'" },
+        { "prop": "errstr", "title": "", "type": "text", "width": 150 }
       ]
     }
   ]

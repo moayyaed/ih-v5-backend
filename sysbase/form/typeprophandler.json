@@ -1,11 +1,14 @@
 {
-  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "typepropsTable", "height": "fill", "padding": 4 }],
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "typepropsTable", "height": "fill", "padding": 4 }
+  ],
   "spacing": 10,
 
   "p1": [
     { "prop": "op", "title": "Тип свойства", "type": "text", "hide": "true" },
     { "prop": "fuse", "title": "Обработчик", "type": "text", "hide": "true" },
     { "prop": "fuse_name", "title": "Обработчик", "type": "text" },
+    { "prop": "errstr", "title": "", "type": "text", "hide": "!data.p1.errstr" },
     { "prop": "handler", "title": "Функция-обработчик", "type": "script", "disabled": false, "hide": "!data.p1.fuse" }
   ]
 }

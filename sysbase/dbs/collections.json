@@ -20,7 +20,6 @@
   "scenes": { "folder": "jbasepath" },
   "scenecalls": { "folder": "jbasepath" },
 
-  "handlers": { "folder": "jbasepath" },
   "images": { "folder": "jbasepath" },
   "dialogs": { "folder": "jbasepath" },
   "dbopt": { "folder": "jbasepath" },

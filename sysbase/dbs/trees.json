@@ -49,15 +49,10 @@
       "table": "typepropsTable",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     },
-    "leaf": { "table": "typepropsTable", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
-  },
-
-  "handlers": {
-    "branch": {
-      "table": "handlergroup",
+    "leaf": {
+      "table": "typepropsTable",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
-    },
-    "leaf": { "table": "handler", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
+    }
   },
 
   "devices": ["devicesExp"],
@@ -197,12 +192,12 @@
       "table": "imagegroup",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     },
-    "leaf":  { "table":""},
+    "leaf": { "table": "" },
     "expanded": true
   },
 
-  "dialogx": ["dialog"], 
-  
+  "dialogx": ["dialog"],
+
   "dialog": {
     "branch": {
       "table": "dialoggroup",
