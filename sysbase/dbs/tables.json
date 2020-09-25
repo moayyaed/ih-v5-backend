@@ -285,7 +285,6 @@
     "ruleID": { "pref": "call", "len": 3 }
   },
 
-  "handlertypesTable": { "store": "db", "collection": "types", "rows": true },
 
   "plugingroup": {
     "store": "db",
