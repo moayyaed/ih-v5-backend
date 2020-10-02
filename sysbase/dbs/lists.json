@@ -57,6 +57,13 @@
     ]
   },
 
+  "roleList": {
+    "data": [
+      { "id": 0, "title": "" },
+      { "id": 1, "title": "Встроенный" },
+      { "id": 2, "title": "Пользовательский" }
+    ]
+  },
 
   "unitStateList": {
     "data": [
