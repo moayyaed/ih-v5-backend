@@ -60,9 +60,9 @@
   "roleList": {
     "data": [
       { "id": "admin", "title": "Admin" },
-      { "id": "aguest", "title": "Admin guest" },
+      { "id": "guest_admin", "title": "Admin guest" },
       { "id": "user", "title": "User" },
-      { "id": "uguest", "title": "User guest" }
+      { "id": "guest_user", "title": "User guest" }
     ]
   },
 
