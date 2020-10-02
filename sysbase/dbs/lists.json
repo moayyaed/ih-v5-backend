@@ -59,9 +59,10 @@
 
   "roleList": {
     "data": [
-      { "id": 0, "title": "" },
-      { "id": 1, "title": "Встроенный" },
-      { "id": 2, "title": "Пользовательский" }
+      { "id": "admin", "title": "Admin" },
+      { "id": "aguest", "title": "Admin guest" },
+      { "id": "user", "title": "User" },
+      { "id": "uguest", "title": "User guest" }
     ]
   },
 

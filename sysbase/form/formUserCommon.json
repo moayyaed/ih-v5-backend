@@ -10,8 +10,8 @@
     { "prop": "name", "title": "$User_Name", "type": "input" },
     { "prop": "login", "title": "$User_Login", "type": "input" },
     { "prop": "pwd", "title": "$User_Pwd", "type": "password" },
+    { "prop": "role", "title": "$User_Role", "type": "droplist",  "data": "roleList" },
     { "prop": "mainlay", "title": "$User_Mainlay", "type": "droplist", "data": "layoutList" }
-
    
   ],
   "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
