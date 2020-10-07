@@ -10,7 +10,7 @@
       "popup": {
         "main": [
           { "id": "1", "type": "item", "title": "New folder", "command": "addFolder" },
-          { "id": "2", "type": "remote", "title": "New project", "command": "addNode"},
+          { "id": "2", "type": "item", "title": "New project", "command": "addNode"},
         
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "Copy", "command": "copy" },
@@ -18,9 +18,10 @@
           { "id": "6", "type": "divider" },
           
          
-          { "id": "7", "type": "item", "title": "Load project", "command": "upload", "param": "project" },
-          { "id": "8", "type": "divider" },
-          { "id": "9", "type": "item", "title": "Delete", "command": "delete" }
+          { "id": "7", "type": "item", "title": "Import project", "command": "upload", "param": "project" },
+          { "id": "8", "type": "item", "title": "Export project", "command": "download", "param": "project" },
+          { "id": "9", "type": "divider" },
+          { "id": "10", "type": "item", "title": "Delete project", "command": "delete" }
         ]
       },
       "defaultComponent": "projectfolder"
