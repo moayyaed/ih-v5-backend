@@ -21,6 +21,7 @@
   "scenecalls": { "folder": "jbasepath" },
 
   "images": { "folder": "jbasepath" },
+  "projects": { "folder": "jbasepath" },
   "dialogs": { "folder": "jbasepath" },
   "dbopt": { "folder": "jbasepath" },
 

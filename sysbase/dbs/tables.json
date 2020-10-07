@@ -403,6 +403,21 @@
     "collection": "images"
   },
 
+
+  "projectgroup": {
+    "store": "db",
+    "collection": "lists",
+    "filter": { "list": "projectgroup" },
+    "defRootTitle": "Проекты",
+    "default": { "name": "New Folder" },
+    "ruleID": { "pref": "prj", "len": 3 }
+  },
+
+  "projects": {
+    "store": "db",
+    "collection": "projects"
+  },
+
   "dialoggroup": {
     "store": "db",
     "collection": "lists",
