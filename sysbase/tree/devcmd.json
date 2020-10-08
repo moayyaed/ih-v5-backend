@@ -11,14 +11,5 @@
     "child": {
       "defaultComponent": "devicelink"
     }
-  },
-
-  "anydevcmd": {
-    "parent": {
-      "defaultComponent": null
-    },
-    "child": {
-      "defaultComponent": "devicelink"
-    }
   }
 }

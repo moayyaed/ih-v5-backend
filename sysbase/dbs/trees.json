@@ -80,7 +80,7 @@
   "visitemsAndVistemplates": ["devicesExp", "sysdevices", "globals", "locals", "vistemplate"],
   "setitems": ["devicesExp", "globals", "locals"],
 
-  "devcmd": ["devicesExp", "anydevcmd"],
+  "devcmd": ["devicesExp"],
   "devcmdAndAny": ["devicesExp", "anydevcmd"],
   "anydevcmd": {
     "data": [
