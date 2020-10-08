@@ -57,12 +57,30 @@
 
   "devices": ["devicesExp"],
   "elements": ["devicesExp", "sysdevices", "globals", "locals"],
-  "elementsAndVistemplates": ["devicesExp", "sysdevices", "globals", "locals", "vistemplate"],
+  "elementsAndVistemplates": ["devicesExp", "sysdevices", "globals", "locals", "vistemplate", "anydev"],
+  "elementsAndAny": ["devicesExp", "sysdevices", "globals", "locals", "anydev"],
+  "anydev": {
+    "data": [
+      {
+        "title": "Любое устройство",
+        "id": "anyRoot",
+        "root": "anydevcmd",
+        "expanded": true,
+        "children": [
+          {
+            "title": "Свойства",
+            "id": "__device"
+          }
+        ]
+      }
+    ]
+  },
+
   "visitems": ["devicesExp", "sysdevices", "globals", "locals"],
   "visitemsAndVistemplates": ["devicesExp", "sysdevices", "globals", "locals", "vistemplate"],
   "setitems": ["devicesExp", "globals", "locals"],
 
-  "devcmd": ["devicesExp"],
+  "devcmd": ["devicesExp", "anydevcmd"],
   "devcmdAndAny": ["devicesExp", "anydevcmd"],
   "anydevcmd": {
     "data": [
