@@ -3,5 +3,6 @@
   "spacing": 10,
 
   "p1": [
+    { "prop": "device", "title": "Устройство - контекст", "type": "droplist", "data":"deviceList" }
   ]
 }

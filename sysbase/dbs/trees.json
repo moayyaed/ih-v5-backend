@@ -68,8 +68,12 @@
         "expanded": true,
         "children": [
           {
-            "title": "Свойства",
+            "title": "Динамические свойства",
             "id": "__device"
+          },
+          {
+            "title": "Статические свойства",
+            "id": "__devstat"
           }
         ]
       }
