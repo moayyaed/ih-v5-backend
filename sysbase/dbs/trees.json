@@ -64,7 +64,7 @@
       {
         "title": "Любое устройство",
         "id": "anyRoot",
-        "root": "anydevcmd",
+        "root": "anydev",
         "expanded": true,
         "children": [
           {
