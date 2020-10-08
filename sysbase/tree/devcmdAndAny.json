@@ -1,0 +1,24 @@
+{
+  "common": {
+    "popup": {
+      "main": [{ "id": "1", "type": "divider", "title": "Edit" }]
+    }
+  },
+  "devicesExp": {
+    "parent": {
+      "defaultComponent": null
+    },
+    "child": {
+      "defaultComponent": "devicelink"
+    }
+  },
+
+  "anydevcmd": {
+    "parent": {
+      "defaultComponent": null
+    },
+    "child": {
+      "defaultComponent": "devicelink"
+    }
+  }
+}

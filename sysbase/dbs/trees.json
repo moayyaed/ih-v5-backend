@@ -63,6 +63,23 @@
   "setitems": ["devicesExp", "globals", "locals"],
 
   "devcmd": ["devicesExp"],
+  "devcmdAndAny": ["devicesExp", "anydevcmd"],
+  "anydevcmd": {
+    "data": [
+      {
+        "title": "Любое устройство",
+        "id": "anyRoot",
+        "root": "anydevcmd",
+        "expanded": true,
+        "children": [
+          {
+            "title": "Команды",
+            "id": "__device"
+          }
+        ]
+      }
+    ]
+  },
 
   "devicesExp": {
     "branch": { "table": "place", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } },
@@ -197,7 +214,7 @@
   },
 
   "settings": ["projects"],
-  
+
   "projects": {
     "branch": {
       "table": "projectgroup",
