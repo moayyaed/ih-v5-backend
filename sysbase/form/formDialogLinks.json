@@ -15,9 +15,10 @@
 
       "columns": [
        
-        { "prop": "element", "title": "Элемент", "type": "text", "width": 450  },
-        { "prop": "did", "title": "Привязка did", "type": "text", "width": 250 },
-        { "prop": "prop", "title": "Привязка prop", "type": "text", "width": 250 }
+        { "prop": "element", "title": "Элемент", "type": "text", "width": 250  },
+        { "prop": "device_name", "title": "Устройство", "type": "text", "width": 250 },
+        { "prop": "dprop", "title": "Свойство/команда", "type": "text", "width": 250 },
+        { "prop": "sprop", "title": "Статическое свойство", "type": "text", "width": 250 }
       ]
     }
   ]
