@@ -1,0 +1,24 @@
+{
+  "grid": [
+   
+    { "id": "p3", "xs": 12, "class": "main", "table": "dialoglinksTable", "height": "fill" }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "dialog" },
+
+  "p3": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "dialoglinksTable",
+    
+
+      "columns": [
+       
+        { "prop": "element", "title": "Элемент", "type": "text", "width": 450  },
+        { "prop": "did", "title": "Привязка did", "type": "text", "width": 250 },
+        { "prop": "prop", "title": "Привязка prop", "type": "text", "width": 250 }
+      ]
+    }
+  ]
+}

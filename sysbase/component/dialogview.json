@@ -1,7 +1,8 @@
 {
   "tabs": [
-    { "id": "tabDialogCommon", "title": "Описание", "component": [{ "id": "formDialogCommon", "type": "form" }] },
-    { "id": "tabDialogEditor", "title": "Редактор", "component": [{ "id": "formDialog", "type": "form" }] }
+    { "id": "tabCommon", "title": "Описание", "component": [{ "id": "formDialogCommon", "type": "form" }] },
+    { "id": "tabEditor", "title": "Редактор", "component": [{ "id": "formDialog", "type": "form" }] },
+    { "id": "tabLinks", "title": "Привязки", "component": [{ "id": "formDialogLinks", "type": "form" }] }
   ],
   "defaultTab": "tabDialogCommon"
 }
