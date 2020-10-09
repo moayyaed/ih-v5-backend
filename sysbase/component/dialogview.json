@@ -4,5 +4,5 @@
     { "id": "tabEditor", "title": "Редактор", "component": [{ "id": "formDialog", "type": "form" }] },
     { "id": "tabLinks", "title": "Привязки", "component": [{ "id": "formDialogLinks", "type": "form" }] }
   ],
-  "defaultTab": "tabDialogCommon"
+  "defaultTab": "tabCommon"
 }
