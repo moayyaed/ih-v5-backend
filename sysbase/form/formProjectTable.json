@@ -1,0 +1,22 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"projectsTreeTable", "height":"fill"}
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "projects" },
+
+  "p1": [
+    {
+      "title": "Projects",
+      "type": "table",
+      "prop": "projectsTreeTable",
+
+      "columns": [
+
+        { "prop": "title_link", "title": "Проект", "type": "text", "command":"forward",  "width": 200  },
+        { "prop": "projectfolder", "title": "Папка проекта", "type": "text",  "width": 100 },
+        { "prop": "path", "title": "", "type": "text",  "width": 200 }
+      ]
+    }
+  ]
+}

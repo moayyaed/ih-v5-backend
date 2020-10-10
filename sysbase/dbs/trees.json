@@ -240,9 +240,9 @@
   "projects": {
     "branch": {
       "table": "projectgroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order",  "folder": "folder" }
     },
-    "leaf": { "table": "projects", "propmap": { "_id": "id", "title": "title", "parent": "parent", "order": "order" } }
+    "leaf": { "table": "projects", "propmap": { "_id": "id", "title": "title", "parent": "parent", "order": "order",   "folder": "folder" } }
   },
 
   "dialogx": ["dialog"],

@@ -93,6 +93,7 @@
   "localsTreeTable": { "store": "tree", "tree": "locals", "rows": true },
 
   "sysdevicesTreeTable": { "store": "tree", "tree": "sysdevices", "rows": true },
+  "projectsTreeTable": { "store": "tree", "tree": "projects", "rows": true },
 
   "devicecommonTable": {
     "store": "db",
@@ -415,8 +416,8 @@
 
   "projectgroup": {
     "store": "db",
-    "collection": "lists",
-    "filter": { "list": "projectgroup" },
+    "collection": "projects",
+    "filter": { "folder": 1 },
     "defRootTitle": "Проекты",
     "default": { "name": "New Folder" },
     "ruleID": { "pref": "prj", "len": 3 }

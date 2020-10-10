@@ -29,6 +29,11 @@
     "propmap": { "_id": "id", "name": "name", "plugin": "plugin", "folder": "folder" }
   },
 
+  "projectList": {
+    "table": "projects",
+    "propmap": { "_id": "id", "tite": "title", "active": "active", "projectfolder": "projectfolder" }
+  },
+
   "sceneList": {
     "table": "scene",
     "propmap": { "_id": "id", "name": "name", "tags": "tags", "status": "status", "multi": "multi" }
