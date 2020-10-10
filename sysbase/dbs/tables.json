@@ -460,7 +460,6 @@
   },
 
   "tokens": { "store": "db", "collection": "tokens" },
-  "devcurrent": { "store": "db", "collection": "devcurrent" },
 
   "devicelog": { "store": "db", "collection": "devicelog" },
   "devicelogTable": { "store": "tree", "tree": "devdevices", "collection": "devices", "rows": true },
