@@ -83,6 +83,11 @@
     }
   },
 
+  "devparam": {
+    "store": "db",
+    "collection": "devparam"
+  },
+
   "devicesTreeTable": { "store": "tree", "tree": "devdevices", "rows": true },
   "globalsTreeTable": { "store": "tree", "tree": "globals", "rows": true },
   "localsTreeTable": { "store": "tree", "tree": "locals", "rows": true },

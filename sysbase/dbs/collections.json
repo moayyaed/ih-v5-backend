@@ -3,6 +3,7 @@
   "devices": { "folder": "jbasepath" },
   "devicedb": { "folder": "jbasepath" },
   "devhard": { "folder": "jbasepath" },
+  "devparam": { "folder": "jbasepath" },
   "pluginextra": { "folder": "jbasepath" },
 
   "globals": { "folder": "jbasepath" },
