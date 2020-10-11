@@ -8,9 +8,10 @@
 
   "p1": [
     { "prop": "active", "title": "", "type": "text" },
-    { "prop": "_id", "title": "Папка проекта", "type": "text", "hide":"data.p1._id != data.p1.folder" },
-    { "prop": "folder", "title": "Папка проекта", "type": "input", "hide":"data.p1._id == data.p1.folder" },
-    { "prop": "title", "title": "Наименование проекта", "type": "input" }
+    { "prop": "_id", "title": "ID ", "type": "text" },
+    { "prop": "projectfolder", "title": "Папка проекта", "type": "input", "hide":"data.p1._id == data.p1.folder" },
+    { "prop": "title", "title": "Наименование проекта", "type": "input" },
+    { "prop": "version", "title": "Версия", "type": "text" }
   ],
   "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
   
