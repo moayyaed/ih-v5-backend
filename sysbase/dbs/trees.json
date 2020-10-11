@@ -128,11 +128,11 @@
   "vistemplate": {
     "branch": {
       "table": "vistemplategroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
     "leaf": {
       "table": "template",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
 
