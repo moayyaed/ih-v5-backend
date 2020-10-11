@@ -35,8 +35,8 @@
 
   "globalgroup": {
     "store": "db",
-    "collection": "lists",
-    "filter": { "list": "globalgroup" },
+    "collection": "globals",
+    "filter": { "folder": 1 },
     "defRootTitle": "Глобальные переменные",
     "default": { "name": "New Folder" },
     "ruleID": { "pref": "glg", "len": 3 }
@@ -56,8 +56,8 @@
 
   "localgroup": {
     "store": "db",
-    "collection": "lists",
-    "filter": { "list": "localgroup" },
+    "collection": "locals",
+    "filter": { "folder": 1 },
     "defRootTitle": "Локальные переменные",
     "default": { "name": "New Folder" },
     "ruleID": { "pref": "localg", "len": 3 }
@@ -163,8 +163,8 @@
 
   "typegroup": {
     "store": "db",
-    "collection": "lists",
-    "filter": { "list": "typegroup" },
+    "collection": "types",
+    "filter": { "folder": 1 },
     "defRootTitle": "Типы устройств",
     "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "tg", "len": 3 }
@@ -222,8 +222,8 @@
 
   "layoutgroup": {
     "store": "db",
-    "collection": "lists",
-    "filter": { "list": "layoutgroup" },
+    "collection": "layouts",
+    "filter": { "folder": 1 },
     "defRootTitle": "Экраны",
     "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "lg", "len": 3 }
@@ -238,8 +238,8 @@
 
   "viscontgroup": {
     "store": "db",
-    "collection": "lists",
-    "filter": { "list": "viscontgroup" },
+    "collection": "visconts",
+    "filter": { "folder": 1 },
     "defRootTitle": "Контейнеры",
     "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "vcg", "len": 3 }
@@ -254,8 +254,8 @@
 
   "vistemplategroup": {
     "store": "db",
-    "collection": "lists",
-    "filter": { "list": "vistemplategroup" },
+    "collection": "vistemplates",
+    "filter": { "folder": 1 },
     "defRootTitle": "Шаблоны визуализации",
     "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "vtg", "len": 3 }
@@ -274,8 +274,8 @@
 
   "scenegroup": {
     "store": "db",
-    "collection": "lists",
-    "filter": { "list": "scenegroup" },
+    "collection": "scenes",
+    "filter": { "folder": 1 },
     "defRootTitle": "Сценарии",
     "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "sg", "len": 3 }
@@ -328,8 +328,8 @@
 
   "snippetgroup": {
     "store": "db",
-    "collection": "lists",
-    "filter": { "list": "snippetroup" },
+    "collection": "snippets",
+    "filter": { "folder": 1 },
     "defRootTitle": "Сниппеты",
     "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "sng", "len": 3 }
@@ -344,8 +344,8 @@
 
   "chartgroup": {
     "store": "db",
-    "collection": "lists",
-    "filter": { "list": "chartgroup" },
+    "collection": "charts",
+    "filter": { "folder": 1 },
     "defRootTitle": "Графики",
     "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "cg", "len": 3 }
@@ -353,8 +353,8 @@
 
   "reportgroup": {
     "store": "db",
-    "collection": "lists",
-    "filter": { "list": "reportgroup" },
+    "collection": "reports",
+    "filter": { "folder": 1 },
     "defRootTitle": "Отчеты",
     "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "rg", "len": 3 }
@@ -378,8 +378,8 @@
 
   "usergroup": {
     "store": "db",
-    "collection": "lists",
-    "filter": { "list": "usergroup" },
+    "collection": "users",
+    "filter": { "folder": 1 },
     "defRootTitle": "Пользователи",
     "default": { "name": "New Folder" },
     "ruleID": { "pref": "ug", "len": 3 }
@@ -401,8 +401,8 @@
 
   "imagegroup": {
     "store": "db",
-    "collection": "lists",
-    "filter": { "list": "imagegroup" },
+    "collection": "images",
+    "filter": {  "folder": 1 },
     "defRootTitle": "Изображения",
     "default": { "name": "New Folder" },
     "ruleID": { "pref": "img", "len": 3 }
@@ -430,8 +430,8 @@
 
   "dialoggroup": {
     "store": "db",
-    "collection": "lists",
-    "filter": { "list": "dialoggroup" },
+    "collection": "dialogs",
+    "filter": { "folder": 1 },
     "defRootTitle": "Диалоги",
     "default": { "name": "New Folder" },
     "ruleID": { "pref": "digroup", "len": 3 }

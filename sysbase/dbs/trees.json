@@ -23,25 +23,25 @@
   "globals": {
     "branch": {
       "table": "globalgroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
-    "leaf": { "table": "globals", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
+    "leaf": { "table": "globals", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" } }
   },
 
   "locals": {
     "branch": {
       "table": "localgroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
-    "leaf": { "table": "locals", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
+    "leaf": { "table": "locals", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" } }
   },
 
   "types": {
     "branch": {
       "table": "typegroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
-    "leaf": { "table": "type", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
+    "leaf": { "table": "type", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" } }
   },
 
   "typeprops": {
@@ -117,11 +117,11 @@
   "viscont": {
     "branch": {
       "table": "viscontgroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
     "leaf": {
       "table": "container",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
 
@@ -139,11 +139,11 @@
   "layout": {
     "branch": {
       "table": "layoutgroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
     "leaf": {
       "table": "layout",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
 
@@ -152,11 +152,11 @@
   "scenes": {
     "branch": {
       "table": "scenegroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
     "leaf": {
       "table": "scene",
-      "propmap": { "_id": "id", "name": "name", "title": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "name", "title": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
 
@@ -211,9 +211,11 @@
   "users": {
     "branch": {
       "table": "usergroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
-    "leaf": { "table": "user", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
+    "leaf": { 
+      "table": "user", 
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" } }
   },
 
   "resources": ["images", "vistemplate", "dialog", "types"],
@@ -221,15 +223,18 @@
   "images": {
     "branch": {
       "table": "imagegroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
-    "leaf": { "table": "images", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
+    "leaf": {
+      "table": "images",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
   },
 
   "imagegroup": {
     "branch": {
       "table": "imagegroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
     "leaf": { "table": "" },
     "expanded": true
@@ -240,9 +245,12 @@
   "projects": {
     "branch": {
       "table": "projectgroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order",  "folder": "folder" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
-    "leaf": { "table": "projects", "propmap": { "_id": "id", "title": "title", "parent": "parent", "order": "order",   "folder": "folder" } }
+    "leaf": {
+      "table": "projects",
+      "propmap": { "_id": "id", "title": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
   },
 
   "dialogx": ["dialog"],
@@ -250,9 +258,9 @@
   "dialog": {
     "branch": {
       "table": "dialoggroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
-    "leaf": { "table": "dialog", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
+    "leaf": { "table": "dialog", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder"} }
   },
 
   "database": ["dbopt"],
@@ -267,11 +275,11 @@
   "snippets": {
     "branch": {
       "table": "snippetgroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
     "leaf": {
       "table": "snippets",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
 
@@ -279,21 +287,21 @@
   "charts": {
     "branch": {
       "table": "chartgroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
     "leaf": {
       "table": "charts",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
   "reports": {
     "branch": {
       "table": "reportgroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
     "leaf": {
       "table": "reports",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   }
 }
