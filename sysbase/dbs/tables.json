@@ -265,7 +265,13 @@
     "store": "db",
     "collection": "vistemplates",
     "default": { "name": "Новый шаблон" },
-    "ruleID": { "pref": "vt", "len": 3 }
+    "ruleID": { "pref": "vt", "len": 3 },
+    "validator": {
+      "main": {
+        "exid": {"validid": true },
+        "expref": {"validid": true }
+      }
+    }
   },
 
   "templateusageTable": {

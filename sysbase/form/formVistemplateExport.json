@@ -1,0 +1,14 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 4, "class": "main", "table": "template" },
+    { "id": "p2", "xs": 4, "class": "main", "table": "template", "height":250 }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "vistemplate" },
+
+  "p1": [
+    { "prop": "__idprefix", "title": "Prefix", "type": "text" },
+    { "prop": "exid", "title": "ID для выгрузки", "type": "input" }
+  ],
+  "p2": [{ "prop": "expref", "title": "Префикс для выгрузки", "type": "input" }]
+}
