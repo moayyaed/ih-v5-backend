@@ -11,7 +11,7 @@
         "main": [
           { "id": "1", "type": "remote", "title": "New plugin instance", "command": "addNodeByContext", "popupid": "plugininstance" },
           { "id": "3", "type": "divider" },
-          { "id": "7", "type": "item", "title": "Delete plugin and all instances", "command": "delete" }
+          { "id": "7", "type": "item", "title": "Delete plugin instance", "command": "delete" }
         ]
       },
       "defaultComponent": "pluginfolder"
