@@ -1,7 +1,7 @@
 {
   "typeList": {
     "table": "type",
-    "propmap": { "_id": "id", "name": "title", "tags": "tags" }
+    "propmap": { "_id": "id", "name": "title", "tags": "tags", "ruledn_pref":"ruledn_pref" }
   },
   
   "deviceList": {
