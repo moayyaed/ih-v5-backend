@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="24" height="24" viewBox="0, 0, 24, 24">
+  <defs>
+    <linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="-0.809" y1="24.97" x2="50.722" y2="24.97" gradientTransform="matrix(0.48, 0, 0, 0.482, 0, 0)">
+      <stop offset="0" stop-color="#F2F2F1"/>
+      <stop offset="1" stop-color="#6C6D6C"/>
+    </linearGradient>
+    <clipPath id="Clip_1">
+      <path d="M-0,1.988 L24,1.988 L24,22.012 L-0,22.012 z M17.318,8.11 L12.809,12.188 L15.572,16.667 L22.429,12.191 L23.714,13.789 L23.714,11.325 L21.549,10.195 L19.691,11.435 L17.318,8.11 M0.286,11.459 L0.286,16.543 L4.039,13.125 L0.286,11.459 M0.286,2.274 L0.286,11.145 L4.27,12.915 L10.024,7.674 L12.656,11.94 L17.364,7.682 L19.763,11.042 L21.531,9.863 L23.714,11.002 L23.714,2.274 L0.286,2.274"/>
+    </clipPath>
+    <linearGradient id="Gradient_2" gradientUnits="userSpaceOnUse" x1="6.601" y1="16.322" x2="12.326" y2="16.322" gradientTransform="matrix(0.482, 0, 0, 0.493, 0, 0)">
+      <stop offset="0" stop-color="#F2F2F1"/>
+      <stop offset="1" stop-color="#6C6D6C"/>
+    </linearGradient>
+    <clipPath id="Clip_2">
+      <path d="M4.577,9.041 C4.011,9.041 3.551,8.582 3.551,8.016 C3.551,7.45 4.011,6.99 4.577,6.99 C5.142,6.99 5.602,7.45 5.602,8.016 C5.602,8.582 5.142,9.041 4.577,9.041 z"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1">
+    <g>
+      <g>
+        <path d="M-0,1.988 L24,1.988 L24,22.012 L-0,22.012 z M17.318,8.11 L12.809,12.188 L15.572,16.667 L22.429,12.191 L23.714,13.789 L23.714,11.325 L21.549,10.195 L19.691,11.435 L17.318,8.11 M0.286,11.459 L0.286,16.543 L4.039,13.125 L0.286,11.459 M0.286,2.274 L0.286,11.145 L4.27,12.915 L10.024,7.674 L12.656,11.94 L17.364,7.682 L19.763,11.042 L21.531,9.863 L23.714,11.002 L23.714,2.274 L0.286,2.274" fill="#919191"/>
+        <g clip-path="url(#Clip_1)">
+          <path d="M-0.389,22.518 L24.361,22.518 L24.361,1.547 L-0.389,1.547 z" fill="url(#Gradient_1)"/>
+        </g>
+      </g>
+      <g>
+        <path d="M4.577,9.041 C4.011,9.041 3.551,8.582 3.551,8.016 C3.551,7.45 4.011,6.99 4.577,6.99 C5.142,6.99 5.602,7.45 5.602,8.016 C5.602,8.582 5.142,9.041 4.577,9.041 z" fill="#919191"/>
+        <g clip-path="url(#Clip_2)">
+          <path d="M3.184,9.601 L5.946,9.601 L5.946,6.495 L3.184,6.495 z" fill="url(#Gradient_2)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
