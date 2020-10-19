@@ -827,8 +827,15 @@
   { "id": "ANALYTICS", "note": "Analytics" },
 
   { "id": "NewFolder", "note": "New Folder" },
+  { "id": "NewProject", "note": "New Project" },
   { "id": "NewType", "note": "New Type" },
   { "id": "NewDevice", "note": "New Device" },
+
+  { "id": "Copy", "note": "Copy" },
+  { "id": "Paste", "note": "Paste" },
+  { "id": "Delete", "note": "Delete" },
+  { "id": "Export", "note": "Export" },
+
   { "id": "LinkToDeviceProperty", "note": "Link To Device Property" },
   { "id": "Var_Id", "note": "Variable Name" },
   { "id": "SetDef", "note": "Set default value on server start" }

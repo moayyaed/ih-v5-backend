@@ -13,9 +13,9 @@
 
       "columns": [
 
-        { "prop": "title_link", "title": "Проект", "type": "text", "command":"forward",  "width": 200  },
-        { "prop": "projectfolder", "title": "Папка проекта", "type": "text",  "width": 100 },
-        { "prop": "path", "title": "", "type": "text",  "width": 200 }
+        { "prop": "title_link", "title": "$Project", "type": "text", "command":"forward",  "width": 400  },
+        { "prop": "projectfolder", "title": "$Project_Folder", "type": "text",  "width": 250 },
+        { "prop": "path", "title": "", "type": "text",  "width": 250 }
       ]
     }
   ]

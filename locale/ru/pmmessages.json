@@ -835,8 +835,14 @@
   { "id": "ANALYTICS", "note": "Аналитика" },
 
   { "id": "NewFolder", "note": "Новая папка" },
+  { "id": "NewProject", "note": "Новый проект" },
   { "id": "NewType", "note": "Новый тип" },
   { "id": "NewDevice", "note": "Новое устройство" },
+  { "id": "Copy", "note": "Копировать" },
+  { "id": "Paste", "note": "Вставить" },
+  { "id": "Delete", "note": "Удалить" },
+  { "id": "Export", "note": "Экспорт" },
+
   { "id": "Ruledn_pref", "note": "Префикс при именовании нового устройства" },
   { "id": "Ruledn_len", "note": "Длина при именовании нового устройства " },
   { "id": "LinkToDeviceProperty", "note": "Привязка к устройcтву" },

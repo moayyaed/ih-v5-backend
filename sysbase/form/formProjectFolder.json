@@ -1,7 +1,7 @@
 {
   "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table": "projects" },
-    { "id": "p2", "xs": 12, "class": "main", "table": "projects", "height":250 }
+    { "id": "p1", "xs": 6, "class": "main", "table": "projects" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "projects", "height":250 }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "projects" },
