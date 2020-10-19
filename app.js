@@ -33,6 +33,7 @@ const EventEmitter = require('events');
     process.exit(0);
   });
 
+  process.on('warning', e => console.log('WARN: process warning: '+e.stack));
  
   try {
     await init(__dirname);

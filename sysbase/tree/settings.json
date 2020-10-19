@@ -18,8 +18,7 @@
           { "id": "6", "type": "divider" },
           
          
-          { "id": "7", "type": "item", "title": "Import project", "command": "upload", "param": "project" },
-          { "id": "8", "type": "item", "title": "Export project", "command": "download", "param": "project" },
+          { "id": "7", "type": "item", "title": "Export project", "command": "export", "param": "project" },
           { "id": "9", "type": "divider" },
           { "id": "10", "type": "item", "title": "Delete project", "command": "delete" }
         ]
