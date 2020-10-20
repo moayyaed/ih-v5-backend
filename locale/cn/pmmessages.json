@@ -757,6 +757,7 @@
   { "id": "ANALYTICS", "note": "Analytics" },
 
   { "id": "NewFolder", "note": "New Folder" },
+  { "id": "Project", "note": "Project" },
   { "id": "NewProject", "note": "New Project" },
   { "id": "NewType", "note": "New Type" },
   { "id": "NewDevice", "note": "New Device" },

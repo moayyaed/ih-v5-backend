@@ -835,6 +835,7 @@
   { "id": "ANALYTICS", "note": "Аналитика" },
 
   { "id": "NewFolder", "note": "Новая папка" },
+  { "id": "Project", "note": "Проект" },
   { "id": "NewProject", "note": "Новый проект" },
   { "id": "NewType", "note": "Новый тип" },
   { "id": "NewDevice", "note": "Новое устройство" },
