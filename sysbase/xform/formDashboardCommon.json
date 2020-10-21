@@ -12,9 +12,7 @@
     { "prop": "sysinfo", "title": "System Info", "type": "header", "size":"h6" },
     { "prop": "platform", "title": "Platform", "type": "text" },
     { "prop": "arch", "title": "Arch", "type": "text" },
-    { "prop": "ip", "title": "IP", "type": "text" },
-    { "prop": "cpuTemp", "title": "CPU Temperature", "type": "text" }
-   
+    { "prop": "ip", "title": "IP", "type": "text" }
   ],
   "p2": [
     { "prop": "processinfo", "title": "Memory Info", "type": "header", "size":"h6"  },
@@ -28,8 +26,7 @@
     { "prop": "project", "title": "Project", "type": "text" },
     { "prop": "types", "title": "Types", "type": "text" },
     { "prop": "devices", "title": "Devices", "type": "text" },
-    { "prop": "devhard", "title": "Channels", "type": "text" },
-    { "prop": "scenes", "title": "Scenes", "type": "text" }
+    { "prop": "devhard", "title": "Channels", "type": "text" }
   
   ],
   "p4": [
