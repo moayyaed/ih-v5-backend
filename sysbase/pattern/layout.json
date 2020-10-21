@@ -1,0 +1,79 @@
+{
+  "containers": {},
+  "templates": {},
+  "selectType": null,
+  "selectContainer": null,
+  "selects": {},
+  "settings": {
+    "x": {
+      "value": 10
+    },
+    "y": {
+      "value": 10
+    },
+    "w": {
+      "value": 650
+    },
+    "h": {
+      "value": 400
+    },
+    "scale": {
+      "value": 1
+    },
+    "grid": {
+      "value": 10
+    },
+    "devBackgroundColor": {
+      "value": "rgba(0,0,0,0.25)"
+    },
+    "backgroundColor": {
+      "type": "fill",
+      "value": "rgba(255,255,255,1)",
+      "fill": "rgba(255,255,255,1)",
+      "angle": 90,
+      "shape": "circle",
+      "positionX": 50,
+      "positionY": 50,
+      "extent": "closest-side",
+      "palette": [
+        {
+          "offset": "0.00",
+          "color": "#4A90E2",
+          "opacity": 1
+        },
+        {
+          "offset": "1.00",
+          "color": "#9013FE",
+          "opacity": 1
+        }
+      ]
+    },
+    "backgroundImage": {
+      "value": "unset"
+    },
+    "overlayColor": {
+      "type": "fill",
+      "value": "transparent",
+      "fill": "transparent",
+      "angle": 90,
+      "shape": "circle",
+      "positionX": 50,
+      "positionY": 50,
+      "extent": "closest-side",
+      "palette": [
+        {
+          "offset": "0.00",
+          "color": "#4A90E2",
+          "opacity": 1
+        },
+        {
+          "offset": "1.00",
+          "color": "#9013FE",
+          "opacity": 1
+        }
+      ]
+    }
+  },
+  "list": [],
+  "elements": {}
+}

@@ -1,0 +1,110 @@
+{
+  "toolbarType": "tree",
+  "mode": "tree",
+  "propertyType": "main",
+  "selectState": "master",
+  "selectType": null,
+  "selectContainer": null,
+  "selectOne": null,
+  "selects": {},
+  "settings": {
+    "x": {
+      "value": 10
+    },
+    "y": {
+      "value": 10
+    },
+    "w": {
+      "value": 250
+    },
+    "h": {
+      "value": 250
+    },
+    "scale": {
+      "value": 1
+    },
+    "grid": {
+      "value": 10
+    },
+    "devBackgroundColor": {
+      "value": "rgba(0,0,0,0.25)"
+    },
+    "devBackgroundColor2": {
+      "value": "rgba(255,255,255,0.8)"
+    },
+    "backgroundColor": {
+      "type": "fill",
+      "value": "transparent",
+      "fill": "transparent",
+      "angle": 90,
+      "shape": "circle",
+      "positionX": 50,
+      "positionY": 50,
+      "extent": "closest-side",
+      "palette": [
+        {
+          "offset": "0.00",
+          "color": "#4A90E2",
+          "opacity": 1
+        },
+        {
+          "offset": "1.00",
+          "color": "#9013FE",
+          "opacity": 1
+        }
+      ]
+    },
+    "backgroundImage": {
+      "value": "unset"
+    },
+    "overlayColor": {
+      "type": "fill",
+      "value": "transparent",
+      "fill": "transparent",
+      "angle": 90,
+      "shape": "circle",
+      "positionX": 50,
+      "positionY": 50,
+      "extent": "closest-side",
+      "palette": [
+        {
+          "offset": "0.00",
+          "color": "#4A90E2",
+          "opacity": 1
+        },
+        {
+          "offset": "1.00",
+          "color": "#9013FE",
+          "opacity": 1
+        }
+      ]
+    }
+  },
+  "list": [],
+  "listState": [
+    "state1",
+    "state2"
+  ],
+  "state": {
+    "master": {
+      "hide": false,
+      "curent": 0,
+      "values": {
+        "0": {}
+      }
+    },
+    "state1": {
+      "hide": false,
+      "curent": 0,
+      "values": {},
+      "title": "state"
+    },
+    "state2": {
+      "hide": false,
+      "curent": 0,
+      "values": {},
+      "title": "error"
+    }
+  },
+  "elements": {}
+}

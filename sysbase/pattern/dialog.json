@@ -1,0 +1,102 @@
+{
+  "selectType": null,
+  "selectContainer": null,
+  "selects": {},
+  "settings": {
+    "x": {
+      "value": 10
+    },
+    "y": {
+      "value": 10
+    },
+    "w": {
+      "value": 300
+    },
+    "h": {
+      "value": 535
+    },
+    "scale": {
+      "value": 1
+    },
+    "grid": {
+      "value": 10
+    },
+    "backgroundColor": {
+      "type": "fill",
+      "value": "transparent",
+      "fill": "transparent",
+      "angle": 90,
+      "shape": "circle",
+      "positionX": 50,
+      "positionY": 50,
+      "extent": "closest-side",
+      "palette": [
+        {
+          "offset": "0.00",
+          "color": "#4A90E2",
+          "opacity": 1
+        },
+        {
+          "offset": "1.00",
+          "color": "#9013FE",
+          "opacity": 1
+        }
+      ]
+    },
+    "backgroundImage": {
+      "value": "unset"
+    },
+    "overlayColor": {
+      "type": "fill",
+      "value": "transparent",
+      "fill": "transparent",
+      "angle": 90,
+      "shape": "circle",
+      "positionX": 50,
+      "positionY": 50,
+      "extent": "closest-side",
+      "palette": [
+        {
+          "offset": "0.00",
+          "color": "#4A90E2",
+          "opacity": 1
+        },
+        {
+          "offset": "1.00",
+          "color": "#9013FE",
+          "opacity": 1
+        }
+      ]
+    },
+    "fitW": {
+      "value": false
+    },
+    "fitH": {
+      "value": true
+    },
+    "alignW": {
+      "value": {
+        "id": "center",
+        "title": "Center"
+      }
+    },
+    "alignH": {
+      "value": {
+        "id": "center",
+        "title": "Center"
+      }
+    },
+    "position": {
+      "value": {
+        "id": "right",
+        "title": "Right"
+      }
+    },
+    "outsideClose": {
+      "value": false
+    }
+  },
+  "list": [],
+  "elements": {},
+  "templates": {}
+}
