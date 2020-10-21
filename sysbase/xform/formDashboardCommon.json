@@ -11,8 +11,8 @@
   "p1": [
     { "prop": "sysinfo", "title": "System Info", "type": "header", "size":"h6" },
     { "prop": "platform", "title": "Platform", "type": "text" },
-    { "prop": "arch", "title": "Arch", "type": "text" },
-    { "prop": "ip", "title": "IP", "type": "text" }
+    { "prop": "arch", "title": "Arch", "type": "text" }
+   
   ],
   "p2": [
     { "prop": "processinfo", "title": "Memory Info", "type": "header", "size":"h6"  },
