@@ -31,7 +31,7 @@
 
   "projectList": {
     "table": "projects",
-    "propmap": { "_id": "id", "tite": "title", "active": "active", "projectfolder": "projectfolder" }
+    "propmap": { "_id": "id", "title": "title", "active": "active", "projectfolder": "projectfolder" }
   },
 
   "sceneList": {

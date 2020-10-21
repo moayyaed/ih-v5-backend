@@ -1,9 +1,10 @@
 {
   "tabs": [
-    { "id": "tabDashboardCommon",  "title": "Information", "component": [{ "id": "formDashboardCommon", "type": "xform" }]  },
-    { "id": "tabDashboardPlugins",  "title": "Plugins", "component": [{ "id": "formDashboardPlugins", "type": "xform" }]  },
-    { "id": "tabWebconsole",  "title": "Web Console", "component": [{ "id": "formWebconsole", "type": "xform" }]  },
-    { "id": "tabDashboardFiles",  "title": "File Explorer", "component": [{ "id": "formFiles", "type": "xform" }]  }
+    {
+      "id": "tabDashboardCommon",
+      "title": "Information",
+      "component": [{ "id": "formDashboardCommon", "type": "xform" }]
+    }
   ],
   "defaultTab": "tabDashboardCommon"
 }

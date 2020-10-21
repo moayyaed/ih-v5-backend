@@ -7,11 +7,12 @@
   "breadcrumbs": { "tree": "projects" },
 
   "p1": [
-    { "prop": "_id", "title": "ID ", "type": "text" },
+    { "prop": "_id", "title": "ID ", "type": "text", "hide":"1==1" },
+    { "prop": "active", "title": "Active", "type": "cb", "hide":"1==1" },
     { "prop": "projectfolder", "title": "$Project_Folder", "type": "input", "hide":"data.p1._id == data.p1.folder" },
     { "prop": "title", "title": "$Project_Name", "type": "input" },
-    { "prop": "version", "title": "$Project_Version", "type": "text" },
-    { "prop": "activeButton", "title": "Activate project", "type": "button", "command": "restart" }
+    { "prop": "version", "title": "$Project_Version", "type": "text", "hide":"1==1" },
+    { "prop": "activeButton", "title": "Activate project", "type": "button", "command": "restart", "hide":"data.p1.active"  }
 
   ],
   "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
