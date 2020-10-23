@@ -216,6 +216,10 @@
   { "id": "FolderRootOrNotFound", "note": "Не удалось выполнить операцию!"},
   { "id": "OnlyOneRootForCopy", "note": "Копировать можно только внутри одного дерева!"},
 
+  { "id": "NotFoundInPack", "note": "Файл не найден в пакете."},
+  { "id": "Install", "note": "Установка"},
+  { "id": "Skipped", "note": "Пропускается."},
+
   { "id": "mustBeNotEmpty", "note": "значение не может быть пустым" },
   { "id": "mustBeValidId", "note": "недопустимое значение" },
   { "id": "mustBeLessToMax", "note": "значение не может быть меньше max" },

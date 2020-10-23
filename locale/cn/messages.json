@@ -209,6 +209,10 @@
   { "id": "FolderRootOrNotFound", "note": "Operation failed!"},
   { "id": "OnlyOneRootForCopy", "note": "You can only copy inside one tree!"},
 
+  { "id": "NotFoundInPack", "note": "File not found in the package."},
+  { "id": "Install", "note": "Install"},
+  { "id": "Skipped", "note": "Skipped."},
+
   { "id": "mustBeNotEmpty", "note": "must be not empty" },
   { "id": "mustBeValidId", "note": "invalid value" },
   { "id": "mustBeLessToMax", "note": "must be less than or equal to the max" },
