@@ -826,11 +826,16 @@
   { "id": "DATASOURCE", "note": "Data Sources" },
   { "id": "ANALYTICS", "note": "Analytics" },
 
+  { "id": "Folder", "note": "Folder" },
+  { "id": "Tags", "note": "Tags" },
   { "id": "NewFolder", "note": "New Folder" },
   { "id": "Project", "note": "Project" },
   { "id": "NewProject", "note": "New Project" },
   { "id": "NewType", "note": "New Type" },
   { "id": "NewDevice", "note": "New Device" },
+  { "id": "NewDialog", "note": "New Dialog" },
+  { "id": "NewImage", "note": "New Image" },
+  { "id": "NewTemplate", "note": "New Template" },
 
   { "id": "Copy", "note": "Copy" },
   { "id": "Paste", "note": "Paste" },

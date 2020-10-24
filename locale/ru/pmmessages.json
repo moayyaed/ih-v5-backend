@@ -834,11 +834,17 @@
   { "id": "DATASOURCE", "note": "Источники данных" },
   { "id": "ANALYTICS", "note": "Аналитика" },
 
+  { "id": "Folder", "note": "Папка" },
+  { "id": "Tags", "note": "Тэги" },
   { "id": "NewFolder", "note": "Новая папка" },
   { "id": "Project", "note": "Проект" },
   { "id": "NewProject", "note": "Новый проект" },
   { "id": "NewType", "note": "Новый тип" },
   { "id": "NewDevice", "note": "Новое устройство" },
+  { "id": "NewDialog", "note": "Новый диалог" },
+  { "id": "NewImage", "note": "Новое изображение" },
+  { "id": "NewTemplate", "note": "Новый шаблон" },
+
   { "id": "Copy", "note": "Копировать" },
   { "id": "Paste", "note": "Вставить" },
   { "id": "Delete", "note": "Удалить" },
