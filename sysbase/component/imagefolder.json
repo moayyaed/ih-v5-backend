@@ -4,5 +4,5 @@
     { "id": "tabImageGrid",  "title": "Плитка", "component": [{ "id": "formImageGrid", "type": "form" }]  },
     { "id": "tabImageTable",  "title": "Таблица", "component": [{ "id": "formImageTable", "type": "form" }]  }
   ],
-  "defaultTab": "tabImageFolder"
+  "defaultTab": "tabImageGrid"
 }
