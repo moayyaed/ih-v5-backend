@@ -450,6 +450,9 @@
     "collection": "dialogs"
   },
 
+  "dialogsTreeTable": { "store": "tree", "tree": "dialog", "collection": "dialogs", "rows": true },
+  "templatesTreeTable": { "store": "tree", "tree": "vistemplate", "collection": "vistemplates", "rows": true },
+
   "imagesTreeTable": { "store": "tree", "tree": "images", "rows": true },
 
   "dboptgroup": {

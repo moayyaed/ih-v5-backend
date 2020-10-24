@@ -3,7 +3,7 @@
     { "id": "tabVistemplateCommon", "title": "Описание", "component": [{ "id": "formVistemplateCommon", "type": "form" }] },
     { "id": "tabVistemplateEditor", "title": "Редактор", "component": [{ "id": "formVistemplate", "type": "form" }] },
     { "id": "tabVistemplateUsage", "title": "Использование", "component": [{ "id": "formVistemplateUsage", "type": "form" }] },
-    { "id": "tabExport", "title": "Параметры для выгрузки", "component": [{ "id": "formVistemplateExport", "type": "form" }] }
+    { "id": "tabVistemplateExport", "title": "Параметры для выгрузки", "component": [{ "id": "formVistemplateExport", "type": "form" }] }
   ],
-  "defaultTab": "tabVistemplateCommon"
+  "defaultTab": "tabVistemplateEditor"
 }

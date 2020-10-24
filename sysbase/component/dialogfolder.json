@@ -1,6 +1,7 @@
 {
   "tabs": [
-    { "id": "tabDialogFolder",  "title": "Свойства папки", "component": [{ "id": "formDialogFolder", "type": "form" }]  }
+    { "id": "tabDialogFolder",  "title": "Свойства папки", "component": [{ "id": "formDialogFolder", "type": "form" }]  },
+    { "id": "tabDialogTable",  "title": "Таблица диалогов", "component": [{ "id": "formDialogTable", "type": "form" }]  }
   ],
   "defaultTab": "tabDialogFolder"
 }

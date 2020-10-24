@@ -1,6 +1,7 @@
 {
   "tabs": [
-    { "id": "tabVistemplateFolder",  "title": "Свойства папки", "component": [{ "id": "formVistemplateFolder", "type": "form" }]  }
+    { "id": "tabVistemplateFolder",  "title": "Свойства папки", "component": [{ "id": "formVistemplateFolder", "type": "form" }]  },
+    { "id": "tabVistemplateTable",  "title": "Таблица шаблонов", "component": [{ "id": "formVistemplateTable", "type": "form" }]  }
   ],
-  "defaultTab": "tabVistemplateFolder"
+  "defaultTab": "tabVistemplateTable"
 }

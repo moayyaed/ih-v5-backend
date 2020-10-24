@@ -763,9 +763,10 @@
   { "id": "NewProject", "note": "New Project" },
   { "id": "NewType", "note": "New Type" },
   { "id": "NewDevice", "note": "New Device" },
+  { "id": "Dialog", "note": "Dialog" },
   { "id": "NewDialog", "note": "New Dialog" },
   { "id": "NewImage", "note": "New Image" },
-  { "id": "NewTemplate", "note": "New Template" },
+  { "id": "Template", "note": "Template" },
 
   { "id": "Copy", "note": "Copy" },
   { "id": "Paste", "note": "Paste" },

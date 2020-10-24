@@ -1,9 +1,9 @@
 {
   "tabs": [
-    { "id": "tabCommon", "title": "Описание", "component": [{ "id": "formDialogCommon", "type": "form" }] },
-    { "id": "tabEditor", "title": "Редактор", "component": [{ "id": "formDialog", "type": "form" }] },
-    { "id": "tabLinks", "title": "Привязки", "component": [{ "id": "formDialogLinks", "type": "form" }] },
-    { "id": "tabExport", "title": "Параметры для выгрузки", "component": [{ "id": "formDialogExport", "type": "form" }] }
+    { "id": "tabDialogCommon", "title": "Описание", "component": [{ "id": "formDialogCommon", "type": "form" }] },
+    { "id": "tabDialogEditor", "title": "Редактор", "component": [{ "id": "formDialog", "type": "form" }] },
+    { "id": "tabDialogLinks", "title": "Привязки", "component": [{ "id": "formDialogLinks", "type": "form" }] },
+    { "id": "tabDialogExport", "title": "Параметры для выгрузки", "component": [{ "id": "formDialogExport", "type": "form" }] }
   ],
-  "defaultTab": "tabCommon"
+  "defaultTab": "tabDialogEditor"
 }

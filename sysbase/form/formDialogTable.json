@@ -1,0 +1,22 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"dialogsTreeTable", "height":"fill"}
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "types" },
+
+  "p1": [
+    {
+      "title": "Types",
+      "type": "table",
+      "prop": "dialogsTreeTable",
+
+      "columns": [
+
+        { "prop": "title", "title": "$Dialog", "type": "link", "command":"forward",  "width": 450  },
+        { "prop": "path", "title": "$Folder", "type": "text",  "width": 200 }
+
+      ]
+    }
+  ]
+}

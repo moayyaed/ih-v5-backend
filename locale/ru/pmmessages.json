@@ -841,8 +841,10 @@
   { "id": "NewProject", "note": "Новый проект" },
   { "id": "NewType", "note": "Новый тип" },
   { "id": "NewDevice", "note": "Новое устройство" },
+  { "id": "Dialog", "note": "Диалог" },
   { "id": "NewDialog", "note": "Новый диалог" },
   { "id": "NewImage", "note": "Новое изображение" },
+  { "id": "Template", "note": "Шаблон" },
   { "id": "NewTemplate", "note": "Новый шаблон" },
 
   { "id": "Copy", "note": "Копировать" },

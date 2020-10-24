@@ -1,0 +1,22 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"templatesTreeTable", "height":"fill"}
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "types" },
+
+  "p1": [
+    {
+      "title": "Templates",
+      "type": "table",
+      "prop": "templatesTreeTable",
+
+      "columns": [
+
+        { "prop": "title", "title": "$Template", "type": "link", "command":"forward",  "width": 450  },
+        { "prop": "path", "title": "$Folder", "type": "text",  "width": 200 }
+
+      ]
+    }
+  ]
+}
