@@ -1,0 +1,18 @@
+{
+  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "viscontsTreeTable", "height": "fill" }],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "viscont" },
+
+  "p1": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "viscontsTreeTable",
+
+      "columns": [
+        { "prop": "title", "title": "$Container", "type": "link", "command": "forward", "width": 450 },
+        { "prop": "path", "title": "$Folder", "type": "text", "width": 200 }
+      ]
+    }
+  ]
+}

@@ -452,6 +452,8 @@
 
   "dialogsTreeTable": { "store": "tree", "tree": "dialog", "collection": "dialogs", "rows": true },
   "templatesTreeTable": { "store": "tree", "tree": "vistemplate", "collection": "vistemplates", "rows": true },
+  "layoutsTreeTable": { "store": "tree", "tree": "layout", "collection": "layouts", "rows": true },
+  "viscontsTreeTable": { "store": "tree", "tree": "viscont", "collection": "visconts", "rows": true },
 
   "imagesTreeTable": { "store": "tree", "tree": "images", "rows": true },
 

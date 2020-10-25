@@ -1,0 +1,18 @@
+{
+  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "layoutsTreeTable", "height": "fill" }],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "layout" },
+
+  "p1": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "layoutsTreeTable",
+
+      "columns": [
+        { "prop": "title", "title": "$Layout", "type": "link", "command": "forward", "width": 450 },
+        { "prop": "path", "title": "$Folder", "type": "text", "width": 200 }
+      ]
+    }
+  ]
+}

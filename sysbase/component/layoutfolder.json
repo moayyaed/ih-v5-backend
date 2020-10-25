@@ -1,6 +1,7 @@
 {
   "tabs": [
-    { "id": "tabLayoutFolder",  "title": "Свойства папки", "component": [{ "id": "formLayoutFolder", "type": "form" }]  }
+    { "id": "tabLayoutFolder",  "title": "Свойства папки", "component": [{ "id": "formLayoutFolder", "type": "form" }]  },
+    { "id": "tabLayoutTable",  "title": "Таблица экранов", "component": [{ "id": "formLayoutTable", "type": "form" }]  }
   ],
-  "defaultTab": "tabLayoutFolder"
+  "defaultTab": "tabLayoutTable"
 }
