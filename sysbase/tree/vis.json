@@ -10,8 +10,8 @@
     "parent": {
       "popup": {
         "main": [
-          { "id": "1", "type": "item", "title": "NewLayout", "command": "addNode" },
-          { "id": "2", "type": "item", "title": "NewFolder", "command": "addFolder" },
+          { "id": "1", "type": "item", "title": "$NewLayout", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
           { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },

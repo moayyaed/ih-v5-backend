@@ -844,6 +844,8 @@
   { "id": "NewScene", "note": "New Scene" },
   { "id": "NewUser", "note": "New User" },
   { "id": "NewVariable", "note": "New Variable" },
+  { "id": "NewChart", "note": "New Chart" },
+  { "id": "NewReport", "note": "New Report" },
 
   { "id": "Copy", "note": "Copy" },
   { "id": "Paste", "note": "Paste" },

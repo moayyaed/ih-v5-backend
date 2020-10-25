@@ -852,6 +852,8 @@
   { "id": "NewScene", "note": "Новый сценарий" },
   { "id": "NewUser", "note": "Новый пользователь" },
   { "id": "NewVariable", "note": "Новая переменная" },
+  { "id": "NewChart", "note": "Новый график" },
+  { "id": "NewReport", "note": "Новый отчет" },
 
   { "id": "Copy", "note": "Копировать" },
   { "id": "Paste", "note": "Вставить" },
