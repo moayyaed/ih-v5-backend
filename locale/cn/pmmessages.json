@@ -767,6 +767,13 @@
   { "id": "NewDialog", "note": "New Dialog" },
   { "id": "NewImage", "note": "New Image" },
   { "id": "Template", "note": "Template" },
+  { "id": "NewTemplate", "note": "New Template" },
+
+  { "id": "NewLayout", "note": "New Layout" },
+  { "id": "NewContainer", "note": "New Container" },
+  { "id": "NewScene", "note": "New Scene" },
+  { "id": "NewUser", "note": "New User" },
+  { "id": "NewVariable", "note": "New Variable" },
 
   { "id": "Copy", "note": "Copy" },
   { "id": "Paste", "note": "Paste" },

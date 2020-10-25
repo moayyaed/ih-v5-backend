@@ -2,8 +2,7 @@
   "common": {
     "popup": {
       "main": [
-        { "id": "1", "type": "item", "title": "New scene", "command": "addNode" },
-        { "id": "2", "type": "item", "title": "New folder", "command": "addFolder" }
+      
       ]
     }
   },
@@ -12,13 +11,12 @@
     "parent": {
       "popup": {
         "main": [
-          { "id": "1", "type": "item", "title": "New scene", "command": "addNode" },
-          { "id": "2", "type": "item", "title": "New folder", "command": "addFolder" },
+          { "id": "1", "type": "item", "title": "$NewScene", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
           { "id": "3", "type": "divider" },
-          { "id": "4", "type": "item", "title": "Copy", "command": "copy" },
-          { "id": "5", "type": "item", "title": "Paste", "command": "paste", "check": "disablePaste" },
-          { "id": "6", "type": "divider" },
-          { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
+          { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "6", "type": "item", "title": "$Delete", "command": "delete" }
         ]
       },
       "defaultComponent": "scenefolder"
@@ -27,7 +25,7 @@
     "child": {
       "popup": {
         "main": [
-          { "id": "1", "type": "item", "title": "New layout", "command": "addNode" },
+          { "id": "1", "type": "item", "title": "NewScene", "command": "addNode" },
           { "id": "2", "type": "item", "title": "New folder", "command": "addFolder" },
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "Copy", "command": "copy" },

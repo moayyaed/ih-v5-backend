@@ -847,6 +847,12 @@
   { "id": "Template", "note": "Шаблон" },
   { "id": "NewTemplate", "note": "Новый шаблон" },
 
+  { "id": "NewLayout", "note": "Новый экран" },
+  { "id": "NewContainer", "note": "Новый контейнер" },
+  { "id": "NewScene", "note": "Новый сценарий" },
+  { "id": "NewUser", "note": "Новый пользователь" },
+  { "id": "NewVariable", "note": "Новая переменная" },
+
   { "id": "Copy", "note": "Копировать" },
   { "id": "Paste", "note": "Вставить" },
   { "id": "Delete", "note": "Удалить" },
