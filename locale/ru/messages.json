@@ -219,6 +219,7 @@
   { "id": "NotFoundInPack", "note": "Файл не найден в пакете."},
   { "id": "Install", "note": "Установка"},
   { "id": "Skipped", "note": "Пропускается."},
+  { "id": "CopyError", "note": "Ошибка при копировании"},
 
   { "id": "mustBeNotEmpty", "note": "значение не может быть пустым" },
   { "id": "mustBeValidId", "note": "недопустимое значение" },

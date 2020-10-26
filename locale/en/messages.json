@@ -217,6 +217,8 @@
   { "id": "NotFoundInPack", "note": "File not found in the package."},
   { "id": "Install", "note": "Install"},
   { "id": "Skipped", "note": "Skipped."},
+  { "id": "CopyError", "note": "Copy Error"},
+
 
   { "id": "mustBeNotEmpty", "note": "must be not empty" },
   { "id": "mustBeValidId", "note": "invalid value" },
