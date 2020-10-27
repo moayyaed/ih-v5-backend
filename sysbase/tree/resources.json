@@ -11,8 +11,10 @@
         "main": [
           { "id": "1", "type": "item", "title": "$NewImage", "command": "upload", "param": "image" },
           { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
-          { "id": "5", "type": "divider" },
-          { "id": "7", "type": "item", "title": "$Delete", "command": "delete" }
+          { "id": "3", "type": "divider" },
+          { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$Export", "command": "export", "param": "image" }
         ]
       },
       "defaultComponent": "imagefolder"
