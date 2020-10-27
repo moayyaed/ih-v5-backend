@@ -62,17 +62,17 @@
   "anydev": {
     "data": [
       {
-        "title": "Любое устройство",
+        "title": "$AnyDevice",
         "id": "anyRoot",
         "root": "anydev",
         "expanded": true,
         "children": [
           {
-            "title": "Динамические свойства",
+            "title": "$DynaProps",
             "id": "__device"
           },
           {
-            "title": "Статические свойства",
+            "title": "$StatProps",
             "id": "__devstat"
           }
         ]
@@ -89,13 +89,13 @@
   "anydevcmd": {
     "data": [
       {
-        "title": "Любое устройство",
+        "title": "$AnyDevice",
         "id": "anyRoot",
         "root": "anydevcmd",
         "expanded": true,
         "children": [
           {
-            "title": "Команды",
+            "title": "$Commands",
             "id": "__device"
           }
         ]

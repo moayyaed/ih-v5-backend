@@ -413,6 +413,7 @@
 
   { "id": "Dev_Id", "note": "ID  устройства" },
   { "id": "Dev_Type", "note": "Тип устройства" },
+  { "id": "Dev_Types", "note": "Типы устройств" },
   { "id": "Space", "note": "Объект" },
   { "id": "Place", "note": "Уровень" },
   { "id": "Room", "note": "Зона" },
@@ -842,6 +843,7 @@
   { "id": "NewType", "note": "Новый тип" },
   { "id": "NewDevice", "note": "Новое устройство" },
   { "id": "Dialog", "note": "Диалог" },
+  { "id": "Dialogs", "note": "Диалоги" },
   { "id": "NewDialog", "note": "Новый диалог" },
   { "id": "NewImage", "note": "Новое изображение" },
   { "id": "Template", "note": "Шаблон" },
@@ -854,6 +856,10 @@
   { "id": "NewVariable", "note": "Новая переменная" },
   { "id": "NewChart", "note": "Новый график" },
   { "id": "NewReport", "note": "Новый отчет" },
+  { "id": "AnyDevice", "note": "Любое устройство" },
+  { "id": "Commands", "note": "Команды" },
+  { "id": "DynaProps", "note": "Динамические свойства" },
+  { "id": "StatProps", "note": "Статические свойства" },
 
   { "id": "Copy", "note": "Копировать" },
   { "id": "Paste", "note": "Вставить" },

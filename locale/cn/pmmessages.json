@@ -368,6 +368,7 @@
 
   { "id": "Dev_Id", "note": "设备ID" },
   { "id": "Dev_Type", "note": "设备类型" },
+  { "id": "Dev_Types", "note": "Device Types" },
   { "id": "Space", "note": "对象" },
   { "id": "Place", "note": "层级" },
   { "id": "Room", "note": "区域" },
@@ -764,6 +765,7 @@
   { "id": "NewType", "note": "New Type" },
   { "id": "NewDevice", "note": "New Device" },
   { "id": "Dialog", "note": "Dialog" },
+  { "id": "Dialogs", "note": "Dialogs" },
   { "id": "NewDialog", "note": "New Dialog" },
   { "id": "NewImage", "note": "New Image" },
   { "id": "Template", "note": "Template" },
@@ -776,6 +778,11 @@
   { "id": "NewVariable", "note": "New Variable" },
   { "id": "NewChart", "note": "New Chart" },
   { "id": "NewReport", "note": "New Report" },
+  { "id": "AnyDevice", "note": "Any Device" },
+  { "id": "Commands", "note": "Commands" },
+  { "id": "DynaProps", "note": "Dynamic properties" },
+  { "id": "StatProps", "note": "Static properties" },
+
 
   { "id": "Copy", "note": "Copy" },
   { "id": "Paste", "note": "Paste" },

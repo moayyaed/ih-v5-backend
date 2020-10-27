@@ -38,7 +38,7 @@
     "collection": "globals",
     "filter": { "folder": 1 },
     "defRootTitle": "Глобальные переменные",
-    "default": { "name": "New Folder" },
+    "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "glg", "len": 3 }
   },
 
@@ -59,7 +59,7 @@
     "collection": "locals",
     "filter": { "folder": 1 },
     "defRootTitle": "Локальные переменные",
-    "default": { "name": "New Folder" },
+    "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "localg", "len": 3 }
   },
 
@@ -165,7 +165,7 @@
     "store": "db",
     "collection": "types",
     "filter": { "folder": 1 },
-    "defRootTitle": "Типы устройств",
+    "defRootTitle": "$Dev_Types",
     "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "tg", "len": 3 }
   },
@@ -268,8 +268,8 @@
     "ruleID": { "pref": "vt", "len": 3 },
     "validator": {
       "main": {
-        "exid": {"validid": true },
-        "expref": {"validid": true }
+        "exid": { "validid": true },
+        "expref": { "validid": true }
       }
     }
   },
@@ -300,7 +300,6 @@
     "rows": true,
     "ruleID": { "pref": "call", "len": 3 }
   },
-
 
   "plugingroup": {
     "store": "db",
@@ -386,8 +385,8 @@
     "store": "db",
     "collection": "users",
     "filter": { "folder": 1 },
-    "defRootTitle": "Пользователи",
-    "default": { "name": "New Folder" },
+    "defRootTitle": "$Users",
+    "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "ug", "len": 3 }
   },
 
@@ -395,6 +394,20 @@
     "store": "db",
     "collection": "users",
     "ruleID": { "pref": "u", "len": 4 },
+    "requiredRecords": [
+      {
+        "check": { "login": "admin" },
+        "add": {
+          "_id": "admin",
+          "login": "admin",
+          "role": "admin",
+          "name": "Admin",
+          "parent": "usergroup",
+          "pwd": "202020",
+          "order": 10
+        }
+      }
+    ],
     "validator": {
       "main": {
         "name": { "required": true, "notempty": true },
@@ -408,9 +421,9 @@
   "imagegroup": {
     "store": "db",
     "collection": "images",
-    "filter": {  "folder": 1 },
-    "defRootTitle": "Изображения",
-    "default": { "name": "New Folder" },
+    "filter": { "folder": 1 },
+    "defRootTitle": "$Images",
+    "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "img", "len": 3 }
   },
 
@@ -419,13 +432,12 @@
     "collection": "images"
   },
 
-
   "projectgroup": {
     "store": "db",
     "collection": "projects",
     "filter": { "folder": 1 },
-    "defRootTitle": "Проекты",
-    "default": { "name": "New Folder" },
+    "defRootTitle": "$Projects",
+    "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "prj", "len": 3 }
   },
 
@@ -438,15 +450,15 @@
     "store": "db",
     "collection": "dialogs",
     "filter": { "folder": 1 },
-    "defRootTitle": "Диалоги",
-    "default": { "name": "New Folder" },
+    "defRootTitle": "$Dialogs",
+    "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "digroup", "len": 3 }
   },
 
   "dialog": {
     "store": "db",
     "ruleID": { "pref": "di", "len": 4 },
-    "default": { "name": "Новый диалог" },
+    "default": { "name": "$NewDialog" },
     "collection": "dialogs"
   },
 
