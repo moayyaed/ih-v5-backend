@@ -455,22 +455,18 @@
     ]
   },
 
-  "projects": {
+  "projectgroup": {
     "store": "db",
     "collection": "projects",
-    "inMemory":1,
-    "requiredRecords": [
-      {
-        "check": { "_id": "projectgroup" },
-        "add": {
-          "_id": "projectgroup",
-          "parent": 0,
-          "name": "$Projects",
-          "folder": 1
-        }
-      }
-    ]
+    "filter": { "folder": 1 },
+    "defRootTitle": "$Project",
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "prgroup", "len": 3 }
+  },
 
+  "projects": {
+    "store": "db",
+    "collection": "projects"
   },
 
   "dialoggroup": {
