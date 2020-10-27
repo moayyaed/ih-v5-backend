@@ -226,7 +226,7 @@
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
     "leaf": {
-      "table": "images",
+      "table": "image",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
@@ -248,7 +248,7 @@
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
     "leaf": {
-      "table": "projects",
+      "table": "project",
       "propmap": { "_id": "id", "title": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },

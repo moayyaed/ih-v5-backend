@@ -30,7 +30,7 @@
   },
 
   "projectList": {
-    "table": "projects",
+    "table": "project",
     "propmap": { "_id": "id", "title": "title", "active": "active", "projectfolder": "projectfolder" }
   },
 

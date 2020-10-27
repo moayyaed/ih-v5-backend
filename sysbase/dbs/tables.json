@@ -439,7 +439,7 @@
     ]
   },
 
-  "images": {
+  "image": {
     "store": "db",
     "collection": "images",
     "requiredRecords": [
@@ -461,10 +461,10 @@
     "filter": { "folder": 1 },
     "defRootTitle": "$Project",
     "default": { "name": "$NewFolder" },
-    "ruleID": { "pref": "prgroup", "len": 3 }
+    "ruleID": { "pref": "prg", "len": 3 }
   },
 
-  "projects": {
+  "project": {
     "store": "db",
     "collection": "projects"
   },
