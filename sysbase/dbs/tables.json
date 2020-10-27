@@ -424,26 +424,53 @@
     "filter": { "folder": 1 },
     "defRootTitle": "$Images",
     "default": { "name": "$NewFolder" },
-    "ruleID": { "pref": "img", "len": 3 }
+    "ruleID": { "pref": "img", "len": 3 },
+    "requiredRecords": [
+      {
+        "check": { "_id": "imgsystem" },
+        "add": {
+          "_id": "imgsystem",
+          "parent": "imagegroup",
+          "order": 10,
+          "name": "$Imgsystem",
+          "folder": 1
+        }
+      }
+    ]
   },
 
   "images": {
     "store": "db",
-    "collection": "images"
-  },
-
-  "projectgroup": {
-    "store": "db",
-    "collection": "projects",
-    "filter": { "folder": 1 },
-    "defRootTitle": "$Projects",
-    "default": { "name": "$NewFolder" },
-    "ruleID": { "pref": "prj", "len": 3 }
+    "collection": "images",
+    "requiredRecords": [
+      {
+        "check": { "_id": "noimage.svg" },
+        "add": {
+          "_id": "noimage.svg",
+          "parent": "imgsystem",
+          "order": 10,
+          "name": "noimage.svg"
+        }
+      }
+    ]
   },
 
   "projects": {
     "store": "db",
-    "collection": "projects"
+    "collection": "projects",
+    "inMemory":1,
+    "requiredRecords": [
+      {
+        "check": { "_id": "projectgroup" },
+        "add": {
+          "_id": "projectgroup",
+          "parent": 0,
+          "name": "$Projects",
+          "folder": 1
+        }
+      }
+    ]
+
   },
 
   "dialoggroup": {

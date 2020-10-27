@@ -22,13 +22,13 @@
   "scenecalls": { "folder": "jbasepath" },
 
   "images": { "folder": "jbasepath" },
-  "projects": { "folder": "jbasepath" },
+
   "dialogs": { "folder": "jbasepath" },
   "dbopt": { "folder": "jbasepath" },
 
   "charts": { "folder": "jbasepath" },
   "reports": { "folder": "jbasepath" },
-
+  "projects": { "inMemory":1 },
   "devicelog": { "folder": "operativepath", "ensureIndex":"ts", "expireAfterSeconds": 600 },
   "pluginlog": { "folder": "operativepath", "ensureIndex":"ts", "expireAfterSeconds": 86400},
 

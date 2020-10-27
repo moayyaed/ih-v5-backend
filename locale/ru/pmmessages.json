@@ -860,6 +860,7 @@
   { "id": "Commands", "note": "Команды" },
   { "id": "DynaProps", "note": "Динамические свойства" },
   { "id": "StatProps", "note": "Статические свойства" },
+  { "id": "Imgsystem", "note": "Системные" },
 
   { "id": "Copy", "note": "Копировать" },
   { "id": "Paste", "note": "Вставить" },

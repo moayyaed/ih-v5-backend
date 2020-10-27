@@ -782,7 +782,7 @@
   { "id": "Commands", "note": "Commands" },
   { "id": "DynaProps", "note": "Dynamic properties" },
   { "id": "StatProps", "note": "Static properties" },
-
+  { "id": "Imgsystem", "note": "System" },
 
   { "id": "Copy", "note": "Copy" },
   { "id": "Paste", "note": "Paste" },

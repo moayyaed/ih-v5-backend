@@ -9,7 +9,6 @@
     "parent": {
       "popup": {
         "main": [
-          { "id": "1", "type": "item", "title": "$NewFolder", "command": "addFolder" },
           { "id": "2", "type": "item", "title": "$NewProject", "command": "addNode" },
 
           { "id": "3", "type": "divider" },

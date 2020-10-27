@@ -244,7 +244,7 @@
 
   "projects": {
     "branch": {
-      "table": "projectgroup",
+      "table": "projects",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
     "leaf": {
