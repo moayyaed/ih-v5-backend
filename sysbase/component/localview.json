@@ -1,8 +1,8 @@
 {
   "tabs": [
-    { "id": "tabCommon", "title": "Переменная", "component": [{ "id": "formLocalVarCommon", "type": "form" }] },
-    { "id": "tabVis", "title": "Ссылки на визуализацию", "component": [{ "id": "formLocalVarVis", "type": "form" }] }
+    { "id": "tabLocalVarCommon", "title": "Переменная", "component": [{ "id": "formLocalVarCommon", "type": "form" }] },
+    { "id": "tabLocalVarVis", "title": "Ссылки на визуализацию", "component": [{ "id": "formLocalVarVis", "type": "form" }] }
   ],
 
-  "defaultTab": "tabCommon"
+  "defaultTab": "tabLocalVarCommon"
 }

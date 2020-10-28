@@ -1,7 +1,7 @@
 {
   "tabs": [
     { "id": "tabTypeFolder",  "title": "Свойства папки", "component": [{ "id": "formTypeFolder", "type": "form" }]  },
-    { "id": "tabDeviceTable",  "title": "Таблица типов", "component": [{ "id": "formTypeTable", "type": "form" }]  }
+    { "id": "tabTypeTable",  "title": "Таблица типов", "component": [{ "id": "formTypeTable", "type": "form" }]  }
   ],
-  "defaultTab": "tabDeviceTable"
+  "defaultTab": "tabTypeTable"
 }

@@ -1,7 +1,7 @@
 {
   "tabs": [
-    { "id": "tabFolder",  "title": "Свойства папки", "component": [{ "id": "formProjectFolder", "type": "form" }]  },
-    { "id": "tabTable",  "title": "Таблица проектов", "component": [{ "id": "formProjectTable", "type": "form" }]  }
+    { "id": "tabProjectFolder",  "title": "Свойства папки", "component": [{ "id": "formProjectFolder", "type": "form" }]  },
+    { "id": "tabProjectTable",  "title": "Таблица проектов", "component": [{ "id": "formProjectTable", "type": "form" }]  }
   ],
-  "defaultTab": "tabFolder"
+  "defaultTab": "tabProjectFolder"
 }

@@ -3,5 +3,5 @@
     { "id": "tabGlobalVarFolder",  "title": "Свойства папки", "component": [{ "id": "formGlobalVarFolder", "type": "form" }]  },
     { "id": "tabGlobalVarTable",  "title": "Таблица", "component": [{ "id": "formGlobalVarTable", "type": "form" }]  }
   ],
-  "defaultTab": "taGlobalVarFolder"
+  "defaultTab": "tabGlobalVarFolder"
 }

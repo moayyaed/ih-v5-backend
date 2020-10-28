@@ -1,7 +1,7 @@
 {
   "tabs": [
-    { "id": "tabFolder",  "title": "Свойства папки", "component": [{ "id": "formLocalVarFolder", "type": "form" }]  },
-    { "id": "tabTable",  "title": "Таблица", "component": [{ "id": "formLocalVarTable", "type": "form" }]  }
+    { "id": "tabLocalVarFolder",  "title": "Свойства папки", "component": [{ "id": "formLocalVarFolder", "type": "form" }]  },
+    { "id": "tabLocalVarTable",  "title": "Таблица", "component": [{ "id": "formLocalVarTable", "type": "form" }]  }
   ],
-  "defaultTab": "tabFolder"
+  "defaultTab": "tabLocalVarFolder"
 }
