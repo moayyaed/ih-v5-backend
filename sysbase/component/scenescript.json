@@ -2,7 +2,7 @@
   "tabs": [
     { "id": "tabSceneScript",  "title": "Свойства сценария", "component": [{ "id": "formSceneScript", "type": "form" }]  },
     { "id": "tabSceneCodeEditor",  "title": "Редактор кода", "component": [{ "id": "formSceneCodeEditor", "type": "form" }]  },
-    { "id": "tabSceneDiagram",  "title": "Редактор кода", "component": [{ "id": "formSceneDiagram", "type": "form" }]  }
+    { "id": "tabSceneDiagram",  "title": "Редактор диаграм", "component": [{ "id": "formSceneDiagram", "type": "form" }]  }
   ],
   "defaultTab": "tabSceneScript"
 }
