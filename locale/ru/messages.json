@@ -222,6 +222,7 @@
   { "id": "CopyError", "note": "Ошибка при копировании"},
   { "id": "EmptyFolder", "note": "Эта папка пуста!"},
   { "id": "filesFromFolder", "note": "файлов из папки"},
+  { "id": "NoFilesOfThisType", "note": "Файлы этого типа не надены"},
 
   { "id": "mustBeNotEmpty", "note": "значение не может быть пустым" },
   { "id": "mustBeValidId", "note": "недопустимое значение" },
