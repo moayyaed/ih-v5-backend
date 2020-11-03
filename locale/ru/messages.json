@@ -220,6 +220,8 @@
   { "id": "Install", "note": "Установка"},
   { "id": "Skipped", "note": "Пропускается."},
   { "id": "CopyError", "note": "Ошибка при копировании"},
+  { "id": "EmptyFolder", "note": "Эта папка пуста!"},
+  { "id": "filesFromFolder", "note": "файлов из папки"},
 
   { "id": "mustBeNotEmpty", "note": "значение не может быть пустым" },
   { "id": "mustBeValidId", "note": "недопустимое значение" },
