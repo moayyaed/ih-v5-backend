@@ -39,7 +39,7 @@ const EventEmitter = require('events');
     await init(__dirname);
     holder.dm = dm;
     
-    // await dbservice(holder);
+    await dbservice(holder);
     await globalvarservice(holder);
     await deviceservice(holder);
     await resservice(holder);
