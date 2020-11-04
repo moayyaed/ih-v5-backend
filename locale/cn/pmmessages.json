@@ -768,6 +768,7 @@
   { "id": "Dialogs", "note": "Dialogs" },
   { "id": "NewDialog", "note": "New Dialog" },
   { "id": "NewImage", "note": "New Image" },
+  { "id": "LoadImage", "note": "Load Image" },
   { "id": "Template", "note": "Template" },
   { "id": "NewTemplate", "note": "New Template" },
 

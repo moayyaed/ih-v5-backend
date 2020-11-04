@@ -846,6 +846,7 @@
   { "id": "Dialogs", "note": "Диалоги" },
   { "id": "NewDialog", "note": "Новый диалог" },
   { "id": "NewImage", "note": "Новое изображение" },
+  { "id": "LoadImage", "note": "Загрузить изображение" },
   { "id": "Template", "note": "Шаблон" },
   { "id": "NewTemplate", "note": "Новый шаблон" },
 

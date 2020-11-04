@@ -9,7 +9,7 @@
     "parent": {
       "popup": {
         "main": [
-          { "id": "1", "type": "item", "title": "$NewImage", "command": "upload", "param": "image" },
+          { "id": "1", "type": "item", "title": "$LoadImage", "command": "upload", "param": "image" },
           { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
           { "id": "3", "type": "divider" },
           { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
