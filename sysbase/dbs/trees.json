@@ -253,6 +253,19 @@
     }
   },
 
+  "database": ["dbagents"],
+
+  "dbagents": {
+    "branch": {
+      "table": "dbagentgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "dbagent",
+      "propmap": { "_id": "id", "title": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+
   "dialogx": ["dialog"],
 
   "dialog": {
@@ -263,7 +276,7 @@
     "leaf": { "table": "dialog", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder"} }
   },
 
-  "database": ["dbopt"],
+
   "dbopt": {
     "branch": {
       "table": "dboptgroup",

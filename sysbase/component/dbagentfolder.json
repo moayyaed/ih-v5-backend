@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabDbagentFolder",  "title": "Свойства папки", "component": [{ "id": "formDbagentFolder", "type": "form" }]  }
+  ],
+  "defaultTab": "tabDbagentFolder"
+}

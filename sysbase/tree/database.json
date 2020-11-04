@@ -4,22 +4,22 @@
       "main": [{ "id": "1", "type": "divider", "title": "Edit" }]
     }
   },
-  "dbopt": {
+  "dbagents": {
     "parent": {
       "popup": {
         "main": [
          
         ]
       },
-      "defaultComponent": "dboptfolder"
+      "defaultComponent": "dbagentfolder"
     },
     "child": {
       "popup": {
         "main": [
-          { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
+         
         ]
       },
-      "defaultComponent": "dboptview"
+      "defaultComponent": "dbagentview"
     }
   }
 

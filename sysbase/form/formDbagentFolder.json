@@ -1,0 +1,9 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "dbagentgroup" }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "dbagents" },
+
+  "p1": [{ "prop": "name", "title": "$Name", "type": "text" }]
+}

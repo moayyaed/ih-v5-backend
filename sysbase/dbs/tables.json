@@ -469,6 +469,20 @@
     "collection": "projects"
   },
 
+  "dbagentgroup": {
+    "store": "db",
+    "collection": "dbagents",
+    "filter": { "folder": 1 },
+    "defRootTitle": "$Database",
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "dbg", "len": 3 }
+  },
+
+  "dbagent": {
+    "store": "db",
+    "collection": "dbagents"
+  },
+
   "dialoggroup": {
     "store": "db",
     "collection": "dialogs",
