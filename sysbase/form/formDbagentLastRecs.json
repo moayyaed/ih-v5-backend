@@ -15,7 +15,7 @@
         { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 150 },
         { "prop": "dn", "title": "DN", "type": "text",  "width": 150  },
         { "prop": "prop", "title": "Prop", "type": "text",  "width": 550  },
-        { "prop": "val", "title": "Val", "type": "text" ,  "width": 150}
+        { "prop": "val", "title": "Value", "type": "text" ,  "width": 150}
       ]
     }
   ]
