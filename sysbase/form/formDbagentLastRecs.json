@@ -1,0 +1,22 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"dblastrecsTable", "height":"fill"}
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "dbagents" },
+
+  "p1": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "dblastrecsTable",
+
+      "columns": [
+        { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 150 },
+        { "prop": "dn", "title": "DN", "type": "text",  "width": 150  },
+        { "prop": "prop", "title": "Prop", "type": "text",  "width": 550  },
+        { "prop": "val", "title": "Val", "type": "text" ,  "width": 150}
+      ]
+    }
+  ]
+}

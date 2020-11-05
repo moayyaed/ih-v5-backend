@@ -134,6 +134,10 @@
     "store": "none"
   },
 
+  "dblastrecsTable": {
+    "store": "none"
+  },
+
   "devicepropswithlinks": {
     "store": "db",
     "collection": "devices",
