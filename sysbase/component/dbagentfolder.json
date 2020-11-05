@@ -1,6 +1,8 @@
 {
   "tabs": [
-    { "id": "tabDbagentFolder",  "title": "Свойства папки", "component": [{ "id": "formDbagentFolder", "type": "form" }]  }
+    { "id": "tabDbagentFolder",  "title": "База данных", "component": [{ "id": "formDbagentFolder", "type": "form" }]  },
+    { "id": "tabDbagentLogTable", "title": "Журнал", "component": [{ "id": "formDbagentLogTable", "type": "form" }] }
+
   ],
-  "defaultTab": "tabDbagentFolder"
+  "defaultTab": "tabDbagentLogTable"
 }

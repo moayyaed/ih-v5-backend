@@ -592,7 +592,7 @@
   { "id": "User_Login", "note": "Учетная запись (login)" },
   { "id": "User_Login_C", "note": "Login" },
   { "id": "User_Pwd", "note": "Пароль (не менее 4 символов)" },
-  { "id": "User_Mainlay", "note": "Стартовый экран основной" },
+  { "id": "User_Mainlay", "note": "Стартовый экран" },
   { "id": "User_Mainlay_C", "note": "Основной экран" },
   { "id": "User_Moblay", "note": "Стартовый экран мобильный" },
   { "id": "User_Moblay_C", "note": "Мобильный экран" },

@@ -587,7 +587,7 @@
   { "id": "User_Login", "note": "Account (login)" },
   { "id": "User_Login_C", "note": "Login" },
   { "id": "User_Pwd", "note": "Password (not less than 4 symbols)" },
-  { "id": "User_Mainlay", "note": "Main Start Screen" },
+  { "id": "User_Mainlay", "note": "Main Screen" },
   { "id": "User_Mainlay_C", "note": "Main Screen" },
   { "id": "User_Moblay", "note": "Mobile Start Screen" },
   { "id": "User_Moblay_C", "note": "Mobile Screen" },

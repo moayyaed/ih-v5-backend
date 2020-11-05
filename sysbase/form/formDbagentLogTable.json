@@ -1,0 +1,22 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"pluginlogTable", "height":"fill"}
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "dbagents" },
+
+  "p1": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "pluginlogTable",
+
+      "columns": [
+        { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 150 },
+        { "prop": "unit", "title": "$Plugin", "type": "text",  "width": 150  },
+        { "prop": "txt", "title": "$Info_Txt", "type": "text",  "width": 550  },
+        { "prop": "level", "title": "$LogLevel", "type": "text" ,  "width": 150}
+      ]
+    }
+  ]
+}
