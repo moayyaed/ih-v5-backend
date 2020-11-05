@@ -1,9 +1,11 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "dbagent" }
+    { "id": "p1", "xs": 6, "class": "main", "table": "dbagent" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "dbagent" }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "dbagents" },
 
-  "p1": [{ "prop": "name", "title": "$Name", "type": "text" }]
+  "p1": [{ "prop": "name", "title": "$Name", "type": "text" }],
+  "p2": [{ "prop": "text", "title": "$Name", "type": "text" }]
 }
