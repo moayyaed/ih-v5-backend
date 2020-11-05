@@ -7,15 +7,16 @@
 
   "p1": [
     {
-      "title": "",
+      "title": "Записи за последнюю минуту",
       "type": "table",
       "prop": "dblastrecsTable",
 
       "columns": [
-        { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 150 },
+        { "prop": "id", "title": "N", "type": "text", "width": 100 },
+        { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 250 },
         { "prop": "dn", "title": "DN", "type": "text",  "width": 150  },
-        { "prop": "prop", "title": "Prop", "type": "text",  "width": 550  },
-        { "prop": "val", "title": "Value", "type": "text" ,  "width": 150}
+        { "prop": "prop", "title": "Prop", "type": "text",  "width": 150  },
+        { "prop": "val", "title": "Значение", "type": "text" ,  "width": 150}
       ]
     }
   ]
