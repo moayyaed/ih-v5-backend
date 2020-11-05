@@ -31,32 +31,32 @@
 
   "projectList": {
     "table": "project",
-    "propmap": { "_id": "id", "title": "title", "active": "active", "projectfolder": "projectfolder" }
+    "propmap": { "_id": "id", "title": "title", "active": "active", "projectfolder": "projectfolder","folder": "folder"  }
   },
 
   "dbagentList": {
     "table": "dbagent",
-    "propmap": { "_id": "id", "title": "title", "active": "active" }
+    "propmap": { "_id": "id", "title": "title", "active": "active", "folder": "folder"  }
   },
 
   "sceneList": {
     "table": "scene",
-    "propmap": { "_id": "id", "name": "name", "tags": "tags", "status": "status", "multi": "multi" }
+    "propmap": { "_id": "id", "name": "name", "tags": "tags", "status": "status", "multi": "multi","folder": "folder"  }
   },
 
   "layoutList": {
     "table": "layout",
-    "propmap": { "_id": "id", "name": "title" }
+    "propmap": { "_id": "id", "name": "title","folder": "folder"  }
   },
 
   "containerList": {
     "table": "container",
-    "propmap": { "_id": "id", "name": "title" }
+    "propmap": { "_id": "id", "name": "title", "folder": "folder"  }
   },
 
   "dialogList": {
     "table": "dialog",
-    "propmap": { "_id": "id", "name": "title" }
+    "propmap": { "_id": "id", "name": "title", "folder": "folder"  }
   },
 
   "fuseList": {
