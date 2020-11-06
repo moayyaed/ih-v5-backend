@@ -360,6 +360,30 @@
     "ruleID": { "pref": "cg", "len": 3 }
   },
 
+  "chart": {
+    "store": "db",
+    "collection": "charts",
+    "genfield": "props",
+    "default": { "name": "Новый график" },
+    "ruleID": { "pref": "c", "len": 3 }
+  },
+
+  "chartTable": {
+    "store": "db",
+    "collection": "charts",
+    "genfield": "props",
+
+    "validator": {
+      "main": {
+        "name": { "notempty": true }
+      },
+      "props": {
+        "newid": { "notempty": true, "validid": true },
+        "name": { "notempty": true }
+      }
+    }
+  },
+
   "reportgroup": {
     "store": "db",
     "collection": "reports",
@@ -367,14 +391,6 @@
     "defRootTitle": "Отчеты",
     "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "rg", "len": 3 }
-  },
-
-  "charts": {
-    "store": "db",
-    "collection": "charts",
-    "genfield": "props",
-    "default": { "name": "Новый график" },
-    "ruleID": { "pref": "c", "len": 3 }
   },
 
   "reports": {

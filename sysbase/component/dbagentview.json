@@ -1,7 +1,7 @@
 {
   "tabs": [
     { "id": "tabDbagentCommon", "title": "Настройка", "component": [{ "id": "formDbagentCommon", "type": "form" }] },
-    { "id": "tabDbagentLastRecs", "title": "Последние записи в БД", "component": [{ "id": "formDbagentLastRecs", "type": "form" }] }
+    { "id": "tabDbagentLastRecs", "title": "Записи за последнюю минуту", "component": [{ "id": "formDbagentLastRecs", "type": "form" }] }
    
   ],
   "defaultTab": "tabDbagentCommon"

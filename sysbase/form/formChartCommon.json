@@ -1,32 +1,79 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "charts" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "charts" },
-    { "id": "p3", "xs": 12, "class": "main", "table": "charts", "height":250 }
-  
+    { "id": "p1", "xs": 4, "class": "main", "table": "chart" },
+    { "id": "p2", "xs": 4, "class": "main", "table": "chart" },
+    { "id": "p3", "xs": 2, "class": "main", "table": "chart" },
+    { "id": "p4", "xs": 2, "class": "main", "table": "chart" },
+    { "id": "p5", "xs": 12, "class": "main", "table": "chart", "height": 250 }
   ],
-  "spacing": 10,
+  "spacing": 8,
   "breadcrumbs": { "tree": "charts" },
 
   "p1": [
-    { "prop": "_id", "title": "ID", "type": "input", "readonly": true },
-    { "prop": "name", "title": "$Name", "type": "input" }
+    { "prop": "name", "title": "$Name", "type": "input" },
+    {
+      "prop": "data_type",
+      "title": "$Chart_Data_type",
+      "type": "droplist",
+      "data": [
+        { "id": "trend", "title": "$DeviceValues" },
+        { "id": "analytics", "title": "$AnalyticValues" },
+        { "id": "plugin", "title": "$Plugin" }
+      ]
+    }
   ],
-  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
+  "p2": [
+   
+    {
+      "prop": "chart_type",
+      "title": "$Chart_type",
+      "type": "droplist",
+      "data": [
+        { "id": "line", "title": "$Line" },
+        { "id": "bar", "title": "$Bar" },
+        { "id": "step", "title": "$Step" }
+      ]
+    },
+    {
+      "prop": "discrete",
+      "title": "$Discrete",
+      "type": "droplist",
+      "data": [
+        { "id": "hour", "title": "$Hour" },
+        { "id": "day", "title": "$Day" },
+        { "id": "month", "title": "$Month" }
+      ],
+      "hide": "data.p2.chart_type.id != \"bar\""
+    },
+    { "prop": "rightaxis", "title": "$Chart_Rightaxis", "type": "cb" }
+  ],
+
   "p3": [
+    { "prop": "leftaxis_title", "title": "$Chart_Leftaxis_title", "type": "input" },
+    { "prop": "leftaxis_min", "title": "Минимальное значение", "type": "input" },
+    { "prop": "leftaxis_max", "title": "Максимальное значение", "type": "input" }
+  ],
+  "p4": [
+   
+    { "prop": "rightaxis_title", "title": "$Chart_Rightaxis_title", "type": "input", "hide": "!data.p2.rightaxis" },
+    { "prop": "rightaxis_min", "title": "Минимальное значение", "type": "input", "hide": "!data.p2.rightaxis" },
+    { "prop": "rightaxis_max", "title": "Максимальное значение", "type": "input", "hide": "!data.p2.rightaxis" }
+  ],
+
+  "p5": [
     {
       "title": "$Charts",
       "type": "table",
       "prop": "chartTable",
-      
+      "popupenable": true,
+
       "columns": [
-        { "prop": "id", "title": "ID", "type": "text", "width":50},
-        { "prop": "name", "title": "$Name", "type": "input", "width":250 },
-        { "prop": "legend", "title": "$Legend", "type": "input", "width":250 },
-        { "prop": "linecolor", "title": "$Color", "type": "input", "width":250 },
-        { "prop": "txt", "title": "$Text", "type": "input", "width":250 },
-        { "prop": "dn", "title": "Device", "type": "text", "width":150 }
-       
+        { "prop": "id", "title": "ID", "type": "text", "width": 50 },
+        { "prop": "name", "title": "$Name", "type": "input", "width": 250 },
+        { "prop": "legend", "title": "$Legend", "type": "input", "width": 250 },
+        { "prop": "linecolor", "title": "$Color", "type": "input", "width": 250 },
+        { "prop": "dn", "title": "Device", "type": "text", "width": 150 },
+        { "prop": "prop", "title": "Property", "type": "text", "width": 150 }
       ]
     }
   ]
