@@ -50,14 +50,14 @@
 
   "p3": [
     { "prop": "leftaxis_title", "title": "$Chart_Leftaxis_title", "type": "input" },
-    { "prop": "leftaxis_min", "title": "Минимальное значение", "type": "input" },
-    { "prop": "leftaxis_max", "title": "Максимальное значение", "type": "input" }
+    { "prop": "leftaxis_min", "title": "Min", "type": "number" },
+    { "prop": "leftaxis_max", "title": "Max", "type": "number" }
   ],
   "p4": [
    
     { "prop": "rightaxis_title", "title": "$Chart_Rightaxis_title", "type": "input", "hide": "!data.p2.rightaxis" },
-    { "prop": "rightaxis_min", "title": "Минимальное значение", "type": "input", "hide": "!data.p2.rightaxis" },
-    { "prop": "rightaxis_max", "title": "Максимальное значение", "type": "input", "hide": "!data.p2.rightaxis" }
+    { "prop": "rightaxis_min", "title": "Min", "type": "number", "hide": "!data.p2.rightaxis" },
+    { "prop": "rightaxis_max", "title": "Max", "type": "number", "hide": "!data.p2.rightaxis" }
   ],
 
   "p5": [
@@ -72,8 +72,7 @@
         { "prop": "name", "title": "$Name", "type": "input", "width": 250 },
         { "prop": "legend", "title": "$Legend", "type": "input", "width": 250 },
         { "prop": "linecolor", "title": "$Color", "type": "input", "width": 250 },
-        { "prop": "dn", "title": "Device", "type": "text", "width": 150 },
-        { "prop": "prop", "title": "Property", "type": "text", "width": 150 }
+        { "prop": "dn_prop", "title": "Device", "type": "droplist", "data": "devicedbList", "width": 150 }
       ]
     }
   ]

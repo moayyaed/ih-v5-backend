@@ -144,15 +144,18 @@
     "genfield": "props"
   },
 
+  "devicedb": {
+    "store": "db",
+    "collection": "devicedb",
+    "rows":true,
+    "upsert":true
+  },
+
   "devicedbTable": {
     "store": "db",
     "collection": "devicedb",
-    "genfield": "props",
-    "validator": {
-      "props": {
-        "newid": { "notempty": true }
-      }
-    }
+    "rows":true,
+    "upsert":true
   },
 
   "devicehwTable": {
