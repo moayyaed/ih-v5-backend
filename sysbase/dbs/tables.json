@@ -151,13 +151,6 @@
     "upsert":true
   },
 
-  "devicedbTable": {
-    "store": "db",
-    "collection": "devicedb",
-    "rows":true,
-    "upsert":true
-  },
-
   "devicehwTable": {
     "store": "db",
     "collection": "devices",

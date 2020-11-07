@@ -1,5 +1,5 @@
 {
-  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "devicedbTable", "height": 500 }],
+  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "devicedb", "height": 500 }],
   "spacing": 10,
   "breadcrumbs": { "tree": "devdevices" },
 
@@ -8,7 +8,7 @@
       "title": "Save to DB",
       "type": "table",
       "popupenable": false,
-      "prop": "devicedbTable",
+      "prop": "devicedb",
 
       "columns": [
         { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 100 },
