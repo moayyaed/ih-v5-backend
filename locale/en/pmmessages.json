@@ -862,6 +862,7 @@
   { "id": "Export", "note": "Export" },
 
   { "id": "Database", "note": "Database" },
+  { "id": "Legend", "note": "Legend" },
 
   { "id": "LinkToDeviceProperty", "note": "Link To Device Property" },
   { "id": "Var_Id", "note": "Variable Name" },

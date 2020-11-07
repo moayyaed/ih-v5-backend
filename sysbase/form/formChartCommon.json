@@ -4,7 +4,7 @@
     { "id": "p2", "xs": 4, "class": "main", "table": "chart" },
     { "id": "p3", "xs": 2, "class": "main", "table": "chart" },
     { "id": "p4", "xs": 2, "class": "main", "table": "chart" },
-    { "id": "p5", "xs": 12, "class": "main", "table": "chart", "height": 250 }
+    { "id": "p5", "xs": 12, "class": "main", "table": "chartTable", "height": 250 }
   ],
   "spacing": 8,
   "breadcrumbs": { "tree": "charts" },
@@ -68,11 +68,11 @@
       "popupenable": true,
 
       "columns": [
-        { "prop": "id", "title": "ID", "type": "text", "width": 50 },
+    
         { "prop": "name", "title": "$Name", "type": "input", "width": 250 },
         { "prop": "legend", "title": "$Legend", "type": "input", "width": 250 },
         { "prop": "linecolor", "title": "$Color", "type": "input", "width": 250 },
-        { "prop": "dn_prop", "title": "Device", "type": "droplist", "data": "devicedbList", "width": 150 }
+        { "prop": "dn_prop", "title": "$Chart_Data_type", "type": "droplist", "data": "devicedbList", "width": 150 }
       ]
     }
   ]

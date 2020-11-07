@@ -791,6 +791,7 @@
   { "id": "Export", "note": "Export" },
 
   { "id": "Database", "note": "Database" },
+  { "id": "Legend", "note": "Legend" },
 
   { "id": "Var_Id", "note": "Variable Name" },
   { "id": "SetDef", "note": "Set default value on server start" }
