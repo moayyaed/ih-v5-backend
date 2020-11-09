@@ -72,7 +72,8 @@
         { "prop": "name", "title": "$Name", "type": "input", "width": 250 },
         { "prop": "legend", "title": "$Legend", "type": "input", "width": 250 },
         { "prop": "linecolor", "title": "$Color", "type": "input", "width": 250 },
-        { "prop": "dn_prop", "title": "$Chart_Data_type", "type": "droplist", "data": "devicedbList", "width": 150 }
+        { "prop": "dn_prop", "title": "$Chart_Data_type", "type": "droplist", "data": "devicedbList", "width": 150 },
+        { "prop": "raxis", "title": "$Chart_Rightaxis", "type": "cb" }
       ]
     }
   ]
