@@ -1,0 +1,23 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"dblastrecsTable", "height":"fill"}
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "dbagents" },
+
+  "p1": [
+    {
+      "title": "Последние записи",
+      "type": "table",
+      "prop": "dblastrecsTable",
+
+      "columns": [
+        { "prop": "id", "title": "N", "type": "text", "width": 100 },
+        { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 250 },
+        { "prop": "dn", "title": "DN", "type": "text",  "width": 150  },
+        { "prop": "prop", "title": "Prop", "type": "text",  "width": 150  },
+        { "prop": "val", "title": "Значение", "type": "text" ,  "width": 150}
+      ]
+    }
+  ]
+}

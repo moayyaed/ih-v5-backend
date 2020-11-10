@@ -5,7 +5,8 @@
     { "id": "tabDeviceScene", "title": "Сценарии", "component": [{ "id": "formDeviceScene", "type": "form" }] },
     { "id": "tabDeviceVis", "title": "Ссылки на визуализацию", "component": [{ "id": "formDeviceVis", "type": "form" }] },
     { "id": "tabDeviceDb", "title": "Запись в БД", "component": [{ "id": "formDeviceDb", "type": "form" }] },
-    { "id": "tabDeviceLog",  "title": "Журнал", "component": [{ "id": "formDeviceLogTable", "type": "form" }]  }
+    { "id": "tabDeviceLog",  "title": "Журнал", "component": [{ "id": "formDeviceLogTable", "type": "form" }]  },
+    { "id": "tabDeviceDbLog",  "title": "Записи в БД", "component": [{ "id": "formDeviceLastRecs", "type": "form" }]  }
   ],
 
   "defaultTab": "tabDeviceCommon"
