@@ -792,6 +792,8 @@
 
   { "id": "Database", "note": "Database" },
   { "id": "Legend", "note": "Legend" },
+  { "id": "NewTab", "note": "New Tab" },
+
 
   { "id": "Var_Id", "note": "Variable Name" },
   { "id": "SetDef", "note": "Set default value on server start" }
