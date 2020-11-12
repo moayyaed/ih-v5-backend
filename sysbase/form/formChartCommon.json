@@ -50,8 +50,8 @@
 
   "p3": [
     { "prop": "leftaxis_title", "title": "$Chart_Leftaxis_title", "type": "input" },
-    { "prop": "leftaxis_min", "title": "Min", "type": "number" },
-    { "prop": "leftaxis_max", "title": "Max", "type": "number" }
+    { "prop": "leftaxis_min", "title": "Min", "type": "input" },
+    { "prop": "leftaxis_max", "title": "Max", "type": "input" }
   ],
   "p4": [
    
