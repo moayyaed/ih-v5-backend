@@ -1,0 +1,13 @@
+{
+  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "extlog", "height": "fill" }],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "dbagents" },
+
+  "p1": [
+    {
+      "title": "",
+      "type": "script",
+      "prop": "extlog"
+    }
+  ]
+}
