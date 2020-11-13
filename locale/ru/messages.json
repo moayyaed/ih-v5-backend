@@ -224,6 +224,10 @@
   { "id": "filesFromFolder", "note": "файлов из папки"},
   { "id": "NoFilesOfThisType", "note": "Файлы этого типа не надены"},
 
+  { "id": "SystemIndicators", "note": "Системные индикаторы"},
+  { "id": "PluginIndicator", "note": "Индикатор плагина"},
+  { "id": "DBHISTIndicator", "note": "Индикатор исторической БД"},
+
   { "id": "mustBeNotEmpty", "note": "значение не может быть пустым" },
   { "id": "mustBeValidId", "note": "недопустимое значение" },
   { "id": "mustBeLessToMax", "note": "значение не может быть меньше max" },

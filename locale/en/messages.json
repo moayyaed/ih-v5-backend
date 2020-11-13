@@ -222,6 +222,9 @@
   { "id": "filesFromFolder", "note": "files from folder"},
   { "id": "NoFilesOfThisType", "note": "No files of this type"},
 
+  { "id": "SystemIndicators", "note": "System Indicators"},
+  { "id": "PluginIndicator", "note": "Plugin Indicator"},
+  { "id": "DBHISTIndicator", "note": "Historical Database Indicator"},
 
   { "id": "mustBeNotEmpty", "note": "must be not empty" },
   { "id": "mustBeValidId", "note": "invalid value" },
