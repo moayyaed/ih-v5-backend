@@ -6,7 +6,7 @@
   "p1": [
     {
       "title": "",
-      "type": "script",
+      "type": "textarea",
       "prop": "extlog",
       "disabled":true
     }
