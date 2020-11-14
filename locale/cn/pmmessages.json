@@ -787,6 +787,7 @@
 
   { "id": "Copy", "note": "Copy" },
   { "id": "Paste", "note": "Paste" },
+  { "id": "Add", "note": "Add" },
   { "id": "Delete", "note": "Delete" },
   { "id": "Export", "note": "Export" },
 
