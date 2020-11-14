@@ -6,8 +6,9 @@
   "p1": [
     {
       "title": "",
-      "type": "textarea",
+      "type": "script",
       "prop": "extlog",
+      "param":"dblog",
       "disabled":true
     }
   ]
