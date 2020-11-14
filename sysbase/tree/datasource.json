@@ -5,13 +5,14 @@
       "shapes": [{ "id": "23", "type": "item", "icon": "full-circle", "text": "Full circle" }]
     }
   },
+
   "plugins": {
     "parent": {
       "popup": {
         "main": [
-          { "id": "1", "type": "remote", "title": "New plugin instance", "command": "addNodeByContext", "popupid": "plugininstance" },
+          { "id": "1", "type": "remote", "title": "$Add", "command": "addNodeByContext", "popupid": "pluginnew" },
           { "id": "3", "type": "divider" },
-          { "id": "7", "type": "item", "title": "Delete plugin instance", "command": "delete" }
+          { "id": "7", "type": "item", "title": "$Delete", "command": "delete" }
         ]
       },
       "defaultComponent": "pluginfolder"
