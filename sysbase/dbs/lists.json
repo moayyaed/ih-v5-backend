@@ -69,7 +69,7 @@
 
   "chartlineList": {
     "data": [
-      { "id": 0, "title": "Real" },
+      { "id": 0, "title": "Real data" },
       { "id": 1, "title": "Static line" },
       { "id": 2, "title": "Static fill" }
     ]

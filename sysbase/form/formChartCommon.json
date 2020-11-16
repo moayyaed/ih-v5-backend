@@ -70,7 +70,7 @@
       "columns": [
     
         { "prop": "type", "title": "$Type", "type": "droplist", "data": "chartlineList", "width": 150 },
-        { "prop": "legend", "title": "$Legend", "type": "input", "width": 150 },
+        { "prop": "legend", "title": "$Legend", "type": "input", "width": 150, "hide": "data.type.id > 0" },
         { "prop": "linecolor", "title": "$Color", "type": "color", "width": 150 },
         { "prop": "dn_prop", "title": "$Chart_Data_type", "type": "droplist", "data": "devicedbList", "width": 150, "hide": "data.type.id > 0" },
         { "prop": "raxis", "title": "$Chart_Rightaxis", "type": "cb" },
