@@ -90,6 +90,7 @@
   },
 
   "visitems": ["devicesExp", "sysdevices", "globals", "locals"],
+  "devicesDn": ["devicesExp", "sysdevices"],
   "visitemsAndVistemplates": ["devicesExp", "sysdevices", "globals", "locals", "vistemplate"],
   "setitems": ["devicesExp", "globals", "locals"],
 
