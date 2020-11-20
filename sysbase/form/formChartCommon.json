@@ -30,8 +30,9 @@
       "type": "droplist",
       "data": [
         { "id": "line", "title": "$Line" },
-        { "id": "bar", "title": "$Bar" },
         { "id": "step", "title": "$Step" }
+        { "id": "bar", "title": "$Bar" },
+        { "id": "pie", "title": "$Pie" }
       ]
     },
     {
