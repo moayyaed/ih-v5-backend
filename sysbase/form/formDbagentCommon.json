@@ -6,7 +6,6 @@
   "spacing": 10,
   "breadcrumbs": { "tree": "dbagents" },
 
-  "p1": [{ "prop": "name", "title": "$Name", "type": "text" },
-    { "prop": "path_db", "title": "Путь к БД", "type": "input", "default":"${vardir}/akdb/${project}/db" }],
-  "p2": [{ "prop": "text", "title": "$Name", "type": "text" }]
+  "p1": [{ "prop": "title", "title": "", "type": "text" } ],
+  "p2": [{ "prop": "database", "title": "Database", "type": "input" }]
 }

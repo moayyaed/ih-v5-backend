@@ -31,7 +31,7 @@
   "reports": { "folder": "jbasepath" },
   
   "projects": { "inMemory":1 },
-  "dbagents": { "inMemory":1 },
+  "dbagents": { "folder": "jbasepath" },
 
   "devicelog": { "folder": "operativepath", "ensureIndex":"ts", "expireAfterSeconds": 600 },
   "pluginlog": { "folder": "operativepath", "ensureIndex":"ts", "expireAfterSeconds": 86400},
