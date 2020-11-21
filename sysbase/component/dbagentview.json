@@ -1,6 +1,7 @@
 {
   "tabs": [
-    { "id": "tabDbagentCommon", "title": "Настройка", "component": [{ "id": "formDbagentCommon", "type": "form" }] }
+    { "id": "tabDbagentCommon", "title": "Настройка", "component": [{ "id": "formDbagentCommon", "type": "form" }] },
+    { "id": "tabDbagentLog", "title": "Лог", "component": [{ "id": "formDbagentLog", "type": "form" }] }
    
   ],
   "defaultTab": "tabDbagentCommon"
