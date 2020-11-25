@@ -94,7 +94,7 @@
       {
         "title": "$AnyDevice",
         "id": "anyRoot",
-        "root": "anydev",
+        "root": "anydevice",
         "expanded": true,
         "children": [
           {
@@ -111,7 +111,7 @@
     {
         "title": "$AnyDevice",
         "id": "anyRoot",
-        "root": "anydev",
+        "root": "anydevprops",
         "expanded": true,
         "children": [
           {
