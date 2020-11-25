@@ -89,6 +89,23 @@
     ]
   },
 
+  "anydevprops": {
+    "data": [
+    {
+        "title": "$AnyDevice",
+        "id": "anyRoot",
+        "root": "anydev",
+        "expanded": true,
+        "children": [
+          {
+            "title": "$DynaProps",
+            "id": "__device"
+          }
+        ]
+      }
+    ]
+  },
+
   "visitems": ["devicesExp", "sysdevices", "globals", "locals"],
   "devicesdn": ["devicesExp", "sysdevices"],
   "visitemsAndVistemplates": ["devicesExp", "sysdevices", "globals", "locals", "vistemplate"],
@@ -97,6 +114,9 @@
 
   "devcmd": ["devicesExp"],
   "devcmdAndAny": ["devicesExp", "anydevcmd"],
+  "devicesAndAny": ["devicesExp", "anydevcmd"],
+  "devpropsAndAny": ["devicesExp", "anydevprops"],
+
   "anydevcmd": {
     "data": [
       {
