@@ -89,6 +89,23 @@
     ]
   },
 
+  "anydevice": {
+    "data": [
+      {
+        "title": "$AnyDevice",
+        "id": "anyRoot",
+        "root": "anydev",
+        "expanded": true,
+        "children": [
+          {
+            "title": "$AnyDevice",
+            "id": "__device"
+          }
+        ]
+      }
+    ]
+  },
+
   "anydevprops": {
     "data": [
     {
@@ -114,7 +131,7 @@
 
   "devcmd": ["devicesExp"],
   "devcmdAndAny": ["devicesExp", "anydevcmd"],
-  "devicesAndAny": ["devicesExp", "anydevcmd"],
+  "devicesAndAny": ["devicesExp", "anydevice"],
   "devpropsAndAny": ["devicesExp", "anydevprops"],
 
   "anydevcmd": {
