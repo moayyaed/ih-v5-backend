@@ -132,6 +132,7 @@
   "devcmd": ["devicesExp"],
   "devcmdAndAny": ["devicesExp", "anydevcmd"],
   "devicesAndAny": ["devicesExp", "anydevice"],
+  "devicesx": ["devicesExp"],
   "devpropsAndAny": ["devicesExp", "anydevprops"],
   "devprops": ["devicesExp"],
 
