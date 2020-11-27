@@ -133,6 +133,7 @@
   "devcmdAndAny": ["devicesExp", "anydevcmd"],
   "devicesAndAny": ["devicesExp", "anydevice"],
   "devpropsAndAny": ["devicesExp", "anydevprops"],
+  "devprops": ["devicesExp"],
 
   "anydevcmd": {
     "data": [
