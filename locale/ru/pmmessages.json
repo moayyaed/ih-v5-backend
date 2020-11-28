@@ -849,6 +849,7 @@
   { "id": "LoadImage", "note": "Загрузить изображение" },
   { "id": "Template", "note": "Шаблон" },
   { "id": "NewTemplate", "note": "Новый шаблон" },
+  { "id": "NewSnippet", "note": "Новый сниппет" },
 
   { "id": "NewLayout", "note": "Новый экран" },
   { "id": "NewContainer", "note": "Новый контейнер" },

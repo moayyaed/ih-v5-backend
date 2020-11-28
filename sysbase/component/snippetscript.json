@@ -1,7 +1,7 @@
 {
   "tabs": [
-    { "id": "tabSnippetScript",  "title": "Свойства", "component": [{ "id": "formSceneScript", "type": "form" }]  },
-    { "id": "tabSnippetCodeEditor",  "title": "Редактор кода", "component": [{ "id": "formSceneCodeEditor", "type": "form" }]  }
+    { "id": "tabSnippetScript",  "title": "Свойства", "component": [{ "id": "formSnippetScript", "type": "form" }]  },
+    { "id": "tabSnippetCodeEditor",  "title": "Редактор кода", "component": [{ "id": "formSnippetCodeEditor", "type": "form" }]  }
 
   ],
   "defaultTab": "tabSnippetScript"

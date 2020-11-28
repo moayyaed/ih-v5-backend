@@ -771,6 +771,7 @@
   { "id": "LoadImage", "note": "Load Image" },
   { "id": "Template", "note": "Template" },
   { "id": "NewTemplate", "note": "New Template" },
+  { "id": "NewSnippet", "note": "New Snippet" },
 
   { "id": "NewLayout", "note": "New Layout" },
   { "id": "NewContainer", "note": "New Container" },
