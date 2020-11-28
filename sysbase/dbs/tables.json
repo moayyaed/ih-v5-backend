@@ -342,7 +342,7 @@
     "store": "db",
     "collection": "snippets",
     "default": { "name": "Новый сниппет" },
-    "ruleID": { "pref": "sn", "len": 3 }
+    "ruleID": { "pref": "snippet", "len": 3 }
   },
 
   "chartgroup": {

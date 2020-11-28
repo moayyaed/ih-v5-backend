@@ -219,7 +219,7 @@
 
   "scriptx": ["scenes"],
 
-  "datasource": ["plugins"],
+  "datasource": ["plugins", "snippets"],
   "plugins": {
     "branch": {
       "table": "unitgroup",
