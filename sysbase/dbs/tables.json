@@ -338,7 +338,7 @@
     "ruleID": { "pref": "sng", "len": 3 }
   },
 
-  "snippets": {
+  "snippet": {
     "store": "db",
     "collection": "snippets",
     "default": { "name": "Новый сниппет" },

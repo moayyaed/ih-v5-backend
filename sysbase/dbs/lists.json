@@ -44,6 +44,11 @@
     "propmap": { "_id": "id", "name": "name", "tags": "tags", "status": "status", "multi": "multi","folder": "folder"  }
   },
 
+  "snippetList": {
+    "table": "snippet",
+    "propmap": { "_id": "id", "name": "name", "tags": "tags", "status": "status", "folder": "folder"  }
+  },
+
   "layoutList": {
     "table": "layout",
     "propmap": { "_id": "id", "name": "title","folder": "folder"  }
