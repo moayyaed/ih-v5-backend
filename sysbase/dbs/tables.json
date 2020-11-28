@@ -342,7 +342,6 @@
   "snippet": {
     "store": "db",
     "collection": "snippets",
-    "default": { "name": "Новый сниппет" },
     "ruleID": { "pref": "snippet", "len": 3 }
   },
 
