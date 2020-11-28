@@ -1,0 +1,22 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"snippetsTreeTable", "height":"fill"}
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "snippets" },
+
+  "p1": [
+    {
+      "title": "Scnippets",
+      "type": "table",
+      "prop": "snippetsTreeTable",
+
+      "columns": [
+
+        { "prop": "title", "title": "", "type": "link", "command":"forward",  "width": 400  },
+        { "prop": "name", "title": "$Name", "type": "input",  "width": 400 }, 
+        { "prop": "path", "title": "", "type": "text",  "width": 400 }
+      ]
+    }
+  ]
+}
