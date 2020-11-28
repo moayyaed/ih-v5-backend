@@ -13,6 +13,7 @@ const deviceservice = require('./lib/device/deviceservice');
 const resservice = require('./lib/resource/resourceservice');
 const pluginservice = require('./lib/plugin/pluginservice');
 const sceneservice = require('./lib/scene/sceneservice');
+const snippetservice = require('./lib/snippet/snippetservice');
 const trendservice = require('./lib/trend/trendservice');
 
 
@@ -45,6 +46,7 @@ const EventEmitter = require('events');
     await resservice(holder);
     await pluginservice(holder);
     await sceneservice(holder);
+    await snippetservice(holder);
     await trendservice(holder);
 
     await webserver(holder);
