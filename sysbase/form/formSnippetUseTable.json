@@ -1,0 +1,23 @@
+{
+  "grid": [
+   
+    { "id": "p3", "xs": 12, "class": "main", "table": "snippetusageTable", "height": "fill" }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "snippets" },
+
+  "p3": [
+    {
+      "title": "Snippet Use Table",
+      "type": "table",
+      "prop": "snippetusageTable",
+    
+
+      "columns": [
+       
+        { "prop": "did", "title": "", "type": "link", "width": 450, "command": "forward"  },
+        { "prop": "period", "title": "$SnipPeriod", "type": "text", "width": 250  }
+      ]
+    }
+  ]
+}

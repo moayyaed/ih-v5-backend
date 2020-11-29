@@ -1,8 +1,9 @@
 {
   "tabs": [
-    { "id": "tabSnippetScript",  "title": "Свойства", "component": [{ "id": "formSnippetScript", "type": "form" }]  },
-    { "id": "tabSnippetCodeEditor",  "title": "Редактор кода", "component": [{ "id": "formSnippetCodeEditor", "type": "form" }]  }
+    { "id": "tabSnippetCommon",  "title": "Свойства", "component": [{ "id": "formSnippetCommon", "type": "form" }]  },
+    { "id": "tabSnippetCodeEditor",  "title": "Редактор кода", "component": [{ "id": "formSnippetCodeEditor", "type": "form" }]  },
+    { "id": "tabSnippetUseTable",  "title": "Использование", "component": [{ "id": "formSnippetUseTable", "type": "form" }]  }
 
   ],
-  "defaultTab": "tabSnippetScript"
+  "defaultTab": "tabSnippetCommon"
 }

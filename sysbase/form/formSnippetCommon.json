@@ -10,16 +10,6 @@
 
   "p1": [
     { "prop": "name", "title": "$Name", "type": "input" },
-    {
-      "prop": "status",
-      "title": "Состояние",
-      "type": "droplist",
-      "data": [
-        { "id": "0", "title": "Draft" },
-        { "id": "1", "title": "Work" },
-        { "id": "2", "title": "Blocked" }
-      ]
-    },
     { "prop": "_id", "title": "File", "type": "text" },
     { "prop": "reqts", "title": "Updated", "type": "text" }
   ],

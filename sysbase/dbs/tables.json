@@ -278,6 +278,10 @@
     "store": "none"
   },
 
+  "snippetusageTable": {
+    "store": "none"
+  },
+
   "scenegroup": {
     "store": "db",
     "collection": "scenes",
