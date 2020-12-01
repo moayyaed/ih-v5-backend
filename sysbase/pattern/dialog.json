@@ -93,7 +93,7 @@
       }
     },
     "outsideClose": {
-      "value": false
+      "value": true
     }
   },
   "list": [],
