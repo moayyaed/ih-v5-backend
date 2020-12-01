@@ -13,11 +13,11 @@
     { "prop": "type", "title": "$Dev_Type", "type": "droplist", "data": "typeList" },
     { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist" }
   ],
-  "p2": [
+  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
+  "p3": [
     { "prop": "snipuse", "title": "$UseSnippet", "type": "cb" },
-    { "prop": "snipid", "title": "$Snippet", "type": "droplist", "data":"snippetList", "hide":"!data.p2.snipuse" },
-    { "prop": "snipperiod", "title": "$SnipPeriod", "type": "number", "hide":"!data.p2.snipuse" }
+    { "prop": "snipid", "title": "$Snippet", "type": "droplist", "data":"snippetList", "hide":"!data.p3.snipuse" },
+    { "prop": "snipperiod", "title": "$SnipPeriod", "type": "number", "hide":"!data.p3.snipuse" }
    
-  ],
-  "p3": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
+  ]
 }
