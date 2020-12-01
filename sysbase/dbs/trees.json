@@ -131,8 +131,8 @@
 
   "devcmd": ["devicesExp"],
   "devcmdAndAny": ["devicesExp", "anydevcmd"],
-  "devicesAndAny": ["devicesExp", "anydevice"],
-  "devicesx": ["devicesExp"],
+  "devicesAndAny": ["devicesExp", "globals", "anydevice"],
+  "devicesx": ["devicesExp", "globals"],
   "devpropsAndAny": ["devicesExp", "anydevprops"],
   "devprops": ["devicesExp"],
 
