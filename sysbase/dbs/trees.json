@@ -131,10 +131,10 @@
 
   "devcmd": ["devicesExp"],
   "devcmdAndAny": ["devicesExp", "anydevcmd"],
-  "devicesAndAny": ["devicesExp", "globals", "anydevice"],
-  "devicesx": ["devicesExp", "globals"],
+  "devicesAndAny": ["devicesExp", "anydevice"],
+  "devicesx": ["devicesExp"],
   "devpropsAndAny": ["devicesExp", "anydevprops"],
-  "devprops": ["devicesExp"],
+  "devprops": ["devicesExp", "globals"],
 
   "anydevcmd": {
     "data": [
