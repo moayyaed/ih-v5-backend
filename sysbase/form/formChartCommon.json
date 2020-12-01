@@ -73,7 +73,7 @@
         { "prop": "type", "title": "$Type", "type": "droplist", "data":"chartlineList", "width": 150 },
         { "prop": "legend", "title": "$Legend", "type": "input", "width": 150, "hide": "data.type.id > 0" },
         { "prop": "linecolor", "title": "$Color", "type": "color", "width": 50 },
-        { "prop": "dn_prop", "title": "$Chart_Data_type", "type": "droplist", "data": "devicedbList", "width": 150, "hide": "data.type.id > 0" },
+        { "prop": "dn_prop", "title": "$Chart_Data_type", "type": "smartbutton2", params: { "variant": "tree", "title": "Выберите свойство", "id": "devprops", "save": false }, "width": 150, "hide": "data.type.id > 0" },
         { "prop": "raxis", "title": "$Chart_Rightaxis", "type": "cb", "width": 100, "hide": "data.type.id > 0" },
         { "prop": "staticvalue", "title": "Static line value", "type": "number", "width": 100, "hide": "data.type.id != 1"},
         { "prop": "staticlow", "title": "Static fill low value", "type": "number", "width": 100, "hide": "data.type.id != 2"},
