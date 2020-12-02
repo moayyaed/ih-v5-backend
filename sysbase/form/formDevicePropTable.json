@@ -28,6 +28,7 @@
         { "prop": "realtime_dev_ts", "title": "Время", "type": "text", "width": 150 },
         { "prop": "realtime_dev_cts", "title": "Изменение", "type": "text", "width": 128 },
         { "prop": "realtime_dev_err", "title": "Ошибка", "type": "text", "width": 128 },
+        { "prop": "log", "title": "Запись в журнал", "type": "cb", "width": 80, "hide": "data.prop == 'error' || data.type_op == 'Command'" },
         { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide": "!data.type_op.includes('Number')" },
         { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide": "!data.type_op.includes('Number')" },
         {
