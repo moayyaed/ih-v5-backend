@@ -14,7 +14,7 @@
         { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 100 },
         {
           "prop": "dbmet",
-          "title": "Метод сохранения",
+          "title": "$SaveMethod",
           "type": "droplist",
           "data": [
             { "id": 0, "title": "$NotSave" },

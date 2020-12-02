@@ -1,0 +1,25 @@
+{
+  "grid": [
+   
+    { "id": "p3", "xs": 12, "class": "main", "table": "dbmetricsTable", "height": "fill" }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "dbagents" },
+
+  "p3": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "dbmetricsTable",
+    
+
+      "columns": [
+       
+        { "prop": "id", "title": "", "type": "text", "width": 30 },
+        { "prop": "did", "title": "", "type": "link", "width": 450, "command": "forward"  },
+        { "prop": "prop", "title": "$Property", "type": "text", "width": 150  },
+        { "prop": "dbmet", "title": "$SaveMethod", "type": "text", "width": 250  }
+      ]
+    }
+  ]
+}

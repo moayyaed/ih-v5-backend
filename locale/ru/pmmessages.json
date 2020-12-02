@@ -863,6 +863,8 @@
   { "id": "DynaProps", "note": "Динамические свойства" },
   { "id": "StatProps", "note": "Статические свойства" },
   { "id": "Imgsystem", "note": "Системные" },
+  { "id": "SaveMethod", "note": "Метод сохранения" },
+
 
   { "id": "Copy", "note": "Копировать" },
   { "id": "Paste", "note": "Вставить" },

@@ -1,7 +1,8 @@
 {
   "tabs": [
     { "id": "tabDbagentFolder",  "title": "База данных", "component": [{ "id": "formDbagentFolder", "type": "form" }]  },
-    { "id": "tabDbagentLogTable", "title": "Журнал", "component": [{ "id": "formDbagentLogTable", "type": "form" }] }
+    { "id": "tabDbagentLogTable", "title": "Журнал", "component": [{ "id": "formDbagentLogTable", "type": "form" }] },
+    { "id": "tabDbagentMetrics", "title": "Запись в БД", "component": [{ "id": "formDbagentMetricsTable", "type": "form" }] }
 
   ],
   "defaultTab": "tabDbagentLogTable"

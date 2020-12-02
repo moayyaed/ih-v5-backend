@@ -96,5 +96,14 @@
       { "id": 2, "title": "Working" },
       { "id": 3, "title": "Stopped" }
     ]
+  },
+
+  "dbmetList": {
+    "data": [
+      { "id": 0, "title": "$NotSave" },
+      { "id": 1, "title": "$OnChange" },
+      { "id": 2, "title": "$AllValues" },
+      { "id": 3, "title": "$Periodically" }
+    ]
   }
 }

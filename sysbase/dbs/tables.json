@@ -122,6 +122,10 @@
     "store": "none"
   },
 
+  "dbmetricsTable": {
+    "store": "none"
+  },
+
   "sysdeviceTable": {
     "store": "none"
   },

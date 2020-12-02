@@ -14,14 +14,9 @@
         { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 100 },
         {
           "prop": "dbmet",
-          "title": "Метод сохранения",
+          "title": "$SaveMethod",
           "type": "droplist",
-          "data": [
-            { "id": 0, "title": "$NotSave" },
-            { "id": 1, "title": "$OnChange" },
-            { "id": 2, "title": "$AllValues" },
-            { "id": 3, "title": "$Periodically" }
-          ]
+          "data": "dbmetList"
         },
 
         { "prop": "dbtm", "title": "$Dev_dbtm", "type": "number", "hide":"!data.dbmet || data.dbmet.id<3" },

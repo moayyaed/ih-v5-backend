@@ -855,6 +855,7 @@
   { "id": "DynaProps", "note": "Dynamic properties" },
   { "id": "StatProps", "note": "Static properties" },
   { "id": "Imgsystem", "note": "System" },
+  { "id": "SaveMethod", "note": "Save Method" },
 
 
   { "id": "Copy", "note": "Copy" },
