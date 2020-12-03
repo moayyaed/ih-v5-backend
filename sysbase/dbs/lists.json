@@ -105,5 +105,17 @@
       { "id": 2, "title": "$AllValues" },
       { "id": 3, "title": "$Periodically" }
     ]
+  },
+
+  "dbcalc_typeList":{
+    "data": [
+      { "id": "-", "title": "" },
+      { "id": "first", "title": "First" },
+      { "id": "last", "title": "Last" },
+      { "id": "min", "title": "Min" },
+      { "id": "max", "title": "Max" },
+      { "id": "minmax", "title": "Min&Max" },
+      { "id": "mean", "title": "Mean" }
+    ]
   }
 }
