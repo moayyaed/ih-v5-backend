@@ -13,10 +13,10 @@
 
       "columns": [
         { "prop": "id", "title": "N", "type": "text", "width": 100 },
-        { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 250 },
-        { "prop": "dn", "title": "DN", "type": "text",  "width": 150  },
-        { "prop": "prop", "title": "Prop", "type": "text",  "width": 150  },
-        { "prop": "val", "title": "Значение", "type": "text" ,  "width": 150}
+        { "prop": "realtime_ts", "title": "$LogDateTime", "type": "text", "width": 250 },
+        { "prop": "dn", "title": "$Dev_Id", "type": "text",  "width": 150  },
+        { "prop": "prop", "title": "$Property", "type": "text",  "width": 150  },
+        { "prop": "val", "title": "$Value", "type": "text" ,  "width": 150}
       ]
     }
   ]
