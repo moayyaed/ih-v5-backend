@@ -109,7 +109,6 @@
 
   "dbcalc_typeList":{
     "data": [
-      { "id": "-", "title": "" },
       { "id": "first", "title": "First" },
       { "id": "last", "title": "Last" },
       { "id": "min", "title": "Min" },

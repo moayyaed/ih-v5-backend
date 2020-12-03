@@ -2,6 +2,7 @@
   "tabs": [
     { "id": "tabGlobalCommon", "title": "Переменная", "component": [{ "id": "formGlobalVarCommon", "type": "form" }] },
     { "id": "tabGlobalVis", "title": "Ссылки на визуализацию", "component": [{ "id": "formGlobalVarVis", "type": "form" }] },
+    { "id": "tabGlobalDb", "title": "Правила записи в БД", "component": [{ "id": "formGlobalDb", "type": "form" }] },
     { "id": "tabGlobalLog",  "title": "Журнал", "component": [{ "id": "formGlobalVarLogTable", "type": "form" }]  }
   ],
 

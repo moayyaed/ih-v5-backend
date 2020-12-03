@@ -1,0 +1,24 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 6, "class": "main", "table": "devicedb" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "devicedb" }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "globals" },
+
+  "p1": [
+    { "prop": "dbmet", "title": "$SaveMethod", "type": "droplist", "data": "dbmetList" }
+  ],
+  "p2": [
+    { "prop": "dbtm", "title": "$Dev_dbtm", "type": "number", "hide": "!data.p1.dbmet || data.p1.dbmet.id<3" },
+    {
+      "prop": "dbcalc_type",
+      "title": "$Dev_calc_type",
+      "type": "droplist",
+      "data": "dbcalc_typeList",
+      "hide": "!data.p1.dbmet || data.p1.dbmet.id<3"
+    },
+    { "prop": "dbdelta", "title": "$Dev_dbdelta", "type": "number", "hide": "!data.p1.dbmet || data.p1.dbmet.id!=1" },
+    { "prop": "dbforce", "title": "$Dev_dbforce", "type": "number", "hide": "!data.p1.dbmet || data.p1.dbmet.id!=1" }
+  ]
+}
