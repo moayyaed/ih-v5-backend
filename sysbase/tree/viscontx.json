@@ -1,0 +1,15 @@
+{
+  "common": {
+    "popup": {}
+  },
+
+  "viscont": {
+    "parent": {
+      "defaultComponent": null
+    },
+
+    "child": {
+      "defaultComponent": "formViscontx"
+    }
+  }
+}

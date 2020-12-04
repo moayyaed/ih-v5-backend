@@ -163,6 +163,7 @@
   },
 
   "vis": ["layout", "viscont", "dialog", "vistemplate", "images"],
+  "viscontx": ["viscont"],
 
   "viscont": {
     "branch": {
