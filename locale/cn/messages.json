@@ -220,6 +220,13 @@
   { "id": "SystemIndicators", "note": "System Indicators"},
   { "id": "PluginIndicator", "note": "Plugin Indicator"},
   { "id": "DBHISTIndicator", "note": "Historical Database Indicator"},
+  { "id": "DeleteInstance", "note": "Delete Instance" },
+  { "id": "ActivatePlugin", "note": "Activate Plugin" },
+  { "id": "DeactivatePlugin", "note": "Deactivate Plugin" },
+  { "id": "AddInstance", "note": "Add Instance" },
+  { "id": "DeleteAllInstances", "note": "Delete all instances, deactivate plugin" },
+  { "id": "Activate", "note": "Activate" },
+  { "id": "Deactivate", "note": "Deactivate" },
 
   { "id": "mustBeNotEmpty", "note": "must be not empty" },
   { "id": "mustBeValidId", "note": "invalid value" },

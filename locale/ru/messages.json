@@ -227,6 +227,14 @@
   { "id": "SystemIndicators", "note": "Системные индикаторы"},
   { "id": "PluginIndicator", "note": "Индикатор плагина"},
   { "id": "DBHISTIndicator", "note": "Индикатор исторической БД"},
+  { "id": "DeleteInstance", "note": "Удалить экземпляр" },
+  { "id": "ActivatePlugin", "note": "Активировать плагин" },
+  { "id": "DeactivatePlugin", "note": "Деактивировать плагин" },
+  { "id": "AddInstance", "note": "Добавить экземпляр" },
+  { "id": "DeleteAllInstances", "note": "Удалить все экземпляры, деактивировать плагин" },
+  { "id": "Activate", "note": "Активировать" },
+  { "id": "Deactivate", "note": "Деактивировать" },
+
 
   { "id": "mustBeNotEmpty", "note": "значение не может быть пустым" },
   { "id": "mustBeValidId", "note": "недопустимое значение" },
