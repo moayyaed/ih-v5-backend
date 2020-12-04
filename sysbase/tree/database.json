@@ -7,10 +7,7 @@
   "dbagents": {
     "parent": {
       "popup": {
-        "main": [
-          { "id": "1", "type": "remote", "title": "Активировать БД", "command": "addNodeByContext", "popupid": "plugin_dbagentnew" }
-
-        ]
+        "main": "plugin_dbagents"
       },
       "defaultComponent": "dbagentfolder"
     },
