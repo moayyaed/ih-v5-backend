@@ -9,11 +9,7 @@
   "plugins": {
     "parent": {
       "popup": {
-        "main": [
-          { "id": "1", "type": "remote", "title": "$Add", "command": "addNodeByContext", "popupid": "pluginnew" },
-          { "id": "3", "type": "divider" },
-          { "id": "7", "type": "item", "title": "$Delete", "command": "delete" }
-        ]
+        "main": "plugins"
       },
       "defaultComponent": "pluginfolder"
     },
