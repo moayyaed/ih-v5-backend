@@ -14,6 +14,7 @@
     { "prop": "setdef", "title": "$SetDef", "type": "cb" }
   ],
   "p2": [
+    { "prop": "log", "title": "$LogCommand", "type": "cb"},
     { "prop": "snipuse", "title": "$UseSnippet", "type": "cb" },
     { "prop": "snipid", "title": "$Snippet", "type": "droplist", "data":"snippetList", "hide":"!data.p2.snipuse" },
     { "prop": "snipperiod", "title": "$SnipPeriod", "type": "number", "hide":"!data.p2.snipuse" }

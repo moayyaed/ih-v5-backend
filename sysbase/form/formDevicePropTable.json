@@ -14,21 +14,21 @@
         { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 100 },
 
         { "prop": "type_propname", "title": "$Name", "type": "text", "width": 150 },
-        { "prop": "type_op", "title": "Тип свойства", "type": "text", "width": 100 },
+        { "prop": "type_op", "title": "$Devprop_Type", "type": "text", "width": 100 },
         {
           "prop": "chanlink",
-          "title": "Канал",
+          "title": "$Dev_channel",
           "type": "smartbutton",
           "width": 180,
           "hide": "data.snipuse || data.type_op.includes('System') || data.type_op.includes('Calculate')",
           "command": "dialog",
           "params": { "title": "Привязка к каналу", "type": "tree", "id": "pluginsd", "dialog": "channellink" }
         },
-        { "prop": "realtime_dev_val", "title": "Значение", "type": "text", "width": 64 },
-        { "prop": "realtime_dev_ts", "title": "Время", "type": "text", "width": 150 },
+        { "prop": "realtime_dev_val", "title": "$Value", "type": "text", "width": 64 },
+        { "prop": "realtime_dev_ts", "title": "$LogDateTime", "type": "text", "width": 150 },
         { "prop": "realtime_dev_cts", "title": "Изменение", "type": "text", "width": 128 },
-        { "prop": "realtime_dev_err", "title": "Ошибка", "type": "text", "width": 128 },
-        { "prop": "log", "title": "Запись в журнал", "type": "cb", "width": 80, "hide": "data.prop == 'error' || data.type_op == 'Command'" },
+        { "prop": "realtime_dev_err", "title": "$Error", "type": "text", "width": 128 },
+        { "prop": "log", "title": "$LogCommand", "type": "cb", "width": 80, "hide": "data.prop == 'error' || data.type_op == 'Command'" },
         { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide": "!data.type_op.includes('Number')" },
         { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide": "!data.type_op.includes('Number')" },
         {
