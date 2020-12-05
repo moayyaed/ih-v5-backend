@@ -224,7 +224,7 @@
 
   { "id": "SystemIndicators", "note": "System Indicators"},
   { "id": "PluginIndicator", "note": "Plugin Indicator"},
-  { "id": "DBHISTIndicator", "note": "Historical Database Indicator"},
+  { "id": "DBHIST", "note": "Historical Database Indicator"},
   { "id": "DeleteInstance", "note": "Delete Instance" },
   { "id": "ActivatePlugin", "note": "Activate Plugin" },
   { "id": "DeactivatePlugin", "note": "Deactivate Plugin" },
