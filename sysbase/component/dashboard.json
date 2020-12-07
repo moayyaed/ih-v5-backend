@@ -4,6 +4,11 @@
       "id": "tabDashboardCommon",
       "title": "Information",
       "component": [{ "id": "formDashboardCommon", "type": "xform" }]
+    },
+    {
+      "id": "tabDashboardLog",
+      "title": "Log",
+      "component": [{ "id": "formDashboardSystemLog", "type": "form" }]
     }
   ],
   "defaultTab": "tabDashboardCommon"

@@ -1,0 +1,14 @@
+{
+  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "extlog", "height": "fill" }],
+  "spacing": 10,
+ 
+  "p1": [
+    {
+      "title": "",
+      "type": "script",
+      "prop": "extlog",
+      "param":"ihlog",
+      "disabled":true
+    }
+  ]
+}
