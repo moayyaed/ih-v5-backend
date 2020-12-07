@@ -3,7 +3,7 @@
   "spacing": 10,
 
   "p1": [
-    { "prop": "param1", "title": "Parameter 1", "type": "input", "default":"test param1" },
-    { "prop": "param2", "title": "Parameter 2", "type": "input", "default":"test param2" }
+    { "prop": "target_frame", "title": "Target frame", "type": "droplist", "data":"containerList" },
+    { "prop": "containerid", "title": "Container", "type": "droplist", "data":"containerList" }
   ]
 }
