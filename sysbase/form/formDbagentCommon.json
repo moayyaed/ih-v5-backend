@@ -1,14 +1,28 @@
 {
   "grid": [
     { "id": "p1", "xs": 6, "class": "main", "table": "dbagent" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "dbagent" }
+    { "id": "p2", "xs": 6, "class": "main", "table": "dbagent" },
+    { "id": "p3", "xs": 12, "class": "main", "table": "dbagent", "height":"fill" }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "dbagents" },
 
-  "p1": [{ "prop": "title", "title": "", "type": "text" } ],
-  "p2": [{ "prop": "database", "title": "Database", "type": "input" },
-  
-    { "prop": "activeButton1", "title": "Перезагрузить сервер с этими настройками", "type": "button", "command": "restart" }
+  "p1": [{ "prop": "title", "title": "", "type": "text" }],
+  "p2": [{ "prop": "database", "title": "Database", "type": "input" }],
+  "p3": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "dbagentstateTable",
+
+      "columns": [
+        { "prop": "name", "title": "$Name", "type": "text", "width": 150 },
+        { "prop": "state", "title": "Состояние", "type": "text", "width": 150 },
+        { "prop": "laststart", "title": "Время запуска", "type": "text", "width": 150 },
+        { "prop": "laststop", "title": "Время останова", "type": "text", "width": 150 },
+        { "prop": "uptime", "title": "Uptime", "type": "text", "width": 150 },
+        { "prop": "error", "title": "Ошибка", "type": "text", "width": 250 }
+      ]
+    }
   ]
 }
