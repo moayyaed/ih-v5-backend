@@ -4,6 +4,6 @@
 
   "p1": [
     { "prop": "target_frame", "title": "Target frame", "type": "droplist", "data":"containerList" },
-    { "prop": "containerid", "title": "Container", "type": "droplist", "data":"containerList" }
+    { "prop": "target_container_id", "title": "Container", "type": "droplist", "data":"__layout_frame_list" }
   ]
 }
