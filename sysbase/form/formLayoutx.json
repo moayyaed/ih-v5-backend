@@ -7,10 +7,11 @@
       "title": "",
       "type": "table",
       "prop": "targetFrameTable",
+      "popupenable": true,
 
       "columns": [
-        { "prop": "target_frame", "title": "Target frame", "type": "droplist", "data": "__layout_frame_list" },
-        { "prop": "target_container_id", "title": "Container", "type": "droplist", "data": "containerList" }
+        { "prop": "target_frame", "title": "Фрейм", "type": "droplist", "data": "__layout_frame_list", "width":300 },
+        { "prop": "target_container_id", "title": "Контейнер", "type": "droplist", "data": "containerList", "width":300 }
       ]
     }
   ]
