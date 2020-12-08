@@ -7,6 +7,7 @@
     {
       "title": "",
       "type": "script",
+      "mode": "text",
       "prop": "extlog",
       "param":"dblog",
       "disabled":true
