@@ -1,9 +1,17 @@
 {
-  "grid": [{ "id": "p1", "xs": 12, "class": "main" }],
+  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table":"targetFrameTable", "height":"fill" }],
   "spacing": 10,
 
   "p1": [
-    { "prop": "target_frame", "title": "Target frame", "type": "droplist", "data": "__layout_frame_list" },
-    { "prop": "target_container_id", "title": "Container", "type": "droplist", "data": "containerList" }
+    {
+      "title": "",
+      "type": "table",
+      "prop": "targetFrameTable",
+
+      "columns": [
+        { "prop": "target_frame", "title": "Target frame", "type": "droplist", "data": "__layout_frame_list" },
+        { "prop": "target_container_id", "title": "Container", "type": "droplist", "data": "containerList" }
+      ]
+    }
   ]
 }

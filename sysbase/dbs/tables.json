@@ -338,6 +338,11 @@
     "store": "none"
   },
 
+
+  "targetFrameTable": {
+    "store": "none"
+  },
+ 
   "snippetgroup": {
     "store": "db",
     "collection": "snippets",
