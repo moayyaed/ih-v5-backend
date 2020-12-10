@@ -232,6 +232,7 @@
   { "id": "DeleteAllInstances", "note": "Delete all instances, deactivate plugin" },
   { "id": "Activate", "note": "Activate" },
   { "id": "Deactivate", "note": "Deactivate" },
+  { "id": "NoDbUsed", "note": "No database used in this project" },
 
 
   { "id": "mustBeNotEmpty", "note": "must be not empty" },

@@ -2,7 +2,7 @@
   "grid": [
     { "id": "p1", "xs": 6, "class": "main", "table": "dbagent" },
     { "id": "p2", "xs": 6, "class": "main", "table": "dbagent" },
-    { "id": "p3", "xs": 12, "class": "main", "table": "dbagent", "height":"fill" }
+    { "id": "p3", "xs": 12, "class": "main", "table": "dbagentstateTable", "height":"fill" }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "dbagents" },
