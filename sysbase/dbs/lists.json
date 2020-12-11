@@ -91,10 +91,10 @@
 
   "unitStateList": {
     "data": [
-      { "id": 0, "title": "Run error" },
+      { "id": 0, "title": "Not active" },
       { "id": 1, "title": "Suspended" },
       { "id": 2, "title": "Working" },
-      { "id": 3, "title": "Stopped" }
+      { "id": 3, "title": "Stopped with error" }
     ]
   },
 

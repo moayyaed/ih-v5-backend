@@ -17,8 +17,10 @@
           { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
           { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
           { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
-          { "id": "7", "type": "divider" },
-          { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
+          { "id": "7", "type": "item", "title": "Start scene", "command": "send",  "param": { "emit": "start:scene" }},
+          { "id": "8", "type": "divider" },
+          
+          { "id": "9", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
       "defaultComponent": "scenefolder"
