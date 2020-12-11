@@ -1,7 +1,7 @@
 [
   { "id": "1", "route": "dev", "title": "$Devices", "tooltip": "$Devices", "icon": "dev" },
   { "id": "2", "route": "vis", "title": "$VISUALIZATION", "tooltip": "$VISUALIZATION", "icon": "vis" },
-  { "id": "3", "route": "scenes", "title": "$Scenes", "tooltip": "$Scenes", "icon": "scripts" },
+  { "id": "3", "route": "allscenes", "title": "$Scenes", "tooltip": "$Scenes", "icon": "scripts" },
   { "id": "4", "route": "datasource", "title": "$DATASOURCE", "tooltip": "$DATASOURCE", "icon": "datasource" },
   { "id": "6", "route": "analytics", "title": "$ANALYTICS", "tooltip": "$ANALYTICS", "icon": "analytics" },
   { "id": "7", "route": "database", "title": "$DB", "tooltip": "$DB", "icon": "database" },

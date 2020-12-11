@@ -19,6 +19,7 @@
   "vistemplates": { "folder": "jbasepath" },
 
   "scenes": { "folder": "jbasepath" },
+  "multiscenes": { "folder": "jbasepath" },
   "scenecalls": { "folder": "jbasepath" },
 
   "images": { "folder": "jbasepath" },

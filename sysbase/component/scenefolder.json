@@ -3,5 +3,5 @@
     { "id": "tabSceneFolder",  "title": "Свойства папки", "component": [{ "id": "formSceneFolder", "type": "form" }]  },
     { "id": "tabSceneTable",  "title": "Таблица сценариев", "component": [{ "id": "formSceneTable", "type": "form" }]  }
   ],
-  "defaultTab": "tabSceneFolder"
+  "defaultTab": "tabSceneTable"
 }

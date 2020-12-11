@@ -17,10 +17,14 @@
           { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
           { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
           { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
-          { "id": "7", "type": "item", "title": "Start scene", "command": "send",  "param": { "emit": "start:scene" }},
           { "id": "8", "type": "divider" },
+          { "id": "9", "type": "item", "title": "Start scene", "command": "send",  "param": { "emit": "start:scene" }},
+          { "id": "10", "type": "item", "title": "Stop scene", "command": "send",  "param": { "emit": "stop:scene" }},
+          { "id": "11", "type": "item", "title": "Block scene", "command": "send",  "param": { "emit": "block:scene" }},
           
-          { "id": "9", "type": "item", "title": "$NewTab", "command": "newtab" }
+          { "id": "12", "type": "divider" },
+          
+          { "id": "13", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
       "defaultComponent": "scenefolder"
@@ -39,6 +43,34 @@
         ]
       },
       "defaultComponent": "scenescript"
+    }
+  },
+  "multiscenes": {
+    "parent": {
+      "popup": {
+        "main": [
+          { "id": "2", "type": "item", "title": "Новый мультисценарий", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
+    
+          
+          { "id": "12", "type": "divider" },
+          
+          { "id": "13", "type": "item", "title": "$NewTab", "command": "newtab" }
+        ]
+      },
+      "defaultComponent": "multiscenescript"
+    },
+
+    "child": {
+      "popup": {
+        "main": [
+         
+        ]
+      },
+      "defaultComponent": "multisceneitem"
     }
   }
 }

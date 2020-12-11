@@ -301,6 +301,23 @@
     "ruleID": { "pref": "scen", "len": 3 }
   },
   "scenesTreeTable": { "store": "tree", "tree": "scenes", "rows": true },
+
+  "multiscenegroup": {
+    "store": "db",
+    "collection": "multiscenes",
+    "filter": { "folder": 1 },
+    "defRootTitle": "Мультисценарии",
+    "default": { "name": "Новый мультисценарий" },
+    "ruleID": { "pref": "ms", "len": 3 }
+  },
+
+  "multiscene": {
+    "store": "db",
+    "collection": "multiscenes"
+  },
+
+  "multiscenesTreeTable": { "store": "tree", "tree": "multiscenes", "rows": true },
+
   "snippetsTreeTable": { "store": "tree", "tree": "snippets", "rows": true },
 
   "scenecall": {
@@ -338,11 +355,10 @@
     "store": "none"
   },
 
-
   "targetFrameTable": {
     "store": "none"
   },
- 
+
   "snippetgroup": {
     "store": "db",
     "collection": "snippets",

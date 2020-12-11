@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabMultiSceneTable",  "title": "Таблица сценариев", "component": [{ "id": "formMultiSceneTable", "type": "form" }]  }
+  ],
+  "defaultTab": "tabMultiSceneTable"
+}
