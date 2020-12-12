@@ -98,6 +98,14 @@
     ]
   },
 
+  "sceneStateList": {
+    "data": [
+      { "id": 0, "title": "Not active" },
+      { "id": 1, "title": "Working" },
+      { "id": 2, "title": "Blocked" }
+    ]
+  },
+
   "dbmetList": {
     "data": [
       { "id": 0, "title": "$NotSave" },
