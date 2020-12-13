@@ -1,12 +1,16 @@
 {
   "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table": "plugingroup" },
+    { "id": "p1", "xs": 12, "class": "main", "table": "plugininfoTable" },
     { "id": "p2", "xs": 12, "class": "main", "table": "unitsTreeTable", "height":"fill" }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "plugins" },
 
-  "p1": [{ "prop": "name", "title": "$Name", "type": "string" }],
+  "p1": [
+    { "prop": "id", "title": "$Plugin", "type": "text" },
+    { "prop": "description", "title": "$Unit_Desc", "type": "text" },
+    { "prop": "version", "title": "$Unit_Version", "type": "text" }
+  ],
   "p2": [
     {
       "title": "",
