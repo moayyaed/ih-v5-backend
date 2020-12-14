@@ -797,6 +797,7 @@
   { "id": "Database", "note": "Database" },
   { "id": "Legend", "note": "Legend" },
   { "id": "NewTab", "note": "New Tab" },
+  { "id": "Version", "note": "Version" },
 
 
   { "id": "Var_Id", "note": "Variable Name" },

@@ -11,7 +11,7 @@
     { "prop": "active", "title": "Active", "type": "cb", "hide":"1==1" },
     { "prop": "projectfolder", "title": "$Project_Folder", "type": "input", "hide":"data.p1._id == data.p1.folder" },
     { "prop": "title", "title": "$Project_Name", "type": "input" },
-    { "prop": "version", "title": "$Project_Version", "type": "text", "hide":"1==1" },
+    { "prop": "version", "title": "$Version", "type": "text" },
     { "prop": "activeButton1", "title": "Перезагрузить сервер", "type": "button", "command": "restart", "param":"", "hide":"!data.p1.active"  },
     { "prop": "activeButton2", "title": "Перезагрузить сервер с этим проектом", "type": "button", "command": "restart", "param":"project", "hide":"data.p1.active"  }
 

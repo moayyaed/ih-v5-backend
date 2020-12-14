@@ -867,6 +867,7 @@
   { "id": "Database", "note": "Database" },
   { "id": "Legend", "note": "Legend" },
   { "id": "NewTab", "note": "New Tab" },
+  { "id": "Version", "note": "Version" },
 
   { "id": "LinkToDeviceProperty", "note": "Link To Device Property" },
   { "id": "Var_Id", "note": "Variable Name" },
