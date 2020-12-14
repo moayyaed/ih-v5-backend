@@ -31,7 +31,7 @@
 
   "projectList": {
     "table": "project",
-    "propmap": { "_id": "id", "title": "title", "active": "active", "projectfolder": "projectfolder","folder": "folder"  }
+    "propmap": { "_id": "id", "title": "title", "active": "active", "projectfolder": "projectfolder", "folder": "folder", "version":"version"}
   },
 
   "dbagentList": {

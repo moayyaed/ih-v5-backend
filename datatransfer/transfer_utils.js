@@ -111,29 +111,42 @@ function formRecord(source, target, item, extObj) {
       break;
 */
 
-    case 'classes': // => lists- typegroup, но id по старому - SensorD,....
-      robj = { _id: item.id, list: 'typegroup', parent: 'typegroup', order: item.order, name: item.name };
-      break;
-
     case 'units':
-      robj = getUnitObj(item, 'unitgroup')
+      robj = getUnitObj(item, 'unitgroup');
       break;
 
     case 'scengroups': // BERRY => lists- scenegroup
-      robj = { _id: 'sg'+item.id, list: 'scenegroup', parent: 'scenegroup', order: item.order, name: item.name };
+      robj = { _id: 'sg' + item.id, list: 'scenegroup', parent: 'scenegroup', order: item.order, name: item.name };
       break;
-
 
     case 'linescen': // BERRY => linescen-> scenes
-    // {id: 3,  name: 'Перезагрузка роутеров',group: 2};
-    // { _id: 'line3', status: '1',name: 'Перезагрузка роутеров', parent: 'sg2', version: '4',multi: 0};
-      robj = { _id: 'line'+item.id, parent: 'sg'+item.group, status: '1', txt:item.description || '', order: item.order, name: item.name, version: '4',multi: 0};
+      // {id: 3,  name: 'Перезагрузка роутеров',group: 2};
+      // { _id: 'line3', status: '1',name: 'Перезагрузка роутеров', parent: 'sg2', version: '4',multi: 0};
+      robj = {
+        _id: 'line' + item.id,
+        parent: 'sg' + item.group,
+        status: '1',
+        txt: item.description || '',
+        order: item.order,
+        name: item.name,
+        version: '4',
+        multi: 0
+      };
       break;
     case 'onscen': // BERRY => onscen-> scenes
-     // Групп нет, все в корень
+      // Групп нет, все в корень
       // { _id: 'line3', status: '1',name: 'Перезагрузка роутеров', parent: 'sg2', version: '4',multi: 0};
-        robj = { _id: item.id, parent: 'scenegroup', status: '1', txt:item.description || '', order: item.order, name: item.name || item.id, version: '4',multi: 0};
-        break;
+      robj = {
+        _id: item.id,
+        parent: 'scenegroup',
+        status: '1',
+        txt: item.description || '',
+        order: item.order,
+        name: item.name || item.id,
+        version: '4',
+        multi: 0
+      };
+      break;
     default:
       robj = '';
       console.log('formRecord: Not found source ' + source);
@@ -142,34 +155,43 @@ function formRecord(source, target, item, extObj) {
 }
 
 function getScenesObj(item) {
-  return { _id: item.id, parent: item.parent || 'scenegroup', status: '1', txt:item.description || '', order: item.order, name: item.name || item.id, version: '4',multi: 0};
+  return {
+    _id: item.id,
+    parent: item.parent || 'scenegroup',
+    status: '1',
+    txt: item.description || '',
+    order: item.order,
+    name: item.name || item.id,
+    version: '4',
+    multi: 0
+  };
 }
 
 function getUnitObj(item, rootId) {
   let parent;
   let plugin;
   if (item.plugin) {
-    parent  = item.id != item.plugin ? 'plugin_' + item.plugin : rootId;
+    parent = item.id != item.plugin ? 'plugin_' + item.plugin : rootId;
     plugin = item.plugin;
   } else {
-    parent  = rootId;
+    parent = rootId;
     plugin = item.id;
   }
 
   const _id = getNewId('u', 3, item.id);
   const robj = { _id, parent, plugin };
   Object.keys(item).forEach(prop => {
-    if (!prop.endsWith('_') && !['laststart_str', 'laststop_str', 'errstr', 'folder'].includes(prop)) robj[prop] = item[prop];
+    if (!prop.endsWith('_') && !['laststart_str', 'laststop_str', 'errstr', 'folder'].includes(prop))
+      robj[prop] = item[prop];
     robj.active = 1;
     robj.suspend = 1;
   });
   return robj;
 }
 
-
 function getSysDataFile(source) {
   // Считать, перевести??
-  const cfilename = path.join('./sysbase_c', source + '.json');
+  const cfilename = path.join(__dirname, 'sysbase_c', source + '.json');
   const data = JSON.parse(fs.readFileSync(cfilename, 'utf8'));
   appconfig.translateSys(data);
   return data;
@@ -188,7 +210,7 @@ function createTypes() {
   data.forEach(item => {
     // _id = getNewId('t', 3, item.id);
     _id = item.id;
-    const robj = { _id, parent: item.cl, order, name: item.name };
+    const robj = { _id, parent: 'typegroup', order, name: item.name, fuse: 1 };
     robj.props = clObj[item.cl].props;
     str += JSON.stringify(robj) + '\n';
     order += 1000;
@@ -197,7 +219,6 @@ function createTypes() {
 }
 
 function createVistemplates() {
-  
   const data = getSysDataFile('types');
   // сформировать строку
   const parent = 'vistemplategroup'; // все в корень
@@ -230,7 +251,7 @@ function createDevices(devrefData, project_d, extObj) {
   // Свойства формировать на основе классов (которые уже перенесены в типы)
   const classes = getSysDataFile('classes');
   const clObj = hut.arrayToObject(classes, 'id');
-  console.log('clObj='+util.inspect(clObj));
+  console.log('clObj=' + util.inspect(clObj));
 
   let str = '';
   // Проверить, что parent есть, иначе в корень
@@ -247,11 +268,11 @@ function createDevices(devrefData, project_d, extObj) {
   let order = 1000;
   devrefData.forEach(item => {
     const parent = getParent(item);
-    console.log('item ='+util.inspect(item));
+    console.log('item =' + util.inspect(item));
     const dobj = formDeviceFromDevref(item, parent, order, extObj);
     // const tobj = typeObj[item.type];
     // if (!tobj) throw { message: 'Not found type for item ' + util.inspect(item) };
-    console.log('dobj ='+util.inspect(dobj));
+    console.log('dobj =' + util.inspect(dobj));
     dobj.props = formProps(item, Object.keys(clObj[item.cl].props));
     str += JSON.stringify(dobj) + '\n';
     order += 1000;
@@ -284,10 +305,36 @@ function formDeviceFromDevref(item, parent, order, extObj) {
     order,
     // type: 't' + item.type,
     // type: getNewId('t', 3, item.type),
-    type: 't'+item.cl, // tSensorA
+    type: 't' + item.cl, // tSensorA
     dn: item.dn,
     name: item.name,
     tags: ext
+  };
+}
+
+function createImages(imageData, project_d, extObj) {
+  
+  let str = '';
+ 
+  let order = 100;
+  imageData.forEach(item => {
+  
+    const obj = formImageFromImagelist(item, order, extObj);
+    
+    str += JSON.stringify(obj) + '\n';
+    order += 100;
+  });
+  return str;
+}
+
+function formImageFromImagelist(item, order, extObj) {
+  const parent = item.group && extObj[item.group] ? 'img' + item.group : 'imagegroup';
+
+  return {
+    _id: item.img,
+    parent,
+    order,
+    name: item.img
   };
 }
 
@@ -302,14 +349,13 @@ function formProps(item, propArr) {
 function formOneProp(item, prop) {
   let mmObj = {};
   if (isAnalog(item)) {
-   
     mmObj.min = item.min != undefined ? item.min : null;
     mmObj.max = item.max != undefined ? item.max : null;
     mmObj.dig = item.decdig || 0;
     mmObj.mu = item.mu || '';
   }
   return mmObj;
- /*
+  /*
   switch (prop) {
     case 'value':
       return Object.assign({ db: item.db ? 1 : 0 }, mmObj);
@@ -480,27 +526,24 @@ function createDevhard(devhardData, project_d) {
       arr.forEach(item => {
         const prop = item.prop == 'dval' ? 'value' : item.prop;
         const cobj = {
-          _id: did+'_'+prop,
+          _id: did + '_' + prop,
           did,
           prop,
           unit: item.unit,
           chan: item.chan,
           desc: item.desc,
           order: item.order,
-          r: (item.op == 'R') ? 1 : 0,
-          w: (item.op == 'W') ? 1 : 0,
-          value:item.value // Значение для команды
+          r: item.op == 'R' ? 1 : 0,
+          w: item.op == 'W' ? 1 : 0,
+          value: item.value // Значение для команды
         };
         str += JSON.stringify(cobj) + '\n';
       });
     }
-
   });
-
 
   return str;
 }
-
 
 function formHardRecord(did, item, prop) {
   if (item.complex) return '';
@@ -517,7 +560,7 @@ function formHardRecord(did, item, prop) {
     desc: item.desc,
     order: item.order,
     r: 1,
-    w: (item.desc == 'DO' || item.desc == 'AO') ? 1 : 0
+    w: item.desc == 'DO' || item.desc == 'AO' ? 1 : 0
   };
 
   const hard = getHardObjForUnit(item);
@@ -528,26 +571,25 @@ function formHardRecord(did, item, prop) {
     robj = Object.assign(pobj, hard);
 
     if (item.actions && Array.isArray(item.actions) && pobj.w) {
-      // Сформировать отдельные каналы для on/off. 
+      // Сформировать отдельные каналы для on/off.
       // TODO Если set - присоедить команду записи к текущему каналу??
 
       item.actions.forEach(el => {
         if (el.act == 'set') {
-          // 
+          //
         } else {
           const act = el.act;
           const aObj = {
-            _id: did+'_'+act,
+            _id: did + '_' + act,
             did,
             prop: act,
             unit: item.unit,
-            chan: item.chan+'_'+act,
+            chan: item.chan + '_' + act,
             r: 0,
             w: 1
           };
-          commands.push({...el, ...aObj})
-          console.log('COMMANDs'+util.inspect(commands));
-
+          commands.push({ ...el, ...aObj });
+          console.log('COMMANDs' + util.inspect(commands));
         }
       });
     }
@@ -564,13 +606,12 @@ function formHardRecord(did, item, prop) {
       robj.actions = actions;
     }
     */
-
   } else robj = pobj;
 
   let str = JSON.stringify(robj) + '\n';
   commands.forEach(command => {
     str += JSON.stringify(command) + '\n';
-  })
+  });
   return str;
 }
 
@@ -578,7 +619,6 @@ function getHardObjForUnit(item) {
   const plugin = hut.removeLastNumFromStr(item.unit);
   switch (plugin) {
     case 'mqttclient':
-
       return { topic: item.topic };
     // {"unit":"mqttclient1","topic":"/MT8102iE/Analog_Position_Carriage","actions":[{"act":"on","topic":"/devices/dn/command","message":"on"},{"act":"off","topic":"/devices/dn/command","message":"off"}]},
     case 'modbus':
@@ -656,6 +696,7 @@ module.exports = {
   getSysDataFile,
   createTypes,
   createDevices,
+  createImages,
   createDevhard,
   createDevcurrent,
   createScenecalls,
