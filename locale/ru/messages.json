@@ -197,7 +197,7 @@
   { "id": "CLOSE", "note": "закрыть" },
   { "id": "FILTER_OK", "note": "OK" },
   { "id": "FILTER_CLEAR", "note": "ОЧИСТИТЬ" },
-  { "id": "RestartIntraHouse", "note": "Restart intraHouse" },
+  { "id": "RestartIntraHouse", "note": "Restart IH server" },
   { "id": "NotEditDiagramScript", "note": "Редактируйте блок-схему, скрипт создается автоматически!" },
   { "id": "DropSessions", "note": "Завершить сессии учетной записи" },
   { "id": "BLK", "note": "Блокировка" },
