@@ -2,10 +2,11 @@
   "tabs": [
     { "id": "tabDeviceCommon", "title": "Устройство", "component": [{ "id": "formDeviceCommon", "type": "form" }] },
     { "id": "tabDeviceTable", "title": "Свойства", "component": [{ "id": "formDevicePropTable", "type": "form" }] },
+    { "id": "tabDeviceLog", "title": "Журнал", "component": [{ "id": "formDeviceLogTable", "type": "form" }] },
     { "id": "tabDeviceScene", "title": "Сценарии", "component": [{ "id": "formDeviceScene", "type": "form" }] },
     {
       "id": "tabDeviceVis",
-      "title": "Ссылки на визуализацию",
+      "title": "Визуализация",
       "component": [{ "id": "formDeviceVis", "type": "form" }]
     },
     { "id": "tabDeviceDb", "title": "Правила записи в БД", "component": [{ "id": "formDeviceDb", "type": "form" }] },
@@ -13,8 +14,7 @@
       "id": "tabDeviceLastRecs",
       "title": "Записи в БД за час",
       "component": [{ "id": "formDeviceLastRecs", "type": "form" }]
-    },
-    { "id": "tabDeviceLog", "title": "Журнал", "component": [{ "id": "formDeviceLogTable", "type": "form" }] }
+    }
   ],
 
   "defaultTab": "tabDeviceCommon"
