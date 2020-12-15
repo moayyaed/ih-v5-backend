@@ -78,7 +78,9 @@
     "collection": "devhard",
     "validator": {
       "main": {
-        "chan": { "custom": true }
+        "chan": { "custom": true },
+        "calc": { "custom": true },
+        "calc_out": { "custom": true }
       }
     }
   },
