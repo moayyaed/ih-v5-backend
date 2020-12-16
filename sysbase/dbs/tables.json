@@ -288,6 +288,10 @@
     "store": "none"
   },
 
+  "onechannelrtTable": {
+    "store": "none"
+  },
+
   "scenegroup": {
     "store": "db",
     "collection": "scenes",
