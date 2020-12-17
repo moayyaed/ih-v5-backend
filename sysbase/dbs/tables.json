@@ -63,14 +63,6 @@
     "ruleID": { "pref": "localg", "len": 3 }
   },
 
-  "chgroup": {
-    "store": "db",
-    "collection": "lists",
-    "filter": { "list": "chgroup" },
-    "defRootTitle": "Каналы",
-    "default": { "name": "$NewFolder" },
-    "ruleID": { "pref": "chgr", "len": 3 }
-  },
   "channels": { "store": "db", "collection": "devhard" },
 
   "devhard": {
@@ -333,14 +325,6 @@
     "ruleID": { "pref": "call", "len": 3 }
   },
 
-  "plugingroup": {
-    "store": "db",
-    "collection": "lists",
-    "filter": { "list": "plugingroup" },
-    "defRootTitle": "Плагины",
-    "default": { "name": "$NewFolder" },
-    "ruleID": { "pref": "pg", "len": 3 }
-  },
 
   "unitgroup": {
     "store": "db",
@@ -550,20 +534,6 @@
   "viscontsTreeTable": { "store": "tree", "tree": "viscont", "collection": "visconts", "rows": true },
 
   "imagesTreeTable": { "store": "tree", "tree": "images", "rows": true },
-
-  "dboptgroup": {
-    "store": "db",
-    "collection": "lists",
-    "filter": { "list": "dboptgroup" },
-    "defRootTitle": "БД",
-    "default": { "name": "New Folder" },
-    "ruleID": { "pref": "db", "len": 1 }
-  },
-
-  "dbopt": {
-    "store": "db",
-    "collection": "dbopt"
-  },
 
   "tokens": { "store": "db", "collection": "tokens" },
 

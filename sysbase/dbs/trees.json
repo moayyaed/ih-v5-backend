@@ -358,14 +358,6 @@
     }
   },
 
-  "dbopt": {
-    "branch": {
-      "table": "dboptgroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
-    },
-    "leaf": { "table": "dbopt", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } }
-  },
-
   "snippets": {
     "branch": {
       "table": "snippetgroup",

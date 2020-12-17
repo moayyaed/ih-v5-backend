@@ -13,9 +13,10 @@ const fs = require('fs');
 const path = require('path');
 
 const hut = require('../lib/utils/hut');
-const tut = require('./transfer_utils');
 
-const sysfiles = ['classes', 'types'];
+const tut = require('./transfer_utils');
+const createDevhard = require('./transfer_devhard');
+const devMan = require('./device_man');
 
 /**
  *
@@ -24,26 +25,32 @@ const sysfiles = ['classes', 'types'];
  * @param {Function} emitMes - функция для вывода сообщений о ходе процесса
  */
 module.exports = async function(project_c, project_d, emitMes) {
-  add(formAllStr('places', 'jbase'), 'lists', 'jbase');
-  add(formAllStr('rooms', 'jbase'), 'lists', 'jbase');
+  try {
+    // images - Сами картинки уже скопированы, здесь переносим только таблицы : imagegroups + images
+    create(formAllStr('imagegroups', 'jbase') + formImages(), 'images', 'jbase');
 
-  // Определить новые типы для устройств, сформировать объекты, содержащие устройства и дополнительные типы
+    // lists
+    add(formAllStr('places', 'jbase'), 'lists', 'jbase');
+    add(formAllStr('rooms', 'jbase'), 'lists', 'jbase');
 
-  // Сами картинки уже скопированы, здесь переносим только таблицы : imagegroups + images
-  create(formAllStr('imagegroups', 'jbase') + formImages(), 'images', 'jbase');
+    // Определить новые типы для устройств, сформировать объекты, содержащие устройства и дополнительные типы
+    devMan.load(project_c);
+    create(tut.createTypes(), 'types', 'jbase');
+    create(devMan.formAllDevicesStr(), 'devices', 'jbase');
 
-  create(tut.createTypes(), 'types', 'jbase');
-  // create(formDevices(), 'devices', 'jbase');
+    create(formPluginFolders() + formAllStr('units', 'jbase'), 'units', 'jbase');
+    create(createDevhard(devMan.getDevicesMap(), project_c), 'devhard', 'jbase');
 
-  create(formPluginFolders() + formAllStr('units', 'jbase'), 'units', 'jbase');
-  // create(tut.createDevhard(getSourceData('devhard', 'jbase')), 'devhard', 'jbase');
+    create(tut.createVistemplates(), 'vistemplates', 'jbase');
+    create(formAllStr('layouts', 'jbase'), 'layouts', 'jbase');
+    create(formAllStr('mnemoschemes', 'jbase'), 'visconts', 'jbase');
 
-  create(tut.createVistemplates(), 'vistemplates', 'jbase');
-  create(formAllStr('layouts', 'jbase'), 'layouts', 'jbase');
-  create(formAllStr('mnemoschemes', 'jbase'), 'visconts', 'jbase');
-
-  create(formCharts(), 'reports', 'jbase');
-  create(formReports(), 'reports', 'jbase');
+    create(formCharts(), 'reports', 'jbase');
+    create(formReports(), 'reports', 'jbase');
+  } catch (e) {
+    console.log('ERROR: ' + util.inspect(e));
+    emitMes('ERROR: ' + hut.getShortErrStr(e));
+  }
 
   /** add
    * Добавляет записи в таблицу V5
@@ -57,7 +64,7 @@ module.exports = async function(project_c, project_d, emitMes) {
       const dfilename = path.join(project_d, folder, target + '.db');
       fs.appendFileSync(dfilename, str);
     } catch (e) {
-      console.log('ERROR: Transfer ' + target + ': ' + util.inspect(e))
+      console.log('ERROR: Transfer ' + target + ': ' + util.inspect(e));
       emitMes('ERROR: Transfer ' + target + ': ' + hut.getShortErrStr(e));
     }
   }
@@ -77,14 +84,14 @@ module.exports = async function(project_c, project_d, emitMes) {
       fs.writeFileSync(dfilename, str);
       emitMes('Transfer ' + target);
     } catch (e) {
-      console.log('ERROR: Transfer ' + target + ': ' + util.inspect(e))
+      console.log('ERROR: Transfer ' + target + ': ' + util.inspect(e));
       emitMes('ERROR: Transfer ' + target + ': ' + hut.getShortErrStr(e));
     }
   }
 
   function formAllStr(source, folder) {
     let str = '';
-    const data = getSourceData(source, folder);
+    const data = tut.getSourceData(source, folder, project_c);
     let order = 0;
     data.forEach(item => {
       order += 1000;
@@ -94,16 +101,10 @@ module.exports = async function(project_c, project_d, emitMes) {
     return str;
   }
 
-  // DEVICES
-  function formDevices() {
-    const sObj = getSourceAsObj('subsystems', 'jbase');
-    return tut.createDevices(getSourceData('devref', 'jbase'), project_d, sObj);
-  }
-
   // IMAGES
   function formImages() {
-    const extObj = getSourceAsObj('imagegroups', 'jbase');
-    const imageData = getSourceData('imagelist', 'jbase');
+    const extObj = tut.getSourceAsObj('imagegroups', 'jbase', project_c);
+    const imageData = tut.getSourceData('imagelist', 'jbase', project_c);
 
     let str = '';
     let order = 100;
@@ -124,7 +125,7 @@ module.exports = async function(project_c, project_d, emitMes) {
     let str = JSON.stringify(obj) + '\n';
 
     // Выбрать плагины НЕ single - только для них делаю папки
-    const data = getSourceData('units', 'jbase');
+    const data = tut.getSourceData('units', 'jbase', project_c);
     const plSet = new Set();
     data.forEach(item => {
       if (item.id != item.plugin) plSet.add(item.plugin);
@@ -142,8 +143,8 @@ module.exports = async function(project_c, project_d, emitMes) {
   // CHARTS
   function formCharts() {
     return tut.createFromMainAndSlave(
-      getSourceData('chartlist', 'jbase', project_c),
-      getSourceData('charts', 'jbase', project_c),
+      tut.getSourceData('chartlist', 'jbase', project_c),
+      tut.getSourceData('charts', 'jbase', project_c),
       'chartid',
       'chartgroup',
       { pref: 'c', len: 3 }
@@ -153,39 +154,11 @@ module.exports = async function(project_c, project_d, emitMes) {
   // REPORTS
   function formReports() {
     return tut.createFromMainAndSlave(
-      getSourceData('reportlist', 'jbase', project_c),
-      getSourceData('reportcolumns', 'jbase', project_c),
+      tut.getSourceData('reportlist', 'jbase', project_c),
+      tut.getSourceData('reportcolumns', 'jbase', project_c),
       'repid',
       'reportgroup',
       { pref: 'r', len: 3 }
     );
-  }
-
-  /**
-   * Cчитать файл из исходного проекта
-   * @param {String} source
-   * @param {String} folder
-   * @return {Array of Object}
-   */
-  function getSourceData(source, folder) {
-    try {
-      if (sysfiles.includes(source)) return tut.getSysDataFile(source);
-
-      const cfilename = path.join(project_c, folder, source + '.json');
-      return JSON.parse(fs.readFileSync(cfilename, 'utf8'));
-    } catch (e) {
-      console.log('ERROR: Get Source Data ' + source + ': ' + util.inspect(e));
-      emitMes('ERROR: Get Source Data ' + source + ': ' + hut.getShortErrStr(e));
-      return [];
-    }
-  }
-
-  function getSourceAsObj(source, folder) {
-    const extdata = getSourceData(source, folder);
-    const sObj = {};
-    extdata.forEach(item => {
-      if (item.id && item.name) sObj[item.id] = item.name;
-    });
-    return sObj;
   }
 };
