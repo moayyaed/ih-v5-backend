@@ -11,67 +11,12 @@ const appconfig = require('../lib/appconfig');
 
 /**
  *
- * @param {*} main - data from main table  = getSourceData('chartlist', folder)
- * @param {*} slave - data from slave table  = getSourceData('charts', folder)
- * @param {*} linkname - 'chartid'
- * @param {*} parent - 'chartgroup'
- * @param {*} ruleId - {pref:'r', len:3}
- *
+ * @param {*} source
+ * @param {*} item
  */
-
-function createFromMainAndSlave(main, slave, linkname, parent, ruleId) {
-  let str = '';
-  // Сформировать по chartid (repid)
-  const slaveObj = {};
-  let pn; // Порядковый номер в нижней табличке преобразуется в свойство px?
-
-  slave.forEach(item => {
-    pn = 1;
-    const mainid = item[linkname];
-    if (!slaveObj[mainid]) slaveObj[mainid] = {};
-    delete item.id;
-    slaveObj[mainid]['p' + pn] = item;
-    pn++;
-  });
-
-  let order = 100;
-  main.forEach(item => {
-    item.order = order;
-    order += 100;
-
-    const _id = getNewId(ruleId.pref, ruleId.len, item.id);
-    const slaveItem = slaveObj[item.id];
-    delete item.id;
-    str += formСombinedRecord(_id, item, slaveItem, parent);
-  });
-  return str;
-}
-
-function formСombinedRecord(_id, item, slaveItem, parent) {
-  const pobj = Object.assign({ _id, parent }, item, { props: slaveItem });
-  return JSON.stringify(pobj) + '\n';
-}
-
-function getRootItem(source) {
-  let robj = {};
-  switch (source) {
-    case 'places':
-      robj = { _id: 'place', list: 'place', parent: 0, order: 0, name: 'All ' + source };
-      break;
-
-    case 'spaces':
-      robj = { _id: 'layoutgroup', list: 'layoutgroup', parent: 0, order: 0, name: 'All ' + source };
-      break;
-    default:
-      robj = '';
-  }
-  return robj ? JSON.stringify(robj) + '\n' : '';
-}
-
-function formRecord(source, target, item, extObj) {
+function formRecord(source, item) {
   let robj = {};
   let parent;
-  let ext;
   let _id;
   switch (source) {
     // places - id будет dgxx или dgxxryy, хотя дальше будет dg000
@@ -89,6 +34,10 @@ function formRecord(source, target, item, extObj) {
       robj = { _id, list: 'layoutgroup', parent: 'layoutgroup', order: item.order, name: item.name };
       break;
 
+    case 'imagegroups':
+      robj = item.id ? { _id: 'img' + item.id, folder: 1, parent, order: item.order, name: item.name } : '';
+      break;
+
     case 'layouts': //
       _id = getNewId('l', 3, item.id);
       parent = item.space ? getNewId('lg', 3, item.space) : 'layoutgroup';
@@ -100,16 +49,6 @@ function formRecord(source, target, item, extObj) {
       parent = 'viscontgroup';
       robj = { _id, parent, order: item.order, name: item.name, txt: item.txt };
       break;
-    /*
-    case 'scenecall': //
-      _id = getNewId('call', 3, item.id);
-      const sid = item.scene;
-      delete item.id;
-      delete item.scene;
-      delete item.order;
-      robj = { _id, sid, ...item };
-      break;
-*/
 
     case 'units':
       robj = getUnitObj(item, 'unitgroup');
@@ -152,6 +91,49 @@ function formRecord(source, target, item, extObj) {
       console.log('formRecord: Not found source ' + source);
   }
   return robj ? JSON.stringify(robj) + '\n' : '';
+}
+
+/**
+ *
+ *
+ * @param {*} main - data from main table  = getSourceData('chartlist', folder)
+ * @param {*} slave - data from slave table  = getSourceData('charts', folder)
+ * @param {*} linkname - 'chartid'
+ * @param {*} parent - 'chartgroup'
+ * @param {*} ruleId - {pref:'r', len:3}
+ *
+ */
+function createFromMainAndSlave(main, slave, linkname, parent, ruleId) {
+  let str = '';
+  // Сформировать по chartid (repid)
+  const slaveObj = {};
+  let pn; // Порядковый номер в нижней табличке преобразуется в свойство px?
+
+  slave.forEach(item => {
+    pn = 1;
+    const mainid = item[linkname];
+    if (!slaveObj[mainid]) slaveObj[mainid] = {};
+    delete item.id;
+    slaveObj[mainid]['p' + pn] = item;
+    pn++;
+  });
+
+  let order = 100;
+  main.forEach(item => {
+    item.order = order;
+    order += 100;
+
+    const _id = getNewId(ruleId.pref, ruleId.len, item.id);
+    const slaveItem = slaveObj[item.id];
+    delete item.id;
+    str += formСombinedRecord(_id, item, slaveItem, parent);
+  });
+  return str;
+}
+
+function formСombinedRecord(_id, item, slaveItem, parent) {
+  const pobj = Object.assign({ _id, parent }, item, { props: slaveItem });
+  return JSON.stringify(pobj) + '\n';
 }
 
 function getScenesObj(item) {
@@ -312,32 +294,6 @@ function formDeviceFromDevref(item, parent, order, extObj) {
   };
 }
 
-function createImages(imageData, project_d, extObj) {
-  
-  let str = '';
- 
-  let order = 100;
-  imageData.forEach(item => {
-  
-    const obj = formImageFromImagelist(item, order, extObj);
-    
-    str += JSON.stringify(obj) + '\n';
-    order += 100;
-  });
-  return str;
-}
-
-function formImageFromImagelist(item, order, extObj) {
-  const parent = item.group && extObj[item.group] ? 'img' + item.group : 'imagegroup';
-
-  return {
-    _id: item.img,
-    parent,
-    order,
-    name: item.img
-  };
-}
-
 function formProps(item, propArr) {
   const pobj = {};
   propArr.forEach(prop => {
@@ -355,18 +311,6 @@ function formOneProp(item, prop) {
     mmObj.mu = item.mu || '';
   }
   return mmObj;
-  /*
-  switch (prop) {
-    case 'value':
-      return Object.assign({ db: item.db ? 1 : 0 }, mmObj);
-
-    case 'setpoint':
-      return Object.assign({ db: 0 }, mmObj, { dig: 0 });
-
-    default:
-      return { db: 0 };
-  }
-  */
 }
 
 /**
@@ -691,12 +635,10 @@ function isAnalog(item) {
 
 module.exports = {
   createFromMainAndSlave,
-  getRootItem,
   formRecord,
   getSysDataFile,
   createTypes,
   createDevices,
-  createImages,
   createDevhard,
   createDevcurrent,
   createScenecalls,
