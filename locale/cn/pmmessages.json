@@ -798,7 +798,12 @@
   { "id": "Legend", "note": "Legend" },
   { "id": "NewTab", "note": "New Tab" },
   { "id": "Version", "note": "Version" },
-
+  { "id": "VERSION", "note": "Version" },
+  { "id": "NEWVERSION", "note": "A new version is available" },
+  { "id": "LATESTVERSION", "note": "The latest version is installed" },
+  { "id": "ACTIVATION", "note": "Активировать" },
+  { "id": "CHECKUPDATE", "note": "Check for updates" },
+  { "id": "UPDATE", "note": "Update" },
 
   { "id": "Var_Id", "note": "Variable Name" },
   { "id": "SetDef", "note": "Set default value on server start" }

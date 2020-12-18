@@ -876,6 +876,12 @@
   { "id": "Legend", "note": "Легенда" },
   { "id": "NewTab", "note": "Новая вкладка" },
   { "id": "Version", "note": "Версия" },
+  { "id": "VERSION", "note": "Версия" },
+  { "id": "NEWVERSION", "note": "Доступна новая версия" },
+  { "id": "LATESTVERSION", "note": "Установлена последняя версия" },
+  { "id": "ACTIVATION", "note": "Активировать" },
+  { "id": "CHECKUPDATE", "note": "Проверить обновления" },
+  { "id": "UPDATE", "note": "Обновить" },
 
   { "id": "Ruledn_pref", "note": "Префикс при именовании нового устройства" },
   { "id": "Ruledn_len", "note": "Длина при именовании нового устройства " },
