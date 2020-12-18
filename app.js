@@ -7,7 +7,6 @@
 const util = require('util');
 const init = require('./lib/init');
 
-// const dbservice = require('./lib/dbhistory/dbservice');
 const globalvarservice = require('./lib/globalvar/globalvarservice');
 const deviceservice = require('./lib/device/deviceservice');
 const resservice = require('./lib/resource/resourceservice');
