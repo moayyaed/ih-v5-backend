@@ -199,7 +199,7 @@
   { "id": "LogAckdDateTime", "note": "Confirmed" },
   { "id": "LogAckdLogin", "note": "Operator" },
   { "id": "LogMenu", "note": "Menu" },
-  { "id": "LogLevel", "note": "Level" },
+  { "id": "LogLevel", "note": "Log Level" },
 
   { "id": "Mnemoscheme", "note": "Mimic Diagram" },
   { "id": "Widget", "note": "Widget" },
@@ -570,7 +570,10 @@
   { "id": "PopupWin_Defstyle", "note": "Default Style" },
 
   { "id": "Unit_Desc", "note": "Description" },
-  { "id": "Unit_Suspended", "note": "Stopped" },
+  { "id": "Unit_NotActive", "note": "Not Active" },
+  { "id": "Unit_Active", "note": "Active" },
+  { "id": "Unit_StopWithError", "note": "Stopped with Error" },
+  { "id": "Unit_Suspended", "note": "Suspended" },
   { "id": "Unit_LastStart", "note": "Launch" },
   { "id": "Unit_LastSop", "note": "Stop" },
   { "id": "Unit_Errtxt", "note": "Plugin Messages" },

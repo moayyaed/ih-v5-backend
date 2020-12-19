@@ -1,27 +1,27 @@
 {
   "typeList": {
     "table": "type",
-    "propmap": { "_id": "id", "name": "title", "tags": "tags", "ruledn_pref":"ruledn_pref", "folder": "folder" }
+    "propmap": { "_id": "id", "name": "title", "tags": "tags", "ruledn_pref": "ruledn_pref", "folder": "folder" }
   },
-  
+
   "deviceList": {
     "table": "device",
-    "propmap": { "_id": "id", "name": "name", "dn": "dn", "tags": "tags", "type": "type", "sys":"sys" }
+    "propmap": { "_id": "id", "name": "name", "dn": "dn", "tags": "tags", "type": "type", "sys": "sys" }
   },
 
   "placeList": {
     "table": "place",
-    "propmap": { "_id": "id", "name": "title", "parent":"parent" }
+    "propmap": { "_id": "id", "name": "title", "parent": "parent" }
   },
 
   "globalList": {
     "table": "globals",
-    "propmap": { "_id": "id", "name": "name", "dn": "dn", "defval": "defval", "setdef": "setdef"}
+    "propmap": { "_id": "id", "name": "name", "dn": "dn", "defval": "defval", "setdef": "setdef" }
   },
 
   "localList": {
     "table": "locals",
-    "propmap": { "_id": "id", "name": "name", "dn": "dn", "defval": "defval"}
+    "propmap": { "_id": "id", "name": "name", "dn": "dn", "defval": "defval" }
   },
 
   "unitList": {
@@ -31,37 +31,44 @@
 
   "projectList": {
     "table": "project",
-    "propmap": { "_id": "id", "title": "title", "active": "active", "projectfolder": "projectfolder", "folder": "folder", "version":"version"}
+    "propmap": {
+      "_id": "id",
+      "title": "title",
+      "active": "active",
+      "projectfolder": "projectfolder",
+      "folder": "folder",
+      "version": "version"
+    }
   },
 
   "dbagentList": {
     "table": "dbagent",
-    "propmap": { "_id": "id", "title": "title", "active": "active", "folder": "folder"  }
+    "propmap": { "_id": "id", "title": "title", "active": "active", "folder": "folder" }
   },
 
   "sceneList": {
     "table": "scene",
-    "propmap": { "_id": "id", "name": "name", "tags": "tags", "status": "status", "multi": "multi","folder": "folder"  }
+    "propmap": { "_id": "id", "name": "name", "tags": "tags", "status": "status", "multi": "multi", "folder": "folder" }
   },
 
   "snippetList": {
     "table": "snippet",
-    "propmap": { "_id": "id", "name": "name", "tags": "tags", "status": "status", "folder": "folder"  }
+    "propmap": { "_id": "id", "name": "name", "tags": "tags", "status": "status", "folder": "folder" }
   },
 
   "layoutList": {
     "table": "layout",
-    "propmap": { "_id": "id", "name": "title","folder": "folder"  }
+    "propmap": { "_id": "id", "name": "title", "folder": "folder" }
   },
 
   "containerList": {
     "table": "container",
-    "propmap": { "_id": "id", "name": "title", "folder": "folder"  }
+    "propmap": { "_id": "id", "name": "title", "folder": "folder" }
   },
 
   "dialogList": {
     "table": "dialog",
-    "propmap": { "_id": "id", "name": "title", "folder": "folder"  }
+    "propmap": { "_id": "id", "name": "title", "folder": "folder" }
   },
 
   "fuseList": {
@@ -91,10 +98,10 @@
 
   "unitStateList": {
     "data": [
-      { "id": 0, "title": "Not active" },
-      { "id": 1, "title": "Suspended" },
-      { "id": 2, "title": "Working" },
-      { "id": 3, "title": "Stopped with error" }
+      { "id": 0, "title": "$Unit_NotActive" },
+      { "id": 1, "title": "$Unit_Active" },
+      { "id": 2, "title": "$Unit_Suspended" },
+      { "id": 3, "title": "$Unit_StopWithError" }
     ]
   },
 
@@ -103,6 +110,14 @@
       { "id": 0, "title": "Not active" },
       { "id": 1, "title": "Working" },
       { "id": 2, "title": "Blocked" }
+    ]
+  },
+
+  "loglevelList": {
+    "data": [
+      { "id": 0, "title": "$LogLevel_Low" },
+      { "id": 1, "title": "$LogLevel_Middle" },
+      { "id": 2, "title": "$LogLevel_High" }
     ]
   },
 
@@ -115,7 +130,7 @@
     ]
   },
 
-  "dbcalc_typeList":{
+  "dbcalc_typeList": {
     "data": [
       { "id": "first", "title": "First" },
       { "id": "last", "title": "Last" },

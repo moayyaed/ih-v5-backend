@@ -200,7 +200,7 @@
   { "id": "LogAckdDateTime", "note": "Подтверждено" },
   { "id": "LogAckdLogin", "note": "Оператор" },
   { "id": "LogMenu", "note": "Меню" },
-  { "id": "LogLevel", "note": "Уровень" },
+  { "id": "LogLevel", "note": "Уровень логирования" },
 
   { "id": "Mnemoscheme", "note": "Мнемосхема" },
   { "id": "Widget", "note": "Виджет" },
@@ -575,7 +575,10 @@
   { "id": "PopupWin_Defstyle", "note": "Cтиль по умолчанию" },
 
   { "id": "Unit_Desc", "note": "Описание" },
-  { "id": "Unit_Suspended", "note": "Остановлен" },
+  { "id": "Unit_NotActive", "note": "Не активен" },
+  { "id": "Unit_Active", "note": "Работает" },
+  { "id": "Unit_Suspended", "note": "Приостановлен" },
+  { "id": "Unit_StopWithError", "note": "Остановлен с ошибкой" },
   { "id": "Unit_LastStart", "note": "Запуск" },
   { "id": "Unit_LastSop", "note": "Останов" },
   { "id": "Unit_Errtxt", "note": "Сообщения плагина" },
@@ -585,7 +588,7 @@
   { "id": "Unit_Port", "note": "Порт" },
   { "id": "Unit_Plugin", "note": "Плагин" },
   { "id": "Unit_Restarttime", "note": "Время рестарта (сек)" },
-  { "id": "Unit_Active", "note": "Использовать в проекте" },
+
 
   { "id": "User_Name", "note": "Имя пользователя" },
   { "id": "User_Name_C", "note": "Имя" },
