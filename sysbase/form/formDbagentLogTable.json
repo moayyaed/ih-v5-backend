@@ -13,8 +13,7 @@
 
       "columns": [
         { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 150 },
-        { "prop": "unit", "title": "$Plugin", "type": "text",  "width": 150  },
-        { "prop": "txt", "title": "$Info_Txt", "type": "text",  "width": 550  },
+        { "prop": "txt", "title": "$Info_Txt", "type": "text",  "width": 650  },
         { "prop": "level", "title": "$LogLevel", "type": "text" ,  "width": 150}
       ]
     }
