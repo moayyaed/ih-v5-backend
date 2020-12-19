@@ -89,6 +89,10 @@ function formRecord(source, item) {
       robj = getUnitObj(item, 'unitgroup');
       break;
 
+    case 'pluginextra':
+      robj = {_id:item.id, ...item};
+      break;
+
     case 'scengroups': // BERRY => lists- scenegroup
       robj = { _id: 'sg' + item.id, list: 'scenegroup', parent: 'scenegroup', order: item.order, name: item.name };
       break;

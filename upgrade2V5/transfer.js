@@ -40,6 +40,7 @@ module.exports = async function(project_c, project_d, emitMes) {
 
     create(formPluginFolders() + formAllStr('units', 'jbase'), 'units', 'jbase');
     create(createDevhard(devMan.getDevicesMap(), project_c), 'devhard', 'jbase');
+    create(formAllStr('pluginextra', 'jbase'), 'pluginextra', 'jbase');
 
     create(tut.createVistemplates(), 'vistemplates', 'jbase');
     create(formAllStr('layouts', 'jbase'), 'layouts', 'jbase');

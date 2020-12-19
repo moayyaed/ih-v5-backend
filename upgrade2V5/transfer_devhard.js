@@ -18,7 +18,6 @@ const tut = require('./transfer_utils');
  * @param {String} project_с
  */
 module.exports = function createDevhard(devicesMap, project_c) {
-
   const devhardData = tut.getSourceData('devhard', 'jbase', project_c);
   devhardData.sort(hut.byorder('chan'));
 
@@ -71,7 +70,7 @@ module.exports = function createDevhard(devicesMap, project_c) {
     }
   });
   return str;
-}
+};
 
 function formHardRecord(did, item, prop) {
   if (item.complex) return '';
@@ -152,6 +151,19 @@ function getHardObjForUnit(item) {
         useactions: item.useactions
       };
 
+    case 'megad':
+      // {"unit":"megad1","lost":0,"interval":15,"ip":"192.168.103.61"}
+      return {
+        req: item.req,
+        reqsek: item.reqsek,
+        ks: item.ks,
+        kh: item.kh,
+        weight: item.weight,
+        restore: item.restore,
+        set: item.set,
+        usescript: item.usescript
+      };
+
     case 'ping':
       // {"unit":"ping1","lost":0,"interval":15,"ip":"192.168.103.61"}
       return { ip: item.ip, interval: item.interval, lost: item.lost };
@@ -172,10 +184,8 @@ function getHardObjForUnit(item) {
     case 'wip':
       // {"unit":"wip5", "complex":false,"chan":"_r_DD304_PL31","calc":"","nofb":false,"op":""},
       // а если complex - нужно собирать по всему файлу!!
-
       return '';
 
     default:
   }
 }
-
