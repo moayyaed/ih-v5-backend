@@ -341,7 +341,7 @@
     },
     "leaf": {
       "table": "dbagent",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+      "propmap": { "_id": "id", "title": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
 
