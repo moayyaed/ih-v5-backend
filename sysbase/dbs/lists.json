@@ -43,7 +43,7 @@
 
   "dbagentList": {
     "table": "dbagent",
-    "propmap": { "_id": "id", "title": "title", "active": "active", "folder": "folder" }
+    "propmap": { "_id": "id", "name": "title", "active": "active", "folder": "folder" }
   },
 
   "sceneList": {
