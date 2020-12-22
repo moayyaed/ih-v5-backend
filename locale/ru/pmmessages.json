@@ -845,6 +845,7 @@
   { "id": "NewProject", "note": "Новый проект" },
   { "id": "NewType", "note": "Новый тип" },
   { "id": "NewDevice", "note": "Новое устройство" },
+  { "id": "NewChannel", "note": "Новый канал" },
   { "id": "Dialog", "note": "Диалог" },
   { "id": "Dialogs", "note": "Диалоги" },
   { "id": "NewDialog", "note": "Новый диалог" },

@@ -764,6 +764,7 @@
   { "id": "NewProject", "note": "New Project" },
   { "id": "NewType", "note": "New Type" },
   { "id": "NewDevice", "note": "New Device" },
+  { "id": "NewChannel", "note": "New Channel" },
   { "id": "Dialog", "note": "Dialog" },
   { "id": "Dialogs", "note": "Dialogs" },
   { "id": "NewDialog", "note": "New Dialog" },
