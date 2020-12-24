@@ -31,7 +31,9 @@
     { "prop": "uptimeinfo", "title": "Version & Uptime", "type": "header", "size": "h6" },
     { "prop": "osUptime", "title": "OS Uptime", "type": "text" },
     { "prop": "uptime", "title": "IH Uptime", "type": "text" },
+
+    { "prop": "restartButton", "title": "$RestartIH", "type": "button", "command": "restart", "param": "" },
     { "prop": "version", "title": "IH Version", "type": "text" },
-    { "prop": "checkUpdate", "title": "$CHECKUPDATE", "type": "button", "command": "checkupdate", "param": "" }
+    { "prop": "checkUpdateButton", "title": "$CHECKUPDATE", "type": "button", "command": "checkupdate", "param": "" }
   ]
 }

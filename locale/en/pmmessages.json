@@ -878,6 +878,7 @@
   { "id": "ACTIVATION", "note": "Активировать" },
   { "id": "CHECKUPDATE", "note": "Check for updates" },
   { "id": "UPDATE", "note": "Update" },
+  { "id": "RestartIH", "note": "Restart IH" },
 
   { "id": "LinkToDeviceProperty", "note": "Link To Device Property" },
   { "id": "Var_Id", "note": "Variable Name" },

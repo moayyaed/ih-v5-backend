@@ -197,7 +197,7 @@
   { "id": "CLOSE", "note": "close" },
   { "id": "FILTER_OK", "note": "OK" },
   { "id": "FILTER_CLEAR", "note": "CLEAR" },
-  { "id": "RestartIntraHouse", "note": "Restart IH server" },
+  { "id": "RestartIH", "note": "Restart IH server" },
   { "id": "NotEditDiagramScript", "note": "Edit the diagram and not the script!" },
   { "id": "BLK", "note": "Blocked" },
   { "id": "SETPOINT", "note": "Setpoint" },

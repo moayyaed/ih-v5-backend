@@ -1,0 +1,407 @@
+{
+  "toolbarType": "vars",
+  "propertyType": "element",
+  "selectState": "state1",
+  "selectType": "one",
+  "selectContainer": null,
+  "selectOne": "image_1",
+  "selects": {
+    "image_1": true
+  },
+  "settings": {
+    "x": {
+      "value": 10
+    },
+    "y": {
+      "value": 10
+    },
+    "w": {
+      "value": 100
+    },
+    "h": {
+      "value": 100
+    },
+    "scale": {
+      "value": 1
+    },
+    "grid": {
+      "value": 10
+    },
+    "backgroundColor": {
+      "type": "fill",
+      "value": "transparent",
+      "fill": "transparent",
+      "angle": 90,
+      "shape": "circle",
+      "positionX": 50,
+      "positionY": 50,
+      "extent": "closest-side",
+      "palette": [
+        {
+          "offset": "0.00",
+          "color": "#4A90E2",
+          "opacity": 1
+        },
+        {
+          "offset": "1.00",
+          "color": "#9013FE",
+          "opacity": 1
+        }
+      ]
+    },
+    "backgroundImage": {
+      "value": "unset"
+    },
+    "overlayColor": {
+      "type": "fill",
+      "value": "transparent",
+      "fill": "transparent",
+      "angle": 90,
+      "shape": "circle",
+      "positionX": 50,
+      "positionY": 50,
+      "extent": "closest-side",
+      "palette": [
+        {
+          "offset": "0.00",
+          "color": "#4A90E2",
+          "opacity": 1
+        },
+        {
+          "offset": "1.00",
+          "color": "#9013FE",
+          "opacity": 1
+        }
+      ]
+    }
+  },
+  "list": ["image_1", "action_1"],
+  "listState": ["state1", "state2"],
+  "state": {
+    "master": {
+      "hide": false,
+      "curent": 0,
+      "values": {
+        "0": {
+          "image_1": {
+            "x": {
+              "value": 0
+            },
+            "y": {
+              "value": 0
+            },
+            "w": {
+              "value": 100
+            },
+            "h": {
+              "value": 100
+            },
+            "w2": {
+              "value": 100
+            },
+            "h2": {
+              "value": 100
+            },
+            "img": {
+              "value": "_ih_lamp.svg",
+              "folder": "img015"
+            },
+            "imgColor": {
+              "value": "transparent"
+            },
+            "imgSize": {
+              "value": -16
+            },
+            "imgRotate": {
+              "value": 0
+            },
+            "borderSize": {
+              "value": 0
+            },
+            "borderRadius": {
+              "value": 0
+            },
+            "borderStyle": {
+              "value": {
+                "id": "solid",
+                "title": "Solid"
+              }
+            },
+            "borderColor": {
+              "value": "rgba(0,0,255,1)"
+            },
+            "backgroundColor": {
+              "type": "fill",
+              "value": "transparent",
+              "fill": "transparent",
+              "angle": 90,
+              "shape": "circle",
+              "positionX": 50,
+              "positionY": 50,
+              "extent": "closest-side",
+              "palette": [
+                {
+                  "offset": "0.00",
+                  "color": "#4A90E2",
+                  "opacity": 1
+                },
+                {
+                  "offset": "1.00",
+                  "color": "#9013FE",
+                  "opacity": 1
+                }
+              ]
+            },
+            "rotate": {
+              "value": 0
+            },
+            "animation": {},
+            "flipH": {
+              "value": false
+            },
+            "flipV": {
+              "value": false
+            },
+            "boxShadow": {
+              "active": false,
+              "value": "2px 2px 4px 0px #000000"
+            },
+            "zIndex": {
+              "value": 100
+            },
+            "opacity": {
+              "value": 100
+            },
+            "overflow": {
+              "value": true
+            }
+          },
+          "action_1": {
+            "x": {
+              "value": 0
+            },
+            "y": {
+              "value": 0
+            },
+            "w": {
+              "value": 100
+            },
+            "h": {
+              "value": 100
+            },
+            "w2": {
+              "value": 100
+            },
+            "h2": {
+              "value": 100
+            },
+            "colorHover": {
+              "value": "rgba(0,0,0,0.2)"
+            },
+            "colorRipple": {
+              "value": "rgba(255,255,255,1)"
+            },
+            "singleClickLeft": {
+              "value": "TOGGLE"
+            },
+            "doubleClickLeft": {
+              "value": ""
+            },
+            "longClickLeft": {
+              "value": "DEVICEMENU"
+            },
+            "singleClickRight": {
+              "value": ""
+            },
+            "doubleClickRight": {
+              "value": ""
+            },
+            "longClickRight": {
+              "value": ""
+            },
+            "mouseDownLeft": {
+              "value": ""
+            },
+            "mouseUpLeft": {
+              "value": ""
+            },
+            "zIndex": {
+              "value": 10000
+            }
+          }
+        }
+      }
+    },
+    "state1": {
+      "hide": false,
+      "curent": 1,
+      "values": {
+        "1": {
+          "image_1": {
+            "imgColor": {
+              "value": "rgba(248,231,28,1)"
+            }
+          }
+        }
+      },
+      "title": "state"
+    },
+    "state2": {
+      "hide": false,
+      "curent": 0,
+      "values": {},
+      "title": "error"
+    }
+  },
+  "elements": {
+    "image_1": {
+      "type": "image",
+      "x": {
+        "value": 0
+      },
+      "y": {
+        "value": 0
+      },
+      "w": {
+        "value": 100
+      },
+      "h": {
+        "value": 100
+      },
+      "w2": {
+        "value": 100
+      },
+      "h2": {
+        "value": 100
+      },
+      "img": {
+        "value": "_ih_lamp.svg",
+        "folder": "img015"
+      },
+      "imgColor": {
+        "value": "rgba(248,231,28,1)"
+      },
+      "imgSize": {
+        "value": -16
+      },
+      "imgRotate": {
+        "value": 0
+      },
+      "borderSize": {
+        "value": 0
+      },
+      "borderRadius": {
+        "value": 0
+      },
+      "borderStyle": {
+        "value": {
+          "id": "solid",
+          "title": "Solid"
+        }
+      },
+      "borderColor": {
+        "value": "rgba(0,0,255,1)"
+      },
+      "backgroundColor": {
+        "type": "fill",
+        "value": "transparent",
+        "fill": "transparent",
+        "angle": 90,
+        "shape": "circle",
+        "positionX": 50,
+        "positionY": 50,
+        "extent": "closest-side",
+        "palette": [
+          {
+            "offset": "0.00",
+            "color": "#4A90E2",
+            "opacity": 1
+          },
+          {
+            "offset": "1.00",
+            "color": "#9013FE",
+            "opacity": 1
+          }
+        ]
+      },
+      "rotate": {
+        "value": 0
+      },
+      "animation": {},
+      "flipH": {
+        "value": false
+      },
+      "flipV": {
+        "value": false
+      },
+      "boxShadow": {
+        "active": false,
+        "value": "2px 2px 4px 0px #000000"
+      },
+      "zIndex": {
+        "value": 100
+      },
+      "opacity": {
+        "value": 100
+      },
+      "overflow": {
+        "value": true
+      }
+    },
+    "action_1": {
+      "type": "action",
+      "x": {
+        "value": 0
+      },
+      "y": {
+        "value": 0
+      },
+      "w": {
+        "value": 100
+      },
+      "h": {
+        "value": 100
+      },
+      "w2": {
+        "value": 100
+      },
+      "h2": {
+        "value": 100
+      },
+      "colorHover": {
+        "value": "rgba(0,0,0,0.2)"
+      },
+      "colorRipple": {
+        "value": "rgba(255,255,255,1)"
+      },
+      "singleClickLeft": {
+        "value": "TOGGLE"
+      },
+      "doubleClickLeft": {
+        "value": ""
+      },
+      "longClickLeft": {
+        "value": "DEVICEMENU"
+      },
+      "singleClickRight": {
+        "value": ""
+      },
+      "doubleClickRight": {
+        "value": ""
+      },
+      "longClickRight": {
+        "value": ""
+      },
+      "mouseDownLeft": {
+        "value": ""
+      },
+      "mouseUpLeft": {
+        "value": ""
+      },
+      "zIndex": {
+        "value": 10000
+      }
+    }
+  },
+  "mode": "vars"
+}

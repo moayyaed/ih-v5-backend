@@ -802,9 +802,10 @@
   { "id": "VERSION", "note": "Version" },
   { "id": "NEWVERSION", "note": "A new version is available" },
   { "id": "LATESTVERSION", "note": "The latest version is installed" },
-  { "id": "ACTIVATION", "note": "Активировать" },
+  { "id": "ACTIVATION", "note": "Activate" },
   { "id": "CHECKUPDATE", "note": "Check for updates" },
   { "id": "UPDATE", "note": "Update" },
+  { "id": "RestartIH", "note": "Restart IH" },
 
   { "id": "Var_Id", "note": "Variable Name" },
   { "id": "SetDef", "note": "Set default value on server start" }

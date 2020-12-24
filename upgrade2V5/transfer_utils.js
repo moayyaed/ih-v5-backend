@@ -74,13 +74,15 @@ function formRecord(source, item) {
       break;
 
     case 'layouts': //
-      _id = getNewId('l', 3, item.id);
+      // _id = getNewId('l', 3, item.id);
+      _id = formNewObjectId(source, item.id);
       parent = item.space ? getNewId('lg', 3, item.space) : 'layoutgroup';
       robj = { _id, parent, order: item.order, name: item.name, txt: item.txt };
       break;
 
     case 'mnemoschemes': //
-      _id = getNewId('mn', 3, item.id);
+      // _id = getNewId('vc', 3, item.id);
+      _id = formNewObjectId(source, item.id);
       parent = 'viscontgroup';
       robj = { _id, parent, order: item.order, name: item.name, txt: item.txt };
       break;
@@ -130,6 +132,15 @@ function formRecord(source, item) {
       console.log('formRecord: Not found source ' + source);
   }
   return robj ? JSON.stringify(robj) + '\n' : '';
+}
+
+function formNewObjectId(source, srcId) {
+  switch (source) {
+    case 'layouts': return getNewId('l', 3, srcId);
+    case 'mnemoschemes': return getNewId('vc', 3, srcId);
+    default:
+  }
+
 }
 
 /**
@@ -241,16 +252,18 @@ function createTypes() {
   return str;
 }
 
-function createVistemplates() {
-  const data = getSysDataFile('types');
+// Из папки upgrade2V5/template копировать все файлы в проект 
+// Занести в таблицу, вернуть строку
+function createVistemplateStr(names) {
+
   // сформировать строку
   const parent = 'vistemplategroup'; // все в корень
   let str = '';
   let order = 1000;
   let _id;
-  data.forEach(item => {
-    _id = getNewId('vt', 3, item.id);
-    const robj = { _id, parent, order, name: item.name };
+  names.forEach(name => {
+    _id = name;
+    const robj = { _id, parent, order, name };
     str += JSON.stringify(robj) + '\n';
     order += 1000;
   });
@@ -301,10 +314,11 @@ module.exports = {
   createTypes,
 
   createScenecalls,
-  createVistemplates,
+  createVistemplateStr,
 
   getPlaceId,
   getRoomId,
   getNewId,
-  getScenesObj
+  getScenesObj,
+  formNewObjectId
 };

@@ -13,8 +13,10 @@ const fs = require('fs');
 const path = require('path');
 
 const hut = require('../lib/utils/hut');
+const fut = require('../lib/utils/fileutil');
 
 const tut = require('./transfer_utils');
+const transformObject = require('./transform_object');
 const createDevhard = require('./transfer_devhard');
 const devMan = require('./device_man');
 
@@ -42,9 +44,15 @@ module.exports = async function(project_c, project_d, emitMes) {
     create(createDevhard(devMan.getDevicesMap(), project_c), 'devhard', 'jbase');
     create(formAllStr('pluginextra', 'jbase'), 'pluginextra', 'jbase');
 
-    create(tut.createVistemplates(), 'vistemplates', 'jbase');
-    create(formAllStr('layouts', 'jbase'), 'layouts', 'jbase');
+    // Копировать готовые шаблоны для типов в папку jbase/template. Список записать в таблицу
+    const templates = createTemplates();
+    create(tut.createVistemplateStr(templates), 'vistemplates', 'jbase');
+
     create(formAllStr('mnemoschemes', 'jbase'), 'visconts', 'jbase');
+    // Генерировать файлы для каждой мнемосхемы в папку jbase/container
+    createFiles('mnemoschemes', 'mnemoscheme', 'container');
+
+    create(formAllStr('layouts', 'jbase'), 'layouts', 'jbase');
 
     create(formCharts(), 'reports', 'jbase');
     create(formReports(), 'reports', 'jbase');
@@ -68,6 +76,50 @@ module.exports = async function(project_c, project_d, emitMes) {
       console.log('ERROR: Transfer ' + target + ': ' + util.inspect(e));
       emitMes('ERROR: Transfer ' + target + ': ' + hut.getShortErrStr(e));
     }
+  }
+
+  function createTemplates() {
+    const src = path.join(__dirname, 'template');
+    const dest = path.join(project_d, 'jbase', 'template');
+    fut.checkAndMakeFolder(dest);
+    const names = [];
+    fs.readdirSync(src).forEach(name => {
+      fs.copyFileSync(src + '/' + name, dest + '/' + name);
+      names.push(hut.getFileNameExtLess(name))
+    });
+    return names;
+  }
+  /**
+   * Генерация файлов на основе файлов из папки srcFolder (экраны, мнемосхемы)
+   * Считать файлы - по списку source
+   *   все в папке jbase
+   *
+   * @param {String} source - имя списка с исходными объектами (список мнемосхем)
+   * @param {String} srcFolder - папка с исходными файлами - мнемосхемы - каждая в отд файле
+   * @param {String} targetFolder
+   */
+  function createFiles(source, srcFolder, targetFolder) {
+    fut.checkAndMakeFolder(path.join(project_d, 'jbase', targetFolder));
+
+    const list = tut.getSourceData(source, 'jbase', project_c);
+    list.forEach(item => {
+      try {
+        // читать исходный файл  item.id => имя файла
+        const srcfile = path.join(project_c, 'jbase', srcFolder, item.id + '.json');
+
+        // преобразовать в новый формат
+        const data = transformObject(fut.readJsonFileSync(srcfile), srcFolder, targetFolder, devMan);
+
+        // записать файл в папку targetFolder c новым именем
+        const newFile = tut.formNewObjectId(source, item.id) + '.json';
+        const file = path.join(project_d, 'jbase', targetFolder, newFile);
+        fut.writeJsonFileSync(file, data);
+        emitMes('Create ' + newFile);
+      } catch (e) {
+        console.log('ERROR: Transfer file ' + srcFolder + '/' + item.id + util.inspect(e));
+        emitMes('ERROR: Transfer ' + srcFolder + '/' + item.id + hut.getShortErrStr(e));
+      }
+    });
   }
 
   /**

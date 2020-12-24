@@ -54,6 +54,10 @@ module.exports = {
     return oldDevMap;
   },
 
+  getDevice(dn) {
+    return oldDevMap[dn];
+  },
+
   getDevicesArray() {
     return Object.keys(oldDevMap).map(dn => oldDevMap[dn]);
   },
