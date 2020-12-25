@@ -81,7 +81,12 @@ function formRecord(source, item) {
       break;
 
     case 'mnemoschemes': //
-      // _id = getNewId('vc', 3, item.id);
+      _id = formNewObjectId(source, item.id);
+      parent = 'viscontgroup';
+      robj = { _id, parent, order: item.order, name: item.name, txt: item.txt };
+      break;
+
+    case 'widgets': //
       _id = formNewObjectId(source, item.id);
       parent = 'viscontgroup';
       robj = { _id, parent, order: item.order, name: item.name, txt: item.txt };
@@ -138,6 +143,7 @@ function formNewObjectId(source, srcId) {
   switch (source) {
     case 'layouts': return getNewId('l', 3, srcId);
     case 'mnemoschemes': return getNewId('vc', 3, srcId);
+    case 'widgets': return getNewId('wdg', 3, srcId);
     default:
   }
 

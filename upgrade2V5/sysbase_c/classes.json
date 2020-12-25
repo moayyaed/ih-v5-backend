@@ -3,7 +3,7 @@
     "id": "SensorD",
     "name": "$SensorD",
     "props": {
-      "state": { "name": "$State", "vtype": "B", "op": "rw" },
+      "state": { "name": "$State", "vtype": "B", "op": "rw", "fuse":1 },
       "blk": { "name": "$Blk", "vtype": "B", "op": "par" }
     }
   },
@@ -22,9 +22,9 @@
       "state": { "name": "$State", "vtype": "B", "op": "rw" },
       "auto": { "name": "Auto", "vtype": "B", "op": "par" },
       "blk": { "name": "$Blk", "vtype": "B", "op": "par" },
-      "on": { "name": "$on", "op": "cmd"},
-      "off": { "name": "$off",  "op": "cmd"},
-      "toggle": { "name": "$toggle",  "op": "cmd"}
+      "on": { "name": "$on", "op": "cmd", "fuse":1},
+      "off": { "name": "$off",  "op": "cmd", "fuse":1},
+      "toggle": { "name": "$toggle",  "op": "cmd", "fuse":1}
     }
   },
   {
@@ -36,9 +36,9 @@
       "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "par" },
       "auto": { "name": "Auto", "vtype": "B", "op": "par" },
       "blk": { "name": "$Blk", "vtype": "B", "op": "par" },
-      "on": { "name": "$on", "op": "cmd"},
-      "off": { "name": "$off", "op": "cmd"},
-      "toggle": { "name": "$toggle", "op": "cmd"}
+      "on": { "name": "$on", "op": "cmd", "fuse":1},
+      "off": { "name": "$off", "op": "cmd", "fuse":1},
+      "toggle": { "name": "$toggle", "op": "cmd", "fuse":1}
     }
   },
   {
@@ -66,9 +66,9 @@
       "setpoint": { "name": "$Setpoint", "vtype": "N", "op": "par" },
       "auto": { "name": "Auto", "vtype": "B", "op": "par" },
       "blk": { "name": "$Blk", "vtype": "B", "op": "par" },
-      "on": { "name": "$on", "op": "cmd"},
-      "off": { "name": "$off", "op": "cmd"},
-      "toggle": { "name": "$toggle", "op": "cmd"}
+      "on": { "name": "$on", "op": "cmd", "fuse":1},
+      "off": { "name": "$off", "op": "cmd", "fuse":1},
+      "toggle": { "name": "$toggle", "op": "cmd", "fuse":1}
     }
   },
   {

@@ -41,10 +41,11 @@ module.exports = {
     devrefData.forEach(item => {
       const parent = getParent(item);
       const _id = tut.getNewId('d', 4, item.id);
-      const type = 't' + item.cl; // tSensorA
+      const type = 't' + item.cl; // tSensorA - новый тип - для создания устройства по типу
+      const oldtype = item.type;
       const tags = item.subs && subsObj[item.subs] ? [subsObj[item.subs]] : [];
 
-      const dobj = { _id, parent, type, dn: item.dn, name: item.name, tags };
+      const dobj = { _id, parent, type, dn: item.dn, name: item.name, tags, oldtype };
       dobj.props = formProps(item, Object.keys(clObj[item.cl].props));
       oldDevMap[item.dn] = dobj;
     });

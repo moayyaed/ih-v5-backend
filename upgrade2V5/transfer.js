@@ -48,9 +48,13 @@ module.exports = async function(project_c, project_d, emitMes) {
     const templates = createTemplates();
     create(tut.createVistemplateStr(templates), 'vistemplates', 'jbase');
 
-    create(formAllStr('mnemoschemes', 'jbase'), 'visconts', 'jbase');
-    // Генерировать файлы для каждой мнемосхемы в папку jbase/container
+    // Перенос списка мнемосхем. Генерировать файлы для каждой мнемосхемы в папку jbase/container
+    add(formAllStr('mnemoschemes', 'jbase'), 'visconts', 'jbase');
     createFiles('mnemoschemes', 'mnemoscheme', 'container');
+
+    // Перенос списка виджетов. Генерировать файлы для каждого виджета в папку jbase/container - это тоже просто конт
+    add(formAllStr('widgets', 'jbase'), 'visconts', 'jbase');
+    createFiles('widgets', 'widget', 'container');
 
     create(formAllStr('layouts', 'jbase'), 'layouts', 'jbase');
 
@@ -108,7 +112,7 @@ module.exports = async function(project_c, project_d, emitMes) {
         const srcfile = path.join(project_c, 'jbase', srcFolder, item.id + '.json');
 
         // преобразовать в новый формат
-        const data = transformObject(fut.readJsonFileSync(srcfile), srcFolder, targetFolder, devMan);
+        const data = transformObject(fut.readJsonFileSync(srcfile), srcFolder, targetFolder, devMan, emitMes);
 
         // записать файл в папку targetFolder c новым именем
         const newFile = tut.formNewObjectId(source, item.id) + '.json';
