@@ -28,5 +28,20 @@
       },
       "defaultComponent": "projectview"
     }
+  },
+
+  "systemsettings":{
+    "parent": {
+      "popup": {
+        "main": []
+      },
+      "defaultComponent": null
+    },
+    "child": {
+      "popup": {
+        "main": []
+      },
+      "defaultComponent": "settings"
+    }
   }
 }

@@ -108,7 +108,7 @@
 
   "anydevprops": {
     "data": [
-    {
+      {
         "title": "$AnyDevice",
         "id": "anyRoot",
         "root": "anydevprops",
@@ -127,7 +127,7 @@
   "devicesdn": ["devicesExp", "sysdevices"],
   "visitemsAndVistemplates": ["devicesExp", "sysdevices", "globals", "locals", "vistemplate"],
   "setitems": ["devicesExp", "globals", "locals"],
-  "setitemsAndAny": ["devicesExp", "globals","anydev"],
+  "setitemsAndAny": ["devicesExp", "globals", "anydev"],
 
   "devcmd": ["devicesExp"],
   "devcmdAndAny": ["devicesExp", "anydevcmd"],
@@ -200,7 +200,7 @@
 
   "layoutx": ["layout"],
 
-  "allscenes":["scenes", "multiscenes"],
+  "allscenes": ["scenes", "multiscenes"],
   "scenes": {
     "branch": {
       "table": "scenegroup",
@@ -319,7 +319,7 @@
     "expanded": true
   },
 
-  "settings": ["projects"],
+  "settings": ["projects", "systemsettings"],
 
   "projects": {
     "branch": {
@@ -330,6 +330,31 @@
       "table": "project",
       "propmap": { "_id": "id", "title": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
+  },
+
+  "systemsettings": {
+    "data": [
+      {
+        "title": "Настройки",
+        "id": "_systemsettings",
+        "root": "systemsettings",
+        "expanded": true,
+        "children": [
+          {
+            "title": "Настройки cервера",
+            "id": "_config",
+            "order":"1",
+            "component":"settings"
+          },
+          {
+            "title": "Настройки проекта",
+            "id": "_current_project",
+            "order":"2",
+            "component":"projectview"
+          }
+        ]
+      }
+    ]
   },
 
   "database": ["dbagents"],

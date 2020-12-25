@@ -1,0 +1,26 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 3, "class": "main", "table": "sysdeviceTable" },
+    { "id": "p2", "xs": 3, "class": "main", "table": "sysdeviceTable" },
+    { "id": "p3", "xs": 6, "class": "main", "table": "sysdeviceTable" }
+  ],
+  "spacing": 10,
+
+  "p1": [
+    { "prop": "config_options", "title": "$SystemSettings", "type": "header", "size": "h6" },
+    { "prop": "port", "title": "$Setting_port", "type": "input" },
+    { "prop": "lang", "title": "$Setting_lang", "type": "droplist", "data":[{"id":"en","title":"en" }, {"id":"ru","title":"ru" }] }
+  ],
+
+  "p2": [
+    { "prop": "location_options", "title": "$Setting_location", "type": "header", "size": "h6" },
+    { "prop": "lat", "title": "$Location_Lat", "type": "input" },
+    { "prop": "lng", "title": "$Location_Lng", "type": "input" }
+  ],
+
+  "p3": [
+  
+    { "prop": "upserver", "title": "$Setting_upserver", "type": "input", "default":"https://ih-systems.com" }
+
+  ]
+}
