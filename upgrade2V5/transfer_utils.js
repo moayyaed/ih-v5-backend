@@ -88,7 +88,7 @@ function formRecord(source, item) {
 
     case 'widgets': //
       _id = formNewObjectId(source, item.id);
-      parent = 'viscontgroup';
+      parent = 'widgets';
       robj = { _id, parent, order: item.order, name: item.name, txt: item.txt };
       break;
 
@@ -279,7 +279,7 @@ function createVistemplateStr(names) {
 
 function createScenecalls(scenecallData, project_d) {
   let str = '';
-
+  /*
   const deviceObj = genDeviceMap(project_d);
   scenecallData.forEach(item => {
     const robj = { _id: getNewId('call', 3, item.id), sid: item.scene };
@@ -301,6 +301,7 @@ function createScenecalls(scenecallData, project_d) {
     });
     str += JSON.stringify(robj) + '\n';
   });
+  */
 
   return str;
 }

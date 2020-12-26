@@ -53,10 +53,13 @@ module.exports = async function(project_c, project_d, emitMes) {
     createFiles('mnemoschemes', 'mnemoscheme', 'container');
 
     // Перенос списка виджетов. Генерировать файлы для каждого виджета в папку jbase/container - это тоже просто конт
-    add(formAllStr('widgets', 'jbase'), 'visconts', 'jbase');
+    add(formWidgetFolder()+formAllStr('widgets', 'jbase'), 'visconts', 'jbase');
     createFiles('widgets', 'widget', 'container');
 
+    // Перенос списка экранов
     create(formAllStr('layouts', 'jbase'), 'layouts', 'jbase');
+    createFiles('layouts', 'layout', 'layout');
+
 
     create(formCharts(), 'reports', 'jbase');
     create(formReports(), 'reports', 'jbase');
@@ -93,8 +96,9 @@ module.exports = async function(project_c, project_d, emitMes) {
     });
     return names;
   }
+
   /**
-   * Генерация файлов на основе файлов из папки srcFolder (экраны, мнемосхемы)
+   * Генерация файлов на основе файлов из папки srcFolder (экраны, мнемосхемы, виджеты)
    * Считать файлы - по списку source
    *   все в папке jbase
    *
@@ -112,7 +116,8 @@ module.exports = async function(project_c, project_d, emitMes) {
         const srcfile = path.join(project_c, 'jbase', srcFolder, item.id + '.json');
 
         // преобразовать в новый формат
-        const data = transformObject(fut.readJsonFileSync(srcfile), srcFolder, targetFolder, devMan, emitMes);
+        const srcdata = fut.readJsonFileSync(srcfile);
+        const data = transformObject(srcdata, srcFolder, targetFolder, devMan, item);
 
         // записать файл в папку targetFolder c новым именем
         const newFile = tut.formNewObjectId(source, item.id) + '.json';
@@ -172,6 +177,12 @@ module.exports = async function(project_c, project_d, emitMes) {
       order += 100;
     });
     return str;
+  }
+
+  function formWidgetFolder() {
+    const parent = 'viscontgroup';
+    const obj = { _id: 'widgets', folder: 1, parent, name: 'Widgets' };
+    return JSON.stringify(obj) + '\n';
   }
 
   // PLUGINS
