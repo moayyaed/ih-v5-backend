@@ -53,16 +53,18 @@ module.exports = async function(project_c, project_d, emitMes) {
     createFiles('mnemoschemes', 'mnemoscheme', 'container');
 
     // Перенос списка виджетов. Генерировать файлы для каждого виджета в папку jbase/container - это тоже просто конт
-    add(formWidgetFolder()+formAllStr('widgets', 'jbase'), 'visconts', 'jbase');
+    add(formWidgetFolder() + formAllStr('widgets', 'jbase'), 'visconts', 'jbase');
     createFiles('widgets', 'widget', 'container');
 
     // Перенос списка экранов
     create(formAllStr('layouts', 'jbase'), 'layouts', 'jbase');
     createFiles('layouts', 'layout', 'layout');
 
-
     create(formCharts(), 'reports', 'jbase');
     create(formReports(), 'reports', 'jbase');
+
+    // Админский вход, перенос основного экрана
+    create(formUsers('users', 'private'), 'users', 'private');
   } catch (e) {
     console.log('ERROR: ' + util.inspect(e));
     emitMes('ERROR: ' + hut.getShortErrStr(e));
@@ -92,7 +94,7 @@ module.exports = async function(project_c, project_d, emitMes) {
     const names = [];
     fs.readdirSync(src).forEach(name => {
       fs.copyFileSync(src + '/' + name, dest + '/' + name);
-      names.push(hut.getFileNameExtLess(name))
+      names.push(hut.getFileNameExtLess(name));
     });
     return names;
   }
@@ -123,7 +125,7 @@ module.exports = async function(project_c, project_d, emitMes) {
         const newFile = tut.formNewObjectId(source, item.id) + '.json';
         const file = path.join(project_d, 'jbase', targetFolder, newFile);
         fut.writeJsonFileSync(file, data);
-        emitMes('Create ' + newFile);
+        // ('Create ' + newFile);
       } catch (e) {
         console.log('ERROR: Transfer file ' + srcFolder + '/' + item.id + util.inspect(e));
         emitMes('ERROR: Transfer ' + srcFolder + '/' + item.id + hut.getShortErrStr(e));
@@ -144,7 +146,7 @@ module.exports = async function(project_c, project_d, emitMes) {
       // Записать в новый файл
       const dfilename = path.join(project_d, folder, target + '.db');
       fs.writeFileSync(dfilename, str);
-      emitMes('Transfer ' + target);
+      // emitMes('Transfer ' + target);
     } catch (e) {
       console.log('ERROR: Transfer ' + target + ': ' + util.inspect(e));
       emitMes('ERROR: Transfer ' + target + ': ' + hut.getShortErrStr(e));
@@ -228,5 +230,31 @@ module.exports = async function(project_c, project_d, emitMes) {
       'reportgroup',
       { pref: 'r', len: 3 }
     );
+  }
+
+  function formUsers(source, folder) {
+    const data = tut.getSourceData(source, folder, project_c);
+    // Создать только admin, data нужен только для определения главного экрана
+    let mainlay;
+    if (data) {
+      for (const item of data) {
+        if (item.mainlay) {
+          mainlay = item.mainlay;
+          break;
+        }
+      }
+    }
+
+    const obj = {
+      _id: 'admin',
+      login: 'admin',
+      role: 'admin',
+      name: 'Admin',
+      parent: 'usergroup',
+      pwd: '202020',
+      order: 10, 
+      mainlay: mainlay ? tut.formNewObjectId('layouts',mainlay )  : ''
+    };
+    return JSON.stringify(obj) + '\n';
   }
 };
