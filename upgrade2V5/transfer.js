@@ -19,6 +19,7 @@ const tut = require('./transfer_utils');
 const transformObject = require('./transform_object');
 const createDevhard = require('./transfer_devhard');
 const devMan = require('./device_man');
+const nameMap = require('./nameMap');
 
 /**
  *
@@ -40,13 +41,19 @@ module.exports = async function(project_c, project_d, emitMes) {
     create(tut.createTypes(), 'types', 'jbase');
     create(devMan.formAllDevicesStr(), 'devices', 'jbase');
 
+    // Плагины, каналы и расширения
     create(formPluginFolders() + formAllStr('units', 'jbase'), 'units', 'jbase');
     create(createDevhard(devMan.getDevicesMap(), project_c), 'devhard', 'jbase');
     create(formAllStr('pluginextra', 'jbase'), 'pluginextra', 'jbase');
 
     // Копировать готовые шаблоны для типов в папку jbase/template. Список записать в таблицу
-    const templates = createTemplates();
-    create(tut.createVistemplateStr(templates), 'vistemplates', 'jbase');
+    // const templates = createTemplates();
+    const templates = copyBuildIn('template');
+    create(formListStr(templates, 'vistemplategroup'), 'vistemplates', 'jbase');
+
+    // Копировать готовые диалоги в папку jbase/dialog. Список записать в таблицу
+    const dialogs = copyBuildIn('dialog');
+    create(formListStr(dialogs, 'dialoggroup'), 'dialogs', 'jbase');
 
     // Перенос списка мнемосхем. Генерировать файлы для каждой мнемосхемы в папку jbase/container
     add(formAllStr('mnemoschemes', 'jbase'), 'visconts', 'jbase');
@@ -87,9 +94,9 @@ module.exports = async function(project_c, project_d, emitMes) {
     }
   }
 
-  function createTemplates() {
-    const src = path.join(__dirname, 'template');
-    const dest = path.join(project_d, 'jbase', 'template');
+  function copyBuildIn(folder) {
+    const src = path.join(__dirname, folder);
+    const dest = path.join(project_d, 'jbase', folder);
     fut.checkAndMakeFolder(dest);
     const names = [];
     fs.readdirSync(src).forEach(name => {
@@ -98,6 +105,24 @@ module.exports = async function(project_c, project_d, emitMes) {
     });
     return names;
   }
+
+  
+function formListStr(names, parent) {
+
+  // сформировать строку
+  // const parent = 'vistemplategroup'; // все в корень
+  let str = '';
+  let order = 1000;
+  let _id;
+  names.forEach(id => {
+    _id = id;
+    const name =  nameMap[id] || id;
+    const robj = { _id, parent, order, name };
+    str += JSON.stringify(robj) + '\n';
+    order += 1000;
+  });
+  return str;
+}
 
   /**
    * Генерация файлов на основе файлов из папки srcFolder (экраны, мнемосхемы, виджеты)

@@ -10,6 +10,7 @@ const hut = require('../lib/utils/hut');
 const fut = require('../lib/utils/fileutil');
 const appconfig = require('../lib/appconfig');
 const tut = require('./transfer_utils');
+const nameMap = require('./nameMap');
 
 /**
  *
@@ -33,6 +34,10 @@ module.exports = function(srcData, from, to, devMan, listItem) {
     res.settings.w.value = listItem.width;
     res.settings.h.value = listItem.height;
     res.settings.backgroundImage.value = listItem.img;
+
+    res.settings.backgroundColor.value = listItem.backgroundColor;
+    res.settings.backgroundColor.fill = listItem.backgroundColor;
+    res.settings.backgroundColor.type = 'fill';
 
     srcData.forEach(item => {
       const oneObj = transformOnLayoutItem(item);
@@ -131,7 +136,56 @@ module.exports = function(srcData, from, to, devMan, listItem) {
       const robj = hut.clone(elementPattern.button);
       robj.img = { value: item.elementStyle.img };
       robj.text = { value: item.elementStyle.text };
+      // "params": { "commandarray": [{ "command": "gotoscreen 5", "command_mnemo": "", "arg": "", "local": false }] }
+      if (item.params && item.params.commandarray) {
+        robj.actions.left = [];
+        item.params.commandarray.forEach(cmdItem => {
+          const cmdObj = formAction(cmdItem);
+          if (cmdObj) robj.actions.left.push(cmdObj);
+        });
+      }
+      /**
+       * actions": {
+            "left": [
+              {
+                "action": "singleClickLeft",
+                "value": {
+                  "targetFrameTable": [
+                    {
+                      "target_frame": {
+                        "id": "-",
+                        "title": "-"
+                      },
+                      "target_container_id": {
+                        "id": "-",
+                        "title": "-"
+                      }
+                    }
+                  ],
+                  "active": true
+                },
+                "id": "l005",
+                "title": "Основной камеры",
+                "command": "layout"
+              },
+       */
       return robj;
+    }
+
+    function formAction(item) {
+      // "command": "gotoscreen 5", "command_mnemo": "", "arg": "", "local": false }
+      if (!item.command) return;
+      const cmdArr = item.command.split(' ');
+      if (!cmdArr) return;
+      if (cmdArr[0] == 'gotoscreen') {
+        const id = tut.formNewObjectId('layouts', cmdArr[1]);
+        return {
+          action: 'singleClickLeft',
+          id,
+          title: id, // 'Основной камеры' -  название экрана!!
+          command: 'layout'
+        };
+      }
     }
 
     function formDeviceWithText(item) {
@@ -152,7 +206,10 @@ module.exports = function(srcData, from, to, devMan, listItem) {
 
       // Выбрать templateId в зависимости от типа  //cherry@t200
       robj.templateId = 'cherry@t' + dobj.oldtype;
-      robj.title = robj.templateId;
+      robj.title = nameMap[robj.templateId] || robj.templateId;
+
+      const actor = dobj.oldtype >= 500 && dobj.oldtype < 900;
+
       if (dobj.oldtype < 200) {
         // Это в зависимости от типа - state3
         robj.links.state3 = getLinkObj(dobj, dobj._id, 'state');
@@ -163,9 +220,12 @@ module.exports = function(srcData, from, to, devMan, listItem) {
         robj.links.state1 = getLinkObj(dobj, dobj._id, 'state');
       }
 
-      if (dobj.oldtype >= 500) {
+      if (actor) {
         robj.actions.action_1.left.push(getDeviceAction('singleClickLeft', dobj, 'toggle'));
       }
+      const dialogId = actor ? 'cherry@di_actor' : 'cherry@di_sensor';
+      robj.actions.action_1.left.push(getDeviceDialog('longClickLeft', dobj, dialogId));
+
       return robj;
     }
   }
@@ -224,6 +284,38 @@ function getDeviceAction(action, dobj, prop) {
     prop, // 'toggle'
     title: dobj.dn + '.' + prop,
     command: 'device'
+  };
+}
+
+/*
+{
+  "action": "longClickLeft",
+  "value": {
+    "device": {
+      "id": "d0132",
+      "title": "LAMP1_31 ▪︎ 1 переключатель подсветки клумбы "
+    },
+    "active": true
+  },
+  "id": "di0002",
+  "title": "Новый диалог",
+  "command": "dialog"
+}
+*/
+
+function getDeviceDialog(action, dobj, dialogId) {
+  return {
+    action, // singleClickLeft',
+    value: {
+      device: {
+        id: dobj._id,
+        title: dobj.dn
+      },
+      active: true
+    },
+    id: dialogId,
+    title: nameMap[dialogId] || dialogId,
+    command: 'dialog'
   };
 }
 
@@ -565,7 +657,8 @@ const elementPattern = {
         {
           action: 'singleClickLeft',
           value: {}
-        },
+        }
+        /* ,
         {
           action: 'doubleClickLeft',
           value: {}
@@ -582,6 +675,7 @@ const elementPattern = {
           action: 'mouseUpLeft',
           value: {}
         }
+        */
       ],
       right: [
         {

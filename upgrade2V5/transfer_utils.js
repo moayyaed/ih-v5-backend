@@ -258,23 +258,7 @@ function createTypes() {
   return str;
 }
 
-// Из папки upgrade2V5/template копировать все файлы в проект 
-// Занести в таблицу, вернуть строку
-function createVistemplateStr(names) {
 
-  // сформировать строку
-  const parent = 'vistemplategroup'; // все в корень
-  let str = '';
-  let order = 1000;
-  let _id;
-  names.forEach(name => {
-    _id = name;
-    const robj = { _id, parent, order, name };
-    str += JSON.stringify(robj) + '\n';
-    order += 1000;
-  });
-  return str;
-}
 
 
 function createScenecalls(scenecallData, project_d) {
@@ -321,7 +305,6 @@ module.exports = {
   createTypes,
 
   createScenecalls,
-  createVistemplateStr,
 
   getPlaceId,
   getRoomId,
