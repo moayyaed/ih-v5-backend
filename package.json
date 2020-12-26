@@ -1,6 +1,6 @@
 {
-  "name": "ih-backend-D",
-  "version": "0.0.1",
+  "name": "ih-backend-v5",
+  "version": "5.1.4",
   "description": "",
   "main": "app.js",
   "scripts": {
@@ -21,8 +21,7 @@
   "devDependencies": {
     "expect": "^24.9.0",
     "mocha": "^4.1.0",
-    "should": "^13.2.3",
-    "supertest": "^4.0.2"
+    "should": "^13.2.3"
   },
   "author": "Intra LLC",
   "license": "MIT"
