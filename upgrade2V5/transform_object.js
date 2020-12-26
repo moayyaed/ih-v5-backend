@@ -274,8 +274,7 @@ const elementPattern = {
   },
   image: {
     img: {
-      folder: 'img12',
-      value: 'animals120.svg'
+      value: 'noimage.svg'
     },
     imgColor: {
       type: 'fill',
@@ -306,7 +305,7 @@ const elementPattern = {
       value: 0
     },
     borderSize: {
-      value: 1
+      value: 0
     },
     borderRadius: {
       value: 0
@@ -370,22 +369,22 @@ const elementPattern = {
     },
     type: 'image',
     x: {
-      value: 298
+      value: 10
     },
     y: {
-      value: 170
+      value: 10
     },
     w: {
-      value: 140
+      value: 45
     },
     h: {
-      value: 90
+      value: 45
     },
     w2: {
-      value: 140
+      value: 45
     },
     h2: {
-      value: 90
+      value: 45
     }
   },
 
@@ -650,12 +649,7 @@ const elementPattern = {
       value: true
     },
     widget: true,
-    widgetlinks: {
-      link: {
-        id: 'wdg002',
-        title: 'меню '
-      }
-    },
+    widgetlinks: {},
     data: {},
     type: 'container',
     x: {
