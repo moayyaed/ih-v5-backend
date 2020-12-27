@@ -35,7 +35,7 @@
     { "prop": "restartButton", "title": "$RestartIH", "type": "button", "command": "restart", "param": "" },
    
     { "prop": "newversion", "title": "$NEWVERSION", "type": "text", "hide":"!data.p4.newversion" },
-    { "prop": "checkButton", "title": "$CHECKUPDATE", "type": "button", "command": "checkupdate", "param": "", "hide":"data.p4.newversion" },
+    { "prop": "checkButton", "title": "$CHECKUPDATE", "type": "button", "command": "checkupdate", "param": "" },
     { "prop": "updateButton", "title": "$UPDATE", "type": "button", "command": "update", "param": "", "hide":"!data.p4.newversion" }
   ]
 }
