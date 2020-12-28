@@ -10,6 +10,7 @@ const hut = require('../lib/utils/hut');
 const appconfig = require('../lib/appconfig');
 
 const sysfiles = ['classes', 'types'];
+const readyV5 = ['mqttclient', 'modbus', 'megad', 'ping', 'emul']; // Список плагинов готовых к переносу
 
 /**
  * Cчитать файл из исходного проекта
@@ -43,7 +44,7 @@ function getRoomId(item) {
 
 /**
  * Сформировать строку для одной записи в новом формате
- * 
+ *
  * @param {String} source - имя исходной таблицы
  * @param {Object} item - исходная запись
  */
@@ -70,7 +71,9 @@ function formRecord(source, item) {
       break;
 
     case 'imagegroups':
-      robj = item.id ? { _id: 'img' + item.id, folder: 1, parent:'imagegroup', order: item.order, name: item.name } : '';
+      robj = item.id
+        ? { _id: 'img' + item.id, folder: 1, parent: 'imagegroup', order: item.order, name: item.name }
+        : '';
       break;
 
     case 'layouts': //
@@ -97,7 +100,7 @@ function formRecord(source, item) {
       break;
 
     case 'pluginextra':
-      robj = {_id:item.id, ...item};
+      robj = { _id: item.id, ...item };
       break;
 
     case 'scengroups': // BERRY => lists- scenegroup
@@ -141,12 +144,14 @@ function formRecord(source, item) {
 
 function formNewObjectId(source, srcId) {
   switch (source) {
-    case 'layouts': return getNewId('l', 3, srcId);
-    case 'mnemoschemes': return getNewId('vc', 3, srcId);
-    case 'widgets': return getNewId('wdg', 3, srcId);
+    case 'layouts':
+      return getNewId('l', 3, srcId);
+    case 'mnemoschemes':
+      return getNewId('vc', 3, srcId);
+    case 'widgets':
+      return getNewId('wdg', 3, srcId);
     default:
   }
-
 }
 
 /**
@@ -192,7 +197,6 @@ function formСombinedRecord(_id, item, slaveItem, parent) {
   return JSON.stringify(pobj) + '\n';
 }
 
-
 // SCENES
 function getScenesObj(item) {
   return {
@@ -217,6 +221,7 @@ function getUnitObj(item, rootId) {
     parent = rootId;
     plugin = item.id;
   }
+  if (!readyV5.includes(plugin)) return;
 
   const _id = getNewId('u', 3, item.id);
   const robj = { _id, parent, plugin };
@@ -258,9 +263,6 @@ function createTypes() {
   return str;
 }
 
-
-
-
 function createScenecalls(scenecallData, project_d) {
   let str = '';
   /*
@@ -289,7 +291,6 @@ function createScenecalls(scenecallData, project_d) {
 
   return str;
 }
-
 
 function getNewId(pref, len, oldId) {
   return isNaN(oldId) ? oldId : pref + String(Number(oldId)).padStart(len, '0');
