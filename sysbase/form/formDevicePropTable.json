@@ -28,7 +28,21 @@
         { "prop": "realtime_dev_ts", "title": "$LogDateTime", "type": "text", "width": 150 },
         { "prop": "realtime_dev_cts", "title": "Изменение", "type": "text", "width": 128 },
         { "prop": "realtime_dev_err", "title": "$Error", "type": "text", "width": 128 },
-        { "prop": "log", "title": "$LogCommand", "type": "cb", "width": 80, "hide": "data.prop == 'error' || data.type_op == 'Command'" },
+
+        {
+          "prop": "_inputval",
+          "title": "Присвоить значение",
+          "type": "input",
+          "width": 100,
+          "hide": "data.type_op.includes('System') || data.type_op.includes('Calculate') || data.type_op.includes('Command')"
+        },
+        {
+          "prop": "log",
+          "title": "$LogCommand",
+          "type": "cb",
+          "width": 80,
+          "hide": "data.prop == 'error' || data.type_op == 'Command'"
+        },
         { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide": "!data.type_op.includes('Number')" },
         { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide": "!data.type_op.includes('Number')" },
         {
@@ -40,9 +54,7 @@
         },
         { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 80, "hide": "!data.type_op.includes('Number')" },
         { "prop": "source", "title": "Источник свойства", "type": "link", "width": 250, "command": "forward" },
-        { "prop": "snipuse", "title": "", "type": "text", "width": 10, "hide":"1==1"  }
-
-     
+        { "prop": "snipuse", "title": "", "type": "text", "width": 10, "hide": "1==1" }
       ]
     }
   ]
