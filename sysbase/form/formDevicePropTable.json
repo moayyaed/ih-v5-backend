@@ -54,7 +54,7 @@
         },
         { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 80, "hide": "!data.type_op.includes('Number')" },
         { "prop": "source", "title": "Источник свойства", "type": "link", "width": 250, "command": "forward" },
-        { "prop": "fn_opt", "title": "Параметр обработчика", "type": "input", "width": 250 },
+        { "prop": "fn_opt_str", "title": "Параметр обработчика", "type": "input", "width": 250 },
         { "prop": "snipuse", "title": "", "type": "text", "width": 10, "hide": "1==1" }
       ]
     }

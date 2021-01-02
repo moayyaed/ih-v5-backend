@@ -97,7 +97,8 @@
       "props": {
         "newid": { "notempty": true, "validid": true },
         "min": { "type": "number", "spec": "min" },
-        "max": { "type": "number", "spec": "max" }
+        "max": { "type": "number", "spec": "max" },
+        "fn_opt_str":{ "custom": true }
       }
     }
   },
