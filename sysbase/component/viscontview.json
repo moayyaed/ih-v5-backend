@@ -1,7 +1,8 @@
 {
   "tabs": [
     { "id": "tabViscontCommon", "title": "Описание", "component": [{ "id": "formViscontCommon", "type": "form" }] },
-    { "id": "tabViscontEditor", "title": "Редактор", "component": [{ "id": "formViscont", "type": "form" }] }
+    { "id": "tabViscontEditor", "title": "Редактор", "component": [{ "id": "formViscont", "type": "form" }] },
+    { "id": "tabViscontExport", "title": "Параметры для выгрузки", "component": [{ "id": "formViscontExport", "type": "form" }] }
   ],
   "defaultTab": "tabViscontCommon"
 }

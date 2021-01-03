@@ -1,0 +1,15 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 4, "class": "main", "table": "container" },
+    { "id": "p2", "xs": 4, "class": "main", "table": "container", "hide": "data.p1.__impref" }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "viscont" },
+
+  "p1": [
+    { "prop": "__impref", "title": "Источник", "type": "text", "hide": "!data.p1.__impref" },
+    { "prop": "__expref", "title": "Префикс для выгрузки", "type": "input", "hide": "data.p1.__impref" }
+  ],
+
+  "p2": [{ "prop": "__exid", "title": "ID для выгрузки", "type": "input", "hide": "data.p1.__impref" }]
+}

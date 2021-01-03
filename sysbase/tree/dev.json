@@ -117,7 +117,9 @@
           { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
           { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
           { "id": "7", "type": "divider" },
-          { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
+          { "id": "8", "type": "item", "title": "$Export", "command": "export", "param": "type" },
+          { "id": "9", "type": "divider" },
+          { "id": "10", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
       "defaultComponent": "typefolder"
