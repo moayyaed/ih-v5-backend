@@ -546,5 +546,14 @@
 
   "userlog": { "store": "db", "collection": "userlog" },
 
-  "alerts": { "store": "db", "collection": "alerts" }
+  "alerts": { "store": "db", "collection": "alerts" },
+
+  "systemsettingsTable": {
+    "store": "none",
+    "validator": {
+      "main": {
+        "port": { "required": true, "notempty": true }
+      }
+    }
+  }
 }

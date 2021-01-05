@@ -345,12 +345,6 @@
             "id": "_config",
             "order":"1",
             "component":"settings"
-          },
-          {
-            "title": "Настройки проекта",
-            "id": "_current_project",
-            "order":"2",
-            "component":"projectview"
           }
         ]
       }
