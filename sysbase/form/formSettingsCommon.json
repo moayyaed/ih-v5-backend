@@ -27,6 +27,6 @@
       "size": "h6"
     },
     { "prop": "otherprojdir", "title": "$ChangeProjectsFolder", "type": "cb" },
-    { "prop": "projdir", "title": "$ProjectsFolder", "type": "input", "hide": "!data.p2.otherprojdir" }
+    { "prop": "projdir", "title": "$PathToProjects", "type": "input", "hide": "!data.p2.otherprojdir" }
   ]
 }

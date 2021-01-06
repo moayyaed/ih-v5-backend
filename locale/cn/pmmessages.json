@@ -807,7 +807,8 @@
   { "id": "UPDATE", "note": "Update" },
   { "id": "RestartIH", "note": "Restart IH" },
   { "id": "ChangeProjectsFolder", "note": "Change location of the projects folder" },
-  { "id": "ProjectsFolder", "note": "Projects Folder" },
+  { "id": "PathToProjects", "note": "Projects Folder" },
+  { "id": "ProjectsTable", "note": "Projects Table" },
 
   { "id": "Var_Id", "note": "Variable Name" },
   { "id": "SetDef", "note": "Set default value on server start" }

@@ -881,7 +881,8 @@
   { "id": "RestartIH", "note": "Restart IH" },
   { "id": "RestartIHToApply", "note": "Restart IH to apply the settings" },
   { "id": "ChangeProjectsFolder", "note": "Change location of the projects folder" },
-  { "id": "ProjectsFolder", "note": "Projects Folder" },
+  { "id": "PathToProjects", "note": "Path to Projects Foder" },
+  { "id": "ProjectsTable", "note": "Projects Table" },
 
   { "id": "LinkToDeviceProperty", "note": "Link To Device Property" },
   { "id": "Var_Id", "note": "Variable Name" },

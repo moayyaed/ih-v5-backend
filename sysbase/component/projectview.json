@@ -1,6 +1,6 @@
 {
   "tabs": [
-    { "id": "tabProjectView",  "title": "Проект", "component": [{ "id": "formProjectCommon", "type": "form" }]  }
+    { "id": "tabProjectView",  "title": "$Project", "component": [{ "id": "formProjectCommon", "type": "form" }]  }
   ],
   "defaultTab": "tabProjectView"
 }
