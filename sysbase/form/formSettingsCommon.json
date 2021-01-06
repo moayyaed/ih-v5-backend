@@ -22,11 +22,11 @@
   "p2": [
     {
       "prop": "warning",
-      "title": "Для применения настроек требуется перезагрузка сервера!",
+      "title": "$RestartIHToApply",
       "type": "header",
       "size": "h6"
     },
-    { "prop": "otherprojdir", "title": "Изменить расположение папки проектов", "type": "cb" },
-    { "prop": "projdir", "title": "Папка с проектами", "type": "input", "hide": "!data.p2.otherprojdir" }
+    { "prop": "otherprojdir", "title": "$ChangeProjectsFolder", "type": "cb" },
+    { "prop": "projdir", "title": "$ProjectsFolder", "type": "input", "hide": "!data.p2.otherprojdir" }
   ]
 }

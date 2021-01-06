@@ -887,6 +887,9 @@
   { "id": "CHECKUPDATE", "note": "Проверить обновления" },
   { "id": "UPDATE", "note": "Обновить" },
   { "id": "RestartIH", "note": "Перезагрузить IH" },
+  { "id": "RestartIHToApply", "note": "Для применения настроек требуется перезагрузка IH" },
+  { "id": "ChangeProjectsFolder", "note": "Изменить расположение папки проектов" },
+  { "id": "ProjectsFolder", "note": "Папка с проектами" },
 
   { "id": "Ruledn_pref", "note": "Префикс при именовании нового устройства" },
   { "id": "Ruledn_len", "note": "Длина при именовании нового устройства " },

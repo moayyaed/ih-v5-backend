@@ -335,13 +335,13 @@
   "systemsettings": {
     "data": [
       {
-        "title": "Настройки",
+        "title": "$Settings",
         "id": "_systemsettings",
         "root": "systemsettings",
         "expanded": true,
         "children": [
           {
-            "title": "Настройки cервера",
+            "title": "$SystemSettings",
             "id": "_config",
             "order":"1",
             "component":"settings"
