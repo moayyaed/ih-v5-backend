@@ -101,7 +101,8 @@
       { "id": 0, "title": "$Unit_NotActive" },
       { "id": 1, "title": "$Unit_Active" },
       { "id": 2, "title": "$Unit_Suspended" },
-      { "id": 3, "title": "$Unit_StopWithError" }
+      { "id": 3, "title": "$Unit_StopWithError" },
+      { "id": 4, "title": "$Unit_Stopped" }
     ]
   },
 

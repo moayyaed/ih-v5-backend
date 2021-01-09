@@ -573,6 +573,7 @@
   { "id": "Unit_NotActive", "note": "Not Active" },
   { "id": "Unit_Active", "note": "Active" },
   { "id": "Unit_StopWithError", "note": "Stopped with Error" },
+  { "id": "Unit_Stopped", "note": "Stopped" },
   { "id": "Unit_Suspended", "note": "Suspended" },
   { "id": "Unit_LastStart", "note": "Launch" },
   { "id": "Unit_LastSop", "note": "Stop" },
