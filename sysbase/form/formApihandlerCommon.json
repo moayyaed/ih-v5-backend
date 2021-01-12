@@ -10,6 +10,7 @@
 
   "p1": [
     { "prop": "name", "title": "$Name", "type": "input" },
+    { "prop": "post", "title": "Method POST", "type": "cb" },
     { "prop": "endpoint", "title": "Endpoint", "type": "input" },
     { "prop": "_id", "title": "File", "type": "text" },
     { "prop": "reqts", "title": "Updated", "type": "text" }
