@@ -12,6 +12,7 @@
   "alerts": { "folder": "jbasepath" },
   "units": { "folder": "jbasepath" },
   "snippets": { "folder": "jbasepath" },
+  "apihandlers": { "folder": "jbasepath" },
 
   "types": { "folder": "jbasepath" },
   "layouts": { "folder": "jbasepath" },
@@ -32,6 +33,7 @@
   
   "projects": { "inMemory":1 },
   "dbagents": { "folder": "jbasepath" },
+  "lickeys": { "folder": "custombasepath" },
 
   "devicelog": { "folder": "operativepath", "ensureIndex":"ts", "expireAfterSeconds": 600 },
   "pluginlog": { "folder": "operativepath", "ensureIndex":"ts", "expireAfterSeconds": 86400},

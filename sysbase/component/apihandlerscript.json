@@ -1,0 +1,8 @@
+{
+  "tabs": [
+    { "id": "tabApihandlerCommon",  "title": "Свойства", "component": [{ "id": "formApihandlerCommon", "type": "form" }]  },
+    { "id": "tabApihandlerCodeEditor",  "title": "Редактор кода", "component": [{ "id": "formApihandlerCodeEditor", "type": "form" }]  }
+  
+  ],
+  "defaultTab": "tabApihandlerCommon"
+}

@@ -318,6 +318,7 @@
   "multiscenesTreeTable": { "store": "tree", "tree": "multiscenes", "rows": true },
 
   "snippetsTreeTable": { "store": "tree", "tree": "snippets", "rows": true },
+  "apihandlersTreeTable": { "store": "tree", "tree": "apihandlers", "rows": true },
 
   "scenecall": {
     "store": "db",
@@ -363,6 +364,21 @@
     "store": "db",
     "collection": "snippets",
     "ruleID": { "pref": "snippet", "len": 3 }
+  },
+
+  "apihandlergroup": {
+    "store": "db",
+    "collection": "apihandlers",
+    "filter": { "folder": 1 },
+    "defRootTitle": "Api endpoints",
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "apg", "len": 3 }
+  },
+
+  "apihandler": {
+    "store": "db",
+    "collection": "apihandlers",
+    "ruleID": { "pref": "api", "len": 3 }
   },
 
   "chartgroup": {
@@ -547,6 +563,7 @@
   "userlog": { "store": "db", "collection": "userlog" },
 
   "alerts": { "store": "db", "collection": "alerts" },
+  "lickeys": { "store": "db", "collection": "lickeys" },
 
   "systemsettingsTable": {
     "store": "none",

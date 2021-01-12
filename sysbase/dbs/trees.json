@@ -240,7 +240,7 @@
 
   "scriptx": ["scenes"],
 
-  "datasource": ["plugins", "snippets"],
+  "datasource": ["plugins", "snippets", "apihandlers"],
   "plugins": {
     "branch": {
       "table": "unitgroup",
@@ -385,6 +385,17 @@
     "leaf": {
       "table": "snippet",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+
+  "apihandlers": {
+    "branch": {
+      "table": "apihandlergroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "apihandler",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder",  "endpoint": "endpoint" }
     }
   },
 
