@@ -70,6 +70,7 @@
   { "id": "SystemSettings", "note": "Системные настройки" },
   { "id": "Setting_upserver", "note": "Сервер обновлений" },
   { "id": "Setting_port", "note": "Порт интерфейса" },
+  { "id": "Setting_apiport", "note": "Порт API" },
   { "id": "Setting_lang", "note": "Локализация" },
   { "id": "Setting_location", "note": "Локация" },
 

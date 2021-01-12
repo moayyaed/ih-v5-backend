@@ -59,6 +59,7 @@
   { "id": "SystemSettings", "note": "系统设置" },
   { "id": "Setting_upserver", "note": "更新Server" },
   { "id": "Setting_port", "note": "应用端口" },
+  { "id": "Setting_apiport", "note": "API Port" },
   { "id": "Setting_lang", "note": "语言" },
   { "id": "Setting_location", "note": "位置" },
 

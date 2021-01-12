@@ -70,6 +70,7 @@
   { "id": "SystemSettings", "note": "System Settings" },
   { "id": "Setting_upserver", "note": "Update Server" },
   { "id": "Setting_port", "note": "Interface Port" },
+  { "id": "Setting_apiport", "note": "API Port" },
   { "id": "Setting_lang", "note": "Localization" },
   { "id": "Setting_location", "note": "Location" },
 
