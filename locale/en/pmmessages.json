@@ -902,5 +902,10 @@
 
   { "id": "LinkToDeviceProperty", "note": "Link To Device Property" },
   { "id": "Var_Id", "note": "Variable Name" },
-  { "id": "SetDef", "note": "Set default value on server start" }
+  { "id": "SetDef", "note": "Set default value on server start" },
+
+  { "id": "File", "note": "File" },
+  { "id": "HTTPMethod", "note": "HTTPMethod" },
+  { "id": "Route", "note": "Route" },
+  { "id": "NewRoute", "note": "NewRoute" }
 ]

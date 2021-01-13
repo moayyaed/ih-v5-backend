@@ -233,7 +233,10 @@
   { "id": "Activate", "note": "Activate" },
   { "id": "Deactivate", "note": "Deactivate" },
   { "id": "NoDbUsed", "note": "No database used in this project" },
-
+  { "id": "Dbagent", "note": "DB agent" },
+  { "id": "Restart", "note": "Restart" },
+  { "id": "Layout", "note": "Layout" },
+  { "id": "Container", "note": "Container" },
 
   { "id": "mustBeNotEmpty", "note": "must be not empty" },
   { "id": "mustBeValidId", "note": "invalid value" },

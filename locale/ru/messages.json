@@ -237,6 +237,8 @@
   { "id": "NoDbUsed", "note": "В этом проекте база данных не используется" },
   { "id": "Dbagent", "note": "Агент БД" },
   { "id": "Restart", "note": "Перезагрузка" },
+  { "id": "Layout", "note": "Экран" },
+  { "id": "Container", "note": "Контейнер" },
 
   { "id": "mustBeNotEmpty", "note": "значение не может быть пустым" },
   { "id": "mustBeValidId", "note": "недопустимое значение" },

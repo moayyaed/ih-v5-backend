@@ -14,7 +14,7 @@
       "columns": [
 
         { "prop": "title", "title": "", "type": "link", "command":"forward",  "width": 400  },
-        { "prop": "endpoint", "title": "Endpoint", "type": "input",  "width": 400 }, 
+        { "prop": "endpoint", "title": "", "type": "input",  "width": 400 }, 
         { "prop": "path", "title": "", "type": "text",  "width": 400 }
       ]
     }
