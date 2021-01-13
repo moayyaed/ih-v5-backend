@@ -1,0 +1,29 @@
+{
+  "grid": [{ "id": "p4", "xs": 6, "class": "main" }],
+  "spacing": 10,
+
+  "p4": [
+    { "prop": "uptimeinfo", "title": "Version&Upgade", "type": "header", "size": "h6" },
+
+    { "prop": "version", "title": "$Version", "type": "text" },
+    { "prop": "restartButton", "title": "$RestartIH", "type": "button", "command": "restart", "param": "" },
+
+    { "prop": "newversion", "title": "$NEWVERSION", "type": "text", "hide": "!data.p4.newversion" },
+    {
+      "prop": "checkButton",
+      "title": "$CHECKUPDATE",
+      "type": "button",
+      "command": "checkupdate",
+      "param": "",
+      "hide": "data.p4.newversion"
+    },
+    {
+      "prop": "updateButton",
+      "title": "$UPDATE",
+      "type": "button",
+      "command": "update",
+      "param": "",
+      "hide": "!data.p4.newversion"
+    }
+  ]
+}
