@@ -370,7 +370,7 @@
     "store": "db",
     "collection": "apihandlers",
     "filter": { "folder": 1 },
-    "defRootTitle": "Api endpoints",
+    "defRootTitle": "REST API",
     "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "apg", "len": 3 }
   },
