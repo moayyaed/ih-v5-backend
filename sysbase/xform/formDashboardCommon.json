@@ -8,29 +8,29 @@
   "spacing": 10,
 
   "p1": [
-    { "prop": "sysinfo", "title": "System Info", "type": "header", "size": "h6" },
-    { "prop": "platform", "title": "Platform", "type": "text" },
-    { "prop": "arch", "title": "Arch", "type": "text" }
+    { "prop": "sysinfo", "title": "$SystemInfoName", "type": "header", "size": "h6" },
+    { "prop": "platform", "title": "$process_platform", "type": "text" },
+    { "prop": "arch", "title": "$process_arch", "type": "text" }
   ],
   "p2": [
-    { "prop": "processinfo", "title": "Memory Info", "type": "header", "size": "h6" },
-    { "prop": "osMemory", "title": "OS Total/Free", "type": "text" },
-    { "prop": "rss", "title": "Process Resident Memory Size", "type": "text" },
-    { "prop": "heapTotal", "title": "Process Heap Total", "type": "text" },
-    { "prop": "heapUsed", "title": "Process Heap Used", "type": "text" }
+    { "prop": "processinfo", "title": "$MemoryInfoName", "type": "header", "size": "h6" },
+    { "prop": "osMemory", "title": "$os_memory", "type": "text" },
+    { "prop": "rss", "title": "$os_memory_rss", "type": "text" },
+    { "prop": "heapTotal", "title": "$os_memory_heap_total", "type": "text" },
+    { "prop": "heapUsed", "title": "$os_memory_heap_used", "type": "text" }
   ],
   "p3": [
-    { "prop": "projectinfo", "title": "Project Info", "type": "header", "size": "h6" },
-    { "prop": "project", "title": "Project", "type": "text" },
-    { "prop": "types", "title": "Types", "type": "text" },
-    { "prop": "devices", "title": "Devices", "type": "text" },
-    { "prop": "devhard", "title": "Channels", "type": "text" },
-    { "prop": "devhardtag", "title": "Tags (active channels)", "type": "text" }
+    { "prop": "projectinfo", "title": "$ProjectInfoName", "type": "header", "size": "h6" },
+    { "prop": "project", "title": "$Project_Folder", "type": "text" },
+    { "prop": "types", "title": "$qTypes", "type": "text" },
+    { "prop": "devices", "title": "$qDevices", "type": "text" },
+    { "prop": "devhard", "title": "$qChannels", "type": "text" },
+    { "prop": "devhardtag", "title": "$qTags", "type": "text" }
   ],
   "p4": [
-    { "prop": "uptimeinfo", "title": "Version & Uptime", "type": "header", "size": "h6" },
-    { "prop": "osUptime", "title": "OS Uptime", "type": "text" },
-    { "prop": "uptime", "title": "IH Uptime", "type": "text" },
+    { "prop": "uptimeinfo", "title": "$Version&Uptime", "type": "header", "size": "h6" },
+    { "prop": "osUptime", "title": "$os_uptime", "type": "text" },
+    { "prop": "uptime", "title": "$process_uptime", "type": "text" },
     { "prop": "version", "title": "$Version", "type": "text" },
     { "prop": "restartButton", "title": "$RestartIH", "type": "button", "command": "restart", "param": "" },
    
