@@ -591,7 +591,6 @@
   { "id": "Unit_Plugin", "note": "Плагин" },
   { "id": "Unit_Restarttime", "note": "Время рестарта (сек)" },
 
-
   { "id": "User_Name", "note": "Имя пользователя" },
   { "id": "User_Name_C", "note": "Имя" },
   { "id": "User_Login", "note": "Учетная запись (login)" },
@@ -699,6 +698,10 @@
   { "id": "What_3", "note": "Отправка сообщения" },
 
   { "id": "Command", "note": "Команда" },
+
+  { "id": "Information_Tab", "note": "О системе" },
+  { "id": "SystemLog_Tab", "note": "Лог системы" },
+
   { "id": "SystemInfoName", "note": "Информация о системе" },
   { "id": "MemoryInfoName", "note": "Память" },
   { "id": "Version&Uptime", "note": "Версия & Аптайм" },
@@ -707,7 +710,6 @@
   { "id": "qDevices", "note": "Количество устройств" },
   { "id": "qChannels", "note": "Количество каналов" },
   { "id": "qTags", "note": "Количество тэгов (активных каналов)" },
-
 
   { "id": "os_uptime", "note": "ОС аптайм" },
   { "id": "client_username", "note": "User name" },
@@ -882,13 +884,12 @@
   { "id": "Imgsystem", "note": "Системные" },
   { "id": "SaveMethod", "note": "Метод сохранения" },
 
-
   { "id": "Copy", "note": "Копировать" },
   { "id": "Paste", "note": "Вставить" },
   { "id": "Add", "note": "Добавить" },
   { "id": "Delete", "note": "Удалить" },
   { "id": "Export", "note": "Экспорт" },
-  
+
   { "id": "Database", "note": "База данных" },
   { "id": "Legend", "note": "Легенда" },
   { "id": "NewTab", "note": "Новая вкладка" },
@@ -910,7 +911,4 @@
   { "id": "LinkToDeviceProperty", "note": "Привязка к устройcтву" },
   { "id": "Var_Id", "note": "Имя переменной" },
   { "id": "SetDef", "note": "Присваивать значение по умолчанию при старте сервера" }
-  
-
-
 ]

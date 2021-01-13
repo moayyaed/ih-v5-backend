@@ -2,12 +2,12 @@
   "tabs": [
     {
       "id": "tabDashboardCommon",
-      "title": "Information",
+      "title": "$Information_Tab",
       "component": [{ "id": "formDashboardCommon", "type": "xform" }]
     },
     {
       "id": "tabDashboardLog",
-      "title": "Log",
+      "title": "$SystemLog_Tab",
       "component": [{ "id": "formDashboardSystemLog", "type": "form" }]
     }
   ],

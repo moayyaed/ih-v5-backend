@@ -27,7 +27,7 @@
   { "id": "LOGINALREADYEXISTS", "note": "Такой логин уже существует!" },
   { "id": "WRONGPWD", "note": "Недопустимый пароль!" },
   { "id": "INVALIDPWD", "note": "Пароль неверный!" },
-  { "id": "NEEDAUTH",  "note":"Требуется аутентификация!"},
+  { "id": "NEEDAUTH", "note": "Требуется аутентификация!" },
   { "id": "INVALIDTOKEN", "note": "Сеанс устарел, требуется аутентификация!" },
   { "id": "ADMINMUSTEXISTS", "note": "Должна остаться хотя бы одна запись с правами администратора!" },
   { "id": "SCRIPTHASSCENE", "note": "Скрипт имеет рабочий сценарий!" },
@@ -213,20 +213,20 @@
   { "id": "PluginDataUpload", "note": "Загрузить данные плагина" },
   { "id": "FailUpdate", "note": "Не удалось сохранить данные!" },
   { "id": "FolderLostInvOper", "note": "Папка lost+found служебная, операция не может быть выполнена!" },
-  { "id": "FolderRootOrNotFound", "note": "Не удалось выполнить операцию!"},
-  { "id": "OnlyOneRootForCopy", "note": "Копировать можно только внутри одного дерева!"},
+  { "id": "FolderRootOrNotFound", "note": "Не удалось выполнить операцию!" },
+  { "id": "OnlyOneRootForCopy", "note": "Копировать можно только внутри одного дерева!" },
 
-  { "id": "NotFoundInPack", "note": "Файл не найден в пакете."},
-  { "id": "Install", "note": "Установка"},
-  { "id": "Skipped", "note": "Пропускается."},
-  { "id": "CopyError", "note": "Ошибка при копировании"},
-  { "id": "EmptyFolder", "note": "Эта папка пуста!"},
-  { "id": "filesFromFolder", "note": "файлов из папки"},
-  { "id": "NoFilesOfThisType", "note": "Файлы этого типа не надены"},
+  { "id": "NotFoundInPack", "note": "Файл не найден в пакете." },
+  { "id": "Install", "note": "Установка" },
+  { "id": "Skipped", "note": "Пропускается." },
+  { "id": "CopyError", "note": "Ошибка при копировании" },
+  { "id": "EmptyFolder", "note": "Эта папка пуста!" },
+  { "id": "filesFromFolder", "note": "файлов из папки" },
+  { "id": "NoFilesOfThisType", "note": "Файлы этого типа не надены" },
 
-  { "id": "SystemIndicators", "note": "Системные индикаторы"},
-  { "id": "PluginIndicator", "note": "Индикатор плагина"},
-  { "id": "dbagent", "note": "Индикатор исторической БД"},
+  { "id": "SystemIndicators", "note": "Системные индикаторы" },
+  { "id": "PluginIndicator", "note": "Индикатор плагина" },
+  { "id": "dbagent", "note": "Индикатор исторической БД" },
   { "id": "DeleteInstance", "note": "Удалить экземпляр" },
   { "id": "ActivatePlugin", "note": "Активировать плагин" },
   { "id": "DeactivatePlugin", "note": "Деактивировать плагин" },
@@ -238,12 +238,22 @@
   { "id": "Dbagent", "note": "Агент БД" },
   { "id": "Restart", "note": "Перезагрузка" },
 
-
   { "id": "mustBeNotEmpty", "note": "значение не может быть пустым" },
   { "id": "mustBeValidId", "note": "недопустимое значение" },
   { "id": "mustBeLessToMax", "note": "значение не может быть меньше max" },
   { "id": "mustBeGreaterToMin", "note": "значение не может быть больше min" },
   { "id": "mustBeUnique", "note": "значение должно быть уникально" },
-  { "id": "selectFromList", "note": "Выберите значение из списка!" }
+  { "id": "selectFromList", "note": "Выберите значение из списка!" },
+  { "id": "TypeImportError", "note": "Ошибка при переносе типа! Подробности в логе системы." },
 
+  { "id": "StartV4migration", "note": "Загружен проект версии V4. Запущена процедура миграции..." },
+  { "id": "ProjectSavedAs", "note": "Проект сохранен под именем " },
+  {
+    "id": "toActivateProject",
+    "note": "Для активации проекта перейдите в Настройки и нажмите 'Перезагрузить сервер с этим проектом'."
+  },
+  {
+    "id": "CredentialsNotMigrated",
+    "note": "Учетные данные в целях безопасности не переносятся.\n Стандартный вход Login:admin, Password:202020"
+  }
 ]

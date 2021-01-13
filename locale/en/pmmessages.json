@@ -693,6 +693,10 @@
   { "id": "What_2", "note": "Device Command" },
   { "id": "What_3", "note": "Send Message" },
   { "id": "Command", "note": "Command" },
+
+  { "id": "Information_Tab", "note": "Information" },
+  { "id": "SystemLog_Tab", "note": "System Log" },
+
   { "id": "SystemInfoName", "note": "System Information" },
   { "id": "MemoryInfoName", "note": "Memory Information" },
   { "id": "Version&Uptime", "note": "Version & Uptime" },
