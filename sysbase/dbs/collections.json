@@ -33,6 +33,7 @@
   
   "projects": { "inMemory":1 },
   "dbagents": { "folder": "jbasepath" },
+  "customtables": { "folder": "jbasepath" },
   "lickeys": { "folder": "custombasepath" },
 
   "devicelog": { "folder": "operativepath", "ensureIndex":"ts", "expireAfterSeconds": 600 },
