@@ -13,7 +13,7 @@ const pluginservice = require('./lib/plugin/pluginservice');
 const sceneservice = require('./lib/scene/sceneservice');
 const snippetservice = require('./lib/snippet/snippetservice');
 const trendservice = require('./lib/trend/trendservice');
-const httprestservice = require('./lib/httprest/httprestservice');
+// const httprestservice = require('./lib/httprest/httprestservice');
 
 const webserver = require('./lib/web/webserver');
 const dm = require('./lib/datamanager');
@@ -43,7 +43,7 @@ const EventEmitter = require('events');
     await sceneservice(holder);
     await snippetservice(holder);
     await trendservice(holder);
-    await httprestservice(holder);
+    // await httprestservice(holder);
     await webserver(holder);
   } catch (err) {
     console.log('ERROR: Main App Exception ' + util.inspect(err));

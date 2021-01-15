@@ -8,7 +8,6 @@
   "p1": [
     { "prop": "config_options", "title": "$SystemSettings", "type": "header", "size": "h6" },
     { "prop": "port", "title": "$Setting_port", "type": "input" },
-    { "prop": "apiport", "title": "$Setting_apiport", "type": "input" },
     {
       "prop": "lang",
       "title": "$Setting_lang",
