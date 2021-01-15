@@ -320,6 +320,7 @@
   "snippetsTreeTable": { "store": "tree", "tree": "snippets", "rows": true },
   "apihandlersTreeTable": { "store": "tree", "tree": "apihandlers", "rows": true },
 
+
   "scenecall": {
     "store": "db",
     "collection": "scenecalls",
@@ -370,15 +371,32 @@
     "store": "db",
     "collection": "apihandlers",
     "filter": { "folder": 1 },
-    "defRootTitle": "REST API",
     "default": { "name": "$NewFolder" },
-    "ruleID": { "pref": "apg", "len": 3 }
+    "ruleID": { "pref": "apg", "len": 3 },
+    "requiredRecords": [
+      {
+        "check": { "_id": "apihandlergroup" },
+        "add": {
+          "_id": "apihandlergroup",
+          "parent": 0,
+          "name": "REST API",
+          "folder": 1,
+          "deps":{}
+        }
+      }
+    ]
   },
 
   "apihandler": {
     "store": "db",
     "collection": "apihandlers",
     "ruleID": { "pref": "api", "len": 3 }
+  },
+
+  "apihandlerDepsTable": { 
+    "store": "db", 
+     "collection": "apihandlers",
+    "genfield": "deps" 
   },
 
   "chartgroup": {
@@ -564,8 +582,6 @@
 
   "alerts": { "store": "db", "collection": "alerts" },
   "customtables": { "store": "db", "collection": "customtables" },
-
-  "lickeys": { "store": "db", "collection": "lickeys" },
 
   "systemsettingsTable": {
     "store": "none",

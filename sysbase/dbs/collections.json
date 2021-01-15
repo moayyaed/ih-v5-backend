@@ -28,16 +28,16 @@
   "dialogs": { "folder": "jbasepath" },
 
   "charts": { "folder": "jbasepath" },
-  
-  "reports": { "folder": "jbasepath" },
-  
-  "projects": { "inMemory":1 },
-  "dbagents": { "folder": "jbasepath" },
-  "customtables": { "folder": "jbasepath" },
-  "lickeys": { "folder": "custombasepath" },
 
-  "devicelog": { "folder": "operativepath", "ensureIndex":"ts", "expireAfterSeconds": 600 },
-  "pluginlog": { "folder": "operativepath", "ensureIndex":"ts", "expireAfterSeconds": 86400},
+  "reports": { "folder": "jbasepath" },
+
+  "projects": { "inMemory": 1 },
+  "dbagents": { "folder": "jbasepath" },
+  
+  "customtables": { "folder": "jbasepath" },
+
+  "devicelog": { "folder": "operativepath", "ensureIndex": "ts", "expireAfterSeconds": 86400 },
+  "pluginlog": { "folder": "operativepath", "ensureIndex": "ts", "expireAfterSeconds": 86400 },
 
   "users": { "folder": "privatepath" },
   "tokens": { "folder": "privatepath" }
