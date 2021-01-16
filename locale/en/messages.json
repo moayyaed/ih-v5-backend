@@ -237,6 +237,7 @@
   { "id": "Restart", "note": "Restart" },
   { "id": "Layout", "note": "Layout" },
   { "id": "Container", "note": "Container" },
+  { "id": "'NewRestapihandler", "note": "New Route" },
 
   { "id": "mustBeNotEmpty", "note": "must be not empty" },
   { "id": "mustBeValidId", "note": "invalid value" },

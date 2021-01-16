@@ -55,7 +55,7 @@
       "defaultComponent": "snippetscript"
     }
   },
-  "apihandlers": {
+  "restapihandlers": {
     "parent": {
       "popup": {
         "main": [
@@ -69,7 +69,7 @@
           { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
-      "defaultComponent": "apihandlerfolder"
+      "defaultComponent": "restapihandlerfolder"
     },
     "child": {
       "popup": {
@@ -84,7 +84,7 @@
           { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
-      "defaultComponent": "apihandlerscript"
+      "defaultComponent": "restapihandlerscript"
     }
   }
 }

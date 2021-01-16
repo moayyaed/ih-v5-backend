@@ -240,6 +240,8 @@
   { "id": "Layout", "note": "Экран" },
   { "id": "Container", "note": "Контейнер" },
 
+  { "id": "'NewRestapihandler", "note": "Новый маршрут" },
+
   { "id": "mustBeNotEmpty", "note": "значение не может быть пустым" },
   { "id": "mustBeValidId", "note": "недопустимое значение" },
   { "id": "mustBeLessToMax", "note": "значение не может быть меньше max" },

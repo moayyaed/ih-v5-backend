@@ -1,11 +1,11 @@
 {
   "grid": [
-    { "id": "p1", "xs": 4, "class": "main", "table": "apihandlergroup" },
-    { "id": "p2", "xs": 4, "class": "main", "table": "apihandlerDepsTable", "height": 300 },
-    { "id": "p3", "xs": 4, "class": "main", "table": "apihandlergroup" }
+    { "id": "p1", "xs": 4, "class": "main", "table": "restapihandlergroup" },
+    { "id": "p2", "xs": 4, "class": "main", "table": "restapihandlerDepsTable", "height": 300 },
+    { "id": "p3", "xs": 4, "class": "main", "table": "restapihandlergroup" }
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "apihandlers" },
+  "breadcrumbs": { "tree": "restapihandlers" },
 
   "p1": [{ "prop": "name", "title": "$Name", "type": "input" }],
 
@@ -14,7 +14,7 @@
       "title": "",
       "type": "table",
       "popupenable": true,
-      "prop": "apihandlerDepsTable",
+      "prop": "restapihandlerDepsTable",
       "genfield": "deps",
 
       "columns": [

@@ -1,10 +1,10 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "apihandler" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "apihandler" }
+    { "id": "p1", "xs": 6, "class": "main", "table": "restapihandler" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "restapihandler" }
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "apihandlers" },
+  "breadcrumbs": { "tree": "restapihandlers" },
 
   "p1": [
     { "prop": "name", "title": "$Name", "type": "input" },

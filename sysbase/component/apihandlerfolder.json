@@ -1,7 +1,0 @@
-{
-  "tabs": [
-    { "id": "tabApihandlerFolder",  "title": "Свойства папки", "component": [{ "id": "formApihandlerFolder", "type": "form" }]  },
-    { "id": "tabApihandlerTable",  "title": "Таблица", "component": [{ "id": "formApihandlerTable", "type": "form" }]  }
-  ],
-  "defaultTab": "tabApihandlerFolder"
-}

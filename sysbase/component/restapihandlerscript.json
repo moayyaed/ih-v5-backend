@@ -1,0 +1,8 @@
+{
+  "tabs": [
+    { "id": "tabRestapiCommon",  "title": "Свойства", "component": [{ "id": "formRestapiCommon", "type": "form" }]  },
+    { "id": "tabRestapiCodeEditor",  "title": "Редактор кода", "component": [{ "id": "formRestapiCodeEditor", "type": "form" }]  }
+  
+  ],
+  "defaultTab": "tabRestapiCommon"
+}

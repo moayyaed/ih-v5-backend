@@ -1,15 +1,15 @@
 {
   "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table":"apihandlersTreeTable", "height":"fill"}
+    { "id": "p1", "xs": 12, "class": "main", "table":"restapihandlersTreeTable", "height":"fill"}
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "apihandlers" },
+  "breadcrumbs": { "tree": "restapihandlers" },
 
   "p1": [
     {
       "title": "",
       "type": "table",
-      "prop": "apihandlerTreeTable",
+      "prop": "restapihandlerTreeTable",
 
       "columns": [
 

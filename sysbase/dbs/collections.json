@@ -12,7 +12,7 @@
   "alerts": { "folder": "jbasepath" },
   "units": { "folder": "jbasepath" },
   "snippets": { "folder": "jbasepath" },
-  "apihandlers": { "folder": "jbasepath" },
+  "restapihandlers": { "folder": "jbasepath" },
 
   "types": { "folder": "jbasepath" },
   "layouts": { "folder": "jbasepath" },
