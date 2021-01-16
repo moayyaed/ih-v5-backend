@@ -570,7 +570,6 @@
   "userlog": { "store": "db", "collection": "userlog" },
 
   "alerts": { "store": "db", "collection": "alerts" },
-  "customtables": { "store": "db", "collection": "customtables" },
 
   "systemsettingsTable": {
     "store": "none",

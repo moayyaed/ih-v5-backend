@@ -34,8 +34,6 @@
   "projects": { "inMemory": 1 },
   "dbagents": { "folder": "jbasepath" },
   
-  "customtables": { "folder": "jbasepath" },
-
   "devicelog": { "folder": "operativepath", "ensureIndex": "ts", "expireAfterSeconds": 86400 },
   "pluginlog": { "folder": "operativepath", "ensureIndex": "ts", "expireAfterSeconds": 86400 },
 
