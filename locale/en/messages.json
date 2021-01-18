@@ -237,7 +237,15 @@
   { "id": "Restart", "note": "Restart" },
   { "id": "Layout", "note": "Layout" },
   { "id": "Container", "note": "Container" },
-  { "id": "NewRestapihandler", "note": "New Route" },
+
+  { "id": "NewRoute", "note": "New Route" },
+  { "id": "NewFolder", "note": "New Folder" },
+  { "id": "Copy", "note": "Copy" },
+  { "id": "Paste", "note": "Paste" },
+  { "id": "Delete", "note": "Delete" },
+  { "id": "Export", "note": "Export" },
+  { "id": "NewTab", "note": "New Tab" },
+  { "id": "LoadFrontend", "note": "Load Frontend" },
 
   { "id": "mustBeNotEmpty", "note": "must be not empty" },
   { "id": "mustBeValidId", "note": "invalid value" },
@@ -247,10 +255,8 @@
   { "id": "selectFromList", "note": "Select from List" },
   { "id": "TypeImportError", "note": "Type import error! Details in the system log." },
 
-
   { "id": "StartV4migration", "note": "Uploaded project version V4. Start migration..." },
   { "id": "ProjectSavedAs", "note": "The project is saved as " },
   { "id": "toActivateProject", "note": "To activate the project, go to Settings and click 'Restart with this project'." },
   { "id": "CredentialsNotMigrated", "note": "Credentials are not migrated for security reasons.\n Use Login:admin, Password:202020" }
-
 ]

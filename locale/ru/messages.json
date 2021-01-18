@@ -240,7 +240,14 @@
   { "id": "Layout", "note": "Экран" },
   { "id": "Container", "note": "Контейнер" },
 
-  { "id": "NewRestapihandler", "note": "Новый маршрут" },
+  { "id": "NewRoute", "note": "Новый маршрут" },
+  { "id": "NewFolder", "note": "Новая папка" },
+  { "id": "Copy", "note": "Копировать" },
+  { "id": "Paste", "note": "Вставить" },
+  { "id": "Delete", "note": "Удалить" },
+  { "id": "Export", "note": "Экспорт" },
+  { "id": "NewTab", "note": "Новая вкладка" },
+  { "id": "LoadFrontend", "note": "Загрузить Frontend" },
 
   { "id": "mustBeNotEmpty", "note": "значение не может быть пустым" },
   { "id": "mustBeValidId", "note": "недопустимое значение" },
