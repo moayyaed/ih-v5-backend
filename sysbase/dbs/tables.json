@@ -98,7 +98,7 @@
         "newid": { "notempty": true, "validid": true },
         "min": { "type": "number", "spec": "min" },
         "max": { "type": "number", "spec": "max" },
-        "fn_opt_str":{ "custom": true }
+        "fn_opt_str": { "custom": true }
       }
     }
   },
@@ -320,14 +320,12 @@
   "snippetsTreeTable": { "store": "tree", "tree": "snippets", "rows": true },
   "restapihandlersTreeTable": { "store": "tree", "tree": "restapihandlers", "rows": true },
 
-
   "scenecall": {
     "store": "db",
     "collection": "scenecalls",
     "rows": true,
     "ruleID": { "pref": "call", "len": 3 }
   },
-
 
   "unitgroup": {
     "store": "db",
@@ -380,12 +378,6 @@
     "store": "db",
     "collection": "restapihandlers",
     "ruleID": { "pref": "api", "len": 3 }
-  },
-
-  "restapihandlerDepsTable": { 
-    "store": "db", 
-     "collection": "restapihandlers",
-    "genfield": "deps" 
   },
 
   "chartgroup": {
@@ -579,7 +571,7 @@
       }
     }
   },
-  "projectsettingsTable": {
+  "projectdepsTable": {
     "store": "none"
   }
 }
