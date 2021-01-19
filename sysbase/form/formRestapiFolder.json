@@ -1,7 +1,7 @@
 {
   "grid": [
     { "id": "p1", "xs": 8, "class": "main", "table": "restapihandlergroup" },
-    { "id": "p2", "xs": 4, "class": "main", "table": "restapihandlergroup", "height": 200 },
+    { "id": "p2", "xs": 4, "class": "main", "table": "restapihandlergroup", "height": 200, "hide": "data.p1._id != 'restapihandlergroup'" },
    
     { "id": "p4", "xs": 12, "class": "main", "table": "restapihandlergroup","height":"fill", "hide": "!data.p2.useboot"  }
   ],
@@ -9,7 +9,9 @@
   "breadcrumbs": { "tree": "restapihandlers" },
 
   "p1": [
-    { "prop": "header", "title": "/restapi", "type": "header", "size": "h6" },
+    { "prop": "header", "title": "/restapi", "type": "header", "size": "h6", "hide": "data.p1._id != 'restapihandlergroup'" },
+    { "prop": "_id", "title": "", "type": "text", "size": "h6", "hide": "1==1" },
+    { "prop": "name", "title": "$Name", "type": "input", "hide": "data.p1._id == 'restapihandlergroup'"},
 
     { "prop": "txt", "title": "$Comment", "type": "textarea" }
   
