@@ -578,5 +578,8 @@
         "port": { "required": true, "notempty": true }
       }
     }
+  },
+  "projectsettingsTable": {
+    "store": "none"
   }
 }
