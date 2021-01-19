@@ -1,35 +1,27 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "restapihandlergroup" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "restapihandlerDepsTable", "height": 200 },
-    { "id": "p3", "xs": 12, "class": "main", "table": "restapihandlergroup","height":"fill" }
+    { "id": "p1", "xs": 8, "class": "main", "table": "restapihandlergroup" },
+    { "id": "p2", "xs": 4, "class": "main", "table": "restapihandlergroup", "height": 200 },
+   
+    { "id": "p4", "xs": 12, "class": "main", "table": "restapihandlergroup","height":"fill", "hide": "!data.p2.useboot"  }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "restapihandlers" },
 
   "p1": [
     { "prop": "header", "title": "/restapi", "type": "header", "size": "h6" },
-    { "prop": "useproject_frontend", "title": "Использовать frontend проекта", "type": "cb" },
-    { "prop": "project_frontend", "title": "Frontend проекта", "type": "input", "default":"user", "hide": "!data.p1.useproject_frontend" },
+
     { "prop": "txt", "title": "$Comment", "type": "textarea" }
   
   ],
 
   "p2": [
-    {
-      "title": "зависимости",
-      "type": "table",
-      "popupenable": true,
-      "prop": "restapihandlerDepsTable",
-      "genfield": "deps",
-
-      "columns": [
-        { "prop": "name", "title": "Name", "type": "input", "width": 200 }
-      ]
-    }
+  { "prop": "useboot", "title": "Запуск модуля на старте", "type": "cb" },
+  { "prop": "useproject_frontend", "title": "Использовать frontend проекта", "type": "cb" }
   ],
 
-  "p3": [ 
-    { "prop": "useboot", "title": "Запуск модуля на старте", "type": "cb" },
-    { "prop": "handler", "title": "Стартовый модуль", "type": "script", "disabled": false, "hide": "!data.p3.useboot" }]
+
+
+  "p4": [ 
+    { "prop": "handler", "title": "Стартовый модуль", "type": "script", "disabled": false}]
 }

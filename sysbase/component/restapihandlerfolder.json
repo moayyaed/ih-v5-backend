@@ -1,7 +1,7 @@
 {
   "tabs": [
-    { "id": "tabRestapiFolder",  "title": "Свойства папки", "component": [{ "id": "formRestapiFolder", "type": "form" }]  },
-    { "id": "tabRestapiTable",  "title": "Таблица", "component": [{ "id": "formRestapiTable", "type": "form" }]  }
+    { "id": "tabRestapiFolder",  "title": "$Settings", "component": [{ "id": "formRestapiFolder", "type": "form" }]  },
+    { "id": "tabRestapiTable",  "title": "$Table", "component": [{ "id": "formRestapiTable", "type": "form" }]  }
   ],
   "defaultTab": "tabRestapiFolder"
 }
