@@ -395,7 +395,7 @@
     },
     "leaf": {
       "table": "restapihandler",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder",  "endpoint": "endpoint" }
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder",  "endpoint": "endpoint", "httpmethod":"httpmethod" }
     }
   },
 
