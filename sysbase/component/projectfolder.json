@@ -2,5 +2,5 @@
   "tabs": [
     { "id": "tabProjectTable",  "title": "$ProjectsTable", "component": [{ "id": "formProjectTable", "type": "form" }]  }
   ],
-  "defaultTab": "tabProjectFolder"
+  "defaultTab": "tabProjectTable"
 }
