@@ -1,5 +1,5 @@
 {
-  "grid": [{ "id": "p1", "xs": 12, "class": "", "height": "fill" }],
+  "grid": [{ "id": "p1", "xs": 12, "class": "clear", "height": "fill" }],
   "spacing": 10,
 
   "p1": [
