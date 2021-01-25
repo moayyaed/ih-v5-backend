@@ -6,7 +6,7 @@
   "spacing": 10,
 
   "p1": [
-    { "prop": "registryState", "title": "", "type": "text" },
+    { "prop": "registryState", "title": "", "type": "text", "hide":"1==1" },
     
     {
       "title": "",
