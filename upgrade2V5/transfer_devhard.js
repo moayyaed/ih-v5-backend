@@ -84,10 +84,11 @@ function formHardRecord(did, item, prop) {
     chan: item.chan,
     inv: item.inv,
     calc: item.calc,
+    calc_out: item.calc_out,
     desc: item.desc,
     order: item.order,
     r: 1,
-    w: item.desc == 'DO' || item.desc == 'AO' ? 1 : 0
+    w: item.desc == 'DO' || item.desc == 'AO' || item.desc == 'EA' ? 1 : 0
   };
 
   const hard = getHardObjForUnit(item);
@@ -135,6 +136,7 @@ function getHardObjForUnit(item) {
       return { topic: item.topic };
     // {"unit":"mqttclient1","topic":"/MT8102iE/Analog_Position_Carriage","actions":[{"act":"on","topic":"/devices/dn/command","message":"on"},{"act":"off","topic":"/devices/dn/command","message":"off"}]},
     case 'modbus':
+
       // {"unit":"modbus2", "vartype":"float","usek":false,"ks":100,"ks0":0, "gr":true,"pollp":true,"kh0":0,"address":"6","fcr":"3","useactions":false,"actions":[{"act":"on","address":"0x0000","vartype":"bool","value":""}],"kh":100,"nofb":false,"unitid":1},
       return {
         address: item.address,

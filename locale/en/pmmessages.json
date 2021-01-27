@@ -904,6 +904,10 @@
   { "id": "Var_Id", "note": "Variable Name" },
   { "id": "SetDef", "note": "Set default value on server start" },
 
+  { "id": "Read", "note": "Read" },
+  { "id": "Write", "note": "Write" },
+  { "id": "doWrite", "note": "Write Now" },
+
   { "id": "File", "note": "File" },
   { "id": "HTTPMethod", "note": "HTTPMethod" },
   { "id": "Route", "note": "Route" },
