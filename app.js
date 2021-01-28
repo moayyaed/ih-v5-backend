@@ -13,6 +13,8 @@ const pluginservice = require('./lib/plugin/pluginservice');
 const sceneservice = require('./lib/scene/sceneservice');
 const snippetservice = require('./lib/snippet/snippetservice');
 const trendservice = require('./lib/trend/trendservice');
+const informservice = require('./lib/inform/informservice');
+
 // const httprestservice = require('./lib/httprest/httprestservice');
 
 const webserver = require('./lib/web/webserver');
@@ -31,7 +33,11 @@ const EventEmitter = require('events');
     process.exit(0);
   });
 
-  process.on('warning', e => console.log('WARN: process warning: ' + e.stack));
+  process.on('warning', e => console.log('WARN: process warning: ' + util.inspect(e)));
+  process.on('uncaughtException', e => console.log('ERROR: uncaughtException: ' + util.inspect(e)));
+  process.on('unhandledRejection', (reason, promise) =>
+    console.log('ERROR: unhandledRejection: Reason ' + util.inspect(reason) + '. Promise ' + util.inspect(promise))
+  );
 
   try {
     await init(__dirname);
@@ -43,6 +49,7 @@ const EventEmitter = require('events');
     await sceneservice(holder);
     await snippetservice(holder);
     await trendservice(holder);
+    await informservice(holder);
     // await httprestservice(holder);
     await webserver(holder);
   } catch (err) {
