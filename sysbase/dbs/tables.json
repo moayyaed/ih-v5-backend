@@ -285,6 +285,35 @@
     "store": "none"
   },
 
+  "alertrulegroup": {
+    "store": "db",
+    "collection": "alertrules",
+    "filter": { "folder": 1 },
+    "defRootTitle": "Алерты",
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "algr", "len": 3 }
+  },
+
+  "alertrule": {
+    "store": "db",
+    "collection": "alertrules",
+    "ruleID": { "pref": "ale", "len": 3 }
+  },
+
+  "alertruleTable": {
+    "store": "db",
+    "collection": "alertrules",
+    "genfield": "props",
+
+    "validator": {
+      "props": {
+        "level": { "notempty": true },
+        "condition": { "notempty": true },
+        "message": { "notempty": true }
+      }
+    }
+  },
+
   "scenegroup": {
     "store": "db",
     "collection": "scenes",

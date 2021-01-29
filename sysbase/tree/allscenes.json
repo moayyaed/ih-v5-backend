@@ -59,5 +59,40 @@
       },
       "defaultComponent": "multisceneitem"
     }
+  },
+
+  "alertrules": {
+    "parent": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "Новый алерт", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
+          { "id": "7", "type": "divider" },
+         
+          { "id": "11", "type": "item", "title": "$NewTab", "command": "newtab" }
+        ]
+      },
+      "defaultComponent": "alertfolder"
+    },
+
+    "child": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "Новый алерт", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
+          { "id": "10", "type": "divider" },
+          { "id": "11", "type": "item", "title": "$NewTab", "command": "newtab" }
+        ]
+      },
+      "defaultComponent": "alertrule"
+    }
   }
 }

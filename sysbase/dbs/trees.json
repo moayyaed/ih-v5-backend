@@ -200,7 +200,8 @@
 
   "layoutx": ["layout"],
 
-  "allscenes": ["scenes", "multiscenes"],
+  "allscenes": ["scenes", "multiscenes", "alertrules"],
+
   "scenes": {
     "branch": {
       "table": "scenegroup",
@@ -208,6 +209,23 @@
     },
     "leaf": {
       "table": "scene",
+      "propmap": {
+        "_id": "id",
+        "name": "name",
+        "title": "title",
+        "parent": "parent",
+        "order": "order",
+        "folder": "folder"
+      }
+    }
+  },
+  "alertrules": {
+    "branch": {
+      "table": "alertrulegroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "alertrule",
       "propmap": {
         "_id": "id",
         "name": "name",
@@ -343,8 +361,8 @@
           {
             "title": "$SystemSettings",
             "id": "_config",
-            "order":"1",
-            "component":"settings"
+            "order": "1",
+            "component": "settings"
           }
         ]
       }
@@ -395,7 +413,15 @@
     },
     "leaf": {
       "table": "restapihandler",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder",  "endpoint": "endpoint", "httpmethod":"httpmethod" }
+      "propmap": {
+        "_id": "id",
+        "name": "title",
+        "parent": "parent",
+        "order": "order",
+        "folder": "folder",
+        "endpoint": "endpoint",
+        "httpmethod": "httpmethod"
+      }
     }
   },
 

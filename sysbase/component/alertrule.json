@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabAlertruleCommon", "title": "Настройка", "component": [{ "id": "formAlertruleCommon", "type": "form" }] }
+  ],
+  "defaultTab": "tabAlertruleCommon"
+}
