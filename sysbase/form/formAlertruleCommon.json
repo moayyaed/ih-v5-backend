@@ -1,25 +1,43 @@
 {
   "grid": [
     { "id": "p1", "xs": 6, "class": "main", "table": "alertrule" },
-   
+    { "id": "p2", "xs": 6, "class": "main", "table": "alertrule" },
+
     { "id": "p5", "xs": 12, "class": "main", "table": "alertruleTable", "height": 250 }
   ],
   "spacing": 8,
   "breadcrumbs": { "tree": "alertrules" },
 
   "p1": [
+    { "prop": "header_1", "title": "Генерация события", "type": "header" },
     { "prop": "name", "title": "$Name", "type": "input" },
-    { "prop": "dn_prop", "title": "$Chart_Data_type", "type": "smartbutton2", "params": { "variant": "tree", "title": "Выберите свойство", "id": "devprops", "save": false } },
-    { "prop": "eventname", "title": "ID события", "type": "input" },
+    {
+      "prop": "dn_prop",
+      "title": "Свойство-триггер",
+      "type": "input",
+      "default": "state"
+    },
+    { "prop": "eventname", "title": "ID события", "type": "input" }
+  ],
 
+  "p2": [
+    { "prop": "header_2", "title": "Выбор устройств", "type": "header" },
     {
       "prop": "devtype",
       "title": "Тип устройства",
       "type": "droplist",
       "data": "typeList"
-    }
+    },
+    {
+      "prop": "place",
+      "title": "Размещение",
+      "type": "droplist",
+      "data": "placeList"
+    },
+    { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist" }
+    
   ],
-  
+
   "p5": [
     {
       "title": "",
@@ -28,11 +46,24 @@
       "popupenable": true,
 
       "columns": [
-    
-        { "prop": "level", "title": "$Level", "type": "input", "data":"chartlineList", "width": 150 },
-        { "prop": "condition", "title": "Условие", "type": "input", "width": 150},
-        { "prop": "message", "title": "Сообщение", "type": "input", "width": 150}
-        
+        { "prop": "level", "title": "$Level", "type": "input", "width": 80 },
+        { "prop": "condition", "title": "Условие", "type": "input", "width": 250 },
+        { "prop": "delay", "title": "Задержка (сек)", "type": "number", "width": 80 },
+        { "prop": "message", "title": "Сообщение", "type": "input", "width": 250 },
+        { "prop": "needAck", "title": "Требуется квитирование", "type": "cb", "width": 100, "hide": "data.level == 0" },
+        {
+          "prop": "toClose",
+          "title": "Закрытие",
+          "type": "droplist",
+          "data": [
+            { "id": "stop", "title": "Завершение события" },
+            { "id": "ack", "title": "Квитирование" },
+            { "id": "sa", "title": "Завершение + Квитирование" }
+          ],
+          "hide": "data.level == 0",
+          "width": 150
+        },
+        { "prop": "info", "title": "Информирование", "type": "input", "width": 250 }
       ]
     }
   ]
