@@ -256,6 +256,7 @@
   { "id": "mustBeUnique", "note": "значение должно быть уникально" },
   { "id": "selectFromList", "note": "Выберите значение из списка!" },
   { "id": "TypeImportError", "note": "Ошибка при переносе типа! Подробности в логе системы." },
+  { "id": "ScriptWithErrorAlwaysBlocked", "note": "Скрипт с ошибкой не может быть разблокирован!" },
 
   { "id": "StartV4migration", "note": "Загружен проект версии V4. Запущена процедура миграции..." },
   { "id": "ProjectSavedAs", "note": "Проект сохранен под именем " },

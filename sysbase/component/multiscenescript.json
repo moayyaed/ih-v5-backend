@@ -1,7 +1,0 @@
-{
-  "tabs": [
-    { "id": "tabMultiSceneCommon",  "title": "Свойства сценария", "component": [{ "id": "formMultiSceneCommon", "type": "form" }]  },
-    { "id": "tabMultiSceneCodeEditor",  "title": "Редактор кода", "component": [{ "id": "formMultiSceneCodeEditor", "type": "form" }]  }
-  ],
-  "defaultTab": "tabMultiSceneCommon"
-}

@@ -45,22 +45,6 @@
     }
   },
 
-  "multiscenes": {
-    "parent": {
-      "popup": {
-        "main": "dyn_multiscenefolder"
-      },
-      "defaultComponent": "multiscenescript"
-    },
-
-    "child": {
-      "popup": {
-        "main": []
-      },
-      "defaultComponent": "multisceneitem"
-    }
-  },
-
   "alertrules": {
     "parent": {
       "popup": {

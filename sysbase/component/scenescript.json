@@ -1,6 +1,6 @@
 {
   "tabs": [
-    { "id": "tabSceneCommon",  "title": "Свойства сценария", "component": [{ "id": "formSceneCommon", "type": "form" }]  },
+    { "id": "tabSceneCommon",  "title": "Свойства сценария", "component": [{ "id": "formSceneScript", "type": "form" }]  },
     { "id": "tabSceneCodeEditor",  "title": "Редактор кода", "component": [{ "id": "formSceneCodeEditor", "type": "form" }]  }
  
   ],

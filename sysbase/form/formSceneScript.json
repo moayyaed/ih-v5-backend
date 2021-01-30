@@ -1,0 +1,47 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 4, "class": "main", "table": "scene" },
+    { "id": "p2", "xs": 4, "class": "main", "table": "scene" },
+    { "id": "p3", "xs": 4, "class": "main", "table": "scene" },
+    { "id": "p4", "xs": 12, "class": "main", "table": "scenesTreeTable", "height": 250 },
+    { "id": "p5", "xs": 12, "class": "main", "table": "scenecall", "height": "fill" }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "scenes" },
+
+  "p1": [
+    { "prop": "name", "title": "$Name", "type": "input" },
+    { "prop": "reqts", "title": "Updated", "type": "text" }
+  ],
+  "p2": [
+    { "prop": "runInChild", "title": "Запуск с низким приоритетом", "type": "cb" },
+    { "prop": "blk", "title": "Заблокировать запуск сценария", "type": "cb" }
+  ],
+  "p3": [{ "prop": "multi", "title": "Мультисценарий", "type": "cb" }],
+
+  "p4": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "scenesTreeTable",
+
+      "columns": [
+        { "prop": "name", "title": "$Name", "type": "text", "width": 150 },
+        { "prop": "state", "title": "Состояние", "type": "text", "width": 150 },
+        { "prop": "laststart", "title": "Время запуска", "type": "text", "width": 150 },
+        { "prop": "laststop", "title": "Время останова", "type": "text", "width": 150 },
+        { "prop": "error", "title": "Ошибка", "type": "text", "width": 250 }
+      ]
+    }
+  ],
+  "p5": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "scenecall",
+      "popupenable": true,
+
+      "columns": []
+    }
+  ]
+}
