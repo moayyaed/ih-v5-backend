@@ -1,0 +1,16 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "multiscene", "padding":0,  "hide": "!data.p1.errstr" },
+    { "id": "p2", "xs": 12, "class": "main", "table": "multiscene", "height":"fill", "padding":4 }
+   
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "multiscenes" },
+
+  "p1": [
+    { "prop": "errstr", "title": "", "type": "text"}
+  ],
+  "p2": [
+    { "prop": "code", "title": "Code", "type": "code" }
+  ]
+}

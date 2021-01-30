@@ -9,7 +9,7 @@
   "breadcrumbs": { "tree": "alertrules" },
 
   "p1": [
-    { "prop": "header_1", "title": "Генерация события", "type": "header" },
+    { "prop": "header_1", "title": "Генерация событий", "type": "header" },
     { "prop": "name", "title": "$Name", "type": "input" },
     {
       "prop": "dn_prop",
