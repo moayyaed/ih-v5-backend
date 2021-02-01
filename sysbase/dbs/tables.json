@@ -342,7 +342,7 @@
     "store": "db",
     "collection": "scenecalls",
     "rows": true,
-    "ruleID": { "pref": "call", "len": 3 }
+    "ruleID": { "pref": "call_", "len": 3 }
   },
 
   "unitgroup": {
