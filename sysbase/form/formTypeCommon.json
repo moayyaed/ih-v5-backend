@@ -9,6 +9,7 @@
   "p1": [
     { "prop": "name", "title": "$Name", "type": "input" },
     { "prop": "ruledn_pref", "title": "$Ruledn_pref", "type": "input"},
+    { "prop": "usemain", "title": "Есть общий (главный) обработчик (MAIN)", "type": "cb"},
     { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist" }
    
   ],
