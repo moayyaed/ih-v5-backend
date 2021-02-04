@@ -1,0 +1,45 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 3, "class": "main", "table": "alertrule" },  
+    { "id": "p9", "xs": 12, "class": "main", "table": "alertsTable", "height": "fill" }
+  ],
+  "spacing": 8,
+  "breadcrumbs": { "tree": "alertrules" },
+
+  "p1": [
+    { "prop": "name", "title": "$Name", "type": "input" },
+    { "prop": "eventname", "title": "ID события", "type": "input" }
+  ],
+
+ 
+
+  "p9": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "alertsTable",
+      "popupenable": true,
+
+      "columns": [
+        { "prop": "level", "title": "$Level", "type": "input", "width": 80 },
+        { "prop": "did_prop", "title": "Триггер", "type": "link", "width":250, "command": "forward"  },
+        { "prop": "realtime_tsStart", "title": "Время начала", "type": "text", "width": 132 },
+        { "prop": "txt", "title": "Сообщение", "type": "text", "width": 250 },
+        { "prop": "status", "title": "Состояние", "type": "text", "width": 120 },
+        { "prop": "realtime_tsStop", "title": "Время завершения", "type": "text", "width": 132 },
+   
+        {
+          "prop": "action",
+          "title": "",
+          "type": "droplist",
+          "data": [
+            { "id": "ack", "title": "Квитировать" },
+            { "id": "cancel", "title": "Закрыть принудительно" }
+          ],
+          "width": 200
+         
+        }
+      ]
+    }
+  ]
+}

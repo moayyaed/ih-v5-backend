@@ -1,0 +1,28 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 3, "class": "main", "table": "alertrule" },  
+    { "id": "p9", "xs": 12, "class": "main", "table": "alerttriggersTable", "height": "fill" }
+  ],
+  "spacing": 8,
+  "breadcrumbs": { "tree": "alertrules" },
+
+  "p1": [
+    { "prop": "name", "title": "$Name", "type": "input" },
+    { "prop": "eventname", "title": "ID события", "type": "input" }
+  ],
+
+ 
+
+  "p9": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "alerttriggersTable",
+      "popupenable": true,
+
+      "columns": [
+        { "prop": "did_prop", "title": "", "type": "link", "width": 900, "command": "forward"  }
+      ]
+    }
+  ]
+}

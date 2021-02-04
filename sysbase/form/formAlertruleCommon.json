@@ -1,43 +1,73 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "alertrule" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "alertrule" },
+    { "id": "p1", "xs": 3, "class": "main", "table": "alertrule" },
+    { "id": "p2", "xs": 3, "class": "main", "table": "alertrule" },
+    { "id": "p3", "xs": 6, "class": "main", "table": "alertrule" },
 
-    { "id": "p5", "xs": 12, "class": "main", "table": "alertruleTable", "height": 250 }
+    { "id": "p4", "xs": 12, "class": "main", "table": "alertruleTable", "height": 220, "hide": "!data.p2.usescript" },
+    { "id": "p5", "xs": 12, "class": "main", "table": "alertruleTable", "height": "fill", "hide": "data.p2.usescript" },
+    { "id": "p9", "xs": 12, "class": "main", "table": "alertrule", "height": "fill", "hide": "!data.p2.usescript" }
   ],
   "spacing": 8,
   "breadcrumbs": { "tree": "alertrules" },
 
   "p1": [
-    { "prop": "header_1", "title": "Генерация событий", "type": "header" },
     { "prop": "name", "title": "$Name", "type": "input" },
-    {
-      "prop": "dn_prop",
-      "title": "Свойство-триггер",
-      "type": "input",
-      "default": "state"
-    },
     { "prop": "eventname", "title": "ID события", "type": "input" }
   ],
 
   "p2": [
-    { "prop": "header_2", "title": "Выбор устройств", "type": "header" },
+    
+    {
+      "prop": "dn_prop",
+      "title": "Свойство-триггер",
+      "type": "input",
+      "default": "state",
+      "hide": "data.p2.usescript"
+    },
+    { "prop": "usescript", "title": "Использовать скрипт", "type": "cb" }
+  ],
+
+  "p3": [
+    { "prop": "header_3", "title": "Выбор устройств", "type": "header", "hide": "data.p2.usescript" },
     {
       "prop": "devtype",
       "title": "Тип устройства",
       "type": "droplist",
-      "data": "typeList"
+      "data": "typeList",
+      "hide": "data.p2.usescript"
     },
-    {
-      "prop": "place",
-      "title": "Размещение",
-      "type": "droplist",
-      "data": "placeList"
-    },
-    { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist" }
-    
+    { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist", "hide": "data.p2.usescript" }
   ],
 
+  "p4": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "alertruleTable",
+      "popupenable": true,
+
+      "columns": [
+        { "prop": "level", "title": "$Level", "type": "input", "width": 80 },
+        { "prop": "delay", "title": "Задержка (сек)", "type": "number", "width": 80 },
+        { "prop": "message", "title": "Сообщение", "type": "input", "width": 250 },
+        { "prop": "needAck", "title": "Требуется квитирование", "type": "cb", "width": 100, "hide": "data.level == 0" },
+        {
+          "prop": "toClose",
+          "title": "Закрытие",
+          "type": "droplist",
+          "data": [
+            { "id": "stop", "title": "Завершение события" },
+            { "id": "ack", "title": "Квитирование" },
+            { "id": "sa", "title": "Завершение + Квитирование" }
+          ],
+          "hide": "data.level == 0",
+          "width": 150
+        },
+        { "prop": "info", "title": "Информирование", "type": "input", "width": 250 }
+      ]
+    }
+  ],
   "p5": [
     {
       "title": "",
@@ -66,5 +96,6 @@
         { "prop": "info", "title": "Информирование", "type": "input", "width": 250 }
       ]
     }
-  ]
+  ],
+  "p9": [{ "prop": "code", "title": "Code", "type": "code" }]
 }
