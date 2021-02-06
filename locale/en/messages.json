@@ -253,6 +253,7 @@
   { "id": "mustBeGreaterToMin", "note": "must be greater than or equal to the min" },
   { "id": "mustBeUnique", "note": "the value must be unique" },
   { "id": "ScriptWithErrorAlwaysBlocked", "note": "Script with errors cannot be unlocked! " },
+  { "id": "ActionCannotBePerformed", "note": "Action cannot be performed" },
 
   { "id": "selectFromList", "note": "Select from List" },
   { "id": "TypeImportError", "note": "Type import error! Details in the system log." },

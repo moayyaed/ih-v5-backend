@@ -54,6 +54,7 @@
   },
 
   "typeprops": {
+    "update":"no",
     "branch": {
       "table": "typepropsTable",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
