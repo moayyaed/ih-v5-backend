@@ -13,7 +13,8 @@
       "type": "portalauth",
 
       "prop": "portalauth"
-    }
+    },
+    { "prop": "message", "title": "", "type": "text" }
   ],
 
   "p4": [
