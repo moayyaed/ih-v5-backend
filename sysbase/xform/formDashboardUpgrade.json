@@ -1,7 +1,7 @@
 {
   "grid": [
     { "id": "p1", "xs": 12, "class": "clear", "height": "fill", "hide": "data.p1.registryState == 'OK'" },
-    { "id": "p4", "xs": 12, "class": "main", "height": "fill", "hide": "data.p1.registryState != 'OK'"  }
+    { "id": "p4", "xs": 6, "class": "main", "height": "fill", "hide": "data.p1.registryState != 'OK'"  }
   ],
   "spacing": 10,
 
@@ -17,7 +17,7 @@
   ],
 
   "p4": [
-    { "prop": "uptimeinfo", "title": "Version&Upgade", "type": "header", "size": "h6" },
+    { "prop": "uptimeinfo", "title": "Version&Upgrade", "type": "header", "size": "h6" },
 
     { "prop": "version", "title": "$Version", "type": "text" },
     { "prop": "restartButton", "title": "$RestartIH", "type": "button", "command": "restart", "param": "" },
