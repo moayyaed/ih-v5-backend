@@ -1,7 +1,8 @@
 {
   "grid": [
     { "id": "p1", "xs": 12, "class": "clear", "height": "fill", "hide": "data.p1.registryState == 'OK'" },
-    { "id": "p4", "xs": 6, "class": "main", "height": "fill", "hide": "data.p1.registryState != 'OK'"  }
+    { "id": "p4", "xs": 8, "class": "main", "height": "fill", "hide": "data.p1.registryState != 'OK'"  },
+    { "id": "p5", "xs": 4, "class": "main", "height": "fill", "hide": "data.p1.registryState != 'OK'"  }
   ],
   "spacing": 10,
 
@@ -13,8 +14,7 @@
       "type": "portalauth",
 
       "prop": "portalauth"
-    },
-    { "prop": "message", "title": "", "type": "text" }
+    }
   ],
 
   "p4": [
@@ -39,6 +39,17 @@
       "command": "update",
       "param": "",
       "hide": "!data.p4.newversion"
+    }
+  ],
+  "p5": [
+    { "prop": "login", "title": "Login", "type": "text" },
+
+    {
+      "prop": "logoutButton",
+      "title": "LOGOUT",
+      "type": "button",
+      "command": "portallogout",
+      "param": ""
     }
   ]
 }
