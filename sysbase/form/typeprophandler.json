@@ -22,57 +22,9 @@
   ],
 
   "p2": [
-    { "prop": "header_start", "title": "Запуск", "type": "header" },
-    { "prop": "when_str", "title": "", "type": "text", "hide": "data.p1.id == 'MAIN'" },
-    {
-      "prop": "main_when",
-      "title": "",
-      "type": "droplist",
-      "hide": "data.p1.id != 'MAIN'",
-      "data": [
-        { "id": "onchange", "title": "При изменении свойств" },
-        { "id": "interval", "title": "Циклически" },
-        { "id": "schedule", "title": "По расписанию" }
-      ]
-    },
-  
-    {
-      "prop": "main_when_onchange",
-      "title": "Свойства (если не выбраны - при изменении любого свойства)",
-      "type": "input",
-      "hide": "data.p1.id != 'MAIN' || data.p2.main_when.id != 'onchange'"
-    },
+    { "prop": "when_str", "title": "Запуск", "type": "text" },
 
-    {
-      "prop": "main_when_interval",
-      "title": "С интервалом (сек)",
-      "type": "input",
-      "hide": "data.p1.id != 'MAIN' || data.p2.main_when.id != 'interval'"
-    },
-
-    {
-      "prop": "main_when_schedule",
-      "title": "",
-      "type": "droplist",
-      "hide": "data.p1.id != 'MAIN' || data.p2.main_when.id != 'schedule'",
-   
-      "data": [
-        { "id": "@hourly", "title": "На границе часа" },
-        { "id": "@daily", "title": "На границе дня" },
-        { "id": "@monthly", "title": "На границе месяца" },
-        { "id": "@sunrise", "title": "На рассвете" },
-        { "id": "@sunset", "title": "На закате" },
-        { "id": "cron", "title": "По правилу cron" }
-      ]
-    },
-    {
-      "prop": "main_when_ischedule_cron",
-      "title": "Правило cron (* * * * *)",
-      "type": "input",
-      "hide": "data.p1.id != 'MAIN' || data.p2.main_when.id != 'schedule' || data.p2.main_when_schedule.id != 'cron'"
-      
-    },
-    { "prop": "fuse_name", "title": "Обработчик", "type": "text", "hide": "data.p1.id == 'MAIN'" }
+    { "prop": "fuse_name", "title": "Обработчик", "type": "text" }
   ],
 
   "p9": [

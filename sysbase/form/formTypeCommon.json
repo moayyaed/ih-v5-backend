@@ -1,18 +1,61 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "type" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "type" }
+    { "id": "p1", "xs": 4, "class": "main", "table": "type" },
+    { "id": "p2", "xs": 4, "class": "main", "table": "type" },
+    { "id": "p3", "xs": 4, "class": "main", "table": "type" }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "types" },
 
   "p1": [
     { "prop": "name", "title": "$Name", "type": "input" },
-    { "prop": "ruledn_pref", "title": "$Ruledn_pref", "type": "input"},
-    { "prop": "usemain", "title": "Есть общий (главный) обработчик (MAIN)", "type": "cb"},
+    { "prop": "ruledn_pref", "title": "$Ruledn_pref", "type": "input" },
     { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist" }
-   
   ],
-  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
+  "p2": [
+    { "prop": "scripts_header", "title": "Обработчики", "type": "header" },
+    { "prop": "scriptOnChange", "title": "При изменении свойств ", "type": "cb" },
+   
   
+    {
+      "prop": "par_OnChange",
+      "title": "Свойства (если не выбраны - при изменении любого свойства)",
+      "type": "input",
+      "hide": "!data.p2.scriptOnChange"
+    },
+    { "prop": "scriptOnInterval", "title": "Циклически ", "type": "cb" },
+    {
+      "prop": "par_OnInterval",
+      "title": "С интервалом (сек)",
+      "type": "input",
+      "hide": "!data.p2.scriptOnInterval",
+      "default":600
+    },
+    { "prop": "scriptOnSchedule", "title": "По расписанию ", "type": "cb" },
+    {
+      "prop": "par_OnSchedule",
+      "title": "",
+      "type": "droplist",
+      "hide": "!data.p2.scriptOnSchedule",
+   
+      "data": [
+        { "id": "@hourly", "title": "На границе часа" },
+        { "id": "@daily", "title": "На границе дня" },
+        { "id": "@monthly", "title": "На границе месяца" },
+        { "id": "@sunrise", "title": "На рассвете" },
+        { "id": "@sunset", "title": "На закате" },
+        { "id": "cron", "title": "По правилу cron" }
+      ],
+      "default":"@hourly"
+    },
+    {
+      "prop": "par2_OnSchedule",
+      "title": "Правило cron (* * * * *)",
+      "type": "input",
+      "hide": "!data.p2.scriptOnSchedule || data.p2.par_OnSchedule.id != 'cron'",
+      "default":"* * * * *"
+      
+    }
+  ],
+  "p3": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
 }
