@@ -39,11 +39,12 @@
       "hide": "!data.p2.scriptOnSchedule",
    
       "data": [
-        { "id": "@hourly", "title": "На границе часа" },
-        { "id": "@daily", "title": "На границе дня" },
-        { "id": "@monthly", "title": "На границе месяца" },
-        { "id": "@sunrise", "title": "На рассвете" },
-        { "id": "@sunset", "title": "На закате" },
+        { "id": "minutely", "title": "Каждую минуту" },
+        { "id": "hourly", "title": "На границе часа" },
+        { "id": "daily", "title": "На границе дня" },
+        { "id": "monthly", "title": "На границе месяца" },
+        { "id": "sunrise", "title": "На рассвете" },
+        { "id": "sunset", "title": "На закате" },
         { "id": "cron", "title": "По правилу cron" }
       ],
       "default":"@hourly"

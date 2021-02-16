@@ -14,6 +14,7 @@ const sceneservice = require('./lib/scene/sceneservice');
 const snippetservice = require('./lib/snippet/snippetservice');
 const trendservice = require('./lib/trend/trendservice');
 const informservice = require('./lib/inform/informservice');
+const scheduler = require('./lib/schedule/scheduler');
 
 // const httprestservice = require('./lib/httprest/httprestservice');
 
@@ -50,6 +51,7 @@ const EventEmitter = require('events');
     await snippetservice(holder);
     await trendservice(holder);
     await informservice(holder);
+    await scheduler(holder);
     // await httprestservice(holder);
     await webserver(holder);
   } catch (err) {
