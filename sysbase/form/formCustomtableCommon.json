@@ -1,25 +1,19 @@
 {
-  "grid": [
-    { "id": "p5", "xs": 12, "class": "main", "table": "customdataTable", "height": "fill" }
-  ],
+  "grid": [{ "id": "p5", "xs": 12, "class": "main", "table": "customdataTable", "height": "fill" }],
 
   "spacing": 8,
   "breadcrumbs": { "tree": "customtables" },
 
-  
- 
   "p5": [
     {
       "title": "",
       "type": "table",
-      "prop": "customdata",
+      "prop": "customdataTable",
       "popupenable": true,
 
       "columns": [
-    
-        { "prop": "_id", "title": "ID", "type": "text",  "width": 150 },
+        { "prop": "id", "title": "ID", "type": "text", "width": 150 },
         { "prop": "name", "title": "Name", "type": "input", "width": 150 }
-      
       ]
     }
   ]
