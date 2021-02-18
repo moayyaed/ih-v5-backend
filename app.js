@@ -44,6 +44,7 @@ const EventEmitter = require('events');
     await init(__dirname);
     holder.dm = dm;
 
+    await scheduler(holder);
     await globalvarservice(holder);
     await deviceservice(holder);
     await pluginservice(holder);
@@ -51,7 +52,7 @@ const EventEmitter = require('events');
     await snippetservice(holder);
     await trendservice(holder);
     await informservice(holder);
-    await scheduler(holder);
+   
     // await httprestservice(holder);
     await webserver(holder);
   } catch (err) {
