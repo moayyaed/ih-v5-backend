@@ -915,6 +915,9 @@
   { "id": "Read", "note": "Чтение" },
   { "id": "Write", "note": "Запись" },
   { "id": "doWrite", "note": "Записать" },
+  { "id": "NewTable", "note": "Новая таблица" },
+  { "id": "CustomTables", "note": "Таблицы проекта" },
+
 
   { "id": "File", "note": "Файл" },
   { "id": "HTTPMethod", "note": "Метод" },

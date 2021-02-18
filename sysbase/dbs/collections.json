@@ -6,6 +6,8 @@
   "devparam": { "folder": "jbasepath" },
   "devcurrent": { "folder": "operativepath" },
 
+  "customtables": { "folder": "jbasepath" },
+  
   "pluginextra": { "folder": "jbasepath" },
 
   "globals": { "folder": "jbasepath" },

@@ -87,6 +87,22 @@
     "collection": "devcurrent"
   },
 
+  "customtablegroup": {
+    "store": "db",
+    "collection": "customtables",
+    "filter": { "folder": 1 },
+    "defRootTitle": "$CustomTables",
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "ctgr", "len": 3 }
+  },
+
+  "customtable": {
+    "store": "db",
+    "collection": "customtables",
+    "default": { "name": "$NewTable" },
+    "ruleID": { "pref": "cttab", "len": 3 }
+  },
+  
   "devicesTreeTable": { "store": "tree", "tree": "devdevices", "rows": true },
   "globalsTreeTable": { "store": "tree", "tree": "globals", "rows": true },
   "localsTreeTable": { "store": "tree", "tree": "locals", "rows": true },

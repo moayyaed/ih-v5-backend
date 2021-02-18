@@ -351,7 +351,7 @@
     ]
   },
 
-  "database": ["dbagents"],
+  "database": ["dbagents", "customtables"],
 
   "dbagents": {
     "branch": {
@@ -360,6 +360,17 @@
     },
     "leaf": {
       "table": "dbagent",
+      "propmap": { "_id": "id", "title": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+
+  "customtables": {
+    "branch": {
+      "table": "customtablegroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "customtable",
       "propmap": { "_id": "id", "title": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
