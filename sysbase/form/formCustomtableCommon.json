@@ -1,22 +1,18 @@
 {
   "grid": [
-    { "id": "p1", "xs": 4, "class": "main", "table": "customtable" },
-  
-    { "id": "p5", "xs": 12, "class": "main", "table": "customtable", "height": 250 }
+    { "id": "p5", "xs": 12, "class": "main", "table": "customdataTable", "height": "fill" }
   ],
+
   "spacing": 8,
   "breadcrumbs": { "tree": "customtables" },
 
-  "p1": [
-    { "prop": "name", "title": "$Name", "type": "input" }
-   
-  ],
+  
  
   "p5": [
     {
       "title": "",
       "type": "table",
-      "prop": "customtable",
+      "prop": "customdata",
       "popupenable": true,
 
       "columns": [

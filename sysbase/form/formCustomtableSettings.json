@@ -1,0 +1,46 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 6, "class": "main", "table": "customtable" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "customtable" },
+
+    { "id": "p5", "xs": 12, "class": "main", "table": "customtableColumns", "height": 250 }
+  ],
+  "spacing": 8,
+  "breadcrumbs": { "tree": "customtables" },
+
+  "p1": [
+    { "prop": "name", "title": "Название", "type": "input" },
+    { "prop": "tablename", "title": "Имя таблицы (будет создана при отсутствии)", "type": "input" }
+  ],
+  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
+
+  "p5": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "customtableColumns",
+      "popupenable": true,
+
+      "genfield": "props",
+
+      "columns": [
+        { "prop": "newid", "title": "Property", "type": "input", "width": 128 },
+        { "prop": "title", "title": "Title", "type": "input", "width": 300 },
+        {
+          "prop": "type",
+          "title": "Type",
+          "type": "droplist",
+          "data": [
+            { "id": "input", "title": "input" },
+            { "id": "number", "title": "number" },
+            { "id": "cb", "title": "cb" },
+            { "id": "text", "title": "text" }
+          ],
+          "width": 128
+        },
+
+        { "prop": "width", "title": "Width", "type": "number", "width": 150 }
+      ]
+    }
+  ]
+}

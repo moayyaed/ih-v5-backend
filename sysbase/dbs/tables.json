@@ -102,7 +102,24 @@
     "default": { "name": "$NewTable" },
     "ruleID": { "pref": "cttab", "len": 3 }
   },
-  
+
+  "customtableColumns": {
+    "store": "db",
+    "collection": "customtables",
+    "genfield": "props",
+    "validator": {
+      "props": {
+        "name": { "notempty": true, "validid": true },
+        "type": { "notempty": true }
+      }
+    }
+  },
+
+  "customdataTable": {
+    "store": "none",
+    "rows": true
+  },
+
   "devicesTreeTable": { "store": "tree", "tree": "devdevices", "rows": true },
   "globalsTreeTable": { "store": "tree", "tree": "globals", "rows": true },
   "localsTreeTable": { "store": "tree", "tree": "locals", "rows": true },
