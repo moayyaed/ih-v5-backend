@@ -10,7 +10,9 @@
 
   "p1": [
     { "prop": "name", "title": "Название", "type": "input" },
-    { "prop": "tablename", "title": "Имя таблицы (будет создана при отсутствии)", "type": "input" }
+    { "prop": "tablename", "title": "Имя таблицы (будет создана при отсутствии)", "type": "input" },
+    { "prop": "fuse", "title": "Использовать обработчик для формирования данных", "type": "cb" }
+
   ],
   "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
 

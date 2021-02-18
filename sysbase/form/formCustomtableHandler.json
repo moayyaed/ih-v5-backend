@@ -1,0 +1,15 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "customtable", "padding": 0, "hide": "!data.p1.errstr" },
+    { "id": "p2", "xs": 12, "class": "main", "table": "customtable", "height": "fill", "padding": 4 }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "customtables" },
+
+  "p1": [{ "prop": "errstr", "title": "", "type": "text" }],
+  "p2": [
+    { "prop": "fuse", "title": "Fuse", "type": "text", "hide": true },
+    { "prop": "nohandler", "title": "Обработчик не используется", "type": "header", "hide": "data.p2.fuse" },
+    { "prop": "handler", "title": "Code", "type": "code", "hide": "!data.p2.fuse" }
+  ]
+}
