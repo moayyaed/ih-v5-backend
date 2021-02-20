@@ -672,7 +672,7 @@
   { "id": "ImageGroup_Nature", "note": "Природа" },
   { "id": "ImageGroup_SCADA", "note": "SCADA" },
 
-  { "id": "Location_Name", "note": "Наименование" },
+  { "id": "Location_Name", "note": "Местонахождение" },
   { "id": "Location_Lat", "note": "Широта" },
   { "id": "Location_Lng", "note": "Долгота" },
 
