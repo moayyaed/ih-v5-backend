@@ -22,8 +22,8 @@
   "p3": [
     { "prop": "projectinfo", "title": "$ProjectInfoName", "type": "header", "size": "h6" },
     { "prop": "project", "title": "$Project_Folder", "type": "text" },
-    { "prop": "types", "title": "$qTypes", "type": "text" },
-    { "prop": "devices", "title": "$qDevices", "type": "text" },
+    { "prop": "type", "title": "$qTypes", "type": "text" },
+    { "prop": "device", "title": "$qDevices", "type": "text" },
     { "prop": "devhard", "title": "$qChannels", "type": "text" },
     { "prop": "devhardtag", "title": "$qTags", "type": "text" }
   ],
