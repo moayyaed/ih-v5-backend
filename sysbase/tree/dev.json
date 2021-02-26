@@ -4,7 +4,35 @@
       "main": [{ "id": "1", "type": "divider", "title": "Edit" }]
     }
   },
+
   "devdevices": {
+    "root": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "remote", "title": "$NewDevice", "command": "addNodeByContext", "popupid": "types" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "7", "type": "divider" },
+          {
+            "id": "export",
+            "type": "item",
+            "title": "Выгрузить ВСЕ устройства",
+            "command": "export",
+            "param": "devices:csv"
+          },
+          {
+            "id": "import",
+            "type": "item",
+            "title": "Загрузить (заменить) ВСЕ устройства",
+            "command": "upload",
+            "param": "devices:csv"
+          }
+        ]
+      },
+      "defaultComponent": "devicefolder"
+    },
+
     "parent": {
       "popup": {
         "main": [
@@ -14,6 +42,21 @@
           { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
           { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
           { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
+          { "id": "7", "type": "divider" },
+          {
+            "id": "export",
+            "type": "item",
+            "title": "Выгрузить устройства",
+            "command": "export",
+            "param": "devices:csv"
+          },
+          {
+            "id": "import",
+            "type": "item",
+            "title": "Загрузить устройства",
+            "command": "upload",
+            "param": "devices:csv"
+          },
           { "id": "7", "type": "divider" },
           { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
@@ -48,7 +91,7 @@
     "parent": {
       "popup": {
         "main": [
-          { "id": "1", "type": "item", "title": "$NewVariable", "command": "addNode"},
+          { "id": "1", "type": "item", "title": "$NewVariable", "command": "addNode" },
           { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
@@ -78,7 +121,7 @@
     "parent": {
       "popup": {
         "main": [
-          { "id": "1", "type": "item", "title": "$NewVariable", "command": "addNode"},
+          { "id": "1", "type": "item", "title": "$NewVariable", "command": "addNode" },
           { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
