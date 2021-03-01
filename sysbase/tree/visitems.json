@@ -5,26 +5,31 @@
     }
   },
   "devicesExp": {
+    "root": {
+      "defaultComponent": null
+    },
     "parent": {
-     
       "defaultComponent": null
     },
     "child": {
-     
       "defaultComponent": "devicelink"
     }
   },
   "sysdevices": {
+    "root": {
+      "defaultComponent": null
+    },
     "parent": {
-     
       "defaultComponent": null
     },
     "child": {
-      
       "defaultComponent": "devicelink"
     }
   },
   "globals": {
+    "root": {
+      "defaultComponent": null
+    },
     "parent": {
       "defaultComponent": null
     },
@@ -33,6 +38,9 @@
     }
   },
   "locals": {
+    "root": {
+      "defaultComponent": null
+    },
     "parent": {
       "defaultComponent": null
     },

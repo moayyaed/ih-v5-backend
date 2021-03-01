@@ -6,8 +6,14 @@
   },
 
   "imagegroup": {
+    "root": {
+      "defaultComponent": null
+    },
     "parent": {
       "defaultComponent": "imagegrid"
+    },
+    "child": {
+      "defaultComponent": null
     }
   }
 }

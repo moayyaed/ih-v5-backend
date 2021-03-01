@@ -5,6 +5,9 @@
     }
   },
   "devicesExp": {
+    "root": {
+      "defaultComponent": null
+    },
     "parent": {
       "defaultComponent": null
     },
@@ -14,6 +17,9 @@
   },
 
   "anydevprops": {
+    "root": {
+      "defaultComponent": null
+    },
     "parent": {
       "defaultComponent": null
     },

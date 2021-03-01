@@ -6,6 +6,19 @@
   },
 
   "scenes": {
+    "root": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "$NewScene", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+        
+        ]
+      },
+      "defaultComponent": "scenefolder"
+    },
     "parent": {
       "popup": {
         "main": [
@@ -16,9 +29,6 @@
           { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
           { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
           { "id": "7", "type": "divider" },
-          { "id": "8", "type": "item", "title": "Start", "command": "send", "param": { "emit": "start:scene" } },
-          { "id": "9", "type": "item", "title": "Stop", "command": "send", "param": { "emit": "stop:scene" } },
-          { "id": "10", "type": "divider" },
           { "id": "11", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
@@ -46,6 +56,19 @@
   },
 
   "alertrules": {
+    "root": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "Новый алерт", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+         
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+        
+        ]
+      },
+      "defaultComponent": "alertfolder"
+    },
     "parent": {
       "popup": {
         "main": [

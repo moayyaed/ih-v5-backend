@@ -5,6 +5,9 @@
     }
   },
   "devicesExp": {
+    "root": {
+      "defaultComponent": null
+    },
     "parent": {
       "defaultComponent": null
     },

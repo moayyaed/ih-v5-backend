@@ -4,6 +4,9 @@
   },
 
   "scenes": {
+    "root": {
+      "defaultComponent": null
+    },
     "parent": {
       "defaultComponent": null
     },

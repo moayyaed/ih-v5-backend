@@ -297,8 +297,6 @@
     }
   },
 
-  "resources": ["images", "vistemplate", "dialog", "types"],
-
   "images": {
     "branch": {
       "table": "imagegroup",

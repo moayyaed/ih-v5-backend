@@ -1,12 +1,26 @@
 {
   "common": {
     "popup": {
-      "main": [
-      ]
+      "main": []
     }
   },
 
   "layout": {
+    "root": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "$NewLayout", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
+        ]
+      },
+      "defaultComponent": "layoutfolder"
+    },
     "parent": {
       "popup": {
         "main": [
@@ -31,8 +45,9 @@
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "Copy", "command": "copy" },
           { "id": "5", "type": "item", "title": "Paste", "command": "paste", "check": "disablePaste" },
-          { "id": "6", "type": "divider" },
-          { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
+          { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
       "defaultComponent": "layoutview"
@@ -40,6 +55,19 @@
   },
 
   "viscont": {
+    "root": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "$NewContainer", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$Export", "command": "export", "param": "container" }
+        ]
+      },
+      "defaultComponent": "viscontfolder"
+    },
     "parent": {
       "popup": {
         "main": [
@@ -53,7 +81,6 @@
           { "id": "8", "type": "item", "title": "$Export", "command": "export", "param": "container" },
           { "id": "9", "type": "divider" },
           { "id": "10", "type": "item", "title": "$NewTab", "command": "newtab" }
-          
         ]
       },
       "defaultComponent": "viscontfolder"
@@ -67,14 +94,32 @@
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "Copy", "command": "copy" },
           { "id": "5", "type": "item", "title": "Paste", "command": "paste", "check": "disablePaste" },
-          { "id": "6", "type": "divider" },
-          { "id": "7", "type": "item", "title": "Delete", "command": "delete" }
+          { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$Export", "command": "export", "param": "container" },
+          { "id": "9", "type": "divider" },
+          { "id": "10", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
       "defaultComponent": "viscontview"
     }
   },
   "dialog": {
+    "root": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "$NewDialog", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$Export", "command": "export", "param": "dialog" }
+        ]
+      },
+      "defaultComponent": "dialogfolder"
+    },
     "parent": {
       "popup": {
         "main": [
@@ -100,14 +145,32 @@
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
           { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
-          { "id": "6", "type": "divider" },
-          { "id": "7", "type": "item", "title": "$Delete", "command": "delete" }
+          { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$Export", "command": "export", "param": "container" },
+          { "id": "9", "type": "divider" },
+          { "id": "10", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
       "defaultComponent": "dialogview"
     }
   },
   "vistemplate": {
+    "root": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "$NewTemplate", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$Export", "command": "export", "param": "template" }
+        ]
+      },
+      "defaultComponent": "vistemplatefolder"
+    },
     "parent": {
       "popup": {
         "main": [
@@ -134,13 +197,28 @@
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
           { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
-          { "id": "6", "type": "item", "title": "$Delete", "command": "delete" }
+          { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$Export", "command": "export", "param": "template" },
+          { "id": "9", "type": "divider" },
+          { "id": "10", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
       "defaultComponent": "vistemplateview"
     }
   },
   "images": {
+    "root": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "$LoadImage", "command": "upload", "param": "image" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "6", "type": "item", "title": "$Export", "command": "export", "param": "image" }
+        ]
+      },
+      "defaultComponent": "imagefolder"
+    },
     "parent": {
       "popup": {
         "main": [
@@ -158,7 +236,16 @@
     },
     "child": {
       "popup": {
-        "main": [{ "id": "7", "type": "item", "title": "$Delete", "command": "delete" }]
+        "main": [
+          { "id": "1", "type": "item", "title": "$LoadImage", "command": "upload", "param": "image" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "$Delete", "command": "delete" },
+          { "id": "5", "type": "divider" },
+          { "id": "6", "type": "item", "title": "$Export", "command": "export", "param": "image" },
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
+        ]
       },
       "defaultComponent": "imageview"
     }

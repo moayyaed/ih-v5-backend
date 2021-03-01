@@ -4,6 +4,9 @@
   },
 
   "dialog": {
+    "root": {
+      "defaultComponent": null
+    },
     "parent": {
       "defaultComponent": null
     },

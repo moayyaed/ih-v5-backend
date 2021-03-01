@@ -5,6 +5,9 @@
     }
   },
   "devicesExp": {
+    "root": {
+      "defaultComponent": null
+    },
     "parent": {
       "defaultComponent": null
     },
@@ -13,6 +16,9 @@
     }
   },
   "globals": {
+    "root": {
+      "defaultComponent": null
+    },
     "parent": {
       "defaultComponent": null
     },

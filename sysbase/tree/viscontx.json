@@ -4,6 +4,9 @@
   },
 
   "viscont": {
+    "root": {
+      "defaultComponent": null
+    },
     "parent": {
       "defaultComponent": null
     },

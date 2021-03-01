@@ -4,6 +4,9 @@
   },
 
   "layout": {
+    "root": {
+      "defaultComponent": null
+    },
     "parent": {
       "defaultComponent": null
     },

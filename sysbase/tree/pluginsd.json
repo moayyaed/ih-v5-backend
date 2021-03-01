@@ -5,21 +5,20 @@
       "shapes": [{ "id": "23", "type": "item", "icon": "full-circle", "text": "Full circle" }]
     }
   },
-  
+
   "pluginsd": {
+    "root": {
+      "defaultComponent": null
+    },
     "parent": {
       "popup": {
-        "main": [
-         
-        ]
+        "main": []
       },
       "defaultComponent": null
     },
     "child": {
       "popup": {
-        "main": [
-         
-        ]
+        "main": []
       },
       "defaultComponent": "channellink"
     }
