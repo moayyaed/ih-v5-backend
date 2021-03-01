@@ -13,7 +13,7 @@
           { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
           { "id": "3", "type": "divider" },
           
-          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" }
         
         ]
       },
@@ -63,7 +63,7 @@
           { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
           { "id": "3", "type": "divider" },
          
-          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" }
         
         ]
       },
