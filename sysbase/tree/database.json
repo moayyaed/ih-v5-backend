@@ -5,6 +5,12 @@
     }
   },
   "dbagents": {
+    "root": {
+      "popup": {
+        "main": "plugin_dbagents"
+      },
+      "defaultComponent": "dbagentfolder"
+    },
     "parent": {
       "popup": {
         "main": "plugin_dbagents"
@@ -22,6 +28,21 @@
   },
 
   "customtables": {
+    "root": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "$NewTable", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+        
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+          
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
+        ]
+      },
+      "defaultComponent": "customtablefolder"
+    },
     "parent": {
       "popup": {
         "main": [
