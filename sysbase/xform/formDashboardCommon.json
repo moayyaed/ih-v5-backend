@@ -32,6 +32,15 @@
     { "prop": "osUptime", "title": "$os_uptime", "type": "text" },
     { "prop": "uptime", "title": "$process_uptime", "type": "text" },
     { "prop": "version", "title": "$Version", "type": "text" },
-    { "prop": "restartButton", "title": "$RestartIH", "type": "button", "command": "restart", "param": "" }
+    { "prop": "restartButton", "title": "$RestartIH", "type": "button", "command": "restart", "param": "" },
+    { "prop": "newversion", "title": "$NEWVERSION", "type": "text", "hide": "!data.p4.newversion" },
+    {
+      "prop": "checkButton",
+      "title": "$CHECKUPDATE",
+      "type": "button",
+      "command": "checkupdate",
+      "param": "",
+      "hide": "data.p4.newversion"
+    }
   ]
 }

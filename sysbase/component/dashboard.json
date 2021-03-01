@@ -6,11 +6,7 @@
       "component": [{ "id": "formDashboardCommon", "type": "xform" }]
     },
 
-    {
-      "id": "tabDashboardUpgrade",
-      "title": "Обновление",
-      "component": [{ "id": "formDashboardUpgrade", "type": "xform" }]
-    },
+  
 
     {
       "id": "tabDashboardLog",
