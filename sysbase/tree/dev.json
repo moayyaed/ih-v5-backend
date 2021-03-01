@@ -43,21 +43,6 @@
           { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
           { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
           { "id": "7", "type": "divider" },
-          {
-            "id": "export",
-            "type": "item",
-            "title": "Выгрузить устройства",
-            "command": "export",
-            "param": "devices:csv"
-          },
-          {
-            "id": "import",
-            "type": "item",
-            "title": "Загрузить устройства",
-            "command": "upload",
-            "param": "devices:csv"
-          },
-          { "id": "7", "type": "divider" },
           { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
@@ -88,6 +73,19 @@
   },
 
   "globals": {
+    "root": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "$NewVariable", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
+        ]
+      },
+      "defaultComponent": "globalfolder"
+    },
     "parent": {
       "popup": {
         "main": [
@@ -118,6 +116,19 @@
     }
   },
   "locals": {
+    "root": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "$NewVariable", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
+        ]
+      },
+      "defaultComponent": "globalfolder"
+    },
     "parent": {
       "popup": {
         "main": [
@@ -150,6 +161,19 @@
   },
 
   "types": {
+    "root": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "$NewType", "command": "addNode" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "7", "type": "divider" },
+          { "id": "10", "type": "item", "title": "$NewTab", "command": "newtab" }
+        ]
+      },
+      "defaultComponent": "typefolder"
+    },
     "parent": {
       "popup": {
         "main": [
@@ -175,8 +199,11 @@
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
           { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
-          { "id": "6", "type": "divider" },
-          { "id": "7", "type": "item", "title": "$Delete", "command": "delete" }
+          { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$Export", "command": "export", "param": "type" },
+          { "id": "9", "type": "divider" },
+          { "id": "10", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
       "defaultComponent": "typeview"
