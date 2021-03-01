@@ -64,6 +64,9 @@
     }
   },
   "sysdevices": {
+    "root": {
+      "defaultComponent": null
+    },
     "parent": {
       "defaultComponent": "sysdevicefolder"
     },
