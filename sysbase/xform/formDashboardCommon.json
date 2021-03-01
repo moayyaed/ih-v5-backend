@@ -41,6 +41,14 @@
       "command": "checkupdate",
       "param": "",
       "hide": "data.p4.newversion"
+    },
+    {
+      "prop": "updateButton",
+      "title": "$UPDATE",
+      "type": "button",
+      "command": "update",
+      "param": "",
+      "hide": "!data.p4.newversion"
     }
   ]
 }
