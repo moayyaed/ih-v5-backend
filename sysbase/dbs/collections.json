@@ -37,9 +37,6 @@
 
   "projects": { "inMemory": 1 },
   "dbagents": { "folder": "jbasepath" },
-  
-  "devicelog": { "folder": "operativepath", "ensureIndex": "ts", "expireAfterSeconds": 3600 },
-  "pluginlog": { "folder": "operativepath", "ensureIndex": "ts", "expireAfterSeconds": 7200 },
 
   "users": { "folder": "privatepath" },
   "tokens": { "folder": "privatepath" }

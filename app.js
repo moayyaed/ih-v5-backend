@@ -25,6 +25,7 @@ const EventEmitter = require('events');
 
 (async () => {
   const holder = new EventEmitter();
+  holder.system = {bootTs:Date.now()};
 
   process.on('exit', () => {
     if (holder) holder.emit('finish');

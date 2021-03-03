@@ -19,9 +19,7 @@
     },
     "child": {
       "popup": {
-        "main": [
-         
-        ]
+        "main": "plugin_dbagents"
       },
       "defaultComponent": "dbagentview"
     }
