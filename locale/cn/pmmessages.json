@@ -731,6 +731,7 @@
   { "id": "HttpCommand", "note": "Http get request" },
   { "id": "SnapCommand", "note": "Get Snapshot from Camera" },
   { "id": "LogCommand", "note": "Log Command" },
+  { "id": "SaveToDeviceLog", "note": "Save to Device Log" },
   { "id": "InfoCommand", "note": "Info Command" },
   { "id": "PluginCommand", "note": "Plugin Command" },
   { "id": "TimerTime", "note": "Timer time (sec)" },

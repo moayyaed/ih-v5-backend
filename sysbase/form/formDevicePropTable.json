@@ -37,8 +37,8 @@
           "hide": "data.type_op.includes('System') || data.type_op.includes('Calculate') || data.type_op.includes('Command')"
         },
         {
-          "prop": "log",
-          "title": "$LogCommand",
+          "prop": "save",
+          "title": "$SaveToDeviceLog",
           "type": "cb",
           "width": 80,
           "hide": "data.prop == 'error' || data.type_op == 'Command'"

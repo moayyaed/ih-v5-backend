@@ -817,6 +817,7 @@
   { "id": "HttpCommand", "note": "Http get запрос" },
   { "id": "SnapCommand", "note": "Получить снимок с камеры" },
   { "id": "LogCommand", "note": "Запись в журнал" },
+  { "id": "SaveToDeviceLog", "note": "Сохранять в журнал устройства" },
   { "id": "InfoCommand", "note": "Информирование" },
   { "id": "PluginCommand", "note": "Команда плагина" },
   { "id": "TimerTime", "note": "Время (сек)" },
