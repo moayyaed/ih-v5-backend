@@ -25,10 +25,11 @@
             "command": "dialog",
             "param": {
               "variant": "form",
+              "style":{"height":210, "width":450},
               "title": "Клонировать",
 
               "meta": {
-                "grid": [{ "id": "p1", "xs": 4, "class": "main" }],
+                "grid": [{ "id": "p1", "xs": 12, "class": "main" }],
                 "spacing": 8,
                 "p1": [{ "prop": "unitId", "title": "UnitId", "type": "input" }]
               },
