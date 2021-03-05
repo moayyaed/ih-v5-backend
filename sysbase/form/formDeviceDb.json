@@ -22,7 +22,8 @@
           "hide": "!data.dbmet || data.dbmet.id<3"
         },
         { "prop": "dbdelta", "title": "$Dev_dbdelta", "type": "number", "hide": "!data.dbmet || data.dbmet.id!=1" },
-        { "prop": "dbforce", "title": "$Dev_dbforce", "type": "number", "hide": "!data.dbmet || data.dbmet.id!=1" }
+        { "prop": "dbforce", "title": "$Dev_dbforce", "type": "number", "hide": "!data.dbmet || data.dbmet.id!=1" },
+        { "prop": "dbretention", "title": "$Dev_dbretention", "type": "droplist",  "data": "dbretentionList", "hide": "!data.dbmet.id" }
       ]
     }
   ]

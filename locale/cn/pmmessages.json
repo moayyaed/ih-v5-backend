@@ -400,6 +400,7 @@
   { "id": "Dev_db", "note": "向数据库写入数据" },
   { "id": "Dev_dbc", "note": "Store values in the database every hour (consumption)" },
   { "id": "Dev_dbforce", "note": "If no of changes then store no less than (s)" },
+  { "id": "Dev_dbretention", "note": "Retention policy" },
   { "id": "Dev_dbwrite_need_on", "note": "Write permission is controlled by script or plugin" },
   { "id": "Dev_dbdelta", "note": "增量写库" },
   { "id": "Dev_dbraw", "note": "存储全部数据 (否则仅变化时存储)" },
