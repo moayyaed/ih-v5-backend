@@ -18,11 +18,12 @@
         { "prop": "id", "title": "", "type": "text", "width": 30 },
         { "prop": "did", "title": "", "type": "link", "width": 300, "command": "forward"  },
         { "prop": "prop", "title": "$Property", "type": "text", "width": 100  },
-        { "prop": "dbmet", "title": "$SaveMethod", "type": "text", "width": 150  },
-        { "prop": "dbtm", "title": "$Dev_dbtm","type": "text", "width": 150 },
-        { "prop": "dbcalc_type", "title": "$Dev_calc_type","type": "text", "width": 150 },
-        { "prop": "dbdelta", "title": "$Dev_dbdelta", "type": "text", "width": 150 },
-        { "prop": "dbforce", "title": "$Dev_dbforce", "type": "text", "width": 150 }
+        { "prop": "dbmet", "title": "$SaveMethod", "type": "text", "width": 128  },
+        { "prop": "days", "title": "$Dev_dbretention", "type": "text", "width": 100  },
+        { "prop": "dbtm", "title": "$Dev_dbtm","type": "text", "width": 128 },
+        { "prop": "dbcalc_type", "title": "$Dev_calc_type","type": "text", "width": 128 },
+        { "prop": "dbdelta", "title": "$Dev_dbdelta", "type": "text", "width": 128 },
+        { "prop": "dbforce", "title": "$Dev_dbforce", "type": "text", "width": 128 }
 
 
       ]
