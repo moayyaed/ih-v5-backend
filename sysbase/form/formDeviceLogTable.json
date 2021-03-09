@@ -18,6 +18,7 @@
         { "prop": "did_prop", "title": "Устройство", "type": "link", "width": 450, "command": "forward"  },
      
         { "prop": "val", "title": "Значение", "type": "text" ,  "width": 100},
+        { "prop": "valstr", "title": "Значение строка", "type": "text" ,  "width": 100},
         { "prop": "cmd", "title": "Команда", "type": "text" ,  "width": 100},
         { "prop": "src", "title": "Отправитель", "type": "text" ,  "width": 150},
         { "prop": "txt", "title": "", "type": "text" ,  "width": 250}

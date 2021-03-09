@@ -46,7 +46,15 @@
           "title": "Обработчик",
           "type": "droplist",
           "data": "fuseList",
-          "width": 250
+          "width": 150
+        },
+        {
+          "prop": "format",
+          "title": "Вывод в виде строки",
+          "type": "droplist",
+          "data": "formatList",
+          "width": 200,
+          "hide": "data.op.id == 'cmd'"
         },
         { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide": "data.vtype.id != 'N'" },
         { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide": "data.vtype.id != 'N'" },
