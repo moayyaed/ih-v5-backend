@@ -84,12 +84,6 @@
       { "id": 0, "title": "Не используется" },
       { "id": 1, "title": "Встроенный" },
       { "id": 2, "title": "Пользовательский" },
-      { "id": "on1_off0", "title": "Включено:1/Выключено:0" },
-      { "id": "on0_off1", "title": "Включено:0/Выключено:1" },
-      { "id": "open1_close0", "title": "Открыто:1/Закрыто:0" },
-      { "id": "open0_close1", "title": "Открыто:0/Закрыто:1" },
-      { "id": "set1_reset0", "title": "Сработка:1/Сброс:0" },
-      { "id": "set0_reset1", "title": "Сработка:0/Сброс:1" },
 
       { "id": "dtsec", "title": "Время dd.mm.yyyy hh:mm:ss" },
       { "id": "dtms", "title":"Время dd.mm.yy hh:mm:ss.ms" },
