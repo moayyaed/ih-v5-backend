@@ -16,7 +16,7 @@
 
   "globalList": {
     "table": "globals",
-    "propmap": { "_id": "id", "name": "name", "dn": "dn", "defval": "defval", "setdef": "setdef" }
+    "propmap": { "_id": "id", "name": "name", "dn": "dn", "defval": "defval", "setdef": "setdef", "folder": "folder"  }
   },
 
   "localList": {

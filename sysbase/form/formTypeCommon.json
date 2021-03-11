@@ -14,15 +14,23 @@
   ],
   "p2": [
     { "prop": "scripts_header", "title": "Обработчики", "type": "header" },
-    { "prop": "scriptOnChange", "title": "При изменении свойств ", "type": "cb" },
+    { "prop": "scriptOnChange", "title": "При изменении свойств устройства и/или глобальной переменной", "type": "cb" },
    
   
     {
       "prop": "par_OnChange",
-      "title": "Свойства (если не выбраны - при изменении любого свойства)",
+      "title": "Свойства (* - любое)",
       "type": "input",
       "hide": "!data.p2.scriptOnChange"
     },
+    {
+      "prop": "par2_OnChange",
+      "title": "Глобальная переменная",
+      "type": "droplist",
+      "data":"globalList",
+      "hide": "!data.p2.scriptOnChange"
+    },
+
     { "prop": "scriptOnInterval", "title": "Циклически ", "type": "cb" },
     {
       "prop": "par_OnInterval",
