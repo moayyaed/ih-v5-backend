@@ -615,7 +615,7 @@
   "pluginlog": { "store": "db", "collection": "pluginlog" },
   "pluginlogTable": { "store": "tree", "tree": "plugins", "collection": "units", "rows": true },
 
-  "userlog": { "store": "db", "collection": "userlog" },
+  "mainlog": { "store": "db", "collection": "mainlog" },
 
   "alerts": { "store": "db", "collection": "alerts" },
 
