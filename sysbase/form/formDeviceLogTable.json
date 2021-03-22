@@ -14,14 +14,14 @@
      
 
       "columns": [
-        { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 150 },
-        { "prop": "did_prop", "title": "Устройство", "type": "link", "width": 450, "command": "forward"  },
+        { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 150, "filter":true },
+        { "prop": "did_prop", "title": "Устройство", "type": "link", "width": 450, "command": "forward", "filter":true  },
      
-        { "prop": "val", "title": "Значение", "type": "text" ,  "width": 100},
-        { "prop": "valstr", "title": "Значение строка", "type": "text" ,  "width": 100},
-        { "prop": "cmd", "title": "Команда", "type": "text" ,  "width": 100},
-        { "prop": "src", "title": "Отправитель", "type": "text" ,  "width": 150},
-        { "prop": "txt", "title": "", "type": "text" ,  "width": 250}
+        { "prop": "val", "title": "Значение", "type": "text" ,  "width": 100, "filter":true},
+        { "prop": "valstr", "title": "Значение строка", "type": "text" ,  "width": 100, "filter":true},
+        { "prop": "cmd", "title": "Команда", "type": "text" ,  "width": 100, "filter":true},
+        { "prop": "src", "title": "Отправитель", "type": "text" ,  "width": 150, "filter":true},
+        { "prop": "txt", "title": "Сообщение", "type": "text" ,  "width": 250, "filter":true}
       ]
     }
   ]
