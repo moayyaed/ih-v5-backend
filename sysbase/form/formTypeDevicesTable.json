@@ -12,9 +12,9 @@
       "prop": "typedevicesTable",
 
       "columns": [
-        { "prop": "did", "title": "$Device", "type": "link", "command":"forward",  "width": 500  },
-        { "prop": "tags", "title": "Tags", "type": "text",  "width": 200 },
-        { "prop": "path", "title": "", "type": "text",  "width": 400 }
+        { "prop": "did", "title": "$Device", "type": "link", "command":"forward",  "width": 500, "filter":true  },
+        { "prop": "tags", "title": "Tags", "type": "text",  "width": 200, "filter":true },
+        { "prop": "path", "title": "", "type": "text",  "width": 400, "filter":true }
        
       ]
     }

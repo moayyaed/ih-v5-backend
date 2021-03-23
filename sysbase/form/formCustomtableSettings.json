@@ -26,8 +26,8 @@
       "genfield": "props",
 
       "columns": [
-        { "prop": "newid", "title": "Property", "type": "input", "width": 128 },
-        { "prop": "title", "title": "Title", "type": "input", "width": 300 },
+        { "prop": "newid", "title": "Property", "type": "input", "width": 128},
+        { "prop": "title", "title": "Title", "type": "input", "width": 300, "filter":true },
         {
           "prop": "type",
           "title": "Type",
@@ -38,7 +38,8 @@
             { "id": "cb", "title": "cb" },
             { "id": "text", "title": "text" }
           ],
-          "width": 128
+          "width": 128, 
+          "filter":true
         },
 
         { "prop": "width", "title": "Width", "type": "number", "width": 150 }

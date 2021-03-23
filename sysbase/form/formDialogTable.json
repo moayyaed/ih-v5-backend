@@ -13,8 +13,8 @@
 
       "columns": [
 
-        { "prop": "title", "title": "$Dialog", "type": "link", "command":"forward",  "width": 450  },
-        { "prop": "path", "title": "$Folder", "type": "text",  "width": 200 }
+        { "prop": "title", "title": "$Dialog", "type": "link", "command":"forward",  "width": 450, "filter":true  },
+        { "prop": "path", "title": "$Folder", "type": "text",  "width": 200, "filter":true }
 
       ]
     }

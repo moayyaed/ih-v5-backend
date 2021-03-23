@@ -15,8 +15,8 @@
 
       "columns": [
        
-        { "prop": "did", "title": "", "type": "link", "width": 450, "command": "forward"  },
-        { "prop": "period", "title": "$SnipPeriod", "type": "text", "width": 250  }
+        { "prop": "did", "title": "", "type": "link", "width": 450, "command": "forward", "filter":true  },
+        { "prop": "period", "title": "$SnipPeriod", "type": "text", "width": 250, "filter":true  }
       ]
     }
   ]

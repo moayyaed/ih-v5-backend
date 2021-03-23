@@ -16,11 +16,11 @@
       "prop": "dbagentstateTable",
 
       "columns": [
-        { "prop": "name", "title": "$Name", "type": "text", "width": 150 },
-        { "prop": "state", "title": "Состояние", "type": "text", "width": 150 },
-        { "prop": "laststart", "title": "Время запуска", "type": "text", "width": 150 },
-        { "prop": "laststop", "title": "Время останова", "type": "text", "width": 150 },
-        { "prop": "uptime", "title": "Uptime", "type": "text", "width": 150 },
+        { "prop": "name", "title": "$Name", "type": "text", "width": 150, "filter":true },
+        { "prop": "state", "title": "Состояние", "type": "text", "width": 150, "filter":true },
+        { "prop": "laststart", "title": "Время запуска", "type": "text", "width": 150, "filter":true },
+        { "prop": "laststop", "title": "Время останова", "type": "text", "width": 150, "filter":true },
+        { "prop": "uptime", "title": "Uptime", "type": "text", "width": 150, "filter":true },
         { "prop": "error", "title": "Ошибка", "type": "text", "width": 250 }
       ]
     }

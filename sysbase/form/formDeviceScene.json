@@ -14,9 +14,9 @@
     
 
       "columns": [
-        { "prop": "scene_id", "title": "ID", "type": "text", "width": 200 },
+        { "prop": "scene_id", "title": "ID", "type": "text", "width": 200, "filter":true },
 
-        { "prop": "scene_name", "title": "$Name", "type": "link", "width": 550, "command": "forward"  }
+        { "prop": "scene_name", "title": "$Name", "type": "link", "width": 550, "command": "forward", "filter":true  }
       ]
     }
   ]

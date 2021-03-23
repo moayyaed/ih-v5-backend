@@ -15,8 +15,8 @@
 
       "columns": [
        
-        { "prop": "container_name", "title": "Размещение", "type": "link", "width": 250, "command": "forward"  },
-        { "prop": "content_str", "title": "Привязки", "type": "text", "width": 950 }
+        { "prop": "container_name", "title": "Размещение", "type": "link", "width": 250, "command": "forward", "filter":true  },
+        { "prop": "content_str", "title": "Привязки", "type": "text", "width": 950, "filter":true }
       ]
     }
   ]

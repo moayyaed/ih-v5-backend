@@ -12,8 +12,8 @@
       "popupenable": true,
 
       "columns": [
-        { "prop": "id", "title": "ID", "type": "text", "width": 150 },
-        { "prop": "name", "title": "Name", "type": "input", "width": 150 }
+        { "prop": "id", "title": "ID", "type": "text", "width": 150, "filter":true },
+        { "prop": "name", "title": "Name", "type": "input", "width": 150, "filter":true }
       ]
     }
   ]

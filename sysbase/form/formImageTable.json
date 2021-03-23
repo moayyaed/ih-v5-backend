@@ -13,8 +13,8 @@
 
       "columns": [
 
-        { "prop": "name", "title": "Имя файла", "type": "text",  "width": 300  },
-        { "prop": "path", "title": "Папка", "type": "text",  "width": 300 },
+        { "prop": "name", "title": "Имя файла", "type": "text",  "width": 300, "filter":true  },
+        { "prop": "path", "title": "Папка", "type": "text",  "width": 300, "filter":true },
         { "prop": "error", "title": "", "type": "text",  "width": 200  }
       ]
     }

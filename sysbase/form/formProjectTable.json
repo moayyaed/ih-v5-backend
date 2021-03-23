@@ -13,10 +13,10 @@
 
       "columns": [
 
-        { "prop": "title_link", "title": "$Project", "type": "text", "command":"forward",  "width": 400  },
-        { "prop": "projectfolder", "title": "$Project_Folder", "type": "text",  "width": 250 },
-        { "prop": "version", "title": "$Version", "type": "text",  "width": 150 },
-        { "prop": "path", "title": "", "type": "text",  "width": 250 }
+        { "prop": "title_link", "title": "$Project", "type": "text", "command":"forward",  "width": 400, "filter":true  },
+        { "prop": "projectfolder", "title": "$Project_Folder", "type": "text",  "width": 250, "filter":true },
+        { "prop": "version", "title": "$Version", "type": "text",  "width": 150, "filter":true },
+        { "prop": "path", "title": "", "type": "text",  "width": 250, "filter":true }
       ]
     }
   ]
