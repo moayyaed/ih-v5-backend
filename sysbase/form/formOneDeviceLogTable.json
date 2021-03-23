@@ -1,0 +1,34 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 6, "class": "main", "table": "device" },
+    { "id": "p3", "xs": 12, "class": "main", "table": "devicelogTable", "height": "fill" }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "devdevices" },
+
+  "p1": [{ "prop": "days", "title": "Срок хранения данных в журнале", "type": "droplist", "data": "dbretentionList" }],
+
+  "p3": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "devicelogTable",
+
+      "columns": [
+        { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 150, "filter": true },
+        {
+          "prop": "did_prop",
+          "title": "Устройство",
+          "type": "link",
+          "width": 450,
+          "command": "forward",
+          "filter": true
+        },
+        { "prop": "valstr", "title": "Значение", "type": "text", "width": 100, "filter": true },
+        { "prop": "cmd", "title": "Команда", "type": "text", "width": 100, "filter": true },
+        { "prop": "sender", "title": "Отправитель", "type": "text", "width": 150, "filter": true },
+        { "prop": "txt", "title": "Сообщение", "type": "text", "width": 250, "filter": true }
+      ]
+    }
+  ]
+}

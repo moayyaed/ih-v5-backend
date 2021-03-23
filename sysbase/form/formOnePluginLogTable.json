@@ -1,0 +1,25 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 6, "class": "main", "table": "units" },
+    { "id": "p2", "xs": 12, "class": "main", "table": "pluginlogTable", "height": "fill" }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "plugins" },
+
+  "p1": [{ "prop": "days", "title": "Срок хранения данных в журнале", "type": "droplist", "data": "dbretentionList" }],
+
+  "p2": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "pluginlogTable",
+
+      "columns": [
+        { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 150, "filter": true },
+        { "prop": "unit", "title": "$Plugin", "type": "text", "width": 150, "filter": true },
+        { "prop": "txt", "title": "$Info_Txt", "type": "text", "width": 550, "filter": true },
+        { "prop": "level", "title": "$LogLevel", "type": "text", "width": 150, "filter": true }
+      ]
+    }
+  ]
+}

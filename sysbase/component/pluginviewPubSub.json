@@ -12,7 +12,7 @@
       "component": [{ "id": "formPluginChannelsTable", "type": "form" }]
     },
     { "id": "tabUnitExtra", "title": "Расширение", "component": [{ "id": "formPluginExtra", "type": "form" }] },
-    { "id": "tabPluginLogTable", "title": "Журнал", "component": [{ "id": "formPluginLogTable", "type": "form" }] }
+    { "id": "tabPluginLogTable", "title": "Журнал", "component": [{ "id": "formOnePluginLogTable", "type": "form" }] }
   ],
   "defaultTab": "tabUnitParams"
 }
