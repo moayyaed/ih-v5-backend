@@ -15,6 +15,7 @@ const snippetservice = require('./lib/snippet/snippetservice');
 const trendservice = require('./lib/trend/trendservice');
 const informservice = require('./lib/inform/informservice');
 const scheduler = require('./lib/schedule/scheduler');
+const logservice = require('./lib/log/logservice');
 
 // const httprestservice = require('./lib/httprest/httprestservice');
 
@@ -46,6 +47,7 @@ const EventEmitter = require('events');
     holder.dm = dm;
 
     await scheduler(holder);
+    await logservice(holder);
     await globalvarservice(holder);
     await deviceservice(holder);
     await pluginservice(holder);
