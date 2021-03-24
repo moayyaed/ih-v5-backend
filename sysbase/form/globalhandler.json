@@ -1,0 +1,29 @@
+{
+  "grid": [
+   
+    { "id": "p2", "xs": 12, "class": "main", "table": "globalhandlerTable" },
+    {
+      "id": "p9",
+      "xs": 12,
+      "class": "main",
+      "table": "globalhandlerTable",
+      "height": "fill",
+      "padding": 4,
+      "hide":"!data.p2.scriptOnChange"
+    }
+  ],
+  "spacing": 10,
+
+ 
+  "p2": [
+    { "prop": "scriptOnChange", "title": "Запуск", "type": "text", "hide":"1==1" },
+    { "prop": "when_str", "title": "Запуск", "type": "text" }
+
+   
+  ],
+
+  "p9": [
+    { "prop": "errstr", "title": "", "type": "text", "hide": "!data.p9.errstr" },
+    { "prop": "handler", "title": "Функция-обработчик", "type": "script", "disabled": false }
+  ]
+}

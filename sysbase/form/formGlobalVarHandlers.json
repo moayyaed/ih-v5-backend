@@ -1,0 +1,27 @@
+{
+  "grid": [
+    {
+      "id": "p1",
+      "xs": 12,
+      "class": "main",
+      "table": "globals",
+      "height": "fill",
+      "padding": 4
+    }
+  ],
+  "spacing": 10,
+  "breadcrumbs": {
+    "tree": "globals"
+  },
+  "p1": [
+    {
+      "prop": "globals",
+      "title": "",
+      "type": "subtree",
+      "data": "globalhandler",
+      "leftTitle": "Properties",
+      "rightTitle": "Handler",
+      "toolbar": false
+    }
+  ]
+}
