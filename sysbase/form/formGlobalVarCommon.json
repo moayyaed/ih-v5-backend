@@ -2,7 +2,7 @@
   "grid": [
     { "id": "p1", "xs": 6, "class": "main", "table": "globals" },
 
-    { "id": "p3", "xs": 6, "class": "main", "table": "globalScripttriggersTable", "hide": "!data.p1.scriptOnChange&&!data.p1.snipuse" },
+    { "id": "p3", "xs": 6, "class": "main", "table": "globalScripttriggersTable", "hide": "!data.p1.scriptOnChange" },
     { "id": "p4", "xs": 12, "class": "main", "table": "globals" }
   ],
   "spacing": 10,
@@ -27,7 +27,9 @@
       "title": "Использовать сниппет для получения значения",
       "type": "cb",
       "hide": "data.p1.scriptOnChange"
-    }
+    },
+    { "prop": "snipid", "title": "$Snippet", "type": "droplist", "data": "snippetList", "hide": "!data.p1.snipuse" },
+    { "prop": "snipperiod", "title": "$SnipPeriod", "type": "number", "hide": "!data.p1.snipuse" }
   ],
   "p3": [
     {
@@ -47,9 +49,8 @@
           "params": { "title": "Триггеры", "type": "tree", "id": "devices", "dialog": "devicelink" }
         }
       ]
-    },
-    { "prop": "snipid", "title": "$Snippet", "type": "droplist", "data": "snippetList", "hide": "!data.p1.snipuse" },
-    { "prop": "snipperiod", "title": "$SnipPeriod", "type": "number", "hide": "!data.p1.snipuse" }
+    }
+    
   ],
   "p4": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
 }
