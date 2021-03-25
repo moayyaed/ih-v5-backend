@@ -31,10 +31,10 @@
       "genfield": "props",
 
       "columns": [
-        { "prop": "name", "title": "Title", "type": "input", "width": 300, "filter":true },
+        { "prop": "title", "title": "Title", "type": "input", "width": 300, "filter":true },
         {
-          "prop": "type",
-          "title": "Type",
+          "prop": "prop",
+          "title": "Prop",
           "type": "droplist",
           "data": [
             { "id": "dts", "title": "Дата, время" },

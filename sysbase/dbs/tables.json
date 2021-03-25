@@ -501,13 +501,7 @@
   "journalTable": {
     "store": "db",
     "collection": "journals",
-    "genfield": "props",
-
-    "validator": {
-      "props": {
-        "name": { "notempty": true }
-      }
-    }
+    "genfield": "props"
   },
 
   "reportgroup": {
