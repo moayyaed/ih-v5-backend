@@ -39,9 +39,5 @@
   "dbagents": { "folder": "jbasepath" },
 
   "users": { "folder": "privatepath" },
-  "tokens": { "folder": "privatepath" },
-
-  "devicelog": { "folder": "operativepath", "ensureIndex": "ts", "expireAfterSeconds": 7200 },
-  "pluginlog": { "folder": "operativepath", "ensureIndex": "ts", "expireAfterSeconds": 7200 },
-  "mainlog": { "folder": "operativepath", "ensureIndex": "ts", "expireAfterSeconds": 86400 }
+  "tokens": { "folder": "privatepath" }
 }
