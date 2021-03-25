@@ -1,0 +1,7 @@
+{
+  "tabs": [
+    { "id": "tabJournalCommon", "title": "Журнал", "component": [{ "id": "formJournalCommon", "type": "form" }] }
+   
+  ],
+  "defaultTab": "tabJournalCommon"
+}

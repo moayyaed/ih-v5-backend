@@ -1,0 +1,11 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 6, "class": "main", "table": "journalgroup" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "journalgroup", "height":250 }
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "journals" },
+
+  "p1": [{ "prop": "name", "title": "$Name", "type": "input" }],
+  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
+}

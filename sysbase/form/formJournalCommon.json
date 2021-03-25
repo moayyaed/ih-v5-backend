@@ -1,0 +1,52 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 4, "class": "main", "table": "journal" },
+    { "id": "p5", "xs": 12, "class": "main", "table": "journalTable", "height": 250 }
+   
+  ],
+  "spacing": 8,
+  "breadcrumbs": { "tree": "journals" },
+
+  "p1": [
+    { "prop": "name", "title": "$Name", "type": "input" },
+    {
+      "prop": "data_type",
+      "title": "Источник",
+      "type": "droplist",
+      "data": [
+        { "id": "devicelog", "title": "devicelog" },
+        { "id": "pluginlog", "title": "pluginlog" },
+        { "id": "mainlog", "title": "mainlog" }
+      ]
+    }
+  ],
+
+  "p5": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "journalTable",
+      "popupenable": true,
+
+      "genfield": "props",
+
+      "columns": [
+        { "prop": "name", "title": "Title", "type": "input", "width": 300, "filter":true },
+        {
+          "prop": "type",
+          "title": "Type",
+          "type": "droplist",
+          "data": [
+            { "id": "dts", "title": "Дата, время" },
+            { "id": "txt", "title": "Сообщение" },
+            { "id": "level", "title": "Уровень" }
+          ],
+          "width": 128, 
+          "filter":true
+        },
+
+        { "prop": "width", "title": "Width", "type": "number", "width": 150 }
+      ]
+    }
+  ]
+}

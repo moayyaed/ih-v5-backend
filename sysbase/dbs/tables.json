@@ -481,6 +481,35 @@
     }
   },
 
+  "journalgroup": {
+    "store": "db",
+    "collection": "journals",
+    "filter": { "folder": 1 },
+    "defRootTitle": "Журналы",
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "jrg", "len": 3 }
+  },
+
+  "journal": {
+    "store": "db",
+    "collection": "journals",
+    "genfield": "props",
+    "default": { "name": "Новый журнал" },
+    "ruleID": { "pref": "jr", "len": 3 }
+  },
+
+  "journalTable": {
+    "store": "db",
+    "collection": "journals",
+    "genfield": "props",
+
+    "validator": {
+      "props": {
+        "name": { "notempty": true }
+      }
+    }
+  },
+
   "reportgroup": {
     "store": "db",
     "collection": "reports",

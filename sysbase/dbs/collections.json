@@ -32,7 +32,7 @@
   "dialogs": { "folder": "jbasepath" },
 
   "charts": { "folder": "jbasepath" },
-
+  "journals": { "folder": "jbasepath" },
   "reports": { "folder": "jbasepath" },
 
   "projects": { "inMemory": 1 },
