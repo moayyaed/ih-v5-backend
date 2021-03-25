@@ -46,7 +46,7 @@
           "type": "smartbutton",
           "width":400,
           "command": "dialog",
-          "params": { "title": "Триггеры", "type": "tree", "id": "devices", "dialog": "devicelink" }
+          "params": { "title": "Триггеры", "type": "tree", "id": "devprops", "dialog": "devicelink" }
         }
       ]
     }
