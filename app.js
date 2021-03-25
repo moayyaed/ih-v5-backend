@@ -48,8 +48,9 @@ const EventEmitter = require('events');
 
     await scheduler(holder);
     await logservice(holder);
-    await globalvarservice(holder);
     await deviceservice(holder);
+    await globalvarservice(holder);
+
     await pluginservice(holder);
     await sceneservice(holder);
     await snippetservice(holder);
