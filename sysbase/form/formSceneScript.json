@@ -4,9 +4,11 @@
     { "id": "p2", "xs": 4, "class": "main", "table": "scene" },
     { "id": "p3", "xs": 4, "class": "main", "table": "scene" },
 
-    { "id": "p6", "xs": 12, "class": "main", "table": "scene", "hide":"!data.p3.simplescene"  },
-    { "id": "p7", "xs": 12, "class": "main", "table": "scene", "hide":"!data.p3.simplescene"  },
-    { "id": "p8", "xs": 12, "class": "main", "table": "simplesceneTable", "height": 500, "hide":"!data.p3.simplescene" },
+    { "id": "p6", "xs": 3, "class": "main", "table": "scene", "hide":"!data.p3.simplescene"  },
+    
+    { "id": "p7", "xs": 6, "class": "main", "table": "simplesceneTable", "height": 500, "hide":"!data.p3.simplescene" },
+    { "id": "p8", "xs": 3, "class": "main", "table": "scene", "hide":"!data.p3.simplescene"  },
+    { "id": "p9", "xs": 12, "class": "main", "table": "scene", "hide":"!data.p3.simplescene" },
     { "id": "p4", "xs": 12, "class": "main", "table": "scenesTreeTable", "height": 200 },
     { "id": "p5", "xs": 12, "class": "main", "table": "scenecall", "height": "fill" }
   ],
@@ -22,21 +24,34 @@
     { "prop": "blk", "title": "Заблокировать запуск сценария", "type": "cb" }
   ],
   "p3": [
-    { "prop": "simplescene", "title": "Табличный сценарий", "type": "cb", "hide":"data.p3.multi" },
+    { "prop": "simplescene", "title": "Табличный сценарий", "type": "cb", "hide":"1==1" },
     { "prop": "multi", "title": "Мультисценарий", "type": "cb", "hide":"data.p3.simplescene"  }
+
   ],
 
   "p6": [
-    { "prop": "start_triggers", "title": "Триггеры запуска", "type": "input" },
-    { "prop": "start_cond", "title": "Условие запуска", "type": "input"  }
+    {
+      "title": "Триггеры",
+      "type": "table",
+      "prop": "scripttriggers",
+      "genfield": "scripttriggers",
+      "popupenable": true,
+      "columns": [
+        {
+          "prop": "devtrig",
+          "title": "Триггеры запуска",
+          "type": "smartbutton",
+          "width":200,
+          "command": "dialog",
+          "params": { "title": "Триггеры", "type": "tree", "id": "devprops", "dialog": "devicelink" }
+        }
+      ]
+    }
   ],
+
+ 
 
   "p7": [
-    { "prop": "stop_triggers", "title": "Триггеры останова", "type": "input" },
-    { "prop": "stop_cond", "title": "Условие останова", "type": "input"  }
-  ],
-
-  "p8": [
     {
       "title": "",
       "type": "table",
@@ -44,12 +59,37 @@
       "popupenable": true,
 
       "columns": [
-        { "prop": "device", "title": "Устройство - контекст", "type": "droplist", "data":"deviceList", "width": 350 },
-        { "prop": "cmd", "title": "Команда", "type": "input", "width": 150 },
-        { "prop": "timeout", "title": "Задержка сек", "type": "number", "width": 150 }
+        { "prop": "device", "title": "Устройство", "type": "droplist", "data":"deviceList", "width": 250 },
+        { "prop": "cmd", "title": "Команда", "type": "input", "width": 100 },
+        { "prop": "timeout", "title": "Задержка сек", "type": "number", "width": 100 }
       ]
     }
   ],
+  "p8": [
+    {
+      "title": "Триггеры",
+      "type": "table",
+      "prop": "scripttriggers",
+      "genfield": "scripttriggers",
+      "popupenable": true,
+      "columns": [
+        {
+          "prop": "devtrig",
+          "title": "Триггеры останова",
+          "type": "smartbutton",
+          "width":200,
+          "command": "dialog",
+          "params": { "title": "Триггеры", "type": "tree", "id": "devprops", "dialog": "devicelink" }
+        }
+      ]
+    }
+  ],
+  "p9": [
+   
+    { "prop": "start_cond", "title": "Условие запуска", "type": "input"  },
+    { "prop": "stop_cond", "title": "Условие останова", "type": "input"  }
+  ],
+
 
   "p4": [
     {
