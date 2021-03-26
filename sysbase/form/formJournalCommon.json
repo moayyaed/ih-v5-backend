@@ -11,10 +11,9 @@
     { "prop": "name", "title": "$Name", "type": "input" },
     {
       "prop": "variant",
-      "title": "Вариант",
+      "title": "Источник",
       "type": "droplist",
       "data": [
-        { "id": "devicelog", "title": "devicelog" },
         { "id": "pluginlog", "title": "pluginlog" },
         { "id": "mainlog", "title": "mainlog" }
       ]
