@@ -4,11 +4,25 @@
     { "id": "p2", "xs": 4, "class": "main", "table": "scene" },
     { "id": "p3", "xs": 4, "class": "main", "table": "scene" },
 
-    { "id": "p6", "xs": 3, "class": "main", "table": "scene", "hide":"!data.p3.simplescene"  },
-    
-    { "id": "p7", "xs": 6, "class": "main", "table": "simplesceneTable", "height": 500, "hide":"!data.p3.simplescene" },
-    { "id": "p8", "xs": 3, "class": "main", "table": "scene", "hide":"!data.p3.simplescene"  },
-    { "id": "p9", "xs": 12, "class": "main", "table": "scene", "hide":"!data.p3.simplescene" },
+    {
+      "id": "p6",
+      "xs": 6,
+      "class": "main",
+      "table": "sceneStarttriggersTable",
+      "hide": "!data.p3.simplescene",
+      "height": 300
+    },
+    { "id": "p8", "xs": 6, "class": "main", "table": "sceneStoptriggersTable", "hide": "!data.p3.simplescene" },
+    {
+      "id": "p7",
+      "xs": 12,
+      "class": "main",
+      "table": "simplesceneTable",
+      "height": 500,
+      "hide": "!data.p3.simplescene"
+    },
+
+    { "id": "p9", "xs": 12, "class": "main", "table": "scene", "hide": "!data.p3.simplescene" },
     { "id": "p4", "xs": 12, "class": "main", "table": "scenesTreeTable", "height": 200 },
     { "id": "p5", "xs": 12, "class": "main", "table": "scenecall", "height": "fill" }
   ],
@@ -24,34 +38,54 @@
     { "prop": "blk", "title": "Заблокировать запуск сценария", "type": "cb" }
   ],
   "p3": [
-    { "prop": "simplescene", "title": "Табличный сценарий", "type": "cb", "hide":"1==1" },
-    { "prop": "multi", "title": "Мультисценарий", "type": "cb", "hide":"data.p3.simplescene"  }
-
+    { "prop": "simplescene", "title": "Табличный сценарий", "type": "cb", "hide": "data.p3.multi" },
+    { "prop": "multi", "title": "Мультисценарий", "type": "cb", "hide": "data.p3.simplescene" }
   ],
 
   "p6": [
+    { "prop": "start_header", "title": "Запуск: Триггеры и условия", "type": "header" },
     {
-      "title": "Триггеры",
+      "title": "",
       "type": "table",
-      "prop": "scripttriggers",
-      "genfield": "scripttriggers",
+      "prop": "starttriggers",
+      "genfield": "starttriggers",
       "popupenable": true,
       "columns": [
         {
           "prop": "devtrig",
-          "title": "Триггеры запуска",
+          "title": "Триггер",
           "type": "smartbutton",
-          "width":200,
+          "width": 250,
           "command": "dialog",
           "params": { "title": "Триггеры", "type": "tree", "id": "devprops", "dialog": "devicelink" }
+        },
+        {
+          "prop": "oper",
+          "title": "",
+          "type": "droplist",
+          "data": "digitalOperList",
+          "width": 100
+        },
+
+        {
+          "prop": "val",
+          "title": "Значение",
+          "type": "input",
+          "width": 100
+        },
+        {
+          "prop": "andOr",
+          "title": "И/ИЛИ",
+          "type": "droplist",
+          "data": "logicalOperList",
+          "width": 64
         }
       ]
     }
   ],
 
- 
-
   "p7": [
+    { "prop": "simple_header", "title": "Действия", "type": "header" },
     {
       "title": "",
       "type": "table",
@@ -59,37 +93,58 @@
       "popupenable": true,
 
       "columns": [
-        { "prop": "device", "title": "Устройство", "type": "droplist", "data":"deviceList", "width": 250 },
-        { "prop": "cmd", "title": "Команда", "type": "input", "width": 100 },
-        { "prop": "timeout", "title": "Задержка сек", "type": "number", "width": 100 }
+        { "prop": "order", "title": "№", "type": "input", "width": 50 },
+        { "prop": "device", "title": "Устройство", "type": "droplist", "data": "deviceList", "width": 350 },
+        { "prop": "cmd", "title": "Команда", "type": "input", "width": 150 },
+        { "prop": "timeout", "title": "Задержка сек", "type": "number", "width": 150 },
+        { "prop": "txt", "title": "Комментарий", "type": "input", "width": 350 }
       ]
     }
   ],
   "p8": [
+    { "prop": "stop_header", "title": "Останов: Триггеры и условия", "type": "header" },
     {
-      "title": "Триггеры",
+      "title": "",
       "type": "table",
-      "prop": "scripttriggers",
-      "genfield": "scripttriggers",
+      "prop": "stoptriggers",
+      "genfield": "stoptriggers",
       "popupenable": true,
       "columns": [
         {
           "prop": "devtrig",
-          "title": "Триггеры останова",
+          "title": "Триггер",
           "type": "smartbutton",
-          "width":200,
+          "width": 250,
           "command": "dialog",
           "params": { "title": "Триггеры", "type": "tree", "id": "devprops", "dialog": "devicelink" }
+        },
+        {
+          "prop": "oper",
+          "title": "",
+          "type": "droplist",
+          "data": "digitalOperList",
+          "width": 64
+        },
+        {
+          "prop": "val",
+          "title": "Значение",
+          "type": "input",
+          "width": 100
+        },
+        {
+          "prop": "andOr",
+          "title": "И/ИЛИ",
+          "type": "droplist",
+          "data": "logicalOperList",
+          "width": 64
         }
       ]
     }
   ],
   "p9": [
-   
-    { "prop": "start_cond", "title": "Условие запуска", "type": "input"  },
-    { "prop": "stop_cond", "title": "Условие останова", "type": "input"  }
+    { "prop": "start_cond", "title": "Условие запуска", "type": "input" },
+    { "prop": "stop_cond", "title": "Условие останова", "type": "input" }
   ],
-
 
   "p4": [
     {

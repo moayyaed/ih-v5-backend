@@ -156,7 +156,22 @@
       { "id": 500, "title": "500 дней" }
     ]
   },
-  
+
+  "logicalOperList": {
+    "data": [
+      { "id":"and", "title": "И" },
+      { "id":"or", "title": "ИЛИ" }
+    ]
+  },
+  "digitalOperList": {
+    "data": [
+      { "id":"eq", "title": "==" },
+      { "id":"gt", "title": ">" },
+      { "id":"gte", "title": ">=" },
+      { "id":"lt", "title": "<" },
+      { "id":"lte", "title": "<=" }
+    ]
+  },
 
   "dbcalc_typeList": {
     "data": [

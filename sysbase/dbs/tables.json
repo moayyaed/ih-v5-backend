@@ -389,6 +389,18 @@
     "genfield": "props"
   },
 
+  "sceneStarttriggersTable": {
+    "store": "db",
+    "collection": "scenes",
+    "genfield": "starttriggers"
+  },
+
+  "sceneStoptriggersTable": {
+    "store": "db",
+    "collection": "scenes",
+    "genfield": "stoptriggers"
+  },
+
   "snippetsTreeTable": { "store": "tree", "tree": "snippets", "rows": true },
   "restapihandlersTreeTable": { "store": "tree", "tree": "restapihandlers", "rows": true },
 
