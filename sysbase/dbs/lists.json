@@ -87,7 +87,8 @@
 
       { "id": "dtsec", "title": "Время dd.mm.yyyy hh:mm:ss" },
       { "id": "dtms", "title":"Время dd.mm.yy hh:mm:ss.ms" },
-      { "id": "period1", "title": "Период  дн час мин" }
+      { "id": "period1", "title": "Период  дн час мин" },
+      { "id": "period2", "title": "Период  час мин сек" }
 
     ]
   },
