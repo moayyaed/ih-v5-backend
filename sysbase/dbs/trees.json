@@ -1,6 +1,15 @@
 {
   "dev": ["devdevices", "sysdevices", "globals", "locals", "types"],
 
+  "places": {
+    "branch": {
+      "table": "place",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } 
+    },
+    "leaf": { "table": "" },
+    "expanded": true
+  },
+
   "devdevices": {
     "branch": { "table": "place", "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } },
     "leaf": {

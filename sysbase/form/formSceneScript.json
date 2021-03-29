@@ -22,7 +22,6 @@
       "hide": "!data.p3.simplescene"
     },
 
-    { "id": "p9", "xs": 12, "class": "main", "table": "scene", "hide": "!data.p3.simplescene" },
     { "id": "p4", "xs": 12, "class": "main", "table": "scenesTreeTable", "height": 200 },
     { "id": "p5", "xs": 12, "class": "main", "table": "scenecall", "height": "fill" }
   ],
@@ -141,10 +140,7 @@
       ]
     }
   ],
-  "p9": [
-    { "prop": "start_cond", "title": "Условие запуска", "type": "input" },
-    { "prop": "stop_cond", "title": "Условие останова", "type": "input" }
-  ],
+ 
 
   "p4": [
     {

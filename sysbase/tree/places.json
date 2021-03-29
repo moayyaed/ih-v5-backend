@@ -1,0 +1,19 @@
+{
+  "common": {
+    "popup": {
+      "main": [{ "id": "1", "type": "divider", "title": "Edit" }]
+    }
+  },
+
+  "places": {
+    "root": {
+      "defaultComponent": null
+    },
+    "parent": {
+      "defaultComponent": null
+    },
+    "child": {
+      "defaultComponent": "formViscontx"
+    }
+  }
+}
