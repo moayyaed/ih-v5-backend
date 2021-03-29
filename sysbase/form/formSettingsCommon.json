@@ -16,7 +16,8 @@
         { "id": "en", "title": "en" },
         { "id": "ru", "title": "ru" }
       ]
-    }
+    },
+    { "prop": "expert", "title": "Режим ЭКСПЕРТ", "type": "cb" }
   ],
 
   "p2": [
@@ -27,6 +28,7 @@
       "size": "h6"
     },
     { "prop": "otherprojdir", "title": "$ChangeProjectsFolder", "type": "cb" },
-    { "prop": "projdir", "title": "$PathToProjects", "type": "input", "hide": "!data.p2.otherprojdir" }
+    { "prop": "projdir", "title": "$PathToProjects", "type": "input", "hide": "!data.p2.otherprojdir" },
+    { "prop": "activeButton1", "title": "Перезагрузить сервер", "type": "button", "command": "restart", "param":"" }
   ]
 }

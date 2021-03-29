@@ -1,7 +1,7 @@
 {
   "tabs": [
     { "id": "tabProjectView",  "title": "$Project", "component": [{ "id": "formProjectCommon", "type": "form" }]  },
-    { "id": "tabProjectDeps",  "title": "Внешние модули", "component": [{ "id": "formProjectDeps", "type": "form" }]  }
+    { "id": "tabProjectDeps",  "title": "Расширенные настройки", "component": [{ "id": "formProjectDeps", "type": "form" }]  }
   ],
   "defaultTab": "tabProjectView"
 }
