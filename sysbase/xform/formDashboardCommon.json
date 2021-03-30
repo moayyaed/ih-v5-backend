@@ -3,7 +3,8 @@
     { "id": "p1", "xs": 3, "class": "main" },
     { "id": "p2", "xs": 3, "class": "main" },
     { "id": "p3", "xs": 3, "class": "main" },
-    { "id": "p4", "xs": 3, "class": "main" }
+    { "id": "p4", "xs": 3, "class": "main" },
+    { "id": "p9", "xs": 12, "class": "main", "hide": "data.p3.conf<2" }
   ],
   "spacing": 10,
 
@@ -25,7 +26,7 @@
     { "prop": "type", "title": "$qTypes", "type": "text" },
     { "prop": "device", "title": "$qDevices", "type": "text" },
     { "prop": "devhard", "title": "$qChannels", "type": "text" },
-    { "prop": "devhardtag", "title": "$qTags", "type": "text" }
+    { "prop": "conf", "title": "", "type": "text", "hide": "1==1" }
   ],
   "p4": [
     { "prop": "uptimeinfo", "title": "$Version&Uptime", "type": "header", "size": "h6" },
@@ -50,5 +51,18 @@
       "param": "",
       "hide": "!data.p4.newversion"
     }
+  ],
+
+  "p9": [
+    {
+      "prop": "block_header",
+      "title": "Число привязанных каналов превышает доступные! Исполнительная система переведена в режим ограниченного функционала!",
+      "type": "header",
+      "size": "h6",
+      "hide":"!data.p9.limitLht"
+    },
+    { "prop": "limitLht", "title": "", "type": "text", "hide":"1==1" },
+    { "prop": "usedLht", "title": "$qTags", "type": "text" },
+    { "prop": "enabledLht", "title": "Лицензировано", "type": "text" }
   ]
 }

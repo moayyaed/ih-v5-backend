@@ -21,6 +21,7 @@ const logservice = require('./lib/log/logservice');
 
 const webserver = require('./lib/web/webserver');
 const dm = require('./lib/datamanager');
+const lm = require('./lib/dbs/lm');
 
 const EventEmitter = require('events');
 
@@ -46,6 +47,7 @@ const EventEmitter = require('events');
     await init(__dirname);
     holder.dm = dm;
 
+    await lm(holder);
     await scheduler(holder);
     await logservice(holder);
     await deviceservice(holder);
