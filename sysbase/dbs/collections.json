@@ -33,6 +33,7 @@
 
   "charts": { "folder": "jbasepath" },
   "journals": { "folder": "jbasepath" },
+  "jlevels": { "folder": "jbasepath" },
   "reports": { "folder": "jbasepath" },
 
   "projects": { "inMemory": 1 },

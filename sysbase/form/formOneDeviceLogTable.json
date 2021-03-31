@@ -1,12 +1,10 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "device" },
     { "id": "p3", "xs": 12, "class": "main", "table": "devicelogTable", "height": "fill" }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "devdevices" },
 
-  "p1": [{ "prop": "days", "title": "Срок хранения данных в журнале", "type": "droplist", "data": "dbretentionList" }],
 
   "p3": [
     {

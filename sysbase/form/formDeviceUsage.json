@@ -1,0 +1,43 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "devicevisTable", "height": 250 },
+    { "id": "p2", "xs": 12, "class": "main", "table": "devicesceneTable", "height": 250 }
+  
+  ],
+  "spacing": 10,
+  "breadcrumbs": { "tree": "devdevices" },
+  "p1": [
+    { "prop": "vis_header", "title": "Визуализация", "type": "header", "size": "h6" },
+    {
+      "title": "$DeviceProperty",
+      "type": "table",
+      "prop": "devicevisTable",
+
+      "columns": [
+        {
+          "prop": "container_name",
+          "title": "Размещение",
+          "type": "link",
+          "width": 250,
+          "command": "forward",
+          "filter": true
+        },
+        { "prop": "content_str", "title": "Привязки", "type": "text", "width": 350, "filter": true }
+      ]
+    }
+  ],
+  "p2": [
+    { "prop": "scene_header", "title": "Сценарии", "type": "header", "size": "h6" },
+    {
+      "title": "$DeviceProperty",
+      "type": "table",
+      "prop": "devicesceneTable",
+
+      "columns": [
+        { "prop": "scene_id", "title": "ID", "type": "text", "width": 200, "filter": true },
+
+        { "prop": "scene_name", "title": "$Name", "type": "link", "width": 550, "command": "forward", "filter": true }
+      ]
+    }
+  ]
+}

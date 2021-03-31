@@ -1,27 +1,49 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "project" },
+    { "id": "p2", "xs": 12, "class": "main", "table": "jlevelsTable", "height": 300 },
+    { "id": "p3", "xs": 6, "class": "main", "table": "project" },
 
-    { "id": "p2", "xs": 6, "class": "main", "table": "projectdepsTable", "height": 300, "hide": "!data.p1.deps" }
+    { "id": "p5", "xs": 6, "class": "main", "table": "projectdepsTable", "height": 300, "hide": "!data.p3.deps" }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "projects" },
 
-  "p1": [
+  "p2": [
+ 
+
+    { "prop": "jlevel_txt", "title": "Уровни сообщений в журналах", "type": "header" },
+    {
+      "type": "table",
+      "prop": "jlevels",
+      "title": "",
+   
+      "popupenable": true,
+   
+
+      "columns": [
+        { "prop": "level", "title": "Уровень сообщения", "type": "number", "width": 150 },
+        { "prop": "name", "title": "Описание", "type": "input", "width": 250 },
+        { "prop": "levelcolor", "title": "$Color", "type": "color", "width": 50 },
+        { "prop": "days", "title": "Срок хранения", "type": "number", "width": 150 }
+      ]
+    }
+  ],
+
+  "p3": [
     { "prop": "deps", "title": "Deps", "type": "cb", "hide": "1==1" },
     { "prop": "__expert", "title": "", "type": "text", "hide": "1==1" },
    
 
-    { "prop": "nodeps_txt", "title": "Проект не имеет внешних модулей", "type": "header", "hide": "data.p1.deps" },
+    { "prop": "nodeps_txt", "title": "Проект не имеет внешних модулей", "type": "header", "hide": "data.p3.deps" },
     {
       "prop": "deps_txt",
       "title": "Для установки npm модуля введите имя пакета",
       "type": "header",
-      "hide": "!data.p1.deps || !data.p1.__expert"
+      "hide": "!data.p3.deps || !data.p3.__expert"
     },
-    { "prop": "newmodule", "title": "", "type": "input", "hide": "!data.p1.deps || !data.p1.__expert" }
+    { "prop": "newmodule", "title": "", "type": "input", "hide": "!data.p3.deps || !data.p3.__expert" }
   ],
-  "p2": [
+  "p5": [
     { "prop": "deps_txt", "title": "Установлены npm модули", "type": "header" },
     {
       "type": "table",
