@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "build": "node scripts/build.js",
     "test": "mocha **/*.test.js --exit"
   },
   "dependencies": {
@@ -27,6 +28,8 @@
     "mocha": "^4.1.0",
     "should": "^13.2.3"
   },
+
+  
   "author": "Intra LLC",
   "license": "MIT"
 }

@@ -1,33 +1,19 @@
 /**
- * Main ih-backend-d.
+ * Main backend V5
  *
  *  app.js
  */
 
 const util = require('util');
-const init = require('./lib/init');
-
-const globalvarservice = require('./lib/globalvar/globalvarservice');
-const deviceservice = require('./lib/device/deviceservice');
-const pluginservice = require('./lib/plugin/pluginservice');
-const sceneservice = require('./lib/scene/sceneservice');
-const snippetservice = require('./lib/snippet/snippetservice');
-const trendservice = require('./lib/trend/trendservice');
-const informservice = require('./lib/inform/informservice');
-const scheduler = require('./lib/schedule/scheduler');
-const logservice = require('./lib/log/logservice');
-
-// const httprestservice = require('./lib/httprest/httprestservice');
-
-const webserver = require('./lib/web/webserver');
-const dm = require('./lib/datamanager');
-const lm = require('./lib/dbs/lm');
-
 const EventEmitter = require('events');
+
+const init = require('./lib/init');
+const start = require('./lib/start');
+const dm = require('./lib/datamanager');
 
 (async () => {
   const holder = new EventEmitter();
-  holder.system = {bootTs:Date.now()};
+  holder.system = { bootTs: Date.now() };
 
   process.on('exit', () => {
     if (holder) holder.emit('finish');
@@ -46,21 +32,7 @@ const EventEmitter = require('events');
   try {
     await init(__dirname);
     holder.dm = dm;
-
-    await lm(holder);
-    await scheduler(holder);
-    await logservice(holder);
-    await deviceservice(holder);
-    await globalvarservice(holder);
-
-    await pluginservice(holder);
-    await sceneservice(holder);
-    await snippetservice(holder);
-    await trendservice(holder);
-    await informservice(holder);
-   
-    // await httprestservice(holder);
-    await webserver(holder);
+    await start(holder);
   } catch (err) {
     console.log('ERROR: Main App Exception ' + util.inspect(err));
     setTimeout(() => {
