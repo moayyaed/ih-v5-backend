@@ -210,7 +210,7 @@
 
   "layoutx": ["layout"],
 
-  "allscenes": ["scenes"],
+  "allscenes": ["scenes",  "alertrules"],
 
   "scenes": {
     "branch": {
@@ -229,7 +229,24 @@
       }
     }
   },
-  
+  "alertrules": {
+    "branch": {
+      "table": "alertrulegroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "alertrule",
+      "propmap": {
+        "_id": "id",
+        "name": "name",
+        "title": "title",
+        "parent": "parent",
+        "order": "order",
+        "folder": "folder"
+      }
+    }
+  },
+
   "scriptx": ["scenes"],
 
   "datasource": ["plugins", "snippets", "restapihandlers"],
@@ -408,7 +425,7 @@
     }
   },
 
-  "analytics": ["charts"],
+  "analytics": ["charts", "journals", "reports"],
   "charts": {
     "branch": {
       "table": "chartgroup",
@@ -416,6 +433,26 @@
     },
     "leaf": {
       "table": "chart",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+  "journals": {
+    "branch": {
+      "table": "journalgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "journal",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+  "reports": {
+    "branch": {
+      "table": "reportgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "reports",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   }
