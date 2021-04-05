@@ -18,11 +18,17 @@ const fs = require('fs');
 const fut = require('../lib/utils/fileutil');
 
 module.exports = async function(projectPath) {
+  console.log('INFO: Update project layouts');
   transform(getFileList(`${projectPath}/jbase/layout`));
+  console.log('INFO: Update project containers');
   transform(getFileList(`${projectPath}/jbase/container`));
+  console.log('INFO: Update project templates');
   transform(getFileList(`${projectPath}/jbase/template`));
+  console.log('INFO: Update project dialogs');
   transform(getFileList(`${projectPath}/jbase/dialog`));
+ 
 
+  console.log('INFO: Remove unused files and folders');
   fut.removeFolderSync(`${projectPath}/bigbase`);
   fut.removeFolderSync(`${projectPath}/history`);
   fut.delFileSync(`${projectPath}/operative/devicelog.db`);
@@ -59,7 +65,7 @@ function update(data, targetStr) {
       delete d.title;
     }
     d._label = _label;
-    console.log('INFO: ' + targetStr + ' element ' + name + ' _label:' + d._label);
+    // console.log('INFO: ' + targetStr + ' element ' + name + ' _label:' + d._label);
   });
   return data;
 }
