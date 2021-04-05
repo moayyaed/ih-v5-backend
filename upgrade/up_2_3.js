@@ -1,21 +1,33 @@
 /**
  * Project upgrade 5.2 => 5.3
  *
- * В файлах экранов, компонентов, шаблонов, диалогов
+ * 1. В файлах экранов, компонентов, шаблонов, диалогов
  *  Для каждого elements[key]
  *    - изменено имя свойства на _lable (label || title || key)
+ *
+ * 2. Удаляются неиспользуемые папки проекта
+ *
+ * 3. Удаляются неиспользуемые  файлы
+ *    operative/devicelog.db, mainlog.db, pluginlog.db
  *
  */
 
 const util = require('util');
 const fs = require('fs');
 
+const fut = require('../lib/utils/fileutil');
 
 module.exports = async function(projectPath) {
   transform(getFileList(`${projectPath}/jbase/layout`));
   transform(getFileList(`${projectPath}/jbase/container`));
   transform(getFileList(`${projectPath}/jbase/template`));
   transform(getFileList(`${projectPath}/jbase/dialog`));
+
+  fut.removeFolderSync(`${projectPath}/bigbase`);
+  fut.removeFolderSync(`${projectPath}/history`);
+  fut.delFileSync(`${projectPath}/operative/devicelog.db`);
+  fut.delFileSync(`${projectPath}/operative/mainlog.db`);
+  fut.delFileSync(`${projectPath}/operative/pluginlog.db`);
 };
 
 function transform(list) {
@@ -47,7 +59,7 @@ function update(data, targetStr) {
       delete d.title;
     }
     d._label = _label;
-    console.log('INFO: '+targetStr+ ' element ' + name + ' _label:'+d._label);
+    console.log('INFO: ' + targetStr + ' element ' + name + ' _label:' + d._label);
   });
   return data;
 }
