@@ -14,7 +14,7 @@
     { "prop": "projectfolder", "title": "$Project_Folder", "type": "input", "hide":"data.p1._id == data.p1.folder" },
     { "prop": "title", "title": "$Project_Name", "type": "input" },
 
-    { "prop": "deviceloglines", "title": "Количество строк в журнале устройства", "type": "number" },
+    { "prop": "deviceloglines", "title": "Количество строк в журнале устройства", "type": "number", "hide":"!data.p1.__expert" },
     { "prop": "deps", "title": "Проекту требуются внешние модули", "type": "cb", "hide":"!data.p1.__expert" }
   ],
   "p2": [
