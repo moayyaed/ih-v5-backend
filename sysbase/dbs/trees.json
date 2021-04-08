@@ -408,7 +408,8 @@
     }
   },
 
-  "analytics": ["charts"],
+ 
+  "analytics": ["charts", "journals", "reports"],
   "charts": {
     "branch": {
       "table": "chartgroup",
@@ -416,6 +417,26 @@
     },
     "leaf": {
       "table": "chart",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+  "journals": {
+    "branch": {
+      "table": "journalgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "journal",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+  "reports": {
+    "branch": {
+      "table": "reportgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "reports",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   }
