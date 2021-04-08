@@ -714,7 +714,7 @@
 
   { "id": "os_uptime", "note": "ОС аптайм" },
   { "id": "client_username", "note": "User name" },
-  { "id": "process_uptime", "note": "iH аптайм" },
+  { "id": "process_uptime", "note": "Аптайм сервера" },
   { "id": "process_arch", "note": "Архитектура процессора" },
   { "id": "process_platform", "note": "Платформа" },
   { "id": "os_memory", "note": "ОЗУ всего/свободно" },

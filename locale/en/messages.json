@@ -197,7 +197,7 @@
   { "id": "CLOSE", "note": "close" },
   { "id": "FILTER_OK", "note": "OK" },
   { "id": "FILTER_CLEAR", "note": "CLEAR" },
-  { "id": "RestartIH", "note": "Restart iH" },
+  { "id": "RestartIH", "note": "Restart" },
   { "id": "NotEditDiagramScript", "note": "Edit the diagram and not the script!" },
   { "id": "DropSessions", "note": "Drop Sessions" },
   { "id": "BLK", "note": "Blk - Locked" },

@@ -33,8 +33,8 @@
   "p4": [
     { "prop": "uptimeinfo", "title": "Version & Uptime", "type": "header", "size":"h6"  },
     { "prop": "osUptime", "title": "OS Uptime", "type": "text" },
-    { "prop": "uptime", "title": "IH Uptime", "type": "text" },
-    { "prop": "version", "title": "IH Version", "type": "text" },
+    { "prop": "uptime", "title": "Server Uptime", "type": "text" },
+    { "prop": "version", "title": "Server Version", "type": "text" },
     { "prop": "checkUpdate", "title": "$CHECKUPDATE", "type": "button", "command": "checkupdate", "param":""  },
     { "prop": "newversion", "title": "$NEWVERSION", "type": "text" },
     { "prop": "doUpdate", "title": "$UPDATE", "type": "button", "command": "update", "param":"", "hide":"1==1"  }
