@@ -923,7 +923,9 @@
   { "id": "JournalTitle_mainlog", "note": "Основные журналы" },
   { "id": "JournalTitle_pluginlog", "note": "Журналы плагинов" },
   { "id": "JournalTitle_authlog", "note": "Журналы авторизации" },
-
+  { "id": "StdMessage", "note": "Стандартное сообщение" },
+  { "id": "WarnMessage", "note": "Предупреждение" },
+  { "id": "ExtraMessage", "note": "Авария" },
 
   { "id": "File", "note": "Файл" },
   { "id": "HTTPMethod", "note": "Метод" },

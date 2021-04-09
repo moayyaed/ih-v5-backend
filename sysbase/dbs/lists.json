@@ -191,5 +191,13 @@
       { "id":"pluginlog", "title": "$JournalTitle_pluginlog" },
       { "id":"authlog", "title": "$JournalTitle_authlog" }
     ]
+  },
+
+  "messageLevelList": {
+    "data": [
+      { "id":0, "title": "$StdMessage" },
+      { "id":1, "title": "$WarnMessage" },
+      { "id":2, "title": "$ExtraMessage" }
+    ]
   }
 }

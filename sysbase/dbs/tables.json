@@ -516,36 +516,23 @@
     "genfield": "props"
   },
 
-  "jlevelsTable": {
-    "store": "db",
-    "collection": "jlevels",
-    "rows": true,
-    "upsert": true,
-    "requiredRecords": [
-      {
-        "check": { "level": 0 },
-        "add": {
-          "_id": "lev_0",
-          "name": "Стандартное сообщение",
-          "level": 0,
-          "days": 30
-        }
-      }
-    ],
-
-    "validator": {
-      "main": {
-        "name": { "required": true, "notempty": true },
-        "level": { "required": true, "notempty": true, "unique": true }
-      }
-    }
-  },
-
   "jlevels": {
     "store": "db",
     "collection": "jlevels",
-    "rows": true,
-    "upsert": true
+    "genfield": "props"
+  },
+
+  "jlevelsTable": {
+    "store": "db",
+    "collection": "jlevels",
+    "genfield": "props",
+
+    "validator": {
+      "props": {
+        "title": { "required": true, "notempty": true },
+        "level": { "required": true, "notempty": true, "unique": true }
+      }
+    }
   },
 
   "reportgroup": {

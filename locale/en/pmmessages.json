@@ -914,6 +914,10 @@
   { "id": "JournalTitle_pluginlog", "note": "Plugin Logs" },
   { "id": "JournalTitle_authlog", "note": "Auth Logs" },
 
+  { "id": "StdMessage", "note": "Common message" },
+  { "id": "WarnMessage", "note": "Warning" },
+  { "id": "ExtraMessage", "note": "Emergency" },
+
   { "id": "File", "note": "File" },
   { "id": "HTTPMethod", "note": "HTTPMethod" },
   { "id": "Route", "note": "Route" },
