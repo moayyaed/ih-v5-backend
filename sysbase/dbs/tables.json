@@ -506,7 +506,10 @@
     "store": "db",
     "collection": "journals",
     "genfield": "props",
-    "default": { "name": "Новый журнал" },
+    "default": { "name": "Новый журнал", "src":"mainlog", "levelfrom":0, "props":{
+      "dts":{"prop":"dts","title":"Дата", "width":250},
+      "txt":{"prop":"txt","title":"Текст сообщения", "width":550}
+    } },
     "ruleID": { "pref": "jr", "len": 3 }
   },
 

@@ -1,7 +1,7 @@
 {
   "grid": [
-    { "id": "p1", "xs": 4, "class": "main", "table": "journal" },
-    { "id": "p2", "xs": 8, "class": "main", "table": "journal" },
+    { "id": "p1", "xs": 6, "class": "main", "table": "journal" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "journal" },
     { "id": "p5", "xs": 12, "class": "main", "table": "journalTable", "height": 250 }
   ],
   "spacing": 8,
@@ -14,7 +14,8 @@
       "title": "Источник",
       "type": "droplist",
       "data": "journalsrcList"
-    }
+    },
+    { "prop": "uselevelcolor", "title": "Выделять цветом строки в зависимости от уровня", "type": "cb" }
   ],
 
   "p2": [
@@ -28,7 +29,7 @@
       "type": "smartbutton",
       "command": "dialog",
       "params": { "title": "Location", "type": "tree", "id": "places", "dialog": "devicelink" },
-      "hide":"data.p1.src.id != 'mainlog'"
+      "hide":"1 == 1"
     },
     { "prop": "levelfrom", "title": "Уровень сообщения не ниже", "type": "number", "default": 0 }
 
@@ -44,21 +45,20 @@
       "genfield": "props",
 
       "columns": [
-        { "prop": "title", "title": "Title", "type": "input", "width": 300, "filter": true },
+      
         {
           "prop": "prop",
-          "title": "Prop",
+          "title": "Данные столбца",
           "type": "droplist",
           "data": [
             { "id": "dts", "title": "Дата, время" },
             { "id": "txt", "title": "Сообщение" },
             { "id": "level", "title": "Уровень" }
           ],
-          "width": 128,
-          "filter": true
+          "width": 128
         },
-
-        { "prop": "width", "title": "Width", "type": "number", "width": 150 }
+        { "prop": "title", "title": "Шапка столбца", "type": "input", "width": 500 },
+        { "prop": "width", "title": "Ширина столбца", "type": "number", "width": 150 }
       ]
     }
   ]
