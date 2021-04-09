@@ -920,9 +920,9 @@
   { "id": "NewTable", "note": "Новая таблица" },
   { "id": "CustomTables", "note": "Таблицы проекта" },
 
-  { "id": "JournalTitle_mainlog", "note": "Основные журналы" },
-  { "id": "JournalTitle_pluginlog", "note": "Журналы плагинов" },
-  { "id": "JournalTitle_authlog", "note": "Журналы авторизации" },
+  { "id": "JournalTitle_mainlog", "note": "Общие данные" },
+  { "id": "JournalTitle_pluginlog", "note": "Данные плагинов" },
+  { "id": "JournalTitle_authlog", "note": "Данные авторизации" },
   { "id": "StdMessage", "note": "Стандартное сообщение" },
   { "id": "WarnMessage", "note": "Предупреждение" },
   { "id": "ExtraMessage", "note": "Авария" },
