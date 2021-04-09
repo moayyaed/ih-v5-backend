@@ -902,8 +902,8 @@
   { "id": "ACTIVATION", "note": "Активировать" },
   { "id": "CHECKUPDATE", "note": "Проверить обновления" },
   { "id": "UPDATE", "note": "Обновить" },
-  { "id": "RestartIH", "note": "Перезагрузить IH" },
-  { "id": "RestartIHToApply", "note": "Для применения настроек требуется перезагрузка iH" },
+  { "id": "RestartIH", "note": "Перезагрузить" },
+  { "id": "RestartIHToApply", "note": "Для применения настроек требуется перезагрузка" },
   { "id": "ChangeProjectsFolder", "note": "Изменить расположение папки проектов" },
   { "id": "PathToProjects", "note": "Путь к папке с проектами" },
   { "id": "ProjectsTable", "note": "Таблица проектов" },
@@ -919,6 +919,10 @@
   { "id": "doWrite", "note": "Записать" },
   { "id": "NewTable", "note": "Новая таблица" },
   { "id": "CustomTables", "note": "Таблицы проекта" },
+
+  { "id": "JournalTitle_mainlog", "note": "Основные журналы" },
+  { "id": "JournalTitle_pluginlog", "note": "Журналы плагинов" },
+  { "id": "JournalTitle_authlog", "note": "Журналы авторизации" },
 
 
   { "id": "File", "note": "Файл" },

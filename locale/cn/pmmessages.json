@@ -814,6 +814,19 @@
   { "id": "ProjectsTable", "note": "Projects Table" },
 
   { "id": "Var_Id", "note": "Variable Name" },
-  { "id": "SetDef", "note": "Set default value on server start" }
+  { "id": "SetDef", "note": "Set default value on server start" },
+
+  { "id": "Read", "note": "Read" },
+  { "id": "Write", "note": "Write" },
+  { "id": "doWrite", "note": "Write Now" },
+
+  { "id": "JournalTitle_mainlog", "note": "Main Logs" },
+  { "id": "JournalTitle_pluginlog", "note": "Plugin Logs" },
+  { "id": "JournalTitle_authlog", "note": "Auth Logs" },
+
+  { "id": "File", "note": "File" },
+  { "id": "HTTPMethod", "note": "HTTPMethod" },
+  { "id": "Route", "note": "Route" },
+  { "id": "NewRoute", "note": "NewRoute" }
 
 ]

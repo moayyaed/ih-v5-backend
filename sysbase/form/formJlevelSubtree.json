@@ -1,0 +1,27 @@
+{
+  "grid": [
+    {
+      "id": "p1",
+      "xs": 12,
+      "class": "main",
+      "height": "fill",
+      "padding": 4
+    }
+  ],
+  "spacing": 10,
+  "breadcrumbs": {
+    "tree": "journals"
+  },
+  
+  "p1": [
+    {
+      "prop": "journalsrc",
+      "title": "",
+      "type": "subtree",
+      "data": "journalsrc",
+      "leftTitle": "Таблицы данных",
+      "rightTitle": "Уровни сообщений",
+      "toolbar": false
+    }
+  ]
+}

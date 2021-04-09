@@ -1,6 +1,6 @@
 {
   "tabs": [
-    { "id": "tabJournalFolder",  "title": "Свойства папки", "component": [{ "id": "formJournalFolder", "type": "form" }]  }
+    { "id": "tabJournalFolder",  "title": "Источники", "component": [{ "id": "formJlevelSubtree", "type": "form" }]  }
   ],
   "defaultTab": "tabJournalFolder"
 }

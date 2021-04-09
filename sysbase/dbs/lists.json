@@ -183,5 +183,13 @@
       { "id": "minmax", "title": "Min&Max" },
       { "id": "mean", "title": "Mean" }
     ]
+  },
+
+  "journalsrcList": {
+    "data": [
+      { "id":"mainlog", "title": "$JournalTitle_mainlog" },
+      { "id":"pluginlog", "title": "$JournalTitle_pluginlog" },
+      { "id":"authlog", "title": "$JournalTitle_authlog" }
+    ]
   }
 }

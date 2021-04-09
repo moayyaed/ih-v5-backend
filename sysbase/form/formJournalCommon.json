@@ -13,11 +13,7 @@
       "prop": "src",
       "title": "Источник",
       "type": "droplist",
-      "data": [
-        { "id": "mainlog", "title": "Основной журнал" },
-        { "id": "pluginlog", "title": "Журнал плагинов" }
-       
-      ]
+      "data": "journalsrcList"
     }
   ],
 

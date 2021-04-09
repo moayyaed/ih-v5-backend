@@ -910,6 +910,10 @@
   { "id": "Write", "note": "Write" },
   { "id": "doWrite", "note": "Write Now" },
 
+  { "id": "JournalTitle_mainlog", "note": "Main Logs" },
+  { "id": "JournalTitle_pluginlog", "note": "Plugin Logs" },
+  { "id": "JournalTitle_authlog", "note": "Auth Logs" },
+
   { "id": "File", "note": "File" },
   { "id": "HTTPMethod", "note": "HTTPMethod" },
   { "id": "Route", "note": "Route" },
