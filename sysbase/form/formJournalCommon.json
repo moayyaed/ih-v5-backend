@@ -29,7 +29,7 @@
       "type": "smartbutton",
       "command": "dialog",
       "params": { "title": "Location", "type": "tree", "id": "places", "dialog": "devicelink" },
-      "hide":"1 == 1"
+      "hide":"data.p1.src.id != 'mainlog'" 
     },
     { "prop": "levelfrom", "title": "Уровень сообщения не ниже", "type": "number", "default": 0 }
 
