@@ -647,7 +647,7 @@
     "store": "db",
     "collection": "dbagents",
     "filter": { "folder": 1 },
-    "defRootTitle": "$Database",
+    "defRootTitle": "$HistDatabase",
     "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "dbg", "len": 3 }
   },

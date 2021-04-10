@@ -886,6 +886,7 @@
   { "id": "Export", "note": "Export" },
 
   { "id": "Database", "note": "Database" },
+  { "id": "HistDatabase", "note": "Historical Database" },
   { "id": "Legend", "note": "Legend" },
   { "id": "NewTab", "note": "New Tab" },
   { "id": "Version", "note": "Version" },

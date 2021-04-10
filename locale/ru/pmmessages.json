@@ -893,6 +893,7 @@
   { "id": "Export", "note": "Экспорт" },
 
   { "id": "Database", "note": "База данных" },
+  { "id": "HistDatabase", "note": "Историческая БД" },
   { "id": "Legend", "note": "Легенда" },
   { "id": "NewTab", "note": "Новая вкладка" },
   { "id": "Version", "note": "Версия" },
