@@ -53,6 +53,7 @@
           "data": [
             { "id": "dts", "title": "Дата, время" },
             { "id": "txt", "title": "Сообщение" },
+            { "id": "tags", "title": "Тэги" },
             { "id": "level", "title": "Уровень" }
           ],
           "width": 128
