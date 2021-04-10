@@ -24,13 +24,21 @@
     { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist", "hide":"data.p1.src.id != 'mainlog'" },
    
     {
-      "prop": "location",
-      "title": "Location",
+      "prop": "xlocation",
+      "title": "location",
       "type": "smartbutton",
       "command": "dialog",
       "params": { "title": "Location", "type": "tree", "id": "places", "dialog": "devicelink" },
+      "hide":"1 == 1" 
+    },
+
+    {
+      "prop": "location",
+      "title": "Локация",
+      "type": "input",
       "hide":"data.p1.src.id != 'mainlog'" 
     },
+
     { "prop": "levelfrom", "title": "Уровень сообщения не ниже", "type": "number", "default": 0 }
 
   ],
@@ -54,7 +62,8 @@
             { "id": "dts", "title": "Дата, время" },
             { "id": "txt", "title": "Сообщение" },
             { "id": "tags", "title": "Тэги" },
-            { "id": "level", "title": "Уровень" }
+            { "id": "level", "title": "Уровень" },
+            { "id": "location", "title": "Локация" }
           ],
           "width": 128
         },
