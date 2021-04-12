@@ -19,7 +19,7 @@
       "title": "",
       "type": "subtree",
       "data": "journalsrc",
-      "leftTitle": "Таблицы данных",
+      "leftTitle": "Тип журнала",
       "rightTitle": "Уровни сообщений",
       "toolbar": false
     }

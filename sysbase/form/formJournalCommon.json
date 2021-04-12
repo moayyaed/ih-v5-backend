@@ -11,7 +11,7 @@
     { "prop": "name", "title": "$Name", "type": "input" },
     {
       "prop": "src",
-      "title": "Источник",
+      "title": "Тип журнала",
       "type": "droplist",
       "data": "journalsrcList"
     },
