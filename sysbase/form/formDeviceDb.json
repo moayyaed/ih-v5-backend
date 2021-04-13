@@ -13,6 +13,7 @@
       "columns": [
         { "prop": "prop", "title": "$DeviceProperty", "type": "text", "width": 100 },
         { "prop": "dbmet", "title": "$SaveMethod", "type": "droplist", "data": "dbmetList" },
+        { "prop": "days", "title": "$Dev_dbretention", "type": "droplist",  "data": "dbretentionList", "hide": "!data.dbmet.id" },
         { "prop": "dbtm", "title": "$Dev_dbtm", "type": "number", "hide": "!data.dbmet || data.dbmet.id<3" },
         {
           "prop": "dbcalc_type",
@@ -22,8 +23,8 @@
           "hide": "!data.dbmet || data.dbmet.id<3"
         },
         { "prop": "dbdelta", "title": "$Dev_dbdelta", "type": "number", "hide": "!data.dbmet || data.dbmet.id!=1" },
-        { "prop": "dbforce", "title": "$Dev_dbforce", "type": "number", "hide": "!data.dbmet || data.dbmet.id!=1" },
-        { "prop": "days", "title": "$Dev_dbretention", "type": "droplist",  "data": "dbretentionList", "hide": "!data.dbmet.id" }
+        { "prop": "dbforce", "title": "$Dev_dbforce", "type": "number", "hide": "!data.dbmet || data.dbmet.id!=1" }
+       
       ]
     }
   ]
