@@ -333,6 +333,10 @@
     "store": "none"
   },
 
+  "typehandlersTraceTable": {
+    "store": "none"
+  },
+
   "alertrulegroup": {
     "store": "db",
     "collection": "alertrules",

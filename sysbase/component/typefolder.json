@@ -1,7 +1,8 @@
 {
   "tabs": [
     { "id": "tabTypeFolder",  "title": "Свойства папки", "component": [{ "id": "formTypeFolder", "type": "form" }]  },
-    { "id": "tabTypeTable",  "title": "Таблица типов", "component": [{ "id": "formTypeTable", "type": "form" }]  }
+    { "id": "tabTypeTable",  "title": "Таблица типов", "component": [{ "id": "formTypeTable", "type": "form" }]  },
+    { "id": "tabTypeHandlersTrace",  "title": "Обработчики", "component": [{ "id": "formTypeHandlersTrace", "type": "form" }]  }
   ],
   "defaultTab": "tabTypeTable"
 }

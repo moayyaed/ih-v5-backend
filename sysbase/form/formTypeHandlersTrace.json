@@ -1,0 +1,19 @@
+{
+  "grid": [{ "id": "p3", "xs": 12, "class": "main", "table": "typehandlersTraceTable", "height": "fill" }],
+  "spacing": 10,
+
+  "p3": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "typehandlersTraceTable",
+      
+      "columns": [
+        { "prop": "id", "title": "Id", "type": "text", "width": 250, "filter":true },
+        { "prop": "state", "title": "State", "type": "text", "width": 128, "filter":true },
+        { "prop": "count", "title": "Число запусков", "type": "text", "width": 250 },
+        { "prop": "did", "title": "Последний для устройства", "type": "text", "width": 250 }
+      ]
+    }
+  ]
+}
