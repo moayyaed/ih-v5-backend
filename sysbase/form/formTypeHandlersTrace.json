@@ -10,12 +10,13 @@
       
       "columns": [
         { "prop": "blk", "title": "Блокирован", "type": "text", "width": 50, "filter":true },
-        { "prop": "type_link", "title": "Обработчик",  "type": "link", "width": 250, "command": "forward" },
+        { "prop": "type_link", "title": "Обработчик",  "type": "link", "width": 250, "command": "forward" }, { "prop": "prop", "title": "Свойство/команда/событие",  "type": "text", "width": 100 },
         { "prop": "startStr", "title": "Последний запуск", "type": "text", "width": 128},
         { "prop": "stopStr", "title": "Последний останов", "type": "text", "width": 128},
         { "prop": "duration", "title": "Длительность, мс", "type": "text", "width": 128},
         { "prop": "did_link", "title": "Для устройства", "type": "link", "width": 128, "command": "forward" },
-        { "prop": "count", "title": "Всего запусков", "type": "text", "width": 128 }
+        { "prop": "count", "title": "Всего запусков", "type": "text", "width": 128 },
+        { "prop": "error", "title": "Ошибка", "type": "text", "width": 128 }
       ] 
     }
   ]
