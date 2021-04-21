@@ -97,7 +97,6 @@ const VARIANTS = {
 const DEF_VARIANT = {
   slider:'android',
   input:'minimal'
-
 };
 
 module.exports = async function(projectPath) {
@@ -109,7 +108,6 @@ module.exports = async function(projectPath) {
   transform(getFileList(`${projectPath}/jbase/template`));
   console.log('INFO: Update project dialogs');
   transform(getFileList(`${projectPath}/jbase/dialog`));
-
 };
 
 function transform(list) {
@@ -134,7 +132,7 @@ function update(data) {
     const d = data.elements[name];
 
     if (d.type == 'slider' || d.type == 'input') {
-      let variant = d.variant && d.variant.value && d.variant.value.id ? d.variant.value.id : DEF_VARIANT(d.type);
+      let variant = d.variant && d.variant.value && d.variant.value.id ? d.variant.value.id : DEF_VARIANT[d.type];
       delete d.variant;
       if (!VARIANTS[d.type][variant]) variant = DEF_VARIANT(d.type);
      
