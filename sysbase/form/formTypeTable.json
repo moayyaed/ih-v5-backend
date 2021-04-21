@@ -14,7 +14,7 @@
       "columns": [
 
         { "prop": "title", "title": "$Type", "type": "link", "command":"forward",  "width": 250, "filter":true  },
-        { "prop": "ruledn_pref", "title": "$Ruledn_pref", "type": "text",  "width": 200, "filter":true},
+        { "prop": "ruledn_pref", "title": "$Ruledn_pref_C", "type": "text",  "width": 200, "filter":true},
         { "prop": "path", "title": "$Folder", "type": "text",  "width": 200, "filter":true },
         { "prop": "tags", "title": "$Tags", "type": "text",  "width": 200, "filter":true }
       ]

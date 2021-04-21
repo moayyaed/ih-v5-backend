@@ -910,6 +910,7 @@
   { "id": "ProjectsTable", "note": "Таблица проектов" },
 
   { "id": "Ruledn_pref", "note": "Префикс при именовании нового устройства" },
+  { "id": "Ruledn_pref_C", "note": "Префикс" },
   { "id": "Ruledn_len", "note": "Длина при именовании нового устройства " },
   { "id": "LinkToDeviceProperty", "note": "Привязка к устройcтву" },
   { "id": "Var_Id", "note": "Имя переменной" },
