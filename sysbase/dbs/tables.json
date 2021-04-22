@@ -647,6 +647,11 @@
     "collection": "projects"
   },
 
+  "licenses": {
+    "store": "db",
+    "collection": "licenses"
+  },
+
   "dbagentgroup": {
     "store": "db",
     "collection": "dbagents",

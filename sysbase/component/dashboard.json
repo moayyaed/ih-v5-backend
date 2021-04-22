@@ -6,7 +6,11 @@
       "component": [{ "id": "formDashboardCommon", "type": "xform" }]
     },
 
-  
+    {
+      "id": "tabLicenses",
+      "title": "Лицензии",
+      "component": [{ "id": "formLicenses", "type": "form" }]
+    },
 
     {
       "id": "tabDashboardLog",

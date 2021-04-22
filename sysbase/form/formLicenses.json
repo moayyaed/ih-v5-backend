@@ -1,0 +1,53 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "hide": "1==1"},
+    { "id": "p3", "xs": 4, "class": "main", "table": "licenses"},
+
+    {
+      "id": "p5",
+      "xs": 8,
+      "class": "main",
+      "table": "licensesListTable",
+      "height": 300
+    }
+  ],
+  "spacing": 10,
+ 
+
+  "p1": [
+    { "prop": "__expert", "title": "", "type": "text", "hide": "1==1" },
+
+    { "prop": "noepert_txt", "title": "Настройки доступны в режиме Эксперт", "type": "header" }
+  ],
+
+  "p3": [
+    
+    {
+      "prop": "",
+      "title": "Введите лицензионный ключ",
+      "type": "header"
+    },
+    { "prop": "newlicense", "title": "", "type": "input" },
+    {
+      "prop": "activateButton",
+      "title": "АКТИВИРОВАТЬ",
+      "type": "button",
+      "command": "activate",
+      "param": ""
+    }
+  ],
+  "p5": [
+    { "prop": "active_txt", "title": "Установленные лицензии", "type": "header" },
+    {
+      "type": "table",
+      "prop": "licensesListTable",
+
+      "columns": [
+        { "prop": "dts", "title": "Дата активации", "type": "text", "width": 150 },
+        { "prop": "id", "title": "Лицензионный ключ", "type": "text", "width": 250 },
+        { "prop": "title", "title": "Продукт", "type": "text", "width": 350 },
+        { "prop": "status", "title": "Статус", "type": "text", "width": 150 }
+      ]
+    }
+  ]
+}
