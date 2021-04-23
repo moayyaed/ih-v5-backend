@@ -1,0 +1,50 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "clear", "height": "fill", "hide": "data.p1.registryState == 'OK'" },
+    { "id": "p3", "xs": 4, "class": "main", "height": "fill", "hide": "data.p1.registryState != 'OK'"  },
+    { "id": "p5", "xs": 8, "class": "main", "height": "fill", "hide": "data.p1.registryState != 'OK'"  }
+  ],
+  "spacing": 10,
+
+  "p1": [
+    { "prop": "registryState", "title": "", "type": "text", "hide":"1==1" },
+    
+    {
+      "title": "",
+      "type": "portalauth",
+
+      "prop": "portalauth"
+    }
+  ],
+
+  "p3": [
+    
+    {
+      "prop": "",
+      "title": "Введите лицензионный ключ",
+      "type": "header"
+    },
+    { "prop": "newlicense", "title": "", "type": "input" },
+    {
+      "prop": "activateButton",
+      "title": "АКТИВИРОВАТЬ",
+      "type": "button",
+      "command": "activate",
+      "param": ""
+    }
+  ],
+  "p5": [
+    { "prop": "active_txt", "title": "Установленные лицензии", "type": "header" },
+    {
+      "type": "table",
+      "prop": "licensesListTable",
+
+      "columns": [
+        { "prop": "dts", "title": "Дата активации", "type": "text", "width": 150 },
+        { "prop": "id", "title": "Лицензионный ключ", "type": "text", "width": 250 },
+        { "prop": "title", "title": "Продукт", "type": "text", "width": 350 },
+        { "prop": "status", "title": "Статус", "type": "text", "width": 150 }
+      ]
+    }
+  ]
+}
