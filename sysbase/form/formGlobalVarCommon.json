@@ -13,7 +13,7 @@
     { "prop": "name", "title": "$Name", "type": "input" },
     { "prop": "defval", "title": "$DefaultValue", "type": "input" },
     { "prop": "setdef", "title": "$SetDef", "type": "cb" },
-    { "prop": "log", "title": "$LogCommand", "type": "cb" },
+    { "prop": "save", "title": "Сохранять в журнале", "type": "cb" },
  
     {
       "prop": "scriptOnChange",

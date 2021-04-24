@@ -1,24 +1,33 @@
 {
   "grid": [
-  
-    { "id": "p3", "xs": 12, "class": "main", "table": "devicelogTable", "height": "fill" }
+    { "id": "p1", "xs": 6, "class": "main", "table": "globals", "hide":"1==1"},
+    { "id": "p2", "xs": 6, "class": "main", "table": "glcurrentTable" },
+    { "id": "p3", "xs": 6, "class": "main", "table": "devicelogTable", "height": "fill", "hide":"!data.p1.save" }
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "globals" },
+  "p1": [
+    { "prop": "save", "title": "Сохранять в журнале", "type": "text" }
+  ],
+
+  "p2": [
+    { "prop": "val", "title": "Текущее значение", "type": "text" },
+    { "prop": "ts", "title": "Время изменения", "type": "text" },
+    {
+      "prop": "_inputval",
+      "title": "Присвоить значение",
+      "type": "input"
+    }
+  ],
 
   "p3": [
     {
       "title": "",
       "type": "table",
       "prop": "devicelogTable",
-     
 
       "columns": [
         { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 150 },
-        { "prop": "did_prop", "title": "Переменная", "type": "link", "width": 450, "command": "forward"  },
-        { "prop": "val", "title": "Значение", "type": "text" ,  "width": 100},
-        { "prop": "src", "title": "Отправитель", "type": "text" ,  "width": 150},
-        { "prop": "txt", "title": "", "type": "text" ,  "width": 250}
+        { "prop": "val", "title": "Значение", "type": "text", "width": 100 }
       ]
     }
   ]
