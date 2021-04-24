@@ -4,8 +4,9 @@
   "devicedb": { "folder": "jbasepath" },
   "devhard": { "folder": "jbasepath" },
 
-  "devparam": { "folder": "jbasepath" },
+  "devparam": { "folder": "jbasepath", "needCompact":true },
   "devcurrent": { "folder": "operativepath", "needCompact":true },
+  "glcurrent": { "folder": "operativepath", "needCompact":true },
 
   "customtables": { "folder": "jbasepath" },
   

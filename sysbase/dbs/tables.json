@@ -97,6 +97,11 @@
     "collection": "devcurrent"
   },
 
+  "glcurrent": {
+    "store": "db",
+    "collection": "glcurrent"
+  },
+
   "customtablegroup": {
     "store": "db",
     "collection": "customtables",
