@@ -41,7 +41,7 @@
     {
       "type": "table",
       "prop": "licensesListTable",
-
+      "rowHeight": 44,
       "columns": [
         { "prop": "dts", "title": "Дата активации", "type": "text", "width": 150 },
         { "prop": "key", "title": "Лицензионный ключ", "type": "text", "width": 250 },
