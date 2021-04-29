@@ -28,6 +28,7 @@
   ],
 
   "p9": [
+    { "prop": "blkstr", "title": "", "type": "text", "hide": "!data.p9.blkstr" },
     { "prop": "errstr", "title": "Ошибка! Подробности в логе системы", "type": "text", "hide": "!data.p9.errstr" },
     { "prop": "handler", "title": "Функция-обработчик", "type": "script", "disabled": false, "hide": "!data.p1.fuse" }
   ]
