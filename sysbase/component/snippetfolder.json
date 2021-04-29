@@ -1,7 +1,8 @@
 {
   "tabs": [
     { "id": "tabSnippetFolder",  "title": "Свойства папки", "component": [{ "id": "formSnippetFolder", "type": "form" }]  },
-    { "id": "tabSnippetTable",  "title": "Таблица сниппетов", "component": [{ "id": "formSnippetTable", "type": "form" }]  }
+    { "id": "tabSnippetTable",  "title": "Таблица сниппетов", "component": [{ "id": "formSnippetTable", "type": "form" }]  },
+    { "id": "tabSnippetRun",  "title": "Запуск", "component": [{ "id": "formSnippetRun", "type": "form" }]  }
   ],
   "defaultTab": "tabSnippetFolder"
 }

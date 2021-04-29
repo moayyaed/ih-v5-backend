@@ -106,6 +106,10 @@
     "store": "none"
   },
 
+  "snippetsRunTable": {
+    "store": "none"
+  },
+
   "customtablegroup": {
     "store": "db",
     "collection": "customtables",
