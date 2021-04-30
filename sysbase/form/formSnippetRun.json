@@ -1,7 +1,5 @@
 {
-  "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table":"snippetsRunTable", "height":"fill"}
-  ],
+  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "snippetsRunTable", "height": "fill" }],
   "spacing": 10,
 
   "p1": [
@@ -11,13 +9,28 @@
       "prop": "snippetsRunTable",
 
       "columns": [
-
-        { "prop": "snippet_link", "title": "Сниппет", "type": "link",  "command":"forward",  "width": 200, "filter":true  },
-        { "prop": "target_link", "title": "Целевое устр-во (переменная)", "type": "link",  "command":"forward",   "width": 200, "filter":true },
-        { "prop": "period", "title": "Период, сек", "type": "text",  "width": 100, "filter":true },
-        { "prop": "startStr", "title": "Время запуска", "type": "text",  "width": 150, "filter":true },
-        { "prop": "stopStr", "title": "Время останова", "type": "text",  "width": 150, "filter":true },
-        { "prop": "err", "title": "", "type": "text",  "width": 200, "filter":true }
+        {
+          "prop": "snippet_link",
+          "title": "Сниппет",
+          "type": "link",
+          "command": "forward",
+          "width": 200,
+          "filter": true
+        },
+        {
+          "prop": "target_link",
+          "title": "Целевое устр-во (переменная)",
+          "type": "link",
+          "command": "forward",
+          "width": 200,
+          "filter": true
+        },
+        { "prop": "period", "title": "Период, сек", "type": "text", "width": 100, "filter": true },
+        { "prop": "startStr", "title": "Время запуска", "type": "text", "width": 150, "filter": true },
+        { "prop": "stopStr", "title": "Время останова", "type": "text", "width": 150, "filter": true },
+        { "prop": "qtsStr", "title": "Следующий запуск", "type": "text", "width": 150, "filter": true },
+        { "prop": "resets", "title": "Число сбросов", "type": "text", "width": 100, "filter": true },
+        { "prop": "errstr", "title": "", "type": "text", "width": 200, "filter": true }
       ]
     }
   ]
