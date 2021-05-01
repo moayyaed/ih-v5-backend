@@ -1,0 +1,47 @@
+{
+  "grid": [
+   
+    { "id": "p2", "xs": 12, "class": "main", "table": "typepropalertTable", "height": "fill" }
+  ],
+  "spacing": 10,
+
+  "p2": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "typepropalertTable",
+
+      "columns": [
+       
+        { "prop": "thval", "title": "При значении", "type": "input", "width": 250 },
+        { "prop": "message", "title": "Сообщение", "type": "input", "width": 250 },
+        {
+          "prop": "level",
+          "title": "$Level",
+          "type": "droplist",
+          "data": [
+            { "id": 0, "title": "Норма" },
+            { "id": 1, "title": "Предупреждение" },
+            { "id": 2, "title": "Авария" }
+          ],
+          "width": 80
+        },
+        { "prop": "delay", "title": "Время фиксации (сек)", "type": "number", "width": 80 },
+        { "prop": "needAck", "title": "Требуется квитирование", "type": "cb", "width": 100,   "hide": "!data.level.id" },
+        {
+          "prop": "toClose",
+          "title": "Закрытие",
+          "type": "droplist",
+          "data": [
+            { "id": "stop", "title": "При завершении события" },
+            { "id": "ack", "title": "При квитировании" },
+            { "id": "sa", "title": "Завершение + Квитирование" }
+          ],
+          "hide": "!data.level.id",
+          "width": 350
+        },
+        { "prop": "info", "title": "Информирование", "type": "input", "width": 250 }
+      ]
+    }
+  ]
+}

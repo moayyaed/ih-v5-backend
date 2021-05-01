@@ -56,6 +56,13 @@
           "width": 200,
           "hide": "data.op.id == 'cmd'"
         },
+        {
+          "prop": "ale",
+          "title": "Тревоги",
+          "type": "cb",
+          "width": 100,
+          "hide": "data.op.id == 'cmd'"
+        },
         { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide": "data.vtype.id != 'N'" },
         { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide": "data.vtype.id != 'N'" },
         { "prop": "dig", "title": "$Decdig", "type": "number", "width": 100, "hide": "data.vtype.id != 'N'" },

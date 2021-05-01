@@ -3,6 +3,7 @@
     { "id": "tabTypeCommon", "title": "Тип", "component": [{ "id": "formTypeCommon", "type": "form" }] },
     { "id": "tabTypeProps", "title": "Свойства", "component": [{ "id": "formTypePropTable", "type": "form" }] },
     { "id": "tabTypeHandlers", "title": "Обработчики", "component": [{ "id": "formTypeHandlers", "type": "form" }] },
+    { "id": "tabTypeAlerts", "title": "Тревоги", "component": [{ "id": "formTypeAlerts", "type": "form" }] },
     { "id": "tabTypeDevicesTable", "title": "Используется для устройств", "component": [{ "id": "formTypeDevicesTable", "type": "form" }] },
     { "id": "tabTypeExport", "title": "Параметры для выгрузки", "component": [{ "id": "formTypeExport", "type": "form" }] }
    

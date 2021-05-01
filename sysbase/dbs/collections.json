@@ -28,6 +28,7 @@
   "scenes": { "folder": "jbasepath" },
   "scenecalls": { "folder": "jbasepath" },
   "alertrules": { "folder": "jbasepath" },
+  "typealertrules": { "folder": "jbasepath" },
 
   "images": { "folder": "jbasepath" },
 

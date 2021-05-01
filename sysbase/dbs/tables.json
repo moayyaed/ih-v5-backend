@@ -277,6 +277,12 @@
     "ruleID": { "pref": "t", "len": 3 }
   },
 
+  "typepropalertTable": {
+    "store": "db",
+    "collection": "typealertrules",
+    "genfield": "props"
+  },
+
   "typesTreeTable": { "store": "tree", "tree": "types", "collection": "types", "rows": true },
   "typedevicesTable": { "store": "db", "collection": "devices", "rows": true },
 
@@ -377,6 +383,12 @@
         "message": { "notempty": true }
       }
     }
+  },
+
+  "typealertrules":{
+    "store": "db",
+    "collection": "alertrules",
+    "genfield": "props"
   },
 
   "scenegroup": {
