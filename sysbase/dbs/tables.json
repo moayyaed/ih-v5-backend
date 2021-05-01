@@ -356,6 +356,10 @@
     "store": "none"
   },
 
+  "globalhandlersTraceTable": {
+    "store": "none"
+  },
+
   "alertrulegroup": {
     "store": "db",
     "collection": "alertrules",
