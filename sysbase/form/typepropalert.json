@@ -19,8 +19,9 @@
       "prop": "typepropalertTable_B",
 
       "columns": [
-       
-        { "prop": "theval", "title": "При значении", "type": "txt", "width": 64 },
+        { "prop": "id", "title": "", "type": "txt", "width": 5, "hide":"1==1" },
+        { "prop": "title", "title": "", "type": "txt", "width": 150 },
+        { "prop": "theval", "title": "При значении", "type": "input", "width": 64 },
         { "prop": "message", "title": "Сообщение", "type": "input", "width": 64 },
         {
           "prop": "level",
@@ -31,10 +32,11 @@
             { "id": 1, "title": "Предупреждение" },
             { "id": 2, "title": "Авария" }
           ],
+          "hide": "data.id == 'B_0'",
           "width": 100
         },
         { "prop": "delay", "title": "Время фиксации (сек)", "type": "number", "width": 80 },
-        { "prop": "needAck", "title": "Требуется квитирование", "type": "cb", "width": 100,   "hide": "!data.level.id" },
+        { "prop": "needAck", "title": "Требуется квитирование", "type": "cb", "width": 100,   "hide": "data.id == 'B_0'" },
         {
           "prop": "toClose",
           "title": "Закрытие",
@@ -44,7 +46,7 @@
             { "id": "ack", "title": "При квитировании" },
             { "id": "sa", "title": "Завершение + Квитирование" }
           ],
-          "hide": "!data.level.id",
+          "hide": "data.id == 'B_0'",
           "width": 250
         },
         { "prop": "info", "title": "Информирование", "type": "input", "width": 150 }
@@ -59,12 +61,14 @@
 
       "columns": [
        
-        { "prop": "id", "title": "", "type": "txt", "width": 150 },
-        { "prop": "theval", "title": "При значении", "type": "input", "width": 250 },
-        { "prop": "message", "title": "Сообщение", "type": "input", "width": 250 },
+        { "prop": "id", "title": "", "type": "txt", "width": 50, "hide":"1==1" },
+        { "prop": "title", "title": "", "type": "txt", "width": 150 },
+        { "prop": "use", "title": "Использовать", "type": "cb", "width": 100, "hide": "data.id == 'N_0'"  },
+        { "prop": "theval", "title": "При значении", "type": "input", "width": 250, "hide": "!data.use || data.id == 'N_0'" },
+        { "prop": "message", "title": "Сообщение", "type": "input", "width": 250,  "hide": "!data.use && data.id != 'N_0'" },
        
-        { "prop": "delay", "title": "Время фиксации (сек)", "type": "number", "width": 80 },
-        { "prop": "needAck", "title": "Требуется квитирование", "type": "cb", "width": 100, "hide": "data.id == 'N_0'"},
+        { "prop": "delay", "title": "Время фиксации (сек)", "type": "number", "width": 80, "hide": "!data.use" },
+        { "prop": "needAck", "title": "Требуется квитирование", "type": "cb", "width": 100, "hide": "!data.use || data.id == 'N_0'"},
         {
           "prop": "toClose",
           "title": "Закрытие",
@@ -74,7 +78,7 @@
             { "id": "ack", "title": "При квитировании" },
             { "id": "sa", "title": "Завершение + Квитирование" }
           ],
-          "hide": "data.id == 'N_0'",
+          "hide": "!data.use || data.id == 'N_0'",
           "width": 350
         },
         { "prop": "info", "title": "Информирование", "type": "input", "width": 250 }
