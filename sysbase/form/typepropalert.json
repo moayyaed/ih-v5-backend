@@ -1,20 +1,27 @@
 {
   "grid": [
    
-    { "id": "p2", "xs": 12, "class": "main", "table": "typepropalertTable", "height": "fill" }
+    { "id": "p1", "xs": 12, "class": "main", "table": "typepropalertSelector", "hide": "1==1" },
+    { "id": "p2", "xs": 12, "class": "main", "table": "typepropalertTable", "height": 300, "hide": "data.p1.vtype!='B'" },
+    { "id": "p3", "xs": 12, "class": "main", "table": "typepropalertTable", "height": 300, "hide": "data.p1.vtype!='N'" }
   ],
   "spacing": 10,
+
+  "p1": [
+    { "prop": "vtype", "title": "Тип переменной (N,B,S)", "type": "text"},
+    { "prop": "ale", "title": "Включена тревога", "type": "text"}
+  ],
 
   "p2": [
     {
       "title": "",
       "type": "table",
-      "prop": "typepropalertTable",
+      "prop": "typepropalertTable_B",
 
       "columns": [
        
-        { "prop": "thval", "title": "При значении", "type": "input", "width": 250 },
-        { "prop": "message", "title": "Сообщение", "type": "input", "width": 250 },
+        { "prop": "theval", "title": "При значении", "type": "txt", "width": 64 },
+        { "prop": "message", "title": "Сообщение", "type": "input", "width": 64 },
         {
           "prop": "level",
           "title": "$Level",
@@ -24,7 +31,7 @@
             { "id": 1, "title": "Предупреждение" },
             { "id": 2, "title": "Авария" }
           ],
-          "width": 80
+          "width": 100
         },
         { "prop": "delay", "title": "Время фиксации (сек)", "type": "number", "width": 80 },
         { "prop": "needAck", "title": "Требуется квитирование", "type": "cb", "width": 100,   "hide": "!data.level.id" },
@@ -38,6 +45,36 @@
             { "id": "sa", "title": "Завершение + Квитирование" }
           ],
           "hide": "!data.level.id",
+          "width": 250
+        },
+        { "prop": "info", "title": "Информирование", "type": "input", "width": 150 }
+      ]
+    }
+  ],
+  "p3": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "typepropalertTable_N",
+
+      "columns": [
+       
+        { "prop": "id", "title": "", "type": "txt", "width": 150 },
+        { "prop": "theval", "title": "При значении", "type": "input", "width": 250 },
+        { "prop": "message", "title": "Сообщение", "type": "input", "width": 250 },
+       
+        { "prop": "delay", "title": "Время фиксации (сек)", "type": "number", "width": 80 },
+        { "prop": "needAck", "title": "Требуется квитирование", "type": "cb", "width": 100, "hide": "data.id == 'N_0'"},
+        {
+          "prop": "toClose",
+          "title": "Закрытие",
+          "type": "droplist",
+          "data": [
+            { "id": "stop", "title": "При завершении события" },
+            { "id": "ack", "title": "При квитировании" },
+            { "id": "sa", "title": "Завершение + Квитирование" }
+          ],
+          "hide": "data.id == 'N_0'",
           "width": 350
         },
         { "prop": "info", "title": "Информирование", "type": "input", "width": 250 }

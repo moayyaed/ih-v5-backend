@@ -278,9 +278,11 @@
   },
 
   "typepropalertTable": {
-    "store": "db",
-    "collection": "typealertrules",
-    "genfield": "props"
+    "store": "none"
+  },
+
+  "typepropalertSelector": {
+    "store": "none"
   },
 
   "typesTreeTable": { "store": "tree", "tree": "types", "collection": "types", "rows": true },
