@@ -731,6 +731,7 @@
   "mainlog": { "store": "db", "collection": "mainlog" },
 
   "alerts": { "store": "db", "collection": "alerts" },
+  "alertlogTable": { "store": "none", "rows": true },
 
   "systemsettingsTable": {
     "store": "none",

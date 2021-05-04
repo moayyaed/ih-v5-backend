@@ -1,0 +1,28 @@
+{
+  "grid": [
+  
+    { "id": "p3", "xs": 12, "class": "main", "table": "alertlogTable", "height": "fill" }
+  ],
+  "spacing": 10,
+
+  "p3": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "alertlogTable",
+     
+
+      "columns": [
+        { "prop": "stateStr", "title": "Состояние", "type": "text", "width": 100, "filter":true },
+        { "prop": "tsStartStr", "title": "Время начала", "type": "text", "width": 150, "filter":true },
+         { "prop": "txt", "title": "Сообщение", "type": "text" ,  "width": 250, "filter":true},
+         { "prop": "tsStopStr", "title": "Время завершения", "type": "text", "width": 150, "filter":true },
+         { "prop": "rowbutton", "title": "Действие", "type": "button", "width": 150 },
+         { "prop": "tsAckStr", "title": "Время квитирования", "type": "text", "width": 150, "filter":true },
+         { "prop": "userId", "title": "Оператор", "type": "text", "width": 150, "filter":true },
+        { "prop": "level", "title": "Уровень", "type": "text" ,  "width": 150, "filter":true}
+     
+      ]
+    }
+  ]
+}
