@@ -36,15 +36,14 @@
           "width": 100
         },
         { "prop": "delay", "title": "Время фиксации (сек)", "type": "number", "width": 80 },
-        { "prop": "needAck", "title": "Требуется квитирование", "type": "cb", "width": 100,   "hide": "data.id == 'B_0'" },
         {
           "prop": "toClose",
           "title": "Закрытие",
           "type": "droplist",
           "data": [
-            { "id": "stop", "title": "При завершении события" },
+            { "id": "norm", "title": "При нормализации" },
             { "id": "ack", "title": "При квитировании" },
-            { "id": "sa", "title": "Завершение + Квитирование" }
+            { "id": "normAndAck", "title": "При квитировании+нормализации" }
           ],
           "hide": "data.id == 'B_0'",
           "width": 250
@@ -65,18 +64,17 @@
         { "prop": "title", "title": "", "type": "txt", "width": 150 },
         { "prop": "use", "title": "Использовать", "type": "cb", "width": 100, "hide": "data.id == 'N_0'"  },
         { "prop": "theval", "title": "При значении", "type": "input", "width": 250, "hide": "!data.use || data.id == 'N_0'" },
-        { "prop": "message", "title": "Сообщение", "type": "input", "width": 250,  "hide": "!data.use && data.id != 'N_0'" },
+        { "prop": "message", "title": "Сообщение нестандартное", "type": "input", "width": 250,  "hide": "!data.use && data.id != 'N_0'" },
        
         { "prop": "delay", "title": "Время фиксации (сек)", "type": "number", "width": 80, "hide": "!data.use" },
-        { "prop": "needAck", "title": "Требуется квитирование", "type": "cb", "width": 100, "hide": "!data.use || data.id == 'N_0'"},
         {
           "prop": "toClose",
           "title": "Закрытие",
           "type": "droplist",
           "data": [
-            { "id": "stop", "title": "При завершении события" },
+            { "id": "norm", "title": "При нормализации" },
             { "id": "ack", "title": "При квитировании" },
-            { "id": "sa", "title": "Завершение + Квитирование" }
+            { "id": "normAndAck", "title": "При квитировании+нормализации" }
           ],
           "hide": "!data.use || data.id == 'N_0'",
           "width": 350
