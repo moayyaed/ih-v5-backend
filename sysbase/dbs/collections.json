@@ -7,6 +7,7 @@
   "devparam": { "folder": "jbasepath", "needCompact":true },
   "devcurrent": { "folder": "operativepath", "needCompact":true },
   "glcurrent": { "folder": "operativepath", "needCompact":true },
+  "alerts": { "folder": "operativepath", "needCompact":true },
 
   "customtables": { "folder": "jbasepath" },
   
@@ -15,7 +16,6 @@
   "globals": { "folder": "jbasepath" },
   "locals": { "folder": "jbasepath" },
 
-  "alerts": { "folder": "jbasepath" },
   "units": { "folder": "jbasepath" },
   "snippets": { "folder": "jbasepath" },
   "restapihandlers": { "folder": "jbasepath" },
