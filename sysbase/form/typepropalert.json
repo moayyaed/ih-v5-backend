@@ -79,7 +79,8 @@
           "hide": "!data.use || data.id == 'N_0'",
           "width": 350
         },
-        { "prop": "info", "title": "Информирование", "type": "input", "width": 250 }
+        
+        { "prop": "info", "title": "Правило информирования", "type": "droplist", "data":"inforuleList", "width": 250 }
       ]
     }
   ]

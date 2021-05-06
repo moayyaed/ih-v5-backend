@@ -1,6 +1,6 @@
 {
   "tabs": [
-    { "id": "tabInfogroup",  "title": "Группа информирования", "component": [{ "id": "formInfogroup", "type": "form" }]  }
+    { "id": "tabInfogroup",  "title": "Группа", "component": [{ "id": "formInfogroup", "type": "form" }]  }
   ],
   "defaultTab": "tabInfogroup"
 }

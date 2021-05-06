@@ -26,7 +26,7 @@
       "columns": [
         {
           "prop": "groupId",
-          "title": "Входит в группу информирования",
+          "title": "Входит в группу",
           "type": "droplist",
           "data": "infogroupList",
           "width": 300

@@ -372,13 +372,13 @@
     "store": "db",
     "collection": "infogroups",
     "filter": { "folder": 1 },
-    "defRootTitle": "Группы информирования"
+    "defRootTitle": "Группы"
   },
 
   "infogroups": {
     "store": "db",
     "collection": "infogroups",
-    "defRootTitle": "Группы информирования",
+    "defRootTitle": "Группы",
     "default": { "name": "Новая группа" },
     "ruleID": { "pref": "info", "len": 3 }
   },
