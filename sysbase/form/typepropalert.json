@@ -35,7 +35,7 @@
           "hide": "data.id == 'B_0'",
           "width": 100
         },
-        { "prop": "delay", "title": "Время фиксации (сек)", "type": "number", "width": 80 },
+        { "prop": "delay", "title": "Задержка (сек)", "type": "number", "width": 80 },
         {
           "prop": "toClose",
           "title": "Закрытие",
@@ -48,7 +48,7 @@
           "hide": "data.id == 'B_0'",
           "width": 250
         },
-        { "prop": "info", "title": "Информирование", "type": "input", "width": 150 }
+        { "prop": "info", "title": "Правило информирования", "type": "droplist", "data":"inforuleList", "width": 250 }
       ]
     }
   ],
