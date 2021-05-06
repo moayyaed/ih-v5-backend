@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabInforule",  "title": "Правило информирования", "component": [{ "id": "formInforule", "type": "form" }]  }
+  ],
+  "defaultTab": "tabInforule"
+}

@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabInfogroupFolder",  "title": "Информирование", "component": [{ "id": "formInfoFolder", "type": "form" }]  }
+  ],
+  "defaultTab": "tabInfogroupFolder"
+}

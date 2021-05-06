@@ -4,6 +4,11 @@
   "devicedb": { "folder": "jbasepath" },
   "devhard": { "folder": "jbasepath" },
 
+  "infogroups": { "folder": "jbasepath" },
+  "infogroup_tab": { "folder": "jbasepath" },
+  "inforules": { "folder": "jbasepath" },
+  "inforule_tab": { "folder": "jbasepath" },
+
   "devparam": { "folder": "jbasepath", "needCompact":true },
   "devcurrent": { "folder": "operativepath", "needCompact":true },
   "glcurrent": { "folder": "operativepath", "needCompact":true },

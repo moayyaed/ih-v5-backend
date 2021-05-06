@@ -368,6 +368,87 @@
     "genfield": "props"
   },
 
+  "infogroupsgroup": {
+    "store": "db",
+    "collection": "infogroups",
+    "filter": { "folder": 1 },
+    "defRootTitle": "Группы информирования"
+  },
+
+  "infogroups": {
+    "store": "db",
+    "collection": "infogroups",
+    "defRootTitle": "Группы информирования",
+    "default": { "name": "Новая группа" },
+    "ruleID": { "pref": "info", "len": 3 }
+  },
+
+  "infogroup_tab": {
+    "store": "db",
+    "collection": "infogroup_tab",
+    "rows": true
+  },
+
+  "infogroup_bygroup": {
+    "store": "db",
+    "collection": "infogroup_tab",
+    "rows": true
+  },
+
+  "infogroup_byuser": {
+    "store": "db",
+    "collection": "infogroup_tab",
+    "rows": true
+  },
+
+  "inforulesgroup": {
+    "store": "db",
+    "collection": "inforules",
+    "filter": { "folder": 1 },
+    "defRootTitle": "Правила информирования"
+  },
+
+  "inforules": {
+    "store": "db",
+    "collection": "inforules",
+    "defRootTitle": "Правила информирования",
+    "requiredRecords": [
+      {
+        "check": { "_id": "iruleadmin" },
+        "add": {
+          "_id": "iruleadmin",
+          "parent": "inforulesgroup",
+          "order": 100,
+          "name": "Стандарт"
+        }
+      }
+    ],
+    "default": { "name": "Новое правило" },
+    "ruleID": { "pref": "irule", "len": 3 }
+  },
+
+  "inforule_tab": {
+    "store": "db",
+    "collection": "inforule_tab",
+    "rows": true,
+    "requiredRecords": [
+      {
+        "check": { "_id": "iruleadmin" },
+        "add": {
+          "_id": "iruleadmin",
+          "ruleId": "iruleadmin",
+          "userId": "admin"
+        }
+      }
+    ]
+  },
+
+  "inforule_byrule": {
+    "store": "db",
+    "collection": "inforule_tab",
+    "rows": true
+  },
+
   "scenegroup": {
     "store": "db",
     "collection": "scenes",

@@ -1,0 +1,71 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 4, "class": "main", "table": "inforules" },
+    { "id": "p2", "xs": 4, "class": "main", "table": "inforules" },
+    { "id": "p3", "xs": 4, "class": "main", "table": "inforules" },
+   
+    { "id": "p5", "xs": 12, "class": "main", "table": "inforule_byrule", "height": "fill" }
+  ],
+  "spacing": 8,
+ 
+
+  "p1": [
+    { "prop": "name", "title": "$Name", "type": "input" },
+    { "prop": "byplace", "title": "Учитывать объект", "type": "cb" },
+    { "prop": "bytag", "title": "Учитывать тэг", "type": "cb" }
+  ],
+
+  "p2": [
+    { "prop": "send_limit", "title": "Ограничение отправки сообщений в течение интервала", "type": "cb" },
+    { "prop": "send_total", "title": "Отправлять сообщений не более чем", "type": "input", "hide":"!data.p2.send_limit" },
+    { "prop": "send_one", "title": "в том числе по одному событию  не более чем", "type": "input", "hide":"!data.p2.send_limit" },
+    { "prop": "send_interval", "title": "Длительность интервала", "type": "input", "hide":"!data.p2.send_limit" }
+  ],
+  "p3": [
+    { "prop": "txt", "title": "$Comment", "type": "textarea" }
+ 
+  ],
+  
+
+  "p5": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "inforule_byrule",
+      "popupenable": true,
+
+      "columns": [
+       
+        {
+          "prop": "fromlevel",
+          "title": "При уровне сообщения не менее",
+          "type": "droplist",
+          "data": [
+            { "id": 0, "title": "Любое" },
+            { "id": 1, "title": "Предупреждение" },
+            { "id": 2, "title": "Авария" }
+          ],
+          "width": 200
+        },
+        {
+          "prop": "onplace",
+          "title": "По объекту",
+          "type": "droplist",
+          "data": "placeList",
+          "width": 200
+        },
+        {
+          "prop": "ontag",
+          "title": "По тэгу",
+          "type": "input",
+          "data": "taglist",
+          "width": 150
+        },
+    
+        { "prop": "groupId", "title": "Отправлять группе", "type": "droplist", "data":"infogroupList", "width":200 },
+        { "prop": "userId", "title": "Отправлять пользователю", "type": "droplist", "data":"userList", "width":200 }
+      
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main"}
+  ],
+  "spacing": 8,
+ 
+  "p1": [
+    { "prop": "header_txt", "title": "Информирование", "type": "header" }
+  ]
+}

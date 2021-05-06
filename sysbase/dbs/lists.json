@@ -71,6 +71,16 @@
     "propmap": { "_id": "id", "name": "title", "folder": "folder" }
   },
 
+  "userList": {
+    "table": "user",
+    "propmap": {"_id": "id", "name": "title", "folder": "folder"}
+  },
+  
+  "infogroupList": {
+    "table": "infogroups",
+    "propmap": {"_id": "id", "name": "title", "folder": "folder"}
+  },
+
   "fuseList": {
     "data": [
       { "id": 0, "title": "Не используется" },

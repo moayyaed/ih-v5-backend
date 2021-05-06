@@ -1,7 +1,9 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "user" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "user" }
+    { "id": "p1", "xs": 4, "class": "main", "table": "user" },
+
+    { "id": "p5", "xs": 4, "class": "main", "table": "infogroup_byuser" },
+    { "id": "p9", "xs": 4, "class": "main", "table": "user" }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "users" },
@@ -10,10 +12,28 @@
     { "prop": "name", "title": "$User_Name", "type": "input" },
     { "prop": "login", "title": "$User_Login", "type": "input" },
     { "prop": "pwd", "title": "$User_Pwd", "type": "password" },
-    { "prop": "role", "title": "$User_Role", "type": "droplist",  "data": "roleList" },
+    { "prop": "role", "title": "$User_Role", "type": "droplist", "data": "roleList" },
     { "prop": "mainlay", "title": "$User_Mainlay", "type": "droplist", "data": "layoutList" }
-   
   ],
-  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
+
+  "p5": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "infogroup_byuser",
+      "popupenable": true,
+
+      "columns": [
+        {
+          "prop": "groupId",
+          "title": "Входит в группу информирования",
+          "type": "droplist",
+          "data": "infogroupList",
+          "width": 300
+        }
+      ]
+    }
+  ],
   
+  "p9": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
 }

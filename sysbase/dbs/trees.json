@@ -4,7 +4,7 @@
   "places": {
     "branch": {
       "table": "place",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } 
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     },
     "leaf": { "table": "" },
     "expanded": true
@@ -63,7 +63,7 @@
   },
 
   "typeprops": {
-    "update":"no",
+    "update": "no",
     "branch": {
       "table": "typepropsTable",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
@@ -229,7 +229,7 @@
       }
     }
   },
-  
+
   "scriptx": ["scenes"],
 
   "datasource": ["plugins", "snippets", "restapihandlers"],
@@ -277,7 +277,7 @@
     }
   },
 
-  "access": ["users"],
+  "access": ["users", "infogroups", "inforules"],
   "users": {
     "branch": {
       "table": "usergroup",
@@ -285,6 +285,28 @@
     },
     "leaf": {
       "table": "user",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+
+  "infogroups": {
+    "branch": {
+      "table": "infogroupsgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "infogroups",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+
+  "inforules": {
+    "branch": {
+      "table": "inforulesgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "inforules",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
@@ -408,7 +430,6 @@
     }
   },
 
- 
   "analytics": ["charts", "journals", "reports"],
   "charts": {
     "branch": {

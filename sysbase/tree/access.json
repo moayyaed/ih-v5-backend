@@ -4,6 +4,7 @@
       "main": [{ "id": "1", "type": "divider", "title": "Edit" }]
     }
   },
+
   "users": {
     "root": {
       "popup": {
@@ -50,5 +51,84 @@
       },
       "defaultComponent": "userview"
     }
+  },
+
+  "infogroups": {
+    "root": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "Новая группа", "command": "addNode" },
+          { "id": "3", "type": "divider" },
+
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
+        ]
+      },
+      "defaultComponent":"infogroupfolder"
+    },
+    "parent": {
+      "popup": {
+        "main": [
+  
+        ]
+      },
+      "defaultComponent":"infogroupfolder"
+    },
+    "child": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "Новая группа", "command": "addNode" },
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
+        ]
+      },
+      "defaultComponent": "infogroupview"
+    }
+   
+  },
+  "inforules": {
+    "root": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "Новое правило", "command": "addNode" },
+          { "id": "3", "type": "divider" },
+
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
+        ]
+      },
+      "defaultComponent":"infogroupfolder"
+    },
+    "parent": {
+      "popup": {
+        "main": [
+  
+        ]
+      },
+      "defaultComponent":"infogroupfolder"
+    },
+    "child": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "Новое правило", "command": "addNode" },
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
+          { "id": "6", "type": "item", "title": "$Delete", "command": "delete" },
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
+        ]
+      },
+      "defaultComponent": "inforuleview"
+    }
+   
   }
 }

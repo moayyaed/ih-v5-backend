@@ -1,0 +1,32 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 6, "class": "main", "table": "infogroups" },
+   
+    { "id": "p5", "xs": 6, "class": "main", "table": "infogroup_bygroup", "height": "fill" }
+  ],
+  "spacing": 8,
+ 
+
+  "p1": [
+    { "prop": "_id", "title": "ID группы", "type": "text" },
+    { "prop": "name", "title": "$Name", "type": "input" },
+    { "prop": "txt", "title": "$Comment", "type": "textarea" }
+ 
+  ],
+  
+
+  "p5": [
+    {
+      "title": "Участники",
+      "type": "table",
+      "prop": "infogroup_bygroup",
+      "popupenable": true,
+
+      "columns": [
+    
+        { "prop": "userId", "title": "Пользователи", "type": "droplist", "data":"userList", "width":300 }
+      
+      ]
+    }
+  ]
+}
