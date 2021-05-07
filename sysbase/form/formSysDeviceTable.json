@@ -11,11 +11,11 @@
       "prop": "sysdevicesTreeTable",
 
       "columns": [
-        { "prop": "title", "title": "Процесс", "type": "link", "command":"forward",  "width": 250, "filter":true  },
-        { "prop": "stateStr", "title": "Состояние", "type": "text",  "width": 200, "filter":true },
-        { "prop": "memrss", "title": "Выделено памяти всего(RSS), Мб", "type": "text",  "width": 200},
-        { "prop": "memheap", "title": "В т.ч. динамической всего, Мб", "type": "text",  "width": 200 },
-        { "prop": "memhuse", "title": "Используется динамической, Мб", "type": "text",  "width": 200 },
+        { "prop": "title", "title": "Процесс", "type": "link", "command":"forward",  "width": 150, "filter":true  },
+        { "prop": "stateStr", "title": "Состояние", "type": "text",  "width": 150, "filter":true },
+        { "prop": "memrss", "title": "Выделено памяти всего(RSS), Кб", "type": "text",  "width": 150},
+        { "prop": "memheap", "title": "В т.ч. динамической всего, Кб", "type": "text",  "width": 150 },
+        { "prop": "memhuse", "title": "Используется динамической, Кб", "type": "text",  "width": 150 },
         { "prop": "laststartStr", "title": "Время запуска", "type": "text",  "width": 150 }
        
       ]

@@ -2,10 +2,13 @@
   "tabs": [
     { "id": "tabSysDeviceCommon", "title": "Системный индикатор", "component": [{ "id": "formSysDeviceCommon", "type": "form" }] },
     { "id": "tabSysDeviceTable", "title": "Свойства", "component": [{ "id": "formSysDevicePropTable", "type": "form" }] },
-    { "id": "tabSysDeviceScene", "title": "Сценарии", "component": [{ "id": "formSysDeviceScene", "type": "form" }] },
-    { "id": "tabSysDeviceVis", "title": "Ссылки на визуализацию", "component": [{ "id": "formSysDeviceVis", "type": "form" }] },
+    { "id": "tabDeviceUsage", "title": "Использование", "component": [{ "id": "formDeviceUsage", "type": "form" }] },
     { "id": "tabSysDeviceDb", "title": "Запись в БД", "component": [{ "id": "formSysDeviceDb", "type": "form" }] },
-    { "id": "tabSysDeviceLog",  "title": "Журнал", "component": [{ "id": "formSysDeviceLogTable", "type": "form" }]  }
+    {
+      "id": "tabDeviceLastRecs",
+      "title": "Записи в БД за час",
+      "component": [{ "id": "formDeviceLastRecs", "type": "form" }]
+    }
   ],
 
   "defaultTab": "tabSysDeviceCommon"

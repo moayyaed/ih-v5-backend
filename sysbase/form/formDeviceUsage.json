@@ -5,7 +5,7 @@
   
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "devdevices" },
+
   "p1": [
     { "prop": "vis_header", "title": "Визуализация", "type": "header", "size": "h6" },
     {
