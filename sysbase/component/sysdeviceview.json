@@ -3,7 +3,7 @@
     { "id": "tabSysDeviceCommon", "title": "Системный индикатор", "component": [{ "id": "formSysDeviceCommon", "type": "form" }] },
     { "id": "tabSysDeviceTable", "title": "Свойства", "component": [{ "id": "formSysDevicePropTable", "type": "form" }] },
     { "id": "tabDeviceUsage", "title": "Использование", "component": [{ "id": "formDeviceUsage", "type": "form" }] },
-    { "id": "tabSysDeviceDb", "title": "Запись в БД", "component": [{ "id": "formSysDeviceDb", "type": "form" }] },
+    { "id": "tabSysDeviceDb", "title": "Запись в БД", "component": [{ "id": "formDeviceDb", "type": "form" }] },
     {
       "id": "tabDeviceLastRecs",
       "title": "Записи в БД за час",

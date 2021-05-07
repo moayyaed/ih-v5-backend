@@ -1,7 +1,6 @@
 {
   "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "devicedb", "height": 500 }],
   "spacing": 10,
-  "breadcrumbs": { "tree": "devdevices" },
 
   "p1": [
     {
