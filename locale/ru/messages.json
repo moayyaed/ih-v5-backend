@@ -228,6 +228,7 @@
   { "id": "PluginIndicator", "note": "Плагин" },
   { "id": "mainprocess", "note": "Основной процесс" },
   { "id": "dbagent", "note": "DB агент (историческая БД)" },
+  { "id": "logagent", "note": "DB агент (логи)" },
   { "id": "DeleteInstance", "note": "Удалить экземпляр" },
   { "id": "ActivatePlugin", "note": "Активировать плагин" },
   { "id": "DeactivatePlugin", "note": "Деактивировать плагин" },
