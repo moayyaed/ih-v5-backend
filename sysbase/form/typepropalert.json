@@ -2,7 +2,7 @@
   "grid": [
    
     { "id": "p1", "xs": 12, "class": "main", "table": "typepropalertSelector", "hide": "1==1" },
-    { "id": "p2", "xs": 12, "class": "main", "table": "typepropalertTable", "height": 300, "hide": "data.p1.vtype!='B'" },
+    { "id": "p2", "xs": 12, "class": "main", "table": "typepropalertTable", "height": 300, "hide": "data.p1.vtype=='N'" },
     { "id": "p3", "xs": 12, "class": "main", "table": "typepropalertTable", "height": 300, "hide": "data.p1.vtype!='N'" }
   ],
   "spacing": 10,
@@ -19,10 +19,11 @@
       "prop": "typepropalertTable_B",
 
       "columns": [
-        { "prop": "id", "title": "", "type": "txt", "width": 5, "hide":"1==1" },
-        { "prop": "title", "title": "", "type": "txt", "width": 150 },
-        { "prop": "theval", "title": "При значении", "type": "input", "width": 64 },
-        { "prop": "message", "title": "Сообщение", "type": "input", "width": 64 },
+        { "prop": "id", "title": "", "type": "txt", "width": 50 },
+        { "prop": "title", "title": "", "type": "txt", "width": 100 },
+        { "prop": "theval", "title": "При значении", "type": "input", "width": 100 },
+        { "prop": "delay", "title": "Задержка (сек)", "type": "number", "width": 100 },
+        { "prop": "message", "title": "Сообщение", "type": "input", "width": 100 },
         {
           "prop": "level",
           "title": "$Level",
@@ -32,10 +33,10 @@
             { "id": 1, "title": "Предупреждение" },
             { "id": 2, "title": "Авария" }
           ],
-          "hide": "data.id == 'B_0'",
+          "hide": "data.id == 'Norm'",
           "width": 100
         },
-        { "prop": "delay", "title": "Задержка (сек)", "type": "number", "width": 80 },
+      
         {
           "prop": "toClose",
           "title": "Закрытие",
@@ -45,7 +46,7 @@
             { "id": "ack", "title": "При квитировании" },
             { "id": "normAndAck", "title": "При квитировании+нормализации" }
           ],
-          "hide": "data.id == 'B_0'",
+          "hide": "data.id == 'Norm'",
           "width": 250
         },
         { "prop": "info", "title": "Правило информирования", "type": "droplist", "data":"inforuleList", "width": 250 }
@@ -60,13 +61,13 @@
 
       "columns": [
        
-        { "prop": "id", "title": "", "type": "txt", "width": 50, "hide":"1==1" },
-        { "prop": "title", "title": "", "type": "txt", "width": 150 },
-        { "prop": "use", "title": "Использовать", "type": "cb", "width": 100, "hide": "data.id == 'N_0'"  },
-        { "prop": "theval", "title": "При значении", "type": "input", "width": 250, "hide": "!data.use || data.id == 'N_0'" },
-        { "prop": "message", "title": "Сообщение нестандартное", "type": "input", "width": 250,  "hide": "!data.use && data.id != 'N_0'" },
+        { "prop": "id", "title": "", "type": "txt", "width": 50 },
+        { "prop": "title", "title": "", "type": "txt", "width": 100 },
+        { "prop": "use", "title": "Использовать", "type": "cb", "width": 100, "hide": "data.id == 'Norm'"  },
+        { "prop": "theval", "title": "При значении", "type": "input", "width": 100, "hide": "!data.use || data.id == 'Norm'" },
        
-        { "prop": "delay", "title": "Время фиксации (сек)", "type": "number", "width": 80, "hide": "!data.use" },
+        { "prop": "delay", "title": "Задержка (сек)", "type": "number", "width": 100, "hide": "!data.use" },
+        { "prop": "message", "title": "Сообщение нестандартное", "type": "input", "width": 150,  "hide": "!data.use && data.id != 'Norm'" },
         {
           "prop": "toClose",
           "title": "Закрытие",
@@ -74,12 +75,12 @@
           "data": [
             { "id": "norm", "title": "При нормализации" },
             { "id": "ack", "title": "При квитировании" },
-            { "id": "normAndAck", "title": "При квитировании+нормализации" }
+            { "id": "normAndAck", "title": "Квитирование+нормализация" }
           ],
-          "hide": "!data.use || data.id == 'N_0'",
-          "width": 350
+          "hide": "!data.use || data.id == 'Norm'",
+          "width": 250
         },
-        
+
         { "prop": "info", "title": "Правило информирования", "type": "droplist", "data":"inforuleList", "width": 250 }
       ]
     }

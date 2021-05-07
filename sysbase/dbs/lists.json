@@ -16,7 +16,7 @@
 
   "globalList": {
     "table": "globals",
-    "propmap": { "_id": "id", "name": "name", "dn": "dn", "defval": "defval", "setdef": "setdef", "folder": "folder"  }
+    "propmap": { "_id": "id", "name": "name", "dn": "dn", "defval": "defval", "setdef": "setdef", "folder": "folder" }
   },
 
   "localList": {
@@ -73,17 +73,17 @@
 
   "userList": {
     "table": "user",
-    "propmap": {"_id": "id", "name": "title", "folder": "folder"}
+    "propmap": { "_id": "id", "name": "title", "folder": "folder" }
   },
-  
+
   "infogroupList": {
     "table": "infogroups",
-    "propmap": {"_id": "id", "name": "title", "folder": "folder"}
+    "propmap": { "_id": "id", "name": "title", "folder": "folder" }
   },
 
   "inforuleList": {
     "table": "inforules",
-    "propmap": {"_id": "id", "name": "title", "folder": "folder"}
+    "propmap": { "_id": "id", "name": "title", "folder": "folder" }
   },
 
   "fuseList": {
@@ -101,10 +101,9 @@
       { "id": 2, "title": "Пользовательский" },
 
       { "id": "dtsec", "title": "Время dd.mm.yyyy hh:mm:ss" },
-      { "id": "dtms", "title":"Время dd.mm.yy hh:mm:ss.ms" },
+      { "id": "dtms", "title": "Время dd.mm.yy hh:mm:ss.ms" },
       { "id": "period1", "title": "Период  дн час мин" },
       { "id": "period2", "title": "Период  час мин сек" }
-
     ]
   },
 
@@ -175,17 +174,17 @@
 
   "logicalOperList": {
     "data": [
-      { "id":"and", "title": "И" },
-      { "id":"or", "title": "ИЛИ" }
+      { "id": "and", "title": "И" },
+      { "id": "or", "title": "ИЛИ" }
     ]
   },
   "digitalOperList": {
     "data": [
-      { "id":"eq", "title": "==" },
-      { "id":"gt", "title": ">" },
-      { "id":"gte", "title": ">=" },
-      { "id":"lt", "title": "<" },
-      { "id":"lte", "title": "<=" }
+      { "id": "eq", "title": "==" },
+      { "id": "gt", "title": ">" },
+      { "id": "gte", "title": ">=" },
+      { "id": "lt", "title": "<" },
+      { "id": "lte", "title": "<=" }
     ]
   },
 
@@ -202,29 +201,28 @@
 
   "journalsrcList": {
     "data": [
-      { "id":"mainlog", "title": "$JournalTitle_mainlog" },
-      { "id":"pluginlog", "title": "$JournalTitle_pluginlog" },
-      { "id":"authlog", "title": "$JournalTitle_authlog" }
+      { "id": "mainlog", "title": "$JournalTitle_mainlog" },
+      { "id": "pluginlog", "title": "$JournalTitle_pluginlog" },
+      { "id": "authlog", "title": "$JournalTitle_authlog" }
     ]
   },
 
   "messageLevelList": {
     "data": [
-      { "id":0, "title": "$StdMessage" },
-      { "id":1, "title": "$WarnMessage" },
-      { "id":2, "title": "$ExtraMessage" }
+      { "id": 0, "title": "$StdMessage" },
+      { "id": 1, "title": "$WarnMessage" },
+      { "id": 2, "title": "$ExtraMessage" }
     ]
   },
 
   "HiLoList": {
     "data": [
-      { "id":"B_0", "title": "Норма" },
-      { "id":"B_1", "title": "Тревога" },
-      { "id":"N_LoLo", "title": "Нижний аварийный предел (LoLo)" },
-      { "id":"N_Lo", "title": "Нижний предупредительный предел (Lo)" },
-      { "id":"N_0", "title": "Норма" },
-      { "id":"N_Hi", "title": "Верхний предупредительный предел (Hi)" },
-      { "id":"N_HiHi", "title": "Верхний аварийный предел (HiHi)" }
+      { "id": "Norm", "title": "Норма" },
+      { "id": "Alert", "title": "Тревога" },
+      { "id": "LoLo", "title": "НАП: Нижний аварийный предел" },
+      { "id": "Lo", "title": "НПП: Нижний предупредительный предел" },
+      { "id": "Hi", "title": "ВПП: Верхний предупредительный предел" },
+      { "id": "HiHi", "title": "ВАП: Верхний аварийный предел" }
     ]
   }
 }
