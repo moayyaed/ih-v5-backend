@@ -1,0 +1,24 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"sysdevicesTreeTable", "height":"fill"}
+  ],
+  "spacing": 10,
+
+  "p1": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "sysdevicesTreeTable",
+
+      "columns": [
+        { "prop": "title", "title": "Процесс", "type": "link", "command":"forward",  "width": 250, "filter":true  },
+        { "prop": "stateStr", "title": "Состояние", "type": "text",  "width": 200, "filter":true },
+        { "prop": "memrss", "title": "Выделено памяти всего(RSS), Мб", "type": "text",  "width": 200},
+        { "prop": "memheap", "title": "В т.ч. динамической всего, Мб", "type": "text",  "width": 200 },
+        { "prop": "memhuse", "title": "Используется динамической, Мб", "type": "text",  "width": 200 },
+        { "prop": "laststartStr", "title": "Время запуска", "type": "text",  "width": 150 }
+       
+      ]
+    }
+  ]
+}

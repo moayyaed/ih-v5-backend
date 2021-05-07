@@ -225,8 +225,9 @@
   { "id": "NoFilesOfThisType", "note": "Файлы этого типа не надены" },
 
   { "id": "SystemIndicators", "note": "Системные индикаторы" },
-  { "id": "PluginIndicator", "note": "Индикатор плагина" },
-  { "id": "dbagent", "note": "Индикатор исторической БД" },
+  { "id": "PluginIndicator", "note": "Плагин" },
+  { "id": "mainprocess", "note": "Основной процесс" },
+  { "id": "dbagent", "note": "DB агент (историческая БД)" },
   { "id": "DeleteInstance", "note": "Удалить экземпляр" },
   { "id": "ActivatePlugin", "note": "Активировать плагин" },
   { "id": "DeactivatePlugin", "note": "Деактивировать плагин" },

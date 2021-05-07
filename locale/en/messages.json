@@ -223,8 +223,9 @@
   { "id": "NoFilesOfThisType", "note": "No files of this type"},
 
   { "id": "SystemIndicators", "note": "System Indicators"},
-  { "id": "PluginIndicator", "note": "Plugin Indicator"},
-  { "id": "dbagent", "note": "Historical Database Indicator"},
+  { "id": "PluginIndicator", "note": "Plugin"},
+  { "id": "mainprocess", "note": "Main process" },
+  { "id": "dbagent", "note": "DB Agent (Historical Database)"},
   { "id": "DeleteInstance", "note": "Delete Instance" },
   { "id": "ActivatePlugin", "note": "Activate Plugin" },
   { "id": "DeactivatePlugin", "note": "Deactivate Plugin" },
