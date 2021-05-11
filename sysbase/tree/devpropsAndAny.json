@@ -16,6 +16,18 @@
     }
   },
 
+  "sysdevices": {
+    "root": {
+      "defaultComponent": null
+    },
+    "parent": {
+      "defaultComponent": null
+    },
+    "child": {
+      "defaultComponent": "devicelink"
+    }
+  },
+
   "anydevprops": {
     "root": {
       "defaultComponent": null
