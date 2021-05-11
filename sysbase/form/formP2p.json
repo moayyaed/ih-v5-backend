@@ -1,0 +1,25 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "hide": "1==1"},
+    { "id": "p3", "xs": 12, "class": "main", "table": "units"}
+  ],
+  "spacing": 10,
+ 
+
+  "p1": [
+    { "prop": "__expert", "title": "", "type": "text", "hide": "1==1" },
+
+    { "prop": "noepert_txt", "title": "Настройки доступны в режиме Эксперт", "type": "header" }
+  ],
+
+  "p3": [
+    
+    {
+      "prop": "key",
+      "title": "Ключ P2P",
+      "type": "text"
+    },
+    { "prop": "state", "title": "Состояние", "type": "text" }
+    
+  ]
+}

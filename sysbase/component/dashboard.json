@@ -5,11 +5,15 @@
       "title": "$Information_Tab",
       "component": [{ "id": "formDashboardCommon", "type": "xform" }]
     },
-
     {
       "id": "tabLicenses",
       "title": "Лицензии",
       "component": [{ "id": "formLicenses", "type": "form" }]
+    },
+    {
+      "id": "tabP2p",
+      "title": "Удаленный доступ",
+      "component": [{ "id": "formP2p", "type": "form" }]
     },
 
     {
