@@ -20,7 +20,7 @@
       "type": "subtree",
       "data": "typealerts",
       "leftTitle": "Свойства",
-      "rightTitle": "Тревоги",
+      "rightTitle": "Правила",
       "toolbar": false
     }
   ]

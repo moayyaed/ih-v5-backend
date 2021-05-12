@@ -14,8 +14,9 @@
       "columns": [
 
         { "prop": "title", "title": "$Type", "type": "link", "command":"forward",  "width": 250, "filter":true  },
-        { "prop": "prop", "title": "Prop", "type": "text",  "width": 200, "filter":true},
-        { "prop": "alertruleStr", "title": "Правила", "type": "text",  "width": 300, "filter":true }
+
+        { "prop": "prop", "title": "Свойство", "type": "text",  "width": 200, "filter":true},
+        { "prop": "propalert", "title": "Правила", "type": "link", "command":"forward",  "width": 300, "filter":true }
       ]
     }
   ]
