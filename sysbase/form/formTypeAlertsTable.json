@@ -1,0 +1,22 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"typePropsAlertTreeTable", "height":"fill"}
+  ],
+  "spacing": 10,
+
+
+  "p1": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "typePropsAlertTreeTable",
+
+      "columns": [
+
+        { "prop": "title", "title": "$Type", "type": "link", "command":"forward",  "width": 250, "filter":true  },
+        { "prop": "prop", "title": "Prop", "type": "text",  "width": 200, "filter":true},
+        { "prop": "alertruleStr", "title": "Правила", "type": "text",  "width": 300, "filter":true }
+      ]
+    }
+  ]
+}
