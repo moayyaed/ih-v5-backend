@@ -10,5 +10,11 @@
     "type": "plugin",
     "url": "",
     "version": "0.0.1"
+  },
+  {
+    "name": "p2p",
+    "type": "plugin",
+    "url": "",
+    "version": "0.0.1"
   }
 ]
