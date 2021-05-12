@@ -8,7 +8,8 @@
       "id": "tabDeviceLastRecs",
       "title": "Записи в БД за час",
       "component": [{ "id": "formDeviceLastRecs", "type": "form" }]
-    }
+    },
+    { "id": "tabProcessLog", "title": "Лог процесса", "component": [{ "id": "formDashboardSystemLog", "type": "form" }] }
   ],
 
   "defaultTab": "tabSysDeviceCommon"
