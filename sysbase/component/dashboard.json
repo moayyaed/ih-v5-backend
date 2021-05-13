@@ -13,7 +13,7 @@
     {
       "id": "tabP2p",
       "title": "Удаленный доступ",
-      "component": [{ "id": "formP2p", "type": "form" }]
+      "component": [{ "id": "formP2p", "type": "xform" }]
     },
 
     {

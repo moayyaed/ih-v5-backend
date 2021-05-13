@@ -20,6 +20,8 @@
          { "prop": "rowbutton", "title": "Действие", "type": "button", "width": 150 },
          { "prop": "tsAckStr", "title": "Время квитирования", "type": "text", "width": 150, "filter":true },
          { "prop": "userId", "title": "Оператор", "type": "text", "width": 150, "filter":true },
+         { "prop": "location", "title": "Локация", "type": "text", "width": 150, "filter":true },
+         { "prop": "tags", "title": "Тэги", "type": "text", "width": 150, "filter":true },
         { "prop": "level", "title": "Уровень", "type": "text" ,  "width": 150, "filter":true}
      
       ]
