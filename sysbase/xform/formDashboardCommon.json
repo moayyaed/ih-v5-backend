@@ -1,9 +1,9 @@
 {
   "grid": [
     { "id": "p1", "xs": 3, "class": "main" },
-    { "id": "p2", "xs": 3, "class": "main" },
     { "id": "p3", "xs": 3, "class": "main" },
     { "id": "p4", "xs": 3, "class": "main" },
+    { "id": "p5", "xs": 3, "class": "main" },
     { "id": "p9", "xs": 12, "class": "main", "hide": "data.p3.conf<2" }
   ],
   "spacing": 10,
@@ -13,13 +13,7 @@
     { "prop": "platform", "title": "$process_platform", "type": "text" },
     { "prop": "arch", "title": "$process_arch", "type": "text" }
   ],
-  "p2": [
-    { "prop": "processinfo", "title": "$MemoryInfoName", "type": "header", "size": "h6" },
-    { "prop": "osMemory", "title": "$os_memory", "type": "text" },
-    { "prop": "rss", "title": "$os_memory_rss", "type": "text" },
-    { "prop": "heapTotal", "title": "$os_memory_heap_total", "type": "text" },
-    { "prop": "heapUsed", "title": "$os_memory_heap_used", "type": "text" }
-  ],
+ 
   "p3": [
     { "prop": "projectinfo", "title": "$ProjectInfoName", "type": "header", "size": "h6" },
     { "prop": "project", "title": "$Project_Folder", "type": "text" },
@@ -51,6 +45,16 @@
       "param": "",
       "hide": "!data.p4.newversion"
     }
+  ],
+
+  "p5": [
+    { "prop": "p2pinfo", "title": "Удаленный доступ", "type": "header", "size": "h6" },
+    {
+      "prop": "__UNIT_xp2p.key",
+      "title": "Ключ P2P",
+      "type": "text"
+    },
+    { "prop": "__UNIT_xp2p.status", "title": "Состояние", "type": "text" }
   ],
 
   "p9": [
