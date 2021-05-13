@@ -5,14 +5,10 @@
         "main": [
           {
             "id": "add",
-            "type": "item",
+            "type": "remote",
             "title": "$Add",
             "command": "addNodeByContext",
-            "popupid": "channels",
-            "children": [
-              { "id": "node", "title": "$NewChannel" },
-              { "id": "folder", "title": "$NewFolder" }
-            ]
+            "popupid": "channels"
           },
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
