@@ -16,7 +16,6 @@
         { "prop": "duration", "title": "Длительность, мс", "type": "text", "width": 128},
         { "prop": "minDuration", "title": "Мin длительность, мс", "type": "text", "width": 128},
         { "prop": "maxDuration", "title": "Мax длительность, мс", "type": "text", "width": 128},
-        { "prop": "did_link", "title": "Для устройства", "type": "link", "width": 128, "command": "forward" },
         { "prop": "count", "title": "Всего запусков", "type": "text", "width": 128 },
         { "prop": "error", "title": "Ошибка", "type": "text", "width": 128 }
       ] 
