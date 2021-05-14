@@ -18,7 +18,7 @@
         { "prop": "memheap", "title": "В т.ч. динамической всего, Кб", "type": "text",  "width": 150 },
         { "prop": "memhuse", "title": "Используется динамической, Кб", "type": "text",  "width": 150 },
         { "prop": "laststartStr", "title": "Время запуска", "type": "text",  "width": 150 },
-        { "prop": "uptime", "title": "Аптайм процесса", "type": "text",  "width": 150 }
+        { "prop": "uptime", "title": "Аптайм", "type": "text",  "width": 150 }
        
       ]
     }
