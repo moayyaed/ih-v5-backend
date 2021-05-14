@@ -1,6 +1,9 @@
 [
   {"id":"OK","note":"Yes"},
   {"id":"NO","note":"No"},
+  {"id":"intrascada_v5","note":"IntraSCADA"},
+  {"id":"intrahouse_v5","note":"IntraHouse"},
+
   {"id":"QSURE","note":"Are you sure?"},
   {"id":"PROJECTCAPTION","note":"Project:"},
   {"id":"QDELETE","note":"Delete? Are you sure?"},
@@ -258,6 +261,7 @@
 
   { "id": "selectFromList", "note": "Select from List" },
   { "id": "TypeImportError", "note": "Type import error! Details in the system log." },
+
 
   { "id": "StartV4migration", "note": "Uploaded project version V4. Start migration..." },
   { "id": "ProjectSavedAs", "note": "The project is saved as " },

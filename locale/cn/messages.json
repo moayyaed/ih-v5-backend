@@ -1,6 +1,9 @@
 [
   { "id": "OK", "note": "是" },
   { "id": "NO", "note": "否" },
+  {"id":"intrascada_v5","note":"IntraSCADA"},
+  {"id":"intrahouse_v5","note":"IntraHouse"},
+
   { "id": "QSURE", "note": "确定?" },
   { "id": "PROJECTCAPTION", "note": "项目:" },
   { "id": "QDELETE", "note": "删除? 确定吗?" },

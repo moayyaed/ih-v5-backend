@@ -1,6 +1,8 @@
 [
   { "id": "OK", "note": "Да" },
   { "id": "NO", "note": "Нет" },
+  {"id":"intrascada_v5","note":"IntraSCADA"},
+  {"id":"intrahouse_v5","note":"IntraHouse"},
   { "id": "QSURE", "note": "Вы уверены?" },
   { "id": "PROJECTCAPTION", "note": "Проект:" },
   { "id": "QDELETE", "note": "Удалить? Вы уверены?" },
