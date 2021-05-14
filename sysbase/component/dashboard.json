@@ -17,9 +17,9 @@
     },
 
     {
-      "id": "tabDashboardLog",
-      "title": "$SystemLog_Tab",
-      "component": [{ "id": "formDashboardSystemLog", "type": "form" }]
+      "id": "tabDashboardProcesses",
+      "title": "Процессы",
+      "component": [{ "id": "formSysDeviceTable", "type": "form" }]
     }
   ],
   "defaultTab": "tabDashboardCommon"

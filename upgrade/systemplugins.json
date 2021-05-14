@@ -5,16 +5,11 @@
     "url": "https://github.com/intrahouseio/ih-dbagent-sqlite/archive/refs/tags/v5.0.10.zip",
     "version": "5.0.10"
   },
-  {
-    "name": "xp2p",
-    "type": "plugin",
-    "url": "",
-    "version": "0.0.1"
-  },
+  
   {
     "name": "p2p",
     "type": "plugin",
-    "url": "",
-    "version": "0.0.1"
+    "url": "https://github.com/intrahouseio/ih-v5-p2p-plugin/archive/refs/tags/v5.0.0.zip",
+    "version": "5.0.0"
   }
 ]
