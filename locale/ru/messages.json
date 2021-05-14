@@ -53,6 +53,7 @@
   { "id": "process_uptime", "note": "intraHouse Uptime" },
   { "id": "process_arch", "note": "Архитектура процессора" },
   { "id": "process_platform", "note": "Платформа" },
+  { "id": "os_total_memor", "note": "ОЗУ всего" },
   { "id": "os_memory", "note": "ОЗУ всего/свободно" },
   { "id": "os_ipaddress", "note": "IP адрес" },
   { "id": "cpu_temp", "note": "Температура процессора" },

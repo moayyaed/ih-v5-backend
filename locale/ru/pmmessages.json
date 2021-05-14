@@ -718,6 +718,7 @@
   { "id": "process_arch", "note": "Архитектура процессора" },
   { "id": "process_platform", "note": "Платформа" },
   { "id": "os_memory", "note": "ОЗУ всего/свободно" },
+  { "id": "os_total_memory", "note": "ОЗУ всего" },
   { "id": "os_memory_rss", "note": "Всего выделено процессу (RSS)" },
   { "id": "os_memory_heap_total", "note": "В том числе динамической памяти(Heap Total)" },
   { "id": "os_memory_heap_used", "note": "Используется динамической памяти(Heap Used)" },

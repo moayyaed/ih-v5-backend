@@ -712,6 +712,7 @@
   { "id": "process_uptime", "note": "Server Uptime" },
   { "id": "process_arch", "note": "Processor Architecture" },
   { "id": "process_platform", "note": "Platform" },
+  { "id": "os_total_memory", "note": "RAM total" },
   { "id": "os_memory", "note": "RAM total/free" },
   { "id": "os_memory_rss", "note": "Process Resident Set Size (RSS)" },
   { "id": "os_memory_heap_total", "note": "Process Heap Total" },
