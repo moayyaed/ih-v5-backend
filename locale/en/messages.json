@@ -244,6 +244,7 @@
 
   { "id": "NewRoute", "note": "New Route" },
   { "id": "NewFolder", "note": "New Folder" },
+  { "id": "NewChannel", "note": "New Channel" },
   { "id": "Copy", "note": "Copy" },
   { "id": "Paste", "note": "Paste" },
   { "id": "Delete", "note": "Delete" },
