@@ -2,8 +2,8 @@
   {
     "name": "sqlite",
     "type": "dbagent",
-    "url": "https://github.com/intrahouseio/ih-dbagent-sqlite/archive/refs/tags/v5.0.10.zip",
-    "version": "5.0.10"
+    "url": "https://github.com/intrahouseio/ih-dbagent-sqlite/archive/refs/tags/v5.0.11.zip",
+    "version": "5.0.11"
   },
   
   {
