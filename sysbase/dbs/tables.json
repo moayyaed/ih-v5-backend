@@ -686,6 +686,12 @@
     }
   },
 
+  "useraddress": {
+    "store": "db",
+    "collection": "users",
+    "genfield": "address"
+  },
+
   "imagegroup": {
     "store": "db",
     "collection": "images",

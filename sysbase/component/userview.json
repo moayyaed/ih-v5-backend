@@ -1,6 +1,7 @@
 {
   "tabs": [
-    { "id": "tabUserCommon", "title": "Учетная запись", "component": [{ "id": "formUserCommon", "type": "form" }] }
+    { "id": "tabUserCommon", "title": "Учетная запись", "component": [{ "id": "formUserCommon", "type": "form" }] },
+    { "id": "tabUserAddress", "title": "Адреса для информирования", "component": [{ "id": "formUserAddress", "type": "form" }] }
    
   ],
   "defaultTab": "tabUserCommon"
