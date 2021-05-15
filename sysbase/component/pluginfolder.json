@@ -1,6 +1,7 @@
 {
   "tabs": [
     { "id": "tabPluginFolder",  "title": "Плагины", "component": [{ "id": "formPluginFolder", "type": "form" }]  },
+    { "id": "tabPluginTags",  "title": "Активные каналы", "component": [{ "id": "formPluginChannelsTable", "type": "form" }]  },
     { "id": "tabPluginLogTable", "title": "Журнал", "component": [{ "id": "formPluginLogTable", "type": "form" }] }
   ],
   "defaultTab": "tabPluginFolder"

@@ -10,21 +10,16 @@
       "prop": "unitchannelsTable",
 
       "columns": [
-        { "prop": "chan", "title": "$Channel",  "type": "link", "command":"forward",  "width": 250, "filter":true },
-        { "prop": "desc", "title": "", "type": "text",  "width": 50, "filter":true  },
-        { "prop": "period", "title": "$Period", "type": "input",  "width": 64, "filter":true },
-        { "prop": "min", "title": "Min", "type": "input",  "width": 50, "filter":true  },
-        { "prop": "max", "title": "Max",  "type": "input",  "width": 50, "filter":true  },
-        { "prop": "delta", "title": "$Delta", "type": "input",  "width": 64, "filter":true },
-        { "prop": "random", "title": "$Random", "type": "cb",  "width": 64 },         
-        { "prop": "did", "title": "$Device",  "type": "link", "command":"forward",  "width": 250, "filter":true  },
-        { "prop": "prop", "title": "$DeviceProperty", "type": "text",  "width": 64, "filter":true },
+        { "prop": "chan", "title": "$Channel",  "type": "link", "command":"forward",  "width": 250 },
+        { "prop": "did", "title": "$Device",  "type": "link", "command":"forward", "width": 250  },
+        { "prop": "prop", "title": "$DeviceProperty", "type": "text",  "width": 100 },
+        { "prop": "r", "title": "Read",  "type": "cb", "width": 64 },
+        { "prop": "w", "title": "Write",  "type": "cb", "width": 64 },
         { "prop": "realtime_chan_val", "title": "Канал: значение", "type": "text",  "width": 64 },
         { "prop": "realtime_chan_ts", "title": "Канал: время", "type": "text",  "width": 150 },
         { "prop": "realtime_dev_val", "title": "Устройство: значение", "type": "text",  "width": 64 },
         { "prop": "realtime_dev_ts", "title": "Устройство: время", "type": "text",  "width": 150 },
-        { "prop": "realtime_dev_cts", "title": "Изменение", "type": "text",  "width": 150 },
-        { "prop": "realtime_dev_err", "title": "Ошибка", "type": "text",  "width": 150 }
+        { "prop": "realtime_dev_err", "title": "Устройство: ошибка", "type": "text",  "width": 150 }
       ]
     }
   ]
