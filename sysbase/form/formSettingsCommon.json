@@ -1,7 +1,7 @@
 {
   "grid": [
-    { "id": "p1", "xs": 3, "class": "main", "table": "systemsettingsTable" },
-    { "id": "p2", "xs": 9, "class": "main", "table": "systemsettingsTable" }
+    { "id": "p1", "xs": 4, "class": "main", "table": "systemsettingsTable" },
+    { "id": "p2", "xs": 8, "class": "main", "table": "systemsettingsTable" }
   ],
   "spacing": 10,
 
@@ -17,18 +17,23 @@
         { "id": "ru", "title": "ru" }
       ]
     },
+    
     { "prop": "expert", "title": "Режим ЭКСПЕРТ", "type": "cb" }
   ],
 
   "p2": [
+   
+    { "prop": "currentproject", "title": "Текущий проект", "type": "text" },
+    
+    { "prop": "otherprojdir", "title": "Другое место для хранения проектов", "type": "cb" },
+    { "prop": "projdir", "title": "$PathToProjects", "type": "input", "hide": "!data.p2.otherprojdir" },
+    { "prop": "vardir", "title": "Путь для хранения проектов по умолчанию", "type": "text" },
     {
       "prop": "warning",
       "title": "$RestartIHToApply",
       "type": "header",
       "size": "h6"
     },
-    { "prop": "otherprojdir", "title": "$ChangeProjectsFolder", "type": "cb" },
-    { "prop": "projdir", "title": "$PathToProjects", "type": "input", "hide": "!data.p2.otherprojdir" },
-    { "prop": "activeButton1", "title": "Перезагрузить сервер", "type": "button", "command": "restart", "param":"" }
+    { "prop": "activeButton1", "title": "Перезагрузить сервер с этими настройками", "type": "button", "command": "restart", "param":"" }
   ]
 }
