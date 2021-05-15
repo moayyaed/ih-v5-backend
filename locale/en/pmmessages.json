@@ -705,7 +705,7 @@
   { "id": "qTypes", "note": "Number of Device Types" },
   { "id": "qDevices", "note": "Number of Devices" },
   { "id": "qChannels", "note": "Number of Channels" },
-  { "id": "qTags", "note": "Number of Tags (active channels)" },
+  { "id": "qActiveChannels", "note": "Number of Tags (active channels)" },
 
   { "id": "os_uptime", "note": "OS Uptime" },
   { "id": "client_username", "note": "User Name" },

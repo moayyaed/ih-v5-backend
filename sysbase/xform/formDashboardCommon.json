@@ -21,6 +21,7 @@
     { "prop": "type", "title": "$qTypes", "type": "text" },
     { "prop": "device", "title": "$qDevices", "type": "text" },
     { "prop": "devhard", "title": "$qChannels", "type": "text" },
+    { "prop": "devhardtag", "title": "$qActiveChannels", "type": "text" },
     { "prop": "conf", "title": "", "type": "text", "hide": "1==1" }
   ],
   "p4": [
