@@ -759,7 +759,13 @@
 
   "dbagent": {
     "store": "db",
-    "collection": "dbagents"
+    "collection": "dbagents",
+    "validator": {
+      "main": {
+        "alone": { "custom": true },
+        "alonePath": { "custom": true }
+      }
+    }
   },
 
   "dialoggroup": {
