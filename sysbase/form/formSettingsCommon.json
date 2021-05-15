@@ -34,6 +34,6 @@
       "type": "header",
       "size": "h6"
     },
-    { "prop": "activeButton1", "title": "Перезагрузить сервер с этими настройками", "type": "button", "command": "restart", "param":"" }
+    { "prop": "activeButton1", "title": "Перезагрузить сервер с этими настройками", "type": "button", "command": "restart", "param":"settings" }
   ]
 }
