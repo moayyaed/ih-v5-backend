@@ -5,7 +5,7 @@
     { "id": "p3", "xs": 4, "class": "main", "table": "project" }
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "projects" },
+  "hidesave": true,
 
   "p1": [
     { "prop": "_id", "title": "ID ", "type": "text", "hide":"1==1" },

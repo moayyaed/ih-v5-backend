@@ -4,6 +4,7 @@
     { "id": "p2", "xs": 8, "class": "main", "table": "systemsettingsTable" }
   ],
   "spacing": 10,
+  "hidesave": true,
 
   "p1": [
     { "prop": "config_options", "title": "$SystemSettings", "type": "header", "size": "h6" },
