@@ -357,6 +357,12 @@
             "id": "_config",
             "order": "1",
             "component": "settings"
+          },
+          {
+            "title": "$ProjectSettings",
+            "id": "_currentproject",
+            "order": "0",
+            "component": "projectsettings"
           }
         ]
       }

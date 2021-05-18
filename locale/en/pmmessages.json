@@ -68,6 +68,7 @@
   { "id": "Priv_Service", "note": "Service" },
   { "id": "Projects", "note": "Projects" },
   { "id": "SystemSettings", "note": "System Settings" },
+  { "id": "ProjectSettings", "note": "Project Settings" },
   { "id": "Setting_upserver", "note": "Update Server" },
   { "id": "Setting_port", "note": "Interface Port" },
   { "id": "Setting_apiport", "note": "API Port" },

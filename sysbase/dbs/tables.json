@@ -812,7 +812,15 @@
       }
     }
   },
-  "projectdepsTable": {
+
+  "currentprojectTable": {
     "store": "none"
+   
+  },
+
+  "projectdepsTable": {
+    "store": "db",
+    "collection": "projectdeps",
+    "rows": 1
   }
 }

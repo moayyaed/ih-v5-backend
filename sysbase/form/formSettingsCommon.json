@@ -1,13 +1,18 @@
 {
   "grid": [
-    { "id": "p1", "xs": 4, "class": "main", "table": "systemsettingsTable" },
-    { "id": "p2", "xs": 8, "class": "main", "table": "systemsettingsTable" }
+    { "id": "p1", "xs": 6, "class": "main", "table": "systemsettingsTable" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "systemsettingsTable" }
   ],
   "spacing": 10,
   "hidesave": true,
 
   "p1": [
-    { "prop": "config_options", "title": "$SystemSettings", "type": "header", "size": "h6" },
+    { "prop": "currentproject", "title": "Текущий проект", "type": "text" },
+    { "prop": "vardir", "title": "Путь для хранения проектов по умолчанию", "type": "text" }
+  ],
+
+  "p2": [
+   
     { "prop": "port", "title": "$Setting_port", "type": "input" },
     {
       "prop": "lang",
@@ -18,17 +23,11 @@
         { "id": "ru", "title": "ru" }
       ]
     },
-    
-    { "prop": "expert", "title": "Режим ЭКСПЕРТ", "type": "cb" }
-  ],
-
-  "p2": [
-   
-    { "prop": "currentproject", "title": "Текущий проект", "type": "text" },
-    
+    { "prop": "expert", "title": "Режим ЭКСПЕРТ", "type": "cb" },
     { "prop": "otherprojdir", "title": "Другое место для хранения проектов", "type": "cb" },
     { "prop": "projdir", "title": "$PathToProjects", "type": "input", "hide": "!data.p2.otherprojdir" },
-    { "prop": "vardir", "title": "Путь для хранения проектов по умолчанию", "type": "text" },
+  
+   
     {
       "prop": "warning",
       "title": "$RestartIHToApply",

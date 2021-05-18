@@ -1,7 +1,7 @@
 {
   "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table": "project", "hide": "data.p1.__expert" },
-    { "id": "p3", "xs": 6, "class": "main", "table": "project", "hide": "!data.p1.__expert" },
+    { "id": "p1", "xs": 12, "class": "main", "table": "currentprojectTable", "hide": "data.p1.__expert" },
+    { "id": "p3", "xs": 6, "class": "main", "table": "currentprojectTable", "hide": "!data.p1.__expert" },
 
     {
       "id": "p5",
@@ -13,7 +13,6 @@
     }
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "projects" },
 
   "p1": [
     { "prop": "__expert", "title": "", "type": "text", "hide": "1==1" },

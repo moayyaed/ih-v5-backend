@@ -43,6 +43,7 @@
   "reports": { "folder": "jbasepath" },
 
   "projects": { "inMemory": 1 },
+  "projectdeps": { "inMemory": 1 },
   "licenses": { "inMemory": 1 },
   "dbagents": { "folder": "jbasepath" },
 

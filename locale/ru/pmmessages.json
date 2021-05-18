@@ -68,6 +68,7 @@
   { "id": "Priv_Service", "note": "Сервис" },
   { "id": "Projects", "note": "Проекты" },
   { "id": "SystemSettings", "note": "Системные настройки" },
+  { "id": "ProjectSettings", "note": "Текущий проект" },
   { "id": "Setting_upserver", "note": "Сервер обновлений" },
   { "id": "Setting_port", "note": "Порт интерфейса" },
   { "id": "Setting_apiport", "note": "Порт API" },
