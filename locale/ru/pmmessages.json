@@ -925,7 +925,8 @@
   { "id": "NewTable", "note": "Новая таблица" },
   { "id": "CustomTables", "note": "Таблицы проекта" },
 
-  { "id": "JournalTitle_mainlog", "note": "Общие данные" },
+  { "id": "JournalTitle_mainlog", "note": "Данные главного журнала" },
+  { "id": "JournalTitle_alertlog", "note": "Тревоги" },
   { "id": "JournalTitle_pluginlog", "note": "Данные плагинов" },
   { "id": "JournalTitle_authlog", "note": "Данные авторизации" },
   { "id": "StdMessage", "note": "Стандартное сообщение" },

@@ -21,7 +21,7 @@
   "p2": [
     { "prop": "filter_header", "title": "Фильтры для включения сообщения в журнал", "type": "header" },
     { "prop": "unit", "title": "Unit", "type": "droplist", "data": "unitList", "hide":"data.p1.src.id != 'pluginlog'" },
-    { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist", "hide":"data.p1.src.id != 'mainlog'" },
+    { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist", "hide":"data.p1.src.id != 'mainlog' && data.p1.src.id != 'alertlog'" },
    
     {
       "prop": "xlocation",
@@ -36,10 +36,10 @@
       "prop": "location",
       "title": "Локация",
       "type": "input",
-      "hide":"data.p1.src.id != 'mainlog'" 
+      "hide":"data.p1.src.id != 'mainlog' && data.p1.src.id != 'alertlog'" 
     },
 
-    { "prop": "levelfrom", "title": "Уровень сообщения не ниже", "type": "number", "default": 0 }
+    { "prop": "levelfrom", "title": "Уровень сообщения не ниже", "type": "droplist", "data":"messageLevelList", "default": 0, "hide":"data.p1.src.id == 'alertlog'"}
 
   ],
 

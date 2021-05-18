@@ -822,6 +822,7 @@
   { "id": "doWrite", "note": "Write Now" },
 
   { "id": "JournalTitle_mainlog", "note": "Main Logs" },
+  { "id": "JournalTitle_alertlog", "note": "Alerts" },
   { "id": "JournalTitle_pluginlog", "note": "Plugin Logs" },
   { "id": "JournalTitle_authlog", "note": "Auth Logs" },
 
