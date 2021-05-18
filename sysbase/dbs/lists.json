@@ -202,7 +202,6 @@
   "journalsrcList": {
     "data": [
       { "id": "mainlog", "title": "$JournalTitle_mainlog" },
-      { "id": "alertlog", "title": "$JournalTitle_alertlog" },
       { "id": "pluginlog", "title": "$JournalTitle_pluginlog" },
       { "id": "authlog", "title": "$JournalTitle_authlog" }
     ]

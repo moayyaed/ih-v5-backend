@@ -1,0 +1,34 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 6, "class": "main", "table": "alertjournal" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "alertjournal" }
+  ],
+  "spacing": 8,
+
+  "p1": [
+    { "prop": "name", "title": "$Name", "type": "input" },
+   
+    { "prop": "uselevelcolor", "title": "Выделять цветом строки в зависимости от уровня", "type": "cb" }
+  ],
+
+  "p2": [
+    { "prop": "filter_header", "title": "Фильтры для включения сообщения в журнал", "type": "header" },
+    { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist"},
+   
+    {
+      "prop": "xlocation",
+      "title": "location",
+      "type": "smartbutton",
+      "command": "dialog",
+      "params": { "title": "Location", "type": "tree", "id": "places", "dialog": "devicelink" },
+      "hide":"1 == 1" 
+    },
+
+    {
+      "prop": "location",
+      "title": "Локация",
+      "type": "input"
+    }
+
+  ]
+}

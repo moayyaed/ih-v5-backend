@@ -39,6 +39,7 @@
 
   "charts": { "folder": "jbasepath" },
   "journals": { "folder": "jbasepath" },
+  "alertjournals": { "folder": "jbasepath" },
   "jlevels": { "folder": "jbasepath" },
   "reports": { "folder": "jbasepath" },
 

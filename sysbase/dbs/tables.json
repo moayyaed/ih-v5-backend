@@ -607,6 +607,23 @@
     "ruleID": { "pref": "jr", "len": 3 }
   },
 
+  "alertjournalgroup": {
+    "store": "db",
+    "collection": "alertjournals",
+    "filter": { "folder": 1 },
+    "defRootTitle": "Журналы тревог",
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "ajrg", "len": 3 }
+  },
+
+  "alertjournal": {
+    "store": "db",
+    "collection": "alertjournals",
+    "default": { "name": "Новый журнал тревог" },
+    "ruleID": { "pref": "ajr", "len": 3 }
+  },
+
+
   "journalTable": {
     "store": "db",
     "collection": "journals",

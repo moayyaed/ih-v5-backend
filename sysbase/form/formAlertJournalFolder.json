@@ -1,7 +1,7 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "journalgroup" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "journalgroup", "height":250 }
+    { "id": "p1", "xs": 6, "class": "main", "table": "alertjournalgroup" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "alertjournalgroup", "height":250 }
   ],
   "spacing": 10,
 
