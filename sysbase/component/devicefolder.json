@@ -2,8 +2,8 @@
   "tabs": [
     { "id": "tabDeviceFolder",  "title": "Свойства папки", "component": [{ "id": "formDeviceFolder", "type": "form" }]  },
     { "id": "tabDeviceTable",  "title": "Таблица устройств", "component": [{ "id": "formDeviceTable", "type": "form" }]  },
-    { "id": "tabDeviceLog",  "title": "Журнал", "component": [{ "id": "formDeviceLogTable", "type": "form" }]  },
-    { "id": "tabAlertLog",  "title": "Оперативный журнал", "component": [{ "id": "formAlertLogTable", "type": "form" }]  }
+    { "id": "tabDeviceLog",  "title": "Журнал устройств", "component": [{ "id": "formDeviceLogTable", "type": "form" }]  },
+    { "id": "tabAlertLog",  "title": "Журнал тревог", "component": [{ "id": "formAlertLogTable", "type": "form" }]  }
   ],
   "defaultTab": "tabDeviceTable"
 }
