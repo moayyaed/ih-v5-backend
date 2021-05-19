@@ -8,10 +8,7 @@
       "padding": 4
     }
   ],
-  "spacing": 10,
-  "breadcrumbs": {
-    "tree": "journals"
-  },
+  "spacing": 0,
   
   "p1": [
     {
