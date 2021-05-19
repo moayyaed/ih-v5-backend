@@ -3,9 +3,9 @@
     {
       "id": "p1",
       "xs": 12,
-      "class": "clear",
+      "class": "menu",
       "height": "fill",
-      "padding": 4
+      "padding": 0
     }
   ],
   "spacing": 0,
