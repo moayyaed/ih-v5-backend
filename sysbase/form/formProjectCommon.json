@@ -3,7 +3,7 @@
     { "id": "p1", "xs": 6, "class": "main", "table": "project" },
   
     { "id": "p3", "xs": 6, "class": "main", "table": "project" },
-    { "id": "p5", "xs": 12, "class": "main", "table": "project", "height":250 }
+    { "id": "p5", "xs": 12, "class": "main", "table": "project", "height":200 }
   ],
   "spacing": 10,
   "hidesave": true,

@@ -17,7 +17,7 @@
     {
       "prop": "journalsrc",
       "title": "",
-      "type": "subtree",
+      "type": "submenu",
       "data": "journalsrc",
       "leftTitle": "Тип журнала",
       "rightTitle": "Уровни сообщений",
