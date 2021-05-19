@@ -3,12 +3,10 @@
     {
       "id": "p1",
       "xs": 12,
-      "class": "menu",
-      "height": "fill",
-      "padding": 0
+      "height": "fill"
     }
   ],
-  "spacing": 0,
+  "type": "menu",
   
   "p1": [
     {
