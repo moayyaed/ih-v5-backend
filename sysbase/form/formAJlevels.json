@@ -1,10 +1,10 @@
 {
   "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table": "jlevels" },
+  
     { "id": "p3", "xs": 12, "class": "main", "table": "jlevelsTable", "height": "fill" }
   ],
   "spacing": 10,
-  "p1": [{ "prop": "_id", "title": "Table", "type": "text" }],
+ 
 
   "p3": [
     {
@@ -19,8 +19,7 @@
         { "prop": "level", "title": "Уровень сообщения", "type": "number", "width": 150 },
         { "prop": "title", "title": "Описание", "type": "input", "width": 250 },
         { "prop": "color", "title": "Цвет фона", "type": "color", "width": 100 },
-        { "prop": "fontcolor", "title": "Цвет текста", "type": "color", "width": 100 },
-        { "prop": "days", "title": "Срок хранения", "type": "droplist",  "data": "dbretentionList", "width": 150 }
+        { "prop": "fontcolor", "title": "Цвет текста", "type": "color", "width": 100 }
       ]
     }
   ]
