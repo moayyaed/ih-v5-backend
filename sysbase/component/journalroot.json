@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabJournalRoot", "title": "Настройка", "component": [{ "id": "formJlevelSubtree", "type": "form" }] }
+  ],
+  "defaultTab": "tabJournalRoot"
+}

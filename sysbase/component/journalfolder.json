@@ -1,6 +1,6 @@
 {
   "tabs": [
-    { "id": "tabJournalFolder", "title": "Настройка", "component": [{ "id": "formJlevelSubtree", "type": "form" }] }
+    { "id": "tabJournalFolder", "title": "Настройка", "component": [{ "id": "formJournalFolder", "type": "form" }] }
   ],
   "defaultTab": "tabJournalFolder"
 }

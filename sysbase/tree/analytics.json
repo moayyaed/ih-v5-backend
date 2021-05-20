@@ -61,7 +61,7 @@
          
         ]
       },
-      "defaultComponent": "journalfolder"
+      "defaultComponent": "journalroot"
     },
     "parent": {
       "popup": {
@@ -121,7 +121,7 @@
           { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
-      "defaultComponent": "alertjournalroot"
+      "defaultComponent": "alertjournalfolder"
     },
     "child": {
       "popup": {
