@@ -1,29 +1,45 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "project" },
-  
+    { "id": "p1", "xs": 6, "class": "main", "table": "project", "hide": "data.p1.active" },
+
+    { "id": "p2", "xs": 6, "class": "main", "table": "project", "hide": "!data.p1.active" },
     { "id": "p3", "xs": 6, "class": "main", "table": "project" },
-    { "id": "p5", "xs": 12, "class": "main", "table": "project", "height":200 }
+    { "id": "p5", "xs": 12, "class": "main", "table": "project", "height": 200 }
   ],
   "spacing": 10,
   "hidesave": true,
 
   "p1": [
-    { "prop": "_id", "title": "ID ", "type": "text", "hide":"1==1" },
-    { "prop": "__expert", "title": "", "type": "text", "hide":"1==1" },
-    { "prop": "active", "title": "Active", "type": "cb", "hide":"1==1" },
-    { "prop": "projectfolder", "title": "$Project_Folder", "type": "input", "hide":"data.p1._id == data.p1.folder" },
+    { "prop": "_id", "title": "ID ", "type": "text", "hide": "1==1" },
+    { "prop": "__expert", "title": "", "type": "text", "hide": "1==1" },
+    { "prop": "active", "title": "Active", "type": "cb", "hide": "1==1" },
+    { "prop": "projectfolder", "title": "$Project_Folder", "type": "input" },
     { "prop": "title", "title": "$Project_Name", "type": "input" }
   ],
- 
-  "p3": [
-    { "prop": "version", "title": "Версия проекта", "type": "text" },
-    { "prop": "activeButton1", "title": "Перезагрузить сервер", "type": "button", "command": "restart", "param":"", "hide":"!data.p1.active"  },
-    { "prop": "activeButton2", "title": "Перезагрузить сервер с этим проектом", "type": "button", "command": "restart", "param":"project", "hide":"data.p1.active"  }
+  "p2": [
+    { "prop": "projectfolder", "title": "$Project_Folder", "type": "text" },
+    { "prop": "title", "title": "$Project_Name", "type": "text" }
   ],
 
-  "p5": [
-    { "prop": "txt", "title": "$Comment", "type": "textarea" }
-  ]
-  
+  "p3": [
+    { "prop": "version", "title": "Версия проекта", "type": "text" },
+    {
+      "prop": "activeButton1",
+      "title": "Перезагрузить сервер",
+      "type": "button",
+      "command": "restart",
+      "param": "",
+      "hide": "!data.p1.active"
+    },
+    {
+      "prop": "activeButton2",
+      "title": "Перезагрузить сервер с этим проектом",
+      "type": "button",
+      "command": "restart",
+      "param": "project",
+      "hide": "data.p1.active"
+    }
+  ],
+
+  "p5": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
 }
