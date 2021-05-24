@@ -13,13 +13,15 @@
      
 
       "columns": [
+        { "prop": "id", "title": "ID", "type": "text", "width": 100, "filter":true },
         { "prop": "stateStr", "title": "Состояние", "type": "text", "width": 100, "filter":true },
         { "prop": "tsStartStr", "title": "Время начала", "type": "text", "width": 150, "filter":true },
          { "prop": "txt", "title": "Сообщение", "type": "text" ,  "width": 250, "filter":true},
          { "prop": "tsStopStr", "title": "Время завершения", "type": "text", "width": 150, "filter":true },
          { "prop": "rowbutton", "title": "Действие", "type": "button", "width": 150 },
          { "prop": "tsAckStr", "title": "Время квитирования", "type": "text", "width": 150, "filter":true },
-         { "prop": "userId", "title": "Оператор", "type": "text", "width": 150, "filter":true },
+         { "prop": "username", "title": "Оператор", "type": "text", "width": 150, "filter":true },
+         { "prop": "userId", "title": "ID Оператора", "type": "text", "width": 150, "filter":true },
          { "prop": "location", "title": "Локация", "type": "text", "width": 150, "filter":true },
          { "prop": "tags", "title": "Тэги", "type": "text", "width": 150, "filter":true },
         { "prop": "level", "title": "Уровень", "type": "text" ,  "width": 150, "filter":true}
