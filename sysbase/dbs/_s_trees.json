@@ -300,6 +300,17 @@
     }
   },
 
+  "inforules": {
+    "branch": {
+      "table": "inforulesgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "inforules",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+
   "images": {
     "branch": {
       "table": "imagegroup",
