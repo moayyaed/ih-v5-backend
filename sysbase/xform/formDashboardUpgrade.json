@@ -1,14 +1,14 @@
 {
   "grid": [
     { "id": "p1", "xs": 12, "class": "clear", "height": "fill", "hide": "data.p1.registryState == 'OK'" },
-    { "id": "p4", "xs": 8, "class": "main", "height": "fill", "hide": "data.p1.registryState != 'OK'"  },
-    { "id": "p5", "xs": 4, "class": "main", "height": "fill", "hide": "data.p1.registryState != 'OK'"  }
+    { "id": "p4", "xs": 4, "class": "main", "height": "fill", "hide": "data.p1.registryState != 'OK'" },
+    { "id": "p5", "xs": 8, "class": "main", "height": "fill", "hide": "data.p1.registryState != 'OK'" }
   ],
   "spacing": 10,
 
   "p1": [
-    { "prop": "registryState", "title": "", "type": "text", "hide":"1==1" },
-    
+    { "prop": "registryState", "title": "", "type": "text", "hide": "1==1" },
+
     {
       "title": "",
       "type": "portalauth",
@@ -35,9 +35,8 @@
       "command": "update",
       "param": "",
       "hide": "!data.p4.newversion"
-    }
-  ],
-  "p5": [
+    },
+
     { "prop": "login", "title": "Login", "type": "text" },
 
     {
@@ -47,5 +46,7 @@
       "command": "portallogout",
       "param": ""
     }
-  ]
+  ],
+
+  "p5": [{ "prop": "changelog", "title": "", "type": "frame" }]
 }
