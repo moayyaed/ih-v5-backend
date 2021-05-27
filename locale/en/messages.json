@@ -62,9 +62,11 @@
   {"id":"qdevices","note":"Number of Devices"},
   {"id":"qmnemoschemes","note":"Number of Mimic Diagrams"},
   {"id":"qlayouts","note":"Number of Screens"},
-  {"id":"lite","note":"LITE"},
-  {"id":"ihpro","note":"PRO"},
-  {"id":"ihscada","note":"SCADA"},
+
+  { "id": "info_0", "note": "Not for sale. For personal use only." },
+  { "id": "info_1", "note": "Commercial version." },
+  { "id": "info_2", "note": "Industrial version." },
+
   {"id":"UPTODATE","note":"The latest version is installed"},
   {"id":"SYSTEMRESTART","note":"The procedure is complete. The system will be restarted!"},
   {"id":"CONFIGURATION","note":"Configuration"},
