@@ -7,8 +7,8 @@
   "hidesave": true,
 
   "p1": [
-    { "prop": "currentproject", "title": "Текущий проект", "type": "text" },
-    { "prop": "vardir", "title": "Путь для хранения проектов по умолчанию", "type": "text" }
+    { "prop": "currentproject", "title": "$CurrentProject", "type": "text" },
+    { "prop": "vardir", "title": "$DefaultProjectsPath", "type": "text" }
   ],
 
   "p2": [
@@ -23,8 +23,8 @@
         { "id": "ru", "title": "ru" }
       ]
     },
-    { "prop": "expert", "title": "Режим ЭКСПЕРТ", "type": "cb" },
-    { "prop": "otherprojdir", "title": "Другое место для хранения проектов", "type": "cb" },
+    { "prop": "expert", "title": "$ExpertMode", "type": "cb" },
+    { "prop": "otherprojdir", "title": "$CustomProjectsPath", "type": "cb" },
     { "prop": "projdir", "title": "$PathToProjects", "type": "input", "hide": "!data.p2.otherprojdir" },
   
    
@@ -34,6 +34,6 @@
       "type": "header",
       "size": "h6"
     },
-    { "prop": "activeButton1", "title": "Перезагрузить сервер с этими настройками", "type": "button", "command": "restart", "param":"settings" }
+    { "prop": "activeButton1", "title": "$RestartIHWithSettings", "type": "button", "command": "restart", "param":"settings" }
   ]
 }

@@ -22,10 +22,11 @@
   ],
 
   "p3": [
-    { "prop": "version", "title": "Версия проекта", "type": "text" },
+    { "prop": "version", "title": "$Project_Version", "type": "text" },
+
     {
       "prop": "activeButton1",
-      "title": "Перезагрузить сервер",
+      "title": "$RestartIH",
       "type": "button",
       "command": "restart",
       "param": "",
@@ -33,7 +34,7 @@
     },
     {
       "prop": "activeButton2",
-      "title": "Перезагрузить сервер с этим проектом",
+      "title": "$RestartIHWithProject",
       "type": "button",
       "command": "restart",
       "param": "project",

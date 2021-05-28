@@ -908,6 +908,12 @@
   { "id": "UPDATE", "note": "Обновить" },
   { "id": "RestartIH", "note": "Перезагрузить" },
   { "id": "RestartIHToApply", "note": "Для применения настроек требуется перезагрузка" },
+  { "id": "RestartIHWithProject", "note": "Перезагрузить сервер с этим проектом" },
+  { "id": "RestartIHWithSettings", "note": "Перезагрузить сервер с этими настройками" },
+  { "id": "CurrentProject", "note": "Текущий проект" },
+  { "id": "DefaultProjectsPath", "note": "Путь для хранения проектов по умолчанию" },
+  { "id": "CustomProjectsPath", "note": "Другое место для хранения проектов" },
+
   { "id": "ChangeProjectsFolder", "note": "Изменить расположение папки проектов" },
   { "id": "PathToProjects", "note": "Путь к папке с проектами" },
   { "id": "ProjectsTable", "note": "Таблица проектов" },
@@ -936,6 +942,7 @@
   { "id": "File", "note": "Файл" },
   { "id": "HTTPMethod", "note": "Метод" },
   { "id": "Route", "note": "Маршрут" },
-  { "id": "NewRoute", "note": "Новый маршрут" }
+  { "id": "NewRoute", "note": "Новый маршрут" },
+  { "id": "ExpertMode", "note": "Режим эксперт" }
 
 ]

@@ -750,7 +750,7 @@
     "store": "db",
     "collection": "projects",
     "filter": { "folder": 1 },
-    "defRootTitle": "$Project",
+    "defRootTitle": "$Projects",
     "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "prg", "len": 3 }
   },
