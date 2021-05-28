@@ -1,8 +1,9 @@
 {
   "grid": [
-    { "id": "p1", "xs": 8, "class": "main", "table": "currentprojectTable" },
-    { "id": "p2", "xs": 4, "class": "main", "table": "currentprojectTable" },
-  
+    { "id": "p1", "xs": 6, "class": "main", "table": "currentprojectTable" },
+    { "id": "p2", "xs": 3, "class": "main", "table": "currentprojectTable" },
+    { "id": "p3", "xs": 3, "class": "main", "table": "currentprojectTable" },
+
     { "id": "p5", "xs": 12, "class": "main", "table": "project", "height": 200 }
   ],
   "spacing": 10,
@@ -10,23 +11,24 @@
   "p1": [
     { "prop": "_id", "title": "ID ", "type": "text", "hide": "1==1" },
     { "prop": "__expert", "title": "", "type": "text", "hide": "1==1" },
-    { "prop": "projectpath", "title": "Текущий проект", "type": "text" },
-    { "prop": "version", "title": "Версия проекта", "type": "text" },
-    { "prop": "title", "title": "$Project_Name", "type": "input" },
-    {
-      "prop": "deviceloglines",
-      "title": "Количество строк в журнале устройства",
-      "type": "number",
-      "hide": "!data.p1.__expert"
-    },
-    { "prop": "deps", "title": "Проекту требуются внешние модули", "type": "cb", "hide": "!data.p1.__expert" }
+    { "prop": "projectpath", "title": "$CurrentProject", "type": "text" },
+    { "prop": "title", "title": "$Project_Name", "type": "text" },
+    { "prop": "version", "title": "$Project_Version", "type": "text" }
   ],
   "p2": [
     { "prop": "lat", "title": "$Location_Lat", "type": "input" },
     { "prop": "lng", "title": "$Location_Lng", "type": "input" },
     { "prop": "location", "title": "$Location_Name", "type": "input" }
   ],
-  
+  "p3": [
+    {
+      "prop": "deviceloglines",
+      "title": "$DevicelogLines",
+      "type": "number",
+      "hide": "!data.p1.__expert"
+    },
+    { "prop": "deps", "title": "$NeedDeps", "type": "cb", "hide": "!data.p1.__expert" }
+  ],
 
   "p5": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
 }

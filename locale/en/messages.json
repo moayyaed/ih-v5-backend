@@ -67,6 +67,9 @@
   { "id": "info_1", "note": "Commercial version." },
   { "id": "info_2", "note": "Industrial version." },
 
+  { "id": "IllegalProjectFolderName", "note": "Project folder name can contain only Latin characters and numbers" },
+
+
   {"id":"UPTODATE","note":"The latest version is installed"},
   {"id":"SYSTEMRESTART","note":"The procedure is complete. The system will be restarted!"},
   {"id":"CONFIGURATION","note":"Configuration"},

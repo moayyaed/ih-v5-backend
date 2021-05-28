@@ -232,7 +232,8 @@
 
   "scriptx": ["scenes"],
 
-  "datasource": ["plugins", "snippets", "restapihandlers"],
+  "datasource": ["plugins", "snippets"],
+
   "plugins": {
     "branch": {
       "table": "unitgroup",

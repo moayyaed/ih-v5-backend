@@ -4,7 +4,7 @@
   "places": {
     "branch": {
       "table": "place",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" } 
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
     },
     "leaf": { "table": "" },
     "expanded": true
@@ -63,7 +63,7 @@
   },
 
   "typeprops": {
-    "update":"no",
+    "update": "no",
     "branch": {
       "table": "typepropsTable",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order" }
@@ -368,7 +368,6 @@
       }
     ]
   },
-
 
   "database": ["dbagents", "customtables"],
 

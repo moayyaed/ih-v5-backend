@@ -900,15 +900,16 @@
   { "id": "CHECKUPDATE", "note": "Check for updates" },
   { "id": "UPDATE", "note": "Update" },
   { "id": "RestartIH", "note": "Restart server" },
-  { "id": "RestartIHToApply", "note": "To apply the settings, you need to restart the server" },
+  { "id": "RestartIHToApply", "note": "To apply these settings, you need to restart the server" },
   { "id": "RestartIHWithProject", "note": "Restart server with this project" },
   { "id": "RestartIHWithSettings", "note": "Restart server with these settings" },
   { "id": "CurrentProject", "note": "Current Project" },
   { "id": "DefaultProjectsPath", "note": "Default projects path" },
   { "id": "CustomProjectsPath", "note": "Custom projects path" },
 
-
   { "id": "ChangeProjectsFolder", "note": "Change location of the projects folder" },
+  { "id": "NeedDeps", "note": "The project requires external modules" },
+  { "id": "DevicelogLines", "note": "Number of lines in the device log" },
   { "id": "PathToProjects", "note": "Path to Projects Foder" },
   { "id": "ProjectsTable", "note": "Projects Table" },
 
@@ -934,5 +935,4 @@
   { "id": "Route", "note": "Route" },
   { "id": "NewRoute", "note": "NewRoute" },
   { "id": "ExpertMode", "note": "EXPERT mode" }
-
 ]

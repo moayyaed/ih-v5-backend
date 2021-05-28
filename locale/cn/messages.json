@@ -66,6 +66,7 @@
   { "id": "info_0", "note": "Not for sale. For personal use only." },
   { "id": "info_1", "note": "Commercial version." },
   { "id": "info_2", "note": "Industrial version." },
+  { "id": "IllegalProjectFolderName", "note": "Project folder name can contain only Latin characters and numbers" },
   
   { "id": "UPTODATE", "note": "已装最新版本" },
   { "id": "SYSTEMRESTART", "note": "过程已完成. 系统将重启!" },
