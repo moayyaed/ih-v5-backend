@@ -713,6 +713,8 @@
   { "id": "qChannels", "note": "Количество каналов" },
   { "id": "qActiveChannels", "note": "Количество тэгов (активных каналов)" },
   { "id": "qTags", "note": "Количество лицензируемых тэгов" },
+  { "id": "UsedLht", "note": "Количество используемых тэгов" },
+  { "id": "EnabledLht", "note": "Количество тэгов по установленным лицензиям" },
 
   { "id": "os_uptime", "note": "ОС аптайм" },
   { "id": "client_username", "note": "User name" },

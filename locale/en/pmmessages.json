@@ -708,6 +708,10 @@
   { "id": "qChannels", "note": "Number of Channels" },
   { "id": "qActiveChannels", "note": "Number of Tags (active channels)" },
 
+  { "id": "qTags", "note": "Number of tags used" },
+  { "id": "UsedLht", "note": "Number of tags used" },
+  { "id": "EnabledLht", "note": "Number of tags available for installed licenses" },
+
   { "id": "os_uptime", "note": "OS Uptime" },
   { "id": "client_username", "note": "User Name" },
   { "id": "process_uptime", "note": "Server Uptime" },

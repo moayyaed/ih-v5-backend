@@ -631,6 +631,23 @@
   { "id": "Command", "note": "命令" },
   { "id": "SystemInfoName", "note": "系统信息" },
 
+
+  { "id": "Information_Tab", "note": "Information" },
+  { "id": "SystemLog_Tab", "note": "System Log" },
+
+  { "id": "SystemInfoName", "note": "System Information" },
+  { "id": "MemoryInfoName", "note": "Memory Information" },
+  { "id": "Version&Uptime", "note": "Version & Uptime" },
+  { "id": "ProjectInfoName", "note": "Project Information" },
+  { "id": "qTypes", "note": "Number of Device Types" },
+  { "id": "qDevices", "note": "Number of Devices" },
+  { "id": "qChannels", "note": "Number of Channels" },
+  { "id": "qActiveChannels", "note": "Number of Tags (active channels)" },
+
+  { "id": "qTags", "note": "Number of tags used" },
+  { "id": "UsedLht", "note": "Number of tags used" },
+  { "id": "EnabledLht", "note": "Number of tags available for installed licenses" },
+
   { "id": "os_uptime", "note": "系统运行时间" },
   { "id": "client_username", "note": "用户名" },
   { "id": "process_uptime", "note": "IntraIoT运行时间" },

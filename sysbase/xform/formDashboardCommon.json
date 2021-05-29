@@ -42,7 +42,7 @@
       "hide":"!data.p9.limitLht"
     },
     { "prop": "limitLht", "title": "", "type": "text", "hide":"1==1" },
-    { "prop": "usedLht", "title": "$qTags", "type": "text" },
-    { "prop": "enabledLht", "title": "Лицензировано", "type": "text" }
+    { "prop": "usedLht", "title": "$UsedLht", "type": "text" },
+    { "prop": "enabledLht", "title": "$EnabledLht", "type": "text" }
   ]
 }
