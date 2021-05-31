@@ -1,0 +1,8 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main",  "height": "fill"}
+  ],
+  "spacing": 10,
+
+  "p1": [{ "prop": "webconsole", "title": "", "type": "webconsole" }]
+}

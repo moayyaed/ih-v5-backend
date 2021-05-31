@@ -47,7 +47,7 @@
       "hide": "!data.p2.scriptOnSchedule",
    
       "data": [
-        { "id": "minutely", "title": "Каждую минуту" },
+        { "id": "minutely", "title": "На границе минуты" },
         { "id": "hourly", "title": "На границе часа" },
         { "id": "daily", "title": "На границе дня" },
         { "id": "monthly", "title": "На границе месяца" },

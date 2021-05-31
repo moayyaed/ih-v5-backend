@@ -24,6 +24,12 @@
     },
 
     {
+      "id": "tabWebconsole",
+      "title": "Консоль",
+      "component": [{ "id": "formWebconsole", "type": "form" }]
+    },
+
+    {
       "id": "tabDashboardProcesses",
       "title": "Процессы",
       "component": [{ "id": "formSysDeviceTable", "type": "form" }]
