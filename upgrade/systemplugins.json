@@ -11,5 +11,11 @@
     "type": "plugin",
     "url": "https://github.com/intrahouseio/ih-v5-p2p-plugin/archive/refs/tags/v5.0.0.zip",
     "version": "5.0.0"
+  },
+  {
+    "name": "webconsole",
+    "type": "plugin",
+   
+    "version": "5.0.0"
   }
 ]
