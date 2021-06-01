@@ -143,8 +143,8 @@
   "devcmdAndAny": ["devicesExp", "anydevcmd"],
   "devicesAndAny": ["devicesExp", "anydevice"],
   "devicesx": ["devicesExp"],
-  "devpropsAndAny": ["devicesExp", "anydevprops"],
-  "devprops": ["devicesExp", "globals"],
+  "devpropsAndAny": ["devicesExp", "sysdevices", "anydevprops"],
+  "devprops": ["devicesExp", "sysdevices", "globals"],
 
   "anydevcmd": {
     "data": [
@@ -233,6 +233,7 @@
   "scriptx": ["scenes"],
 
   "datasource": ["plugins", "snippets", "restapihandlers"],
+
   "plugins": {
     "branch": {
       "table": "unitgroup",
@@ -481,4 +482,3 @@
     }
   }
 }
-

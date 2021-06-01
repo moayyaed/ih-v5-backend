@@ -14,7 +14,7 @@
   ],
   "p2": [
     { "prop": "scripts_header", "title": "Обработчики", "type": "header" },
-    { "prop": "scriptOnChange", "title": "При изменении свойств устройства и/или глобальной переменной", "type": "cb" },
+    { "prop": "scriptOnChange", "title": "При изменении свойств устройства", "type": "cb" },
    
   
     {
@@ -28,7 +28,7 @@
       "title": "Глобальная переменная",
       "type": "droplist",
       "data":"globalList",
-      "hide": "!data.p2.scriptOnChange"
+      "hide": "1==1"
     },
 
     { "prop": "scriptOnInterval", "title": "Циклически ", "type": "cb" },

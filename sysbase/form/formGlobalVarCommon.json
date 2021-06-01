@@ -17,7 +17,7 @@
  
     {
       "prop": "scriptOnChange",
-      "title": "Использовать обработчик для получения значения",
+      "title": "Использовать обработчик для получения значения при изменении свойств устройств",
       "type": "cb",
       "hide": "data.p1.snipuse"
     },
@@ -32,8 +32,9 @@
     { "prop": "snipperiod", "title": "$SnipPeriod", "type": "number", "hide": "!data.p1.snipuse" }
   ],
   "p3": [
+   
     {
-      "title": "Триггеры",
+      "title": "",
       "type": "table",
       "prop": "scripttriggers",
       "hide": "!data.p1.scriptOnChange",
@@ -42,11 +43,11 @@
       "columns": [
         {
           "prop": "devtrig",
-          "title": "Триггеры",
+          "title": "Свойства-триггеры для запуска обработчика",
           "type": "smartbutton",
           "width":400,
           "command": "dialog",
-          "params": { "title": "Триггеры", "type": "tree", "id": "devprops", "dialog": "devicelink" }
+          "params": { "title": "Выбор триггера", "type": "tree", "id": "devprops", "dialog": "devicelink" }
         }
       ]
     }
