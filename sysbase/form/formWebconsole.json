@@ -1,8 +1,14 @@
 {
   "grid": [
-    { "id": "p1", "xs": 12, "class": "main",  "height": "fill"}
+    { "id": "p1", "xs": 12, "class": "main",  "height": "fill", "hide":"data.p2.__expert != 1"},
+    { "id": "p2", "xs": 12, "class": "main",  "height": "fill", "hide":"data.p2.__expert == 1"}
   ],
   "spacing": 10,
 
-  "p1": [{ "prop": "webconsole", "title": "", "type": "webconsole" }]
+  "p1": [{ "prop": "webconsole", "title": "", "type": "webconsole" }],
+  "p2": [
+    { "prop": "__expert", "title": "", "type": "number", "hide":"1==1" },
+    { "prop": "header", "title": "Недостаточно прав для доступа", "type": "header" }
+  ]
+
 }
