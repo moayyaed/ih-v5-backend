@@ -919,7 +919,6 @@
   { "id": "NeedDeps", "note": "Проекту требуются внешние модули" },
   { "id": "DevicelogLines", "note": "Количество строк в журнале устройства" },
 
-
   { "id": "ChangeProjectsFolder", "note": "Изменить расположение папки проектов" },
   { "id": "PathToProjects", "note": "Путь к папке с проектами" },
   { "id": "ProjectsTable", "note": "Таблица проектов" },
@@ -951,6 +950,4 @@
   { "id": "NewRoute", "note": "Новый маршрут" },
   { "id": "ExpertMode", "note": "Режим эксперт" },
   { "id": "InsuffRights", "note": "Недостаточно прав для доступа." }
-]
-
 ]
