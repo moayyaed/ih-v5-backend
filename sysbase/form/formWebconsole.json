@@ -1,7 +1,7 @@
 {
   "grid": [
-    { "id": "p1", "xs": 12, "class": "main",  "height": "fill", "hide":"data.p2.__expert != 1"},
-    { "id": "p2", "xs": 12, "class": "main",  "height": "fill", "hide":"data.p2.__expert == 1"}
+    { "id": "p1", "xs": 12, "class": "main",  "height": "fill", "hide":"1 != 1"},
+    { "id": "p2", "xs": 12, "class": "main",  "height": "fill", "hide":"1 == 1"}
   ],
   "spacing": 10,
 
