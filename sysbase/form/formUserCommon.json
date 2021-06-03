@@ -13,6 +13,7 @@
     { "prop": "login", "title": "$User_Login", "type": "input" },
     { "prop": "pwd", "title": "$User_Pwd", "type": "password" },
     { "prop": "role", "title": "$User_Role", "type": "droplist", "data": "roleList" },
+    { "prop": "expert", "title": "$User_Expert", "type": "cb" },
     { "prop": "mainlay", "title": "$User_Mainlay", "type": "droplist", "data": "layoutList" }
   ],
 

@@ -602,6 +602,7 @@
   { "id": "User_Subs", "note": "Control Subsystems" },
   { "id": "User_Priv", "note": "Privileges" },
   { "id": "User_Role", "note": "Role" },
+  { "id": "User_Expert", "note": "Expert" },
   { "id": "User_Group", "note": "Group" },
   { "id": "User_Admin", "note": "Developer Mode" },
   { "id": "User_Noencrypt", "note": "Encryption disable" },

@@ -537,6 +537,7 @@
   { "id": "User_Subs", "note": "控制子系统" },
   { "id": "User_Priv", "note": "优先级" },
   { "id": "User_Role", "note": "角色" },
+  { "id": "User_Expert", "note": "Expert" },
   { "id": "User_Group", "note": "组" },
   { "id": "User_Admin", "note": "管理员模式" },
   { "id": "User_Noencrypt", "note": "禁用加密" },

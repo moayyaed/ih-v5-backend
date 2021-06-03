@@ -606,6 +606,7 @@
   { "id": "User_Subs", "note": "Управление подсистемами" },
   { "id": "User_Priv", "note": "Привилегии" },
   { "id": "User_Role", "note": "Роль" },
+  { "id": "User_Expert", "note": "Эксперт" },
   { "id": "User_Group", "note": "Группа" },
   { "id": "User_Admin", "note": "Режим разработчика" },
   { "id": "User_Noencrypt", "note": "Отключить шифрование" },
