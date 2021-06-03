@@ -8,7 +8,6 @@
   "p1": [{ "prop": "webconsole", "title": "", "type": "webconsole" }],
   "p2": [
     { "prop": "__expert", "title": "", "type": "number", "hide":"1==1" },
-    { "prop": "header", "title": "Недостаточно прав для доступа", "type": "header" }
+    { "prop": "header", "title": "$InsuffRights", "type": "header" }
   ]
-
 }

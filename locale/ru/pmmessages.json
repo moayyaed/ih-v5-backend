@@ -949,6 +949,8 @@
   { "id": "HTTPMethod", "note": "Метод" },
   { "id": "Route", "note": "Маршрут" },
   { "id": "NewRoute", "note": "Новый маршрут" },
-  { "id": "ExpertMode", "note": "Режим эксперт" }
+  { "id": "ExpertMode", "note": "Режим эксперт" },
+  { "id": "InsuffRights", "note": "Недостаточно прав для доступа." }
+]
 
 ]

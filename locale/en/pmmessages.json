@@ -939,5 +939,6 @@
   { "id": "HTTPMethod", "note": "HTTPMethod" },
   { "id": "Route", "note": "Route" },
   { "id": "NewRoute", "note": "NewRoute" },
-  { "id": "ExpertMode", "note": "EXPERT mode" }
+  { "id": "ExpertMode", "note": "EXPERT mode" },
+  { "id": "InsuffRights", "note": "Insufficient access rights." }
 ]

@@ -17,7 +17,7 @@
   "p1": [
     { "prop": "__expert", "title": "", "type": "text", "hide": "1==1" },
 
-    { "prop": "noepert_txt", "title": "Настройки доступны в режиме Эксперт", "type": "header" }
+    { "prop": "noepert_txt", "title": "$InsuffRights", "type": "header" }
   ],
 
   "p3": [

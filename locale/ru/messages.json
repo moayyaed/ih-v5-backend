@@ -1,8 +1,8 @@
 [
   { "id": "OK", "note": "Да" },
   { "id": "NO", "note": "Нет" },
-  {"id":"intrascada_v5","note":"IntraSCADA"},
-  {"id":"intrahouse_v5","note":"IntraHouse"},
+  { "id": "intrascada_v5", "note": "IntraSCADA" },
+  { "id": "intrahouse_v5", "note": "IntraHouse" },
   { "id": "QSURE", "note": "Вы уверены?" },
   { "id": "PROJECTCAPTION", "note": "Проект:" },
   { "id": "QDELETE", "note": "Удалить? Вы уверены?" },
@@ -35,6 +35,7 @@
   { "id": "SCRIPTHASSCENE", "note": "Скрипт имеет рабочий сценарий!" },
   { "id": "SCRIPTINSCHEDULE", "note": "Скрипт включен в расписание!" },
   { "id": "ACCESSDENIED", "note": "Доступ запрещен!" },
+  { "id": "InsuffRights", "note": "Недостаточно прав для доступа." },
   { "id": "FILEALREADYEXISTS", "note": "Файл с таким именем уже существует!" },
   { "id": "FOLDERALREADYEXISTS", "note": "Такая папка уже существует!" },
   { "id": "SRCFOLDERNOTEXISTS", "note": "Исходная папка не существует!" },
@@ -62,7 +63,7 @@
   { "id": "qdevices", "note": "Количество устройств" },
   { "id": "qmnemoschemes", "note": "Количество мнемосхем" },
   { "id": "qlayouts", "note": "Количество экранов" },
-  
+
   { "id": "UPTODATE", "note": "Установлена последняя версия." },
   { "id": "SYSTEMRESTART", "note": "Процедура завершена. Система будет перезагружена!" },
   { "id": "CONFIGURATION", "note": "Конфигурация" },
@@ -73,8 +74,10 @@
   { "id": "info_1", "note": "Коммерческая версия." },
   { "id": "info_2", "note": "Промышленная версия." },
 
-  { "id": "IllegalProjectFolderName", "note": "Название папки проекта может содержать только латинские символы и цифры" },
-
+  {
+    "id": "IllegalProjectFolderName",
+    "note": "Название папки проекта может содержать только латинские символы и цифры"
+  },
 
   { "id": "INSTALLEDPLUGINS", "note": "Установленные плагины" },
   { "id": "NEED_PLUGIN_RESTART", "note": "Требуется перезагрузка плагина" },

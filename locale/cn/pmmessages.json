@@ -28,9 +28,15 @@
   { "id": "StStandard", "note": "标准" },
   { "id": "StStandardComm", "note": "默认. 相当于离散数值 (开关off/on) , 适用于DI/DO设备." },
   { "id": "StAnalog", "note": "模拟量值 - 死区" },
-  { "id": "StAnalogComm", "note": "模拟量值跟阀值有关 (死区). 你必须设定死区的阀值. 0 - switched off or undefined state." },
+  {
+    "id": "StAnalogComm",
+    "note": "模拟量值跟阀值有关 (死区). 你必须设定死区的阀值. 0 - switched off or undefined state."
+  },
   { "id": "StScene", "note": "由联动计算" },
-  { "id": "StSceneComm", "note": "You must specify the number of non-zero states. Fully defined within the scene. 0 - undefined" },
+  {
+    "id": "StSceneComm",
+    "note": "You must specify the number of non-zero states. Fully defined within the scene. 0 - undefined"
+  },
   { "id": "Device", "note": "设备" },
   { "id": "Rectangle", "note": "矩形" },
   { "id": "Circle", "note": "圆形" },
@@ -632,7 +638,6 @@
   { "id": "Command", "note": "命令" },
   { "id": "SystemInfoName", "note": "系统信息" },
 
-
   { "id": "Information_Tab", "note": "Information" },
   { "id": "SystemLog_Tab", "note": "System Log" },
 
@@ -728,7 +733,7 @@
   { "id": "LogLevel_Middle", "note": "中" },
   { "id": "LogLevel_High", "note": "高" },
   { "id": "HtmlParentClass", "note": "继承的CSS样式" },
-  
+
   { "id": "Globals", "note": "Common script variables (global)" },
   { "id": "DeviceCommand", "note": "Device Command" },
   { "id": "Commands", "note": "Commands" },
@@ -809,7 +814,6 @@
   { "id": "Imgsystem", "note": "System" },
   { "id": "SaveMethod", "note": "Save Method" },
 
-
   { "id": "Copy", "note": "Copy" },
   { "id": "Paste", "note": "Paste" },
   { "id": "Add", "note": "Add" },
@@ -862,7 +866,6 @@
   { "id": "HTTPMethod", "note": "HTTPMethod" },
   { "id": "Route", "note": "Route" },
   { "id": "NewRoute", "note": "NewRoute" },
-  { "id": "ExpertMode", "note": "EXPERT mode" }
-
-
+  { "id": "ExpertMode", "note": "EXPERT mode" },
+  { "id": "InsuffRights", "note": "Insufficient access rights. Access is denied!" }
 ]
