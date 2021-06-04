@@ -370,7 +370,7 @@
     ]
   },
 
-  "database": ["dbagents", "customtables"],
+  "database": ["dbagents"],
 
   "dbagents": {
     "branch": {
@@ -437,7 +437,7 @@
     }
   },
 
-  "analytics": ["charts", "journals", "alertjournals", "reports"],
+  "analytics": ["charts"],
   "charts": {
     "branch": {
       "table": "chartgroup",

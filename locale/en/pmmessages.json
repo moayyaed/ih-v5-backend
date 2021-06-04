@@ -761,6 +761,7 @@
   { "id": "Line", "note": "Line" },
   { "id": "Step", "note": "Step" },
   { "id": "Bar", "note": "Bar" },
+  { "id": "Pie", "note": "Pie" },
   { "id": "DBTable", "note": "Table" },
   { "id": "Calculate", "note": "Calculate" },
   { "id": "Discrete", "note": "Discrete" },

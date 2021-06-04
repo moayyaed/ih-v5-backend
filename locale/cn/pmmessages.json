@@ -697,6 +697,7 @@
   { "id": "Chart_type", "note": "图表类型" },
   { "id": "Line", "note": "曲线型" },
   { "id": "Bar", "note": "柱状图" },
+  { "id": "Pie", "note": "Pie" },
   { "id": "DBTable", "note": "表格" },
   { "id": "Calculate", "note": "计算" },
   { "id": "Discrete", "note": "离散图" },

@@ -6,13 +6,20 @@
   "spacing": 10,
  
   "p3": [
+   
     
     {
       "prop": "__UNIT_p2p.key",
       "title": "Ключ P2P",
       "type": "text"
     },
-    { "prop": "__UNIT_p2p.status", "title": "Состояние", "type": "text" }
+
+    { "prop": "__UNIT_p2p.status", "title": "Состояние", "type": "text" },
+    {
+      "prop":"header",
+      "type":"header",
+      "title":"Адрес сервиса для удаленного входа: https://p2p.ih-systems.com"
+    }
     
   ]
 }

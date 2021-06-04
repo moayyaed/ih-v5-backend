@@ -244,12 +244,18 @@
   { "id": "selectFromList", "note": "Select from List" },
   { "id": "TypeImportError", "note": "Type import error! Details in the system log." },
 
+  { "id": "needPluginV5", "note": "The system only works with plugins version 5" },
+  { "id": "misPluginVersion", "note": "Plugin version information is missing!" },
+  { "id": "projectSavedInFolder", "note": "The project is saved in a folder" },
+  { "id": "projectTitle", "note": "Project title" },
+
   { "id": "StartV4migration", "note": "Uploaded project version V4. Start migration..." },
   { "id": "ProjectSavedAs", "note": "The project is saved as " },
   {
     "id": "toActivateProject",
     "note": "To activate the project, go to Settings and click 'Restart with this project'."
   },
+
   {
     "id": "CredentialsNotMigrated",
     "note": "Credentials are not migrated for security reasons.\n Use Login:admin, Password:202020"

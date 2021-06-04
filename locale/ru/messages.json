@@ -274,6 +274,12 @@
   { "id": "ScriptWithErrorAlwaysBlocked", "note": "Скрипт с ошибкой не может быть разблокирован!" },
   { "id": "ActionCannotBePerformed", "note": "Эта операция не может быть выполнена" },
 
+  { "id": "needPluginV5", "note": "Система работает только с плагинами версии 5." },
+  { "id": "misPluginVersion", "note": "Отсутствует информация о версии плагина!" },
+  { "id": "projectSavedInFolder", "note": "Проект сохранен в папку" },
+  { "id": "projectTitle", "note": "Имя проекта" },
+
+
   { "id": "StartV4migration", "note": "Загружен проект версии V4. Запущена процедура миграции..." },
   { "id": "ProjectSavedAs", "note": "Проект сохранен под именем " },
   {

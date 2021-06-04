@@ -765,6 +765,7 @@
   { "id": "Line", "note": "Линия" },
   { "id": "Step", "note": "Ступенчатый" },
   { "id": "Bar", "note": "Столбец" },
+  { "id": "Pie", "note": "Круговой" },
   { "id": "DBTable", "note": "Таблица" },
   { "id": "Calculate", "note": "Вычислить" },
   { "id": "Discrete", "note": "Дискрета" },
