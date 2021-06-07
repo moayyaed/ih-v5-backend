@@ -1,18 +1,22 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "project" },
+    { "id": "p1", "xs": 6, "class": "main", "table": "project", "hide":"!data.p1.active" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "project", "hide":"data.p1.active" },
     { "id": "p3", "xs": 6, "class": "main", "table": "project" },
     { "id": "p5", "xs": 12, "class": "main", "table": "project", "height": 200 }
   ],
   "spacing": 10,
-  "hidesave": true,
-
   "p1": [
     { "prop": "_id", "title": "ID ", "type": "text", "hide": "1==1" },
     { "prop": "__expert", "title": "", "type": "text", "hide": "1==1" },
     { "prop": "active", "title": "Active", "type": "cb", "hide": "1==1" },
-    { "prop": "header_active", "title": "$CurrentProject", "type": "header",  "hide": "!data.p1.active" },
+    { "prop": "header_active", "title": "$CurrentProject", "type": "header"},
 
+    { "prop": "projectfolder", "title": "$Project_Folder", "type": "text" },
+    { "prop": "title", "title": "$Project_Name", "type": "input" }
+  ],
+
+  "p2": [
     { "prop": "projectfolder", "title": "$Project_Folder", "type": "input" },
     { "prop": "title", "title": "$Project_Name", "type": "input" }
   ],

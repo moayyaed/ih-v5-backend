@@ -4,7 +4,7 @@
     { "id": "p2", "xs": 3, "class": "main", "table": "currentprojectTable" },
     { "id": "p3", "xs": 3, "class": "main", "table": "currentprojectTable" },
 
-    { "id": "p5", "xs": 12, "class": "main", "table": "project", "height": 200 }
+    { "id": "p5", "xs": 12, "class": "main", "table": "currentprojectTable", "height": 200 }
   ],
   "spacing": 10,
 
@@ -12,7 +12,7 @@
     { "prop": "_id", "title": "ID ", "type": "text", "hide": "1==1" },
     { "prop": "__expert", "title": "", "type": "text", "hide": "1==1" },
     { "prop": "projectpath", "title": "$CurrentProject", "type": "text" },
-    { "prop": "title", "title": "$Project_Name", "type": "text" },
+    { "prop": "title", "title": "$Project_Name", "type": "input" },
     { "prop": "version", "title": "$Project_Version", "type": "text" }
   ],
   "p2": [
