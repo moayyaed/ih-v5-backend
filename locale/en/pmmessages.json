@@ -864,6 +864,7 @@
   { "id": "NewType", "note": "New Type" },
   { "id": "NewDevice", "note": "New Device" },
   { "id": "NewChannel", "note": "New Channel" },
+  { "id": "NewRequest", "note": "New Request" },
   { "id": "Dialog", "note": "Dialog" },
   { "id": "Dialogs", "note": "Dialogs" },
   { "id": "NewDialog", "note": "New Dialog" },
