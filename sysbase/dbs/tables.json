@@ -3,7 +3,7 @@
     "store": "db",
     "collection": "lists",
     "filter": { "list": "place" },
-    "defRootTitle": "Все",
+    "defRootTitle": "$Devices",
     "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "dg", "len": 3 }
   },
