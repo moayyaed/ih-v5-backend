@@ -1,0 +1,6 @@
+{
+  "grid": [{ "id": "p2", "xs": 12, "class": "main", "height": "fill" }],
+  "spacing": 10,
+
+  "p2": [{ "prop": "debugconsole", "title": "", "type": "debug" }]
+}

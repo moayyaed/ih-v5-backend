@@ -7,6 +7,7 @@
     },
     { "id": "tabUnitChannels", "title": "Каналы", "component": [{ "id": "formUnitChannels", "type": "form" }] },
     { "id": "tabChannelsTable", "title": "Таблица каналов", "component": [{ "id": "formPluginChannelsTable", "type": "form" }] },
+    { "id": "tabPluginDebug", "title": "Отладчик", "component": [{ "id": "formPluginDebug", "type": "form" }] },
     { "id": "tabPluginLogTable", "title": "Журнал", "component": [{ "id": "formOnePluginLogTable", "type": "form" }] }
   ],
   "defaultTab": "tabUnitParams"
