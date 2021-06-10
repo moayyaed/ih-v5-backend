@@ -1,7 +1,7 @@
 {
   "grid": [
-    { "id": "p1", "xs": 4, "class": "main", "table": "chart" },
-    { "id": "p2", "xs": 4, "class": "main", "table": "chart" },
+    { "id": "p1", "xs": 5, "class": "main", "table": "chart" },
+    { "id": "p2", "xs": 3, "class": "main", "table": "chart" },
     { "id": "p3", "xs": 2, "class": "main", "table": "chart" },
     { "id": "p4", "xs": 2, "class": "main", "table": "chart" },
     { "id": "p5", "xs": 12, "class": "main", "table": "chartTable", "height": 250 }
@@ -17,9 +17,19 @@
       "type": "droplist",
       "data": [
         { "id": "trend", "title": "$DeviceValues" },
-        { "id": "analytics", "title": "$AnalyticValues" },
+        { "id": "calculation", "title": "$AnalyticValues" },
         { "id": "plugin", "title": "$Plugin" }
       ]
+    },
+    {
+      "prop": "calc_type",
+      "title": "$Chart_Data_calculation",
+      "type": "droplist",
+      "data": [
+        { "id": "sum", "title": "Сумма" },
+        { "id": "optime1", "title": "Время работы (дискретное свойство в 1)" }
+      ],
+      "hide": "data.p1.data_type.id != \"calculation\""
     }
   ],
   "p2": [

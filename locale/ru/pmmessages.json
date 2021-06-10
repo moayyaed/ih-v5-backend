@@ -759,6 +759,7 @@
   { "id": "IdleTime", "note": "через (сек)" },
 
   { "id": "Chart_Data_type", "note": "Источник данных" },
+  { "id": "Chart_Data_calculation", "note": "Функция вычисления" },
   { "id": "DeviceValues", "note": "Значения устройств" },
   { "id": "AnalyticValues", "note": "Аналитические данные" },
   { "id": "Chart_type", "note": "Вид" },

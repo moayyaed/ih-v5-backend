@@ -755,6 +755,7 @@
   { "id": "IdleTime", "note": "Idle Time (sec)" },
 
   { "id": "Chart_Data_type", "note": "Data Source" },
+  { "id": "Chart_Data_calculation", "note": "Calculation function" },
   { "id": "DeviceValues", "note": "Device Values" },
   { "id": "AnalyticValues", "note": "Analytic Values" },
   { "id": "Chart_type", "note": "View" },

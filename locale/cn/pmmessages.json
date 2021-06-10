@@ -692,6 +692,7 @@
   { "id": "IdleTime", "note": "空闲时间(sec)" },
 
   { "id": "Chart_Data_type", "note": "显示" },
+  { "id": "Chart_Data_calculation", "note": "Calculation function" },
   { "id": "DeviceValues", "note": "设备值" },
   { "id": "AnalyticValues", "note": "统计值" },
   { "id": "Chart_type", "note": "图表类型" },
