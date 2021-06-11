@@ -27,7 +27,7 @@
       "type": "droplist",
       "data": [
         { "id": "sum", "title": "Сумма" },
-        { "id": "optime1", "title": "Время работы (дискретное свойство в 1)" }
+        { "id": "optime1", "title": "Время работы (дискретное свойство)" }
       ],
       "hide": "data.p1.data_type.id != \"calculation\""
     }
