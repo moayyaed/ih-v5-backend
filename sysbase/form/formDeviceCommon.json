@@ -1,8 +1,9 @@
 {
   "grid": [
-    { "id": "p1", "xs": 4, "class": "main", "table": "device" },
-    { "id": "p2", "xs": 4, "class": "main", "table": "device" },
-    { "id": "p3", "xs": 4, "class": "main", "table": "device" }
+    { "id": "p1", "xs": 8, "class": "main", "table": "device" },
+   
+    { "id": "p3", "xs": 4, "class": "main", "table": "device" },
+    { "id": "p2", "xs": 12, "class": "main", "table": "device", "height":250 }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "devdevices" },
@@ -13,11 +14,12 @@
     { "prop": "type", "title": "$Dev_Type", "type": "droplist", "data": "typeList" },
     { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist" }
   ],
-  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
+ 
   "p3": [
     { "prop": "snipuse", "title": "$UseSnippet", "type": "cb" },
     { "prop": "snipid", "title": "$Snippet", "type": "droplist", "data":"snippetList", "hide":"!data.p3.snipuse" },
     { "prop": "snipperiod", "title": "$SnipPeriod", "type": "number", "hide":"!data.p3.snipuse" }
    
-  ]
+  ],
+  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
 }
