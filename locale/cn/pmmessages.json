@@ -793,6 +793,7 @@
   { "id": "NewType", "note": "New Type" },
   { "id": "NewDevice", "note": "New Device" },
   { "id": "NewChannel", "note": "New Channel" },
+  { "id": "NewNode", "note": "New Node" },
   { "id": "NewRequest", "note": "New Request" },
   { "id": "Dialog", "note": "Dialog" },
   { "id": "Dialogs", "note": "Dialogs" },
@@ -870,5 +871,7 @@
   { "id": "Route", "note": "Route" },
   { "id": "NewRoute", "note": "NewRoute" },
   { "id": "ExpertMode", "note": "EXPERT mode" },
-  { "id": "InsuffRights", "note": "Insufficient access rights. Access is denied!" }
+  { "id": "InsuffRights", "note": "Insufficient access rights. Access is denied!" },
+  { "id": "ChannelRead", "note":  "Reading channel"},
+  { "id": "ChannelWrite", "note":  "Writing channel"}
 ]

@@ -871,6 +871,7 @@
   { "id": "NewType", "note": "Новый тип" },
   { "id": "NewDevice", "note": "Новое устройство" },
   { "id": "NewChannel", "note": "Новый канал" },
+  { "id": "NewNode", "note": "Новый узел" },
   { "id": "NewRequest", "note": "Новый запрос" },
   { "id": "Dialog", "note": "Диалог" },
   { "id": "Dialogs", "note": "Диалоги" },
@@ -952,5 +953,7 @@
   { "id": "Route", "note": "Маршрут" },
   { "id": "NewRoute", "note": "Новый маршрут" },
   { "id": "ExpertMode", "note": "Режим эксперт" },
-  { "id": "InsuffRights", "note": "Недостаточно прав для доступа." }
+  { "id": "InsuffRights", "note": "Недостаточно прав для доступа." },
+  { "id": "ChannelRead", "note":  "Канал для чтения"},
+  { "id": "ChannelWrite", "note":  "Канал для записи"}
 ]
