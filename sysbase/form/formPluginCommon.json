@@ -1,7 +1,9 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "units" },
-    { "id": "p2", "xs": 12, "class": "main", "table": "unitsTreeTable", "height":"fill" }
+    { "id": "p1", "xs": 4, "class": "main", "table": "units" },
+    { "id": "p2", "xs": 4, "class": "main", "table": "units" },
+    { "id": "p3", "xs": 4, "class": "main", "table": "units" },
+    { "id": "p9", "xs": 12, "class": "main", "table": "unitsTreeTable", "height":"fill" }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "plugins" },
@@ -9,7 +11,21 @@
   "p1": [
     { "prop": "id", "title": "ID", "type": "text" }
   ],
+
   "p2": [
+    {
+      "prop": "restarttime",
+      "title": "$Unit_Restarttime",
+      "type": "input"
+    },
+    { "prop": "loglevel", "title": "$LogLevel", "type": "droplist", "data": "loglevelList" }
+  ],
+
+  "p3": [
+    { "prop": "txt", "title": "$Comment", "type": "textarea" }
+  ],
+
+  "p9": [
     {
       "title": "",
       "type": "table",
