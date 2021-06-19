@@ -1,0 +1,17 @@
+[
+
+  {
+    "id": "http",
+    "type": "plugin",
+    "description": "HTTP plugin",
+    "url": "https://github.com/intrahouseio/ih-v5-http-plugin/archive/refs/tags/v5.5.1.zip",
+    "version": "5.5.1"
+  },
+  {
+    "id": "snmp",
+    "type": "plugin",
+    "description":"SNMP plugin",
+    "url": "https://github.com/intrahouseio/ih-v5-snmp-plugin/archive/refs/tags/v5.5.2.zip",
+    "version": "5.5.2"
+  }
+]

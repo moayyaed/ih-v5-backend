@@ -245,6 +245,7 @@
   { "id": "Activate", "note": "Activate" },
   { "id": "Deactivate", "note": "Deactivate" },
   { "id": "NoDbUsed", "note": "No database used in this project" },
+  
   { "id": "Dbagent", "note": "DB agent" },
   { "id": "Restart", "note": "Restart" },
   { "id": "Layout", "note": "Layout" },
@@ -253,6 +254,8 @@
   { "id": "NewRoute", "note": "New Route" },
   { "id": "NewFolder", "note": "New Folder" },
   { "id": "NewChannel", "note": "New Channel" },
+
+  { "id": "Add", "note": "Add" },
   { "id": "Copy", "note": "Copy" },
   { "id": "Paste", "note": "Paste" },
   { "id": "Delete", "note": "Delete" },

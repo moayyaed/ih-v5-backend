@@ -1,0 +1,21 @@
+{
+  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "pluginsTable", "height": "fill" }],
+  "spacing": 10,
+
+  "p1": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "pluginsTable",
+
+      "columns": [
+        { "prop": "id", "title": "Плагин", "type": "text", "width": 150 },
+        { "prop": "description", "title": "Описание", "type": "text", "width": 150 },
+        { "prop": "version", "title": "Версия", "type": "text", "width": 100 },
+        { "prop": "newversion", "title": "Последняя версия", "type": "text", "width": 100 },
+        { "prop": "title_status", "title": "Статус", "type": "text", "width": 200 },
+        { "prop": "rowbutton_up", "title": "", "type": "button", "width": 150 }
+      ]
+    }
+  ]
+}

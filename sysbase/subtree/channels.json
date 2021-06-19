@@ -2,52 +2,13 @@
   "common": {
     "parent": {
       "popup": {
-        "main": [
-          {
-            "id": "add",
-            "type": "remote",
-            "title": "$Add",
-            "command": "addNodeByContext",
-            "popupid": "channels"
-          },
-          { "id": "3", "type": "divider" },
-          { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
-          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
-          { "id": "6", "type": "divider" },
-        
-          {
-            "id": "8",
-            "type": "item",
-            "title": "Привязать к устройству",
-            "command": "dialog",
-            "param": { "variant": "tree", "title": "Выберите устройство", "id": "devicesx", "action": "grouplink" }
-          },
-          { "id": "10", "type": "divider" },
-          { "id": "11", "type": "item", "title": "$Delete", "command": "delete" },
-          { "id": "12", "type": "divider" },
-          { "id": "13", "type": "remote", "title": "$PluginCommand", "popupid": "plugincommand" }
-        ]
+        "main": "channel_folder_popup"
       },
       "defaultComponent": "channelfolder"
     },
     "child": {
       "popup": {
-        "main": [
-          {
-            "id": "add",
-            "type": "remote",
-            "title": "$Add",
-            "command": "addNodeByContext",
-            "popupid": "channels"
-          },
-          { "id": "3", "type": "divider" },
-          { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
-          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
-          { "id": "6", "type": "divider" },
-          { "id": "7", "type": "item", "title": "$Delete", "command": "delete" },
-          { "id": "8", "type": "divider" },
-          { "id": "9", "type": "remote", "title": "$PluginCommand", "popupid": "plugincommand" }
-        ]
+        "main": "channel_popup"
       },
       "defaultComponent": "channelview"
     }

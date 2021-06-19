@@ -939,6 +939,8 @@
   { "id": "WarnMessage", "note": "Warning" },
   { "id": "ExtraMessage", "note": "Emergency" },
 
+  { "id": "DownloadError", "note": "Download Error!" },
+
   { "id": "File", "note": "File" },
   { "id": "HTTPMethod", "note": "HTTPMethod" },
   { "id": "Route", "note": "Route" },

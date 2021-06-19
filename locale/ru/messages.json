@@ -258,6 +258,7 @@
   { "id": "NewRoute", "note": "Новый маршрут" },
   { "id": "NewFolder", "note": "Новая папка" },
   { "id": "NewChannel", "note": "Новый канал" },
+  { "id": "Add", "note": "Добавить" },
   { "id": "Copy", "note": "Копировать" },
   { "id": "Paste", "note": "Вставить" },
   { "id": "Delete", "note": "Удалить" },

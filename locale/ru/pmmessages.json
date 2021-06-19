@@ -948,6 +948,8 @@
   { "id": "WarnMessage", "note": "Предупреждение" },
   { "id": "ExtraMessage", "note": "Авария" },
 
+  { "id": "DownloadError", "note": "Ошибка при закачке!" },
+
   { "id": "File", "note": "Файл" },
   { "id": "HTTPMethod", "note": "Метод" },
   { "id": "Route", "note": "Маршрут" },
