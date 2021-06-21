@@ -1,8 +1,33 @@
 {
-  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "pluginsTable", "height": "fill" }],
+  "grid": [
+    { "id": "p1", "xs": 4, "class": "main", "table": "pluginsStatTable", "nodeid":"all" },
+    { "id": "p2", "xs": 4, "class": "main", "table": "pluginsStatTable", "nodeid":"all" },
+    { "id": "p3", "xs": 4, "class": "main" },
+    { "id": "p9", "xs": 12, "class": "main", "table": "pluginsTable", "height": "fill" }
+  ],
   "spacing": 10,
 
+
   "p1": [
+    { "prop": "installed", "title": "Установлено плагинов", "type": "text" },
+    { "prop": "toupdate", "title": "Доступно обновлений", "type": "text" }
+   
+  ],
+  "p2": [
+    { "prop": "toinstall", "title": "Доступно для установки", "type": "text" }
+   
+  ],
+  "p3": [
+   
+    {
+      "prop": "checkButton",
+      "title": "$CHECKUPDATE",
+      "type": "button",
+      "command": "checkupdateplugins",
+      "param": ""
+    }],
+
+  "p9": [
     {
       "title": "",
       "type": "table",
