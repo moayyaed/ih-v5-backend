@@ -14,7 +14,7 @@
         { "prop": "version", "title": "Версия", "type": "text", "width": 100 },
         { "prop": "newversion", "title": "Последняя версия", "type": "text", "width": 100 },
         { "prop": "title_status", "title": "Статус", "type": "text", "width": 200 },
-        { "prop": "rowbutton_up", "title": "", "type": "button", "width": 150 }
+        { "prop": "rowbutton_up", "title": "", "type": "button", "width": 150, "hide": "!data.rowbutton_up.command" }
       ]
     }
   ]
