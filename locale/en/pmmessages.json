@@ -948,5 +948,6 @@
   { "id": "ExpertMode", "note": "EXPERT mode" },
   { "id": "InsuffRights", "note": "Insufficient access rights." },
   { "id": "ChannelRead", "note":  "Reading channel"},
-  { "id": "ChannelWrite", "note":  "Writing channel"}
+  { "id": "ChannelWrite", "note":  "Writing channel"},
+  { "id": "Devpropname", "note":  "Device property for link"}
 ]
