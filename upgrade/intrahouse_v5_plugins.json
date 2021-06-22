@@ -18,8 +18,8 @@
     "id": "snmp",
     "type": "plugin",
     "description": "SNMP plugin",
-    "url": "https://github.com/intrahouseio/ih-v5-snmp-plugin/archive/refs/tags/v5.5.2.zip",
-    "version": "5.5.2"
+    "url": "https://github.com/intrahouseio/ih-v5-snmp-plugin/archive/refs/tags/v5.5.4.zip",
+    "version": "5.5.4"
   },
 
   {
@@ -27,14 +27,6 @@
     "type": "plugin",
     "description": "HTTP plugin",
     "url": "https://github.com/intrahouseio/ih-v5-http-plugin/archive/refs/tags/v5.5.0.zip",
-    "version": "5.5.0"
-  },
-
-  {
-    "id": "ping",
-    "type": "plugin",
-    "description": "Ping plugin",
-    "url": "https://github.com/intrahouseio/ih-v5-ping-plugin/archive/refs/tags/v5.5.0.zip",
     "version": "5.5.0"
   }
 ]
