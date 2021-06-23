@@ -54,9 +54,7 @@
           "hide": "!data.type_op.includes('Number')"
         },
         { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 80, "hide": "!data.type_op.includes('Number')" },
-        { "prop": "source", "title": "Источник свойства", "type": "link", "width": 250, "command": "forward" },
-        { "prop": "type_fuse", "title": "Обработчик", "type": "link", "width": 150, "command": "forward" }
-
+        { "prop": "source", "title": "Источник свойства", "type": "link", "width": 250, "command": "forward" }
       ]
     }
   ]
