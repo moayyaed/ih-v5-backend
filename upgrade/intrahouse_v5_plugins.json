@@ -18,8 +18,8 @@
     "id": "snmp",
     "type": "plugin",
     "description": "SNMP plugin",
-    "url": "https://github.com/intrahouseio/ih-v5-snmp-plugin/archive/refs/tags/v5.5.4.zip",
-    "version": "5.5.4"
+    "url": "https://github.com/intrahouseio/ih-v5-snmp-plugin/archive/refs/tags/v5.5.5.zip",
+    "version": "5.5.5"
   },
 
   {
