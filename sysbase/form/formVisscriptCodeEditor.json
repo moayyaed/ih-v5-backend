@@ -1,0 +1,15 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "visscript", "padding":0,  "hide": "!data.p1.errstr" },
+    { "id": "p2", "xs": 12, "class": "main", "table": "visscript", "height":"fill", "padding":4 }
+   
+  ],
+  "spacing": 10,
+
+  "p1": [
+    { "prop": "errstr", "title": "", "type": "text"}
+  ],
+  "p2": [
+    { "prop": "script", "title": "Code", "type": "code" }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "common": {
+    "popup": {}
+  },
+
+  "visscript": {
+    "root": {
+      "defaultComponent": null
+    },
+    "parent": {
+      "defaultComponent": null
+    },
+
+    "child": {
+      "defaultComponent": null
+    }
+  }
+}

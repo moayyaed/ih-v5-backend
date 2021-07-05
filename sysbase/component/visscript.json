@@ -1,0 +1,8 @@
+{
+  "tabs": [
+    { "id": "tabVisscriptCommon",  "title": "Свойства", "component": [{ "id": "formVisscriptCommon", "type": "form" }]  },
+    { "id": "tabVisscriptCodeEditor",  "title": "Редактор кода", "component": [{ "id": "formVisscriptCodeEditor", "type": "form" }]  }
+  
+  ],
+  "defaultTab": "tabVisscriptCommon"
+}

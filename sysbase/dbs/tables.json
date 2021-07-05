@@ -801,6 +801,23 @@
     "collection": "dialogs"
   },
 
+  "visscriptgroup": {
+    "store": "db",
+    "collection": "visscripts",
+    "filter": { "folder": 1 },
+    "defRootTitle": "Скрипты визуализации",
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "vsgroup", "len": 3 }
+  },
+
+  "visscript": {
+    "store": "db",
+    "collection": "visscripts",
+    "ruleID": { "pref": "vs", "len": 4 },
+    "default": { "name": "$NewScript" }
+   
+  },
+
   "dialogsTreeTable": { "store": "tree", "tree": "dialog", "collection": "dialogs", "rows": true },
   "templatesTreeTable": { "store": "tree", "tree": "vistemplate", "collection": "vistemplates", "rows": true },
   "layoutsTreeTable": { "store": "tree", "tree": "layout", "collection": "layouts", "rows": true },

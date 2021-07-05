@@ -24,6 +24,7 @@
   "units": { "folder": "jbasepath" },
   "snippets": { "folder": "jbasepath" },
   "restapihandlers": { "folder": "jbasepath" },
+  "visscripts": { "folder": "jbasepath" },
 
   "types": { "folder": "jbasepath" },
   "layouts": { "folder": "jbasepath" },

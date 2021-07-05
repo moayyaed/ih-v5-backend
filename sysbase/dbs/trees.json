@@ -172,7 +172,7 @@
     "expanded": true
   },
 
-  "vis": ["layout", "viscont", "dialog", "vistemplate", "images"],
+  "vis": ["layout", "viscont", "dialog", "vistemplate", "visscript", "images"],
   "viscontx": ["viscont"],
 
   "viscont": {
@@ -414,6 +414,17 @@
     },
     "leaf": {
       "table": "snippet",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+
+  "visscript": {
+    "branch": {
+      "table": "visscriptgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "visscript",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
