@@ -750,6 +750,7 @@
   { "id": "NewScript", "note": "New Script" },
   { "id": "NewMultiScript", "note": "New Multi Script" },
   { "id": "NewDiagram", "note": "New Block Diagram" },
+  { "id": "NewVisScript", "note": "New Script" },
   { "id": "DeviceCommand", "note": "Device Command" },
   { "id": "SetCommand", "note": "Set Command" },
   { "id": "GroupCommand", "note": "Group Command" },
@@ -877,5 +878,4 @@
   { "id": "ChannelRead", "note":  "Reading channel"},
   { "id": "ChannelWrite", "note":  "Writing channel"},
   { "id": "Devpropname", "note":  "Device property for link"}
-]
 ]

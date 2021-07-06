@@ -623,7 +623,6 @@
     "ruleID": { "pref": "ajr", "len": 3 }
   },
 
-
   "journalTable": {
     "store": "db",
     "collection": "journals",
@@ -815,13 +814,13 @@
     "collection": "visscripts",
     "ruleID": { "pref": "vs", "len": 4 },
     "default": { "name": "$NewScript" }
-   
   },
 
   "dialogsTreeTable": { "store": "tree", "tree": "dialog", "collection": "dialogs", "rows": true },
   "templatesTreeTable": { "store": "tree", "tree": "vistemplate", "collection": "vistemplates", "rows": true },
   "layoutsTreeTable": { "store": "tree", "tree": "layout", "collection": "layouts", "rows": true },
   "viscontsTreeTable": { "store": "tree", "tree": "viscont", "collection": "visconts", "rows": true },
+  "visscriptsTreeTable": { "store": "tree", "tree": "visscript", "collection": "visscripts", "rows": true },
 
   "imagesTreeTable": { "store": "tree", "tree": "images", "rows": true },
 
@@ -849,7 +848,6 @@
 
   "currentprojectTable": {
     "store": "none"
-   
   },
 
   "projectdepsTable": {

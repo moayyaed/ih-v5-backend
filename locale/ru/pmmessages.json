@@ -819,6 +819,7 @@
   { "id": "NewScript", "note": "Новый сценарий" },
   { "id": "NewMultiScript", "note": "Новый мультисценарий" },
   { "id": "NewDiagram", "note": "Новая блок-схема" },
+  { "id": "NewVisScript", "note": "Новый скрипт" },
   { "id": "DeviceCommand", "note": "Команда устройства" },
   { "id": "SetCommand", "note": "Присваивание значения" },
   { "id": "GroupCommand", "note": "Команда группы устройств" },
