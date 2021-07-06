@@ -75,7 +75,7 @@
   },
 
   "devices": ["devicesExp"],
-  "elements": ["devicesExp", "sysdevices", "globals", "locals"],
+  "elements": ["devicesExp", "sysdevices", "globals", "locals","syslocals"],
   "elementsAndVistemplates": ["devicesExp", "sysdevices", "globals", "locals", "vistemplate", "anydev"],
   "elementsAndAny": ["devicesExp", "sysdevices", "globals", "locals", "anydev"],
   "anydev": {
@@ -93,6 +93,27 @@
           {
             "title": "$StatProps",
             "id": "__devstat"
+          }
+        ]
+      }
+    ]
+  },
+
+  "syslocals": {
+    "data": [
+      {
+        "title": "Системные локальные переменные",
+        "id": "syslocals_all",
+        "root": "syslocals",
+        "expanded": true,
+        "children": [
+          {
+            "title": "Текущий экран",
+            "id": "__syslocal_layout"
+          },
+          {
+            "title": "Текущий пользователь",
+            "id": "__syslocal_username"
           }
         ]
       }

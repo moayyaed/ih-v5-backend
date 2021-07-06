@@ -47,5 +47,16 @@
     "child": {
       "defaultComponent": "elementlink"
     }
+  },
+  "syslocals": {
+    "root": {
+      "defaultComponent": null
+    },
+    "parent": {
+      "defaultComponent": null
+    },
+    "child": {
+      "defaultComponent": "elementlink"
+    }
   }
 }
