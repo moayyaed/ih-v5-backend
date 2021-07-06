@@ -10,6 +10,6 @@
     { "prop": "errstr", "title": "", "type": "text"}
   ],
   "p2": [
-    { "prop": "script", "title": "Code", "type": "code" }
+    { "prop": "handler", "title": "Code", "type": "code" }
   ]
 }
