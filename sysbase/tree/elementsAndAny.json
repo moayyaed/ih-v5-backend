@@ -59,6 +59,19 @@
       "defaultComponent": "elementlink"
     }
   },
+
+  "syslocals": {
+    "root": {
+      "defaultComponent": null
+    },
+    "parent": {
+      "defaultComponent": null
+    },
+    "child": {
+      "defaultComponent": "elementlink"
+    }
+  },
+  
   "anydev": {
     "root": {
       "defaultComponent": null

@@ -77,7 +77,7 @@
   "devices": ["devicesExp"],
   "elements": ["devicesExp", "sysdevices", "globals", "locals","syslocals"],
   "elementsAndVistemplates": ["devicesExp", "sysdevices", "globals", "locals", "vistemplate", "anydev"],
-  "elementsAndAny": ["devicesExp", "sysdevices", "globals", "locals", "anydev"],
+  "elementsAndAny": ["devicesExp", "sysdevices", "globals", "locals","syslocals", "anydev"],
   "anydev": {
     "data": [
       {
@@ -113,7 +113,7 @@
           },
           {
             "title": "Текущий пользователь",
-            "id": "__syslocal_username"
+            "id": "__syslocal_user"
           }
         ]
       }
