@@ -12,7 +12,20 @@
     },
 
     "child": {
-      "defaultComponent": "formViscontx"
+      "defaultComponent": "formDialogx"
+    }
+  },
+  
+  "viscontx": {
+    "root": {
+      "defaultComponent": null
+    },
+    "parent": {
+      "defaultComponent": null
+    },
+
+    "child": {
+      "defaultComponent": "formDialogx"
     }
   }
 }
