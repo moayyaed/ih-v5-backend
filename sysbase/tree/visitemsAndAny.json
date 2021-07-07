@@ -1,0 +1,73 @@
+{
+  "common": {
+    "popup": {
+      "main": [{ "id": "1", "type": "divider", "title": "Edit" }]
+    }
+  },
+  "devicesExp": {
+    "root": {
+      "defaultComponent": null
+    },
+    "parent": {
+      "defaultComponent": null
+    },
+    "child": {
+      "defaultComponent": "devicelink"
+    }
+  },
+  "sysdevices": {
+    "root": {
+      "defaultComponent": null
+    },
+    "parent": {
+      "defaultComponent": null
+    },
+    "child": {
+      "defaultComponent": "devicelink"
+    }
+  },
+  "globals": {
+    "root": {
+      "defaultComponent": null
+    },
+    "parent": {
+      "defaultComponent": null
+    },
+    "child": {
+      "defaultComponent": "devicelink"
+    }
+  },
+  "locals": {
+    "root": {
+      "defaultComponent": null
+    },
+    "parent": {
+      "defaultComponent": null
+    },
+    "child": {
+      "defaultComponent": "devicelink"
+    }
+  },
+  "syslocals": {
+    "root": {
+      "defaultComponent": null
+    },
+    "parent": {
+      "defaultComponent": null
+    },
+    "child": {
+      "defaultComponent": "devicelink"
+    }
+  },
+  "anydev": {
+    "root": {
+      "defaultComponent": null
+    },
+    "parent": {
+      "defaultComponent": null
+    },
+    "child": {
+      "defaultComponent": "devicelink"
+    }
+  }
+}
