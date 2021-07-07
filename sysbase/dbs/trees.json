@@ -113,7 +113,7 @@
           },
           {
             "title": "Текущий пользователь",
-            "id": "__syslocal_user"
+            "id": "__syslocal_username"
           }
         ]
       }
