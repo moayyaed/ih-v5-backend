@@ -155,6 +155,8 @@
   },
 
   "visitems": ["devicesExp", "sysdevices", "globals", "locals"],
+  "visitemsAndAny": ["devicesExp", "sysdevices", "globals", "locals","syslocals", "anydev"],
+
   "devicesdn": ["devicesExp", "sysdevices"],
   "visitemsAndVistemplates": ["devicesExp", "sysdevices", "globals", "locals", "vistemplate"],
   "setitems": ["devicesExp", "globals", "locals"],
