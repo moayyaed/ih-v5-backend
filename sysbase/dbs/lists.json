@@ -21,7 +21,7 @@
 
   "localList": {
     "table": "locals",
-    "propmap": { "_id": "id", "name": "name", "dn": "dn", "defval": "defval" }
+    "propmap": { "_id": "id", "name": "name", "dn": "dn", "defval": "defval", "folder": "folder" }
   },
 
   "unitList": {
