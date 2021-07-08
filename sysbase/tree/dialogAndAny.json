@@ -3,7 +3,7 @@
     "popup": {}
   },
 
-  "dialogAndAny": {
+  "dialog": {
     "root": {
       "defaultComponent": null
     },
