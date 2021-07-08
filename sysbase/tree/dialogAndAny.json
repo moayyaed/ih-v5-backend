@@ -1,0 +1,18 @@
+{
+  "common": {
+    "popup": {}
+  },
+
+  "dialogAndAny": {
+    "root": {
+      "defaultComponent": null
+    },
+    "parent": {
+      "defaultComponent": null
+    },
+
+    "child": {
+      "defaultComponent": "formDialogxAndAny"
+    }
+  }
+}

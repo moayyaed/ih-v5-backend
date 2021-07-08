@@ -64,6 +64,7 @@
   { "id": "qdevices", "note": "设备数" },
   { "id": "qmnemoschemes", "note": "画面数量" },
   { "id": "qlayouts", "note": "布局数量" },
+  { "id": "AnyDevice", "note": "Any Device" },
 
   { "id": "info_0", "note": "Not for sale. For personal use only." },
   { "id": "info_1", "note": "Commercial version." },
