@@ -1,6 +1,4 @@
 {
-  "dev": ["devdevices", "sysdevices", "globals", "locals", "types"],
-
   "places": {
     "branch": {
       "table": "place",
@@ -75,9 +73,9 @@
   },
 
   "devices": ["devicesExp"],
-  "elements": ["devicesExp", "sysdevices", "globals", "locals"],
+  "elements": ["devicesExp", "sysdevices", "globals", "locals", "syslocals"],
   "elementsAndVistemplates": ["devicesExp", "sysdevices", "globals", "locals", "vistemplate", "anydev"],
-  "elementsAndAny": ["devicesExp", "sysdevices", "globals", "locals", "anydev"],
+  "elementsAndAny": ["devicesExp", "sysdevices", "globals", "locals", "syslocals", "anydev"],
   "anydev": {
     "data": [
       {
@@ -93,6 +91,27 @@
           {
             "title": "$StatProps",
             "id": "__devstat"
+          }
+        ]
+      }
+    ]
+  },
+
+  "syslocals": {
+    "data": [
+      {
+        "title": "Системные локальные переменные",
+        "id": "syslocals_all",
+        "root": "syslocals",
+        "expanded": true,
+        "children": [
+          {
+            "title": "Текущий экран",
+            "id": "__syslocal_layout"
+          },
+          {
+            "title": "Текущий пользователь",
+            "id": "__syslocal_username"
           }
         ]
       }
@@ -134,6 +153,8 @@
   },
 
   "visitems": ["devicesExp", "sysdevices", "globals", "locals"],
+  "visitemsAndAny": ["devicesExp", "sysdevices", "globals", "locals", "syslocals", "anydev"],
+
   "devicesdn": ["devicesExp", "sysdevices"],
   "visitemsAndVistemplates": ["devicesExp", "sysdevices", "globals", "locals", "vistemplate"],
   "setitems": ["devicesExp", "globals", "locals"],
@@ -172,7 +193,6 @@
     "expanded": true
   },
 
-  "vis": ["layout", "viscont", "dialog", "vistemplate", "images"],
   "viscontx": ["viscont"],
 
   "viscont": {
@@ -210,8 +230,6 @@
 
   "layoutx": ["layout"],
 
-  "allscenes": ["scenes"],
-
   "scenes": {
     "branch": {
       "table": "scenegroup",
@@ -231,8 +249,6 @@
   },
 
   "scriptx": ["scenes"],
-
-  "datasource": ["plugins", "snippets", "restapihandlers"],
 
   "plugins": {
     "branch": {
@@ -278,7 +294,6 @@
     }
   },
 
-  "access": ["users", "infogroups", "inforules"],
   "users": {
     "branch": {
       "table": "usergroup",
@@ -370,8 +385,6 @@
     ]
   },
 
-  "database": ["dbagents", "customtables"],
-
   "dbagents": {
     "branch": {
       "table": "dbagentgroup",
@@ -395,6 +408,7 @@
   },
 
   "dialogx": ["dialog"],
+  "dialogAndAny": ["dialog"],
 
   "dialog": {
     "branch": {
@@ -418,6 +432,19 @@
     }
   },
 
+  "visscript": {
+    "branch": {
+      "table": "visscriptgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "visscript",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+
+  "visscriptx": ["visscript"],
+
   "restapihandlers": {
     "branch": {
       "table": "restapihandlergroup",
@@ -437,7 +464,6 @@
     }
   },
 
-  "analytics": ["charts", "journals", "alertjournals", "reports"],
   "charts": {
     "branch": {
       "table": "chartgroup",
@@ -480,5 +506,13 @@
       "table": "reports",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
-  }
+  },
+
+  "dev": ["devdevices", "sysdevices", "globals", "locals", "types"],
+  "vis": ["layout", "viscont", "dialog", "vistemplate", "visscript", "images"],
+  "allscenes": ["scenes"],
+  "datasource": ["plugins", "snippets", "restapihandlers"],
+  "analytics": ["charts", "journals", "alertjournals", "reports"],
+  "database": ["dbagents", "customtables"],
+  "access": ["users", "infogroups", "inforules"]
 }
