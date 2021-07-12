@@ -26,6 +26,19 @@
       "defaultComponent": "elementlink"
     }
   },
+
+  "locals": {
+    "root": {
+      "defaultComponent": null
+    },
+    "parent": {
+      "defaultComponent": null
+    },
+    "child": {
+      "defaultComponent": "elementlink"
+    }
+  },
+  
   "anydev": {
     "parent": {
       "defaultComponent": null
