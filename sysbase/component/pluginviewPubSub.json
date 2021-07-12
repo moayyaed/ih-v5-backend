@@ -12,7 +12,9 @@
       "component": [{ "id": "formPluginChannelsTable", "type": "form" }]
     },
     { "id": "tabUnitExtra", "title": "Расширение", "component": [{ "id": "formPluginExtra", "type": "form" }] },
-    { "id": "tabPluginLogTable", "title": "Журнал", "component": [{ "id": "formOnePluginLogTable", "type": "form" }] }
+    { "id": "tabPluginDebug", "title": "Отладчик", "component": [{ "id": "formPluginDebug", "type": "form" }] },
+    { "id": "tabPluginLogTable", "title": "Журнал", "component": [{ "id": "formOnePluginLogTable", "type": "form" }] },
+    { "id": "tabPluginOwnLog", "title": "Лог", "component": [{ "id": "formPluginOwnLog", "type": "form" }] }
   ],
   "defaultTab": "tabUnitParams"
 }
