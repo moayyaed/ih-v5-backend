@@ -15,6 +15,14 @@
   },
 
   {
+    "id": "modbus",
+    "type": "plugin",
+    "description": "Modbus plugin (TCP, RTU, RTU over TCP)",
+    "url": "https://github.com/intrahouseio/ih-v5-modbus-plugin/archive/refs/tags/v5.5.0.zip",
+    "version": "5.5.0"
+  },
+
+  {
     "id": "snmp",
     "type": "plugin",
     "description": "SNMP plugin",
