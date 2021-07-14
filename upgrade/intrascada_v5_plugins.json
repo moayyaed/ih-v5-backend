@@ -10,8 +10,8 @@
     "id": "mqttclient",
     "type": "plugin",
     "description": "MQTT client",
-    "url": "https://github.com/intrahouseio/ih-v5-mqtt-plugin/archive/refs/tags/v5.5.4.zip",
-    "version": "5.5.4"
+    "url": "https://github.com/intrahouseio/ih-v5-mqtt-plugin/archive/refs/tags/v5.5.5.zip",
+    "version": "5.5.5"
   },
 
   {
