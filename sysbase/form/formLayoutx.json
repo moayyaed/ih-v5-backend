@@ -11,8 +11,8 @@
 
       "columns": [
         { "prop": "target_frame", "title": "Фрейм", "type": "droplist", "data": "__layout_frame_list", "width":300, "filter":true },
-        { "prop": "target_container_id", "title": "Контейнер", "type": "droplist", "data": "containerList", "width":300, "filter":true },
-        { "prop": "device", "title": "Устройство - контекст", "type": "droplist", "data":"deviceList", "width":300, "filter":true }
+        { "prop": "container_id", "title": "Контейнер", "type": "droplist", "data": "containerList", "width":300, "filter":true },
+        { "prop": "device_id", "title": "Устройство - контекст", "type": "droplist", "data":"deviceList", "width":300, "filter":true }
       ]
     }
   ]
