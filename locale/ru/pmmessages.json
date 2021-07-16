@@ -962,6 +962,7 @@
   { "id": "InsuffRights", "note": "Недостаточно прав для доступа." },
   { "id": "ChannelRead", "note":  "Канал для чтения"},
   { "id": "ChannelWrite", "note":  "Канал для записи"},
-  { "id": "Devpropname", "note":  "Свойство устройства для привязки"}
+  { "id": "Devpropname", "note":  "Свойство устройства для привязки"},
+  { "id": "SaveTimeline", "note": "Сохранять для Timeline" }
 
 ]
