@@ -19,7 +19,6 @@
 
   "p4": [
     { "prop": "version", "title": "$Version", "type": "text" },
-    { "prop": "newversion", "title": "$NEWVERSION", "type": "text", "hide": "!data.p4.newversion" },
     {
       "prop": "checkButton",
       "title": "$CHECKUPDATE",
@@ -28,6 +27,8 @@
       "param": "",
       "hide": "data.p4.newversion"
     },
+    { "prop": "usebetasystem", "title": "$BetaAllowed", "type": "cb", "hide": "data.p4.newversion" },
+    { "prop": "newversion", "title": "$NEWVERSION", "type": "text", "hide": "!data.p4.newversion" },
     {
       "prop": "updateButton",
       "title": "$UPDATE",
@@ -35,6 +36,16 @@
       "command": "update",
       "param": "",
       "hide": "!data.p4.newversion"
+    },
+  
+    { "prop": "newbetaversion", "title": "$NEWBETAVERSION", "type": "text", "hide": "!data.p4.newbetaversion || !data.p4.usebetasystem" },
+    {
+      "prop": "updateButton",
+      "title": "$UPDATEBETA",
+      "type": "button",
+      "command": "update",
+      "param": "beta",
+      "hide": "!data.p4.newbetaversion || !data.p4.usebetasystem"
     },
 
     { "prop": "login", "title": "Login", "type": "text" },

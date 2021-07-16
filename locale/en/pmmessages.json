@@ -905,10 +905,14 @@
 
   { "id": "VERSION", "note": "Version" },
   { "id": "NEWVERSION", "note": "A new version is available" },
+  { "id": "NEWBETAVERSION", "note": "A new beta version is available" },
+  { "id": "BetaAllowed", "note": "Upgrade to beta version is allowed" },
+
   { "id": "LATESTVERSION", "note": "The latest version is installed" },
   { "id": "ACTIVATION", "note": "Activate" },
   { "id": "CHECKUPDATE", "note": "Check for updates" },
-  { "id": "UPDATE", "note": "Update" },
+  { "id": "UPDATE", "note": "Upgrade" },
+  { "id": "UPDATEBETA", "note": "Upgrade to beta" },
   { "id": "RestartIH", "note": "Restart server" },
   { "id": "RestartIHToApply", "note": "To apply these settings, you need to restart the server" },
   { "id": "RestartIHWithProject", "note": "Restart server with this project" },
