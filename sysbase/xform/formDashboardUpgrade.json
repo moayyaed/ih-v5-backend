@@ -43,8 +43,7 @@
       "prop": "updateButton",
       "title": "$UPDATEBETA",
       "type": "button",
-      "command": "update",
-      "param": "beta",
+      "command": "updatebeta",
       "hide": "!data.p4.newbetaversion || !data.p4.usebetasystem"
     },
 
