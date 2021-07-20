@@ -39,6 +39,7 @@
   "dialogs": { "folder": "jbasepath" },
 
   "charts": { "folder": "jbasepath" },
+  "timelinecharts": { "folder": "jbasepath" },
   "journals": { "folder": "jbasepath" },
   "alertjournals": { "folder": "jbasepath" },
   "jlevels": { "folder": "jbasepath" },

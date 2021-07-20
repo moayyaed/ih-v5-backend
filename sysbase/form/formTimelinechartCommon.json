@@ -1,0 +1,50 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "timelinechart" },
+
+    { "id": "p5", "xs": 8, "class": "main", "table": "timelinechartTable", "height": 250 },
+    { "id": "p7", "xs": 4, "class": "main", "table": "timelinecolorTable", "height": 250 }
+  ],
+  "spacing": 8,
+
+  "p1": [{ "prop": "name", "title": "$Name", "type": "input" }],
+
+  "p5": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "timelinechartTable",
+      "popupenable": true,
+
+      "columns": [
+        { "prop": "colorgroup", "title": "Группа", "type": "input", "width": 80 },
+      
+        {
+          "prop": "dn_prop",
+          "title": "$Chart_Data_type",
+          "type": "smartbutton2",
+          "params": { "variant": "tree", "title": "Выберите свойство", "id": "devprops", "save": false },
+          "width": 350
+        },
+        { "prop": "legend", "title": "$Legend", "type": "input", "width": 250 }
+      ]
+    }
+  ],
+
+  "p7": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "timelinecolorTable",
+      "popupenable": true,
+
+      "columns": [
+      
+        { "prop": "colorgroup", "title": "Группа", "type": "input", "width": 80 },
+        { "prop": "state", "title": "Значение", "type": "input", "width": 120 },
+        { "prop": "color", "title": "$Color", "type": "color", "width": 120 }
+       
+      ]
+    }
+  ]
+}

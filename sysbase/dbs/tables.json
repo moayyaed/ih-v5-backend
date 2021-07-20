@@ -582,6 +582,42 @@
     }
   },
 
+  "timelinechartgroup": {
+    "store": "db",
+    "collection": "timelinecharts",
+    "filter": { "folder": 1 },
+    "defRootTitle": "Таймлайны",
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "tcg", "len": 3 }
+  },
+
+  "timelinechart": {
+    "store": "db",
+    "collection": "timelinecharts",
+    "genfield": "props",
+    "default": { "name": "Новый таймлайн" },
+    "ruleID": { "pref": "tc", "len": 3 }
+  },
+
+  "timelinechartTable": {
+    "store": "db",
+    "collection": "timelinecharts",
+    "genfield": "props",
+
+    "validator": {
+      "props": {
+        "name": { "notempty": true }
+      }
+    }
+  },
+
+  "timelinecolorTable": {
+    "store": "db",
+    "collection": "timelinecharts",
+    "genfield": "colors"
+  },
+
+
   "journalgroup": {
     "store": "db",
     "collection": "journals",

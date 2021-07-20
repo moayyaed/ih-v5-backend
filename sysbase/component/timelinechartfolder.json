@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabTimelinechartFolder",  "title": "Свойства папки", "component": [{ "id": "formTimelinechartFolder", "type": "form" }]  }
+  ],
+  "defaultTab": "tabTimelinechartFolder"
+}
