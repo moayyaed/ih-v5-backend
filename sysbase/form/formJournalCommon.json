@@ -45,7 +45,7 @@
       "prop": "levelfrom",
       "title": "Выводить сообщения",
       "type": "droplist",
-      "data": "messageLevelList",
+      "data": "allMessagesLevelList",
       "default": 0,
       "hide": "data.p1.src.id == 'alertlog'"
     }

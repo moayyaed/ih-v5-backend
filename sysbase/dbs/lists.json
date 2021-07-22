@@ -208,11 +208,19 @@
     ]
   },
 
-  "messageLevelList": {
+  "allMessagesLevelList": {
     "data": [
       { "id": 0, "title": "$AllMessages" },
       { "id": 1, "title": "$WarnExtraMessages" },
       { "id": 2, "title": "$ExtraMessages" }
+    ]
+  },
+
+  "messageLevelList": {
+    "data": [
+      { "id": 0, "title": "$StdMessage" },
+      { "id": 1, "title": "$WarnMessage" },
+      { "id": 2, "title": "$ExtraMessage" }
     ]
   },
 
