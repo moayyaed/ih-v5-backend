@@ -20,27 +20,35 @@
 
   "p2": [
     { "prop": "filter_header", "title": "Фильтры для включения сообщения в журнал", "type": "header" },
-    { "prop": "unit", "title": "Unit", "type": "droplist", "data": "unitList", "hide":"data.p1.src.id != 'pluginlog'" },
-    { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist", "hide":"data.p1.src.id != 'mainlog' && data.p1.src.id != 'alertlog'" },
-   
     {
-      "prop": "xlocation",
-      "title": "location",
-      "type": "smartbutton",
-      "command": "dialog",
-      "params": { "title": "Location", "type": "tree", "id": "places", "dialog": "devicelink" },
-      "hide":"1 == 1" 
+      "prop": "unit",
+      "title": "Unit",
+      "type": "droplist",
+      "data": "unitList",
+      "hide": "data.p1.src.id != 'pluginlog'"
     },
-
+    {
+      "prop": "tags",
+      "title": "Tags",
+      "type": "tags",
+      "data": "taglist",
+      "hide": "data.p1.src.id != 'mainlog' && data.p1.src.id != 'alertlog'"
+    },
     {
       "prop": "location",
       "title": "Локация",
       "type": "input",
-      "hide":"data.p1.src.id != 'mainlog' && data.p1.src.id != 'alertlog'" 
+      "hide": "data.p1.src.id != 'mainlog' && data.p1.src.id != 'alertlog'"
     },
 
-    { "prop": "levelfrom", "title": "Уровень сообщения не ниже", "type": "droplist", "data":"messageLevelList", "default": 0, "hide":"data.p1.src.id == 'alertlog'"}
-
+    {
+      "prop": "levelfrom",
+      "title": "Уровень сообщения не ниже",
+      "type": "droplist",
+      "data": "messageLevelList",
+      "default": 0,
+      "hide": "data.p1.src.id == 'alertlog'"
+    }
   ],
 
   "p5": [
@@ -53,7 +61,6 @@
       "genfield": "props",
 
       "columns": [
-      
         {
           "prop": "prop",
           "title": "Данные столбца",
