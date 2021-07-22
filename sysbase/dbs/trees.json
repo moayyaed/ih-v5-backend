@@ -112,6 +112,10 @@
           {
             "title": "Текущий пользователь",
             "id": "__syslocal_username"
+          },
+          {
+            "title": "Состояние текущего подключения",
+            "id": "__syslocal_network"
           }
         ]
       }
