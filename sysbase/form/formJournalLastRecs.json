@@ -1,0 +1,23 @@
+{
+  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "journallastrecsTable", "height": "fill" }],
+  "spacing": 10,
+
+  "p1": [
+    {
+      "title": "Последние записи",
+      "type": "table",
+      "prop": "journallastrecsTable",
+
+      "columns": [
+        { "prop": "id", "title": "N", "type": "text", "width": 100 },
+        { "prop": "realtime_ts", "title": "$LogDateTime", "type": "text", "width": 250 },
+    
+        { "prop": "txt", "title": "Сообщение", "type": "text", "width": 150 },
+        { "prop": "tags", "title": "$Tags", "type": "text", "width": 150 },
+        { "prop": "location", "title": "Локация", "type": "text", "width": 150 },
+        { "prop": "level", "title": "$Level", "type": "text", "width": 150 },
+        { "prop": "did", "title": "$Dev_Id", "type": "text", "width": 150 }
+      ]
+    }
+  ]
+}

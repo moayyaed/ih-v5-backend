@@ -1,7 +1,7 @@
 {
   "tabs": [
     { "id": "tabJournalCommon", "title": "Журнал", "component": [{ "id": "formJournalCommon", "type": "form" }] },
-    { "id": "tabJournalLastRecs", "title": "Записи", "component": [{ "id": "formJournalLastRecs", "type": "form" }] }
+    { "id": "tabJournalLastRecs", "title": "Последние записи в БД", "component": [{ "id": "formJournalLastRecs", "type": "form" }] }
    
   ],
   "defaultTab": "tabJournalCommon"

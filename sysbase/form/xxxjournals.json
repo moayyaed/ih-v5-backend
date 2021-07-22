@@ -1,0 +1,10 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main" }
+  ],
+  "spacing": 10,
+ 
+
+  "p1": [{ "prop": "header", "title": "Выберите журнал в меню слева", "type": "header" }]
+ 
+}

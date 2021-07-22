@@ -198,6 +198,10 @@
     "store": "none"
   },
 
+  "journallastrecsTable": {
+    "store": "none"
+  },
+
   "devicepropswithlinks": {
     "store": "db",
     "collection": "devices",

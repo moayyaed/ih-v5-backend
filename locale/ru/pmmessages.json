@@ -865,7 +865,7 @@
   { "id": "ANALYTICS", "note": "Аналитика" },
 
   { "id": "Folder", "note": "Папка" },
-  { "id": "Tags", "note": "Тэги" },
+  { "id": "Tags", "note": "Теги" },
   { "id": "NewFolder", "note": "Новая папка" },
   { "id": "Project", "note": "Проект" },
   { "id": "NewProject", "note": "Новый проект" },

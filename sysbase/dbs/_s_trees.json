@@ -516,7 +516,7 @@
   "vis": ["layout", "viscont", "dialog", "vistemplate", "visscript", "images"],
   "allscenes": ["scenes"],
   "datasource": ["plugins", "snippets", "restapihandlers"],
-  "analytics": ["charts", "journals", "alertjournals", "reports"],
+  "analytics": ["charts", "timelinecharts", "journals", "alertjournals", "reports"],
   "database": ["dbagents", "customtables"],
   "access": ["users", "infogroups", "inforules"]
 }

@@ -68,7 +68,7 @@
           "data": [
             { "id": "dts", "title": "Дата, время" },
             { "id": "txt", "title": "Сообщение" },
-            { "id": "tags", "title": "Тэги" },
+            { "id": "tags", "title": "Теги" },
             { "id": "level", "title": "Уровень" },
             { "id": "location", "title": "Локация" }
           ],
