@@ -869,6 +869,9 @@
   { "id": "StdMessage", "note": "Common message" },
   { "id": "WarnMessage", "note": "Warning" },
   { "id": "ExtraMessage", "note": "Emergency" },
+  { "id": "AllMessages", "note": "All" },
+  { "id": "WarnExtraMessages", "note": "Warning,Emergency" },
+  { "id": "ExtraMessages", "note": "Emergency" },
 
   { "id": "DownloadError", "note": "Download Error!" },
 

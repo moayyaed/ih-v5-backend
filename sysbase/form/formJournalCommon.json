@@ -43,7 +43,7 @@
 
     {
       "prop": "levelfrom",
-      "title": "Уровень сообщения не ниже",
+      "title": "Выводить сообщения",
       "type": "droplist",
       "data": "messageLevelList",
       "default": 0,

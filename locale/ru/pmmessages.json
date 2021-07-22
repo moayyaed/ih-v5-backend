@@ -951,6 +951,9 @@
   { "id": "StdMessage", "note": "Стандартное сообщение" },
   { "id": "WarnMessage", "note": "Предупреждение" },
   { "id": "ExtraMessage", "note": "Авария" },
+  { "id": "AllMessages", "note": "Все" },
+  { "id": "WarnExtraMessages", "note": "Предупреждение,Авария" },
+  { "id": "ExtraMessages", "note": "Авария" },
 
   { "id": "DownloadError", "note": "Ошибка при закачке!" },
 
