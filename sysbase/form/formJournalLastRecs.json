@@ -4,7 +4,7 @@
 
   "p1": [
     {
-      "title": "Последние записи",
+      "title": "Последние записи журнала",
       "type": "table",
       "prop": "journallastrecsTable",
 
