@@ -64,7 +64,8 @@
       "hide": "!data.p2.scriptOnSchedule || data.p2.par_OnSchedule.id != 'cron'",
       "default":"* * * * *"
       
-    }
+    },
+    { "prop": "scriptOnBoot", "title": "При запуске системы", "type": "cb" }
   ],
   "p3": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
 }

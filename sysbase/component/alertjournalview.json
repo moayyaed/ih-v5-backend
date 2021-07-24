@@ -1,6 +1,7 @@
 {
   "tabs": [
-    { "id": "tabAlertJournalCommon", "title": "Журнал", "component": [{ "id": "formAlertJournalCommon", "type": "form" }] }
+    { "id": "tabAlertJournalCommon", "title": "Настройка", "component": [{ "id": "formAlertJournalCommon", "type": "form" }] },
+    { "id": "tabAlertLogTable", "title": "Текущие записи", "component": [{ "id": "formAlertLogTable", "type": "form" }] }
    
   ],
   "defaultTab": "tabAlertJournalCommon"

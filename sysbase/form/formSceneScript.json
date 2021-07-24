@@ -1,25 +1,26 @@
 {
   "grid": [
-    { "id": "p1", "xs": 4, "class": "main", "table": "scene" },
+    { "id": "p1", "xs": 8, "class": "main", "table": "scene" },
     { "id": "p2", "xs": 4, "class": "main", "table": "scene" },
-    { "id": "p3", "xs": 4, "class": "main", "table": "scene" },
+    { "id": "p3", "xs": 4, "class": "main", "table": "scene", "hide":"1==1" },
+   
 
     {
       "id": "p6",
       "xs": 6,
       "class": "main",
       "table": "sceneStarttriggersTable",
-      "hide": "!data.p3.simplescene",
+      "hide": "1==1",
       "height": 300
     },
-    { "id": "p8", "xs": 6, "class": "main", "table": "sceneStoptriggersTable", "hide": "!data.p3.simplescene" },
+    { "id": "p8", "xs": 6, "class": "main", "table": "sceneStoptriggersTable", "hide": "1==1" },
     {
       "id": "p7",
       "xs": 12,
       "class": "main",
       "table": "simplesceneTable",
       "height": 500,
-      "hide": "!data.p3.simplescene"
+      "hide": "1==1"
     },
 
     { "id": "p4", "xs": 12, "class": "main", "table": "scenesTreeTable", "height": 200 },
@@ -33,12 +34,12 @@
     { "prop": "reqts", "title": "Updated", "type": "text" }
   ],
   "p2": [
-    { "prop": "runInChild", "title": "Запуск с низким приоритетом", "type": "cb" },
+    { "prop": "multi", "title": "Мультисценарий", "type": "cb" },
     { "prop": "blk", "title": "Заблокировать запуск сценария", "type": "cb" }
   ],
+
   "p3": [
-    { "prop": "simplescene", "title": "Табличный сценарий", "type": "cb", "hide": "data.p3.multi" },
-    { "prop": "multi", "title": "Мультисценарий", "type": "cb", "hide": "data.p3.simplescene" }
+    { "prop": "simplescene", "title": "Табличный сценарий", "type": "cb", "hide": "data.p2.multi" }
   ],
 
   "p6": [

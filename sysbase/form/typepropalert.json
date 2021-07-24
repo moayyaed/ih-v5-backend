@@ -22,7 +22,7 @@
         { "prop": "id", "title": "", "type": "txt", "width": 50 },
         { "prop": "title", "title": "", "type": "txt", "width": 100 },
         { "prop": "theval", "title": "При значении", "type": "input", "width": 100 },
-        { "prop": "delay", "title": "Задержка (сек)", "type": "number", "width": 100 },
+        { "prop": "delay", "title": "Задержка (сек)", "type": "number", "width": 100, "hide":"1==1" },
         { "prop": "message", "title": "Сообщение", "type": "input", "width": 100 },
         {
           "prop": "level",
@@ -66,7 +66,7 @@
         { "prop": "use", "title": "Использовать", "type": "cb", "width": 100, "hide": "data.id == 'Norm'"  },
         { "prop": "theval", "title": "При значении", "type": "input", "width": 100, "hide": "!data.use || data.id == 'Norm'" },
        
-        { "prop": "delay", "title": "Задержка (сек)", "type": "number", "width": 100, "hide": "!data.use" },
+        { "prop": "delay", "title": "Задержка (сек)", "type": "number", "width": 100, "hide": "1==1" },
         { "prop": "message", "title": "Сообщение нестандартное", "type": "input", "width": 150,  "hide": "!data.use && data.id != 'Norm'" },
         {
           "prop": "toClose",
