@@ -1,11 +1,10 @@
 {
   "grid": [
-    { "id": "p1", "xs": 8, "class": "main", "table": "type" },
-    { "id": "p2", "xs": 4, "class": "main", "table": "type" },
+    { "id": "p1", "xs": 6, "class": "main", "table": "type" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "type" },
     { "id": "p3", "xs": 12, "class": "main", "table": "type", "height":250 }
   ],
-  "spacing": 10,
-  "breadcrumbs": { "tree": "types" },
+  "spacing": 8,
 
   "p1": [
     { "prop": "name", "title": "$Name", "type": "input" },
@@ -14,7 +13,7 @@
   ],
   "p2": [
     { "prop": "scripts_header", "title": "Обработчики", "type": "header" },
-    { "prop": "scriptOnChange", "title": "При изменении свойств устройства", "type": "cb" },
+    { "prop": "scriptOnChange", "title": "При изменении свойств устройства или глобальных переменных", "type": "cb" },
    
   
     {
@@ -28,7 +27,7 @@
       "title": "Глобальная переменная",
       "type": "droplist",
       "data":"globalList",
-      "hide": "1==1"
+      "hide": "!data.p2.scriptOnChange"
     },
 
     { "prop": "scriptOnInterval", "title": "Циклически ", "type": "cb" },
