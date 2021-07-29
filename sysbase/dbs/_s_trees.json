@@ -479,6 +479,17 @@
     }
   },
 
+  "timelinecharts": {
+    "branch": {
+      "table": "timelinechartgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "timelinechart",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+
   "journals": {
     "branch": {
       "table": "journalgroup",
