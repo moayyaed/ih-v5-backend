@@ -1,0 +1,24 @@
+{
+  "grid": [{ "id": "p3", "xs": 12, "class": "main", "table": "scenesTraceTable", "height": "fill" }],
+  "spacing": 10,
+
+  "p3": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "scenesTraceTable",
+      
+      "columns": [
+        { "prop": "blk", "title": "Блокирован", "type": "text", "width": 50, "filter":true },
+        { "prop": "scene_link", "title": "Сценарий",  "type": "link", "width": 250, "command": "forward" }, 
+        { "prop": "startStr", "title": "Последний запуск", "type": "text", "width": 128},
+        { "prop": "stopStr", "title": "Последний останов", "type": "text", "width": 128},
+        { "prop": "duration", "title": "Длительность, мс", "type": "text", "width": 128},
+        { "prop": "minDuration", "title": "Мin длительность, мс", "type": "text", "width": 128},
+        { "prop": "maxDuration", "title": "Мax длительность, мс", "type": "text", "width": 128},
+        { "prop": "count", "title": "Всего запусков", "type": "text", "width": 128 },
+        { "prop": "error", "title": "Ошибка", "type": "text", "width": 128 }
+      ] 
+    }
+  ]
+}
