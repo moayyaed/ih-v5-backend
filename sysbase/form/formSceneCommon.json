@@ -35,6 +35,7 @@
       "prop": "scenesTreeTable",
 
       "columns": [
+        { "prop": "blk", "title": "Блокировка", "type": "text",  "width": 100 },
         { "prop": "name", "title": "$Name", "type": "text",  "width": 150 },
         { "prop": "state", "title": "Состояние", "type": "text",  "width": 150 },
         { "prop": "laststart", "title": "Время запуска", "type": "text",  "width": 150 },

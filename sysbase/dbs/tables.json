@@ -504,6 +504,11 @@
     "ruleID": { "pref": "call_", "len": 3 }
   },
 
+  "scenestateTable": {
+    "store": "none"
+  },
+
+
   "unitgroup": {
     "store": "db",
     "collection": "units",

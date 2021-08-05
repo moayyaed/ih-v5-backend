@@ -23,7 +23,7 @@
       "hide": "1==1"
     },
 
-    { "id": "p4", "xs": 12, "class": "main", "table": "scenesTreeTable", "height": 200 },
+    { "id": "p4", "xs": 12, "class": "main", "table": "scenestateTable", "height": 200 },
     { "id": "p5", "xs": 12, "class": "main", "table": "scenecall", "height": "fill" }
   ],
   "spacing": 10,
@@ -147,9 +147,10 @@
     {
       "title": "",
       "type": "table",
-      "prop": "scenesTreeTable",
+      "prop": "scenestateTable",
 
       "columns": [
+        { "prop": "blk", "title": "Блокировка", "type": "text", "width": 100 },
         { "prop": "name", "title": "$Name", "type": "text", "width": 150 },
         { "prop": "state", "title": "Состояние", "type": "text", "width": 150 },
         { "prop": "laststart", "title": "Время запуска", "type": "text", "width": 150 },
