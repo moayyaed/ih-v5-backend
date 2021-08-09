@@ -5,6 +5,9 @@
   "p1": [
     { "prop": "device", "title": "Устройство - контекст", "type": "droplist", "data":"deviceList" },
     { "prop": "multichart_id", "title": "График", "type": "droplist", "data":"chartList" },
-    { "prop": "timelinechart_id", "title": "Таймлайн", "type": "droplist", "data":"timelinechartList" }
+    { "prop": "timelinechart_id", "title": "Таймлайн", "type": "droplist", "data":"timelinechartList" },
+    { "prop": "journal_id", "title": "Журнал", "type": "droplist", "data":"journalList" },
+    { "prop": "alertjournal_id", "title": "Журнал тревог", "type": "droplist", "data":"alertjournalList" }
+
   ]
 }

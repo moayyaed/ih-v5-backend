@@ -127,6 +127,15 @@
     "propmap": { "_id": "id", "name": "title", "folder": "folder" }
   },
  
+  "journalList": {
+    "table": "journal",
+    "propmap": { "_id": "id", "name": "title", "folder": "folder" }
+  },
+
+  "alertjournalList": {
+    "table": "alertjournal",
+    "propmap": { "_id": "id", "name": "title", "folder": "folder" }
+  },
 
   "roleList": {
     "data": [

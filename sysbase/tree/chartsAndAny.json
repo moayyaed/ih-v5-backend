@@ -1,0 +1,33 @@
+{
+  "common": {
+    "popup": {}
+  },
+
+  "charts": {
+    "root": {
+      "defaultComponent": null
+    },
+    
+    "parent": {
+      "defaultComponent": null
+    },
+
+    "child": {
+      "defaultComponent": "formChartx"
+    }
+  },
+
+  "anychart": {
+    "root": {
+      "defaultComponent": null
+    },
+    
+    "parent": {
+      "defaultComponent": null
+    },
+
+    "child": {
+      "defaultComponent": "formChartx"
+    }
+  }
+}

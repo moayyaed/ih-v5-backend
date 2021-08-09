@@ -14,7 +14,9 @@
         { "prop": "container_id", "title": "Контейнер", "type": "droplist", "data": "containerList", "width":300, "filter":true },
         { "prop": "device_id", "title": "Устройство - контекст", "type": "droplist", "data":"deviceList", "width":300, "filter":true },
         { "prop": "multichart_id", "title": "График", "type": "droplist", "data":"chartList", "width":300, "filter":true },
-        { "prop": "timelinechart_id", "title": "Таймлайн", "type": "droplist", "data":"timelinechartList", "width":300, "filter":true }
+        { "prop": "timelinechart_id", "title": "Таймлайн", "type": "droplist", "data":"timelinechartList", "width":300, "filter":true },
+        { "prop": "journal_id", "title": "Журнал", "type": "droplist", "data":"journalList", "width":300, "filter":true },
+        { "prop": "alertjournal_id", "title": "Журнал тревог", "type": "droplist", "data":"alertjournalList", "width":300, "filter":true }
       ]
     }
   ]
