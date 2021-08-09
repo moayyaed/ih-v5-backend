@@ -241,5 +241,14 @@
       { "id": "ack", "title": "При квитировании" },
       { "id": "normAndAck", "title": "Квитирование+нормализация" }
     ]
+  },
+
+  "deviceStaticPropList": {
+    "data": [
+      { "id": "dn", "title": "$Dev_Id" },
+      { "id": "name", "title": "$Name" },
+      { "id": "placeStr", "title": "Место размещения - строка" },
+      { "id": "placePath", "title": "Место размещения - путь" }
+    ]
   }
 }
