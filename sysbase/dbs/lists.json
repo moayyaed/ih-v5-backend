@@ -107,6 +107,12 @@
     ]
   },
 
+
+  "chartList": {
+    "table": "chart",
+    "propmap": { "_id": "id", "name": "title", "folder": "folder" }
+  },
+
   "chartlineList": {
     "data": [
       { "id": 0, "title": "Real data" },
@@ -114,6 +120,13 @@
       { "id": 2, "title": "Static fill" }
     ]
   },
+
+
+  "timelinechartList": {
+    "table": "timelinechart",
+    "propmap": { "_id": "id", "name": "title", "folder": "folder" }
+  },
+ 
 
   "roleList": {
     "data": [
