@@ -510,6 +510,27 @@
     }
   },
 
+  "timelinechartsAndAny":["timelinecharts", "anytimelinechart"],
+
+  "anytimelinechart": {
+    "data": [
+      {
+        "title": "Любой",
+        "id": "anyRoot",
+        "root": "anytimelinechart",
+        "expanded": true,
+        "children": [
+          {
+            "title": "Любой таймлайн",
+            "id": "__timelinechart"
+          }
+        ]
+      }
+    ]
+  },
+
+  
+
   "journals": {
     "branch": {
       "table": "journalgroup",

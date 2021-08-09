@@ -1,0 +1,33 @@
+{
+  "common": {
+    "popup": {}
+  },
+
+  "timelinecharts": {
+    "root": {
+      "defaultComponent": null
+    },
+    
+    "parent": {
+      "defaultComponent": null
+    },
+
+    "child": {
+      "defaultComponent": "formTimelinechartx"
+    }
+  },
+
+  "anytimelinechart": {
+    "root": {
+      "defaultComponent": null
+    },
+    
+    "parent": {
+      "defaultComponent": null
+    },
+
+    "child": {
+      "defaultComponent": "formTimelinechartx"
+    }
+  }
+}
