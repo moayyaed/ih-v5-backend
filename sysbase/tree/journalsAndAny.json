@@ -1,0 +1,33 @@
+{
+  "common": {
+    "popup": {}
+  },
+
+  "journals": {
+    "root": {
+      "defaultComponent": null
+    },
+    
+    "parent": {
+      "defaultComponent": null
+    },
+
+    "child": {
+      "defaultComponent": "formChartx"
+    }
+  },
+  
+  "anyjournal": {
+    "root": {
+      "defaultComponent": null
+    },
+    
+    "parent": {
+      "defaultComponent": null
+    },
+
+    "child": {
+      "defaultComponent": "formChartx"
+    }
+  }
+}

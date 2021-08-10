@@ -542,6 +542,25 @@
     }
   },
 
+  "journalsAndAny":["journals", "anyjournal"],
+
+  "anyjournal": {
+    "data": [
+      {
+        "title": "Любой",
+        "id": "anyRoot",
+        "root": "anyjournal",
+        "expanded": true,
+        "children": [
+          {
+            "title": "Любой журнал",
+            "id": "__journal"
+          }
+        ]
+      }
+    ]
+  },
+
   "alertjournals": {
     "branch": {
       "table": "alertjournalgroup",
@@ -552,6 +571,26 @@
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
+
+  "alertjournalsAndAny":["alertjournals", "anyalertjournal"],
+
+  "anyalertjournal": {
+    "data": [
+      {
+        "title": "Любой",
+        "id": "anyRoot",
+        "root": "anyalertjournal",
+        "expanded": true,
+        "children": [
+          {
+            "title": "Любой журнал",
+            "id": "__alertjournal"
+          }
+        ]
+      }
+    ]
+  },
+
 
   "reports": {
     "branch": {

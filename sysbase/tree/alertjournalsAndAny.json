@@ -1,0 +1,32 @@
+{
+  "common": {
+    "popup": {}
+  },
+
+  "alertjournals": {
+    "root": {
+      "defaultComponent": null
+    },
+    
+    "parent": {
+      "defaultComponent": null
+    },
+
+    "child": {
+      "defaultComponent": "formChartx"
+    }
+  },
+  "anyalertjournal": {
+    "root": {
+      "defaultComponent": null
+    },
+    
+    "parent": {
+      "defaultComponent": null
+    },
+
+    "child": {
+      "defaultComponent": "formChartx"
+    }
+  }
+}
