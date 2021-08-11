@@ -479,6 +479,26 @@
     }
   },
 
+  "chartsAndAny":["charts", "anychart"], 
+  "anychart": {
+    "data": [
+      {
+        "title": "Любой",
+        "id": "anyRoot",
+        "root": "anychart",
+        "expanded": true,
+        "children": [
+          {
+            "title": "Любой график",
+            "id": "__chart"
+          }
+        ]
+      }
+    ]
+  },
+
+
+
   "timelinecharts": {
     "branch": {
       "table": "timelinechartgroup",
@@ -489,6 +509,27 @@
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
+
+  "timelinechartsAndAny":["timelinecharts", "anytimelinechart"],
+
+  "anytimelinechart": {
+    "data": [
+      {
+        "title": "Любой",
+        "id": "anyRoot",
+        "root": "anytimelinechart",
+        "expanded": true,
+        "children": [
+          {
+            "title": "Любой таймлайн",
+            "id": "__timelinechart"
+          }
+        ]
+      }
+    ]
+  },
+
+  
 
   "journals": {
     "branch": {
@@ -501,6 +542,25 @@
     }
   },
 
+  "journalsAndAny":["journals", "anyjournal"],
+
+  "anyjournal": {
+    "data": [
+      {
+        "title": "Любой",
+        "id": "anyRoot",
+        "root": "anyjournal",
+        "expanded": true,
+        "children": [
+          {
+            "title": "Любой журнал",
+            "id": "__journal"
+          }
+        ]
+      }
+    ]
+  },
+
   "alertjournals": {
     "branch": {
       "table": "alertjournalgroup",
@@ -511,6 +571,26 @@
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
+
+  "alertjournalsAndAny":["alertjournals", "anyalertjournal"],
+
+  "anyalertjournal": {
+    "data": [
+      {
+        "title": "Любой",
+        "id": "anyRoot",
+        "root": "anyalertjournal",
+        "expanded": true,
+        "children": [
+          {
+            "title": "Любой журнал",
+            "id": "__alertjournal"
+          }
+        ]
+      }
+    ]
+  },
+
 
   "reports": {
     "branch": {
