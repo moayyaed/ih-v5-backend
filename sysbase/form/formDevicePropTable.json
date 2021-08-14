@@ -20,7 +20,7 @@
           "title": "$Dev_channel",
           "type": "smartbutton",
           "width": 180,
-          "hide": "data.snipuse || data.type_op.includes('System') || data.type_op.includes('Calculate')",
+          "hide": "data.snipuse || data.type_op.includes('System') || data.type_op.includes('Calculate') || data.type_op.includes('Scene')",
           "command": "dialog",
           "params": { "title": "Привязка к каналу", "type": "tree", "id": "pluginsd", "dialog": "channellink" }
         },
@@ -42,7 +42,7 @@
           "title": "$SaveToDeviceLog",
           "type": "cb",
           "width": 80,
-          "hide": "data.prop == 'error' || data.type_op == 'Command'"
+          "hide": "data.prop == 'error' || data.type_op == 'Command' || data.type_op.includes('Scene')"
         },
         { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide": "!data.type_op.includes('Number')" },
         { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide": "!data.type_op.includes('Number')" },
