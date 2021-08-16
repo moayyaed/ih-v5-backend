@@ -48,7 +48,7 @@
 
   "sceneList": {
     "table": "scene",
-    "propmap": { "_id": "id", "name": "name", "tags": "tags", "status": "status", "multi": "multi", "folder": "folder" }
+    "propmap": { "_id": "id", "name": "name", "blk": "blk", "multi": "multi", "folder": "folder" }
   },
 
   "snippetList": {

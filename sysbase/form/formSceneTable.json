@@ -3,7 +3,6 @@
     { "id": "p1", "xs": 12, "class": "main", "table":"scenesTreeTable", "height":"fill"}
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "scenes" },
 
   "p1": [
     {
@@ -13,10 +12,10 @@
 
       "columns": [
 
-        { "prop": "title", "title": "", "type": "link", "command":"forward",  "width": 400, "filter":true  },
-        { "prop": "name", "title": "$Name", "type": "input",  "width": 400, "filter":true }, 
-        { "prop": "tags", "title": "Tags", "type": "text",  "width": 200, "filter":true },
-        { "prop": "path", "title": "", "type": "text",  "width": 200, "filter":true }
+        { "prop": "scene_link", "title": "", "type": "link", "command":"forward",  "width": 400, "filter":true  }, 
+        { "prop": "multi_str", "title": "Тип", "type": "text",  "width": 200, "filter":true },
+        { "prop": "blk_str", "title": "Блокировка", "type": "text",  "width": 200, "filter":true },
+        { "prop": "path", "title": "В папке", "type": "text",  "width": 200, "filter":true }
       ]
     }
   ]
