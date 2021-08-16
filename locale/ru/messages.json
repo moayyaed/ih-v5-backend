@@ -272,6 +272,7 @@
   { "id": "mustBeLessToMax", "note": "значение не может быть меньше max" },
   { "id": "mustBeGreaterToMin", "note": "значение не может быть больше min" },
   { "id": "mustBeUnique", "note": "значение должно быть уникально" },
+  { "id": "reserved", "note": "зарезервированное название" },
   { "id": "selectFromList", "note": "Выберите значение из списка!" },
   { "id": "TypeImportError", "note": "Ошибка при переносе типа! Подробности в логе системы." },
   { "id": "ScriptWithErrorAlwaysBlocked", "note": "Скрипт с ошибкой не может быть разблокирован!" },
