@@ -244,7 +244,7 @@
         "name": { "notempty": true }
       },
       "props": {
-        "newid": { "notempty": true, "validid": true },
+        "newid": { "notempty": true, "validid": true,  "custom": true  },
         "name": { "notempty": true },
         "op": { "notempty": true },
         "min": { "type": "number", "spec": "min" },
@@ -269,7 +269,7 @@
         "name": { "notempty": true }
       },
       "props": {
-        "newid": { "notempty": true, "validid": true },
+        "newid": { "notempty": true, "validid": true,  "custom": true },
         "name": { "notempty": true },
         "op": { "notempty": true },
         "min": { "type": "number", "spec": "min" },
