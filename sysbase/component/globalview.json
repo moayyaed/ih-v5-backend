@@ -4,7 +4,6 @@
 
     { "id": "tabGlobalHandlers", "title": "Обработчик", "component": [{ "id": "globalhandler", "type": "form" }] },
 
-    { "id": "tabGlobalLog", "title": "Журнал", "component": [{ "id": "formGlobalVarLogTable", "type": "form" }] },
     { "id": "tabGlobalUsage", "title": "Использование", "component": [{ "id": "formGlobalVarUsage", "type": "form" }] }
    
   ],

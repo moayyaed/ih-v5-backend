@@ -1,9 +1,18 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "globals" },
+    { "id": "p1", "xs": 4, "class": "main", "table": "globals" },
+    { "id": "p2", "xs": 4, "class": "main", "table": "glcurrentTable" },
+    { "id": "p3", "xs": 4, "class": "main", "table": "devicelogTable", "hide": "!data.p1.save" },
 
-    { "id": "p3", "xs": 6, "class": "main", "table": "globalScripttriggersTable", "hide": "!data.p1.scriptOnChange" },
-    { "id": "p4", "xs": 12, "class": "main", "table": "globals" }
+    {
+      "id": "p5",
+      "xs": 12,
+      "class": "main",
+      "table": "globalScripttriggersTable",
+      "hide": "!data.p1.scriptOnChange",
+      "height": 400
+    },
+    { "id": "p9", "xs": 12, "class": "main", "table": "globals" }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "globals" },
@@ -11,28 +20,51 @@
   "p1": [
     { "prop": "dn", "title": "$Var_Id", "type": "input" },
     { "prop": "name", "title": "$Name", "type": "input" },
-    { "prop": "defval", "title": "$DefaultValue", "type": "input" },
-    { "prop": "setdef", "title": "$SetDef", "type": "cb" },
+    { "prop": "defval", "title": "$DefaultValue", "type": "input", "hide": "data.p1.scriptOnChange" },
+    { "prop": "setdef", "title": "$SetDef", "type": "cb", "hide": "data.p1.scriptOnChange" },
     { "prop": "save", "title": "Сохранять в журнале", "type": "cb" },
- 
+
     {
       "prop": "scriptOnChange",
-      "title": "Использовать обработчик для получения значения при изменении свойств устройств",
+      "title": "Использовать обработчик для расчета значения при изменении свойств устройств",
       "type": "cb",
       "hide": "data.p1.snipuse"
     },
 
     {
       "prop": "snipuse",
-      "title": "Использовать сниппет для получения значения",
+      "title": "Использовать сниппет для расчета значения",
       "type": "cb",
       "hide": "data.p1.scriptOnChange"
     },
     { "prop": "snipid", "title": "$Snippet", "type": "droplist", "data": "snippetList", "hide": "!data.p1.snipuse" },
     { "prop": "snipperiod", "title": "$SnipPeriod", "type": "number", "hide": "!data.p1.snipuse" }
   ],
+
+  "p2": [
+    { "prop": "val", "title": "Текущее значение", "type": "text" },
+    { "prop": "ts", "title": "Время изменения", "type": "text" },
+    {
+      "prop": "_inputval",
+      "title": "Присвоить значение",
+      "type": "input"
+    }
+  ],
+
   "p3": [
-   
+    {
+      "title": "",
+      "type": "table",
+      "prop": "devicelogTable",
+
+      "columns": [
+        { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 150 },
+        { "prop": "val", "title": "Значение", "type": "text", "width": 100 }
+      ]
+    }
+  ],
+
+  "p5": [
     {
       "title": "",
       "type": "table",
@@ -45,13 +77,16 @@
           "prop": "devtrig",
           "title": "Свойства-триггеры для запуска обработчика",
           "type": "smartbutton",
-          "width":400,
+          "width": 400,
           "command": "dialog",
           "params": { "title": "Выбор триггера", "type": "tree", "id": "devprops", "dialog": "devicelink" }
-        }
+        },
+        { "prop": "realtime_dev_val", "title": "$Value", "type": "text", "width": 100 },
+        { "prop": "realtime_dev_ts", "title": "$LogDateTime", "type": "text", "width": 150 },
+        { "prop": "realtime_dev_cts", "title": "Изменение", "type": "text", "width": 128 },
+        { "prop": "realtime_dev_err", "title": "$Error", "type": "text", "width": 128 }
       ]
     }
-    
   ],
-  "p4": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
+  "p9": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
 }
