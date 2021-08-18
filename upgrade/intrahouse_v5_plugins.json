@@ -43,5 +43,12 @@
     "description": "HTTP plugin",
     "url": "https://github.com/intrahouseio/ih-v5-http-plugin/archive/refs/tags/v5.5.2.zip",
     "version": "5.5.2"
+  },
+  {
+    "id": "cctv",
+    "type": "plugin",
+    "description": "CCTV plugin",
+    "url": "https://github.com/intrahouseio/ih-v5-cctv-plugin/archive/refs/tags/v5.5.0.zip",
+    "version": "5.5.0"
   }
 ]
