@@ -1,0 +1,18 @@
+{
+  "common": {
+    "popup": {}
+  },
+
+  "channelsx": {
+    "root": {
+      "defaultComponent": null
+    },
+    "parent": {
+      "defaultComponent": null
+    },
+
+    "child": {
+      "defaultComponent": null
+    }
+  }
+}
