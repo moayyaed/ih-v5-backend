@@ -22,9 +22,8 @@
       "height": 500,
       "hide": "1==1"
     },
-
-    { "id": "p4", "xs": 12, "class": "main", "table": "scenestateTable", "height": 200 },
-    { "id": "p5", "xs": 12, "class": "main", "table": "scenecall", "height": "fill" }
+    { "id": "p5", "xs": 12, "class": "main", "table": "scenecall", "height": 400 },
+    { "id": "p4", "xs": 12, "class": "main", "table": "scenestateTable", "height": 200 }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "scenes" },
