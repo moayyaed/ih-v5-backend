@@ -3,16 +3,16 @@
     { "id": "p2", "xs": 6, "class": "main", "table": "mobiledevice" },
     { "id": "p3", "xs": 6, "class": "main", "table": "mobiledevice" },
 
-    { "id": "p4", "xs": 6, "class": "main", "table": "mobiledevice" },
-    { "id": "p5", "xs": 6, "class": "main", "table": "mobiledevice", "hide": "data.p2.cl.id.startsWith('Sensor')" },
-    { "id": "p7", "xs": 6, "class": "main", "table": "mobiledevice" },
-    { "id": "p8", "xs": 6, "class": "main", "table": "mobiledevice", "hide": "data.p2.cl.id.startsWith('Sensor')" },
+    { "id": "p4", "xs": 3, "class": "main", "table": "mobiledevice" },
+    { "id": "p5", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "data.p2.cl.id.startsWith('Sensor')" },
+    { "id": "p7", "xs": 3, "class": "main", "table": "mobiledevice" },
+    { "id": "p8", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "data.p2.cl.id.startsWith('Sensor')" },
     { "id": "p9", "xs": 12, "class": "main", "table": "mobiledeviceTable", "hide": "1==1" }
   ],
   "spacing": 10,
 
   "p2": [
-    { "prop": "did", "title": "Устройство", "type": "droplist", "data": "deviceList" },
+    { "prop": "did", "title": "Устройство", "type": "text", "command": "forward"  },
     { "prop": "dn", "title": "ID устройства", "type": "text" },
     { "prop": "name", "title": "$Name", "type": "input" },
     { "prop": "cl", "title": "Класс V4", "type": "droplist", "data": "classV4List" }
