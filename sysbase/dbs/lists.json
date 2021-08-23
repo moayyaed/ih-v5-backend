@@ -107,7 +107,6 @@
     ]
   },
 
-
   "chartList": {
     "table": "chart",
     "propmap": { "_id": "id", "name": "title", "folder": "folder" }
@@ -121,12 +120,11 @@
     ]
   },
 
-
   "timelinechartList": {
     "table": "timelinechart",
     "propmap": { "_id": "id", "name": "title", "folder": "folder" }
   },
- 
+
   "journalList": {
     "table": "journal",
     "propmap": { "_id": "id", "name": "title", "folder": "folder" }
@@ -272,5 +270,24 @@
       { "id": "placeStr", "title": "Место размещения - строка" },
       { "id": "placePath", "title": "Место размещения - путь" }
     ]
+  },
+
+  "chartAggPeriodList": {
+    "data": [
+      { "id": "min", "title": "Minute" },
+      { "id": "hour", "title": "$Hour" },
+      { "id": "day", "title": "$Day" },
+      { "id": "month", "title": "$Month" }
+    ]
+  },
+
+  "chartAggFunctionList": {
+    "data": [
+      { "id": "min", "title": "Min" },
+      { "id": "max", "title": "Max" },
+      { "id": "sum", "title": "Sum" },
+      { "id": "mean", "title": "Mean" }
+    ]
   }
+
 }
