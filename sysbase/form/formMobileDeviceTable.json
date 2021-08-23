@@ -1,0 +1,25 @@
+{
+  "grid": [
+    { "id": "p2", "xs": 12, "class": "main", "table": "mobiledeviceTable", "height": "fill" }
+  ],
+  "spacing": 10,
+
+
+
+  "p2": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "mobiledeviceTable",
+      "popupenable": true,
+
+      "columns": [
+        { "prop": "id", "title": "ID ", "type": "text", "width": 150, "filter": true },
+        { "prop": "device", "title": "Устройство", "type": "droplist", "data": "deviceList", "width": 350 },
+        { "prop": "cl", "title": "Класс V4", "type": "droplist", "data": "classV4List", "width": 150 }
+
+        
+      ]
+    }
+  ]
+}

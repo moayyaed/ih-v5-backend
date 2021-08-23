@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabMobileDeviceTable", "title": "Устройства для мобильного", "component": [{ "id": "formMobileDeviceTable", "type": "form" }] }
+  ],
+  "defaultTab": "tabMobileDeviceTable"
+}

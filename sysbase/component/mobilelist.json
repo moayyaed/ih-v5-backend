@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabMobileList", "title": "Список для мобильного", "component": [{ "id": "formMobileList", "type": "form" }] }
+  ],
+  "defaultTab": "tabMobileList"
+}

@@ -905,5 +905,37 @@
     "store": "db",
     "collection": "projectdeps",
     "rows": 1
+  },
+
+  "mobileListTable":{
+    "store": "db",
+    "collection": "mobilelists",
+    "rows": 1
+  },
+
+  "mobiledevice": {
+    "store": "db",
+    "collection": "mobiledevices",
+    
+    "validator": {
+      "main": {
+        "name": { "required": true, "notempty": true },
+        "dn": { "required": true, "notempty": true, "unique": true },
+        "type": { "required": true, "notempty": true }
+      }
+    }
+  },
+
+  "mobiledevicegroup": {
+    "store": "db",
+    "collection": "mobiledevices",
+    "defRootTitle": "Устройства в мобильном",
+    "filter": { "folder": 1 }
+  },
+
+  "mobiledeviceTable": {
+    "store": "db",
+    "collection": "mobiledevices",
+    "rows":1
   }
 }

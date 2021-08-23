@@ -1,5 +1,7 @@
 {
   "lists": { "folder": "jbasepath" },
+  "mobilelists": { "folder": "jbasepath" },
+  "mobiledevices": { "folder": "jbasepath" },
   "devices": { "folder": "jbasepath" },
   "devicedb": { "folder": "jbasepath" },
   "devhard": { "folder": "jbasepath" },

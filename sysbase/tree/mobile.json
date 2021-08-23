@@ -1,0 +1,67 @@
+{
+  "common": {
+    "popup": {
+      "main": []
+    }
+  },
+
+  "mobilelists": {
+    "root": {
+      "popup": {
+        "main": [
+        ]
+      },
+      "defaultComponent": null
+    },
+    "parent": {
+      "popup": {
+        "main": [
+        ]
+      },
+      "defaultComponent": null
+    },
+
+    "child": {
+      "popup": {
+        "main": [
+        ]
+      },
+      "defaultComponent": "mobilelist"
+    }
+  },
+
+  "mobiledevices": {
+    "root": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "remote", "title": "Add Device", "command": "addNodeByContext", "popupid": "devdevices" }
+        
+        ]
+      },
+      "defaultComponent": "mobiledevicefolder"
+    },
+    "parent": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "remote", "title": "Add Device", "command": "addNodeByContext", "popupid": "devdevices" }
+        ]
+      },
+      "defaultComponent": "mobiledevicefolder"
+    },
+
+    "child": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "remote", "title": "Add Device", "command": "addNodeByContext", "popupid": "devdevices" },
+        
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
+          { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" }
+
+
+        ]
+      },
+      "defaultComponent": "mobiledevice"
+    }
+  }
+}

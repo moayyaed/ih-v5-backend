@@ -288,6 +288,16 @@
       { "id": "sum", "title": "Sum" },
       { "id": "mean", "title": "Mean" }
     ]
+  },
+
+  "classV4List": {
+    "data": [
+      { "id": "SensorD", "title": "Дискретный датчик" },
+      { "id": "SensorA", "title": "Аналоговый датчик" },
+      { "id": "ActorD", "title": "Дискретный актуатор" },
+      { "id": "ActorA", "title": "Аналоговый актуатор" }
+      
+    ]
   }
 
 }

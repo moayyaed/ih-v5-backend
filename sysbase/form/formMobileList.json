@@ -1,0 +1,22 @@
+{
+  "grid": [
+    { "id": "p2", "xs": 12, "class": "main", "table": "mobileListTable", "height": "fill" }
+  ],
+  "spacing": 10,
+
+
+
+  "p2": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "mobileListTable",
+      "popupenable": true,
+
+      "columns": [
+        { "prop": "id", "title": "ID записи", "type": "text", "width": 150, "filter": true },
+        { "prop": "txt", "title": "Название", "type": "text", "width": 250, "filter": true }
+      ]
+    }
+  ]
+}
