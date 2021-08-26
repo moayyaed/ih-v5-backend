@@ -24,6 +24,7 @@
   "locals": { "folder": "jbasepath" },
 
   "units": { "folder": "jbasepath" },
+  "sysunits": { "folder": "jbasepath" },
   "snippets": { "folder": "jbasepath" },
   "restapihandlers": { "folder": "jbasepath" },
   "visscripts": { "folder": "jbasepath" },

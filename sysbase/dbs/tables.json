@@ -534,6 +534,13 @@
     "store": "none"
   },
 
+
+  "sysunits": {
+    "store": "db",
+    "collection": "sysunits"
+  },
+
+
   "targetFrameTable": {
     "store": "none"
   },
