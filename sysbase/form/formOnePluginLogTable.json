@@ -6,8 +6,6 @@
   "spacing": 10,
   "breadcrumbs": { "tree": "plugins" },
 
-  "p1": [{ "prop": "days", "title": "Срок хранения данных в журнале", "type": "droplist", "data": "dbretentionList" }],
-
   "p2": [
     {
       "title": "",
