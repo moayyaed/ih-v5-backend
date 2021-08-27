@@ -1,7 +1,7 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "schedurulegroup" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "schedurulegroup" }
+    { "id": "p1", "xs": 6, "class": "main", "table": "schedrulegroup" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "schedrulegroup" }
   ],
   "spacing": 10,
 

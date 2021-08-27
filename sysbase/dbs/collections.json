@@ -39,7 +39,7 @@
   "scenes": { "folder": "jbasepath" },
   "scenecalls": { "folder": "jbasepath" },
 
-  "schedurules": { "folder": "jbasepath" },
+  "schedrules": { "folder": "jbasepath" },
 
   "images": { "folder": "jbasepath" },
 

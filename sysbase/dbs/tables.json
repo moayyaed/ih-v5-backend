@@ -476,9 +476,9 @@
   },
   "scenesTreeTable": { "store": "tree", "tree": "scenes", "rows": true },
 
-  "schedurule": {
+  "schedrule": {
     "store": "db",
-    "collection": "schedurules",
+    "collection": "schedrules",
     "default": { "name": "New" },
     "validator": {
       "main": {
@@ -487,11 +487,11 @@
     },
     "ruleID": { "pref": "sched", "len": 3 }
   },
-  "schedurulesTreeTable": { "store": "tree", "tree": "schedurules", "rows": true },
+  "schedrulesTreeTable": { "store": "tree", "tree": "schedrules", "rows": true },
 
-  "schedurulegroup": {
+  "schedrulegroup": {
     "store": "db",
-    "collection": "schedurules",
+    "collection": "schedrules",
     "filter": { "folder": 1 },
     "defRootTitle": "Расписание",
     "default": { "name": "$NewFolder" },

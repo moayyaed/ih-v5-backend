@@ -55,7 +55,7 @@
     }
   },
 
-  "schedurules": {
+  "schedrules": {
     "root": {
       "popup": {
         "main": [
@@ -67,7 +67,7 @@
         
         ]
       },
-      "defaultComponent": "schedufolder"
+      "defaultComponent": "schedroot"
     },
     "parent": {
       "popup": {
@@ -83,7 +83,7 @@
           { "id": "11", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
-      "defaultComponent": "schedufolder"
+      "defaultComponent": "schedfolder"
     },
 
     "child": {
@@ -99,7 +99,7 @@
           { "id": "11", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
-      "defaultComponent": "schedurule"
+      "defaultComponent": "schedrule"
     }
   }
 }

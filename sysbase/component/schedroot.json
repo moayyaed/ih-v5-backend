@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabSchedTable", "title": "Расписание", "component": [{ "id": "formSchedTable", "type": "form" }] }
+  ],
+  "defaultTab": "tabSchedTable"
+}

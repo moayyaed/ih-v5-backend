@@ -1,0 +1,20 @@
+{
+  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "schedrulesTreeTable", "height": "fill" }],
+  "spacing": 10,
+
+  "p1": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "schedrulesTreeTable",
+
+      "columns": [
+        
+        { "prop": "name", "title": "Название", "type": "text", "command": "forward", "width": 128, "filter": true },
+        { "prop": "what", "title": "Выполнить", "type": "text", "width": 128, "filter": true },
+        { "prop": "when", "title": "Когда", "type": "text", "width": 128, "filter": true }
+    
+      ]
+    }
+  ]
+}

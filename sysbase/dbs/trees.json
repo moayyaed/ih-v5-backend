@@ -252,13 +252,13 @@
     }
   },
  
-  "schedurules": {
+  "schedrules": {
     "branch": {
-      "table": "schedurulegroup",
+      "table": "schedrulegroup",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
     "leaf": {
-      "table": "schedurule",
+      "table": "schedrule",
       "propmap": {
         "_id": "id",
         "name": "title",
@@ -661,7 +661,7 @@
 
   "dev": ["devdevices", "sysdevices", "globals", "locals", "types"],
   "vis": ["layout", "viscont", "dialog", "vistemplate", "visscript", "images"],
-  "allscenes": ["scenes"],
+  "allscenes": ["scenes", "schedrules"],
   "datasource": ["plugins", "snippets"],
   "analytics": ["charts",  "timelinecharts", "journals", "alertjournals", "reports"],
   "database": ["dbagents"],
