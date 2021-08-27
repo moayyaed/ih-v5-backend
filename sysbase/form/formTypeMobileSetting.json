@@ -1,0 +1,76 @@
+{
+  "grid": [
+    { "id": "p2", "xs": 3, "class": "main", "table": "mobiletype" },
+    {
+      "id": "p3",
+      "xs": 3,
+      "class": "main",
+      "table": "mobiletype",
+      "hide": "!data.p2.cl.id || data.p2.cl.id.startsWith('Sensor')"
+    },
+
+    { "id": "p4", "xs": 3, "class": "main", "table": "mobiletype" },
+    {
+      "id": "p5",
+      "xs": 3,
+      "class": "main",
+      "table": "mobiletype",
+      "hide": "!data.p2.cl.id || data.p2.cl.id.startsWith('Sensor')"
+    }
+  ],
+  "spacing": 10,
+
+  "p2": [
+    { "prop": "cl", "title": "Класс V4", "type": "droplist", "data": "classV4List" },
+    {
+      "prop": "stval",
+      "title": "Состояние",
+      "type": "droplist",
+      "data": "__devprop",
+      "default": "state",
+      "hide": "!data.p2.cl.id || data.p2.cl.id == 'SensorA'"
+    },
+    {
+      "prop": "aval",
+      "title": "Значение аналоговое",
+      "type": "droplist",
+      "data": "__devprop",
+      "default": "value",
+      "hide": "!data.p2.cl.id || data.p2.cl.id == 'SensorD' || data.p2.cl.id == 'ActorD'"
+    },
+    {
+      "prop": "defval",
+      "title": "Уставка",
+      "type": "droplist",
+      "data": "__devprop",
+      "hide": "!data.p2.cl.id || data.p2.cl.id == 'SensorD' || data.p2.cl.id == 'ActorD'"
+    },
+    { "prop": "err", "title": "Ошибка", "type": "droplist", "data": "__devprop", "hide": "!data.p2.cl.id" }
+  ],
+
+  "p3": [
+    { "prop": "header_commands", "title": "Команды", "type": "header" },
+    { "prop": "on", "title": "Включить", "type": "droplist", "data": "__devcmd" },
+    { "prop": "off", "title": "Выключить", "type": "droplist", "data": "__devcmd" },
+    { "prop": "toggle", "title": "Переключить", "type": "droplist", "data": "__devcmd" },
+    {
+      "prop": "set",
+      "title": "Установить значение/уставку",
+      "type": "droplist",
+      "data": "__devprop",
+      "hide": "!data.p2.cl.id || data.p2.cl.id == 'SensorD' || data.p2.cl.id == 'ActorD'"
+    }
+  ],
+
+  "p4": [
+    { "prop": "header_image0", "title": "Изображение: нейтральное состояние", "type": "header" },
+    { "prop": "image0", "title": "Image", "type": "input" },
+    { "prop": "color0", "title": "Color", "type": "color" }
+  ],
+
+  "p5": [
+    { "prop": "header_image0", "title": "Изображение: активное состояние", "type": "header" },
+    { "prop": "image1", "title": "Image", "type": "input" },
+    { "prop": "color1", "title": "Color", "type": "color" }
+  ]
+}

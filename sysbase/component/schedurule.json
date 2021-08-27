@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabScheduruleCommon", "title": "Пункт расписания", "component": [{ "id": "formScheduruleCommon", "type": "form" }] }
+  ],
+  "defaultTab": "tabScheduruleCommon"
+}

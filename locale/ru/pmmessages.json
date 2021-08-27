@@ -925,7 +925,8 @@
   { "id": "DefaultProjectsPath", "note": "Путь для хранения проектов по умолчанию" },
   { "id": "CustomProjectsPath", "note": "Другое место для хранения проектов" },
   { "id": "NeedDeps", "note": "Проекту требуются внешние модули" },
-  { "id": "DevicelogLines", "note": "Количество строк в журнале устройства" },
+  { "id": "DevicelogLines", "note": "Число записей в журнале одного устройства" },
+  { "id": "MaxDevicelogRecords", "note": "Max число записей по всем устройствам" },
 
   { "id": "ChangeProjectsFolder", "note": "Изменить расположение папки проектов" },
   { "id": "PathToProjects", "note": "Путь к папке с проектами" },

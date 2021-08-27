@@ -27,6 +27,13 @@
       "type": "number",
       "hide": "!data.p1.__expert"
     },
+    {
+      "prop": "maxdevicelogrecords",
+      "title": "$MaxDevicelogRecords",
+      "type": "number",
+      "hide": "!data.p1.__expert"
+    },
+   
     { "prop": "deps", "title": "$NeedDeps", "type": "cb", "hide": "!data.p1.__expert" }
   ],
 

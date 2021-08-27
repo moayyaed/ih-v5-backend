@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabScheduFolder", "title": "Свойства папки", "component": [{ "id": "formScheduFolder", "type": "form" }] }
+  ],
+  "defaultTab": "tabScheduFolder"
+}

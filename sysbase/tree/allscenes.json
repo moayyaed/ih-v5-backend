@@ -55,11 +55,11 @@
     }
   },
 
-  "alertrules": {
+  "schedurules": {
     "root": {
       "popup": {
         "main": [
-          { "id": "1", "type": "item", "title": "Новый алерт", "command": "addNode" },
+          { "id": "1", "type": "item", "title": "Новый пункт расписания", "command": "addNode" },
           { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
           { "id": "3", "type": "divider" },
          
@@ -67,12 +67,12 @@
         
         ]
       },
-      "defaultComponent": "alertfolder"
+      "defaultComponent": "schedufolder"
     },
     "parent": {
       "popup": {
         "main": [
-          { "id": "1", "type": "item", "title": "Новый алерт", "command": "addNode" },
+          { "id": "1", "type": "item", "title": "Новый пункт расписания", "command": "addNode" },
           { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
@@ -83,13 +83,13 @@
           { "id": "11", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
-      "defaultComponent": "alertfolder"
+      "defaultComponent": "schedufolder"
     },
 
     "child": {
       "popup": {
         "main": [
-          { "id": "1", "type": "item", "title": "Новый алерт", "command": "addNode" },
+          { "id": "1", "type": "item", "title": "Новый пункт расписания", "command": "addNode" },
           { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
@@ -99,7 +99,7 @@
           { "id": "11", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
-      "defaultComponent": "alertrule"
+      "defaultComponent": "schedurule"
     }
   }
 }

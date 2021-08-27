@@ -476,6 +476,28 @@
   },
   "scenesTreeTable": { "store": "tree", "tree": "scenes", "rows": true },
 
+  "schedurule": {
+    "store": "db",
+    "collection": "schedurules",
+    "default": { "name": "New" },
+    "validator": {
+      "main": {
+        "blk": { "custom": true }
+      }
+    },
+    "ruleID": { "pref": "sched", "len": 3 }
+  },
+  "schedurulesTreeTable": { "store": "tree", "tree": "schedurules", "rows": true },
+
+  "schedurulegroup": {
+    "store": "db",
+    "collection": "schedurules",
+    "filter": { "folder": 1 },
+    "defRootTitle": "Расписание",
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "schgr", "len": 3 }
+  },
+
   "simplesceneTable": {
     "store": "db",
     "collection": "scenes",
@@ -944,5 +966,16 @@
     "store": "db",
     "collection": "mobiledevices",
     "rows":1
+  },
+
+  "mobiletype": {
+    "store": "db",
+    "collection": "mobiletypes",
+    
+    "validator": {
+      "main": {
+        "cl": { "required": true, "notempty": true }
+      }
+    }
   }
 }

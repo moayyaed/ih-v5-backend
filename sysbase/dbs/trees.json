@@ -251,6 +251,23 @@
       }
     }
   },
+ 
+  "schedurules": {
+    "branch": {
+      "table": "schedurulegroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "schedurule",
+      "propmap": {
+        "_id": "id",
+        "name": "title",
+        "parent": "parent",
+        "order": "order",
+        "folder": "folder"
+      }
+    }
+  },
 
   "scriptx": ["scenes"],
 
