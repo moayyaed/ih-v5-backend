@@ -244,7 +244,7 @@
         "name": { "notempty": true }
       },
       "props": {
-        "newid": { "notempty": true, "validid": true,  "custom": true  },
+        "newid": { "notempty": true, "validid": true, "custom": true },
         "name": { "notempty": true },
         "op": { "notempty": true },
         "min": { "type": "number", "spec": "min" },
@@ -269,7 +269,7 @@
         "name": { "notempty": true }
       },
       "props": {
-        "newid": { "notempty": true, "validid": true,  "custom": true },
+        "newid": { "notempty": true, "validid": true, "custom": true },
         "name": { "notempty": true },
         "op": { "notempty": true },
         "min": { "type": "number", "spec": "min" },
@@ -498,6 +498,11 @@
     "ruleID": { "pref": "schgr", "len": 3 }
   },
 
+  "schedcurrent": {
+    "store": "db",
+    "collection": "schedcurrent"
+  },
+
   "simplesceneTable": {
     "store": "db",
     "collection": "scenes",
@@ -527,7 +532,7 @@
 
     "validator": {
       "props": {
-       "*":{}
+        "*": {}
       }
     }
   },
@@ -535,7 +540,6 @@
   "scenestateTable": {
     "store": "none"
   },
-
 
   "unitgroup": {
     "store": "db",
@@ -556,12 +560,10 @@
     "store": "none"
   },
 
-
   "sysunits": {
     "store": "db",
     "collection": "sysunits"
   },
-
 
   "targetFrameTable": {
     "store": "none"
@@ -660,7 +662,6 @@
     "collection": "timelinecharts",
     "genfield": "colors"
   },
-
 
   "journalgroup": {
     "store": "db",
@@ -936,7 +937,7 @@
     "rows": 1
   },
 
-  "mobileListTable":{
+  "mobileListTable": {
     "store": "db",
     "collection": "mobilelists",
     "rows": 1
@@ -945,7 +946,7 @@
   "mobiledevice": {
     "store": "db",
     "collection": "mobiledevices",
-    
+
     "validator": {
       "main": {
         "name": { "required": true, "notempty": true },
@@ -965,13 +966,13 @@
   "mobiledeviceTable": {
     "store": "db",
     "collection": "mobiledevices",
-    "rows":1
+    "rows": 1
   },
 
   "mobiletype": {
     "store": "db",
     "collection": "mobiletypes",
-    
+
     "validator": {
       "main": {
         "cl": { "required": true, "notempty": true }

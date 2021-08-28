@@ -2,7 +2,7 @@
   "grid": [
     { "id": "p1", "xs": 5, "class": "main", "table": "schedrule" },
     { "id": "p2", "xs": 4, "class": "main", "table": "schedrule" },
-    { "id": "p3", "xs": 3, "class": "main", "table": "schedrule" },
+    { "id": "p3", "xs": 3, "class": "main", "table": "schedcurrent" },
     { "id": "p7", "xs": 12, "class": "main", "table": "schedrule", "hide": "!data.p1.what.id || data.p1.what.id != 'multicmd'", "height": "fill" }
   ],
   "spacing": 8,
@@ -72,8 +72,8 @@
     { "prop": "dates", "title": "$Schedu_Dates", "type": "input" }
   ],
   "p3": [
-    { "prop": "laststart", "title": "$Schedu_LastStart", "type": "text" },
-    { "prop": "willstart", "title": "$Schedu_WillStart", "type": "text" }
+    { "prop": "willstart_ts", "title": "$Schedu_WillStart", "type": "text" },
+    { "prop": "laststart_ts", "title": "$Schedu_LastStart", "type": "text" }
   ],
 
   "p7": [

@@ -17,6 +17,7 @@
   "devcurrent": { "folder": "operativepath", "needCompact":true },
   "glcurrent": { "folder": "operativepath", "needCompact":true },
   "alerts": { "folder": "operativepath", "needCompact":true },
+  "schedcurrent": { "folder": "operativepath", "needCompact":true },
 
   "customtables": { "folder": "jbasepath" },
   
@@ -40,6 +41,7 @@
   "scenecalls": { "folder": "jbasepath" },
 
   "schedrules": { "folder": "jbasepath" },
+  
 
   "images": { "folder": "jbasepath" },
 
