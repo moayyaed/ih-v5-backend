@@ -549,6 +549,7 @@
   { "id": "Schedu_LastStart", "note": "Was launched" },
   { "id": "Schedu_Time", "note": "Time (hh:mm)" },
   { "id": "Schedu_DaysOfWeek", "note": "Days of the week" },
+  { "id": "Schedu_Everyday", "note": "Everyday" },
   { "id": "Schedu_Dates", "note": "Date (dd.mm.yy). Allowed *: 20.*.*" },
   { "id": "Schedu_Time", "note": "Period (hh:mm:ss)" },
 

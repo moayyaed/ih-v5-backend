@@ -553,6 +553,7 @@
   { "id": "Schedu_WillStart", "note": "Будет запущен" },
   { "id": "Schedu_LastStart", "note": "Был запущен" },
   { "id": "Schedu_Time", "note": "Время (hh:mm)" },
+  { "id": "Schedu_Everyday", "note": "Ежедневно" },
   { "id": "Schedu_DaysOfWeek", "note": "Дни недели" },
   { "id": "Schedu_Dates", "note": "Дата (dd.mm.yy). Допускается *: 20.*.*" },
   { "id": "Schedu_Period", "note": "Периодичность (hh:mm:ss)" },

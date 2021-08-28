@@ -9,13 +9,17 @@
       "prop": "schedrulesTreeTable",
 
       "columns": [
-      
-        { "prop": "sched_link", "title": "Пункт расписания", "type": "link", "command": "forward", "width": 400, "filter": true },
+        {
+          "prop": "sched_link",
+          "title": "Пункт расписания",
+          "type": "link",
+          "command": "forward",
+          "width": 400,
+          "filter": true
+        },
         { "prop": "willstartStr", "title": "$Schedu_WillStart", "type": "text", "width": 250, "filter": true },
-        { "prop": "laststartStr", "title": "$Schedu_LastStart", "type": "text", "width": 250, "filter": true }
-
-
-    
+        { "prop": "laststartStr", "title": "$Schedu_LastStart", "type": "text", "width": 250, "filter": true },
+        { "prop": "errstr", "title": "", "type": "text", "width": 250, "filter": true }
       ]
     }
   ]

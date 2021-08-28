@@ -495,6 +495,7 @@
   { "id": "Schedu_LastStart", "note": "已被加载" },
   { "id": "Schedu_Time", "note": "时间 (hh:mm)" },
   { "id": "Schedu_DaysOfWeek", "note": "一周日期" },
+  { "id": "Schedu_Everyday", "note": "Everyday" },
   { "id": "Schedu_Dates", "note": "日期 (dd.mm.yy). 允许 *: 20.*.*" },
 
   { "id": "DbStatus_Table", "note": "表格" },
