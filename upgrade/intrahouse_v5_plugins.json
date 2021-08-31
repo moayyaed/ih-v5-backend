@@ -54,6 +54,15 @@
   },
 
   {
+    "id": "s7plc",
+    "type": "plugin",
+    "paid": 1,
+    "description": "Siemens S7 Ethernet client",
+    "url": "https://github.com/intrahouseio/ih-v5-s7plc-plugin/archive/refs/tags/v5.5.1.zip",
+    "version": "5.5.1"
+  },
+
+  {
     "id": "cctv",
     "type": "plugin",
     "description": "CCTV plugin",
