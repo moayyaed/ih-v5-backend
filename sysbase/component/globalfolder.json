@@ -2,7 +2,7 @@
   "tabs": [
     { "id": "tabGlobalVarFolder",  "title": "Свойства папки", "component": [{ "id": "formGlobalVarFolder", "type": "form" }]  },
     { "id": "tabGlobalVarTable",  "title": "Таблица переменных", "component": [{ "id": "formGlobalVarTable", "type": "form" }]  },
-    { "id": "tabGlobalVarHandlersTrace",  "title": "Обработчики", "component": [{ "id": "formGlobalVarHandlersTrace", "type": "form" }]  }
+    { "id": "tabGlobalVarHandlersTrace",  "title": "Выполнение", "component": [{ "id": "formGlobalVarHandlersTrace", "type": "form" }]  }
   ],
   "defaultTab": "tabGlobalVarFolder"
 }
