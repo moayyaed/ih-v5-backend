@@ -156,9 +156,9 @@
 
   "sceneStateList": {
     "data": [
-      { "id": 0, "title": "Not active" },
-      { "id": 1, "title": "Working" },
-      { "id": 2, "title": "Blocked" }
+      { "id": 0, "title": "$Scene_NotActive" },
+      { "id": 1, "title": "$Scene_Working" },
+      { "id": 2, "title": "$Scene_Blocked" }
     ]
   },
 

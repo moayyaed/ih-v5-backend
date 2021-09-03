@@ -490,6 +490,12 @@
   { "id": "Scene_Id", "note": "联动ID" },
   { "id": "Scene_Name", "note": "名称" },
   { "id": "Scene_Mul", "note": "复合联动" },
+
+  { "id": "Scene_NotActive", "note": "Not active" },
+  { "id": "Scene_Working", "note": "Active" },
+  { "id": "Scene_Blocked", "note": "Blocked" },
+  { "id": "Scene_Instance", "note": "Instance" },
+
   { "id": "Schedu_Scene", "note": "联动" },
   { "id": "Schedu_WillStart", "note": "将被加载" },
   { "id": "Schedu_LastStart", "note": "已被加载" },

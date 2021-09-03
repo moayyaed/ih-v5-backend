@@ -544,6 +544,11 @@
   { "id": "Scene_Id", "note": "Scene ID" },
   { "id": "Scene_Name", "note": "Name" },
   { "id": "Scene_Mul", "note": "Multiscene" },
+  { "id": "Scene_NotActive", "note": "Not active" },
+  { "id": "Scene_Working", "note": "Active" },
+  { "id": "Scene_Blocked", "note": "Blocked" },
+  { "id": "Scene_Instance", "note": "Instance" },
+
   { "id": "Schedu_Scene", "note": "Scene" },
   { "id": "Schedu_WillStart", "note": "Will be launched" },
   { "id": "Schedu_LastStart", "note": "Was launched" },

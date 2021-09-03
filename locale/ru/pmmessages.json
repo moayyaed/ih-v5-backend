@@ -549,6 +549,11 @@
   { "id": "Scene_Id", "note": "ID сценария" },
   { "id": "Scene_Name", "note": "Наименование" },
   { "id": "Scene_Mul", "note": "Мультисценарий" },
+  { "id": "Scene_NotActive", "note": "Не активен" },
+  { "id": "Scene_Working", "note": "Активен" },
+  { "id": "Scene_Blocked", "note": "Блокирован" },
+  { "id": "Scene_Instance", "note": "Экземпляр" },
+
   { "id": "Schedu_Scene", "note": "Сценарий" },
   { "id": "Schedu_WillStart", "note": "Будет запущен" },
   { "id": "Schedu_LastStart", "note": "Был запущен" },

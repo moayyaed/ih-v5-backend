@@ -22,8 +22,9 @@
       "height": 500,
       "hide": "1==1"
     },
-    { "id": "p5", "xs": 12, "class": "main", "table": "scenecall", "height": 400 },
-    { "id": "p4", "xs": 12, "class": "main", "table": "scenestateTable", "height": 200 }
+   
+    { "id": "p4", "xs": 12, "class": "main", "table": "scenestateTable", "height": 200 },
+    { "id": "p5", "xs": 12, "class": "main", "table": "scenecall", "height": 400 }
   ],
   "spacing": 10,
   "breadcrumbs": { "tree": "scenes" },
@@ -155,6 +156,7 @@
         { "prop": "state", "title": "Состояние", "type": "text", "width": 150 },
         { "prop": "laststart", "title": "Время запуска", "type": "text", "width": 150 },
         { "prop": "laststop", "title": "Время останова", "type": "text", "width": 150 },
+        { "prop": "rowbutton", "title": "", "type": "button", "width": 100 },
         { "prop": "error", "title": "Ошибка", "type": "text", "width": 250 }
       ]
     }
