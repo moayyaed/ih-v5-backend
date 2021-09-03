@@ -620,45 +620,6 @@
     }
   },
 
-  "mobile":["mobiledevices", "mobilelists" ],
-
-  "mobilelists": {
-    "data": [
-      {
-        "title": "Списки в мобильном",
-        "id": "mobilelists",
-        "root": "mobilelists",
-        "expanded": true,
-        
-        "children": [
-          {
-            "title": "Подсистемы",
-            "id": "mobile_subsystems"
-          },
-          {
-            "title": "Уровни",
-            "id": "mobile_places"
-          },
-          {
-            "title": "Зоны",
-            "id": "mobile_rooms"
-          }
-        ]
-      }
-    ]
-  },
-
-  "mobiledevices": {
-    "branch": {
-      "table": "mobiledevicegroup",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
-    },
-    "leaf": {
-      "table": "mobiledevice",
-      "propmap": { "_id": "id", "dn": "title", "parent": "parent", "order": "order", "folder": "folder" }
-    }
-  },
-
   "dev": ["devdevices", "sysdevices", "globals", "locals", "types"],
   "vis": ["layout", "viscont", "dialog", "vistemplate", "visscript", "images"],
   "allscenes": ["scenes", "schedrules"],
