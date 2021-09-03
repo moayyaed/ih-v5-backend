@@ -605,7 +605,7 @@
 
   "dev": ["devdevices", "sysdevices", "globals", "locals", "types"],
   "vis": ["layout", "viscont", "dialog", "vistemplate", "visscript", "images"],
-  "allscenes": ["scenes"],
+  "allscenes": ["scenes", "schedrules"],
   "datasource": ["plugins", "snippets", "restapihandlers"],
   "analytics": ["charts", "timelinecharts", "journals", "alertjournals", "reports"],
   "database": ["dbagents", "customtables"],
