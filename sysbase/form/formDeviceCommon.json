@@ -13,9 +13,12 @@
     { "prop": "name", "title": "$Name", "type": "input" },
     { "prop": "type", "title": "$Dev_Type", "type": "droplist", "data": "typeList" },
     { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist" }
+   
+
   ],
  
   "p3": [
+    { "prop": "mob", "title": "Использовать в мобильном", "type": "cb"},
     { "prop": "snipuse", "title": "$UseSnippet", "type": "cb" },
     { "prop": "snipid", "title": "$Snippet", "type": "droplist", "data":"snippetList", "hide":"!data.p3.snipuse" },
     { "prop": "snipperiod", "title": "$SnipPeriod", "type": "number", "hide":"!data.p3.snipuse" }

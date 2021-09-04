@@ -5,6 +5,7 @@
     { "id": "tabTypeHandlers", "title": "Обработчики", "component": [{ "id": "formTypeHandlers", "type": "form" }] },
     { "id": "tabTypeAlerts", "title": "Тревоги", "component": [{ "id": "formTypeAlerts", "type": "form" }] },
     { "id": "tabTypeDevicesTable", "title": "Используется", "component": [{ "id": "formTypeDevicesTable", "type": "form" }] },
+    { "id": "tabTypeMobileSetting", "title": "Настройка для мобильного", "component": [{ "id": "formTypeMobileSetting", "type": "form" }] },
     { "id": "tabTypeExport", "title": "Параметры для выгрузки", "component": [{ "id": "formTypeExport", "type": "form" }] }
    
   ],
