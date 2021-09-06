@@ -15,7 +15,7 @@
       "xs": 3,
       "class": "main",
       "table": "mobiletype",
-      "hide": "!data.p1.cl.id || data.p1.cl.id=='-' || data.p1.cl.id.startsWith('Sensor')"
+      "hide": "!data.p1.cl.id || data.p1.cl.id=='-' || data.p1.cl.id.startsWith('SensorA')"
     }
   ],
   "spacing": 10,
