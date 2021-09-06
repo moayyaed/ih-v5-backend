@@ -18,7 +18,7 @@
         { "prop": "tsStartStr", "title": "Время начала", "type": "text", "width": 150, "filter":true },
          { "prop": "txt", "title": "Сообщение", "type": "text" ,  "width": 250, "filter":true},
          { "prop": "tsStopStr", "title": "Время завершения", "type": "text", "width": 150, "filter":true },
-         { "prop": "rowbutton", "title": "Действие", "type": "button", "width": 150 },
+         { "prop": "rowbutton", "title": "Действие", "type": "button", "width": 150, "hide":"!data.rowbutton || !data.rowbutton.command" },
          { "prop": "tsAckStr", "title": "Время квитирования", "type": "text", "width": 150, "filter":true },
          { "prop": "username", "title": "Оператор", "type": "text", "width": 150, "filter":true },
          { "prop": "userId", "title": "ID Оператора", "type": "text", "width": 150, "filter":true },

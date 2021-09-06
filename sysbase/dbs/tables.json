@@ -710,6 +710,12 @@
     "genfield": "props"
   },
 
+  "alertjournalTable": {
+    "store": "db",
+    "collection": "alertjournals",
+    "genfield": "props"
+  },
+
   "jlevels": {
     "store": "db",
     "collection": "jlevels",

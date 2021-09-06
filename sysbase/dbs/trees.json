@@ -624,7 +624,8 @@
   "vis": ["layout", "viscont", "dialog", "vistemplate", "visscript", "images"],
   "allscenes": ["scenes", "schedrules"],
   "datasource": ["plugins", "snippets"],
-  "analytics": ["charts",  "timelinecharts"],
+
+ "analytics": ["charts", "timelinecharts", "journals", "alertjournals", "reports"],
   "database": ["dbagents"],
   "access": ["users", "infogroups", "inforules"]
 }

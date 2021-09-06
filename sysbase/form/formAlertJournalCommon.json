@@ -1,27 +1,28 @@
 {
   "grid": [
     { "id": "p1", "xs": 6, "class": "main", "table": "alertjournal" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "alertjournal" }
+    { "id": "p2", "xs": 6, "class": "main", "table": "alertjournal" },
+    { "id": "p5", "xs": 12, "class": "main", "table": "alertjournalTable", "height": "fill" }
   ],
   "spacing": 8,
 
   "p1": [
     { "prop": "name", "title": "$Name", "type": "input" },
-   
+
     { "prop": "uselevelcolor", "title": "Выделять цветом строки в зависимости от уровня", "type": "cb" }
   ],
 
   "p2": [
     { "prop": "filter_header", "title": "Фильтры для включения сообщения в журнал", "type": "header" },
-    { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist"},
-   
+    { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist" },
+
     {
       "prop": "xlocation",
       "title": "location",
       "type": "smartbutton",
       "command": "dialog",
       "params": { "title": "Location", "type": "tree", "id": "places", "dialog": "devicelink" },
-      "hide":"1 == 1" 
+      "hide": "1 == 1"
     },
 
     {
@@ -29,6 +30,40 @@
       "title": "Локация",
       "type": "input"
     }
+  ],
 
+  "p5": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "journalTable",
+      "popupenable": true,
+
+      "genfield": "props",
+
+      "columns": [
+        {
+          "prop": "prop",
+          "title": "Данные столбца",
+          "type": "droplist",
+          "data": [
+            { "id": "tsStartStr", "title": "Время начала" },
+            { "id": "tsStopStr", "title": "Время завершения" },
+            { "id": "tsAckStr", "title": "Время квитирования" },
+            { "id": "txt", "title": "Сообщение" },
+            { "id": "rowbutton", "title": "Кнопка подтверждения" },
+            { "id": "username", "title": "Оператор" },
+            { "id": "userId", "title": "ID Оператора" },
+            { "id": "tags", "title": "Теги" },
+            { "id": "level", "title": "Уровень" },
+            { "id": "location", "title": "Локация" },
+            { "id": "stateStr", "title": "Состояние" }
+          ],
+          "width": 128
+        },
+        { "prop": "title", "title": "Шапка столбца", "type": "input", "width": 500 },
+        { "prop": "width", "title": "Ширина столбца", "type": "number", "width": 150 }
+      ]
+    }
   ]
 }
