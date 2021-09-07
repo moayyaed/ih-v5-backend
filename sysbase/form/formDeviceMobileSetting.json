@@ -4,7 +4,7 @@
     { "id": "p2", "xs": 6, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob"  },
   
     { "id": "p4", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob"  },
-    { "id": "p5", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob || || data.p2.cl.startsWith('SensorA')" }
+    { "id": "p5", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob || data.p2.cl.startsWith('SensorA')" }
    
   ],
   "spacing": 10,
