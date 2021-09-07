@@ -700,7 +700,19 @@
   "alertjournal": {
     "store": "db",
     "collection": "alertjournals",
-    "default": { "name": "Новый журнал тревог" },
+    "genfield": "props",
+    "default": {
+      "name": "Новый журнал тревог",
+      "props": {
+        "tsStartStr": { "prop": "tsStartStr", "title": "Время начала", "width": 200, "order":1 },
+        "txt": { "prop": "txt", "title": "Сообщение", "width": 300, "order":2 },
+        "stateStr": { "prop": "stateStr", "title": "Состояние", "width": 300, "order":3 },
+        "tsStopStr": { "prop": "tsStopStr", "title": "Время завершения", "width": 200, "order":4 },
+        "rowbutton": { "prop": "rowbutton", "title": "Квитировать", "width": 200, "order":5 },
+        "tsAckStr": { "prop": "tsAckStr", "title": "Время квитирования", "width": 200, "order":6 },
+        "username": { "prop": "username", "title": "Оператор", "width": 200, "order":7 }
+      }
+    },
     "ruleID": { "pref": "ajr", "len": 3 }
   },
 

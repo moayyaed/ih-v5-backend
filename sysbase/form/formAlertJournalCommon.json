@@ -42,6 +42,7 @@
       "genfield": "props",
 
       "columns": [
+        { "prop": "order", "title": "N пп", "type": "number", "width": 50 },
         {
           "prop": "prop",
           "title": "Данные столбца",
