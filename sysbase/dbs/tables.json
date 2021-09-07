@@ -681,8 +681,8 @@
       "src": "mainlog",
       "levelfrom": 0,
       "props": {
-        "dts": { "prop": "dts", "title": "Дата", "width": 250 },
-        "txt": { "prop": "txt", "title": "Текст сообщения", "width": 550 }
+        "dts": { "prop": "dts", "title": "Дата", "width": 250, "order":1 },
+        "txt": { "prop": "txt", "title": "Текст сообщения", "width": 550, "order":2 }
       }
     },
     "ruleID": { "pref": "jr", "len": 3 }
