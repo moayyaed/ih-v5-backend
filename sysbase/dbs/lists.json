@@ -4,9 +4,14 @@
     "propmap": { "_id": "id", "name": "title", "tags": "tags", "ruledn_pref": "ruledn_pref", "folder": "folder" }
   },
 
+  "imageList": {
+    "table": "image",
+    "propmap": { "_id": "id", "name": "title", "folder": "folder", "mtime":"mtime" }
+  },
+
   "deviceList": {
     "table": "device",
-    "propmap": { "_id": "id", "name": "name", "dn": "dn", "tags": "tags", "type": "type", "sys": "sys" }
+    "propmap": { "_id": "id", "name": "name", "dn": "dn", "tags": "tags", "type": "type", "sys": "sys", "mob":"mob" }
   },
 
   "placeList": {
