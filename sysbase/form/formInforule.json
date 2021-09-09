@@ -56,7 +56,7 @@
         },
         {
           "prop": "ontag",
-          "title": "По тэгу",
+          "title": "По тегу",
           "type": "droplist",
           "data": "taglist",
           "width": 150
