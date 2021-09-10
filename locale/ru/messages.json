@@ -278,6 +278,8 @@
   { "id": "TypeImportError", "note": "Ошибка при переносе типа! Подробности в логе системы." },
   { "id": "ScriptWithErrorAlwaysBlocked", "note": "Скрипт с ошибкой не может быть разблокирован!" },
   { "id": "ActionCannotBePerformed", "note": "Эта операция не может быть выполнена" },
+  { "id": "DataUpdateError", "note": "Ошибка при изменении данных" },
+  { "id": "NoMobileSetting", "note": "'В типе нет настройки для мобильного!'" },
 
   { "id": "needPluginV5", "note": "Система работает только с плагинами версии 5." },
   { "id": "misPluginVersion", "note": "Отсутствует информация о версии плагина!" },
