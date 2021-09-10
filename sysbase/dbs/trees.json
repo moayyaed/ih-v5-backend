@@ -625,7 +625,7 @@
   "allscenes": ["scenes", "schedrules"],
   "datasource": ["plugins", "snippets"],
 
- "analytics": ["charts", "timelinecharts", "journals", "alertjournals", "reports"],
+  "analytics": ["charts", "timelinecharts"],
   "database": ["dbagents"],
   "access": ["users", "infogroups", "inforules"]
 }
