@@ -38,6 +38,7 @@
   {"id":"SCRIPTINSCHEDULE",  "note":"Script is included in the schedule"},
   {"id":"ACCESSDENIED",  "note":"Access denied!"},
   {"id":"InsuffRights",  "note":"Insufficient access rights!"},
+  {"id":"InsuffRightsForAction",  "note":"Insufficient rights for action!"},
 
   {"id":"FILEALREADYEXISTS",  "note":"File with this name already exists"},
   {"id":"FOLDERALREADYEXISTS",  "note":"Folder with this name already exists!"},

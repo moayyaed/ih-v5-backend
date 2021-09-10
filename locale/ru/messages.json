@@ -37,6 +37,7 @@
   { "id": "SCRIPTINSCHEDULE", "note": "Скрипт включен в расписание!" },
   { "id": "ACCESSDENIED", "note": "Доступ запрещен!" },
   { "id": "InsuffRights", "note": "Недостаточно прав для доступа." },
+  { "id": "InsuffRightsForAction", "note": "Недостаточно прав для выполнения операции!" },
   { "id": "FILEALREADYEXISTS", "note": "Файл с таким именем уже существует!" },
   { "id": "FOLDERALREADYEXISTS", "note": "Такая папка уже существует!" },
   { "id": "SRCFOLDERNOTEXISTS", "note": "Исходная папка не существует!" },
