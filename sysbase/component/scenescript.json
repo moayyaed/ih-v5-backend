@@ -1,7 +1,8 @@
 {
   "tabs": [
     { "id": "tabSceneCommon",  "title": "Свойства сценария", "component": [{ "id": "formSceneScript", "type": "form" }]  },
-    { "id": "tabSceneCodeEditor",  "title": "Редактор кода", "component": [{ "id": "formSceneCodeEditor", "type": "form" }]  }
+    { "id": "tabSceneCodeEditor",  "title": "Редактор кода", "component": [{ "id": "formSceneCodeEditor", "type": "form" }]  },
+    { "id": "tabSceneCalls",  "title": "Запуск для устройств", "component": [{ "id": "formSceneCalls", "type": "form" }]  }
  
   ],
   "defaultTab": "tabSceneCommon"
