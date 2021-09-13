@@ -267,6 +267,12 @@
   { "id": "DataUpdateError", "note": "Data update error" },
   { "id": "NoMobileSetting", "note": "Type has no setting for mobile!" },
 
+  { "id": "LayoutDoesNotExist", "note": "Layout does not exist" },
+  { "id": "DialogDoesNotExist", "note": "Dialog does not exist" },
+  { "id": "ScriptDoesNotExist", "note": "Script does not exist" },
+  { "id": "ScriptAlreadyRunning", "note": "Script is already running" },
+  { "id": "ScriptBlocked", "note": "Script has blocked" },
+
   { "id": "needPluginV5", "note": "The system only works with plugins version 5" },
   { "id": "misPluginVersion", "note": "Plugin version information is missing!" },
   { "id": "projectSavedInFolder", "note": "The project is saved in a folder" },

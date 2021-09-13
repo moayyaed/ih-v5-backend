@@ -282,6 +282,12 @@
   { "id": "DataUpdateError", "note": "Ошибка при изменении данных" },
   { "id": "NoMobileSetting", "note": "'В типе нет настройки для мобильного!'" },
 
+  { "id": "LayoutDoesNotExist", "note": "Экран не существует" },
+  { "id": "DialogDoesNotExist", "note": "Диалог не существует" },
+  { "id": "ScriptDoesNotExist", "note": "Сценарий не существует" },
+  { "id": "ScriptAlreadyRunning", "note": "Сценарий уже запущен" },
+  { "id": "ScriptBlocked", "note": "Сценарий заблокирован" },
+
   { "id": "needPluginV5", "note": "Система работает только с плагинами версии 5." },
   { "id": "misPluginVersion", "note": "Отсутствует информация о версии плагина!" },
   { "id": "projectSavedInFolder", "note": "Проект сохранен в папку" },

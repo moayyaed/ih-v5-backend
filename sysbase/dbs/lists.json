@@ -6,12 +6,12 @@
 
   "imageList": {
     "table": "image",
-    "propmap": { "_id": "id", "name": "title", "folder": "folder", "mtime":"mtime" }
+    "propmap": { "_id": "id", "name": "title", "folder": "folder", "mtime": "mtime" }
   },
 
   "deviceList": {
     "table": "device",
-    "propmap": { "_id": "id", "name": "name", "dn": "dn", "tags": "tags", "type": "type", "sys": "sys", "mob":"mob" }
+    "propmap": { "_id": "id", "name": "name", "dn": "dn", "tags": "tags", "type": "type", "sys": "sys", "mob": "mob" }
   },
 
   "placeList": {
@@ -301,8 +301,26 @@
       { "id": "SensorA", "title": "Аналоговый датчик" },
       { "id": "ActorD", "title": "Дискретный актуатор" },
       { "id": "ActorA", "title": "Аналоговый актуатор" }
-      
     ]
-  }
+  },
 
+  "mobiletypeList": {
+    "table": "mobiletype",
+    "propmap": {
+      "_id": "id",
+      "stval": "stval",
+      "aval": "aval",
+      "defval": "defval",
+      "wmode": "wmode",
+      "err": "err",
+      "on": "on",
+      "off": "off",
+      "toggle": "toggle",
+      "color0": "color0",
+      "image0": "image0",
+      "color1": "color1",
+      "image1": "image1",
+      "cl": "cl"
+    }
+  }
 }
