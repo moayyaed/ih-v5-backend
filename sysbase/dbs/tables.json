@@ -1024,7 +1024,7 @@
     "ruleID": { "pref": "docimggr", "len": 3 }
   },
 
-  "docimages": {
+  "docimage": {
     "store": "db",
     "collection": "docimages"
   }
