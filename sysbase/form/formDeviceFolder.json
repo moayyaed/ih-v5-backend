@@ -4,9 +4,9 @@
     { "id": "p2", "xs": 6, "class": "main", "table": "place", "height": 250 }
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "devdevices" },
 
   "p1": [
+    { "prop": "_id", "title": "Place ID", "type": "text" },
     { "prop": "name", "title": "$Name", "type": "input" }
   
   ],
