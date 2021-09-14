@@ -6,5 +6,5 @@
   { "id": "6", "route": "analytics", "title": "$ANALYTICS", "tooltip": "$ANALYTICS", "icon": "analytics" },
   { "id": "7", "route": "database", "title": "$DB", "tooltip": "$DB", "icon": "database" },
   { "id": "8", "route": "access", "title": "$ACCESS", "tooltip": "$ACCESS", "icon": "access" },
-  { "id": "9", "route": "docs", "title": "$DOCS", "tooltip": "$DOCS", "icon": "portal" }
+  { "id": "9", "route": "docs", "title": "$DOCS", "tooltip": "$DOCS", "icon": "docs" }
 ]
