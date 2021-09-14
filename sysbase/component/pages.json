@@ -1,6 +1,6 @@
 {
   "tabs": [
-    { "id": "tabDocCommon", "title": "Страница", "component": [{ "id": "formDocLangsSubtree", "type": "form" }] },
+    { "id": "tabDocCommon", "title": "Страница", "component": [{ "id": "formPageCommon", "type": "form" }] },
     { "id": "tabDocEdit", "title": "Редактор", "component": [{ "id": "formDocLangsSubtreeEdit", "type": "form" }] },
     { "id": "tabDocView", "title": "Просмотр", "component": [{ "id": "formDocLangsSubtreeView", "type": "form" }] }
   ],

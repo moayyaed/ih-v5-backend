@@ -1011,8 +1011,13 @@
     "store": "db",
     "collection": "pages",
     "genfield": "props",
-    "default": { "name": "Новая страница" },
     "ruleID": { "pref": "pg", "len": 3 }
+  },
+
+  "pagebylangTable": {
+    "store": "db",
+    "collection": "pages",
+    "genfield": "props"
   },
 
   "docimagegroup": {

@@ -1,13 +1,30 @@
 {
   "grid": [
-    { "id": "p1", "xs": 6, "class": "main", "table": "pages", "padding": 0 },
-    { "id": "p2", "xs": 6, "class": "main", "table": "pages", "padding": 0 }
+    { "id": "p1", "xs": 6, "class": "main", "table": "pages" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "pages" },
+    { "id": "p4", "xs": 12, "class": "main", "table": "pagebylangTable", "height": "fill" }
   ],
   "spacing": 10,
 
-  "p1": [{ "prop": "title", "title": "Name", "type": "input" }],
+  "p1": [{ "prop": "name", "title": "Name", "type": "input" }],
   "p2": [
     { "prop": "use_ih", "title": "IntraHouse", "type": "cb" },
     { "prop": "use_is", "title": "IntraScada", "type": "cb" }
+  ],
+
+  "p4": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "pagebylangTable",
+
+      "columns": [
+        { "prop": "id", "title": "Lang", "type": "text", "width": 100 },
+        { "prop": "pagename", "title": "$Name", "type": "input", "width": 150 },
+        { "prop": "lastmodifStr", "title": "Дата модификации", "type": "text", "width": 150 },
+        { "prop": "lastpubStr", "title": "Дата публикации", "type": "text", "width": 150 },
+        { "prop": "rowbutton", "title": "Опубликовать", "type": "button", "width": 150 }
+      ]
+    }
   ]
 }
