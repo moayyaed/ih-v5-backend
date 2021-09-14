@@ -17,7 +17,8 @@
       "data": "doclangs",
       "leftTitle": "Языки",
       "rightTitle": "Страница",
-      "toolbar": false
+      "toolbar": false,
+      "width": 125
     }
   ]
 }
