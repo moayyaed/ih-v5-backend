@@ -1,0 +1,12 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "docimage", "height":"fill" }
+ 
+  ],
+  "spacing": 10,
+
+  "p1": [
+    { "prop": "image", "title": "$Image", "type": "image" }
+  ]
+ 
+}
