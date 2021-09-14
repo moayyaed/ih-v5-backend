@@ -1,10 +1,7 @@
 {
   "grid": [
-   
     { "id": "p1", "xs": 12, "class": "main", "table": "pages", "height": "fill", "padding": 4 }
   ],
   "spacing": 10,
-
-  
-  "p1": [{ "prop": "script", "title": "Редактор", "type": "script" }]
+  "p1": [{ "prop": "script", "title": "Редактор", "type": "markdown-edit" }]
 }
