@@ -1,0 +1,9 @@
+{
+  "grid": [
+  
+    { "id": "p1", "xs": 12, "class": "main", "table": "pages", "height": "fill" }
+  ],
+  "spacing": 10,
+ 
+  "p1": [{ "prop": "script", "title": "Просмотр", "type": "script" }]
+}

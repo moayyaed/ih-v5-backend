@@ -996,5 +996,38 @@
         "cl": { "required": true, "notempty": true }
       }
     }
+  },
+
+  "pagegroup": {
+    "store": "db",
+    "collection": "pages",
+    "filter": { "folder": 1 },
+    "defRootTitle": "Документация",
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "pggr", "len": 3 }
+  },
+
+  "pages": {
+    "store": "db",
+    "collection": "pages",
+    "genfield": "props",
+    "default": { "name": "Новая страница" },
+    "ruleID": { "pref": "pg", "len": 3 }
+  },
+
+  "docimagegroup": {
+    "store": "db",
+    "collection": "docimages",
+    "filter": { "folder": 1 },
+    "defRootTitle": "$Images",
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "docimggr", "len": 3 }
+  },
+
+  "docimages": {
+    "store": "db",
+    "collection": "docimages"
   }
+
+
 }

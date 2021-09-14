@@ -1,0 +1,16 @@
+{
+  "common": {
+    "parent": {
+      "popup": {
+        "main": []
+      },
+      "defaultComponent": null
+    },
+    "child": {
+      "popup": {
+        "main": []
+      },
+      "defaultComponent": "formPageView"
+    }
+  }
+}

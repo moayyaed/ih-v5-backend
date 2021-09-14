@@ -60,5 +60,8 @@
   "dbagents": { "folder": "jbasepath" },
 
   "users": { "folder": "privatepath" },
-  "tokens": { "folder": "privatepath" }
+  "tokens": { "folder": "privatepath" },
+
+  "pages": { "folder": "jbasepath" },
+  "docimages": { "folder": "jbasepath" }
 }

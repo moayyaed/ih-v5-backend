@@ -1,0 +1,13 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 6, "class": "main", "table": "pages", "padding": 0 },
+    { "id": "p2", "xs": 6, "class": "main", "table": "pages", "padding": 0 }
+  ],
+  "spacing": 10,
+
+  "p1": [{ "prop": "title", "title": "Name", "type": "input" }],
+  "p2": [
+    { "prop": "use_ih", "title": "IntraHouse", "type": "cb" },
+    { "prop": "use_is", "title": "IntraScada", "type": "cb" }
+  ]
+}

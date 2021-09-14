@@ -620,12 +620,37 @@
     }
   },
 
+
+  "pages": {
+    "branch": {
+      "table": "pagegroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "pages",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+
+  "docimages": {
+    "branch": {
+      "table": "docimagegroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "docimages",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+
   "dev": ["devdevices", "sysdevices", "globals", "locals", "types"],
   "vis": ["layout", "viscont", "dialog", "vistemplate", "visscript", "images"],
   "allscenes": ["scenes", "schedrules"],
   "datasource": ["plugins", "snippets"],
 
-  "analytics": ["charts", "timelinecharts"],
+  "analytics": ["charts", "timelinecharts", "journals", "alertjournals", "reports"],
   "database": ["dbagents"],
-  "access": ["users", "infogroups", "inforules"]
+  "access": ["users", "infogroups", "inforules"],
+  "docs": ["pages", "docimages"]
+
 }
