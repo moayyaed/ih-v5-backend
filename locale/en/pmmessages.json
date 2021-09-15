@@ -940,6 +940,10 @@
   { "id": "Read", "note": "Read" },
   { "id": "Write", "note": "Write" },
   { "id": "doWrite", "note": "Write Now" },
+  { "id": "NewTable", "note": "New Table" },
+  { "id": "CustomTables", "note": "Custom Tables" },
+  { "id": "NewPage", "note": "New Page" },
+  { "id": "DOCS", "note": "Documentation" },
 
   { "id": "JournalTitle_mainlog", "note": "Main Logs" },
   { "id": "JournalTitle_alertlog", "note": "Alerts" },

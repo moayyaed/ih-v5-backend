@@ -1,12 +1,12 @@
 {
   "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table": "docimage", "height":"fill" }
- 
+    { "id": "p1", "xs": 6, "class": "main", "table": "docimage" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "docimage" },
+    { "id": "p5", "xs": 12, "class": "main", "table": "docimage", "height": "fill" }
   ],
   "spacing": 10,
 
-  "p1": [
-    { "prop": "image", "title": "$Image", "type": "image" }
-  ]
- 
+  "p1": [{ "prop": "name", "title": "$Name", "type": "input" }],
+  "p2": [{ "prop": "_id", "title": "File", "type": "text" }],
+  "p5": [{ "prop": "image", "title": "$Image", "type": "image" }]
 }

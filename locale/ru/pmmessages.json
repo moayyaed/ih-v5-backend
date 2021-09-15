@@ -951,6 +951,8 @@
   { "id": "doWrite", "note": "Записать" },
   { "id": "NewTable", "note": "Новая таблица" },
   { "id": "CustomTables", "note": "Таблицы проекта" },
+  { "id": "NewPage", "note": "Новая страница" },
+  { "id": "DOCS", "note": "Документация" },
 
   { "id": "JournalTitle_mainlog", "note": "Данные главного журнала" },
   { "id": "JournalTitle_alertlog", "note": "Тревоги" },

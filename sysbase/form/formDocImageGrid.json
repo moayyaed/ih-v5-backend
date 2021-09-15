@@ -1,5 +1,7 @@
 {
-  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "imagesTreeTable", "height": "fill" }],
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"docimagesTreeTable", "height":"fill"}
+  ],
   "spacing": 10,
 
   "p1": [

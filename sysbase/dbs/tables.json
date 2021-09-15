@@ -922,6 +922,7 @@
   "visscriptsTreeTable": { "store": "tree", "tree": "visscript", "collection": "visscripts", "rows": true },
 
   "imagesTreeTable": { "store": "tree", "tree": "images", "rows": true },
+  "docimagesTreeTable": { "store": "tree", "tree": "docimages", "rows": true },
 
   "tokens": { "store": "db", "collection": "tokens" },
 
@@ -1003,7 +1004,6 @@
     "collection": "pages",
     "filter": { "folder": 1 },
     "defRootTitle": "Документация",
-    "default": { "name": "$NewFolder" },
     "ruleID": { "pref": "pggr", "len": 3 }
   },
 
