@@ -652,6 +652,6 @@
   "analytics": ["charts", "timelinecharts", "journals", "alertjournals", "reports"],
   "database": ["dbagents"],
   "access": ["users", "infogroups", "inforules"],
-  "docs": ["pages", "docimages"]
+  "documentation": ["pages", "docimages"]
 
 }
