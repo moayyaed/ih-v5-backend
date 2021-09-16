@@ -620,6 +620,30 @@
     }
   },
 
+
+  "pages": {
+    "branch": {
+      "table": "pagegroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "pages",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+
+  "docimages": {
+    "branch": {
+      "table": "docimagegroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "docimage",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder", "copylink":"copylink"},
+      "copylink": 1
+    }
+  },
+
   "dev": ["devdevices", "sysdevices", "globals", "locals", "types"],
   "vis": ["layout", "viscont", "dialog", "vistemplate", "visscript", "images"],
   "allscenes": ["scenes", "schedrules"],

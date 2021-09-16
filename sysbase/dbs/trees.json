@@ -251,7 +251,7 @@
       }
     }
   },
- 
+
   "schedrules": {
     "branch": {
       "table": "schedrulegroup",
@@ -496,7 +496,7 @@
     }
   },
 
-  "chartsAndAny":["charts", "anychart"], 
+  "chartsAndAny": ["charts", "anychart"],
   "anychart": {
     "data": [
       {
@@ -514,8 +514,6 @@
     ]
   },
 
-
-
   "timelinecharts": {
     "branch": {
       "table": "timelinechartgroup",
@@ -527,7 +525,7 @@
     }
   },
 
-  "timelinechartsAndAny":["timelinecharts", "anytimelinechart"],
+  "timelinechartsAndAny": ["timelinecharts", "anytimelinechart"],
 
   "anytimelinechart": {
     "data": [
@@ -546,8 +544,6 @@
     ]
   },
 
-  
-
   "journals": {
     "branch": {
       "table": "journalgroup",
@@ -559,7 +555,7 @@
     }
   },
 
-  "journalsAndAny":["journals", "anyjournal"],
+  "journalsAndAny": ["journals", "anyjournal"],
 
   "anyjournal": {
     "data": [
@@ -589,7 +585,7 @@
     }
   },
 
-  "alertjournalsAndAny":["alertjournals", "anyalertjournal"],
+  "alertjournalsAndAny": ["alertjournals", "anyalertjournal"],
 
   "anyalertjournal": {
     "data": [
@@ -608,7 +604,6 @@
     ]
   },
 
-
   "reports": {
     "branch": {
       "table": "reportgroup",
@@ -619,7 +614,6 @@
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
-
 
   "pages": {
     "branch": {
@@ -639,7 +633,14 @@
     },
     "leaf": {
       "table": "docimage",
-      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder", "copylink":"copylink"},
+      "propmap": {
+        "_id": "id",
+        "name": "title",
+        "parent": "parent",
+        "order": "order",
+        "folder": "folder",
+        "copylink": "copylink"
+      },
       "copylink": 1
     }
   },
@@ -653,5 +654,4 @@
   "database": ["dbagents"],
   "access": ["users", "infogroups", "inforules"],
   "documentation": ["pages", "docimages"]
-
 }

@@ -5,5 +5,7 @@
   { "id": "4", "route": "datasource", "title": "$DATASOURCE", "tooltip": "$DATASOURCE", "icon": "datasource" },
   { "id": "6", "route": "analytics", "title": "$ANALYTICS", "tooltip": "$ANALYTICS", "icon": "analytics" },
   { "id": "7", "route": "database", "title": "$DB", "tooltip": "$DB", "icon": "database" },
-  { "id": "8", "route": "access", "title": "$ACCESS", "tooltip": "$ACCESS", "icon": "access" }
+  { "id": "8", "route": "access", "title": "$ACCESS", "tooltip": "$ACCESS", "icon": "access" },
+  { "id": "9", "route": "documentation", "title": "$DOCS", "tooltip": "$DOCS", "icon": "docs" }
+]
 ]
