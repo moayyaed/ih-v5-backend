@@ -81,6 +81,11 @@
     "propmap": { "_id": "id", "name": "title", "folder": "folder" }
   },
 
+  "pageList": {
+    "table": "pages",
+    "propmap": { "_id": "id", "name": "title", "folder": "folder", "alias": "alias" }
+  },
+
   "infogroupList": {
     "table": "infogroups",
     "propmap": { "_id": "id", "name": "title", "folder": "folder" }
