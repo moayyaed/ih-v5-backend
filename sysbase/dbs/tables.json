@@ -1011,13 +1011,15 @@
     "store": "db",
     "collection": "pages",
     "genfield": "props",
-    "ruleID": { "pref": "pg", "len": 3 }
+    "ruleID": { "pref": "pg", "len": 3 },
+    "invalidatecache":["tree_docs*"]
   },
 
   "pagebylangTable": {
     "store": "db",
     "collection": "pages",
-    "genfield": "props"
+    "genfield": "props",
+    "invalidatecache":["tree_docs*"]
   },
 
   "docimagegroup": {
