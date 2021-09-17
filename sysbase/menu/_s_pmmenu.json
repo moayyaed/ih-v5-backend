@@ -8,4 +8,3 @@
   { "id": "8", "route": "access", "title": "$ACCESS", "tooltip": "$ACCESS", "icon": "access" },
   { "id": "9", "route": "documentation", "title": "$DOCS", "tooltip": "$DOCS", "icon": "docs" }
 ]
-]

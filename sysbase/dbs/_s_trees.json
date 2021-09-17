@@ -650,5 +650,6 @@
   "datasource": ["plugins", "snippets", "restapihandlers"],
   "analytics": ["charts", "timelinecharts", "journals", "alertjournals", "reports"],
   "database": ["dbagents", "customtables"],
-  "access": ["users", "infogroups", "inforules"]
+  "access": ["users", "infogroups", "inforules"],
+  "documentation": ["pages", "docimages"]
 }

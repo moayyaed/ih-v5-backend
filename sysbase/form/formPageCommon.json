@@ -26,7 +26,7 @@
         { "prop": "pagename", "title": "$Name", "type": "input", "width": 150 },
         { "prop": "lastmodifStr", "title": "Дата модификации", "type": "text", "width": 150 },
         { "prop": "lastpubStr", "title": "Дата публикации", "type": "text", "width": 150 },
-        { "prop": "rowbutton", "title": "Опубликовать", "type": "button", "width": 150 }
+        { "prop": "rowbutton", "title": "Опубликовать", "type": "button", "width": 150, "hide":"!data.lastmodifStr || !data.rowbutton.title" }
       ]
     }
   ]
