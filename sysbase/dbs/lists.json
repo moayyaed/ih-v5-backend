@@ -309,6 +309,13 @@
     ]
   },
 
+  "doclangList": {
+    "data": [
+      { "id": "ru", "title": "RU", "order": 1 },
+      { "id": "en", "title": "EN", "order": 2 }
+    ]
+  },
+
   "mobiletypeList": {
     "table": "mobiletype",
     "propmap": {
