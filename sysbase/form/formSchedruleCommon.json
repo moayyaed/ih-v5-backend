@@ -1,16 +1,24 @@
 {
   "grid": [
-    { "id": "p9", "xs": 12, "class": "main", "table": "schedcurrent", "hide":"!data.p9.errstr" },
+    { "id": "p9", "xs": 12, "class": "main", "table": "schedcurrent", "hide": "!data.p9.errstr" },
     { "id": "p1", "xs": 5, "class": "main", "table": "schedrule" },
-    { "id": "p2", "xs": 4, "class": "main", "table": "schedrule" },
+    { "id": "p2", "xs": 3, "class": "main", "table": "schedrule" },
+    { "id": "pweek", "xs": 1, "class": "main", "table": "schedrule", "hide": "!data.p2.weekdays" },
+
     { "id": "p3", "xs": 3, "class": "main", "table": "schedcurrent" },
-    { "id": "p7", "xs": 12, "class": "main", "table": "schedrule", "hide": "!data.p1.what.id || data.p1.what.id != 'multicmd'", "height": "fill" }
+
+    {
+      "id": "p7",
+      "xs": 12,
+      "class": "main",
+      "table": "schedrule",
+      "hide": "!data.p1.what.id || data.p1.what.id != 'multicmd'",
+      "height": "fill"
+    }
   ],
   "spacing": 8,
 
-  "p9": [
-  { "prop": "errstr", "title": "$Error", "type": "text"}
-  ],
+  "p9": [{ "prop": "errstr", "title": "$Error", "type": "text" }],
 
   "p1": [
     { "prop": "name", "title": "$Name", "type": "input" },
@@ -46,7 +54,7 @@
       "prop": "when",
       "title": "$When",
       "type": "droplist",
-      "hide":"data.p2.blk",
+      "hide": "data.p2.blk",
       "data": [
         { "id": "intime", "title": "В заданное время" },
         { "id": "sunrise", "title": "На рассвете" },
@@ -56,7 +64,6 @@
         { "id": "cycle", "title": "Циклически" }
       ]
     },
-
     {
       "prop": "timehhmm",
       "title": "$Schedu_Time",
@@ -76,17 +83,34 @@
       "hide": "!data.p2.when.id || data.p2.when.id != 'cycle' || data.p2.blk"
     },
 
-    { "prop": "everyday", "title": "$Schedu_Everyday", "type": "cb", "hide":"data.p2.blk" },
-    { "prop": "days", "title": "$Schedu_DaysOfWeek", "type": "input", "hide": "data.p2.everyday || data.p2.dates || data.p2.blk" },
+    { "prop": "everyday", "title": "$Schedu_Everyday", "type": "cb", "hide": "data.p2.weekdays || data.p2.dates ||data.p2.blk" },
+    {
+      "prop": "weekdays",
+      "title": "$Schedu_DaysOfWeek",
+      "type": "cb",
+      "hide": "data.p2.everyday || data.p2.dates || data.p2.blk"
+    },
 
-    { "prop": "dates", "title": "$Schedu_Dates", "type": "input", "hide": "data.p2.everyday || data.p2.days || data.p2.blk" },
+    {
+      "prop": "dates",
+      "title": "$Schedu_Dates",
+      "type": "input",
+      "hide": "data.p2.everyday || data.p2.weekdays || data.p2.blk"
+    },
     { "prop": "blk", "title": "Заблокировать", "type": "cb" }
   ],
+  "pweek": [
+    { "prop": "week_1", "title": "Пн", "type": "cb" },
+    { "prop": "week_2", "title": "Вт", "type": "cb" },
+    { "prop": "week_3", "title": "Ср", "type": "cb" },
+    { "prop": "week_4", "title": "Чт", "type": "cb" },
+    { "prop": "week_5", "title": "Пт", "type": "cb" },
+    { "prop": "week_6", "title": "Сб", "type": "cb" },
+    { "prop": "week_7", "title": "Вс", "type": "cb" }
+  ],
   "p3": [
-    { "prop": "w_ts", "title": "$Schedu_WillStart", "type": "text", "hide":"data.p2.blk" },
+    { "prop": "w_ts", "title": "$Schedu_WillStart", "type": "text", "hide": "data.p2.blk" },
     { "prop": "l_ts", "title": "$Schedu_LastStart", "type": "text" }
-   
-   
   ],
 
   "p7": [
@@ -99,7 +123,7 @@
       "columns": [
         { "prop": "order", "title": "№", "type": "input", "width": 50 },
         { "prop": "did", "title": "Устройство", "type": "droplist", "data": "deviceList", "width": 350 },
-        { "prop": "cmd", "title": "Команда", "type": "droplist", "data":"__devcmd", "width": 150 },
+        { "prop": "cmd", "title": "Команда", "type": "droplist", "data": "__devcmd", "width": 150 },
         { "prop": "timeout", "title": "Задержка сек", "type": "number", "width": 150 },
         { "prop": "txt", "title": "Комментарий", "type": "input", "width": 350 }
       ]

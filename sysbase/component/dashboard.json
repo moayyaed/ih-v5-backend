@@ -17,6 +17,11 @@
       "title": "Плагины",
       "component": [{ "id": "formDashboardPlugins", "type": "form" }]
     },
+    {
+      "id": "tabPortal",
+      "title": "Портал",
+      "component": [{ "id": "formDashboardPortal", "type": "xform" }]
+    },
 
     {
       "id": "tabLicenses",
