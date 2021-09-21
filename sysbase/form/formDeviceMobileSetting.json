@@ -22,13 +22,13 @@
 
   "p4": [
     { "prop": "header_image0", "title": "Изображение: нейтральное состояние", "type": "header" },
-    { "prop": "image0", "title": "Image", "type": "input" },
+    { "prop": "image0", "title": "Image", "type": "img" },
     { "prop": "color0", "title": "Color", "type": "color" }
   ],
 
   "p5": [
     { "prop": "header_image0", "title": "Изображение: активное состояние", "type": "header" },
-    { "prop": "image1", "title": "Image", "type": "input" },
+    { "prop": "image1", "title": "Image", "type": "img" },
     { "prop": "color1", "title": "Color", "type": "color" }
   ]
 
