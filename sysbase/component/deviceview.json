@@ -1,16 +1,16 @@
 {
   "tabs": [
-    { "id": "tabDeviceCommon", "title": "Устройство", "component": [{ "id": "formDeviceCommon", "type": "form" }] },
-    { "id": "tabDeviceTable", "title": "Свойства", "component": [{ "id": "formDevicePropTable", "type": "form" }] },
-    { "id": "tabDeviceLog", "title": "Журнал", "component": [{ "id": "formOneDeviceLogTable", "type": "form" }] },
-    { "id": "tabDeviceUsage", "title": "Использование", "component": [{ "id": "formDeviceUsage", "type": "form" }] },
-    { "id": "tabDeviceMobileSetting", "title": "Настройка для мобильного", "component": [{ "id": "formDeviceMobileSetting", "type": "form" }] },
-    { "id": "tabDeviceDb", "title": "Правила записи в БД", "component": [{ "id": "formDeviceDb", "type": "form" }] },
+    { "id": "tabDeviceCommon", "title": "$Device", "component": [{ "id": "formDeviceCommon", "type": "form" }] },
+    { "id": "tabDeviceTable", "title": "$Properties", "component": [{ "id": "formDevicePropTable", "type": "form" }] },
+    { "id": "tabDeviceDb", "title": "$Dev_dbmet", "component": [{ "id": "formDeviceDb", "type": "form" }] },
+    { "id": "tabDeviceLog", "title": "$LOG", "component": [{ "id": "formOneDeviceLogTable", "type": "form" }] },
+    { "id": "tabDeviceUsage", "title": "$Usage", "component": [{ "id": "formDeviceUsage", "type": "form" }] },
     {
       "id": "tabDeviceLastRecs",
-      "title": "Записи в БД за час",
+      "title": "$LatestDBrecords",
       "component": [{ "id": "formDeviceLastRecs", "type": "form" }]
-    }
+    },
+    { "id": "tabDeviceMobileSetting", "title": "$MobileSetting", "component": [{ "id": "formDeviceMobileSetting", "type": "form" }] }
   ],
 
   "defaultTab": "tabDeviceCommon"

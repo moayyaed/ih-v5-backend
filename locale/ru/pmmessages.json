@@ -953,6 +953,9 @@
   { "id": "CustomTables", "note": "Таблицы проекта" },
   { "id": "NewPage", "note": "Новая страница" },
   { "id": "DOCS", "note": "Документация" },
+  { "id": "Usage", "note": "Использование" },
+  { "id": "LatestDBrecords", "note": "Последние записи в БД" },
+  { "id": "MobileSetting", "note": "Настройка для мобильного" },
 
   { "id": "JournalTitle_mainlog", "note": "Данные главного журнала" },
   { "id": "JournalTitle_alertlog", "note": "Тревоги" },
