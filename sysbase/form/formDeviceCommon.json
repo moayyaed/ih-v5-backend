@@ -18,7 +18,7 @@
   ],
  
   "p3": [
-    { "prop": "mob", "title": "Использовать в мобильном", "type": "cb"},
+    { "prop": "mob", "title": "$UseInMobile", "type": "cb"},
     { "prop": "snipuse", "title": "$UseSnippet", "type": "cb" },
     { "prop": "snipid", "title": "$Snippet", "type": "droplist", "data":"snippetList", "hide":"!data.p3.snipuse" },
     { "prop": "snipperiod", "title": "$SnipPeriod", "type": "number", "hide":"!data.p3.snipuse" }

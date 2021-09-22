@@ -34,7 +34,8 @@
   ],
   "p2": [
     { "prop": "multi", "title": "Мультисценарий", "type": "cb" },
-    { "prop": "blk", "title": "Заблокировать запуск сценария", "type": "cb" }
+    { "prop": "blk", "title": "Заблокировать запуск сценария", "type": "cb" },
+    { "prop": "mob", "title": "$UseInMobile", "type": "cb", "hide":"data.p2.multi"}
   ],
 
   "p3": [

@@ -871,6 +871,10 @@
   { "id": "CustomTables", "note": "Custom Tables" },
   { "id": "NewPage", "note": "New Page" },
   { "id": "DOCS", "note": "Documentation" },
+  { "id": "Usage", "note": "Usage" },
+  { "id": "LatestDBrecords", "note": "Latest DB records" },
+  { "id": "MobileSetting", "note": "Customization for mobile app" },
+  { "id": "UseInMobile", "note": "Use in mobile app" },
 
   { "id": "JournalTitle_mainlog", "note": "Main Logs" },
   { "id": "JournalTitle_alertlog", "note": "Alerts" },

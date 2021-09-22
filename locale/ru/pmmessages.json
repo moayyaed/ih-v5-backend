@@ -956,6 +956,7 @@
   { "id": "Usage", "note": "Использование" },
   { "id": "LatestDBrecords", "note": "Последние записи в БД" },
   { "id": "MobileSetting", "note": "Настройка для мобильного" },
+  { "id": "UseInMobile", "note": "Использовать в мобильном" },
 
   { "id": "JournalTitle_mainlog", "note": "Данные главного журнала" },
   { "id": "JournalTitle_alertlog", "note": "Тревоги" },

@@ -1,0 +1,29 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "scene", "hide": "data.p1.mob" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "scene", "hide": "!data.p1.mob"  },
+  
+    { "id": "p4", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob || !data.p2.mobimage"  }
+   
+   
+  ],
+  "spacing": 10,
+  "p1": [
+    { "prop": "mob", "title": "", "type": "text", "hide":"1==1" },
+    { "prop": "no_header", "title": "Этот сценарий в мобильном не используется", "type": "header",   "size": "h6" }
+  ],
+
+  "p2": [
+  
+    { "prop": "scenegroup", "title": "Группа", "type": "droplist", "data":"taglist" },
+    { "prop": "mobname", "title": "Другое название", "type": "input" },
+    { "prop": "mobimage", "title": "Другое изображение", "type": "cb" }
+  ],
+
+  "p4": [
+    { "prop": "header_image", "title": "Изображение", "type": "header" },
+    { "prop": "image", "title": "Image", "type": "img" },
+    { "prop": "color", "title": "Color", "type": "color" }
+  ]
+
+}
