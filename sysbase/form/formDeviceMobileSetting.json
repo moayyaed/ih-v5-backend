@@ -24,7 +24,7 @@
     { "prop": "name", "title": "Название", "type": "input" },
     { "prop": "subs", "title": "Подсистема", "type": "droplist", "data": "taglist" },
     { "prop": "place_room", "title": "Помещение", "type": "droplist", "data": "mobilePlaceList" },
-    { "prop": "mobtabsetting", "title": "Вкладка 'Настройка'", "type": "cb" }
+    { "prop": "mobtabsetting", "title": "Элементы ввода на вкладке 'Настройка'", "type": "cb" }
   ],
 
   "p4": [
@@ -48,19 +48,21 @@
       "popupenable": true,
 
       "columns": [
-        { "prop": "mobprop", "title": "$DeviceProperty", "type": "droplist", "data": "__onedevparamanddata", "width": 200 },
-
-        { "prop": "mobpropname", "title": "Другое название", "type": "input", "width": 150 },
+        { "prop": "mobprop", "title": "$DeviceProperty", "type": "droplist", "data": "__onedevparamanddata", "width": 300 },
         {
           "prop": "widget",
           "title": "Элемент",
           "type": "droplist",
           "data": [
-            { "id": "cb", "title": "Input" },
-            { "id": "input", "title": "Checkbox" }
+            { "id": "cb", "title": "Checkbox" },
+            { "id": "input", "title": "Input" },
+            { "id": "number", "title": "Number" },
+            { "id": "slider", "title": "Slider" }
           ],
-          "width": 100
-        }
+          "width": 150
+        },
+
+        { "prop": "mobpropname", "title": "Другое название", "type": "input", "width": 300 }
       ]
     }
   ]
