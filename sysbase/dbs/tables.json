@@ -965,6 +965,7 @@
   "mobiledevice": {
     "store": "db",
     "collection": "mobiledevices",
+    "genfield": "props",
 
     "validator": {
       "main": {
@@ -973,6 +974,12 @@
         "type": { "required": true, "notempty": true }
       }
     }
+  },
+
+  "mobiledevicetabsettingTable":{
+    "store": "db",
+    "collection": "mobiledevices",
+    "genfield": "props"
   },
 
   "mobiledevicegroup": {

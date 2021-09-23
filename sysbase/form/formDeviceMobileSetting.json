@@ -1,23 +1,30 @@
 {
   "grid": [
     { "id": "p1", "xs": 12, "class": "main", "table": "device", "hide": "data.p1.mob" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob"  },
-  
-    { "id": "p4", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob"  },
-    { "id": "p5", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob || data.p2.cl.startsWith('SensorA')" }
-   
+    { "id": "p2", "xs": 6, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob" },
+
+    { "id": "p4", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob" },
+    {
+      "id": "p5",
+      "xs": 3,
+      "class": "main",
+      "table": "mobiledevice",
+      "hide": "!data.p1.mob || data.p2.cl.startsWith('SensorA')"
+    },
+    { "id": "p7", "xs": 12, "class": "main", "table": "mobiledevicetabsettingTable", "height":"fill", "hide": "!data.p1.mob || !data.p2.mobtabsetting" }
   ],
   "spacing": 10,
   "p1": [
-    { "prop": "mob", "title": "", "type": "text", "hide":"1==1" },
-    { "prop": "no_header", "title": "Это устройство в мобильном не используется", "type": "header",   "size": "h6" }
+    { "prop": "mob", "title": "", "type": "text", "hide": "1==1" },
+    { "prop": "no_header", "title": "Это устройство в мобильном не используется", "type": "header", "size": "h6" }
   ],
 
   "p2": [
     { "prop": "cl", "title": "Класс для мобильного", "type": "text" },
     { "prop": "name", "title": "Название", "type": "input" },
-    { "prop": "subs", "title": "Подсистема", "type": "droplist", "data":"taglist" },
-    { "prop": "place_room", "title": "Помещение", "type": "droplist", "data":"mobilePlaceList" }
+    { "prop": "subs", "title": "Подсистема", "type": "droplist", "data": "taglist" },
+    { "prop": "place_room", "title": "Помещение", "type": "droplist", "data": "mobilePlaceList" },
+    { "prop": "mobtabsetting", "title": "Вкладка 'Настройка'", "type": "cb" }
   ],
 
   "p4": [
@@ -30,6 +37,31 @@
     { "prop": "header_image0", "title": "Изображение: активное состояние", "type": "header" },
     { "prop": "image1", "title": "Image", "type": "img" },
     { "prop": "color1", "title": "Color", "type": "color" }
-  ]
+  ],
 
+  "p7": [
+    {
+      "title": "$DeviceProperty",
+      "type": "table",
+      "prop": "mobiledevicetabsettingTable",
+      "genfield": "props",
+      "popupenable": true,
+
+      "columns": [
+        { "prop": "mobprop", "title": "$DeviceProperty", "type": "droplist", "data": "__onedevparamanddata", "width": 200 },
+
+        { "prop": "mobpropname", "title": "Другое название", "type": "input", "width": 150 },
+        {
+          "prop": "widget",
+          "title": "Элемент",
+          "type": "droplist",
+          "data": [
+            { "id": "cb", "title": "Input" },
+            { "id": "input", "title": "Checkbox" }
+          ],
+          "width": 100
+        }
+      ]
+    }
+  ]
 }
