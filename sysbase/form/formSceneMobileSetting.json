@@ -3,7 +3,7 @@
     { "id": "p1", "xs": 12, "class": "main", "table": "scene", "hide": "data.p1.mob" },
     { "id": "p2", "xs": 6, "class": "main", "table": "scene", "hide": "!data.p1.mob"  },
   
-    { "id": "p4", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob || !data.p2.mobimage"  }
+    { "id": "p4", "xs": 3, "class": "main", "table": "scene", "hide": "!data.p1.mob || !data.p2.mobimage"  }
    
    
   ],
