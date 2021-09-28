@@ -1,17 +1,34 @@
 {
   "grid": [
     { "id": "p1", "xs": 12, "class": "main", "table": "device", "hide": "data.p1.mob" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob" },
+    { "id": "p2", "xs": 4, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob" },
 
-    { "id": "p4", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob" },
+    { "id": "p4", "xs": 4, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob" },
     {
       "id": "p5",
-      "xs": 3,
+      "xs": 4,
       "class": "main",
       "table": "mobiledevice",
       "hide": "!data.p1.mob || data.p2.cl.startsWith('SensorA')"
     },
-    { "id": "p7", "xs": 12, "class": "main", "table": "mobiledevicetabsettingTable", "height":"fill", "hide": "!data.p1.mob || !data.p2.mobtabsetting" }
+
+    { "id": "p6", "xs": 4, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob" },
+    {
+      "id": "p7",
+      "xs": 4,
+      "class": "main",
+      "table": "mobilesettingfromtypeTable",
+      "height": 250,
+      "hide": "!data.p1.mob || !data.p6.typesetting "
+    },
+    {
+      "id": "p8",
+      "xs": 4,
+      "class": "main",
+      "table": "mobilesettingfromsceneTable",
+      "height": 250,
+      "hide": "!data.p1.mob || !data.p6.scenesetting"
+    }
   ],
   "spacing": 10,
   "p1": [
@@ -23,8 +40,7 @@
     { "prop": "cl", "title": "Класс для мобильного", "type": "text" },
     { "prop": "name", "title": "Название", "type": "input" },
     { "prop": "subs", "title": "Подсистема", "type": "droplist", "data": "taglist" },
-    { "prop": "place_room", "title": "Помещение", "type": "droplist", "data": "mobilePlaceList" },
-    { "prop": "mobtabsetting", "title": "Элементы ввода на вкладке 'Настройка'", "type": "cb" }
+    { "prop": "place_room", "title": "Помещение", "type": "droplist", "data": "mobilePlaceList" }
   ],
 
   "p4": [
@@ -39,30 +55,32 @@
     { "prop": "color1", "title": "Color", "type": "color" }
   ],
 
+  "p6": [
+    { "prop": "header_setting", "title": "Вкладка Настройка", "type": "header" },
+    { "prop": "typesetting", "title": "Показать свойства типа", "type": "cb" },
+    { "prop": "scenesetting", "title": "Показать параметры сценариев", "type": "cb" }
+  ],
+
   "p7": [
     {
       "title": "$DeviceProperty",
       "type": "table",
-      "prop": "mobiledevicetabsettingTable",
-      "genfield": "props",
-      "popupenable": true,
+      "prop": "mobiletypesettingTable",
 
       "columns": [
-        { "prop": "mobprop", "title": "$DeviceProperty", "type": "droplist", "data": "__onedevparamanddata", "width": 300 },
-        {
-          "prop": "widget",
-          "title": "Элемент",
-          "type": "droplist",
-          "data": [
-            { "id": "cb", "title": "Checkbox" },
-            { "id": "input", "title": "Input" },
-            { "id": "number", "title": "Number" },
-            { "id": "slider", "title": "Slider" }
-          ],
-          "width": 150
-        },
+        { "prop": "title", "title": "Название свойства", "type": "text", "width": 300 }
+      ]
+    }
+  ],
 
-        { "prop": "mobpropname", "title": "Другое название", "type": "input", "width": 300 }
+  "p8": [
+    {
+      "title": "$DeviceProperty",
+      "type": "table",
+      "prop": "mobilescenesettingTable",
+
+      "columns": [
+        { "prop": "title", "title": "Параметр сценария", "type": "text", "width": 300 }
       ]
     }
   ]

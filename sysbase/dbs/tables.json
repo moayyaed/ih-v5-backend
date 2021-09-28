@@ -976,10 +976,20 @@
     }
   },
 
-  "mobiledevicetabsettingTable":{
+  "mobiletypetabsettingTable" : {
     "store": "db",
-    "collection": "mobiledevices",
+    "collection": "mobiletypes",
     "genfield": "props"
+  },
+
+  "mobilesettingfromtypeTable":{
+    "store": "db",
+    "collection": "mobiledevices"
+  },
+
+  "mobilesettingfromsceneTable":{
+    "store": "db",
+    "collection": "mobiledevices"
   },
 
   "mobiledevicegroup": {
