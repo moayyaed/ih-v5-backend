@@ -3,19 +3,19 @@
     { "id": "p1", "xs": 12, "class": "main", "table": "device", "hide": "data.p1.mob" },
     { "id": "p2", "xs": 4, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob" },
 
-    { "id": "p4", "xs": 4, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob" },
+    { "id": "p4", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob" },
     {
       "id": "p5",
-      "xs": 4,
+      "xs": 3,
       "class": "main",
       "table": "mobiledevice",
       "hide": "!data.p1.mob || data.p2.cl.startsWith('SensorA')"
     },
 
-    { "id": "p6", "xs": 4, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob" },
+    { "id": "p6", "xs": 2, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob" },
     {
       "id": "p7",
-      "xs": 4,
+      "xs": 6,
       "class": "main",
       "table": "mobilesettingfromtypeTable",
       "height": 250,
@@ -23,7 +23,7 @@
     },
     {
       "id": "p8",
-      "xs": 4,
+      "xs": 6,
       "class": "main",
       "table": "mobilesettingfromsceneTable",
       "height": 250,
@@ -68,7 +68,8 @@
       "prop": "mobiletypesettingTable",
 
       "columns": [
-        { "prop": "title", "title": "Название свойства", "type": "text", "width": 300 }
+        { "prop": "title", "title": "Свойство типа", "type": "text", "width": 300 },
+        { "prop": "source", "title": "", "type": "link", "width": 250, "command": "forward" }
       ]
     }
   ],
@@ -80,7 +81,9 @@
       "prop": "mobilescenesettingTable",
 
       "columns": [
-        { "prop": "title", "title": "Параметр сценария", "type": "text", "width": 300 }
+        { "prop": "title", "title": "Параметр сценария", "type": "text", "width": 200 },
+        { "prop": "source", "title": "", "type": "link", "width": 250, "command": "forward" }
+   
       ]
     }
   ]

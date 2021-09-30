@@ -127,6 +127,7 @@
   { "id": "REFRESHTABLE", "note": "Refresh table!" },
   { "id": "INVALIDTIME", "note": "Invalid time!" },
   { "id": "INVALIDDATE", "note": "Invalid date!" },
+  { "id": "sec", "note": "sec" },
   { "id": "hour", "note": "hour" },
   { "id": "minutes", "note": "minutes" },
   { "id": "day", "note": "day" },

@@ -129,6 +129,7 @@
   { "id": "REFRESHTABLE", "note": "Обновите таблицу!" },
   { "id": "INVALIDTIME", "note": "Время задано неверно" },
   { "id": "INVALIDDATE", "note": "Дата задана неверно" },
+  { "id": "sec", "note": "сек" },
   { "id": "hour", "note": "час" },
   { "id": "minutes", "note": "минуты" },
   { "id": "day", "note": "день" },

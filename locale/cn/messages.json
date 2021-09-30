@@ -125,6 +125,7 @@
   { "id": "REFRESHTABLE", "note": "刷新表格!" },
   { "id": "INVALIDTIME", "note": "无效时间!" },
   { "id": "INVALIDDATE", "note": "无效日期!" },
+  { "id": "sec", "note": "sec" },
   { "id": "hour", "note": "小时" },
   { "id": "minutes", "note": "分钟" },
   { "id": "day", "note": "日" },
