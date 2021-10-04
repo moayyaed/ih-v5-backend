@@ -5,6 +5,8 @@
   "spacing": 4,
 
   "plink": [
+
+    { "prop": "missing",      "title": "Привязанный канал не существует!",  "type": "header","hide":"!data.plink.missing"},
     {
       "prop": "devlink",
       "title": "$LinkToDeviceProperty",
