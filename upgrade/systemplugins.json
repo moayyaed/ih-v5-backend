@@ -9,8 +9,8 @@
   {
     "name": "p2p",
     "type": "plugin",
-    "url": "https://github.com/intrahouseio/ih-v5-p2p-plugin/archive/refs/tags/v5.0.4.zip",
-    "version": "5.0.4"
+    "url": "https://github.com/intrahouseio/ih-v5-p2p-plugin/archive/refs/tags/v5.0.6.zip",
+    "version": "5.0.6"
   },
   {
     "name": "webconsole",
