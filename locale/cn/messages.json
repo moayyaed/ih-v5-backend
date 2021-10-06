@@ -254,6 +254,7 @@
   { "id": "Paste", "note": "Paste" },
   { "id": "Delete", "note": "Delete" },
   { "id": "Export", "note": "Export" },
+  { "id": "ExportPlugin", "note": "Export Plugin" },
   { "id": "NewTab", "note": "New Tab" },
   { "id": "LoadFrontend", "note": "Load Frontend" },
 

@@ -267,6 +267,7 @@
   { "id": "Paste", "note": "Вставить" },
   { "id": "Delete", "note": "Удалить" },
   { "id": "Export", "note": "Экспорт" },
+  { "id": "ExportPlugin", "note": "Экспорт плагина" },
   { "id": "NewTab", "note": "Новая вкладка" },
   { "id": "LoadFrontend", "note": "Загрузить Frontend" },
 
