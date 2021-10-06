@@ -16,7 +16,7 @@
 
   "placeList": {
     "table": "place",
-    "propmap": { "_id": "id", "name": "title", "parent": "parent" }
+    "propmap": { "_id": "id", "name": "title", "parent": "parent", "order":"order" }
   },
 
   "globalList": {
