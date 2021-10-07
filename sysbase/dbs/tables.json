@@ -423,7 +423,7 @@
           "name": "$Admgrp",
           "all_layouts": 1,
           "all_devctl": 1,
-          "all_pmparts": 1,
+          "all_pmparts": 2,
           "layouts": {},
           "devctl": {},
           "pmparts": {}
