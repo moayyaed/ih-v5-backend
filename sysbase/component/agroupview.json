@@ -1,0 +1,7 @@
+{
+  "tabs": [
+    { "id": "tabAgroup", "title": "Группа", "component": [{ "id": "formAgroup", "type": "form" }] },
+    { "id": "tabUIAccessRules", "title": "Доступ", "component": [{ "id": "formAccessRules", "type": "form" }] }
+  ],
+  "defaultTab": "tabAgroup"
+}

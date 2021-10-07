@@ -326,13 +326,13 @@
     }
   },
 
-  "infogroups": {
+  "agroups": {
     "branch": {
-      "table": "infogroupsgroup",
+      "table": "agroupsgroup",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
     "leaf": {
-      "table": "infogroups",
+      "table": "agroups",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
@@ -650,6 +650,6 @@
   "datasource": ["plugins", "snippets", "restapihandlers"],
   "analytics": ["charts", "timelinecharts", "journals", "alertjournals", "reports"],
   "database": ["dbagents", "customtables"],
-  "access": ["users", "infogroups", "inforules"],
+  "access": ["users", "agroups", "inforules"],
   "documentation": ["pages", "docimages"]
 }

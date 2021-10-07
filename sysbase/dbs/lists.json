@@ -86,8 +86,8 @@
     "propmap": { "_id": "id", "name": "title", "folder": "folder", "alias": "alias" }
   },
 
-  "infogroupList": {
-    "table": "infogroups",
+  "agroupList": {
+    "table": "agroups",
     "propmap": { "_id": "id", "name": "title", "folder": "folder" }
   },
 
@@ -315,6 +315,23 @@
       { "id": "en", "title": "EN", "order": 2 }
     ]
   },
+
+  "pmpartList": {
+    "data": [
+      { "id": "dev", "title": "Устройства"},
+      { "id": "vis", "title": "Визуализация"},
+      { "id": "plugins", "title": "Плагины"}
+    ]
+  },
+
+  "accesslevelList": {
+    "data": [
+      { "id": 0, "title": "Нет доступа"},
+      { "id": 1, "title": "Ограниченный доступ"},
+      { "id": 2, "title": "Полный доступ"}
+    ]
+  },
+
 
   "mobiletypeList": {
     "table": "mobiletype",

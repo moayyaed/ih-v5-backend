@@ -2,7 +2,7 @@
   "grid": [
     { "id": "p1", "xs": 4, "class": "main", "table": "user" },
 
-    { "id": "p5", "xs": 4, "class": "main", "table": "infogroup_byuser" },
+    { "id": "p5", "xs": 4, "class": "main", "table": "agroup_byuser" },
     { "id": "p9", "xs": 4, "class": "main", "table": "user" }
   ],
   "spacing": 10,
@@ -21,7 +21,7 @@
     {
       "title": "",
       "type": "table",
-      "prop": "infogroup_byuser",
+      "prop": "agroup_byuser",
       "popupenable": true,
 
       "columns": [
@@ -29,7 +29,7 @@
           "prop": "groupId",
           "title": "Входит в группу",
           "type": "droplist",
-          "data": "infogroupList",
+          "data": "agroupList",
           "width": 300
         }
       ]

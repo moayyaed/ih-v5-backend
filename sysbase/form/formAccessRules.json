@@ -1,0 +1,67 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 3, "class": "main", "table": "agroups" },
+    { "id": "p2", "xs": 5, "class": "main", "table": "agroups" },
+    { "id": "p3", "xs": 4, "class": "main", "table": "agroups" },
+    { "id": "p4", "xs": 3, "class": "main", "table": "agrouplayoutsTable", "height": "fill" },
+    { "id": "p5", "xs": 5, "class": "main", "table": "agroupdevctlTable", "height": "fill" },
+    { "id": "p6", "xs": 4, "class": "main", "table": "agrouppmpartsTable", "height": "fill" }
+  ],
+  "spacing": 8,
+
+  "p1": [{ "prop": "all_layouts", "title": "Разрешить доступ ко всем экранам", "type": "cb" }],
+
+  "p2": [{ "prop": "all_devctl", "title": "Разрешить управление всеми устройствами", "type": "cb" }],
+  "p3": [{ "prop": "all_pmparts", "title": "Доступ к PM (Project Manager)", "type": "droplist", "data":"accesslevelList" }],
+
+  "p4": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "layouts",
+      "genfield": "layouts",
+      "hide": "data.p1.all_layouts",
+
+      "popupenable": true,
+
+      "columns": [{ "prop": "layout", "title": "Экран", "type": "droplist", "data": "layoutList", "width": 200 }]
+    }
+  ],
+
+  "p5": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "agroupdevctlTable",
+      "genfield": "devctl",
+      "hide": "data.p2.all_devctl",
+
+      "popupenable": true,
+
+      "columns": [
+        { "prop": "place", "title": "Группа устройств", "type": "droplist", "data": "mobilePlaceList", "width": 200 },
+        { "prop": "tags", "title": "Теги", "type": "input", "width": 200 }
+      ]
+    }
+  ],
+
+  "p6": [
+   {
+      "title": "",
+      "type": "table",
+      "prop": "agrouppmpartsTable",
+      "genfield": "pmparts",
+      "hide": "data.p3.all_pmparts.id != 1",
+
+      "popupenable": true,
+
+      "columns": [
+    
+        { "prop": "pmpart", "title": "Раздел", "type": "droplist", "data":"pmpartList", "width":100 },
+        { "prop": "rule", "title": "Доступ", "type": "droplist", "data":"accesslevelList", "width":100 }
+      
+      ]
+    }
+ 
+  ]
+}

@@ -62,7 +62,7 @@
           "width": 150
         },
     
-        { "prop": "groupId", "title": "Отправлять группе", "type": "droplist", "data":"infogroupList", "width":200 },
+        { "prop": "groupId", "title": "Отправлять группе", "type": "droplist", "data":"agroupList", "width":200 },
         { "prop": "userId", "title": "Отправлять пользователю", "type": "droplist", "data":"userList", "width":200 }
       
       ]

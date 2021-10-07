@@ -2,7 +2,7 @@
   "grid": [
     { "id": "p1", "xs": 6, "class": "main", "table": "infogroups" },
    
-    { "id": "p5", "xs": 6, "class": "main", "table": "infogroup_bygroup", "height": "fill" }
+    { "id": "p5", "xs": 6, "class": "main", "table": "agroup_bygroup", "height": "fill" }
   ],
   "spacing": 8,
  
@@ -19,7 +19,7 @@
     {
       "title": "Участники",
       "type": "table",
-      "prop": "infogroup_bygroup",
+      "prop": "agroup_bygroup",
       "popupenable": true,
 
       "columns": [

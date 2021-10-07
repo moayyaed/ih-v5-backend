@@ -53,7 +53,7 @@
     }
   },
 
-  "infogroups": {
+  "agroups": {
     "root": {
       "popup": {
         "main": [
@@ -66,7 +66,7 @@
           { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
-      "defaultComponent":"infogroupfolder"
+      "defaultComponent":null
     },
     "parent": {
       "popup": {
@@ -74,7 +74,7 @@
   
         ]
       },
-      "defaultComponent":"infogroupfolder"
+      "defaultComponent":null
     },
     "child": {
       "popup": {
@@ -88,7 +88,7 @@
           { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
       },
-      "defaultComponent": "infogroupview"
+      "defaultComponent": "agroupview"
     }
    
   },

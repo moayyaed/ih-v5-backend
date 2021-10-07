@@ -2,6 +2,7 @@
   { "id": "Users", "note": "用户" },
   { "id": "User", "note": "用户" },
   { "id": "Logins", "note": "账号" },
+  { "id": "Admgrp", "note": "Admin group" },
   { "id": "Addresses", "note": "地址" },
   { "id": "Usergroups", "note": "用户组" },
   { "id": "Acpolicy", "note": "策略" },

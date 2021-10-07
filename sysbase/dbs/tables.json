@@ -386,7 +386,7 @@
     "collection": "infogroups",
     "defRootTitle": "Группы",
     "default": { "name": "Новая группа" },
-    "ruleID": { "pref": "info", "len": 3 }
+    "ruleID": { "pref": "grp", "len": 3 }
   },
 
   "infogroup_tab": {
@@ -404,6 +404,75 @@
   "infogroup_byuser": {
     "store": "db",
     "collection": "infogroup_tab",
+    "rows": true
+  },
+
+  "agroups": {
+    "store": "db",
+    "collection": "agroups",
+    "defRootTitle": "Группы пользователей",
+    "default": { "name": "Новая группа" },
+    "ruleID": { "pref": "grp", "len": 3 },
+    "requiredRecords": [
+      {
+        "check": { "_id": "admgrp" },
+        "add": {
+          "_id": "admgrp",
+
+          "parent": "agroupsgroup",
+          "name": "$Admgrp",
+          "all_layouts": 1,
+          "all_devctl": 1,
+          "all_pmparts": 1,
+          "layouts": {},
+          "devctl": {},
+          "pmparts": {}
+        }
+      }
+    ]
+  },
+
+  "agroupsgroup": {
+    "store": "db",
+    "collection": "agroups",
+    "filter": { "folder": 1 },
+    "defRootTitle": "Группы пользователей"
+  },
+
+  "agrouplayoutsTable": {
+    "store": "db",
+    "collection": "agroups",
+    "genfield": "layouts"
+  },
+
+  "agroupdevctlTable": {
+    "store": "db",
+    "collection": "agroups",
+    "genfield": "devctl"
+  },
+
+  "agrouppmpartsTable": {
+    "store": "db",
+    "collection": "agroups",
+    "genfield": "pmparts"
+  },
+  
+
+  "agroup_tab": {
+    "store": "db",
+    "collection": "agroup_tab",
+    "rows": true
+  },
+
+  "agroup_bygroup": {
+    "store": "db",
+    "collection": "agroup_tab",
+    "rows": true
+  },
+
+  "agroup_byuser": {
+    "store": "db",
+    "collection": "agroup_tab",
     "rows": true
   },
 
@@ -681,8 +750,8 @@
       "src": "mainlog",
       "levelfrom": 0,
       "props": {
-        "dts": { "prop": "dts", "title": "Дата", "width": 250, "order":1 },
-        "txt": { "prop": "txt", "title": "Текст сообщения", "width": 550, "order":2 }
+        "dts": { "prop": "dts", "title": "Дата", "width": 250, "order": 1 },
+        "txt": { "prop": "txt", "title": "Текст сообщения", "width": 550, "order": 2 }
       }
     },
     "ruleID": { "pref": "jr", "len": 3 }
@@ -704,13 +773,13 @@
     "default": {
       "name": "Новый журнал тревог",
       "props": {
-        "tsStartStr": { "prop": "tsStartStr", "title": "Время начала", "width": 200, "order":1 },
-        "txt": { "prop": "txt", "title": "Сообщение", "width": 300, "order":2 },
-        "stateStr": { "prop": "stateStr", "title": "Состояние", "width": 300, "order":3 },
-        "tsStopStr": { "prop": "tsStopStr", "title": "Время завершения", "width": 200, "order":4 },
-        "rowbutton": { "prop": "rowbutton", "title": "Квитировать", "width": 200, "order":5 },
-        "tsAckStr": { "prop": "tsAckStr", "title": "Время квитирования", "width": 200, "order":6 },
-        "username": { "prop": "username", "title": "Оператор", "width": 200, "order":7 }
+        "tsStartStr": { "prop": "tsStartStr", "title": "Время начала", "width": 200, "order": 1 },
+        "txt": { "prop": "txt", "title": "Сообщение", "width": 300, "order": 2 },
+        "stateStr": { "prop": "stateStr", "title": "Состояние", "width": 300, "order": 3 },
+        "tsStopStr": { "prop": "tsStopStr", "title": "Время завершения", "width": 200, "order": 4 },
+        "rowbutton": { "prop": "rowbutton", "title": "Квитировать", "width": 200, "order": 5 },
+        "tsAckStr": { "prop": "tsAckStr", "title": "Время квитирования", "width": 200, "order": 6 },
+        "username": { "prop": "username", "title": "Оператор", "width": 200, "order": 7 }
       }
     },
     "ruleID": { "pref": "ajr", "len": 3 }
@@ -786,6 +855,7 @@
           "role": "admin",
           "name": "Admin",
           "parent": "usergroup",
+          "agroup": "admgrp",
           "pwd": "202020",
           "order": 10
         }
@@ -976,18 +1046,18 @@
     }
   },
 
-  "mobiletypetabsettingTable" : {
+  "mobiletypetabsettingTable": {
     "store": "db",
     "collection": "mobiletypes",
     "genfield": "props"
   },
 
-  "mobilesettingfromtypeTable":{
+  "mobilesettingfromtypeTable": {
     "store": "db",
     "collection": "mobiledevices"
   },
 
-  "mobilesettingfromsceneTable":{
+  "mobilesettingfromsceneTable": {
     "store": "db",
     "collection": "mobiledevices"
   },
@@ -1029,14 +1099,14 @@
     "collection": "pages",
     "genfield": "props",
     "ruleID": { "pref": "pg", "len": 3 },
-    "invalidatecache":["tree_docs*"]
+    "invalidatecache": ["tree_docs*"]
   },
 
   "pagebylangTable": {
     "store": "db",
     "collection": "pages",
     "genfield": "props",
-    "invalidatecache":["tree_docs*"]
+    "invalidatecache": ["tree_docs*"]
   },
 
   "docimagegroup": {
@@ -1052,6 +1122,4 @@
     "store": "db",
     "collection": "docimages"
   }
-
-
 }

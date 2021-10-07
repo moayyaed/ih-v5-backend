@@ -2,6 +2,7 @@
   { "id": "Users", "note": "Users" },
   { "id": "User", "note": "User" },
   { "id": "Logins", "note": "Accounts" },
+  { "id": "Admgrp", "note": "Admin group" },
   { "id": "Addresses", "note": "Addresses for Information" },
   { "id": "Usergroups", "note": "Groups" },
   { "id": "Acpolicy", "note": "Access Policies" },

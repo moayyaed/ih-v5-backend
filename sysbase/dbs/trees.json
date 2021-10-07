@@ -326,13 +326,13 @@
     }
   },
 
-  "infogroups": {
+  "agroups": {
     "branch": {
-      "table": "infogroupsgroup",
+      "table": "agroupsgroup",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     },
     "leaf": {
-      "table": "infogroups",
+      "table": "agroups",
       "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
     }
   },
@@ -643,16 +643,14 @@
       },
       "copylink": 1
     }
-  },
-  
+  },  
 
   "dev": ["devdevices", "sysdevices", "globals", "locals", "types"],
   "vis": ["layout", "viscont", "dialog", "vistemplate", "visscript", "images"],
   "allscenes": ["scenes", "schedrules"],
   "datasource": ["plugins", "snippets", "restapihandlers"],
-
   "analytics": ["charts", "timelinecharts"],
   "database": ["dbagents"],
-  "access": ["users", "infogroups", "inforules"],
+  "access": ["users", "agroups", "inforules"],
   "documentation": ["pages", "docimages"]
 }
