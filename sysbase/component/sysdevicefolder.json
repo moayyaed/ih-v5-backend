@@ -1,7 +1,7 @@
 {
   "tabs": [
-    { "id": "tabSysDeviceFolder",  "title": "Свойства папки", "component": [{ "id": "formSysDeviceFolder", "type": "form" }]  },
-    { "id": "tabSysDeviceTable",  "title": "Таблица процессов", "component": [{ "id": "formSysDeviceTable", "type": "form" }]  }
+    { "id": "tabSysDeviceFolder",  "title": "$Folder", "component": [{ "id": "formSysDeviceFolder", "type": "form" }]  },
+    { "id": "tabSysDeviceTable",  "title": "$Table", "component": [{ "id": "formSysDeviceTable", "type": "form" }]  }
    
   ],
   "defaultTab": "tabSysDeviceFolder"

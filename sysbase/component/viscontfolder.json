@@ -1,7 +1,7 @@
 {
   "tabs": [
-    { "id": "tabViscontFolder",  "title": "Свойства папки", "component": [{ "id": "formViscontFolder", "type": "form" }]  },
-    { "id": "tabViscontTable",  "title": "Таблица контейнеров", "component": [{ "id": "formViscontTable", "type": "form" }]  }
+    { "id": "tabViscontFolder",  "title": "$Folder", "component": [{ "id": "formViscontFolder", "type": "form" }]  },
+    { "id": "tabViscontTable",  "title": "$Table", "component": [{ "id": "formViscontTable", "type": "form" }]  }
   ],
   "defaultTab": "tabViscontTable"
 }

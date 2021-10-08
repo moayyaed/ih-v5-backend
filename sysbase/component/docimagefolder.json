@@ -1,8 +1,8 @@
 {
   "tabs": [
-    { "id": "tabDocImageFolder",  "title": "Свойства папки", "component": [{ "id": "formDocImageFolder", "type": "form" }]  },
-    { "id": "tabDocImageGrid",  "title": "Плитка", "component": [{ "id": "formDocImageGrid", "type": "form" }]  },
-    { "id": "tabDocImageTable",  "title": "Таблица", "component": [{ "id": "formDocImageTable", "type": "form" }]  }
+    { "id": "tabDocImageFolder",  "title": "$Folder", "component": [{ "id": "formDocImageFolder", "type": "form" }]  },
+    { "id": "tabDocImageGrid",  "title": "$Tile", "component": [{ "id": "formDocImageGrid", "type": "form" }]  },
+    { "id": "tabDocImageTable",  "title": "$Table", "component": [{ "id": "formDocImageTable", "type": "form" }]  }
   ],
   "defaultTab": "tabDocImageGrid"
 }

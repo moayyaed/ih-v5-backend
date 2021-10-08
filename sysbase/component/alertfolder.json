@@ -1,6 +1,6 @@
 {
   "tabs": [
-    { "id": "tabAlertFolder", "title": "Свойства папки", "component": [{ "id": "formAlertFolder", "type": "form" }] }
+    { "id": "tabAlertFolder", "title": "$Folder", "component": [{ "id": "formAlertFolder", "type": "form" }] }
   ],
   "defaultTab": "tabAlertFolder"
 }

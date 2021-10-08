@@ -1,8 +1,7 @@
 {
   "common": {
     "popup": {
-      "main": [],
-      "shapes": [{ "id": "23", "type": "item", "icon": "full-circle", "text": "Full circle" }]
+      "main": []
     }
   },
 
@@ -34,9 +33,9 @@
           { "id": "1", "type": "item", "title": "$NewSnippet", "command": "addNode" },
           { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
           { "id": "3", "type": "divider" },
-         
+
           { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
-         
+
           { "id": "7", "type": "divider" },
           { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
         ]
@@ -78,7 +77,7 @@
   "restapihandlers": {
     "root": {
       "popup": {
-        "main":  [
+        "main": [
           { "id": "1", "type": "item", "title": "$NewRoute", "command": "addNode" },
           { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
           { "id": "3", "type": "divider" },
@@ -91,7 +90,7 @@
     },
     "parent": {
       "popup": {
-        "main":  [
+        "main": [
           { "id": "1", "type": "item", "title": "$NewRoute", "command": "addNode" },
           { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
           { "id": "3", "type": "divider" },

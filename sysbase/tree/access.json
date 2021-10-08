@@ -57,7 +57,7 @@
     "root": {
       "popup": {
         "main": [
-          { "id": "1", "type": "item", "title": "Новая группа", "command": "addNode" },
+          { "id": "1", "type": "item", "title": "$NewGroup", "command": "addNode" },
           { "id": "3", "type": "divider" },
 
           { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
@@ -79,7 +79,7 @@
     "child": {
       "popup": {
         "main": [
-          { "id": "1", "type": "item", "title": "Новая группа", "command": "addNode" },
+          { "id": "1", "type": "item", "title": "$NewGroup", "command": "addNode" },
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
           { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
@@ -96,7 +96,7 @@
     "root": {
       "popup": {
         "main": [
-          { "id": "1", "type": "item", "title": "Новое правило", "command": "addNode" },
+          { "id": "1", "type": "item", "title": "$NewRule", "command": "addNode" },
           { "id": "3", "type": "divider" },
 
           { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },
@@ -118,7 +118,7 @@
     "child": {
       "popup": {
         "main": [
-          { "id": "1", "type": "item", "title": "Новое правило", "command": "addNode" },
+          { "id": "1", "type": "item", "title": "$NewRule", "command": "addNode" },
           { "id": "3", "type": "divider" },
           { "id": "4", "type": "item", "title": "$Copy", "command": "copy" },
           { "id": "5", "type": "item", "title": "$Paste", "command": "paste", "check": "disablePaste" },

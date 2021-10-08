@@ -1,6 +1,6 @@
 {
   "tabs": [
-    { "id": "tabUserFolder",  "title": "Свойства папки", "component": [{ "id": "formUserFolder", "type": "form" }]  }
+    { "id": "tabUserFolder",  "title": "$Folder", "component": [{ "id": "formUserFolder", "type": "form" }]  }
   ],
   "defaultTab": "tabUserFolder"
 }

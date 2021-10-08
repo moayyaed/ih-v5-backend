@@ -50,7 +50,7 @@
     },
     {
       "prop": "all_pmparts_1",
-      "title": "▪︎ PM: Доступ ограничен разделам из списка",
+      "title": "▪︎ PM: Доступ ограничен разделами из списка",
       "type": "header",
       "hide": "data.p2.all_pmparts != 1"
     },

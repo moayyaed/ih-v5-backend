@@ -1,7 +1,7 @@
 {
   "tabs": [
-    { "id": "tabSchedFolder", "title": "Свойства папки", "component": [{ "id": "formSchedFolder", "type": "form" }] },
-    { "id": "tabSchedTable", "title": "Расписание", "component": [{ "id": "formSchedTable", "type": "form" }] }
+    { "id": "tabSchedFolder", "title": "$Folder", "component": [{ "id": "formSchedFolder", "type": "form" }] },
+    { "id": "tabSchedTable", "title": "$Schedule", "component": [{ "id": "formSchedTable", "type": "form" }] }
   ],
   "defaultTab": "tabSchedFolder"
 }

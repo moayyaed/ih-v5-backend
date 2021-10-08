@@ -1,7 +1,7 @@
 {
   "tabs": [
-    { "id": "tabVisscriptFolder",  "title": "Свойства папки", "component": [{ "id": "formVisscriptFolder", "type": "form" }]  },
-    { "id": "tabVisscriptTable",  "title": "Таблица скриптов", "component": [{ "id": "formVisscriptTable", "type": "form" }]  }
+    { "id": "tabVisscriptFolder",  "title": "$Folder", "component": [{ "id": "formVisscriptFolder", "type": "form" }]  },
+    { "id": "tabVisscriptTable",  "title": "$Table", "component": [{ "id": "formVisscriptTable", "type": "form" }]  }
   ],
   "defaultTab": "tabVisscriptFolder"
 }

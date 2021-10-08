@@ -6,20 +6,20 @@
   "spacing": 10,
  
   "p3": [
-    { "prop": "__UNIT_p2p.statеStr", "title": "Плагин P2P", "type": "text" },
+    { "prop": "__UNIT_p2p.statеStr", "title": "$PluginP2P", "type": "text" },
     
     {
       "prop": "__UNIT_p2p.key",
-      "title": "Ключ P2P",
+      "title": "$KeyP2P",
       "type": "text"
     },
 
    
-    { "prop": "__UNIT_p2p.status", "title": "Состояние связи", "type": "text" },
+    { "prop": "__UNIT_p2p.status", "title": "$StatusP2P", "type": "text" },
     {
       "prop":"header",
       "type":"header",
-      "title":"Адрес сервиса для удаленного входа: https://p2p.ih-systems.com",
+      "title":"$ServiceP2P",
       "hide":"!data.p3['__UNIT_p2p.status']"
     }
     

@@ -1,6 +1,6 @@
 {
   "tabs": [
-    { "id": "tabRestapiFolder",  "title": "$Settings", "component": [{ "id": "formRestapiFolder", "type": "form" }]  },
+    { "id": "tabRestapiFolder",  "title": "$Folder", "component": [{ "id": "formRestapiFolder", "type": "form" }]  },
     { "id": "tabRestapiTable",  "title": "$Table", "component": [{ "id": "formRestapiTable", "type": "form" }]  }
   ],
   "defaultTab": "tabRestapiFolder"

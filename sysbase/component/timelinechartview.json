@@ -1,6 +1,6 @@
 {
   "tabs": [
-    { "id": "tabTimelinechartCommon", "title": "Таймлайн", "component": [{ "id": "formTimelinechartCommon", "type": "form" }] }
+    { "id": "tabTimelinechartCommon", "title": "$Timeline", "component": [{ "id": "formTimelinechartCommon", "type": "form" }] }
    
   ],
   "defaultTab": "tabTimelinechartCommon"

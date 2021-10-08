@@ -1,8 +1,8 @@
 {
   "common": {
     "popup": {
-      "main": [],
-      "shapes": [{ "id": "23", "type": "item", "icon": "full-circle", "text": "Full circle" }]
+      "main": []
+     
     }
   },
 

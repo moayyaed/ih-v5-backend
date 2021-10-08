@@ -1,9 +1,9 @@
 {
   "tabs": [
-    { "id": "tabDialogCommon", "title": "Описание", "component": [{ "id": "formDialogCommon", "type": "form" }] },
-    { "id": "tabDialogEditor", "title": "Редактор", "component": [{ "id": "formDialog", "type": "form" }] },
-    { "id": "tabDialogLinks", "title": "Привязки", "component": [{ "id": "formDialogLinks", "type": "form" }] },
-    { "id": "tabDialogExport", "title": "Параметры для выгрузки", "component": [{ "id": "formDialogExport", "type": "form" }] }
+    { "id": "tabDialogCommon", "title": "$Common", "component": [{ "id": "formDialogCommon", "type": "form" }] },
+    { "id": "tabDialogEditor", "title": "$Editor", "component": [{ "id": "formDialog", "type": "form" }] },
+    { "id": "tabDialogLinks", "title": "$Links", "component": [{ "id": "formDialogLinks", "type": "form" }] },
+    { "id": "tabDialogExport", "title": "$ExportParameters", "component": [{ "id": "formDialogExport", "type": "form" }] }
   ],
   "defaultTab": "tabDialogEditor"
 }

@@ -1,6 +1,6 @@
 {
   "tabs": [
-    { "id": "tabAlertJournalFolder", "title": "Настройка", "component": [{ "id": "formAlertJournalFolder", "type": "form" }] }
+    { "id": "tabAlertJournalFolder", "title": "$Settings", "component": [{ "id": "formAlertJournalFolder", "type": "form" }] }
   ],
   "defaultTab": "tabAlertJournalFolder"
 }

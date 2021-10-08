@@ -1,6 +1,6 @@
 {
   "tabs": [
-    { "id": "tabCustomtableFolder", "title": "Папка", "component": [{ "id": "formCustomtableFolder", "type": "form" }] }
+    { "id": "tabCustomtableFolder", "title": "$Folder", "component": [{ "id": "formCustomtableFolder", "type": "form" }] }
   ],
   "defaultTab": "tabCustomtableFolder"
 }

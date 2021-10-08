@@ -1,8 +1,8 @@
 {
   "tabs": [
-    { "id": "tabAlertruleCommon", "title": "Настройка", "component": [{ "id": "formAlertruleCommon", "type": "form" }] },
-    { "id": "tabAlertTriggers", "title": "Триггеры", "component": [{ "id": "formAlertTriggers", "type": "form" }] },
-    { "id": "tabAlertTable", "title": "Открытые алерты", "component": [{ "id": "formAlertTable", "type": "form" }] }
+    { "id": "tabAlertruleCommon", "title": "$Settings", "component": [{ "id": "formAlertruleCommon", "type": "form" }] },
+    { "id": "tabAlertTriggers", "title": "$Triggers", "component": [{ "id": "formAlertTriggers", "type": "form" }] },
+    { "id": "tabAlertTable", "title": "$AlertLogRecords", "component": [{ "id": "formAlertTable", "type": "form" }] }
   ],
   "defaultTab": "tabAlertruleCommon"
 }

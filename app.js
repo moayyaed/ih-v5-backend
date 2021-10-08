@@ -10,6 +10,7 @@ const EventEmitter = require('events');
 const init = require('./lib/init');
 const start = require('./lib/start');
 const dm = require('./lib/datamanager');
+const am = require('./lib/accessmanager');
 
 (async () => {
   const holder = new EventEmitter();
@@ -32,6 +33,7 @@ const dm = require('./lib/datamanager');
   try {
     await init(__dirname);
     holder.dm = dm;
+    holder.am = am;
     await start(holder);
   } catch (err) {
     console.log('ERROR: Main App Exception ' + util.inspect(err));

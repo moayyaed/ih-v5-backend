@@ -1,9 +1,9 @@
 {
   "tabs": [
-    { "id": "tabVistemplateCommon", "title": "Описание", "component": [{ "id": "formVistemplateCommon", "type": "form" }] },
-    { "id": "tabVistemplateEditor", "title": "Редактор", "component": [{ "id": "formVistemplate", "type": "form" }] },
-    { "id": "tabVistemplateUsage", "title": "Использование", "component": [{ "id": "formVistemplateUsage", "type": "form" }] },
-    { "id": "tabVistemplateExport", "title": "Параметры для выгрузки", "component": [{ "id": "formVistemplateExport", "type": "form" }] }
+    { "id": "tabVistemplateCommon", "title": "$Common", "component": [{ "id": "formVistemplateCommon", "type": "form" }] },
+    { "id": "tabVistemplateEditor", "title": "$CodeEditor", "component": [{ "id": "formVistemplate", "type": "form" }] },
+    { "id": "tabVistemplateUsage", "title": "$Usage", "component": [{ "id": "formVistemplateUsage", "type": "form" }] },
+    { "id": "tabVistemplateExport", "title": "$ExportParameters", "component": [{ "id": "formVistemplateExport", "type": "form" }] }
   ],
   "defaultTab": "tabVistemplateEditor"
 }

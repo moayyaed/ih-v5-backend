@@ -1,6 +1,6 @@
 {
   "tabs": [
-    { "id": "tabAlertJournalRoot", "title": "Настройка", "component": [{ "id": "formAJlevels", "type": "form" }] }
+    { "id": "tabAlertJournalRoot", "title": "$Settings", "component": [{ "id": "formAJlevels", "type": "form" }] }
   ],
   "defaultTab": "tabAlertJournalRoot"
 }

@@ -8,41 +8,41 @@
     
     {
       "id": "tabUpgrade",
-      "title": "Обновление",
+      "title": "$Updates",
       "component": [{ "id": "formDashboardUpgrade", "type": "xform" }]
     },
 
     {
       "id": "tabPlugins",
-      "title": "Плагины",
+      "title": "$Plugins",
       "component": [{ "id": "formDashboardPlugins", "type": "form" }]
     },
     {
       "id": "tabPortal",
-      "title": "Портал",
+      "title": "$Portal",
       "component": [{ "id": "formDashboardPortal", "type": "xform" }]
     },
 
     {
       "id": "tabLicenses",
-      "title": "Лицензии",
+      "title": "$Licenses",
       "component": [{ "id": "formLicenses", "type": "form" }]
     },
     {
       "id": "tabP2p",
-      "title": "Удаленный доступ",
+      "title": "$RemoteAccess",
       "component": [{ "id": "formP2p", "type": "xform" }]
     },
 
     {
       "id": "tabWebconsole",
-      "title": "Консоль",
+      "title": "$Console",
       "component": [{ "id": "formWebconsole", "type": "form" }]
     },
 
     {
       "id": "tabDashboardProcesses",
-      "title": "Процессы",
+      "title": "$Processes",
       "component": [{ "id": "formSysDeviceTable", "type": "form" }]
     }
   ],

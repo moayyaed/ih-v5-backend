@@ -1,10 +1,10 @@
 {
   "tabs": [
-    { "id": "tabGlobalCommon", "title": "Переменная", "component": [{ "id": "formGlobalVarCommon", "type": "form" }] },
+    { "id": "tabGlobalCommon", "title": "$Common", "component": [{ "id": "formGlobalVarCommon", "type": "form" }] },
 
-    { "id": "tabGlobalHandlers", "title": "Обработчик", "component": [{ "id": "globalhandler", "type": "form" }] },
+    { "id": "tabGlobalHandlers", "title": "$Handler", "component": [{ "id": "globalhandler", "type": "form" }] },
 
-    { "id": "tabGlobalUsage", "title": "Использование", "component": [{ "id": "formGlobalVarUsage", "type": "form" }] }
+    { "id": "tabGlobalUsage", "title": "$Usage", "component": [{ "id": "formGlobalVarUsage", "type": "form" }] }
    
   ],
 

@@ -7,6 +7,6 @@
   "breadcrumbs": { "tree": "viscont" },
 
   "p1": [
-    { "prop": "container", "title": "Container", "type": "container" }
+    { "prop": "container", "title": "$Container", "type": "container" }
   ]
 }

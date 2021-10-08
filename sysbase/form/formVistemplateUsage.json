@@ -16,8 +16,8 @@
 
       "columns": [
        
-        { "prop": "container_name", "title": "Размещение", "type": "link", "width": 250, "command": "forward", "filter":true  },
-        { "prop": "element", "title": "Элемент", "type": "text", "width": 950, "filter":true }
+        { "prop": "container_name", "title": "$Allocation", "type": "link", "width": 250, "command": "forward", "filter":true  },
+        { "prop": "element", "title": "$Element", "type": "text", "width": 950, "filter":true }
       ]
     }
   ]

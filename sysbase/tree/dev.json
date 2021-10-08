@@ -17,14 +17,14 @@
           {
             "id": "export",
             "type": "item",
-            "title": "Выгрузить ВСЕ устройства",
+            "title": "$ExportALLDevices",
             "command": "export",
             "param": "devices:csv"
           },
           {
             "id": "import",
             "type": "item",
-            "title": "Загрузить (заменить) ВСЕ устройства",
+            "title": "$ImportALLDevices",
             "command": "upload",
             "param": "devices:csv"
           }

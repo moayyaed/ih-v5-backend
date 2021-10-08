@@ -1,6 +1,6 @@
 {
   "tabs": [
-    { "id": "tabChartFolder",  "title": "Свойства папки", "component": [{ "id": "formChartFolder", "type": "form" }]  }
+    { "id": "tabChartFolder",  "title": "$Folder", "component": [{ "id": "formChartFolder", "type": "form" }]  }
   ],
   "defaultTab": "tabChartFolder"
 }

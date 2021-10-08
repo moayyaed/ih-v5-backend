@@ -1,8 +1,8 @@
 {
   "tabs": [
-    { "id": "tabCustomtableCommon", "title": "Данные", "component": [{ "id": "formCustomtableCommon", "type": "form" }] },
-    { "id": "tabCustomtableSettings", "title": "Настройка", "component": [{ "id": "formCustomtableSettings", "type": "form" }] },
-    { "id": "tabCustomtableScript", "title": "Обработчик", "component": [{ "id": "formCustomtableHandler", "type": "form" }] }
+    { "id": "tabCustomtableCommon", "title": "$Data", "component": [{ "id": "formCustomtableCommon", "type": "form" }] },
+    { "id": "tabCustomtableSettings", "title": "$Settings", "component": [{ "id": "formCustomtableSettings", "type": "form" }] },
+    { "id": "tabCustomtableScript", "title": "$Handler", "component": [{ "id": "formCustomtableHandler", "type": "form" }] }
 
   ],
   "defaultTab": "tabCustomtableCommon"

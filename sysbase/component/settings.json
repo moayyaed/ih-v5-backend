@@ -1,6 +1,6 @@
 {
   "tabs": [
-    { "id": "tabSettings",  "title": "Настройки", "component": [{ "id": "formSettingsCommon", "type": "form" }]  }
+    { "id": "tabSettings",  "title": "$Settings", "component": [{ "id": "formSettingsCommon", "type": "form" }]  }
   ],
   "defaultTab": "tabSettings"
 }

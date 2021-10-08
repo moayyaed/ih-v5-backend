@@ -1,9 +1,9 @@
 {
   "tabs": [
-    { "id": "tabTypeFolder",  "title": "Свойства папки", "component": [{ "id": "formTypeFolder", "type": "form" }]  },
-    { "id": "tabTypeTable",  "title": "Таблица типов", "component": [{ "id": "formTypeTable", "type": "form" }]  },
-    { "id": "tabTypeAlertsTable",  "title": "Таблица тревог", "component": [{ "id": "formTypeAlertsTable", "type": "form" }]  },
-    { "id": "tabTypeHandlersTrace",  "title": "Выполнение", "component": [{ "id": "formTypeHandlersTrace", "type": "form" }]  }
+    { "id": "tabTypeFolder",  "title": "$Folder", "component": [{ "id": "formTypeFolder", "type": "form" }]  },
+    { "id": "tabTypeTable",  "title": "$TypeTable", "component": [{ "id": "formTypeTable", "type": "form" }]  },
+    { "id": "tabTypeAlertsTable",  "title": "$AlertTable", "component": [{ "id": "formTypeAlertsTable", "type": "form" }]  },
+    { "id": "tabTypeHandlersTrace",  "title": "$Execution", "component": [{ "id": "formTypeHandlersTrace", "type": "form" }]  }
   ],
   "defaultTab": "tabTypeTable"
 }

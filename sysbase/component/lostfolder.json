@@ -1,6 +1,6 @@
 {
   "tabs": [
-    { "id": "tabLostFolder",  "title": "Папка lost+found", "component": [{ "id": "formLostFolder", "type": "form" }]  }
+    { "id": "tabLostFolder",  "title": "lost+found", "component": [{ "id": "formLostFolder", "type": "form" }]  }
   ],
   "defaultTab": "tabLostFolder"
 }
