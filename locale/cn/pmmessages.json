@@ -678,6 +678,9 @@
   { "id": "Setting_version", "note": "版本" },
   { "id": "CurrentVersion", "note": "当前版本" },
   { "id": "PrevVersion", "note": "前一版本" },
+  { "id": "LatestVersion", "note": "Latest Version" },
+  { "id": "Description", "note": "Description" },
+
   { "id": "on", "note": "打开" },
   { "id": "off", "note": "关闭" },
   { "id": "toggle", "note": "触发" },
@@ -796,6 +799,7 @@
 
   { "id": "Folder", "note": "Folder" },
   { "id": "Tags", "note": "Tags" },
+  { "id": "Tag", "note": "Tag" },
   { "id": "NewFolder", "note": "New Folder" },
   { "id": "Project", "note": "Project" },
   { "id": "NewProject", "note": "New Project" },
@@ -921,6 +925,27 @@
   { "id": "Allocation", "note": "Allocation" },
   { "id": "Links", "note": "Links" },
   { "id": "Tile", "note": "Tile" },
+  { "id": "ChannelLink", "note": "Link to channel" },
+  { "id": "MenuItem", "note": "Menu Item" },
+  { "id": "DeviceGroup", "note": "Device Group" },
+  { "id": "AccessToAllLayouts", "note": "Allow access to all layouts" },
+  { "id": "AccessToAllDevctl", "note": "Allow control of all devices" },
+  { "id": "AccessToPM", "note": "Access to PM (Project Manager)" },
+
+  { "id": "tsDateTime", "note": "Date, time" },
+  { "id": "ctsDateTime", "note": "Changed" },
+  { "id": "ValueStr", "note": "String Value" },
+  { "id": "SetValue", "note": "Set Value" },
+  { "id": "PropertySource", "note": "Property source" },
+  { "id": "LinkedChannelNotExists", "note": "The linked channel does not exist!" },
+  { "id": "HandlerNotUsed", "note": "The handler is not used" },
+  { "id": "UseHandler", "note": "Use handler to generate data" },
+  { "id": "CustomTableName", "note": "Table name (will be created if does not exist)" },
+
+
+
+
+
 
 
 

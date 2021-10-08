@@ -9,10 +9,10 @@
   ],
   "spacing": 8,
 
-  "p1": [{ "prop": "all_layouts", "title": "Разрешить доступ ко всем экранам", "type": "cb" }],
+  "p1": [{ "prop": "all_layouts", "title": "$AccessToAllLayouts", "type": "cb" }],
 
-  "p2": [{ "prop": "all_devctl", "title": "Разрешить управление всеми устройствами", "type": "cb" }],
-  "p3": [{ "prop": "all_pmparts", "title": "Доступ к PM (Project Manager)", "type": "droplist", "data":"accesslevelList" }],
+  "p2": [{ "prop": "all_devctl", "title": "$AccessToAllDevctl", "type": "cb" }],
+  "p3": [{ "prop": "all_pmparts", "title": "$AccessToPM", "type": "droplist", "data":"accesslevelList" }],
 
   "p4": [
     {
@@ -24,7 +24,7 @@
 
       "popupenable": true,
 
-      "columns": [{ "prop": "layout", "title": "Экран", "type": "droplist", "data": "layoutList", "width": 200 }]
+      "columns": [{ "prop": "layout", "title": "$Layout", "type": "droplist", "data": "layoutList", "width": 200 }]
     }
   ],
 
@@ -39,8 +39,8 @@
       "popupenable": true,
 
       "columns": [
-        { "prop": "place", "title": "Группа устройств", "type": "droplist", "data": "mobilePlaceList", "width": 200 },
-        { "prop": "tags", "title": "Теги", "type": "input", "width": 200 }
+        { "prop": "place", "title": "$DeviceGroup", "type": "droplist", "data": "mobilePlaceList", "width": 200 },
+        { "prop": "tag", "title": "$Tag", "type": "droplist", "data": "taglist", "width": 200 }
       ]
     }
   ],
@@ -57,8 +57,8 @@
 
       "columns": [
     
-        { "prop": "pmpart", "title": "Раздел", "type": "droplist", "data":"pmpartList", "width":100 },
-        { "prop": "rule", "title": "Доступ", "type": "droplist", "data":"accesslevelList", "width":100 }
+        { "prop": "pmpart", "title": "$MenuItem", "type": "droplist", "data":"pmpartList", "width":100 },
+        { "prop": "rule", "title": "$ACCESS", "type": "droplist", "data":"accesslevelList", "width":100 }
       
       ]
     }

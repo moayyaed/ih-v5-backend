@@ -22,17 +22,17 @@
           "width": 180,
           "hide": "data.snipuse || data.type_op.includes('System') || data.type_op.includes('Calculate') || data.type_op.includes('Scene')",
           "command": "dialog",
-          "params": { "title": "Привязка к каналу", "type": "tree", "id": "pluginsd", "dialog": "channellink" }
+          "params": { "title": "$ChannelLink", "type": "tree", "id": "pluginsd", "dialog": "channellink" }
         },
         { "prop": "realtime_dev_val", "title": "$Value", "type": "text", "width": 100 },
-        { "prop": "valstr", "title": "Значение строка", "type": "text", "width": 150 },
-        { "prop": "realtime_dev_ts", "title": "$LogDateTime", "type": "text", "width": 150 },
-        { "prop": "realtime_dev_cts", "title": "Изменение", "type": "text", "width": 128 },
+        { "prop": "valstr", "title": "$ValueStr", "type": "text", "width": 150 },
+        { "prop": "realtime_dev_ts", "title": "$tsDateTime", "type": "text", "width": 150 },
+        { "prop": "realtime_dev_cts", "title": "$ctsDateTime", "type": "text", "width": 128 },
         { "prop": "realtime_dev_err", "title": "$Error", "type": "text", "width": 128 },
 
         {
           "prop": "_inputval",
-          "title": "Присвоить значение",
+          "title": "$InputValue",
           "type": "input",
           "width": 100,
           "hide": "data.type_op.includes('System') || data.type_op.includes('Calculate') || data.type_op.includes('Command')"
@@ -54,7 +54,7 @@
           "hide": "!data.type_op.includes('Number')"
         },
         { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 80, "hide": "!data.type_op.includes('Number')" },
-        { "prop": "source", "title": "Источник свойства", "type": "link", "width": 250, "command": "forward" }
+        { "prop": "source", "title": "$PropertySource", "type": "link", "width": 250, "command": "forward" }
       ]
     }
   ]

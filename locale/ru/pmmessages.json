@@ -745,6 +745,9 @@
   { "id": "Setting_version", "note": "Версия" },
   { "id": "CurrentVersion", "note": "Текущая версия" },
   { "id": "PrevVersion", "note": "Архивная версия" },
+  { "id": "LatestVersion", "note": "Последняя версия" },
+  { "id": "Description", "note": "Описание" },
+
   { "id": "on", "note": "Включить" },
   { "id": "off", "note": "Выключить" },
   { "id": "toggle", "note": "Переключить" },
@@ -874,6 +877,7 @@
 
   { "id": "Folder", "note": "Папка" },
   { "id": "Tags", "note": "Теги" },
+  { "id": "Tag", "note": "Тег" },
   { "id": "NewFolder", "note": "Новая папка" },
   { "id": "Project", "note": "Проект" },
   { "id": "NewProject", "note": "Новый проект" },
@@ -1004,6 +1008,23 @@
   { "id": "Allocation", "note": "Размещение" },
   { "id": "Links", "note": "Привязки" },
   { "id": "Tile", "note": "Плитка" },
+
+  { "id": "ChannelLink", "note": "Привязка к каналу" },
+  { "id": "MenuItem", "note": "Раздел" },
+  { "id": "DeviceGroup", "note": "Группа устройств" },
+  { "id": "AccessToAllLayouts", "note": "Разрешить доступ ко всем экранам" },
+  { "id": "AccessToAllDevctl", "note": "Разрешить управление всеми устройствами" },
+  { "id": "AccessToPM", "note": "Доступ к PM (Project Manager)" },
+
+  { "id": "tsDateTime", "note": "Дата, время" },
+  { "id": "ctsDateTime", "note": "Изменено" },
+  { "id": "ValueStr", "note": "Значение строка" },
+  { "id": "SetValue", "note": "Присвоить значение" },
+  { "id": "PropertySource", "note": "Источник свойства" },
+  { "id": "LinkedChannelNotExists", "note": "Привязанный канал не существует!" },
+  { "id": "HandlerNotUsed", "note": "Обработчик не используется" },
+  { "id": "UseHandler", "note": "Использовать обработчик для формирования данных" },
+  { "id": "CustomTableName", "note": "Имя таблицы (будет создана при отсутствии)" },
 
 
   { "id": "StdMessage", "note": "Стандартное сообщение" },

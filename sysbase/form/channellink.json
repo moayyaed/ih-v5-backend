@@ -7,10 +7,10 @@
   "plink": [
     {
       "prop": "chanlink",
-      "title": "Привязка к каналу",
+      "title": "$ChannelLink",
       "type": "smartbutton",
       "command": "dialog",
-      "params": { "title": "Привязка к каналу", "type": "tree", "id":"pluginsd", "dialog":"channellink" }
+      "params": { "title": "$ChannelLink", "type": "tree", "id":"pluginsd", "dialog":"channellink" }
     }
   ]
 }

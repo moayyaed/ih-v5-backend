@@ -6,7 +6,7 @@
 
   "plink": [
 
-    { "prop": "missing",      "title": "Привязанный канал не существует!",  "type": "header","hide":"!data.plink.missing"},
+    { "prop": "missing",      "title": "$LinkedChannelNotExists",  "type": "header","hide":"!data.plink.missing"},
     {
       "prop": "devlink",
       "title": "$LinkToDeviceProperty",

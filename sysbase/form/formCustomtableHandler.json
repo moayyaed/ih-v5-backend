@@ -8,8 +8,8 @@
 
   "p1": [{ "prop": "errstr", "title": "", "type": "text" }],
   "p2": [
-    { "prop": "fuse", "title": "Fuse", "type": "text", "hide": true },
-    { "prop": "nohandler", "title": "Обработчик не используется", "type": "header", "hide": "data.p2.fuse" },
-    { "prop": "handler", "title": "Code", "type": "code", "hide": "!data.p2.fuse" }
+    { "prop": "fuse", "title": "", "type": "text", "hide": true },
+    { "prop": "nohandler", "title": "$HandlerNotUsed", "type": "header", "hide": "data.p2.fuse" },
+    { "prop": "handler", "title": "$CodeEditor", "type": "code", "hide": "!data.p2.fuse" }
   ]
 }

@@ -206,7 +206,7 @@
 
   { "id": "Mnemoscheme", "note": "Mimic Diagram" },
   { "id": "Widget", "note": "Widget" },
-  { "id": "Layout", "note": "Screen" },
+  { "id": "Layout", "note": "Layout" },
   { "id": "Element", "note": "Element " },
 
   { "id": "Name", "note": "Name" },
@@ -740,6 +740,9 @@
   { "id": "Setting_version", "note": "Version" },
   { "id": "CurrentVersion", "note": "Current Version" },
   { "id": "PrevVersion", "note": "Previous Version" },
+  { "id": "LatestVersion", "note": "Latest Version" },
+  { "id": "Description", "note": "Description" },
+
   { "id": "on", "note": "Turn ON" },
   { "id": "off", "note": "Turn OFF" },
   { "id": "toggle", "note": "Toggle" },
@@ -867,6 +870,7 @@
 
   { "id": "Folder", "note": "Folder" },
   { "id": "Tags", "note": "Tags" },
+  { "id": "Tag", "note": "Tag" },
   { "id": "NewFolder", "note": "New Folder" },
   { "id": "Project", "note": "Project" },
   { "id": "NewProject", "note": "New Project" },
@@ -994,6 +998,22 @@
   { "id": "Allocation", "note": "Allocation" },
   { "id": "Links", "note": "Links" },
   { "id": "Tile", "note": "Tile" },
+  { "id": "ChannelLink", "note": "Link to channel" },
+  { "id": "MenuItem", "note": "Menu Item" },
+  { "id": "DeviceGroup", "note": "Device Group" },
+  { "id": "AccessToAllLayouts", "note": "Allow access to all layouts" },
+  { "id": "AccessToAllDevctl", "note": "Allow control of all devices" },
+  { "id": "AccessToPM", "note": "Access to PM (Project Manager)" },
+
+  { "id": "tsDateTime", "note": "Date, time" },
+  { "id": "ctsDateTime", "note": "Changed" },
+  { "id": "ValueStr", "note": "String Value" },
+  { "id": "SetValue", "note": "Set Value" },
+  { "id": "PropertySource", "note": "Property source" },
+  { "id": "LinkedChannelNotExists", "note": "The linked channel does not exist!" },
+  { "id": "HandlerNotUsed", "note": "The handler is not used" },
+  { "id": "UseHandler", "note": "Use handler to generate data" },
+  { "id": "CustomTableName", "note": "Table name (will be created if does not exist)" },
 
 
   { "id": "StdMessage", "note": "Common message" },
