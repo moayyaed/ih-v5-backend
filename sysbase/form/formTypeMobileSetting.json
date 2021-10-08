@@ -1,13 +1,9 @@
 {
   "grid": [
-    { "id": "p1", "xs": 3, "class": "main", "table": "mobiletype" },
-    {
-      "id": "p3",
-      "xs": 3,
-      "class": "main",
-      "table": "mobiletype",
-      "hide": "!data.p1.cl.id || data.p1.cl.id=='-' || data.p1.cl.id.startsWith('Sensor')"
-    },
+    { "id": "p1", "xs": 6, "class": "main", "table": "mobiletype" },
+    { "id": "p2", "xs": 3, "class": "main", "table": "mobiletype" },
+    { "id": "p3", "xs": 3, "class": "main", "table": "mobiletype" },
+    { "id": "p7", "xs": 6, "class": "main", "table": "mobiletypetabsettingTable" },
 
     { "id": "p4", "xs": 3, "class": "main", "table": "mobiletype", "hide": "!data.p1.cl.id || data.p1.cl.id=='-' " },
     {
@@ -16,13 +12,46 @@
       "class": "main",
       "table": "mobiletype",
       "hide": "!data.p1.cl.id || data.p1.cl.id=='-' || data.p1.cl.id.startsWith('SensorA')"
-    },
-    { "id": "p7", "xs": 12, "class": "main", "table": "mobiletypetabsettingTable", "height":"fill", "hide": "!data.p1.mobtabsetting" }
+    }
   ],
   "spacing": 10,
 
   "p1": [
-    { "prop": "cl", "title": "Класс для мобильного приложения", "type": "droplist", "data": "classV4List" },
+    { "prop": "cl", "title": "Класс (определяет основные свойства для мобильного)", "type": "droplist", "data": "classV4List" },
+    {
+      "prop": "typev4",
+      "title": "Группа (для группировки в Places)",
+      "type": "droplist",
+      "data": [
+        { "id": "100", "title": "$TYPE_SENSOR", "hide": "data.p1.cl.id != 'SensorD'" },
+        { "id": "110", "title": "$TYPE_SMOTION", "hide": "data.p1.cl.id != 'SensorD'" },
+        { "id": "111", "title": "$TYPE_SGERKON", "hide": "data.p1.cl.id != 'SensorD'" },
+        { "id": "120", "title": "$TYPE_SLEAKAGE", "hide": "data.p1.cl.id != 'SensorD'" },
+        { "id": "140", "title": "$TYPE_SFIRE", "hide": "data.p1.cl.id != 'SensorD'" },
+        { "id": "150", "title": "$TYPE_SDARKNESS", "hide": "data.p1.cl.id != 'SensorD'" },
+        { "id": "200", "title": "$TYPE_SENSORA", "hide": "data.p1.cl.id != 'SensorA'" },
+        { "id": "210", "title": "$TYPE_STEMP", "hide": "data.p1.cl.id != 'SensorA'" },
+        { "id": "230", "title": "$TYPE_SHUMIDITY", "hide": "data.p1.cl.id != 'SensorA'" },
+        { "id": "400", "title": "$TYPE_METER", "hide": "data.p1.cl.id != 'SensorA'" },
+        { "id": "500", "title": "$TYPE_ACTOR", "hide": "data.p1.cl.id != 'ActorD'" },
+        { "id": "501", "title": "$TYPE_ACTORA", "hide": "data.p1.cl.id != 'ActorA'" },
+        { "id": "510", "title": "$TYPE_LAMP", "hide": "data.p1.cl.id != 'ActorD'" },
+        { "id": "520", "title": "$TYPE_DIMM", "hide": "data.p1.cl.id != 'ActorA'" },
+        { "id": "530", "title": "$TYPE_RGBLAMP", "hide": "data.p1.cl.id != 'ActorA'" },
+        { "id": "534", "title": "$TYPE_RGBALAMP", "hide": "data.p1.cl.id != 'ActorA'" },
+        { "id": "535", "title": "$TYPE_RGBWWLAMP", "hide": "data.p1.cl.id != 'ActorA'" },
+        { "id": "550", "title": "$TYPE_SOCKET", "hide": "data.p1.cl.id != 'ActorD'" },
+        { "id": "610", "title": "$TYPE_RADIATOR", "hide": "data.p1.cl.id != 'ActorD'" },
+        { "id": "620", "title": "$TYPE_TP", "hide": "data.p1.cl.id != 'ActorD'" },
+        { "id": "630", "title": "$TYPE_VENT", "hide": "data.p1.cl.id != 'ActorD'" },
+        { "id": "670", "title": "$TYPE_CONDV", "hide": "data.p1.cl.id != 'ActorD'" },
+        { "id": "710", "title": "$TYPE_WATER_NC", "hide": "data.p1.cl.id != 'ActorD'" }
+      ]
+    },
+    { "prop": "mobtabsetting", "title": "Вывести свойства на вкладку 'Настройка'", "hide": "!data.p1.cl.id", "type": "cb" }
+  ],
+
+  "p2": [
     {
       "prop": "stval",
       "title": "Состояние",
@@ -44,21 +73,36 @@
       "type": "droplist",
       "data": "__devprop",
       "hide": "!data.p1.cl.id || data.p1.cl.id == 'SensorD' || data.p1.cl.id == 'ActorD'"
-    },
-    { "prop": "mobtabsetting", "title": "Элементы на вкладке 'Настройка'", "hide": "!data.p1.cl.id", "type": "cb" }
+    }
   ],
 
   "p3": [
-    { "prop": "header_commands", "title": "Команды", "type": "header" },
-    { "prop": "on", "title": "Включить", "type": "droplist", "data": "__devcmd" },
-    { "prop": "off", "title": "Выключить", "type": "droplist", "data": "__devcmd" },
-    { "prop": "toggle", "title": "Переключить", "type": "droplist", "data": "__devcmd" },
     {
-      "prop": "set",
-      "title": "Установить значение/уставку",
+      "prop": "header_commands",
+      "title": "Команды",
+      "type": "header",
+      "hide": "!data.p1.cl.id || data.p1.cl.id=='-' || data.p1.cl.id.startsWith('Sensor')"
+    },
+    {
+      "prop": "on",
+      "title": "Включить",
       "type": "droplist",
-      "data": "__devprop",
-      "hide": "!data.p1.cl.id || data.p1.cl.id == 'SensorD' || data.p1.cl.id == 'ActorD'"
+      "data": "__devcmd",
+      "hide": "!data.p1.cl.id || data.p1.cl.id=='-' || data.p1.cl.id.startsWith('Sensor')"
+    },
+    {
+      "prop": "off",
+      "title": "Выключить",
+      "type": "droplist",
+      "data": "__devcmd",
+      "hide": "!data.p1.cl.id || data.p1.cl.id=='-' || data.p1.cl.id.startsWith('Sensor')"
+    },
+    {
+      "prop": "toggle",
+      "title": "Переключить",
+      "type": "droplist",
+      "data": "__devcmd",
+      "hide": "!data.p1.cl.id || data.p1.cl.id=='-' || data.p1.cl.id.startsWith('Sensor')"
     }
   ],
 
@@ -76,11 +120,18 @@
 
   "p7": [
     {
+      "prop": "header_commands",
+      "title": "Вкладка Настройка",
+      "type": "header",
+      "hide": "!data.p1.mobtabsetting"
+    },
+    {
       "title": "$Properties",
       "type": "table",
       "prop": "mobiletypetabsettingTable",
       "genfield": "props",
       "popupenable": true,
+      "hide": "!data.p1.mobtabsetting",
 
       "columns": [
         { "prop": "mobprop", "title": "$Property", "type": "droplist", "data": "__devprop", "width": 300 },
@@ -99,5 +150,4 @@
       ]
     }
   ]
-
 }

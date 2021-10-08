@@ -1,46 +1,75 @@
 {
   "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table": "device", "hide": "data.p1.mob" },
-    { "id": "p2", "xs": 4, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob" },
+    { "id": "px", "xs": 12, "class": "main", "table": "device", "hide": "data.px.mob" },
+    { "id": "p1", "xs": 6, "class": "main", "table": "mobiledevice", "hide": "!data.px.mob" },
 
-    { "id": "p4", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob" },
+    { "id": "p4", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.px.mob" },
     {
       "id": "p5",
       "xs": 3,
       "class": "main",
       "table": "mobiledevice",
-      "hide": "!data.p1.mob || data.p2.cl.startsWith('SensorA')"
+      "hide": "!data.px.mob || data.p1.cl.startsWith('SensorA')"
     },
 
-    { "id": "p6", "xs": 2, "class": "main", "table": "mobiledevice", "hide": "!data.p1.mob" },
+    { "id": "p6", "xs": 6, "class": "main", "table": "mobiledevice", "hide": "!data.px.mob" },
     {
       "id": "p7",
-      "xs": 6,
+      "xs": 3,
       "class": "main",
       "table": "mobilesettingfromtypeTable",
-      "height": 250,
-      "hide": "!data.p1.mob || !data.p6.typesetting "
+     
+      "hide": "!data.px.mob || !data.p6.typesetting "
     },
     {
       "id": "p8",
-      "xs": 6,
+      "xs": 3,
       "class": "main",
       "table": "mobilesettingfromsceneTable",
-      "height": 250,
-      "hide": "!data.p1.mob || !data.p6.scenesetting"
+     
+      "hide": "!data.px.mob || !data.p6.scenesetting"
     }
   ],
   "spacing": 10,
-  "p1": [
+  "px": [
     { "prop": "mob", "title": "", "type": "text", "hide": "1==1" },
     { "prop": "no_header", "title": "Это устройство в мобильном не используется", "type": "header", "size": "h6" }
   ],
 
-  "p2": [
-    { "prop": "cl", "title": "Класс для мобильного", "type": "text" },
-    { "prop": "name", "title": "Название", "type": "input" },
-    { "prop": "subs", "title": "Подсистема", "type": "droplist", "data": "taglist" },
-    { "prop": "place_room", "title": "Помещение", "type": "droplist", "data": "mobilePlaceList" }
+  "p1": [
+    { "prop": "cl", "title": "Класс для мобильного", "type": "text", "hide": "1==1" },
+    { "prop": "name", "title": "Название", "type": "text" },
+    {
+      "prop": "typev4",
+      "title": "Группа (группировка в Places)",
+      "type": "droplist",
+      "data": [
+        { "id": "100", "title": "$TYPE_SENSOR", "hide": "data.p1.cl != 'SensorD'" },
+        { "id": "110", "title": "$TYPE_SMOTION", "hide": "data.p1.cl != 'SensorD'" },
+        { "id": "111", "title": "$TYPE_SGERKON", "hide": "data.p1.cl != 'SensorD'" },
+        { "id": "120", "title": "$TYPE_SLEAKAGE", "hide": "data.p1.cl != 'SensorD'" },
+        { "id": "140", "title": "$TYPE_SFIRE", "hide": "data.p1.cl != 'SensorD'" },
+        { "id": "150", "title": "$TYPE_SDARKNESS", "hide": "data.p1.cl != 'SensorD'" },
+        { "id": "200", "title": "$TYPE_SENSORA", "hide": "data.p1.cl != 'SensorA'" },
+        { "id": "210", "title": "$TYPE_STEMP", "hide": "data.p1.cl != 'SensorA'" },
+        { "id": "230", "title": "$TYPE_SHUMIDITY", "hide": "data.p1.cl != 'SensorA'" },
+        { "id": "400", "title": "$TYPE_METER", "hide": "data.p1.cl != 'SensorA'" },
+        { "id": "500", "title": "$TYPE_ACTOR", "hide": "data.p1.cl != 'ActorD'" },
+        { "id": "501", "title": "$TYPE_ACTORA", "hide": "data.p1.cl != 'ActorA'" },
+        { "id": "510", "title": "$TYPE_LAMP", "hide": "data.p1.cl != 'ActorD'" },
+        { "id": "520", "title": "$TYPE_DIMM", "hide": "data.p1.cl != 'ActorA'" },
+        { "id": "530", "title": "$TYPE_RGBLAMP", "hide": "data.p1.cl != 'ActorA'" },
+        { "id": "534", "title": "$TYPE_RGBALAMP", "hide": "data.p1.cl != 'ActorA'" },
+        { "id": "535", "title": "$TYPE_RGBWWLAMP", "hide": "data.p1.cl != 'ActorA'" },
+        { "id": "550", "title": "$TYPE_SOCKET", "hide": "data.p1.cl != 'ActorD'" },
+        { "id": "610", "title": "$TYPE_RADIATOR", "hide": "data.p1.cl != 'ActorD'" },
+        { "id": "620", "title": "$TYPE_TP", "hide": "data.p1.cl != 'ActorD'" },
+        { "id": "630", "title": "$TYPE_VENT", "hide": "data.p1.cl != 'ActorD'" },
+        { "id": "670", "title": "$TYPE_CONDV", "hide": "data.p1.cl != 'ActorD'" },
+        { "id": "710", "title": "$TYPE_WATER_NC", "hide": "data.p1.cl != 'ActorD'" }
+      ]
+    }
+   
   ],
 
   "p4": [
@@ -56,12 +85,15 @@
   ],
 
   "p6": [
-    { "prop": "header_setting", "title": "Вкладка Настройка", "type": "header" },
-    { "prop": "typesetting", "title": "Показать свойства типа", "type": "cb" },
-    { "prop": "scenesetting", "title": "Показать параметры сценариев", "type": "cb" }
+
+    { "prop": "subs", "title": "Подсистема", "type": "droplist", "data": "taglist" },
+    { "prop": "place_room", "title": "Помещение", "type": "droplist", "data": "mobilePlaceList" },
+    { "prop": "typesetting", "title": "На вкладке настройка показать свойства типа", "type": "cb" },
+    { "prop": "scenesetting", "title": "На вкладке настройка показать параметры сценариев", "type": "cb" }
   ],
 
   "p7": [
+    { "prop": "type_prop_header", "title": "Cвойства добавляются в типе", "type": "header" },
     {
       "title": "$DeviceProperty",
       "type": "table",
@@ -75,6 +107,7 @@
   ],
 
   "p8": [
+    { "prop": "scene_prop_header", "title": "Свойства добавляются в сценарии", "type": "header"},
     {
       "title": "$DeviceProperty",
       "type": "table",

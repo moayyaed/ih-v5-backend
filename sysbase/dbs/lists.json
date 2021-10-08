@@ -302,10 +302,39 @@
 
   "classV4List": {
     "data": [
-      { "id": "SensorD", "title": "Дискретный датчик" },
-      { "id": "SensorA", "title": "Аналоговый датчик" },
-      { "id": "ActorD", "title": "Дискретный актуатор" },
-      { "id": "ActorA", "title": "Аналоговый актуатор" }
+      { "id": "SensorD", "title": "Дискретный датчик", "deftype":"100" },
+      { "id": "SensorA", "title": "Аналоговый датчик", "deftype":"200" },
+      { "id": "ActorD", "title": "Дискретный актуатор", "deftype":"500"  },
+      { "id": "ActorA", "title": "Аналоговый актуатор", "deftype":"501"  }
+    ]
+  },
+
+
+  "typeV4List": {
+    "data": [
+      { "id": 100, "title": "$TYPE_SENSOR", "cl":"SensorD" },
+      { "id": 110, "title": "$TYPE_SMOTION", "cl":"SensorD" },
+      { "id": 111, "title": "$TYPE_SGERKON", "cl":"SensorD" },
+      { "id": 120, "title": "$TYPE_SLEAKAGE", "cl":"SensorD" },
+      { "id": 140, "title": "$TYPE_SFIRE", "cl":"SensorD" },
+      { "id": 150, "title": "$TYPE_SDARKNESS", "cl":"SensorD" },
+      { "id": 200, "title": "$TYPE_SENSORA", "cl":"SensorA" },
+      { "id": 210, "title": "$TYPE_STEMP", "cl":"SensorA" },
+      { "id": 230, "title": "$TYPE_SHUMIDITY", "cl":"SensorA" },
+      { "id": 400, "title": "$TYPE_METER", "cl":"SensorA" },
+      { "id": 500, "title": "$TYPE_ACTOR", "cl":"ActorD" },
+      { "id": 501, "title": "$TYPE_ACTORA", "cl":"ActorA" },
+      { "id": 510, "title": "$TYPE_LAMP", "cl":"ActorD" },
+      { "id": 520, "title": "$TYPE_DIMM", "cl":"ActorA" },
+      { "id": 530, "title": "$TYPE_RGBLAMP", "cl":"ActorA" },
+      { "id": 534, "title": "$TYPE_RGBALAMP", "cl":"ActorA" },
+      { "id": 535, "title": "$TYPE_RGBWWLAMP", "cl":"ActorA" },
+      { "id": 550, "title": "$TYPE_SOCKET", "cl":"ActorD" },
+      { "id": 610, "title": "$TYPE_RADIATOR", "cl":"ActorD" },
+      { "id": 620, "title": "$TYPE_TP", "cl":"ActorD" },
+      { "id": 630, "title": "$TYPE_VENT", "cl":"ActorD" },
+      { "id": 670, "title": "$TYPE_CONDV", "cl":"ActorD" },
+      { "id": 710, "title": "$TYPE_WATER_NC", "cl":"ActorD" }
     ]
   },
 

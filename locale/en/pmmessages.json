@@ -961,6 +961,7 @@
   { "id": "AlertLogRecords", "note": "Current Records" },
   { "id": "AlertTriggers", "note": "Triggers" },
   { "id": "Handler", "note": "Handler" },
+  { "id": "Handlers", "note": "Handlers" },
   { "id": "Updates", "note": "Updates" },
   { "id": "Licenses", "note": "Licenses" },
   { "id": "RemoteAccess", "note": "Remote Access" },

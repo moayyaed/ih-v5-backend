@@ -970,6 +970,7 @@
   { "id": "AlertLogRecords", "note": "Текущие записи" },
   { "id": "AlertTriggers", "note": "Триггеры" },
   { "id": "Handler", "note": "Обработчик" },
+  { "id": "Handlers", "note": "Обработчики" },
   { "id": "Updates", "note": "Обновление" },
   { "id": "Licenses", "note": "Лицензии" },
   { "id": "RemoteAccess", "note": "Удаленный доступ" },
