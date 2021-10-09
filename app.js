@@ -10,7 +10,7 @@ const EventEmitter = require('events');
 const init = require('./lib/init');
 const start = require('./lib/start');
 const dm = require('./lib/datamanager');
-const am = require('./lib/accessmanager');
+const am = require('./lib/access/accessmanager');
 
 (async () => {
   const holder = new EventEmitter();
