@@ -5,6 +5,6 @@
   "spacing": 10,
  
 
-  "p1": [{ "prop": "header", "title": "Выберите журнал в меню слева", "type": "header" }]
+  "p1": [{ "prop": "header", "title": "$SelectJournalFromMenu", "type": "header" }]
  
 }

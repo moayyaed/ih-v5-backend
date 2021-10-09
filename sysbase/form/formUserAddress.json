@@ -1,16 +1,11 @@
 {
   "grid": [
-   
     { "id": "p1", "xs": 12, "class": "main", "table": "user", "hide": "1==1" },
     { "id": "p5", "xs": 12, "class": "main", "table": "useraddress", "height": "fill" }
   ],
   "spacing": 8,
-  
-  "p1": [
-    { "prop": "name", "title": "$Name", "type": "input" }
-   
-  ],
-  
+
+  "p1": [{ "prop": "name", "title": "$Name", "type": "input" }],
 
   "p5": [
     {
@@ -20,12 +15,17 @@
       "popupenable": true,
 
       "columns": [
-        { "prop": "type", "title": "$Type", "type": "droplist", "data":[{"id":"email", "title":"email"}], "width": 150 },
-        { "prop": "addr", "title": "Адрес/номер", "type": "input", "width": 150, "hide": "!data.type.id" },
-        { "prop": "sign", "title": "Подпись", "type": "input", "width": 150 },
-        { "prop": "active", "title": "Отправлять сообщения", "type": "cb"},
-        { "prop": "rowbutton", "title": "Отправить тестовое сообщение", "type": "button", "width": 250 }
-      
+        {
+          "prop": "type",
+          "title": "$Type",
+          "type": "droplist",
+          "data": [{ "id": "email", "title": "email" }],
+          "width": 150
+        },
+        { "prop": "addr", "title": "$Info_Addr", "type": "input", "width": 150, "hide": "!data.type.id" },
+        { "prop": "sign", "title": "$Info_Sign", "type": "input", "width": 150 },
+        { "prop": "active", "title": "$Info_Allowed", "type": "cb" },
+        { "prop": "rowbutton", "title": "$Button_SendTestMessage", "type": "button", "width": 250 }
       ]
     }
   ]

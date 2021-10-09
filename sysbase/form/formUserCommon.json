@@ -1,7 +1,6 @@
 {
   "grid": [
     { "id": "p1", "xs": 4, "class": "main", "table": "user" },
-
     { "id": "p5", "xs": 4, "class": "main", "table": "agroup_byuser" },
     { "id": "p9", "xs": 4, "class": "main", "table": "user" }
   ],
@@ -27,7 +26,7 @@
       "columns": [
         {
           "prop": "groupId",
-          "title": "Входит в группу",
+          "title": "$User_IncludedInGroups",
           "type": "droplist",
           "data": "agroupList",
           "width": 300

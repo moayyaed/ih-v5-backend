@@ -16,14 +16,14 @@
 
  
   "p2": [
-    { "prop": "scriptOnChange", "title": "Запуск", "type": "text", "hide":"1==1" },
-    { "prop": "when_str", "title": "Запуск", "type": "text" }
+    { "prop": "scriptOnChange", "title": "", "type": "text", "hide":"1==1" },
+    { "prop": "when_str", "title": "$WhenHandlerRunStr", "type": "text" }
 
    
   ],
 
   "p9": [
     { "prop": "errstr", "title": "", "type": "text", "hide": "!data.p9.errstr" },
-    { "prop": "handler", "title": "Функция-обработчик", "type": "script", "disabled": false }
+    { "prop": "handler", "title": "$HandlerFunction", "type": "script", "disabled": false }
   ]
 }

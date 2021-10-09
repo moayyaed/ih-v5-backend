@@ -1,7 +1,6 @@
 {
   "grid": [{ "id": "p3", "xs": 12, "class": "main", "table": "typepropsTable", "height": "fill" }],
   "spacing": 10,
-  "breadcrumbs": { "tree": "types" },
 
   "p3": [
     {
@@ -30,7 +29,7 @@
 
         {
           "prop": "vtype",
-          "title": "Тип переменной",
+          "title": "$Devprop_Vtype",
           "type": "droplist",
           "data": [
             { "id": "B", "title": "Bool" },
@@ -43,14 +42,14 @@
 
         {
           "prop": "fuse",
-          "title": "Обработчик",
+          "title": "$Handler",
           "type": "droplist",
           "data": "fuseList",
           "width": 150
         },
         {
           "prop": "format",
-          "title": "Вывод в виде строки",
+          "title": "$Devprop_ValueAsString",
           "type": "droplist",
           "data": "formatList",
           "width": 200,
@@ -58,7 +57,7 @@
         },
         {
           "prop": "ale",
-          "title": "Тревоги",
+          "title": "$Alerts",
           "type": "cb",
           "width": 100,
           "hide": "data.op.id == 'cmd'"

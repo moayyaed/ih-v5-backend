@@ -457,6 +457,14 @@
   { "id": "Stdelta", "note": "Error when changing state" },
   { "id": "Dev_Actconfirm", "note": "Confirmation for control operations" },
 
+  { "id": "Devprop_Property", "note": "Property" },
+  { "id": "Devprop_Name", "note": "Name" },
+  { "id": "Devprop_Id", "note": "Property ID" },
+  { "id": "Devprop_Type", "note": "Property Type" },
+  { "id": "Devprop_Vtype", "note": "Variable Type" },
+  { "id": "Devprop_ValueAsString", "note": "Value as string" },
+  { "id": "Devprop_Txt", "note": "Property description" },
+
   { "id": "CONFIRM_NO", "note": "Not required" },
   { "id": "CONFIRM_YES", "note": "Confirmation required" },
   { "id": "CONFIRM_PWD", "note": "Password is required" },
@@ -562,6 +570,8 @@
   { "id": "User_Role", "note": "Role" },
   { "id": "User_Expert", "note": "Expert" },
   { "id": "User_Group", "note": "Group" },
+  { "id": "User_IncludedInGroups", "note": "Included in the groups" },
+
   { "id": "User_Admin", "note": "Developer Mode" },
   { "id": "User_Noencrypt", "note": "Encryption disable" },
   { "id": "Roles", "note": "Roles" },
@@ -975,6 +985,11 @@
   { "id": "CustomTableName", "note": "Table name (will be created if does not exist)" },
   { "id": "DeviceContext", "note": "Device context" },
   { "id": "DeviceContextOrAny", "note": "Device context or any device" },
+  { "id": "WhenHandlerRunStr", "note": "Run" },
+  { "id": "HandlerFunction", "note": "Handler function" },
+  { "id": "Error_SeeLog", "note": "Error! Details in the log" },
+  { "id": "SelectJournalFromMenu", "note": "Select a journal from menu on the left" },
+  { "id": "Button_SendTestMessage", "note": "Send test message" },
 
   { "id": "StdMessage", "note": "Common message" },
   { "id": "WarnMessage", "note": "Warning" },
@@ -982,6 +997,8 @@
   { "id": "AllMessages", "note": "All" },
   { "id": "WarnExtraMessages", "note": "Warning,Emergency" },
   { "id": "ExtraMessages", "note": "Emergency" },
+  { "id": "AlertRules", "note": "Rules" },
+  { "id": "AlertClosing", "note": "Closing" },
 
   { "id": "DownloadError", "note": "Download Error!" },
 

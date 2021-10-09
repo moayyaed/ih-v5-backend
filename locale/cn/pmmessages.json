@@ -418,6 +418,14 @@
   { "id": "Stdelta", "note": "状态变化时的错误" },
   { "id": "Dev_Actconfirm", "note": "确认操作" },
 
+  { "id": "Devprop_Property", "note": "Property" },
+  { "id": "Devprop_Name", "note": "Name" },
+  { "id": "Devprop_Id", "note": "Property ID" },
+  { "id": "Devprop_Type", "note": "Property Type" },
+  { "id": "Devprop_Vtype", "note": "Variable Type" },
+  { "id": "Devprop_ValueAsString", "note": "Value as string" },
+  { "id": "Devprop_Txt", "note": "Property description" },
+
   { "id": "CONFIRM_NO", "note": "不是必须的" },
   { "id": "CONFIRM_YES", "note": "需要确认" },
   { "id": "CONFIRM_PWD", "note": "需要密码" },
@@ -519,6 +527,8 @@
   { "id": "User_Role", "note": "角色" },
   { "id": "User_Expert", "note": "Expert" },
   { "id": "User_Group", "note": "组" },
+  { "id": "User_IncludedInGroups", "note": "Included in the groups" },
+
   { "id": "User_Admin", "note": "管理员模式" },
   { "id": "User_Noencrypt", "note": "禁用加密" },
   { "id": "Roles", "note": "角色" },
@@ -919,7 +929,11 @@
   { "id": "CustomTableName", "note": "Table name (will be created if does not exist)" },
   { "id": "DeviceContext", "note": "Device context" },
   { "id": "DeviceContextOrAny", "note": "Device context or any device" },
-
+  { "id": "WhenHandlerRunStr", "note": "Run" },
+  { "id": "HandlerFunction", "note": "Handler function" },
+  { "id": "Error_SeeLog", "note": "Error! Details in the log" },
+  { "id": "SelectJournalFromMenu", "note": "Select a journal from the menu on the left" },
+  { "id": "Button_SendTestMessage", "note": "Send test message" },
 
   { "id": "StdMessage", "note": "Common message" },
   { "id": "WarnMessage", "note": "Warning" },
@@ -927,6 +941,8 @@
   { "id": "AllMessages", "note": "All" },
   { "id": "WarnExtraMessages", "note": "Warning,Emergency" },
   { "id": "ExtraMessages", "note": "Emergency" },
+  { "id": "AlertRules", "note": "Rules" },
+  { "id": "AlertClosing", "note": "Closing" },
 
   { "id": "DownloadError", "note": "Download Error!" },
 

@@ -19,8 +19,8 @@
       "title": "",
       "type": "subtree",
       "data": "typealerts",
-      "leftTitle": "Свойства",
-      "rightTitle": "Правила",
+      "leftTitle": "$Properties",
+      "rightTitle": "$AlertRules",
       "toolbar": false
     }
   ]

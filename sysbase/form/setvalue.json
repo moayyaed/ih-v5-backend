@@ -3,6 +3,6 @@
   "spacing": 10,
 
   "p1": [
-    { "prop": "param", "title": "Value", "type": "input", "default":0 }
+    { "prop": "param", "title": "$Value", "type": "input", "default":0 }
   ]
 }

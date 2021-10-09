@@ -460,6 +460,14 @@
   { "id": "Stdelta", "note": "Погрешность при изменении состояния" },
   { "id": "Dev_Actconfirm", "note": "Подтверждение для операций управления" },
 
+  { "id": "Devprop_Property", "note": "Свойство" },
+  { "id": "Devprop_Name", "note": "Название" },
+  { "id": "Devprop_Id", "note": "ID свойства" },
+  { "id": "Devprop_Type", "note": "Тип свойства" },
+  { "id": "Devprop_Vtype", "note": "Тип переменной" },
+  { "id": "Devprop_ValueAsString", "note": "Значение в виде строки" },
+  { "id": "Devprop_Txt", "note": "Описание свойства" },
+
   { "id": "CONFIRM_NO", "note": "Не требуется" },
   { "id": "CONFIRM_YES", "note": "Требуется подтверждение" },
   { "id": "CONFIRM_PWD", "note": "Требуется ввод пароля" },
@@ -564,8 +572,12 @@
   { "id": "User_Role", "note": "Роль" },
   { "id": "User_Expert", "note": "Эксперт" },
   { "id": "User_Group", "note": "Группа" },
+  { "id": "User_IncludedInGroups", "note": "Входит в группу" },
+
   { "id": "User_Admin", "note": "Режим разработчика" },
   { "id": "User_Noencrypt", "note": "Отключить шифрование" },
+
+
   { "id": "Roles", "note": "Роли" },
   { "id": "Developers", "note": "Разработчики" },
   { "id": "DeveloperMode", "note": "Режим разработки" },
@@ -982,6 +994,11 @@
   { "id": "CustomTableName", "note": "Имя таблицы (будет создана при отсутствии)" },
   { "id": "DeviceContext", "note": "Устройство - контекст" },
   { "id": "DeviceContextOrAny", "note": "Устройство - контекст или любое устройство" },
+  { "id": "WhenHandlerRunStr", "note": "Запуск" },
+  { "id": "HandlerFunction", "note": "Функция-обработчик" },
+  { "id": "Error_SeeLog", "note": "Ошибка! Подробности в логе системы" },
+  { "id": "SelectJournalFromMenu", "note": "Выберите журнал в меню слева" },
+  { "id": "Button_SendTestMessage", "note": "Отправить тестовое сообщение" },
 
 
   { "id": "StdMessage", "note": "Стандартное сообщение" },
@@ -990,6 +1007,8 @@
   { "id": "AllMessages", "note": "Все" },
   { "id": "WarnExtraMessages", "note": "Предупреждение,Авария" },
   { "id": "ExtraMessages", "note": "Авария" },
+  { "id": "AlertRules", "note": "Правила" },
+  { "id": "AlertClosing", "note": "Закрытие" },
 
   { "id": "DownloadError", "note": "Ошибка при закачке!" },
 

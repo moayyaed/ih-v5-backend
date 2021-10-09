@@ -15,21 +15,21 @@
   "spacing": 10,
 
   "p1": [
-    { "prop": "id", "title": "Свойство", "type": "text", "hide": "true" },
-    { "prop": "op", "title": "Тип свойства", "type": "text", "hide": "true" },
-    { "prop": "fuse", "title": "Обработчик", "type": "text", "hide": "true" },
-    { "prop": "fuse_name", "title": "Обработчик", "type": "text" }
+    { "prop": "id", "title": "$Property", "type": "text", "hide": "true" },
+    { "prop": "op", "title": "", "type": "text", "hide": "true" },
+    { "prop": "fuse", "title": "", "type": "text", "hide": "true" },
+    { "prop": "fuse_name", "title": "$Handler", "type": "text" }
   ],
 
   "p2": [
-    { "prop": "when_str", "title": "Запуск", "type": "text" },
+    { "prop": "when_str", "title": "$WhenHandlerRunStr", "type": "text" },
 
-    { "prop": "fuse_name", "title": "Обработчик", "type": "text" }
+    { "prop": "fuse_name", "title": "$Handler", "type": "text" }
   ],
 
   "p9": [
     { "prop": "blkstr", "title": "", "type": "text", "hide": "!data.p9.blkstr" },
-    { "prop": "errstr", "title": "Ошибка! Подробности в логе системы", "type": "text", "hide": "!data.p9.errstr" },
-    { "prop": "handler", "title": "Функция-обработчик", "type": "script", "disabled": false, "hide": "!data.p1.fuse" }
+    { "prop": "errstr", "title": "$Error_SeeLog", "type": "text", "hide": "!data.p9.errstr" },
+    { "prop": "handler", "title": "$HandlerFunction", "type": "script", "disabled": false, "hide": "!data.p1.fuse" }
   ]
 }
