@@ -10,9 +10,7 @@
     }
   ],
   "spacing": 10,
-  "breadcrumbs": {
-    "tree": "devdevices"
-  },
+  
   "p1": [
     {
       "prop": "propsTree",

@@ -1,12 +1,6 @@
 {
-  "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table": "dialog", "height":"fill", "padding":4 }
-   
-  ],
+  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "dialog", "height": "fill", "padding": 4 }],
   "spacing": 10,
-  "breadcrumbs": { "tree": "dialog" },
 
-  "p1": [
-    { "prop": "dialog", "title": "Dialog", "type": "dialog" }
-  ]
+  "p1": [{ "prop": "dialog", "title": "Dialog", "type": "dialog" }]
 }

@@ -3,11 +3,11 @@
   "spacing": 10,
 
   "p1": [
-    { "prop": "device", "title": "Устройство - контекст", "type": "droplist", "data":"deviceList" },
-    { "prop": "multichart_id", "title": "График", "type": "droplist", "data":"chartList" },
-    { "prop": "timelinechart_id", "title": "Таймлайн", "type": "droplist", "data":"timelinechartList" },
-    { "prop": "journal_id", "title": "Журнал", "type": "droplist", "data":"journalList" },
-    { "prop": "alertjournal_id", "title": "Журнал тревог", "type": "droplist", "data":"alertjournalList" }
+    { "prop": "device", "title": "$DeviceContext", "type": "droplist", "data":"deviceList" },
+    { "prop": "multichart_id", "title": "$Chart", "type": "droplist", "data":"chartList" },
+    { "prop": "timelinechart_id", "title": "$Timeline", "type": "droplist", "data":"timelinechartList" },
+    { "prop": "journal_id", "title": "$Journal", "type": "droplist", "data":"journalList" },
+    { "prop": "alertjournal_id", "title": "$AlertJournal", "type": "droplist", "data":"alertjournalList" }
 
   ]
 }

@@ -2,7 +2,6 @@
   "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "devicedb", "height": 200 }],
 
   "spacing": 10,
-  "breadcrumbs": { "tree": "globals" },
 
   "p1": [
     {

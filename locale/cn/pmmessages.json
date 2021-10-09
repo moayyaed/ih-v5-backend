@@ -421,41 +421,7 @@
   { "id": "CONFIRM_NO", "note": "不是必须的" },
   { "id": "CONFIRM_YES", "note": "需要确认" },
   { "id": "CONFIRM_PWD", "note": "需要密码" },
-
-  { "id": "Devhard_Process", "note": "进行中" },
-  { "id": "Devhard_Inv", "note": "反转输入值" },
-  { "id": "Devhard_Inv_C", "note": "反转输入" },
-  { "id": "Devhard_Out", "note": "反转输出值 (仅对DO有效)" },
-  { "id": "Devhard_Out_C", "note": "反转输出" },
-  { "id": "Devhard_Calc", "note": "输入值换算" },
-  { "id": "Devhard_Calc_C", "note": "输入换算" },
-  { "id": "Devhard_Calc_Out", "note": "输出值换算" },
-  { "id": "Devhard_Calc_Out_C", "note": "输出换算" },
-  { "id": "Devhard_NoFeedback", "note": "No wait for command confirmation" },
-
-  { "id": "Devprop_Property", "note": "属性" },
-  { "id": "Devprop_Name", "note": "名字" },
-  { "id": "Devprop_Calc", "note": "公式" },
-  { "id": "Devprop_Id", "note": "属性ID" },
-  { "id": "Devprop_Type", "note": "属性类型" },
-  { "id": "Devprop_Hide", "note": "在主界面隐藏" },
-  { "id": "Devprop_Txt", "note": "属性描述" },
-
-  { "id": "Devstate_State", "note": "状态值" },
-  { "id": "Devstate_Name", "note": "状态名称" },
-  { "id": "Devstate_Upbound", "note": "区间上界" },
-  { "id": "Devstate_Upbound_C", "note": "边界" },
-  { "id": "Devstate_Log", "note": "日志" },
-  { "id": "Devstate_Log_C", "note": "日志" },
-  { "id": "Devstate_Loglevel", "note": "日志类型" },
-  { "id": "Devstate_Ack", "note": "需要确认" },
-  { "id": "Devstate_Ack_C", "note": "确认" },
-  { "id": "Devstate_Walert", "note": "弹窗确认" },
-  { "id": "Devstate_Walert_C", "note": "警告" },
-  { "id": "Devstate_Actname", "note": "命令名称" },
-  { "id": "Devstate_Wtxt", "note": "文本" },
-  { "id": "Devstate_AckClose", "note": "当确认后，从操作日志里删除" },
-
+ 
   { "id": "INFO", "note": "信息" },
   { "id": "Info_Addr", "note": "信息地址" },
   { "id": "Info_Sign", "note": "信息签名" },
@@ -589,11 +555,6 @@
   { "id": "Error", "note": "错误" },
   { "id": "Order", "note": "命令值" },
   { "id": "Hide", "note": "隐藏" },
-
-  { "id": "Popup_Dialog", "note": "确认窗口" },
-  { "id": "Popup_Walert", "note": "弹出信息(告警)" },
-  { "id": "Popup_Devsetting", "note": "设备配置" },
-  { "id": "Popup_Jmenu", "note": "日志菜单" },
 
   { "id": "UserGroup_Owner", "note": "拥有者" },
   { "id": "UserGroup_Other", "note": "其他" },
@@ -786,6 +747,7 @@
   { "id": "Data", "note": "Data" },
   { "id": "Dev_Timeout", "note": "If no data from plugin within (sec) set an error" },
   { "id": "DeviceProperty", "note": "Device property" },
+  { "id": "StaticProperty", "note": "Static property" },
   { "id": "Dev_HideInMobile", "note": "Hide in mobile interface" },
   { "id": "UserBasedFilter", "note": "User Account Based Filter" },
   { "id": "Acshort", "note": "Table filtering" },
@@ -880,11 +842,15 @@
   { "id": "LatestDBrecords", "note": "Latest DB records" },
   { "id": "MobileSetting", "note": "Customization for mobile app" },
   { "id": "UseInMobile", "note": "Use in mobile app" },
+  { "id": "UseInMobile_C", "note": "Mobile App" },
 
-  { "id": "JournalTitle_mainlog", "note": "Main Logs" },
+  { "id": "Journal", "note": "Journal" },
+  { "id": "Journal", "note": "Alert Journal" },
+  { "id": "JournalTitle_mainlog", "note": "Main Journal" },
   { "id": "JournalTitle_alertlog", "note": "Alerts" },
-  { "id": "JournalTitle_pluginlog", "note": "Plugin Logs" },
-  { "id": "JournalTitle_authlog", "note": "Auth Logs" },
+  { "id": "JournalTitle_pluginlog", "note": "Plugin Journal" },
+  { "id": "JournalTitle_authlog", "note": "Auth Journal" },
+ 
   { "id": "AlertLogRecords", "note": "Current Records" },
   { "id": "AlertTriggers", "note": "Triggers" },
   { "id": "Handler", "note": "Handler" },
@@ -916,7 +882,10 @@
   { "id": "KeyP2P", "note": "P2P Key" },
   { "id": "StatusP2P", "note": "Communication status" },
   { "id": "ServiceP2P", "note": "Remote access: https://p2p.ih-systems.com" },
-  { "id": "LimitedMode", "note": "The number of linked channels exceeds the available ones! The executive system is switched to the mode of limited functionality!" },
+  {
+    "id": "LimitedMode",
+    "note": "The number of linked channels exceeds the available ones! The executive system is switched to the mode of limited functionality!"
+  },
   { "id": "LicenseKey", "note": "License Key" },
   { "id": "Product", "note": "Product" },
   { "id": "LicenseStatus", "note": "Status" },
@@ -933,8 +902,14 @@
   { "id": "AccessToAllDevctl", "note": "Allow control of all devices" },
   { "id": "AccessToPM", "note": "Access to PM (Project Manager)" },
 
+  { "id": "Sender", "note": "Sender" },
+  { "id": "Txt", "note": "Message" },
   { "id": "tsDateTime", "note": "Date, time" },
   { "id": "ctsDateTime", "note": "Changed" },
+  { "id": "LastStart", "note": "Last start time" },
+  { "id": "LastStop", "note": "Last stop time" },
+  { "id": "Realdevs", "note": "Devices" },
+
   { "id": "ValueStr", "note": "String Value" },
   { "id": "SetValue", "note": "Set Value" },
   { "id": "PropertySource", "note": "Property source" },
@@ -942,13 +917,8 @@
   { "id": "HandlerNotUsed", "note": "The handler is not used" },
   { "id": "UseHandler", "note": "Use handler to generate data" },
   { "id": "CustomTableName", "note": "Table name (will be created if does not exist)" },
-
-
-
-
-
-
-
+  { "id": "DeviceContext", "note": "Device context" },
+  { "id": "DeviceContextOrAny", "note": "Device context or any device" },
 
 
   { "id": "StdMessage", "note": "Common message" },
@@ -961,12 +931,17 @@
   { "id": "DownloadError", "note": "Download Error!" },
 
   { "id": "File", "note": "File" },
+  { "id": "Langs", "note": "Languages" },
   { "id": "HTTPMethod", "note": "HTTPMethod" },
   { "id": "Route", "note": "Route" },
   { "id": "NewRoute", "note": "NewRoute" },
   { "id": "ExpertMode", "note": "EXPERT mode" },
   { "id": "InsuffRights", "note": "Insufficient access rights. Access is denied!" },
-  { "id": "ChannelRead", "note":  "Reading channel"},
-  { "id": "ChannelWrite", "note":  "Writing channel"},
-  { "id": "Devpropname", "note":  "Device property for link"}
+  { "id": "ChannelRead", "note": "Reading channel" },
+  { "id": "ChannelWrite", "note": "Writing channel" },
+  { "id": "Devpropname", "note": "Device property for link" },
+
+  { "id": "Impref", "note": "Source" },
+  { "id": "Expref", "note": "Export prefix" },
+  { "id": "Exid", "note": "Export ID" }
 ]

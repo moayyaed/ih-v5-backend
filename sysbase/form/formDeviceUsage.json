@@ -6,7 +6,7 @@
   "spacing": 10,
 
   "p1": [
-    { "prop": "vis_header", "title": "Визуализация", "type": "header", "size": "h6" },
+    { "prop": "vis_header", "title": "$VISUALIZATION", "type": "header"},
     {
       "title": "$DeviceProperty",
       "type": "table",
@@ -15,18 +15,18 @@
       "columns": [
         {
           "prop": "container_name",
-          "title": "Размещение",
+          "title": "",
           "type": "link",
           "width": 250,
           "command": "forward",
           "filter": true
         },
-        { "prop": "content_str", "title": "Привязки", "type": "text", "width": 350, "filter": true }
+        { "prop": "content_str", "title": "$Links", "type": "text", "width": 350, "filter": true }
       ]
     }
   ],
   "p2": [
-    { "prop": "scene_header", "title": "Сценарии", "type": "header", "size": "h6" },
+    { "prop": "scene_header", "title": "$Scenes", "type": "header"},
     {
       "title": "$DeviceProperty",
       "type": "table",
@@ -34,11 +34,11 @@
 
       "columns": [
         { "prop": "scene_link", "title": "", "type": "link", "width": 300, "command": "forward", "filter": true },
-        { "prop": "realdevs", "title": "Устройства сценария", "type": "text", "width": 150 },
-        { "prop": "scene_state", "title": "Состояние", "type": "text", "width": 150 },
-        { "prop": "laststartStr", "title": "Время запуска", "type": "text", "width": 150 },
-        { "prop": "laststopStr", "title": "Время останова", "type": "text", "width": 150 },
-        { "prop": "error", "title": "Ошибка", "type": "text", "width": 250 }
+        { "prop": "realdevs", "title": "$Realdevs", "type": "text", "width": 150 },
+        { "prop": "scene_state", "title": "$State", "type": "text", "width": 150 },
+        { "prop": "laststartStr", "title": "$LastStart", "type": "text", "width": 150 },
+        { "prop": "laststopStr", "title": "$LastStop", "type": "text", "width": 150 },
+        { "prop": "error", "title": "$Error", "type": "text", "width": 250 }
       ]
     }
   ]

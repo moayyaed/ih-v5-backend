@@ -4,7 +4,6 @@
     { "id": "p3", "xs": 12, "class": "main", "table": "devicelogTable", "height": "fill" }
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "devdevices" },
 
   "p3": [
     {
@@ -14,12 +13,12 @@
      
 
       "columns": [
-        { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 150, "filter":true },
-        { "prop": "did_prop", "title": "Устройство", "type": "link", "width": 450, "command": "forward", "filter":true  },
-        { "prop": "valstr", "title": "Значение", "type": "text" ,  "width": 100, "filter":true},
-        { "prop": "cmd", "title": "Команда", "type": "text" ,  "width": 100, "filter":true},
-        { "prop": "sender", "title": "Отправитель", "type": "text" ,  "width": 150, "filter":true},
-        { "prop": "txt", "title": "Сообщение", "type": "text" ,  "width": 250, "filter":true}
+        { "prop": "realtime_ts", "title": "$tsDateTime", "type": "text", "width": 150, "filter":true },
+        { "prop": "did_prop", "title": "$Device", "type": "link", "width": 450, "command": "forward", "filter":true  },
+        { "prop": "valstr", "title": "$Value", "type": "text" ,  "width": 100, "filter":true},
+        { "prop": "cmd", "title": "$Command", "type": "text" ,  "width": 100, "filter":true},
+        { "prop": "sender", "title": "$Sender", "type": "text" ,  "width": 150, "filter":true},
+        { "prop": "txt", "title": "$Txt", "type": "text" ,  "width": 250, "filter":true}
       ]
     }
   ]

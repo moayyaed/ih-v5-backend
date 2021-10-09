@@ -4,12 +4,11 @@
     { "id": "p2", "xs": 4, "class": "main", "table": "layout", "hide": "data.p1.__impref" }
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "layout" },
 
   "p1": [
-    { "prop": "__impref", "title": "Источник", "type": "text", "hide": "!data.p1.__impref" },
-    { "prop": "__expref", "title": "Префикс для выгрузки", "type": "input", "hide": "data.p1.__impref" }
+    { "prop": "__impref", "title": "$Impref", "type": "text", "hide": "!data.p1.__impref" },
+    { "prop": "__expref", "title": "$Expref", "type": "input", "hide": "data.p1.__impref" }
   ],
 
-  "p2": [{ "prop": "__exid", "title": "ID для выгрузки", "type": "input", "hide": "data.p1.__impref" }]
+  "p2": [{ "prop": "__exid", "title": "$Exid", "type": "input", "hide": "data.p1.__impref" }]
 }

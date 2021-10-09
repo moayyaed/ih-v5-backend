@@ -1,9 +1,6 @@
 {
-  "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table":"dialogsTreeTable", "height":"fill"}
-  ],
+  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "dialogsTreeTable", "height": "fill" }],
   "spacing": 10,
-  "breadcrumbs": { "tree": "types" },
 
   "p1": [
     {
@@ -12,10 +9,8 @@
       "prop": "dialogsTreeTable",
 
       "columns": [
-
-        { "prop": "title", "title": "$Dialog", "type": "link", "command":"forward",  "width": 450, "filter":true  },
-        { "prop": "path", "title": "$Folder", "type": "text",  "width": 200, "filter":true }
-
+        { "prop": "title", "title": "$Dialog", "type": "link", "command": "forward", "width": 450, "filter": true },
+        { "prop": "path", "title": "$Folder", "type": "text", "width": 200, "filter": true }
       ]
     }
   ]

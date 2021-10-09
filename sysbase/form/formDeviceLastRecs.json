@@ -3,11 +3,10 @@
     { "id": "p1", "xs": 12, "class": "main", "table":"dblastrecsTable", "height":"fill"}
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "dbagents" },
 
   "p1": [
     {
-      "title": "Последние записи",
+      "title": "",
       "type": "table",
       "prop": "dblastrecsTable",
 

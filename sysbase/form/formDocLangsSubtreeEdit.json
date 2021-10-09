@@ -15,8 +15,8 @@
       "title": "",
       "type": "submenu",
       "data": "doclangsedit",
-      "leftTitle": "Языки",
-      "rightTitle": "Страница",
+      "leftTitle": "$Langs",
+      "rightTitle": "$Page",
       "toolbar": false,
       "width": 125
     }

@@ -1,7 +1,5 @@
 {
-  "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table":"devicesTreeTable", "height":"fill"}
-  ],
+  "grid": [{ "id": "p1", "xs": 12, "class": "main", "table": "devicesTreeTable", "height": "fill" }],
   "spacing": 10,
 
   "p1": [
@@ -11,12 +9,11 @@
       "prop": "devicesTreeTable",
 
       "columns": [
-
-        { "prop": "title", "title": "$Device", "type": "link", "command":"forward",  "width": 450, "filter":true  },
-        { "prop": "path", "title": "$Folder", "type": "text",  "width": 200, "filter":true },
-        { "prop": "type", "title": "$Type", "type": "link",  "command":"forward", "width": 200, "filter":true },
-        { "prop": "tags", "title": "$Tags", "type": "text",  "width": 200, "filter":true },
-        { "prop": "mob", "title": "Мобильный", "type": "cb",  "width": 100, "filter":true }
+        { "prop": "title", "title": "$Device", "type": "link", "command": "forward", "width": 450, "filter": true },
+        { "prop": "path", "title": "$Folder", "type": "text", "width": 200, "filter": true },
+        { "prop": "type", "title": "$Type", "type": "link", "command": "forward", "width": 200, "filter": true },
+        { "prop": "tags", "title": "$Tags", "type": "text", "width": 200, "filter": true },
+        { "prop": "mob", "title": "$UseInMobile_C", "type": "cb", "width": 100, "filter": true }
       ]
     }
   ]

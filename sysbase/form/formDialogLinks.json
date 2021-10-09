@@ -1,24 +1,18 @@
 {
-  "grid": [
-   
-    { "id": "p3", "xs": 12, "class": "main", "table": "dialoglinksTable", "height": "fill" }
-  ],
+  "grid": [{ "id": "p3", "xs": 12, "class": "main", "table": "dialoglinksTable", "height": "fill" }],
   "spacing": 10,
-  "breadcrumbs": { "tree": "dialog" },
 
   "p3": [
     {
       "title": "",
       "type": "table",
       "prop": "dialoglinksTable",
-    
 
       "columns": [
-       
-        { "prop": "element", "title": "Элемент", "type": "text", "width": 250, "filter":true  },
-        { "prop": "device_name", "title": "Устройство", "type": "text", "width": 250, "filter":true },
-        { "prop": "dprop", "title": "Свойство/команда", "type": "text", "width": 250, "filter":true },
-        { "prop": "sprop", "title": "Статическое свойство", "type": "text", "width": 250, "filter":true }
+        { "prop": "element", "title": "$Element", "type": "text", "width": 250, "filter": true },
+        { "prop": "device_name", "title": "$Device", "type": "text", "width": 250, "filter": true },
+        { "prop": "dprop", "title": "$Property", "type": "text", "width": 250, "filter": true },
+        { "prop": "sprop", "title": "$StaticProperty", "type": "text", "width": 250, "filter": true }
       ]
     }
   ]

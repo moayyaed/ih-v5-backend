@@ -353,7 +353,6 @@
   { "id": "SystemCommand", "note": "Системная команда" },
   { "id": "GotoScreen", "note": "Переход на экран" },
   { "id": "StartScene", "note": "Запуск сценария" },
-  { "id": "StartScene", "note": "Запуск сценария" },
   { "id": "ButtonAction", "note": "Действие" },
 
   { "id": "DefaultMnemo", "note": "Мнемосхема по умолчанию" },
@@ -464,56 +463,6 @@
   { "id": "CONFIRM_NO", "note": "Не требуется" },
   { "id": "CONFIRM_YES", "note": "Требуется подтверждение" },
   { "id": "CONFIRM_PWD", "note": "Требуется ввод пароля" },
-
-  { "id": "Dev_allowSharing", "note": "Расшарить устройство" },
-  { "id": "Dev_allowHistorizing", "note": "Запись исторических данных" },
-  { "id": "Dev_sharing_dataType", "note": "Тип данных" },
-  { "id": "Dev_shareInt8", "note": "Байт, знаковый (8 бит)" },
-  { "id": "Dev_shareUint8", "note": "Байт, беззнаковый (8 бит)" },
-  { "id": "Dev_shareInt16", "note": "Короткое целое, знаковое (16 бит)" },
-  { "id": "Dev_shareUint16", "note": "Слово, беззнаковое (16 бит)" },
-  { "id": "Dev_shareInt32", "note": "Целое, знаковое (32 бит)" },
-  { "id": "Dev_shareUint32", "note": "Двойное слово, беззнаковое (32 бит)" },
-  { "id": "Dev_shareInt64", "note": "Длинное целое, знаковое (64 бит)" },
-  { "id": "Dev_shareUint64", "note": "Длинное целое, беззнаковое (64 бит)" },
-  { "id": "Dev_shareFloat", "note": "С плавающей точкой (32 бит)" },
-  { "id": "Dev_shareDouble", "note": "С плавающей точкой(64 бит)" },
-  { "id": "Dev_shareString", "note": "Строка" },
-
-  { "id": "Devhard_Process", "note": "Обработка" },
-  { "id": "Devhard_Inv", "note": "Инвертировать входное значение" },
-  { "id": "Devhard_Inv_C", "note": "Инв вход" },
-  { "id": "Devhard_Out", "note": "Инвертировать выходное значение" },
-  { "id": "Devhard_Out_C", "note": "Инв выход" },
-  { "id": "Devhard_Calc", "note": "Формула расчета входного значения" },
-  { "id": "Devhard_Calc_C", "note": "Формула входа" },
-  { "id": "Devhard_Calc_Out", "note": "Формула расчета выходного значения" },
-  { "id": "Devhard_Calc_Out_C", "note": "Формула выхода" },
-  { "id": "Devhard_NoFeedback", "note": "При выполнении команды подтверждения не ждать" },
-  { "id": "Devhard_NoFeedback_C", "note": "Значение сразу" },
-
-  { "id": "Devprop_Property", "note": "Свойство" },
-  { "id": "Devprop_Name", "note": "Название" },
-  { "id": "Devprop_Calc", "note": "Формула" },
-  { "id": "Devprop_Id", "note": "ID свойства" },
-  { "id": "Devprop_Type", "note": "Тип свойства" },
-  { "id": "Devprop_Hide", "note": "Скрыть в основном интерфейсе" },
-  { "id": "Devprop_Txt", "note": "Описание свойства" },
-
-  { "id": "Devstate_State", "note": "№ cостояния" },
-  { "id": "Devstate_Name", "note": "Название состояния" },
-  { "id": "Devstate_Upbound", "note": "Верхняя граница интервала" },
-  { "id": "Devstate_Upbound_C", "note": "Граница" },
-  { "id": "Devstate_Log", "note": "Фиксировать в журнале" },
-  { "id": "Devstate_Log_C", "note": "Журнал" },
-  { "id": "Devstate_Loglevel", "note": "Уровень сообщения" },
-  { "id": "Devstate_Ack", "note": "Требуется подтверждение" },
-  { "id": "Devstate_Ack_C", "note": "Подтверждение" },
-  { "id": "Devstate_Walert", "note": "Вывести всплывающее окно для подтверждения" },
-  { "id": "Devstate_Walert_C", "note": "Алерт" },
-  { "id": "Devstate_Actname", "note": "Название команды" },
-  { "id": "Devstate_Wtxt", "note": "Текст сообщения в окне" },
-  { "id": "Devstate_AckClose", "note": "При подтверждении удалить из оперативного журнала" },
 
   { "id": "INFO", "note": "Информирование" },
   { "id": "Info_Addr", "note": "Адрес (номер)" },
@@ -651,11 +600,6 @@
   { "id": "Error", "note": "Ошибка" },
   { "id": "Order", "note": "№ пп" },
   { "id": "Hide", "note": "Скрыть" },
-
-  { "id": "Popup_Dialog", "note": "Окно подтверждения действий" },
-  { "id": "Popup_Walert", "note": "Всплывающее сообщение (алерт)" },
-  { "id": "Popup_Devsetting", "note": "Боковое меню устройства" },
-  { "id": "Popup_Jmenu", "note": "Меню журнала" },
 
   { "id": "UserGroup_Owner", "note": "Владельцы" },
   { "id": "UserGroup_Other", "note": "Прочие" },
@@ -858,6 +802,7 @@
   { "id": "ServiceName", "note": "Наименование сервиса" },
   { "id": "InterProcessComm", "note": "Интерфейс взаимодействия со службой" },
   { "id": "DeviceProperty", "note": "Свойство yстройства" },
+  { "id": "StaticProperty", "note": "Статическое свойство" },
   { "id": "ChannelValue", "note": "Значение с канала" },
   { "id": "ChannelTs", "note": "Время получения" },
   { "id": "ChanDirectWrite", "note": "Передать в канал" },
@@ -962,7 +907,10 @@
   { "id": "LatestDBrecords", "note": "Последние записи в БД" },
   { "id": "MobileSetting", "note": "Настройка для мобильного" },
   { "id": "UseInMobile", "note": "Использовать в мобильном" },
+  { "id": "UseInMobile_C", "note": "Mобильный" },
 
+  { "id": "Journal", "note": "Журнал" },
+  { "id": "AlertJournal", "note": "Журнал тревог" },
   { "id": "JournalTitle_mainlog", "note": "Данные главного журнала" },
   { "id": "JournalTitle_alertlog", "note": "Тревоги" },
   { "id": "JournalTitle_pluginlog", "note": "Данные плагинов" },
@@ -1017,8 +965,14 @@
   { "id": "AccessToAllDevctl", "note": "Разрешить управление всеми устройствами" },
   { "id": "AccessToPM", "note": "Доступ к PM (Project Manager)" },
 
+  { "id": "Sender", "note": "Отправитель" },
+  { "id": "Txt", "note": "Сообщение" },
   { "id": "tsDateTime", "note": "Дата, время" },
   { "id": "ctsDateTime", "note": "Изменено" },
+  { "id": "LastStart", "note": "Время запуска" },
+  { "id": "LastStop", "note": "Время останова" },
+  { "id": "Realdevs", "note": "Устройства сценария" },
+
   { "id": "ValueStr", "note": "Значение строка" },
   { "id": "SetValue", "note": "Присвоить значение" },
   { "id": "PropertySource", "note": "Источник свойства" },
@@ -1026,6 +980,8 @@
   { "id": "HandlerNotUsed", "note": "Обработчик не используется" },
   { "id": "UseHandler", "note": "Использовать обработчик для формирования данных" },
   { "id": "CustomTableName", "note": "Имя таблицы (будет создана при отсутствии)" },
+  { "id": "DeviceContext", "note": "Устройство - контекст" },
+  { "id": "DeviceContextOrAny", "note": "Устройство - контекст или любое устройство" },
 
 
   { "id": "StdMessage", "note": "Стандартное сообщение" },
@@ -1038,6 +994,7 @@
   { "id": "DownloadError", "note": "Ошибка при закачке!" },
 
   { "id": "File", "note": "Файл" },
+  { "id": "Langs", "note": "Языки" },
   { "id": "HTTPMethod", "note": "Метод" },
   { "id": "Route", "note": "Маршрут" },
   { "id": "NewRoute", "note": "Новый маршрут" },
@@ -1046,6 +1003,11 @@
   { "id": "ChannelRead", "note":  "Канал для чтения"},
   { "id": "ChannelWrite", "note":  "Канал для записи"},
   { "id": "Devpropname", "note":  "Свойство устройства для привязки"},
-  { "id": "SaveTimeline", "note": "Сохранять для Timeline" }
+  { "id": "SaveTimeline", "note": "Сохранять для Timeline" },
+
+  { "id": "Impref", "note": "Источник" },
+  { "id": "Expref", "note": "Префикс для выгрузки" },
+  { "id": "Exid", "note": "ID для выгрузки" }
+
 
 ]

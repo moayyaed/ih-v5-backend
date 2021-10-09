@@ -1,10 +1,9 @@
 {
   "grid": [
     { "id": "p1", "xs": 6, "class": "main", "table": "dialog" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "dialog", "height":250 }
+    { "id": "p2", "xs": 6, "class": "main", "table": "dialog", "height": 250 }
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "dialog" },
 
   "p1": [
     { "prop": "_id", "title": "ID", "type": "text" },
