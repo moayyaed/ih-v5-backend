@@ -22,7 +22,7 @@
     },
     {
       "prop": "all_layouts_0",
-      "title": "▪︎ Доступ к экранам из списка",
+      "title": "▪︎ Доступ к экранам ограничен",
       "type": "header",
       "hide": "data.p2.all_layouts"
     },
@@ -36,7 +36,7 @@
     },
     {
       "prop": "all_devctl_0",
-      "title": "▪︎ Управление устройствам из списка",
+      "title": "▪︎ Управление устройствам ограничено",
       "type": "header",
       "hide": "data.p2.all_devctl"
     },
@@ -50,7 +50,7 @@
     },
     {
       "prop": "all_pmparts_1",
-      "title": "▪︎ PM: Доступ ограничен разделами из списка",
+      "title": "▪︎ PM: Доступ ограничен",
       "type": "header",
       "hide": "data.p2.all_pmparts != 1"
     },
