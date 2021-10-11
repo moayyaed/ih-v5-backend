@@ -959,5 +959,6 @@
 
   { "id": "Impref", "note": "Source" },
   { "id": "Expref", "note": "Export prefix" },
-  { "id": "Exid", "note": "Export ID" }
+  { "id": "Exid", "note": "Export ID" },
+  { "id": "Portal", "note": "Portal" }
 ]
