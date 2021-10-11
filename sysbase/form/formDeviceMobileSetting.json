@@ -3,13 +3,13 @@
     { "id": "px", "xs": 12, "class": "main", "table": "device", "hide": "data.px.mob" },
     { "id": "p1", "xs": 6, "class": "main", "table": "mobiledevice", "hide": "!data.px.mob" },
 
-    { "id": "p4", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.px.mob" },
+    { "id": "p4", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.px.mob || !data.p1.customimg" },
     {
       "id": "p5",
       "xs": 3,
       "class": "main",
       "table": "mobiledevice",
-      "hide": "!data.px.mob || data.p1.cl.startsWith('SensorA')"
+      "hide": "!data.px.mob || !data.p1.customimg"
     },
 
     { "id": "p6", "xs": 6, "class": "main", "table": "mobiledevice", "hide": "!data.px.mob" },
@@ -19,7 +19,8 @@
       "class": "main",
       "table": "mobilesettingfromtypeTable",
      
-      "hide": "!data.px.mob || !data.p6.typesetting "
+      "hide": "!data.px.mob || !data.p6.typesetting ",
+      "height":"fill"
     },
     {
       "id": "p8",
@@ -27,7 +28,8 @@
       "class": "main",
       "table": "mobilesettingfromsceneTable",
      
-      "hide": "!data.px.mob || !data.p6.scenesetting"
+      "hide": "!data.px.mob || !data.p6.scenesetting",
+      "height":"fill"
     }
   ],
   "spacing": 10,
@@ -68,8 +70,8 @@
         { "id": "670", "title": "$TYPE_CONDV", "hide": "data.p1.cl != 'ActorD'" },
         { "id": "710", "title": "$TYPE_WATER_NC", "hide": "data.p1.cl != 'ActorD'" }
       ]
-    }
-   
+    },
+    { "prop": "customimg", "title": "Настроить изображение для этого устройства", "type": "cb" }
   ],
 
   "p4": [
@@ -79,9 +81,9 @@
   ],
 
   "p5": [
-    { "prop": "header_image0", "title": "Изображение: активное состояние", "type": "header" },
-    { "prop": "image1", "title": "Image", "type": "img" },
-    { "prop": "color1", "title": "Color", "type": "color" }
+    { "prop": "header_image0", "title": "Изображение: активное состояние", "type": "header", "hide":"data.p1.cl.startsWith('SensorA')" },
+    { "prop": "image1", "title": "Image", "type": "img", "hide":"data.p1.cl.startsWith('SensorA')" },
+    { "prop": "color1", "title": "Color", "type": "color", "hide":"data.p1.cl.startsWith('SensorA')" }
   ],
 
   "p6": [
