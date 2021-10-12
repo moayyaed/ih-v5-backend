@@ -976,6 +976,7 @@
   { "id": "AccessToAllLayouts", "note": "Разрешить доступ ко всем экранам" },
   { "id": "AccessToAllDevctl", "note": "Разрешить управление всеми устройствами" },
   { "id": "AccessToPM", "note": "Доступ к PM (Project Manager)" },
+  { "id": "AccessPMReadWrite", "note": "Разрешить редактирование" },
 
   { "id": "Sender", "note": "Отправитель" },
   { "id": "Txt", "note": "Сообщение" },

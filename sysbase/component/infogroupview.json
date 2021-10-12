@@ -1,8 +1,0 @@
-{
-  "tabs": [
-    { "id": "tabInfogroup",  "title": "Группа", "component": [{ "id": "formInfogroup", "type": "form" }]  },
-    { "id": "tabUIAccessRules",  "title": "Доступ UI", "component": [{ "id": "formUIAccessRules", "type": "form" }]  },
-    { "id": "tabPMAccessRules",  "title": "Доступ PM", "component": [{ "id": "formPMAccessRules", "type": "form" }]  }
-  ],
-  "defaultTab": "tabInfogroup"
-}

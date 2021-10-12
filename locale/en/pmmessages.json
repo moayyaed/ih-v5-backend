@@ -968,6 +968,7 @@
   { "id": "AccessToAllLayouts", "note": "Allow access to all layouts" },
   { "id": "AccessToAllDevctl", "note": "Allow control of all devices" },
   { "id": "AccessToPM", "note": "Access to PM (Project Manager)" },
+  { "id": "AccessPMReadWrite", "note": "Allow editing operations" },
 
   { "id": "Sender", "note": "Sender" },
   { "id": "Txt", "note": "Message" },

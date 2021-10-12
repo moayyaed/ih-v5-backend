@@ -12,7 +12,10 @@
   "p1": [{ "prop": "all_layouts", "title": "$AccessToAllLayouts", "type": "cb" }],
 
   "p2": [{ "prop": "all_devctl", "title": "$AccessToAllDevctl", "type": "cb" }],
-  "p3": [{ "prop": "all_pmparts", "title": "$AccessToPM", "type": "droplist", "data":"accesslevelList" }],
+  "p3": [
+    { "prop": "all_pmparts", "title": "$AccessToPM", "type": "droplist", "data": "accesslevelList" },
+    { "prop": "pm_readwrite", "title": "$AccessPMReadWrite", "type": "cb", "hide": "data.p3.all_pmparts.id != 1" }
+  ],
 
   "p4": [
     {
@@ -46,7 +49,7 @@
   ],
 
   "p6": [
-   {
+    {
       "title": "",
       "type": "table",
       "prop": "agrouppmpartsTable",
@@ -55,13 +58,7 @@
 
       "popupenable": true,
 
-      "columns": [
-    
-        { "prop": "pmpart", "title": "$MenuItem", "type": "droplist", "data":"pmpartList", "width":100 },
-        { "prop": "rule", "title": "$ACCESS", "type": "droplist", "data":"accesslevelList", "width":100 }
-      
-      ]
+      "columns": [{ "prop": "pmpart", "title": "$MenuItem", "type": "droplist", "data": "pmpartList", "width": 150 }]
     }
- 
   ]
 }
