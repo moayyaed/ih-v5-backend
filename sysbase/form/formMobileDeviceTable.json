@@ -17,8 +17,6 @@
         { "prop": "id", "title": "ID ", "type": "text", "width": 150, "filter": true },
         { "prop": "device", "title": "Устройство", "type": "droplist", "data": "deviceList", "width": 350 },
         { "prop": "cl", "title": "Класс V4", "type": "droplist", "data": "classV4List", "width": 150 }
-
-        
       ]
     }
   ]

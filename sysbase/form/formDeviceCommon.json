@@ -6,7 +6,7 @@
     { "id": "p2", "xs": 12, "class": "main", "table": "device", "height":250 }
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "devdevices" },
+  "updateTreeFromTable":"device",
 
   "p1": [
     { "prop": "dn", "title": "$Dev_Id", "type": "input" },

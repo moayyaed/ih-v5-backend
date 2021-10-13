@@ -2,7 +2,7 @@
   "grid": [
     { "id": "px", "xs": 12, "class": "main", "table": "device", "hide": "data.px.mob" },
     { "id": "p1", "xs": 6, "class": "main", "table": "mobiledevice", "hide": "!data.px.mob" },
-
+    { "id": "p2", "xs": 6, "class": "main", "table": "mobiledevice", "hide": "!data.px.mob" },
     { "id": "p4", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.px.mob || !data.p1.customimg" },
     {
       "id": "p5",
@@ -12,27 +12,29 @@
       "hide": "!data.px.mob || !data.p1.customimg"
     },
 
-    { "id": "p6", "xs": 6, "class": "main", "table": "mobiledevice", "hide": "!data.px.mob" },
     {
       "id": "p7",
       "xs": 3,
       "class": "main",
       "table": "mobilesettingfromtypeTable",
-     
-      "hide": "!data.px.mob || !data.p6.typesetting ",
-      "height":"fill"
+
+      "hide": "!data.px.mob || !data.p2.typesetting ",
+      "height": 250
     },
     {
       "id": "p8",
       "xs": 3,
       "class": "main",
       "table": "mobilesettingfromsceneTable",
-     
-      "hide": "!data.px.mob || !data.p6.scenesetting",
-      "height":"fill"
+
+      "hide": "!data.px.mob || !data.p2.scenesetting",
+      "height": 250
     }
   ],
+  
   "spacing": 10,
+  "updateTreeFromTable":"NO",
+
   "px": [
     { "prop": "mob", "title": "", "type": "text", "hide": "1==1" },
     { "prop": "no_header", "title": "Это устройство в мобильном не используется", "type": "header", "size": "h6" }
@@ -40,7 +42,7 @@
 
   "p1": [
     { "prop": "cl", "title": "Класс для мобильного", "type": "text", "hide": "1==1" },
-    { "prop": "name", "title": "Название", "type": "text" },
+    { "prop": "name", "title": "Название", "type": "input" },
     {
       "prop": "typev4",
       "title": "Группа (группировка в Places)",
@@ -74,6 +76,13 @@
     { "prop": "customimg", "title": "Настроить изображение для этого устройства", "type": "cb" }
   ],
 
+  "p2": [
+    { "prop": "subs", "title": "Подсистема", "type": "droplist", "data": "taglist" },
+    { "prop": "place_room", "title": "Помещение", "type": "droplist", "data": "mobilePlaceList" },
+    { "prop": "typesetting", "title": "На вкладке настройка показать свойства типа", "type": "cb" },
+    { "prop": "scenesetting", "title": "На вкладке настройка показать параметры сценариев", "type": "cb" }
+  ],
+
   "p4": [
     { "prop": "header_image0", "title": "Изображение: нейтральное состояние", "type": "header" },
     { "prop": "image0", "title": "Image", "type": "img" },
@@ -81,17 +90,14 @@
   ],
 
   "p5": [
-    { "prop": "header_image0", "title": "Изображение: активное состояние", "type": "header", "hide":"data.p1.cl.startsWith('SensorA')" },
-    { "prop": "image1", "title": "Image", "type": "img", "hide":"data.p1.cl.startsWith('SensorA')" },
-    { "prop": "color1", "title": "Color", "type": "color", "hide":"data.p1.cl.startsWith('SensorA')" }
-  ],
-
-  "p6": [
-
-    { "prop": "subs", "title": "Подсистема", "type": "droplist", "data": "taglist" },
-    { "prop": "place_room", "title": "Помещение", "type": "droplist", "data": "mobilePlaceList" },
-    { "prop": "typesetting", "title": "На вкладке настройка показать свойства типа", "type": "cb" },
-    { "prop": "scenesetting", "title": "На вкладке настройка показать параметры сценариев", "type": "cb" }
+    {
+      "prop": "header_image0",
+      "title": "Изображение: активное состояние",
+      "type": "header",
+      "hide": "data.p1.cl.startsWith('SensorA')"
+    },
+    { "prop": "image1", "title": "Image", "type": "img", "hide": "data.p1.cl.startsWith('SensorA')" },
+    { "prop": "color1", "title": "Color", "type": "color", "hide": "data.p1.cl.startsWith('SensorA')" }
   ],
 
   "p7": [
@@ -109,7 +115,7 @@
   ],
 
   "p8": [
-    { "prop": "scene_prop_header", "title": "Свойства добавляются в сценарии", "type": "header"},
+    { "prop": "scene_prop_header", "title": "Свойства добавляются в сценарии", "type": "header" },
     {
       "title": "$DeviceProperty",
       "type": "table",
@@ -118,7 +124,6 @@
       "columns": [
         { "prop": "title", "title": "Параметр сценария", "type": "text", "width": 200 },
         { "prop": "source", "title": "", "type": "link", "width": 250, "command": "forward" }
-   
       ]
     }
   ]
