@@ -247,5 +247,6 @@
   "_position": "Position",
   "_slider": "Slider",
   "_text": "Text",
-  "_transform": "Transform"
+  "_transform": "Transform",
+  "SAVE": "SAVE"
 }

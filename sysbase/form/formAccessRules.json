@@ -58,7 +58,7 @@
 
       "popupenable": true,
 
-      "columns": [{ "prop": "pmpart", "title": "$MenuItem", "type": "droplist", "data": "pmpartList", "width": 150 }]
+      "columns": [{ "prop": "part", "title": "$MenuItem", "type": "droplist", "data": "pmpartList", "width": 150 }]
     }
   ]
 }

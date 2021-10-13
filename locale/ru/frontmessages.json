@@ -247,5 +247,6 @@
   "_position": "Позиция",
   "_slider": "Slider",
   "_text": "Текст",
-  "_transform": "Преобразовать"
+  "_transform": "Преобразовать",
+  "SAVE": "СОХРАНИТЬ"
 }
