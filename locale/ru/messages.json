@@ -295,6 +295,15 @@
   { "id": "projectSavedInFolder", "note": "Проект сохранен в папку" },
   { "id": "projectTitle", "note": "Имя проекта" },
 
+  { "id": "admgrp", "note": "Администраторы" },
+  { "id": "usrgrp", "note": "Пользователи" },
+  { "id": "gstgrp", "note": "Гости" },
+  { "id": "NoGroupSelected", "note": "Группа не выбрана!" },
+  { "id": "NoUserSelected", "note": "Пользователь не выбран!" },
+  { "id": "RecordDup", "note": "Уже есть запись" },
+  { "id": "group", "note": "группа" },
+  { "id": "user", "note": "пользователь" },
+
 
   { "id": "StartV4migration", "note": "Загружен проект версии V4. Запущена процедура миграции..." },
   { "id": "ProjectSavedAs", "note": "Проект сохранен под именем " },

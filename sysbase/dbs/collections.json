@@ -12,7 +12,10 @@
   "infogroup_tab": { "folder": "jbasepath" },
 
   "agroups": { "folder": "jbasepath" },
-  "agroup_tab": { "folder": "jbasepath" },
+  "agroup_tab": { "folder": "privatepath" },
+
+  "users": { "folder": "privatepath" },
+  "tokens": { "folder": "privatepath" },
 
   "inforules": { "folder": "jbasepath" },
   "inforule_tab": { "folder": "jbasepath" },
@@ -62,9 +65,6 @@
   "projectdeps": { "inMemory": 1 },
   "licenses": { "inMemory": 1 },
   "dbagents": { "folder": "jbasepath" },
-
-  "users": { "folder": "privatepath" },
-  "tokens": { "folder": "privatepath" },
 
   "pages": { "folder": "jbasepath" },
   "docimages": { "folder": "jbasepath" }

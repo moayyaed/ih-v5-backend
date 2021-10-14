@@ -293,6 +293,15 @@
   { "id": "projectSavedInFolder", "note": "The project is saved in a folder" },
   { "id": "projectTitle", "note": "Project title" },
 
+  { "id": "admgrp", "note": "Admins" },
+  { "id": "usrgrp", "note": "Users" },
+  { "id": "gstgrp", "note": "Guests" },
+  { "id": "NoGroupSelected", "note": "No group selected!" },
+  { "id": "NoUserSelected", "note": "No user selected!" },
+  { "id": "RecordDup", "note": "Duplication" },
+  { "id": "group", "note": "group" },
+  { "id": "user", "note": "user" },
+
   { "id": "StartV4migration", "note": "Uploaded project version V4. Start migration..." },
   { "id": "ProjectSavedAs", "note": "The project is saved as " },
   { "id": "toActivateProject", "note": "To activate the project, go to Settings and click 'Restart with this project'." },

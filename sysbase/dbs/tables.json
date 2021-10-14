@@ -456,8 +456,6 @@
     "collection": "agroups",
     "genfield": "pmparts"
   },
-  
-
   "agroup_tab": {
     "store": "db",
     "collection": "agroup_tab",
@@ -846,21 +844,8 @@
     "store": "db",
     "collection": "users",
     "ruleID": { "pref": "u", "len": 4 },
-    "requiredRecords": [
-      {
-        "check": { "login": "admin" },
-        "add": {
-          "_id": "admin",
-          "login": "admin",
-          "role": "admin",
-          "name": "Admin",
-          "parent": "usergroup",
-          "agroup": "admgrp",
-          "pwd": "202020",
-          "order": 10
-        }
-      }
-    ],
+    "default": { "name": "Name", "login":"Login","pwd":"202020" },
+
     "validator": {
       "main": {
         "name": { "required": true, "notempty": true },
