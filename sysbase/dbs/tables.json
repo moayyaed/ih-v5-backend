@@ -850,8 +850,7 @@
       "main": {
         "name": { "required": true, "notempty": true },
         "login": { "required": true, "notempty": true, "unique": true },
-        "pwd": { "required": true, "notempty": true },
-        "mainlay": { "required": true, "notempty": true }
+        "pwd": { "custom": true }
       }
     }
   },
