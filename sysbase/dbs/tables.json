@@ -418,25 +418,7 @@
       "main": {
         "all_pmparts": { "custom": true }
       }
-    },
-    
-    "requiredRecords": [
-      {
-        "check": { "_id": "admgrp" },
-        "add": {
-          "_id": "admgrp",
-
-          "parent": "agroupsgroup",
-          "name": "$Admgrp",
-          "all_layouts": 1,
-          "all_devctl": 1,
-          "all_pmparts": 2,
-          "layouts": {},
-          "devctl": {},
-          "pmparts": {}
-        }
-      }
-    ]
+    }
   },
 
   "agroupsgroup": {
@@ -851,7 +833,7 @@
     "store": "db",
     "collection": "users",
     "ruleID": { "pref": "u", "len": 4 },
-    "default": { "name": "Name", "login":"Login","pwd":"202020" },
+    "default": { "name": "Name", "login": "Login", "pwd": "202020" },
 
     "validator": {
       "main": {
