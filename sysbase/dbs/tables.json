@@ -413,6 +413,13 @@
     "defRootTitle": "Группы пользователей",
     "default": { "name": "Новая группа" },
     "ruleID": { "pref": "grp", "len": 3 },
+
+    "validator": {
+      "main": {
+        "all_pmparts": { "custom": true }
+      }
+    },
+    
     "requiredRecords": [
       {
         "check": { "_id": "admgrp" },

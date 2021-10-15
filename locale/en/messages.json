@@ -301,6 +301,10 @@
   { "id": "RecordDup", "note": "Duplication" },
   { "id": "group", "note": "group" },
   { "id": "user", "note": "user" },
+  { "id": "GroupCannotBeRemoved", "note": "The group cannot be deleted!" },
+  { "id": "GroupForPMFullAccess", "note": "This is a special group for PM full access." },
+
+
 
   { "id": "StartV4migration", "note": "Uploaded project version V4. Start migration..." },
   { "id": "ProjectSavedAs", "note": "The project is saved as " },

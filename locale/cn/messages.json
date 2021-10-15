@@ -280,6 +280,18 @@
   { "id": "projectSavedInFolder", "note": "The project is saved in a folder" },
   { "id": "projectTitle", "note": "Project title" },
 
+
+  { "id": "admgrp", "note": "Admins" },
+  { "id": "usrgrp", "note": "Users" },
+  { "id": "gstgrp", "note": "Guests" },
+  { "id": "NoGroupSelected", "note": "No group selected!" },
+  { "id": "NoUserSelected", "note": "No user selected!" },
+  { "id": "RecordDup", "note": "Duplication" },
+  { "id": "group", "note": "group" },
+  { "id": "user", "note": "user" },
+  { "id": "GroupCannotBeRemoved", "note": "The group cannot be deleted!" },
+  { "id": "GroupForPMFullAccess", "note": "This is a special group for PM full access." },
+
   { "id": "StartV4migration", "note": "Uploaded project version V4. Start migration..." },
   { "id": "ProjectSavedAs", "note": "The project is saved as " },
   {

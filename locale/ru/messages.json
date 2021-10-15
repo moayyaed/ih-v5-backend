@@ -303,6 +303,8 @@
   { "id": "RecordDup", "note": "Уже есть запись" },
   { "id": "group", "note": "группа" },
   { "id": "user", "note": "пользователь" },
+  { "id": "GroupCannotBeRemoved", "note": "Группа не может быть удалена!" },
+  { "id": "GroupForPMFullAccess", "note": "Это специальная группа для полного доступа к PM." },
 
 
   { "id": "StartV4migration", "note": "Загружен проект версии V4. Запущена процедура миграции..." },
