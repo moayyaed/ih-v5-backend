@@ -844,10 +844,10 @@
     }
   },
 
-  "useraddress": {
+  "infoaddr": {
     "store": "db",
     "collection": "users",
-    "genfield": "address"
+    "genfield": "addresses"
   },
 
   "imagegroup": {
@@ -996,12 +996,6 @@
   "projectdepsTable": {
     "store": "db",
     "collection": "projectdeps",
-    "rows": 1
-  },
-
-  "mobileListTable": {
-    "store": "db",
-    "collection": "mobilelists",
     "rows": 1
   },
 

@@ -5,7 +5,9 @@
       "title": "Параметры плагина",
       "component": [{ "id": "formPluginCommon", "type": "form" }]
     },
-    { "id": "tabPluginLogTable", "title": "Журнал", "component": [{ "id": "formPluginLogTable", "type": "form" }] }
+    { "id": "tabPluginDebug", "title": "Отладчик", "component": [{ "id": "formPluginDebug", "type": "form" }] },
+    { "id": "tabPluginLogTable", "title": "Журнал", "component": [{ "id": "formOnePluginLogTable", "type": "form" }] },
+    { "id": "tabPluginOwnLog", "title": "Лог", "component": [{ "id": "formPluginOwnLog", "type": "form" }] }
   ],
   "defaultTab": "tabUnitParams"
 }
