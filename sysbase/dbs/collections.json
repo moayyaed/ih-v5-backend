@@ -8,13 +8,11 @@
   "devicedb": { "folder": "jbasepath" },
   "devhard": { "folder": "jbasepath" },
 
-  "infogroups": { "folder": "jbasepath" },
-  "infogroup_tab": { "folder": "jbasepath" },
-
   "agroups": { "folder": "jbasepath" },
   "agroup_tab": { "folder": "privatepath" },
 
   "users": { "folder": "privatepath" },
+  "infoaddr": { "folder": "privatepath" },
   "tokens": { "folder": "privatepath" },
 
   "inforules": { "folder": "jbasepath" },

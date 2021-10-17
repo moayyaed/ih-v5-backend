@@ -1,31 +1,51 @@
 {
   "grid": [
     { "id": "p1", "xs": 12, "class": "main", "table": "user", "hide": "1==1" },
-    { "id": "p5", "xs": 12, "class": "main", "table": "useraddress", "height": "fill" }
+    { "id": "p4", "xs": 12, "class": "main", "table": "infoaddr_common", "height": 300 },
+    { "id": "p5", "xs": 12, "class": "main", "table": "infoaddr_pushnot", "height": 200 }
   ],
   "spacing": 8,
 
   "p1": [{ "prop": "name", "title": "$Name", "type": "input" }],
 
-  "p5": [
+  "p4": [
+    {"prop": "common_header", "title": "$Addresses", "type": "header" },
     {
       "title": "",
       "type": "table",
-      "prop": "useraddress",
+      "prop": "infoaddr_common",
       "popupenable": true,
 
       "columns": [
         {
-          "prop": "type",
+          "prop": "infotype",
           "title": "$Type",
           "type": "droplist",
           "data": [{ "id": "email", "title": "email" }],
           "width": 150
         },
-        { "prop": "addr", "title": "$Info_Addr", "type": "input", "width": 150, "hide": "!data.type.id" },
-        { "prop": "sign", "title": "$Info_Sign", "type": "input", "width": 150 },
-        { "prop": "active", "title": "$Info_Allowed", "type": "cb" },
-        { "prop": "rowbutton", "title": "$Button_SendTestMessage", "type": "button", "width": 250 }
+        { "prop": "addr", "title": "$Info_Addr", "type": "input", "width": 150, "hide": "!data.infotype.id" },
+        { "prop": "sign", "title": "$Info_Sign", "type": "input", "width": 150, "hide": "!data.infotype.id" },
+        { "prop": "allowed", "title": "$Info_Allowed", "type": "cb", "width": 200, "hide": "!data.infotype.id || !data.addr" },
+        { "prop": "rowbutton", "title": "$Button_SendTestMessage_С", "type": "button", "width": 200, "hide": "!data.infotype.id || !data.addr" }
+      ]
+    }
+  ],
+
+  "p5": [
+    {"prop": "pushnot_header", "title": "$PushRegisteredDevices", "type": "header" },
+    {
+      "title": "",
+      "type": "table",
+      "prop": "infoaddr_pushnot",
+      "popupenable": true,
+
+      "columns": [
+        { "prop": "hwid", "title": "$Info_Hwid", "type": "text", "width": 150 },
+        { "prop": "model", "title": "$Info_Model", "type": "text", "width": 150 },
+        { "prop": "allowed", "title": "$Info_Allowed", "type": "cb","hide":"!data.addr",  "width": 150 },
+        { "prop": "rowbutton", "title": "$Button_SendTestMessage_С", "type": "button", "hide":"!data.addr", "width": 200 },
+        { "prop": "addr", "title": "$Token", "type": "text", "width": 200 }
       ]
     }
   ]

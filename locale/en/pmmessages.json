@@ -1,10 +1,14 @@
 [
   { "id": "Users", "note": "Users" },
   { "id": "User", "note": "User" },
-  { "id": "Logins", "note": "Accounts" },
+  { "id": "Account", "note": "Account" },
+  { "id": "Accounts", "note": "Accounts" },
   { "id": "Admgrp", "note": "Admin group" },
   { "id": "Addresses", "note": "Addresses for Information" },
+  { "id": "Informing", "note": "Informing" },
   { "id": "Usergroups", "note": "Groups" },
+  { "id": "Token", "note": "Token" },
+  { "id": "PushRegisteredDevices", "note": "Pushnotification: registered devices" },
   { "id": "Acpolicy", "note": "Access Policies" },
   { "id": "Acrules", "note": "Rules" },
   { "id": "Accontrol", "note": "Access Control" },
@@ -474,6 +478,9 @@
   { "id": "Info_Sign", "note": "Signature" },
   { "id": "Info_Allowed", "note": "Send outgoing messages" },
   { "id": "Info_Type", "note": "Information Channel" },
+  { "id": "Info_Hwid", "note": "ID" },
+  { "id": "Info_Model", "note": "Model" },
+
 
   { "id": "LAYOUT", "note": "Screen" },
   { "id": "ShowWalert", "note": "Display of Alerts" },
@@ -557,7 +564,7 @@
 
   { "id": "User_Name", "note": "User Name" },
   { "id": "User_Name_C", "note": "Name" },
-  { "id": "User_Login", "note": "Account (login)" },
+  { "id": "User_Login", "note": "Login" },
   { "id": "User_Login_C", "note": "Login" },
   { "id": "User_Pwd", "note": "Password (not less than 4 symbols)" },
   { "id": "User_Mainlay", "note": "Main Screen" },
@@ -990,6 +997,7 @@
   { "id": "HandlerFunction", "note": "Handler function" },
   { "id": "Error_SeeLog", "note": "Error! Details in the log" },
   { "id": "SelectJournalFromMenu", "note": "Select a journal from menu on the left" },
+  { "id": "Button_SendTestMessage_С", "note": "Test message" },
   { "id": "Button_SendTestMessage", "note": "Send test message" },
 
   { "id": "StdMessage", "note": "Common message" },

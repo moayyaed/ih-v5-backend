@@ -290,6 +290,11 @@
 
   { "id": "needPluginV5", "note": "The system only works with plugins version 5" },
   { "id": "misPluginVersion", "note": "Plugin version information is missing!" },
+  { "id": "Plugin", "note": "Plugin" },
+  { "id": "notFound", "note": "not found" },
+  { "id": "notRunning", "note": "not running" },
+  { "id": "NoOptionsToScan", "note": "No options to scan!" },
+
   { "id": "projectSavedInFolder", "note": "The project is saved in a folder" },
   { "id": "projectTitle", "note": "Project title" },
 
@@ -301,6 +306,7 @@
   { "id": "RecordDup", "note": "Duplication" },
   { "id": "group", "note": "group" },
   { "id": "user", "note": "user" },
+  { "id": "Send", "note": "Send" },
   { "id": "GroupCannotBeRemoved", "note": "The group cannot be deleted!" },
   { "id": "GroupForPMFullAccess", "note": "This is a special group for PM full access." },
 

@@ -374,39 +374,6 @@
     "genfield": "props"
   },
 
-  "infogroupsgroup": {
-    "store": "db",
-    "collection": "infogroups",
-    "filter": { "folder": 1 },
-    "defRootTitle": "Группы"
-  },
-
-  "infogroups": {
-    "store": "db",
-    "collection": "infogroups",
-    "defRootTitle": "Группы",
-    "default": { "name": "Новая группа" },
-    "ruleID": { "pref": "grp", "len": 3 }
-  },
-
-  "infogroup_tab": {
-    "store": "db",
-    "collection": "infogroup_tab",
-    "rows": true
-  },
-
-  "infogroup_bygroup": {
-    "store": "db",
-    "collection": "infogroup_tab",
-    "rows": true
-  },
-
-  "infogroup_byuser": {
-    "store": "db",
-    "collection": "infogroup_tab",
-    "rows": true
-  },
-
   "agroups": {
     "store": "db",
     "collection": "agroups",
@@ -846,8 +813,26 @@
 
   "infoaddr": {
     "store": "db",
-    "collection": "users",
-    "genfield": "addresses"
+    "collection": "infoaddr",
+    "rows": true
+  },
+
+  "infoaddr_common": {
+    "store": "db",
+    "collection": "infoaddr",
+    "rows": true,
+    "validator": {
+      "props": {
+        "addr": {"required": true, "notempty": true},
+        "infotype": {"required": true, "notempty": true}
+      }
+    }
+  },
+
+  "infoaddr_pushnot": {
+    "store": "db",
+    "collection": "infoaddr",
+    "rows": true
   },
 
   "imagegroup": {

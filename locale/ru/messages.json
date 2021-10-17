@@ -292,6 +292,11 @@
 
   { "id": "needPluginV5", "note": "Система работает только с плагинами версии 5." },
   { "id": "misPluginVersion", "note": "Отсутствует информация о версии плагина!" },
+  { "id": "Plugin", "note": "Плагин" },
+  { "id": "notFound", "note": "не найден" },
+  { "id": "notRunning", "note": "не запущен" },
+  { "id": "NoOptionsToScan", "note": "Нет параметров для сканирования!" },
+
   { "id": "projectSavedInFolder", "note": "Проект сохранен в папку" },
   { "id": "projectTitle", "note": "Имя проекта" },
 
@@ -303,6 +308,7 @@
   { "id": "RecordDup", "note": "Уже есть запись" },
   { "id": "group", "note": "группа" },
   { "id": "user", "note": "пользователь" },
+  { "id": "Send", "note": "Отправить" },
   { "id": "GroupCannotBeRemoved", "note": "Группа не может быть удалена!" },
   { "id": "GroupForPMFullAccess", "note": "Это специальная группа для полного доступа к PM." },
 

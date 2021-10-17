@@ -1,7 +1,7 @@
 {
   "tabs": [
-    { "id": "tabUserCommon", "title": "$Common", "component": [{ "id": "formUserCommon", "type": "form" }] },
-    { "id": "tabUserAddress", "title": "$Addresses", "component": [{ "id": "formUserAddress", "type": "form" }] }
+    { "id": "tabUserCommon", "title": "$Account", "component": [{ "id": "formUserCommon", "type": "form" }] },
+    { "id": "tabUserAddress", "title": "$Informing", "component": [{ "id": "formUserAddress", "type": "form" }] }
    
   ],
   "defaultTab": "tabUserCommon"

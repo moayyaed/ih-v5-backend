@@ -1,10 +1,14 @@
 [
   { "id": "Users", "note": "用户" },
   { "id": "User", "note": "用户" },
-  { "id": "Logins", "note": "账号" },
+  { "id": "Account", "note": "账号" },
+  { "id": "Accounts", "note": "账号" },
   { "id": "Admgrp", "note": "Admin group" },
   { "id": "Addresses", "note": "地址" },
+  { "id": "Informing", "note": "Informing" },
   { "id": "Usergroups", "note": "用户组" },
+  { "id": "Token", "note": "Token" },
+  { "id": "PushRegisteredDevices", "note": "Pushnotification: registered devices" },
   { "id": "Acpolicy", "note": "策略" },
   { "id": "Acrules", "note": "规则" },
   { "id": "Accontrol", "note": "权限控制" },
@@ -435,6 +439,8 @@
   { "id": "Info_Sign", "note": "信息签名" },
   { "id": "Info_Allowed", "note": "转发信息" },
   { "id": "Info_Type", "note": "信息通道" },
+  { "id": "Info_Hwid", "note": "ID" },
+  { "id": "Info_Model", "note": "Model" },
 
   { "id": "LAYOUT", "note": "布局" },
   { "id": "ShowWalert", "note": "显示告警" },
@@ -514,7 +520,7 @@
 
   { "id": "User_Name", "note": "用户名" },
   { "id": "User_Name_C", "note": "用户名" },
-  { "id": "User_Login", "note": "账号 (login)" },
+  { "id": "User_Login", "note": "Login" },
   { "id": "User_Login_C", "note": "登录" },
   { "id": "User_Pwd", "note": "密码 (不能少于4字符)" },
   { "id": "User_Mainlay", "note": "启动界面" },
@@ -935,6 +941,7 @@
   { "id": "Error_SeeLog", "note": "Error! Details in the log" },
   { "id": "SelectJournalFromMenu", "note": "Select a journal from the menu on the left" },
   { "id": "Button_SendTestMessage", "note": "Send test message" },
+  { "id": "Button_SendTestMessage_С", "note": "Test message" },
 
   { "id": "StdMessage", "note": "Common message" },
   { "id": "WarnMessage", "note": "Warning" },

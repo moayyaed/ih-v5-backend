@@ -1,10 +1,14 @@
 [
   { "id": "Users", "note": "Пользователи" },
   { "id": "User", "note": "Пользователь" },
-  { "id": "Logins", "note": "Учетные записи" },
+  { "id": "Accounts", "note": "Учетные записи" },
+  { "id": "Account", "note": "Учетная запись" },
   { "id": "Admgrp", "note": "Администраторы" },
+  { "id": "Informing", "note": "Информирование" },
   { "id": "Addresses", "note": "Адреса для информирования" },
   { "id": "Usergroups", "note": "Группы информирования" },
+  { "id": "Token", "note": "Токен" },
+  { "id": "PushRegisteredDevices", "note": "Pushnotification: зарегистрированные устройства" },
   { "id": "Acpolicy", "note": "Политики доступа" },
   { "id": "Acrules", "note": "Правила" },
   { "id": "Accontrol", "note": "Управление доступом" },
@@ -475,8 +479,10 @@
   { "id": "INFO", "note": "Информирование" },
   { "id": "Info_Addr", "note": "Адрес (номер)" },
   { "id": "Info_Sign", "note": "Подпись" },
-  { "id": "Info_Allowed", "note": "Отправлять исходящие сообщения" },
+  { "id": "Info_Allowed", "note": "Отправлять сообщения" },
   { "id": "Info_Type", "note": "Канал информирования" },
+  { "id": "Info_Hwid", "note": "ID устройства" },
+  { "id": "Info_Model", "note": "Модель" },
 
   { "id": "LAYOUT", "note": "Экран" },
   { "id": "ShowWalert", "note": "Показ алертов" },
@@ -559,8 +565,8 @@
 
   { "id": "User_Name", "note": "Имя пользователя" },
   { "id": "User_Name_C", "note": "Имя" },
-  { "id": "User_Login", "note": "Учетная запись (login)" },
-  { "id": "User_Login_C", "note": "Login" },
+  { "id": "User_Login", "note": "Логин" },
+  { "id": "User_Login_C", "note": "Логин" },
   { "id": "User_Pwd", "note": "Пароль (не менее 4 символов)" },
   { "id": "User_Mainlay", "note": "Стартовый экран" },
   { "id": "User_Mainlay_C", "note": "Основной экран" },
@@ -999,7 +1005,8 @@
   { "id": "HandlerFunction", "note": "Функция-обработчик" },
   { "id": "Error_SeeLog", "note": "Ошибка! Подробности в логе системы" },
   { "id": "SelectJournalFromMenu", "note": "Выберите журнал в меню слева" },
-  { "id": "Button_SendTestMessage", "note": "Отправить тестовое сообщение" },
+  { "id": "Button_SendTestMessage_С", "note": "Тестовое сообщение" },
+  { "id": "Button_SendTestMessage", "note": "Отправить" },
 
 
   { "id": "StdMessage", "note": "Стандартное сообщение" },
