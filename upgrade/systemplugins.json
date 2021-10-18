@@ -13,6 +13,12 @@
     "version": "5.0.7"
   },
   {
+    "name": "pushnotification",
+    "type": "plugin",
+    "url": "",
+    "version": "1.0.0"
+  },
+  {
     "name": "webconsole",
     "type": "plugin",
     "url": "https://github.com/intrahouseio/ih-v5-webconsole-plugin/archive/refs/tags/v5.0.1.zip",
