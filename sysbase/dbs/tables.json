@@ -835,6 +835,13 @@
     "rows": true
   },
 
+
+  "pushnotifications": {
+    "store": "db",
+    "collection": "pushnotifications",
+    "rows": true
+  },
+
   "imagegroup": {
     "store": "db",
     "collection": "images",
