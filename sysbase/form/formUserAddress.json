@@ -21,7 +21,10 @@
           "prop": "infotype",
           "title": "$Type",
           "type": "droplist",
-          "data": [{ "id": "email", "title": "email" }],
+          "data": [
+            { "id": "email", "title": "email" },
+            { "id": "telegram", "title": "telegram" }
+          ],
           "width": 150
         },
         { "prop": "addr", "title": "$Info_Addr", "type": "input", "width": 150, "hide": "!data.infotype.id" },
