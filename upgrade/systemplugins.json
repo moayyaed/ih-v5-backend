@@ -15,8 +15,8 @@
   {
     "name": "pushnotification",
     "type": "plugin",
-    "url": "",
-    "version": "1.0.0"
+    "url": "https://github.com/intrahouseio/ih-v5-pushnotification-plugin/archive/refs/tags/v5.0.0.zip",
+    "version": "5.0.0"
   },
   {
     "name": "webconsole",
