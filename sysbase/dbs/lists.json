@@ -365,6 +365,10 @@
     ]
   },
 
+  "integrationList": {
+    "data": [{ "id": "applehomekit", "title": "Apple HomeKit" }]
+  },
+
   "mobiletypeList": {
     "table": "mobiletype",
     "propmap": {
