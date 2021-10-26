@@ -1,0 +1,24 @@
+{
+  "grid": [
+    {
+      "id": "p1",
+      "xs": 12,
+      "height": "fill"
+    }
+  ],
+  "type": "menu",
+  
+  
+  "p1": [
+    {
+      "prop": "doclang",
+      "title": "",
+      "type": "submenu",
+      "data": "scenelangs",
+      "leftTitle": "$Langs",
+      "rightTitle": "Portal Info",
+      "toolbar": false,
+      "width": 125
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "grid": [
+    {
+      "id": "p1",
+      "xs": 12,
+      "height": "fill"
+    }
+  ],
+  "type": "menu",
+  
+  
+  "p1": [
+    {
+      "prop": "integrations",
+      "title": "",
+      "type": "submenu",
+      "data": "integrations",
+      "leftTitle": "Integrations",
+      "rightTitle": "Property",
+      "toolbar": false,
+      "width": 125
+    }
+  ]
+}

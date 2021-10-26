@@ -1,0 +1,32 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 6, "class": "main", "table": "portalinfo" },
+    { "id": "p2", "xs": 3, "class": "main", "table": "portalinfo" },
+  
+
+    { "id": "p4", "xs": 3, "class": "main", "table": "portalinfo"}
+   
+  ],
+  "spacing": 10,
+
+  "p1": [
+    { "prop": "title", "title": "Название", "type": "input" }
+    
+  ],
+
+  "p2": [
+    { "prop": "desc", "title": "Описание", "type": "input" }
+    
+    
+  ],
+
+ 
+
+  "p4": [
+    { "prop": "header_image", "title": "Изображение", "type": "header" },
+    { "prop": "image", "title": "Image", "type": "img" },
+    { "prop": "color", "title": "Color", "type": "color" }
+  ]
+
+ 
+}

@@ -1080,5 +1080,16 @@
   "docimage": {
     "store": "db",
     "collection": "docimages"
+  },
+
+  "integrations": {
+    "store": "db",
+    "collection": "integrations"
+  },
+
+  "integrationTable": {
+    "store": "db",
+    "collection": "integrations"
   }
+  
 }

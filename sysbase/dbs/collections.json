@@ -66,5 +66,6 @@
   "dbagents": { "folder": "jbasepath" },
 
   "pages": { "folder": "jbasepath" },
+  "integrations": { "folder": "jbasepath" },
   "docimages": { "folder": "jbasepath" }
 }

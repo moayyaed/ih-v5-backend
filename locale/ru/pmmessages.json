@@ -992,6 +992,7 @@
   { "id": "LastStop", "note": "Время останова" },
   { "id": "Realdevs", "note": "Устройства сценария" },
 
+  { "id": "InputValue", "note": "Присвоить значение" },
   { "id": "ValueStr", "note": "Значение строка" },
   { "id": "SetValue", "note": "Присвоить значение" },
   { "id": "PropertySource", "note": "Источник свойства" },
@@ -1031,6 +1032,7 @@
   { "id": "ChannelWrite", "note":  "Канал для записи"},
   { "id": "Devpropname", "note":  "Свойство устройства для привязки"},
   { "id": "SaveTimeline", "note": "Сохранять для Timeline" },
+  { "id": "Integrations", "note": "Интеграции" },
 
   { "id": "Impref", "note": "Источник" },
   { "id": "Expref", "note": "Префикс для выгрузки" },

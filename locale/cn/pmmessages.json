@@ -927,6 +927,7 @@
   { "id": "LastStop", "note": "Last stop time" },
   { "id": "Realdevs", "note": "Devices" },
 
+  { "id": "InputValue", "note": "Input value" },
   { "id": "ValueStr", "note": "String Value" },
   { "id": "SetValue", "note": "Set Value" },
   { "id": "PropertySource", "note": "Property source" },
@@ -964,6 +965,8 @@
   { "id": "ChannelRead", "note": "Reading channel" },
   { "id": "ChannelWrite", "note": "Writing channel" },
   { "id": "Devpropname", "note": "Device property for link" },
+  { "id": "SaveTimeline", "note": "Save for Timeline" },
+  { "id": "Integrations", "note": "Integrations" },
 
   { "id": "Impref", "note": "Source" },
   { "id": "Expref", "note": "Export prefix" },

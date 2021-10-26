@@ -10,7 +10,8 @@
       "title": "$LatestDBrecords",
       "component": [{ "id": "formDeviceLastRecs", "type": "form" }]
     },
-    { "id": "tabDeviceMobileSetting", "title": "$MobileSetting", "component": [{ "id": "formDeviceMobileSetting", "type": "form" }] }
+    { "id": "tabDeviceMobileSetting", "title": "$MobileSetting", "component": [{ "id": "formDeviceMobileSetting", "type": "form" }] },
+    { "id": "tabDeviceIntegrations", "title": "$Integrations", "component": [{ "id": "formIntegrationSubmenu", "type": "form" }] }
   ],
 
   "defaultTab": "tabDeviceCommon"

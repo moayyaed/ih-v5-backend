@@ -1,0 +1,13 @@
+{
+  "grid": [
+    { "id": "px", "xs": 12, "class": "main", "table":"integrationTable" }
+  
+  ],
+  "spacing": 8,
+ 
+
+  "px": [
+    { "prop": "no_header", "title": "Не установлен плагин для интеграции", "type": "header" }
+
+  ]
+}
