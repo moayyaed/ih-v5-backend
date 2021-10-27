@@ -38,7 +38,7 @@
   { "id": "SCRIPTINSCHEDULE", "note": "脚本被包含在计划中" },
   { "id": "ACCESSDENIED", "note": "拒绝登录!" },
   { "id": "InsuffRights", "note": "Insufficient access rights!" },
-  { "id": "InsuffRightsForAction",  "note":"Insufficient rights for action!"},
+  { "id": "InsuffRightsForAction", "note": "Insufficient rights for action!" },
 
   { "id": "FILEALREADYEXISTS", "note": "文件重名" },
   { "id": "FOLDERALREADYEXISTS", "note": "目录重名!" },
@@ -285,7 +285,6 @@
   { "id": "projectSavedInFolder", "note": "The project is saved in a folder" },
   { "id": "projectTitle", "note": "Project title" },
 
-
   { "id": "admgrp", "note": "Admins" },
   { "id": "usrgrp", "note": "Users" },
   { "id": "gstgrp", "note": "Guests" },
@@ -295,10 +294,10 @@
   { "id": "group", "note": "group" },
   { "id": "user", "note": "user" },
   { "id": "Send", "note": "Send" },
-  
-  
   { "id": "GroupCannotBeRemoved", "note": "The group cannot be deleted!" },
   { "id": "GroupForPMFullAccess", "note": "This is a special group for PM full access." },
+  { "id": "NoDestAddr", "note": "No addresses found for destination" },
+  { "id": "NoAllowedAddr", "note": "No allowed addresses" },
 
   { "id": "StartV4migration", "note": "Uploaded project version V4. Start migration..." },
   { "id": "ProjectSavedAs", "note": "The project is saved as " },

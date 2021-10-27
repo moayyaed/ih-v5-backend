@@ -8,6 +8,7 @@
   "breadcrumbs": { "tree": "users" },
 
   "p1": [
+    { "prop": "_id", "title": "ID пользователя", "type": "text" },
     { "prop": "name", "title": "$User_Name", "type": "input" },
     { "prop": "login", "title": "$User_Login", "type": "input" },
     { "prop": "pwd", "title": "$User_Pwd", "type": "password" },
