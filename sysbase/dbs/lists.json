@@ -366,7 +366,10 @@
   },
 
   "integrationList": {
-    "data": [{ "id": "applehomekit", "title": "Apple HomeKit" }]
+    "data": [
+      { "id": "mobile", "title": "IH Smart Home" },
+      { "id": "applehomekit", "title": "Apple HomeKit" }
+    ]
   },
 
   "mobiletypeList": {
