@@ -1033,6 +1033,7 @@
   { "id": "Devpropname", "note":  "Свойство устройства для привязки"},
   { "id": "SaveTimeline", "note": "Сохранять для Timeline" },
   { "id": "Integrations", "note": "Интеграции" },
+  { "id": "NoIntegrationPlugin", "note": "Не установлен плагин для интеграции" },
 
   { "id": "Impref", "note": "Источник" },
   { "id": "Expref", "note": "Префикс для выгрузки" },

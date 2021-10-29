@@ -967,6 +967,7 @@
   { "id": "Devpropname", "note": "Device property for link" },
   { "id": "SaveTimeline", "note": "Save for Timeline" },
   { "id": "Integrations", "note": "Integrations" },
+  { "id": "NoIntegrationPlugin", "note": "Integration plugin not installed" },
 
   { "id": "Impref", "note": "Source" },
   { "id": "Expref", "note": "Export prefix" },
