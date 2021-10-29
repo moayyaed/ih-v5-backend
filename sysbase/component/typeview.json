@@ -6,11 +6,6 @@
     { "id": "tabTypeAlerts", "title": "$Alerts", "component": [{ "id": "formTypeAlerts", "type": "form" }] },
     { "id": "tabTypeDevicesTable", "title": "$Usage", "component": [{ "id": "formTypeDevicesTable", "type": "form" }] },
     {
-      "id": "tabTypeMobileSetting",
-      "title": "$MobileCustomization",
-      "component": [{ "id": "formTypeMobileSetting", "type": "form" }]
-    },
-    {
       "id": "tabTypeIntegrations",
       "title": "$Integrations",
       "component": [{ "id": "formTypeIntegrationSubmenu", "type": "form" }]

@@ -5,20 +5,16 @@
     { "id": "tabDeviceDb", "title": "$Dev_dbmet", "component": [{ "id": "formDeviceDb", "type": "form" }] },
     { "id": "tabDeviceLog", "title": "$LOG", "component": [{ "id": "formOneDeviceLogTable", "type": "form" }] },
     { "id": "tabDeviceUsage", "title": "$Usage", "component": [{ "id": "formDeviceUsage", "type": "form" }] },
-    {
-      "id": "tabDeviceLastRecs",
-      "title": "$LatestDBrecords",
-      "component": [{ "id": "formDeviceLastRecs", "type": "form" }]
-    },
-    {
-      "id": "tabDeviceMobileSetting",
-      "title": "$MobileSetting",
-      "component": [{ "id": "formDeviceMobileSetting", "type": "form" }]
-    },
+    
     {
       "id": "tabDeviceIntegrations",
       "title": "$Integrations",
       "component": [{ "id": "formIntegrationSubmenu", "type": "form" }]
+    },
+    {
+      "id": "tabDeviceLastRecs",
+      "title": "$LatestDBrecords",
+      "component": [{ "id": "formDeviceLastRecs", "type": "form" }]
     }
   ],
 

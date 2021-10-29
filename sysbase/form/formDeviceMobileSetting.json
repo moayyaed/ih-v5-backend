@@ -1,15 +1,15 @@
 {
   "grid": [
-    { "id": "px", "xs": 12, "class": "main", "table": "device", "hide": "data.px.mob" },
+    { "id": "px", "xs": 2, "class": "main", "table": "device" },
     { "id": "p1", "xs": 6, "class": "main", "table": "mobiledevice", "hide": "!data.px.mob" },
-    { "id": "p2", "xs": 6, "class": "main", "table": "mobiledevice", "hide": "!data.px.mob" },
-    { "id": "p4", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.px.mob || !data.p1.customimg" },
+    { "id": "p2", "xs": 4, "class": "main", "table": "mobiledevice", "hide": "!data.px.mob" },
+    { "id": "p4", "xs": 3, "class": "main", "table": "mobiledevice", "hide": "!data.px.mob || !data.p2.customimg" },
     {
       "id": "p5",
       "xs": 3,
       "class": "main",
       "table": "mobiledevice",
-      "hide": "!data.px.mob || !data.p1.customimg"
+      "hide": "!data.px.mob || !data.p2.customimg"
     },
 
     {
@@ -31,14 +31,11 @@
       "height": 250
     }
   ],
-  
-  "spacing": 10,
-  "updateTreeFromTable":"NO",
 
-  "px": [
-    { "prop": "mob", "title": "", "type": "text", "hide": "1==1" },
-    { "prop": "no_header", "title": "Это устройство в мобильном не используется", "type": "header", "size": "h6" }
-  ],
+  "spacing": 10,
+  "updateTreeFromTable": "NO",
+
+  "px": [{ "prop": "mob", "title": "$UseInMobile", "type": "cb" }],
 
   "p1": [
     { "prop": "cl", "title": "Класс для мобильного", "type": "text", "hide": "1==1" },
@@ -73,12 +70,12 @@
         { "id": "710", "title": "$TYPE_WATER_NC", "hide": "data.p1.cl != 'ActorD'" }
       ]
     },
-    { "prop": "customimg", "title": "Настроить изображение для этого устройства", "type": "cb" }
+    { "prop": "subs", "title": "Подсистема", "type": "droplist", "data": "taglist" },
+    { "prop": "place_room", "title": "Помещение", "type": "droplist", "data": "mobilePlaceList" }
   ],
 
   "p2": [
-    { "prop": "subs", "title": "Подсистема", "type": "droplist", "data": "taglist" },
-    { "prop": "place_room", "title": "Помещение", "type": "droplist", "data": "mobilePlaceList" },
+    { "prop": "customimg", "title": "Настроить изображение для этого устройства", "type": "cb" },
     { "prop": "typesetting", "title": "На вкладке настройка показать свойства типа", "type": "cb" },
     { "prop": "scenesetting", "title": "На вкладке настройка показать параметры сценариев", "type": "cb" }
   ],
