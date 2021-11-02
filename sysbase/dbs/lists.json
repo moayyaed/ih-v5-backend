@@ -98,22 +98,22 @@
 
   "fuseList": {
     "data": [
-      { "id": 0, "title": "Не используется" },
-      { "id": 1, "title": "Встроенный" },
-      { "id": 2, "title": "Пользовательский" }
+      { "id": 0, "title": "$NotUsed" },
+      { "id": 1, "title": "$Build-in" },
+      { "id": 2, "title": "$Custom" }
     ]
   },
 
   "formatList": {
     "data": [
-      { "id": 0, "title": "Не используется" },
-      { "id": 1, "title": "Встроенный" },
-      { "id": 2, "title": "Пользовательский" },
+      { "id": 0, "title": "$NotUsed" },
+      { "id": 1, "title": "$Build-in" },
+      { "id": 2, "title": "$Custom" },
 
-      { "id": "dtsec", "title": "Время dd.mm.yyyy hh:mm:ss" },
-      { "id": "dtms", "title": "Время dd.mm.yy hh:mm:ss.ms" },
-      { "id": "period1", "title": "Период  дн час мин" },
-      { "id": "period2", "title": "Период  час мин сек" }
+      { "id": "dtsec", "title": "$Time_dd_mm_yyyy_hh_mm_ss" },
+      { "id": "dtms", "title": "$Time_dd_mm_yy_hh_mm_ss_ms" },
+      { "id": "period1", "title": "$Period_days_hours_min" },
+      { "id": "period2", "title": "$Period_hours_min_sec" }
     ]
   },
 
@@ -191,22 +191,22 @@
 
   "dbretentionList": {
     "data": [
-      { "id": 1, "title": "1 день" },
-      { "id": 7, "title": "7 дней" },
-      { "id": 15, "title": "15 дней" },
-      { "id": 30, "title": "30 дней" },
-      { "id": 90, "title": "90 дней" },
-      { "id": 180, "title": "180 дней" },
-      { "id": 360, "title": "360 дней" },
-      { "id": 500, "title": "500 дней" },
-      { "id": "~", "title": "Бессрочно" }
+      { "id": 1, "title": "$1d" },
+      { "id": 7, "title": "$7d" },
+      { "id": 15, "title": "$15d" },
+      { "id": 30, "title": "$30d" },
+      { "id": 90, "title": "$90d" },
+      { "id": 180, "title": "$180d" },
+      { "id": 360, "title": "$360d" },
+      { "id": 500, "title": "$500d" },
+      { "id": "~", "title": "$Indefinitely" }
     ]
   },
 
   "logicalOperList": {
     "data": [
-      { "id": "and", "title": "И" },
-      { "id": "or", "title": "ИЛИ" }
+      { "id": "and", "title": "$AND" },
+      { "id": "or", "title": "$OR" }
     ]
   },
   "digitalOperList": {
@@ -256,20 +256,20 @@
 
   "HiLoList": {
     "data": [
-      { "id": "Norm", "title": "Норма" },
-      { "id": "Alert", "title": "Тревога" },
-      { "id": "LoLo", "title": "НАП: Нижний аварийный предел" },
-      { "id": "Lo", "title": "НПП: Нижний предупредительный предел" },
-      { "id": "Hi", "title": "ВПП: Верхний предупредительный предел" },
-      { "id": "HiHi", "title": "ВАП: Верхний аварийный предел" }
+      { "id": "Norm", "title": "$Norm" },
+      { "id": "Alert", "title": "$Alert" },
+      { "id": "LoLo", "title": "$LoLo" },
+      { "id": "Lo", "title": "$Lo" },
+      { "id": "Hi", "title": "$Hi" },
+      { "id": "HiHi", "title": "$HiHi" }
     ]
   },
 
   "alertToCloseList": {
     "data": [
-      { "id": "norm", "title": "При нормализации" },
-      { "id": "ack", "title": "При квитировании" },
-      { "id": "normAndAck", "title": "Квитирование+нормализация" }
+      { "id": "norm", "title": "$norm" },
+      { "id": "ack", "title": "$ack" },
+      { "id": "normAndAck", "title": "$normAndAck" }
     ]
   },
 
@@ -277,8 +277,8 @@
     "data": [
       { "id": "dn", "title": "$Dev_Id" },
       { "id": "name", "title": "$Name" },
-      { "id": "placeStr", "title": "Место размещения - строка" },
-      { "id": "placePath", "title": "Место размещения - путь" }
+      { "id": "placeStr", "title": "$placeStr" },
+      { "id": "placePath", "title": "$placePath" }
     ]
   },
 
@@ -302,10 +302,10 @@
 
   "classV4List": {
     "data": [
-      { "id": "SensorD", "title": "Дискретный датчик", "deftype": "100" },
-      { "id": "SensorA", "title": "Аналоговый датчик", "deftype": "200" },
-      { "id": "ActorD", "title": "Дискретный актуатор", "deftype": "500" },
-      { "id": "ActorA", "title": "Аналоговый актуатор", "deftype": "501" }
+      { "id": "SensorD", "title": "$SensorD", "deftype": "100" },
+      { "id": "SensorA", "title": "$SensorA", "deftype": "200" },
+      { "id": "ActorD", "title": "$ActorD", "deftype": "500" },
+      { "id": "ActorA", "title": "$ActorA", "deftype": "501" }
     ]
   },
 
@@ -359,16 +359,14 @@
 
   "accesslevelList": {
     "data": [
-      { "id": 0, "title": "Нет доступа" },
-      { "id": 1, "title": "Ограниченный доступ" },
-      { "id": 2, "title": "Полный доступ" }
+      { "id": 0, "title": "$NoAccess" },
+      { "id": 1, "title": "$LimitedAccess" },
+      { "id": 2, "title": "$FullAccess" }
     ]
   },
 
   "integrationList": {
-    "data": [
-      { "id": "mobile", "title": "IH Smart Home", "i_devices":1 , "i_types":1 }
-    ]
+    "data": [{ "id": "mobile", "title": "IH Smart Home", "i_devices": 1, "i_types": 1 }]
   },
 
   "mobiletypeList": {

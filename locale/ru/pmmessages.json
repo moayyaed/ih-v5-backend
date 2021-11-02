@@ -392,10 +392,10 @@
   { "id": "Rule_Effect", "note": "Результат при выполнении условия" },
   { "id": "Rule_Target", "note": "Целевое условие" },
 
-  { "id": "Chart_Leftaxis_title", "note": "Левая ось - надпись" },
+  { "id": "Chart_Leftaxis_note", "note": "Левая ось - надпись" },
   { "id": "Chart_Rightaxis_C", "note": "Правая ось" },
   { "id": "Chart_Rightaxis", "note": "Используется правая ось" },
-  { "id": "Chart_Rightaxis_title", "note": "Правая ось - надпись" },
+  { "id": "Chart_Rightaxis_note", "note": "Правая ось - надпись" },
   { "id": "Chart_Widget_type", "note": "Тип" },
   { "id": "Chart_Txt", "note": "Текст для навигатора" },
   { "id": "Chart_Legend", "note": "Легенда" },
@@ -538,8 +538,8 @@
   { "id": "PopupWin_Type", "note": "Тип окна" },
   { "id": "PopupWin_TextButtonOk", "note": "Текст кнопки Ok" },
   { "id": "PopupWin_TextButtonHide", "note": "Текст кнопки Hide" },
-  { "id": "PopupWin_BackgroundColorTitle", "note": "Цвет фона заголовка" },
-  { "id": "PopupWin_TextColorTitle", "note": "Цвет текста заголовка" },
+  { "id": "PopupWin_BackgroundColornote", "note": "Цвет фона заголовка" },
+  { "id": "PopupWin_TextColornote", "note": "Цвет текста заголовка" },
   { "id": "PopupWin_BackgroundColorBody", "note": "Цвет фона контента" },
   { "id": "PopupWin_TextColorBody", "note": "Цвет текста контента" },
   { "id": "PopupWin_BackgroundColorBottom", "note": "Цвет фона подвала" },
@@ -582,7 +582,6 @@
 
   { "id": "User_Admin", "note": "Режим разработчика" },
   { "id": "User_Noencrypt", "note": "Отключить шифрование" },
-
 
   { "id": "Roles", "note": "Роли" },
   { "id": "Developers", "note": "Разработчики" },
@@ -909,7 +908,7 @@
 
   { "id": "Ruledn_pref", "note": "Префикс при именовании нового устройства" },
   { "id": "Ruledn_pref_C", "note": "Префикс" },
-  { "id": "Ruledn_len", "note": "Длина при именовании нового устройства " },
+
   { "id": "LinkToDeviceProperty", "note": "Привязка к устройcтву" },
   { "id": "Var_Id", "note": "Имя переменной" },
   { "id": "SetDef", "note": "Присваивать значение по умолчанию при старте сервера" },
@@ -929,10 +928,10 @@
 
   { "id": "Journal", "note": "Журнал" },
   { "id": "AlertJournal", "note": "Журнал тревог" },
-  { "id": "JournalTitle_mainlog", "note": "Данные главного журнала" },
-  { "id": "JournalTitle_alertlog", "note": "Тревоги" },
-  { "id": "JournalTitle_pluginlog", "note": "Данные плагинов" },
-  { "id": "JournalTitle_authlog", "note": "Данные авторизации" },
+  { "id": "Journalnote_mainlog", "note": "Данные главного журнала" },
+  { "id": "Journalnote_alertlog", "note": "Тревоги" },
+  { "id": "Journalnote_pluginlog", "note": "Данные плагинов" },
+  { "id": "Journalnote_authlog", "note": "Данные авторизации" },
   { "id": "AlertLogRecords", "note": "Текущие записи" },
   { "id": "AlertTriggers", "note": "Триггеры" },
   { "id": "Handler", "note": "Обработчик" },
@@ -942,6 +941,9 @@
   { "id": "RemoteAccess", "note": "Удаленный доступ" },
   { "id": "Console", "note": "Консоль" },
   { "id": "Processes", "note": "Процессы" },
+  { "id": "Process", "note": "Процесс" },
+  { "id": "ProcessLog", "note": "Лог процесса" },
+
   { "id": "Common", "note": "Описание" },
   { "id": "CodeEditor", "note": "Редактор" },
   { "id": "ExportParameters", "note": "Параметры для выгрузки" },
@@ -965,7 +967,10 @@
   { "id": "KeyP2P", "note": "Ключ P2P" },
   { "id": "StatusP2P", "note": "Состояние связи" },
   { "id": "ServiceP2P", "note": "Адрес сервиса для удаленного входа: https://p2p.ih-systems.com" },
-  { "id": "LimitedMode", "note": "Число привязанных каналов превышает доступные! Исполнительная система переведена в режим ограниченного функционала!" },
+  {
+    "id": "LimitedMode",
+    "note": "Число привязанных каналов превышает доступные! Исполнительная система переведена в режим ограниченного функционала!"
+  },
   { "id": "LicenseKey", "note": "Лицензионный ключ" },
   { "id": "Product", "note": "Продукт" },
   { "id": "LicenseStatus", "note": "Статус" },
@@ -1009,7 +1014,6 @@
   { "id": "Button_SendTestMessage_С", "note": "Тестовое сообщение" },
   { "id": "Button_SendTestMessage", "note": "Отправить" },
 
-
   { "id": "StdMessage", "note": "Стандартное сообщение" },
   { "id": "WarnMessage", "note": "Предупреждение" },
   { "id": "ExtraMessage", "note": "Авария" },
@@ -1028,17 +1032,65 @@
   { "id": "NewRoute", "note": "Новый маршрут" },
   { "id": "ExpertMode", "note": "Режим эксперт" },
   { "id": "InsuffRights", "note": "Недостаточно прав для доступа." },
-  { "id": "ChannelRead", "note":  "Канал для чтения"},
-  { "id": "ChannelWrite", "note":  "Канал для записи"},
-  { "id": "Devpropname", "note":  "Свойство устройства для привязки"},
+  { "id": "ChannelRead", "note": "Канал для чтения" },
+  { "id": "ChannelWrite", "note": "Канал для записи" },
+  { "id": "Devpropname", "note": "Свойство устройства для привязки" },
   { "id": "SaveTimeline", "note": "Сохранять для Timeline" },
   { "id": "Integrations", "note": "Интеграции" },
   { "id": "NoIntegrationPlugin", "note": "Не установлен плагин для интеграции" },
+
+  { "id": "NoAccess", "note": "Нет доступа" },
+  { "id": "LimitedAccess", "note": "Ограниченный доступ" },
+  { "id": "FullAccess", "note": "Полный доступ" },
+  { "id": "placeStr", "note": "Место размещения (строка)" },
+  { "id": "placePath", "note": "Место размещения (путь)" },
+  { "id": "NotUsed", "note": "Встроенный" },
+  { "id": "Build-in", "note": "Встроенный" },
+  { "id": "Custom", "note": "Пользовательский" },
+  { "id": "Time_dd_mm_yyyy_hh_mm_ss", "note": "Время dd.mm.yyyy hh:mm:ss" },
+  { "id": "Time_dd_mm_yy_hh_mm_ss_ms", "note": "Время dd.mm.yy hh:mm:ss.m" },
+  { "id": "Period_days_hours_min", "note": "Период  дн час мин" },
+  { "id": "Period_hours_min_sec", "note": "Период  час мин сек" },
+
+  { "id": "AND", "note": "И" },
+  { "id": "OR", "note": "ИЛИ" },
+
+  { "id": "norm", "note": "При нормализации" },
+  { "id": "ack", "note": "При квитировании" },
+  { "id": "normAndAck", "note": "Квитирование+нормализация" },
+
+  { "id": "Norm", "note": "Норма" },
+  { "id": "Alert", "note": "Тревога" },
+  { "id": "LoLo", "note": "НАП: Нижний аварийный предел" },
+  { "id": "Lo", "note": "НПП: Нижний предупредительный предел" },
+  { "id": "Hi", "note": "ВПП: Верхний предупредительный предел" },
+  { "id": "HiHi", "note": "ВАП: Верхний аварийный предел" },
+
+  { "id": "1d", "note": "1 день" },
+  { "id": "7d", "note": "7 дней" },
+  { "id": "15d", "note": "15 дней" },
+  { "id": "30d", "note": "30 дней" },
+  { "id": "90d", "note": "90 дней" },
+  { "id": "180d", "note": "180 дней" },
+  { "id": "360d", "note": "360 дней" },
+  { "id": "500d", "note": "500 дней" },
+  { "id": "Indefinitely", "note": "Бессрочно" },
+
+  { "id": "SystemIndicator", "note": "Системный индикатор" },
+  { "id": "Module", "note": "Модуль" },
+  { "id": "memrss_kb", "note": "Выделено памяти всего(RSS), Кб" },
+  { "id": "memheap_kb", "note": "В т.ч. динамической всего, Кб" },
+  { "id": "memhuse_kb", "note": "Используется динамической, Кб" },
+  { "id": "uptime", "note": "Аптайм" },
+  { "id": "Blocked", "note": "Блокирован" },
+  { "id": "Duration_ms", "note": "Длительность, мс" },
+  { "id": "minDuration_ms", "note": "Мin длительность, мс" },
+  { "id": "maxDuration_ms", "note": "Max длительность, мс" },
+  { "id": "qLaunches", "note": "Всего запусков" },
+
 
   { "id": "Impref", "note": "Источник" },
   { "id": "Expref", "note": "Префикс для выгрузки" },
   { "id": "Exid", "note": "ID для выгрузки" },
   { "id": "Portal", "note": "Портал" }
-
-
 ]

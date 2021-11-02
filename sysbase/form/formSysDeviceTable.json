@@ -9,14 +9,14 @@
       "prop": "sysdevicesTreeTable",
 
       "columns": [
-        { "prop": "module", "title": "Модуль", "type": "text", "width": 128 },
-        { "prop": "title", "title": "Процесс", "type": "link", "command": "forward", "width": 128, "filter": true },
-        { "prop": "stateStr", "title": "Состояние", "type": "text", "width": 128, "filter": true },
-        { "prop": "memrss", "title": "Выделено памяти всего(RSS), Кб", "type": "text", "width": 128 },
-        { "prop": "memheap", "title": "В т.ч. динамической всего, Кб", "type": "text", "width": 128 },
-        { "prop": "memhuse", "title": "Используется динамической, Кб", "type": "text", "width": 120 },
-        { "prop": "laststartStr", "title": "Время запуска", "type": "text", "width": 128 },
-        { "prop": "uptime", "title": "Аптайм", "type": "text", "width": 80 },
+        { "prop": "module", "title": "$Module", "type": "text", "width": 128 },
+        { "prop": "title", "title": "$Process", "type": "link", "command": "forward", "width": 128, "filter": true },
+        { "prop": "stateStr", "title": "$State", "type": "text", "width": 128, "filter": true },
+        { "prop": "memrss", "title": "$memrss_kb", "type": "text", "width": 128 },
+        { "prop": "memheap", "title": "$memheap_kb", "type": "text", "width": 128 },
+        { "prop": "memhuse", "title": "$memhuse_kb", "type": "text", "width": 120 },
+        { "prop": "laststartStr", "title": "$LastStart", "type": "text", "width": 128 },
+        { "prop": "uptime", "title": "$uptime", "type": "text", "width": 80 },
         { "prop": "rowbutton", "title": "", "type": "button", "width": 150, "hide": "!data.rowbutton.title" }
       ]
     }
