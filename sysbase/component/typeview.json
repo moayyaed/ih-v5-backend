@@ -9,9 +9,7 @@
       "id": "tabTypeIntegrations",
       "title": "$Integrations",
       "component": [{ "id": "formTypeIntegrationSubmenu", "type": "form" }]
-    },
-
-    { "id": "tabTypeExport", "title": "$ExportParameters", "component": [{ "id": "formTypeExport", "type": "form" }] }
+    }
   ],
   "defaultTab": "tabTypeCommon"
 }
