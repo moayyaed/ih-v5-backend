@@ -19,7 +19,7 @@
       "columns": [
         {
           "prop": "infotype",
-          "title": "$Type",
+          "title": "$Info_Type",
           "type": "droplist",
           "data": [
             { "id": "email", "title": "email" },
