@@ -1106,8 +1106,12 @@
   { "id": "atSunrise", "note": "At dawn" },
   { "id": "atSunset", "note": "At sunset" },
   { "id": "byCron", "note": "By the cron rule" },
-
   { "id": "cronRule", "note": "Cron Rule (* * * * *)" },
+
+  { "id": "Devhard_Calc", "note": "Formula for calculating the input value" },
+  { "id": "Devhard_Calc_Out", "note": "Formula for calculating the output value for actuators" },
+  { "id": "ChannelID", "note": "Channel ID" },
+  { "id": "Devpropname_forlink", "note": "Device property for auto-binding" },
 
   { "id": "Impref", "note": "Source" },
   { "id": "Expref", "note": "Export prefix" },
