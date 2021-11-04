@@ -19,11 +19,11 @@
 
       "columns": [
         { "prop": "name", "title": "$Name", "type": "text",  "width": 150, "filter":true },
-        { "prop": "state", "title": "Состояние", "type": "text",  "width": 150, "filter":true },
-        { "prop": "laststart", "title": "Время запуска", "type": "text",  "width": 150, "filter":true },
-        { "prop": "laststop", "title": "Время останова", "type": "text",  "width": 150, "filter":true },
-        { "prop": "uptime", "title": "Uptime", "type": "text",  "width": 150, "filter":true },
-        { "prop": "error", "title": "Ошибка", "type": "text", "width": 250 }
+        { "prop": "state", "title": "$State", "type": "text",  "width": 150, "filter":true },
+        { "prop": "laststart", "title": "$LastStart", "type": "text",  "width": 150, "filter":true },
+        { "prop": "laststop", "title": "$LastStop", "type": "text",  "width": 150, "filter":true },
+        { "prop": "uptime", "title": "$Uptime", "type": "text",  "width": 150, "filter":true },
+        { "prop": "error", "title": "$Error", "type": "text", "width": 250 }
       ]
     }
   ]

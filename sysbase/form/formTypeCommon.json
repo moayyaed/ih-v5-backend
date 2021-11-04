@@ -12,33 +12,33 @@
     { "prop": "tags", "title": "Tags", "type": "tags", "data": "taglist" }
   ],
   "p2": [
-    { "prop": "scripts_header", "title": "Обработчики", "type": "header" },
-    { "prop": "scriptOnChange", "title": "При изменении свойств устройства или глобальных переменных", "type": "cb" },
+    { "prop": "scripts_header", "title": "$Handlers", "type": "header" },
+    { "prop": "scriptOnChange", "title": "$оnChangeDeviceOrGlobalVar", "type": "cb" },
    
   
     {
       "prop": "par_OnChange",
-      "title": "Свойства (* - любое)",
+      "title": "$PropCSLis",
       "type": "input",
       "hide": "!data.p2.scriptOnChange"
     },
     {
       "prop": "par2_OnChange",
-      "title": "Глобальная переменная",
+      "title": "$GlobalVar",
       "type": "droplist",
       "data":"globalList",
       "hide": "!data.p2.scriptOnChange"
     },
 
-    { "prop": "scriptOnInterval", "title": "Циклически ", "type": "cb" },
+    { "prop": "scriptOnInterval", "title": "$Cyclically ", "type": "cb" },
     {
       "prop": "par_OnInterval",
-      "title": "С интервалом (сек)",
+      "title": "$WithInterval_sec",
       "type": "input",
       "hide": "!data.p2.scriptOnInterval",
       "default":600
     },
-    { "prop": "scriptOnSchedule", "title": "По расписанию ", "type": "cb" },
+    { "prop": "scriptOnSchedule", "title": "$OnSchedule ", "type": "cb" },
     {
       "prop": "par_OnSchedule",
       "title": "",
@@ -46,25 +46,25 @@
       "hide": "!data.p2.scriptOnSchedule",
    
       "data": [
-        { "id": "minutely", "title": "На границе минуты" },
-        { "id": "hourly", "title": "На границе часа" },
-        { "id": "daily", "title": "На границе дня" },
-        { "id": "monthly", "title": "На границе месяца" },
-        { "id": "sunrise", "title": "На рассвете" },
-        { "id": "sunset", "title": "На закате" },
-        { "id": "cron", "title": "По правилу cron" }
+        { "id": "minutely", "title": "$minutely" },
+        { "id": "hourly", "title": "$hourly" },
+        { "id": "daily", "title": "$daily" },
+        { "id": "monthly", "title": "$monthly" },
+        { "id": "sunrise", "title": "$sunrise" },
+        { "id": "sunset", "title": "$sunset" },
+        { "id": "cron", "title": "$cron" }
       ],
       "default":"@hourly"
     },
     {
       "prop": "par2_OnSchedule",
-      "title": "Правило cron (* * * * *)",
+      "title": "$cronRule",
       "type": "input",
       "hide": "!data.p2.scriptOnSchedule || data.p2.par_OnSchedule.id != 'cron'",
       "default":"* * * * *"
       
     },
-    { "prop": "scriptOnBoot", "title": "При запуске системы", "type": "cb" }
+    { "prop": "scriptOnBoot", "title": "$OnSystemBoot", "type": "cb" }
   ],
   "p3": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
 }

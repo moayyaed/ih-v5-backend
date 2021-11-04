@@ -1088,6 +1088,35 @@
   { "id": "maxDuration_ms", "note": "Max длительность, мс" },
   { "id": "qLaunches", "note": "Всего запусков" },
 
+  { "id": "оnChangeDeviceOrGlobalVar", "note": "При изменении свойств устройства или глобальных переменных" },
+  { "id": "OnSchedule", "note": "По расписанию" },
+  { "id": "OnSystemBoot", "note": "При запуске системы" },
+  { "id": "Cyclically", "note": "Циклически" },
+  { "id": "WithInterval_sec", "note": "С интервалом (сек)" },
+
+  { "id": "PropCSList", "note": "Свойства через запятую (* - любое)" },
+  { "id": "GlobalVar", "note": "Глобальная переменная" },
+  { "id": "LocalVar", "note": "Локальная переменная" },
+  { "id": "Channels", "note": "Каналы" },
+  { "id": "ActiveChannels", "note": "Активные каналы" },
+  { "id": "ChannelTable", "note": "Таблица каналов" },
+  { "id": "Debug", "note": "Отладчик" },
+  { "id": "PluginLog", "note": "Лог плагина" },
+  { "id": "PluginParams", "note": "Параметры плагина" },
+  { "id": "StarterModule", "note": "Стартовый модуль" },
+  { "id": "RunAtStartup", "note": "Запуск модуля на старте" },
+  { "id": "UseCustomFrontend", "note": "Использовать frontend проекта" },
+
+
+  { "id": "minutely", "note": "На границе минуты" },
+  { "id": "hourly", "note": "На границе часа" },
+  { "id": "daily", "note": "На границе дня" },
+  { "id": "monthly", "note": "На границе месяца" },
+  { "id": "atSunrise", "note": "На рассвете" },
+  { "id": "atSunset", "note": "На закате" },
+  { "id": "byCron", "note": "По правилу cron" },
+  { "id": "cronRule", "note": "Правило cron (* * * * *)" },
+
 
   { "id": "Impref", "note": "Источник" },
   { "id": "Expref", "note": "Префикс для выгрузки" },

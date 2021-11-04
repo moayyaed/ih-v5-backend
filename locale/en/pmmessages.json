@@ -1078,6 +1078,37 @@
   { "id": "maxDuration_ms", "note": "Max duration, ms" },
   { "id": "qLaunches", "note": "Number of launches" },
 
+  { "id": "оnChangeDeviceOrGlobalVar", "note": "On changing device properties or global variables" },
+  { "id": "OnSchedule", "note": "On Schedule" },
+  { "id": "OnSystemBoot", "note": "On System startup" },
+  { "id": "Cyclically", "note": "Cyclically" },
+  { "id": "WithInterval_sec", "note": "With interval (sec)" },
+
+  { "id": "PropCSList", "note": "Сomma separated list of props (* - any prop)" },
+  { "id": "GlobalVar", "note": "Global Variable" },
+  { "id": "LocalVar", "note": "Local Variable" },
+  { "id": "Channels", "note": "Channels" },
+  { "id": "ActiveChannels", "note": "Active Channels" },
+  { "id": "ChannelTable", "note": "Channel Table" },
+  { "id": "Debug", "note": "Debug" },
+  { "id": "PluginLog", "note": "Plugin Log" },
+  { "id": "PluginParams", "note": "Plugin parameters" },
+  { "id": "StarterModule", "note": "Starter Module" },
+  { "id": "RunAtStartup", "note": "Run the module at startup" },
+  { "id": "UseCustomFrontend", "note": "Use custom Frontend" },
+
+
+
+  { "id": "minutely", "note": "Minutely" },
+  { "id": "hourly", "note": "Hourly" },
+  { "id": "daily", "note": "Daily" },
+  { "id": "monthly", "note": "Monthly" },
+  { "id": "atSunrise", "note": "At dawn" },
+  { "id": "atSunset", "note": "At sunset" },
+  { "id": "byCron", "note": "By the cron rule" },
+
+  { "id": "cronRule", "note": "Cron Rule (* * * * *)" },
+
   { "id": "Impref", "note": "Source" },
   { "id": "Expref", "note": "Export prefix" },
   { "id": "Exid", "note": "Export ID" },

@@ -234,7 +234,7 @@
   { "id": "OnlyOneRootForCopy", "note": "Копировать можно только внутри одного дерева!" },
 
   { "id": "NotFoundInPack", "note": "Файл не найден в пакете." },
-  { "id": "Install", "note": "Установка" },
+  { "id": "Install", "note": "Установить" },
   { "id": "Skipped", "note": "Пропускается." },
   { "id": "CopyError", "note": "Ошибка при копировании" },
   { "id": "EmptyFolder", "note": "Эта папка пуста!" },
@@ -314,6 +314,9 @@
   { "id": "NoDestAddr", "note": "Не найдены адреса информирования для получателя" },
   { "id": "NoAllowedAddr", "note": "Нет адресов для отправки" },
 
+  { "id": "UpdateFound", "note": "Есть обновление" },
+  { "id": "InstallationAvailable", "note": "Доступно для установки" },
+  { "id": "LicenseRequired", "note": "Для установки требуется лицензия" },
 
   { "id": "StartV4migration", "note": "Загружен проект версии V4. Запущена процедура миграции..." },
   { "id": "ProjectSavedAs", "note": "Проект сохранен под именем " },

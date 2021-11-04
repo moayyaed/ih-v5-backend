@@ -18,12 +18,12 @@
   ],
 
   "p2": [
-  { "prop": "useboot", "title": "Запуск модуля на старте", "type": "cb" },
-  { "prop": "useproject_frontend", "title": "Использовать frontend проекта", "type": "cb" }
+  { "prop": "useboot", "title": "$RunAtStartup", "type": "cb" },
+  { "prop": "useproject_frontend", "title": "$UseCustomFrontend", "type": "cb" }
   ],
 
 
 
   "p4": [ 
-    { "prop": "handler", "title": "Стартовый модуль", "type": "script", "disabled": false}]
+    { "prop": "handler", "title": "$StarterModule", "type": "script", "disabled": false}]
 }

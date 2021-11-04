@@ -11,8 +11,8 @@
       "columns": [
         { "prop": "blk", "title": "$Blocked", "type": "text", "width": 50, "filter":true },
         { "prop": "type_link", "title": "$Handler",  "type": "link", "width": 250, "command": "forward" }, { "prop": "prop", "title": "Свойство/команда/событие",  "type": "text", "width": 100 },
-        { "prop": "startStr", "title": "$Laststart", "type": "text", "width": 128},
-        { "prop": "stopStr", "title": "$Laststop", "type": "text", "width": 128},
+        { "prop": "startStr", "title": "$LastStart", "type": "text", "width": 128},
+        { "prop": "stopStr", "title": "$LastStop", "type": "text", "width": 128},
         { "prop": "duration", "title": "$Duration_ms", "type": "text", "width": 128},
         { "prop": "minDuration", "title": "$minDuration_ms", "type": "text", "width": 128},
         { "prop": "maxDuration", "title": "$maxDuration_ms", "type": "text", "width": 128},

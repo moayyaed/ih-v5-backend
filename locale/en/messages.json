@@ -311,6 +311,10 @@
   { "id": "NoDestAddr", "note": "No addresses found for destination" },
   { "id": "NoAllowedAddr", "note": "No allowed addresses" },
 
+  { "id": "UpdateFound", "note": "Update found" },
+  { "id": "InstallationAvailable", "note": "Installation available" },
+  { "id": "LicenseRequired", "note": "License required" },
+
   { "id": "StartV4migration", "note": "Uploaded project version V4. Start migration..." },
   { "id": "ProjectSavedAs", "note": "The project is saved as " },
   {

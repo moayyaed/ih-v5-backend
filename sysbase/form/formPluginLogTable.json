@@ -12,7 +12,7 @@
       "prop": "pluginlogTable",
 
       "columns": [
-        { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 150, "filter": true },
+        { "prop": "realtime_ts", "title": "$LogDateTime", "type": "text", "width": 150, "filter": true },
         { "prop": "unit", "title": "$Plugin", "type": "text",  "width": 150, "filter": true },
         { "prop": "txt", "title": "$Info_Txt", "type": "text",  "width": 550, "filter": true  },
         { "prop": "level", "title": "$LogLevel", "type": "text" ,  "width": 150, "filter": true}

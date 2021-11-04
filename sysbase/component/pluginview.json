@@ -2,14 +2,14 @@
   "tabs": [
     {
       "id": "tabUnitParams",
-      "title": "Параметры плагина",
+      "title": "$PluginParams",
       "component": [{ "id": "formPluginCommon", "type": "form" }]
     },
-    { "id": "tabUnitChannels", "title": "Каналы", "component": [{ "id": "formUnitChannels", "type": "form" }] },
-    { "id": "tabChannelsTable", "title": "Таблица каналов", "component": [{ "id": "formPluginChannelsTable", "type": "form" }] },
-    { "id": "tabPluginDebug", "title": "Отладчик", "component": [{ "id": "formPluginDebug", "type": "form" }] },
-    { "id": "tabPluginLogTable", "title": "Журнал", "component": [{ "id": "formOnePluginLogTable", "type": "form" }] },
-    { "id": "tabPluginOwnLog", "title": "Лог", "component": [{ "id": "formPluginOwnLog", "type": "form" }] }
+    { "id": "tabUnitChannels", "title": "$Channels", "component": [{ "id": "formUnitChannels", "type": "form" }] },
+    { "id": "tabChannelsTable", "title": "$ChannelTable", "component": [{ "id": "formPluginChannelsTable", "type": "form" }] },
+    { "id": "tabPluginDebug", "title": "$Debug", "component": [{ "id": "formPluginDebug", "type": "form" }] },
+    { "id": "tabPluginLogTable", "title": "$LOG", "component": [{ "id": "formOnePluginLogTable", "type": "form" }] },
+    { "id": "tabPluginOwnLog", "title": "$PluginLog", "component": [{ "id": "formPluginOwnLog", "type": "form" }] }
   ],
   "defaultTab": "tabUnitParams"
 }
