@@ -23,17 +23,17 @@
   "p3": [
     { "prop": "deps", "title": "Deps", "type": "cb", "hide": "1==1" },
 
-    { "prop": "nodeps_txt", "title": "Проект не имеет внешних модулей", "type": "header", "hide": "data.p3.deps" },
+    { "prop": "nodeps_txt", "title": "$NoExternalModules", "type": "header", "hide": "data.p3.deps" },
     {
       "prop": "deps_txt",
-      "title": "Для установки npm модуля введите имя пакета",
+      "title": "$Enter_npm_packname_to_install",
       "type": "header",
       "hide": "!data.p3.deps"
     },
     { "prop": "newmodule", "title": "", "type": "input", "hide": "!data.p3.deps" }
   ],
   "p5": [
-    { "prop": "deps_txt", "title": "Установлены npm модули", "type": "header" },
+    { "prop": "deps_txt", "title": "$Installed_npm_Modules", "type": "header" },
     {
       "type": "table",
       "prop": "projectdeps",

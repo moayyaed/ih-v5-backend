@@ -794,6 +794,7 @@
   { "id": "HttpCommand", "note": "Http get request" },
   { "id": "SnapCommand", "note": "Get Snapshot from Camera" },
   { "id": "LogCommand", "note": "Log Command" },
+  { "id": "SaveToLog", "note": "Save to Log" },
   { "id": "SaveToDeviceLog", "note": "Save to Device Log" },
   { "id": "InfoCommand", "note": "Info Command" },
   { "id": "PluginCommand", "note": "Plugin Command" },
@@ -1112,6 +1113,18 @@
   { "id": "Devhard_Calc_Out", "note": "Formula for calculating the output value for actuators" },
   { "id": "ChannelID", "note": "Channel ID" },
   { "id": "Devpropname_forlink", "note": "Device property for auto-binding" },
+
+  { "id": "Installed_npm_Modules", "note": "Installed npm modules" },
+  { "id": "NoExternalModules", "note": "Project has no external modules" },
+  { "id": "Enter_npm_packname_to_install", "note": "To install npm module, enter the package name" },
+
+  { "id": "CurrentValue", "note": "Current Value" },
+  { "id": "TriggerSelection", "note": "Trigger selection" },
+  { "id": "TriggersRunHandler", "note": "Trigger properties for running Handler" },
+  { "id": "UseSnippetToCalcValue", "note": "Use snippet to calculate value" },
+  { "id": "UseHandlerToCalcValueOnChange", "note": "Use Handler to calculate Value on device properties change" },
+
+
 
   { "id": "Impref", "note": "Source" },
   { "id": "Expref", "note": "Export prefix" },

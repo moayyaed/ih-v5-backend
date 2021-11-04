@@ -1,7 +1,7 @@
 {
   "tabs": [
     { "id": "tabPluginFolder",  "title": "$Plugins", "component": [{ "id": "formPluginFolder", "type": "form" }]  },
-    { "id": "tabPluginTags",  "title": "$ActiveChannel", "component": [{ "id": "formPluginChannelsTable", "type": "form" }]  },
+    { "id": "tabPluginTags",  "title": "$ActiveChannels", "component": [{ "id": "formPluginChannelsTable", "type": "form" }]  },
     { "id": "tabPluginLogTable", "title": "$LOG", "component": [{ "id": "formPluginLogTable", "type": "form" }] }
   ],
   "defaultTab": "tabPluginFolder"

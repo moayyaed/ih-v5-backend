@@ -22,18 +22,18 @@
     { "prop": "name", "title": "$Name", "type": "input" },
     { "prop": "defval", "title": "$DefaultValue", "type": "input", "hide": "data.p1.scriptOnChange" },
     { "prop": "setdef", "title": "$SetDef", "type": "cb", "hide": "data.p1.scriptOnChange" },
-    { "prop": "save", "title": "Сохранять в журнале", "type": "cb" },
+    { "prop": "save", "title": "$SaveToLog", "type": "cb" },
 
     {
       "prop": "scriptOnChange",
-      "title": "Использовать обработчик для расчета значения при изменении свойств устройств",
+      "title": "$UseHandlerToCalcValueOnChange",
       "type": "cb",
       "hide": "data.p1.snipuse"
     },
 
     {
       "prop": "snipuse",
-      "title": "Использовать сниппет для расчета значения",
+      "title": "$UseSnippetToCalcValue",
       "type": "cb",
       "hide": "data.p1.scriptOnChange"
     },
@@ -42,11 +42,11 @@
   ],
 
   "p2": [
-    { "prop": "val", "title": "Текущее значение", "type": "text" },
-    { "prop": "ts", "title": "Время изменения", "type": "text" },
+    { "prop": "val", "title": "$CurrentValue", "type": "text" },
+    { "prop": "ts", "title": "$ctsDateTime", "type": "text" },
     {
       "prop": "_inputval",
-      "title": "Присвоить значение",
+      "title": "$InputValue",
       "type": "input"
     }
   ],
@@ -58,8 +58,8 @@
       "prop": "devicelogTable",
 
       "columns": [
-        { "prop": "realtime_ts", "title": "Время", "type": "text", "width": 150 },
-        { "prop": "val", "title": "Значение", "type": "text", "width": 100 }
+        { "prop": "realtime_ts", "title": "$tsDateTime", "type": "text", "width": 150 },
+        { "prop": "val", "title": "$Value", "type": "text", "width": 100 }
       ]
     }
   ],
@@ -75,15 +75,15 @@
       "columns": [
         {
           "prop": "devtrig",
-          "title": "Свойства-триггеры для запуска обработчика",
+          "title": "$TriggersRunHandler",
           "type": "smartbutton",
           "width": 400,
           "command": "dialog",
-          "params": { "title": "Выбор триггера", "type": "tree", "id": "devprops", "dialog": "devicelink" }
+          "params": { "title": "$TriggerSelection", "type": "tree", "id": "devprops", "dialog": "devicelink" }
         },
         { "prop": "realtime_dev_val", "title": "$Value", "type": "text", "width": 100 },
-        { "prop": "realtime_dev_ts", "title": "$LogDateTime", "type": "text", "width": 150 },
-        { "prop": "realtime_dev_cts", "title": "Изменение", "type": "text", "width": 128 },
+        { "prop": "realtime_dev_ts", "title": "$tsDateTime", "type": "text", "width": 150 },
+        { "prop": "realtime_dev_cts", "title": "$ctsDateTime", "type": "text", "width": 128 },
         { "prop": "realtime_dev_err", "title": "$Error", "type": "text", "width": 128 }
       ]
     }

@@ -15,8 +15,8 @@
         { "prop": "type_propname", "title": "$Name", "type": "text", "width": 150 },
       
         { "prop": "realtime_dev_val", "title": "$Value", "type": "text", "width": 100 },
-        { "prop": "realtime_dev_ts", "title": "$LogDateTime", "type": "text", "width": 150 },
-        { "prop": "realtime_dev_cts", "title": "Изменение", "type": "text", "width": 128 },
+        { "prop": "realtime_dev_ts", "title": "$tsDateTime", "type": "text", "width": 150 },
+        { "prop": "realtime_dev_cts", "title": "$ctsDateTime", "type": "text", "width": 128 },
         { "prop": "realtime_dev_err", "title": "$Error", "type": "text", "width": 128 },
 
         {
