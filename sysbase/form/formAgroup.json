@@ -16,13 +16,13 @@
     { "prop": "all_layouts", "title": "", "type": "text", "hide": "1==1" },
     {
       "prop": "all_layouts_1",
-      "title": "✔︎ Разрешен доступ ко всем экранам",
+      "title": "$All_layouts_1",
       "type": "header",
       "hide": "!data.p2.all_layouts"
     },
     {
       "prop": "all_layouts_0",
-      "title": "▪︎ Доступ к экранам ограничен",
+      "title": "$All_layouts_0",
       "type": "header",
       "hide": "data.p2.all_layouts"
     },
@@ -30,13 +30,13 @@
     { "prop": "all_devctl", "title": "", "type": "text", "hide": "1==1" },
     {
       "prop": "all_devctl_1",
-      "title": "✔︎ Разрешено управление всеми устройствами",
+      "title": "$All_devctl_1",
       "type": "header",
       "hide": "!data.p2.all_devctl"
     },
     {
       "prop": "all_devctl_0",
-      "title": "▪︎ Управление устройствам ограничено",
+      "title": "$All_devctl_0",
       "type": "header",
       "hide": "data.p2.all_devctl"
     },
@@ -44,19 +44,19 @@
     { "prop": "all_pmparts", "title": "", "type": "text", "hide": "1==1" },
     {
       "prop": "all_pmparts_2",
-      "title": "✔︎ PM: Полный доступ",
+      "title": "$All_pmparts_2",
       "type": "header",
       "hide": "data.p2.all_pmparts != 2"
     },
     {
       "prop": "all_pmparts_1",
-      "title": "▪︎ PM: Доступ ограничен",
+      "title": "$All_pmparts_1",
       "type": "header",
       "hide": "data.p2.all_pmparts != 1"
     },
     {
       "prop": "all_pmparts_0",
-      "title": "▪︎ PM: Нет доступа",
+      "title": "$All_pmparts_0",
       "type": "header",
       "hide": "data.p2.all_pmparts"
     }
@@ -64,12 +64,12 @@
 
   "p3": [
     {
-      "title": "Участники",
+      "title": "$Users",
       "type": "table",
       "prop": "agroup_bygroup",
       "popupenable": true,
 
-      "columns": [{ "prop": "userId", "title": "Пользователи", "type": "droplist", "data": "userList", "width": 300 }]
+      "columns": [{ "prop": "userId", "title": "$Users", "type": "droplist", "data": "userList", "width": 300 }]
     }
   ],
 

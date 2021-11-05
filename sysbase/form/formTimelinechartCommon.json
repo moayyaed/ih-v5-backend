@@ -17,13 +17,13 @@
       "popupenable": true,
 
       "columns": [
-        { "prop": "colorgroup", "title": "Группа", "type": "input", "width": 80 },
+        { "prop": "colorgroup", "title": "$Colorgroup", "type": "input", "width": 80 },
       
         {
           "prop": "dn_prop",
           "title": "$Chart_Data_type",
           "type": "smartbutton2",
-          "params": { "variant": "tree", "title": "Выберите свойство", "id": "devprops", "save": false },
+          "params": { "variant": "tree", "title": "$SelectProperty", "id": "devprops", "save": false },
           "width": 350
         },
         { "prop": "legend", "title": "$Legend", "type": "input", "width": 250 }
@@ -40,8 +40,8 @@
 
       "columns": [
       
-        { "prop": "colorgroup", "title": "Группа", "type": "input", "width": 80 },
-        { "prop": "state", "title": "Значение", "type": "input", "width": 120 },
+        { "prop": "colorgroup", "title": "$Colorgroup", "type": "input", "width": 80 },
+        { "prop": "state", "title": "$Value", "type": "input", "width": 120 },
         { "prop": "color", "title": "$Color", "type": "color", "width": 120 }
        
       ]

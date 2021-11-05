@@ -1,7 +1,7 @@
 {
   "tabs": [
     { "id": "tabViscontCommon", "title": "$Common", "component": [{ "id": "formViscontCommon", "type": "form" }] },
-    { "id": "tabViscontEditor", "title": "$CodeEditor", "component": [{ "id": "formViscont", "type": "form" }] },
+    { "id": "tabViscontEditor", "title": "$Editor", "component": [{ "id": "formViscont", "type": "form" }] },
     { "id": "tabViscontExport", "title": "$ExportParameters", "component": [{ "id": "formViscontExport", "type": "form" }] }
   ],
   "defaultTab": "tabViscontCommon"

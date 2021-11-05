@@ -1124,7 +1124,16 @@
   { "id": "UseSnippetToCalcValue", "note": "Use snippet to calculate value" },
   { "id": "UseHandlerToCalcValueOnChange", "note": "Use Handler to calculate Value on device properties change" },
 
+  { "id": "Colorgroup", "note": "Color group" },
+  { "id": "SelectProperty", "note": "Select property" },
 
+  { "id": "All_layouts_1", "note": "✔︎ Allowed access to all screens" },
+  { "id": "All_layouts_0", "note": "▪︎ Access to screens is limited" },
+  { "id": "All_devctl_1", "note": "✔︎ Allowed control of all devices" },
+  { "id": "All_devctl_0", "note": "▪︎ Device control is limited" },
+  { "id": "All_pmparts_2", "note": "✔︎ PM: Full access" },
+  { "id": "All_pmparts_1", "note": "▪︎ PM: Access limited" },
+  { "id": "All_pmparts_0", "note": "▪︎ PM: No access" },
 
   { "id": "Impref", "note": "Source" },
   { "id": "Expref", "note": "Export prefix" },

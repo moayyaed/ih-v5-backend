@@ -1,8 +1,8 @@
 {
   "tabs": [
-    { "id": "tabLayoutCommon", "title": "Описание", "component": [{ "id": "formLayoutCommon", "type": "form" }] },
-    { "id": "tabLayoutEditor", "title": "Редактор", "component": [{ "id": "formLayout", "type": "form" }] },
-    { "id": "tabLayoutExport", "title": "Параметры для выгрузки", "component": [{ "id": "formLayoutExport", "type": "form" }] }
+    { "id": "tabLayoutCommon", "title": "$Common", "component": [{ "id": "formLayoutCommon", "type": "form" }] },
+    { "id": "tabLayoutEditor", "title": "$Editor", "component": [{ "id": "formLayout", "type": "form" }] },
+    { "id": "tabLayoutExport", "title": "$ExportParameters", "component": [{ "id": "formLayoutExport", "type": "form" }] }
   ],
   "defaultTab": "tabLayoutCommon"
 }
