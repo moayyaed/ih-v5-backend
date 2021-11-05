@@ -787,6 +787,18 @@
     "ruleID": { "pref": "r", "len": 3 }
   },
 
+  "reportTable": {
+    "store": "db",
+    "collection": "reports",
+    "genfield": "props",
+
+    "validator": {
+      "props": {
+        "name": { "notempty": true }
+      }
+    }
+  },
+
   "usergroup": {
     "store": "db",
     "collection": "users",

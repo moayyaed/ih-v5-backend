@@ -23,5 +23,11 @@
     "type": "plugin",
     "url": "https://github.com/intrahouseio/ih-v5-webconsole-plugin/archive/refs/tags/v5.0.1.zip",
     "version": "5.0.1"
+  },
+  {
+    "name": "reportmaker",
+    "type": "plugin",
+    "url": "",
+    "version": "5.0.0"
   }
 ]

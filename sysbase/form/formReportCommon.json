@@ -2,29 +2,94 @@
   "grid": [
     { "id": "p1", "xs": 6, "class": "main", "table": "reports" },
     { "id": "p2", "xs": 6, "class": "main", "table": "reports" },
-    { "id": "p3", "xs": 12, "class": "main", "table": "reports", "height": 250 }
+    { "id": "p3", "xs": 12, "class": "main", "table": "reportTable", "height": 250 }
   ],
   "spacing": 10,
-  "breadcrumbs": { "tree": "reports" },
 
   "p1": [
     { "prop": "_id", "title": "ID", "type": "input", "readonly": true },
     { "prop": "name", "title": "$Name", "type": "input" }
   ],
-  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
+  "p2": [
+    { "prop": "txt", "title": "$Comment", "type": "textarea" }
+  ],
   "p3": [
     {
       "title": "$Reports",
       "type": "table",
       "prop": "reportTable",
+      "popupenable": true,
 
       "columns": [
-        { "prop": "id", "title": "ID", "type": "text", "width": 50 },
+      
+        {
+          "prop": "col_type",
+          "title": "$Type",
+          "type": "droplist",
+          "width": 150,
+          "data": [
+            { "id": "sn", "title": "$Sn" },
+            { "id": "date", "title": "$Date" },
+            { "id": "value", "title": "$Value" },
+            { "id": "rowtotal", "title": "$RowTotal" }
+          ]
+        },
         { "prop": "name", "title": "$Name", "type": "input", "width": 250 },
-        { "prop": "calc_type", "title": "$Type", "type": "input", "width": 250 },
+        {
+          "prop": "dn_prop",
+          "title": "$Chart_Data_type",
+          "type": "smartbutton2",
+          "params": { "variant": "tree", "title": "Выберите свойство", "id": "devprops", "save": false },
+          "width": 150,
+          "hide": "data.col_type.id !='value'"
+        },
+
+        {
+          "prop": "calc_type",
+          "title": "$Calculate",
+          "type": "droplist",
+          "width": 250,
+          "hide": "data.col_type.id !='value'",
+          "data": [
+            { "id": "-", "title": "-" },
+            { "id": "sum", "title": "Sum" },
+            { "id": "diff", "title": "Diff" },
+            { "id": "min", "title": "Min" },
+            { "id": "max", "title": "Max" }
+          ]
+        },
+        {
+          "prop": "decdig",
+          "title": "$Decdig",
+          "type": "input",
+          "width": 50,
+          "hide": "data.col_type.id !='value' && data.col_type.id !='rowtotal'"
+        },
         { "prop": "width", "title": "$Width", "type": "number", "width": 50 },
-        { "prop": "align", "title": "$Align", "type": "text", "width": 50 },
-        { "prop": "dn", "title": "Device", "type": "text", "width": 150 }
+        {
+          "prop": "align",
+          "title": "$Align",
+          "width": 50,
+          "type": "droplist",
+          "data": [
+            { "id": "-", "title": "-" },
+            { "id": "left", "title": "left" },
+            { "id": "right", "title": "right" },
+            { "id": "center", "title": "center" },
+            { "id": "justify", "title": "justify" }
+          ]
+        },
+       
+        { "prop": "fontSize", "title": "$FontSize", "type": "number", "width": 50 },
+        { "prop": "italics", "title": "$Italics", "type": "cb", "width": 50 },
+        { "prop": "bold", "title": "$Bold", "type": "cb", "width": 50 },
+        {
+          "prop": "total",
+          "title": "$Calc_Total",
+          "type": "cb",
+          "width": 50,
+          "hide": "data.col_type.id !='value' && data.col_type.id !='rowtotal'"
+        }
       ]
     }
   ]

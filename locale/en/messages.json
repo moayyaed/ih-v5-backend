@@ -316,7 +316,7 @@
   { "id": "user", "note": "user" },
   { "id": "Send", "note": "Send" },
   { "id": "Sending", "note": "Sending" },
-  { "id": "Destination_", "note": Destination " },
+  { "id": "Destination_", "note": "Destination " },
   { "id": "GroupCannotBeRemoved", "note": "The group cannot be deleted!" },
   { "id": "GroupForPMFullAccess", "note": "This is a special group for PM full access." },
   { "id": "NoDestAddr", "note": "No addresses found for destination" },
