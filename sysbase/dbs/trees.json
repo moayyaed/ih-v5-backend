@@ -649,7 +649,7 @@
   "vis": ["layout", "viscont", "dialog", "vistemplate", "visscript", "images"],
   "allscenes": ["scenes", "schedrules"],
   "datasource": ["plugins", "snippets", "restapihandlers"],
-  "analytics": ["charts", "timelinecharts", "reports"],
+  "analytics": ["charts", "timelinecharts"],
 
   "database": ["dbagents"],
   "access": ["users", "agroups", "inforules"],
