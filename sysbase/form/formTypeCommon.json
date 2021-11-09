@@ -18,7 +18,7 @@
   
     {
       "prop": "par_OnChange",
-      "title": "$PropCSLis",
+      "title": "$PropCSList",
       "type": "input",
       "hide": "!data.p2.scriptOnChange"
     },
@@ -30,7 +30,7 @@
       "hide": "!data.p2.scriptOnChange"
     },
 
-    { "prop": "scriptOnInterval", "title": "$Cyclically ", "type": "cb" },
+    { "prop": "scriptOnInterval", "title": "$Cyclically", "type": "cb" },
     {
       "prop": "par_OnInterval",
       "title": "$WithInterval_sec",
@@ -38,7 +38,7 @@
       "hide": "!data.p2.scriptOnInterval",
       "default":600
     },
-    { "prop": "scriptOnSchedule", "title": "$OnSchedule ", "type": "cb" },
+    { "prop": "scriptOnSchedule", "title": "$OnSchedule", "type": "cb" },
     {
       "prop": "par_OnSchedule",
       "title": "",
@@ -50,9 +50,9 @@
         { "id": "hourly", "title": "$hourly" },
         { "id": "daily", "title": "$daily" },
         { "id": "monthly", "title": "$monthly" },
-        { "id": "sunrise", "title": "$sunrise" },
-        { "id": "sunset", "title": "$sunset" },
-        { "id": "cron", "title": "$cron" }
+        { "id": "sunrise", "title": "$atSunrise" },
+        { "id": "sunset", "title": "$atSunset" },
+        { "id": "cron", "title": "$byCron" }
       ],
       "default":"@hourly"
     },
