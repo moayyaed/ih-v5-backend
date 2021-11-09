@@ -204,6 +204,7 @@
   "appbar_settings": "Server Settings",
   "appbar_import": "Import",
   "appbar_bug": "Report Issue",
+  "appbar_refresh": "Refresh",
   "appbar_help": "Help",
   "appbar_network_ok": "Connection established",
   "appbar_network_err": "Connection disconnected",
