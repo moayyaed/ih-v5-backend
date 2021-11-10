@@ -9,7 +9,8 @@
     { "id": "tabChannelsTable", "title": "$ChannelTable", "component": [{ "id": "formPluginChannelsTable", "type": "form" }] },
     { "id": "tabPluginDebug", "title": "$Debug", "component": [{ "id": "formPluginDebug", "type": "form" }] },
     { "id": "tabPluginLogTable", "title": "$LOG", "component": [{ "id": "formOnePluginLogTable", "type": "form" }] },
-    { "id": "tabPluginOwnLog", "title": "$PluginLog", "component": [{ "id": "formPluginOwnLog", "type": "form" }] }
+    { "id": "tabPluginOwnLog", "title": "$PluginLog", "component": [{ "id": "formPluginOwnLog", "type": "form" }] },
+    { "id": "tabModuleEditorSubtree", "title": "Редактор", "component": [{ "id": "formModuleEditorSubtree", "type": "form" }] }
   ],
   "defaultTab": "tabUnitParams"
 }

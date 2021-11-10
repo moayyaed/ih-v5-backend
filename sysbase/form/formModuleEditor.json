@@ -1,0 +1,13 @@
+{
+  "grid": [
+   
+    { "id": "p2", "xs": 12, "class": "main", "table": "units", "height":"fill", "padding":4 }
+   
+  ],
+  "spacing": 10,
+  
+ 
+  "p2": [
+    { "prop": "module", "title": "Code", "type": "script" }
+  ]
+}

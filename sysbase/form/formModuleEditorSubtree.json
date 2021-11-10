@@ -1,0 +1,24 @@
+{
+  "grid": [
+    {
+      "id": "p1",
+      "xs": 12,
+      "class": "main",
+      "height": "fill",
+      "padding": 4
+    }
+  ],
+  "spacing": 10,
+  
+  "p1": [
+    {
+      "prop": "pluginfiles",
+      "title": "",
+      "type": "subtree",
+      "data": "pluginfiles",
+      "leftTitle": "",
+      "rightTitle": "",
+      "toolbar": false
+    }
+  ]
+}
