@@ -902,6 +902,7 @@
   { "id": "NeedDeps", "note": "Проекту требуются внешние модули" },
   { "id": "DevicelogLines", "note": "Число записей в журнале одного устройства" },
   { "id": "MaxDevicelogRecords", "note": "Max число записей по всем устройствам" },
+  { "id": "ClearDevicelog", "note": "Очистить журнал устройства" },
 
   { "id": "ChangeProjectsFolder", "note": "Изменить расположение папки проектов" },
   { "id": "PathToProjects", "note": "Путь к папке с проектами" },
@@ -1133,7 +1134,6 @@
   { "id": "UseSnippetToCalcValue", "note": "Использовать сниппет для расчета значения" },
   { "id": "UseHandlerToCalcValueOnChange", "note": "Использовать обработчик для расчета значения при изменении свойств устройств" },
 
-  
   { "id": "Colorgroup", "note": "Цветовая группа" },
   { "id": "SelectProperty", "note": "Выберите свойство" },
 

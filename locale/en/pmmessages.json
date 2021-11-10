@@ -899,6 +899,10 @@
   { "id": "ChangeProjectsFolder", "note": "Change location of the projects folder" },
   { "id": "NeedDeps", "note": "The project requires external modules" },
   { "id": "DevicelogLines", "note": "Number of lines in the device log" },
+  { "id": "MaxDevicelogRecords", "note": "Max number of records for all devices" },
+  { "id": "ClearDevicelog", "note": "Clear device Log" },
+
+  { "id": "ChangeProjectsFolder", "note": "Change the location of the projects folder" },
   { "id": "PathToProjects", "note": "Path to Projects Foder" },
   { "id": "ProjectsTable", "note": "Projects Table" },
 
