@@ -342,6 +342,11 @@
   { "id": "When_Schedule", "note": "По расписанию" },
   { "id": "When_SystemStarting", "note": "При запуске системы" },
 
+  { "id": "withoutRestart", "note": "без перезапуска" },
+  { "id": "willBeRestarted", "note": "будет перезапущен" },
+  { "id": "withCode_", "note": "с кодом " },
+
+
   { "id": "CheckUpdatesCompleted", "note": "Проверка обновлений выполнена" },
   { "id": "ErrorNoData", "note": "Нет данных!" },
   { "id": "NoCustomProjectPath", "note": "Не указан другой путь для проектов!" },

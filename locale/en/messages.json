@@ -339,6 +339,10 @@
   { "id": "When_Schedule", "note": "Scheduled" },
   { "id": "When_SystemStarting", "note": "When System starting" },
 
+  { "id": "withoutRestart", "note": "without restart" },
+  { "id": "willBeRestarted", "note": "will be restarted" },
+  { "id": "withCode_", "note": "with code " },
+
   { "id": "CheckUpdatesCompleted", "note": "Check for updates completed" },
   { "id": "ErrorNoData", "note": "No data!" },
   { "id": "NoCustomProjectPath", "note": "Empty path specified for projects!" },
