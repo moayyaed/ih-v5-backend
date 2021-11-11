@@ -1113,14 +1113,15 @@
   { "id": "byCron", "note": "By the cron rule" },
   { "id": "cronRule", "note": "Cron Rule (* * * * *)" },
 
-  { "id": "Devhard_Calc", "note": "Formula for calculating the input value" },
-  { "id": "Devhard_Calc_Out", "note": "Formula for calculating the output value for actuators" },
+  { "id": "Devhard_Calc", "note": "Formula for nput value calculating" },
+  { "id": "Devhard_Calc_Out", "note": "Formula for output value calculating" },
   { "id": "ChannelID", "note": "Channel ID" },
   { "id": "Devpropname_forlink", "note": "Device property for auto-binding" },
 
   { "id": "Installed_npm_Modules", "note": "Installed npm modules" },
   { "id": "NoExternalModules", "note": "Project has no external modules" },
   { "id": "Enter_npm_packname_to_install", "note": "To install npm module, enter the package name" },
+  { "id": "Enter_value_to_write", "note": "Please enter a value to write" },
 
   { "id": "CurrentValue", "note": "Current Value" },
   { "id": "TriggerSelection", "note": "Trigger selection" },

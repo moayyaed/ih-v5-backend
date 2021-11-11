@@ -1120,13 +1120,14 @@
   { "id": "cronRule", "note": "Правило cron (* * * * *)" },
 
   { "id": "Devhard_Calc", "note": "Формула расчета входного значения" },
-  { "id": "Devhard_Calc_Out", "note": "Формула расчета выходного значения для актуаторов" },
+  { "id": "Devhard_Calc_Out", "note": "Формула расчета выходного значения" },
   { "id": "ChannelID", "note": "ID Канала" },
   { "id": "Devpropname_forlink", "note": "Свойство устройства при автоматической привязке" },
 
   { "id": "Installed_npm_Modules", "note": "Установлены npm модули" },
   { "id": "NoExternalModules", "note": "Проект не имеет внешних модулей" },
   { "id": "Enter_npm_packname_to_install", "note": "Для установки npm модуля введите имя пакета" },
+  { "id": "Enter_value_to_write", "note": "Введите значение для записи" },
 
   { "id": "CurrentValue", "note": "Текущее значение" },
   { "id": "TriggerSelection", "note": "Выбор триггера" },

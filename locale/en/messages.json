@@ -342,6 +342,7 @@
   { "id": "withoutRestart", "note": "without restart" },
   { "id": "willBeRestarted", "note": "will be restarted" },
   { "id": "withCode_", "note": "with code " },
+  { "id": "Enter_value_to_write", "note": "Please enter a value to write" },
 
   { "id": "CheckUpdatesCompleted", "note": "Check for updates completed" },
   { "id": "ErrorNoData", "note": "No data!" },
