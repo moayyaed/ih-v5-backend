@@ -1046,7 +1046,7 @@
   { "id": "FullAccess", "note": "Полный доступ" },
   { "id": "placeStr", "note": "Место размещения (строка)" },
   { "id": "placePath", "note": "Место размещения (путь)" },
-  { "id": "NotUsed", "note": "Встроенный" },
+  { "id": "NotUsed", "note": "Не используется" },
   { "id": "Build-in", "note": "Встроенный" },
   { "id": "Custom", "note": "Пользовательский" },
   { "id": "Time_dd_mm_yyyy_hh_mm_ss", "note": "Время dd.mm.yyyy hh:mm:ss" },
