@@ -28,12 +28,6 @@
     "name": "comports",
     "type": "tool",
     "url": "https://github.com/intrahouseio/ih-v5-comports-tool/archive/refs/tags/v5.0.0.zip",
-    "version": "5.0.0"
-  },
-  {
-    "name": "reportmaker",
-    "type": "plugin",
-    "url": "",
-    "version": "5.0.0"
+    "version": "5.0.2"
   }
 ]
