@@ -686,6 +686,12 @@
     "genfield": "colors"
   },
 
+
+  "timelinecurrent": {
+    "store": "db",
+    "collection": "timelinecurrent"
+  },
+
   "journalgroup": {
     "store": "db",
     "collection": "journals",

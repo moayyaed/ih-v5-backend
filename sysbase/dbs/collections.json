@@ -24,6 +24,7 @@
   "glcurrent": { "folder": "operativepath", "needCompact":true },
   "alerts": { "folder": "operativepath", "needCompact":true },
   "schedcurrent": { "folder": "operativepath", "needCompact":true },
+  "timelinecurrent": { "folder": "operativepath", "needCompact":true },
 
   "customtables": { "folder": "jbasepath" },
   
