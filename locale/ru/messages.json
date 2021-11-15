@@ -333,6 +333,7 @@
   { "id": "Total", "note": "Всего" },
   { "id": "RunningProcesses", "note": "Работает процессов" },
   { "id": "MultiScene", "note": "Мультисценарий" },
+  { "id": "asString", "note": "в виде строки" },
 
   { "id": "ConditionNotSET!", "note": "УСЛОВИЕ НЕ ЗАДАНО!" },
   { "id": "When_OutputValue", "note": "При выводе значения" },
