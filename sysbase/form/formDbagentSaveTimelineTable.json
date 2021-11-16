@@ -1,0 +1,19 @@
+{
+  "grid": [{ "id": "p3", "xs": 12, "class": "main", "table": "dbsavetimelineTable", "height": "fill" }],
+  "spacing": 10,
+
+  "p3": [
+    {
+      "title": "",
+      "type": "table",
+      "prop": "dbsavetimelineTable",
+
+      "columns": [
+        { "prop": "id", "title": "", "type": "text", "width": 30 },
+        { "prop": "did", "title": "", "type": "link", "width": 300, "command": "forward" },
+        { "prop": "prop", "title": "$Property", "type": "text", "width": 100 },
+        { "prop": "timeline", "title": "$SaveTimeline", "type": "text" }
+      ]
+    }
+  ]
+}

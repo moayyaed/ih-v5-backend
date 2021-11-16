@@ -1,7 +1,8 @@
 {
   "tabs": [
     { "id": "tabDbagentLogTable", "title": "Журнал", "component": [{ "id": "formDbagentLogTable", "type": "form" }] },
-    { "id": "tabDbagentMetrics", "title": "Правила записи в БД", "component": [{ "id": "formDbagentMetricsTable", "type": "form" }] }
+    { "id": "tabDbagentMetrics", "title": "Правила записи в БД", "component": [{ "id": "formDbagentMetricsTable", "type": "form" }] },
+    { "id": "tabDbagentTimelines", "title": "Правила сохранения таймлайнов", "component": [{ "id": "formDbagentSaveTimelineTable", "type": "form" }] }
 
   ],
   "defaultTab": "tabDbagentLogTable"
