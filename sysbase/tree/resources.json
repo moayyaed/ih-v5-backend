@@ -1,0 +1,51 @@
+{
+  "common": {
+    "popup": {
+      "main": []
+    }
+  },
+
+  "sounds": {
+    "root": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "$LoadSound", "command": "upload", "param": "sound" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "6", "type": "item", "title": "$Export", "command": "export", "param": "sound" }
+        ]
+      },
+      "defaultComponent": "soundfolder"
+    },
+    "parent": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "$LoadSound", "command": "upload", "param": "sound" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "$Delete", "command": "delete" },
+          { "id": "5", "type": "divider" },
+          { "id": "6", "type": "item", "title": "$Export", "command": "export", "param": "sound" },
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
+        ]
+      },
+      "defaultComponent": "soundfolder"
+    },
+    "child": {
+      "popup": {
+        "main": [
+          { "id": "1", "type": "item", "title": "$LoadSound", "command": "upload", "param": "sound" },
+          { "id": "2", "type": "item", "title": "$NewFolder", "command": "addFolder" },
+          { "id": "3", "type": "divider" },
+          { "id": "4", "type": "item", "title": "$Delete", "command": "delete" },
+          { "id": "5", "type": "divider" },
+          { "id": "6", "type": "item", "title": "$Export", "command": "export", "param": "sound" },
+          { "id": "7", "type": "divider" },
+          { "id": "8", "type": "item", "title": "$NewTab", "command": "newtab" }
+        ]
+      },
+      "defaultComponent": "soundview"
+    }
+  }
+}

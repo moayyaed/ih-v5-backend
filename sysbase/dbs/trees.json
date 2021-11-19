@@ -659,7 +659,8 @@
 
   "dev": ["devdevices", "sysdevices", "globals", "locals", "types"],
   "vis": ["layout", "viscont", "dialog", "vistemplate", "visscript", "images"],
-  "allscenes": ["scenes", "schedrules", "sounds"],
+  "allscenes": ["scenes", "schedrules"],
+  "resources": ["sounds"],
   "datasource": ["plugins", "snippets", "restapihandlers"],
   "analytics": ["charts", "timelinecharts"],
 
