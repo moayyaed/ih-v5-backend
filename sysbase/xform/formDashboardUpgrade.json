@@ -47,6 +47,14 @@
       "hide": "!data.p4.newbetaversion || !data.p4.usebetasystem"
     },
 
+    {
+      "prop": "rollbackButton",
+      "title": "$BACK_FROM_BETA",
+      "type": "button",
+      "command": "rollback",
+      "hide": "!data.p4.version || !data.p4.version.endsWith('beta')"
+    },
+
     { "prop": "login", "title": "Login", "type": "text" },
 
     {

@@ -892,6 +892,7 @@
   { "id": "CHECKUPDATE", "note": "Проверить обновления" },
   { "id": "UPDATE", "note": "Обновить" },
   { "id": "UPDATEBETA", "note": "Обновить на beta-версию" },
+  { "id": "BACK_FROM_BETA", "note": "Вернуться на стабильную версию" },
   { "id": "RestartIH", "note": "Перезагрузить" },
   { "id": "RestartIHToApply", "note": "Для применения настроек требуется перезагрузка" },
   { "id": "RestartIHWithProject", "note": "Перезагрузить сервер с этим проектом" },

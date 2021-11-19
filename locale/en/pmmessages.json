@@ -888,6 +888,7 @@
   { "id": "CHECKUPDATE", "note": "Check for updates" },
   { "id": "UPDATE", "note": "Upgrade" },
   { "id": "UPDATEBETA", "note": "Upgrade to beta" },
+  { "id": "BACK_FROM_BETA", "note": "Rollback to stable version" },
   { "id": "RestartIH", "note": "Restart server" },
   { "id": "RestartIHToApply", "note": "To apply these settings, you need to restart the server" },
   { "id": "RestartIHWithProject", "note": "Restart server with this project" },
