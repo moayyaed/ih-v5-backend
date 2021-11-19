@@ -1140,6 +1140,10 @@
   { "id": "All_pmparts_1", "note": "▪︎ PM: Access limited" },
   { "id": "All_pmparts_0", "note": "▪︎ PM: No access" },
 
+  { "id": "Sounds", "note": "Sounds" },
+  { "id": "SoundFile", "note": "Sound file" },
+  { "id": "LoadSound", "note": "Load Sound" },
+
   { "id": "Impref", "note": "Source" },
   { "id": "Expref", "note": "Export prefix" },
   { "id": "Exid", "note": "Export ID" },

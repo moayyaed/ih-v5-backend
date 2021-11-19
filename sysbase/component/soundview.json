@@ -1,0 +1,6 @@
+{
+  "tabs": [
+    { "id": "tabSoundView",  "title": "$SoundFile", "component": [{ "id": "formSoundView", "type": "form" }]  }
+  ],
+  "defaultTab": "tabSoundView"
+}

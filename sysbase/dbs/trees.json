@@ -368,6 +368,18 @@
     "expanded": true
   },
 
+
+  "sounds": {
+    "branch": {
+      "table": "soundgroup",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    },
+    "leaf": {
+      "table": "sound",
+      "propmap": { "_id": "id", "name": "title", "parent": "parent", "order": "order", "folder": "folder" }
+    }
+  },
+
   "settings": ["projects", "systemsettings"],
 
   "projects": {
@@ -647,7 +659,7 @@
 
   "dev": ["devdevices", "sysdevices", "globals", "locals", "types"],
   "vis": ["layout", "viscont", "dialog", "vistemplate", "visscript", "images"],
-  "allscenes": ["scenes", "schedrules"],
+  "allscenes": ["scenes", "schedrules", "sounds"],
   "datasource": ["plugins", "snippets", "restapihandlers"],
   "analytics": ["charts", "timelinecharts"],
 

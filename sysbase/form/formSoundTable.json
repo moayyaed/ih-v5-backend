@@ -1,0 +1,23 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table":"soundsTreeTable", "height":"fill"}
+  ],
+  "spacing": 10,
+  
+
+  "p1": [
+    {
+      "title": "Sounds",
+      "type": "table",
+      "prop": "soundsTreeTable",
+
+      "columns": [
+
+        { "prop": "filename", "title": "Имя файла", "type": "text", "command": "forward",  "width": 300, "filter":true  },
+
+        { "prop": "path", "title": "Папка", "type": "text",  "width": 300, "filter":true },
+        { "prop": "error", "title": "", "type": "text",  "width": 200  }
+      ]
+    }
+  ]
+}

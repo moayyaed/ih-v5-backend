@@ -897,6 +897,20 @@
     ]
   },
 
+  "soundgroup": {
+    "store": "db",
+    "collection": "sounds",
+    "filter": { "folder": 1 },
+    "defRootTitle": "$Sounds",
+    "default": { "name": "$NewFolder" },
+    "ruleID": { "pref": "snd", "len": 3 }
+  },
+
+  "sound": {
+    "store": "db",
+    "collection": "sounds"
+  },
+
   "projectgroup": {
     "store": "db",
     "collection": "projects",
@@ -976,6 +990,7 @@
 
   "imagesTreeTable": { "store": "tree", "tree": "images", "rows": true },
   "docimagesTreeTable": { "store": "tree", "tree": "docimages", "rows": true },
+  "soundsTreeTable": { "store": "tree", "tree": "sounds", "rows": true },
 
   "tokens": { "store": "db", "collection": "tokens" },
 

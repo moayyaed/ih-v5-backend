@@ -51,6 +51,7 @@
   
 
   "images": { "folder": "jbasepath" },
+  "sounds": { "folder": "jbasepath" },
 
   "dialogs": { "folder": "jbasepath" },
 

@@ -1,0 +1,7 @@
+{
+  "tabs": [
+    { "id": "tabSoundFolder",  "title": "$Folder", "component": [{ "id": "formSoundFolder", "type": "form" }]  },
+    { "id": "tabSoundTable",  "title": "$Table", "component": [{ "id": "formSoundTable", "type": "form" }]  }
+  ],
+  "defaultTab": "tabSoundFolder"
+}

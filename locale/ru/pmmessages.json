@@ -1146,6 +1146,10 @@
   { "id": "All_pmparts_1", "note": "▪︎ PM: Доступ ограничен" },
   { "id": "All_pmparts_0", "note": "▪︎ PM: Нет доступа" },
 
+  { "id": "Sounds", "note": "Звуки" },
+  { "id": "SoundFile", "note": "Звуковой файл" },
+  { "id": "LoadSound", "note": "Загрузить звуковой файл" },
+
   { "id": "Impref", "note": "Источник" },
   { "id": "Expref", "note": "Префикс для выгрузки" },
   { "id": "Exid", "note": "ID для выгрузки" },

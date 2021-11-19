@@ -1,0 +1,20 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 6, "class": "main", "table": "sound", "height":"fill" }
+ 
+  ],
+  "spacing": 10,
+ 
+
+  "p1": [
+    { "prop": "_id", "title": "$SoundFile", "type": "text" },
+    {
+      "prop": "playButton",
+      "title": "Воспроизвести",
+      "type": "button",
+      "command": "playsound",
+      "param": ""
+    }
+  ]
+ 
+}
