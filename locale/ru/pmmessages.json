@@ -853,7 +853,7 @@
   { "id": "Dialogs", "note": "Диалоги" },
   { "id": "NewDialog", "note": "Новый диалог" },
   { "id": "NewImage", "note": "Новое изображение" },
-  { "id": "LoadImage", "note": "Загрузить изображение" },
+  { "id": "LoadImage", "note": "Загрузить изображение или .zip архив" },
   { "id": "Template", "note": "Шаблон" },
   { "id": "NewTemplate", "note": "Новый шаблон" },
   { "id": "NewSnippet", "note": "Новый сниппет" },
@@ -1149,7 +1149,7 @@
 
   { "id": "Sounds", "note": "Звуки" },
   { "id": "SoundFile", "note": "Звуковой файл" },
-  { "id": "LoadSound", "note": "Загрузить звуковой файл" },
+  { "id": "LoadSound", "note": "Загрузить звуковой файл или .zip архив" },
 
   { "id": "Impref", "note": "Источник" },
   { "id": "Expref", "note": "Префикс для выгрузки" },

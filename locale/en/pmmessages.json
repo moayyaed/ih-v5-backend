@@ -847,7 +847,7 @@
   { "id": "Dialogs", "note": "Dialogs" },
   { "id": "NewDialog", "note": "New Dialog" },
   { "id": "NewImage", "note": "New Image" },
-  { "id": "LoadImage", "note": "Load Image" },
+  { "id": "LoadImage", "note": "Load Image file or .zip" },
   { "id": "Template", "note": "Template" },
   { "id": "NewTemplate", "note": "New Template" },
   { "id": "NewSnippet", "note": "New Snippet" },
@@ -1143,7 +1143,7 @@
 
   { "id": "Sounds", "note": "Sounds" },
   { "id": "SoundFile", "note": "Sound file" },
-  { "id": "LoadSound", "note": "Load Sound" },
+  { "id": "LoadSound", "note": "Load Sound file or .zip" },
 
   { "id": "Impref", "note": "Source" },
   { "id": "Expref", "note": "Export prefix" },
