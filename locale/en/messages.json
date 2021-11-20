@@ -343,6 +343,9 @@
   { "id": "willBeRestarted", "note": "will be restarted" },
   { "id": "withCode_", "note": "with code " },
   { "id": "Enter_value_to_write", "note": "Please enter a value to write" },
+  { "id": "EmptyGroup", "note": "This group is empty" },
+  { "id": "UserNotFound", "note": "User not found" },
+
 
   { "id": "CheckUpdatesCompleted", "note": "Check for updates completed" },
   { "id": "ErrorNoData", "note": "No data!" },
@@ -350,7 +353,7 @@
   { "id": "UpdateFound", "note": "Update found" },
   { "id": "InstallationAvailable", "note": "Installation available" },
   { "id": "LicenseRequired", "note": "License required" },
-
+ 
   { "id": "StartV4migration", "note": "Uploaded project version V4. Start migration..." },
   { "id": "ProjectSavedAs", "note": "The project is saved as " },
   {

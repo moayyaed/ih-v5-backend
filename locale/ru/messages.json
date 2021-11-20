@@ -347,6 +347,8 @@
   { "id": "willBeRestarted", "note": "будет перезапущен" },
   { "id": "withCode_", "note": "с кодом " },
   { "id": "Enter_value_to_write", "note": "Введите значение для записи" },
+  { "id": "EmptyGroup", "note": "В группе нет участников" },
+  { "id": "UserNotFound", "note": "Пользователь не найден" },
 
   { "id": "CheckUpdatesCompleted", "note": "Проверка обновлений выполнена" },
   { "id": "ErrorNoData", "note": "Нет данных!" },
