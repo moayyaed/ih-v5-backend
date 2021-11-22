@@ -58,7 +58,7 @@ module.exports = async function(projectPath) {
     if (!doesPluginNeedRenaming(ih_filename)) return;
 
     // Удалить старый файл .ih
-    fs.rmSync(ih_filename, {force: true});
+    fs.rmSync(ih_filename, { force: true });
 
     // Создать новый
     fs.writeFileSync(ih_filename_new, getNewIh());
@@ -67,12 +67,7 @@ module.exports = async function(projectPath) {
     fs.writeFileSync(man_filename, getNewManifest());
 
     // Переименовать папку плагина
-
-    const ifrom = projectPath + 'integrations/applehomekit';
-    const ito = projectPath + 'integrations/applehome';
-    if (fs.existsSync(ifrom)) {
-      fs.renameSync(ifrom, ito);
-    }
+    fs.renameSync(pluginPath, appconfig.get('pluginspath') + '/applehome');
   } catch (e) {
     console.log('ERROR: up_5_6:  ' + msg + ' error: ' + util.inspect(e));
   }
@@ -91,6 +86,28 @@ module.exports = async function(projectPath) {
   }
 
   function getNewManifest() {
-
+    return JSON.stringify({
+      id: 'applehome',
+      description: 'Apple Home Plugin',
+      module: 'index.js',
+      service: 'integration',
+      servicename: 'Apple Home',
+      i_devices: 1,
+      i_types: 1,
+      single: 1,
+      nochannels: 1
+    });
   }
+
+  function getNewIh() {
+    return JSON.stringify({
+      id: 'applehome',
+      description: 'Apple Home Plugin',
+      activation: false,
+      resources: false,
+      cross: true,
+      version: '5.0.9'
+    });
+  }
+  
 };
