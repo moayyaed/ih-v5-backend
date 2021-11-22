@@ -27,7 +27,7 @@
   {
     "name": "comports",
     "type": "tool",
-    "url": "https://github.com/intrahouseio/ih-v5-comports-tool/archive/refs/tags/v5.0.2.zip",
-    "version": "5.0.2"
+    "url": "https://github.com/intrahouseio/ih-v5-comports-tool/archive/refs/tags/v5.0.3.zip",
+    "version": "5.0.3"
   }
 ]
