@@ -52,12 +52,16 @@ module.exports = async function(projectPath) {
   try {
     msg = 'Rename  plugin: applehomekit => applehome';
     const ih_filename = pluginPath + '/applehomekit.ih';
+    const ih_filename_new = pluginPath + '/applehome.ih';
     const man_filename = pluginPath + '/manifest.json';
 
     if (!doesPluginNeedRenaming(ih_filename)) return;
 
     // Удалить старый файл .ih
+    fs.rmSync(ih_filename, {force: true});
+
     // Создать новый
+    fs.writeFileSync(ih_filename_new, getNewIh());
 
     // Изменить в манифесте - файл будет перезаписан
     fs.writeFileSync(man_filename, getNewManifest());
@@ -87,6 +91,6 @@ module.exports = async function(projectPath) {
   }
 
   function getNewManifest() {
-    
+
   }
 };
