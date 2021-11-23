@@ -20,11 +20,11 @@ module.exports = async function(projectPath) {
   // Переименовать в units.db - просто заменить в файле? dbstore еще не поднят?
   try {
     msg = 'Replace unit: applehomekit => applehome';
-    const filename = projectPath + '/jbase/unit.db';
+    const filename = projectPath + '/jbase/units.db';
     let str = fs.readFileSync(filename, 'utf8');
     if (str.indexOf(afrom)) {
-      str.replace(/applehomekit/g, 'applehome');
-      fs.writeFileSync(filename, str);
+      const rstr = str.replace(/applehomekit/g, 'applehome');
+      fs.writeFileSync(filename, rstr);
       console.log('INFO: ' + msg);
     }
   } catch (e) {
@@ -34,8 +34,8 @@ module.exports = async function(projectPath) {
   // Переименовать в integrations/<applehomekit>/
   try {
     msg = 'Rename  integrations folder: applehomekit => applehome';
-    const ifrom = projectPath + 'integrations/applehomekit';
-    const ito = projectPath + 'integrations/applehome';
+    const ifrom = projectPath + '/integrations/applehomekit';
+    const ito = projectPath + '/integrations/applehome';
     if (fs.existsSync(ifrom)) {
       fs.renameSync(ifrom, ito);
     }
@@ -58,7 +58,7 @@ module.exports = async function(projectPath) {
     if (!doesPluginNeedRenaming(ih_filename)) return;
 
     // Удалить старый файл .ih
-    fs.rmSync(ih_filename, { force: true });
+    fs.unlinkSync(ih_filename);
 
     // Создать новый
     fs.writeFileSync(ih_filename_new, getNewIh());
