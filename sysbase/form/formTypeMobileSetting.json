@@ -20,7 +20,7 @@
     { "prop": "cl", "title": "Класс (определяет основные свойства для мобильного)", "type": "droplist", "data": "classV4List" },
     {
       "prop": "typev4",
-      "title": "Группа (для группировки в Places)",
+      "title": "Группа (группировка в Places)",
       "type": "droplist",
       "data": [
         { "id": "100", "title": "$TYPE_SENSOR", "hide": "data.p1.cl.id != 'SensorD'" },
