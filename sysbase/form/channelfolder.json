@@ -1,10 +1,14 @@
 {
   "grid": [
-    { "id": "p1", "xs": 12, "class": "main", "table": "devhard" },
-    { "id": "p2", "xs": 12, "class": "main", "table": "devhard", "height":240}
+    { "id": "p1", "xs": 6, "class": "main", "table": "devhard" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "devhard"}
   ],
   "spacing": 10,
  
-  "p1": [{ "prop": "chan", "title": "$Name", "type": "input" }],
+  "p1": [
+    { "prop": "title", "title": "$Name", "type": "input" },
+    { "prop": "chan", "title": "", "type": "text" }
+ 
+  ],
   "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }]
 }
