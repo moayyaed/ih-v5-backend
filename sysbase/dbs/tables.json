@@ -87,6 +87,10 @@
     }
   },
 
+  "devhard_with_parent_node": {
+    "store": "none"
+  },
+
   "devparam": {
     "store": "db",
     "collection": "devparam"

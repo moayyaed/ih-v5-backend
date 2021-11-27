@@ -1121,6 +1121,7 @@
   { "id": "cronRule", "note": "Правило cron (* * * * *)" },
 
   { "id": "Devhard_Calc", "note": "Формула расчета входного значения" },
+  { "id": "Devhard_Inv", "note": "Инвертировать входное значение" },
   { "id": "Devhard_Calc_Out", "note": "Формула расчета выходного значения" },
   { "id": "ChannelID", "note": "ID Канала" },
   { "id": "Devpropname_forlink", "note": "Свойство устройства при автоматической привязке" },
