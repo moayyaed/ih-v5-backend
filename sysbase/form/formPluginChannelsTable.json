@@ -16,6 +16,7 @@
         { "prop": "w", "title": "Write", "type": "cb", "width": 64 },
         { "prop": "realtime_chan_val", "title": "Канал: значение", "type": "text", "width": 150 },
         { "prop": "realtime_chan_ts", "title": "Канал: время", "type": "text", "width": 150 },
+        { "prop": "realtime_chan_chstatus", "title": "Канал: статус", "type": "text", "width": 150 },
         { "prop": "realtime_dev_val", "title": "Устройство: значение", "type": "text", "width": 150 },
         { "prop": "realtime_dev_ts", "title": "Устройство: время", "type": "text", "width": 150 }
       ]
