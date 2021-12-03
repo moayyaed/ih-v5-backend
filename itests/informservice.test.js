@@ -2,19 +2,19 @@
 
 /**
  * Тест сервиса informservice
- *
+ *  Проверяется формирование сообщений для отправки
+ *   - Поиск адреса (адресов для группы)
+ *   - При добавлении нового пользователя
+ *   - При включении в новую группу
  */
 const util = require('util');
 
 const expect = require('expect');
 const sinon = require('sinon');
 
-const hut = require('../lib/utils/hut');
-
 const holder = require('./mockHolder')();
 
 const informservice = require('../lib/inform/informservice');
-
 const appconfig = require('../lib/appconfig');
 
 let sandbox;
@@ -41,7 +41,7 @@ describe('informservice', () => {
     sandbox.restore();
   });
 
-  describe('start Service', () => {
+  describe('process "send:info"; dest = user or group', () => {
     it('send message, dest=u0001', done => {
       // Отправляется сообщение
       holder.emit('send:info', { infotype: 'email', sendObj: { txt: 'Test 1', dest: 'u0001' } });
@@ -53,7 +53,7 @@ describe('informservice', () => {
       }, 50);
     });
 
-    it('Add new user', async () => {
+    it('Add new user u0002', async () => {
       // Добавляется новый адрес
       await holder.dm.insertDocs('infoaddr', [
         { _id: '_J2', userId: 'u0002', infotype: 'email', addr: '2', sign: '', allowed: true }
@@ -88,7 +88,7 @@ describe('informservice', () => {
       }, 50);
     });
 
-    it('Include user 2 into group', async () => {
+    it('Include u0002 into group grp001', async () => {
       // Второй пользователь добавляется в группу
       await holder.dm.insertDocs('agroup_bygroup', [{ id: 'x2', userId: 'u0002', groupId: 'grp001' }]);
     });
