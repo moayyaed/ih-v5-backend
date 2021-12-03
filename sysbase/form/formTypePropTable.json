@@ -22,7 +22,8 @@
             { "id": "rw", "title": "Data" },
             { "id": "par", "title": "Parameter" },
             { "id": "calc", "title": "Calculate" },
-            { "id": "cmd", "title": "Command" }
+            { "id": "cmd", "title": "Command" },
+            { "id": "evnt", "title": "Event" }
           ],
           "width": 128
         },
@@ -60,11 +61,17 @@
           "title": "$Alerts",
           "type": "cb",
           "width": 100,
-          "hide": "data.op.id == 'cmd'"
+          "hide": "data.op.id == 'cmd' || data.op.id == 'evnt'"
         },
         { "prop": "min", "title": "Min", "type": "number", "width": 50, "hide": "data.vtype.id != 'N'" },
         { "prop": "max", "title": "Max", "type": "number", "width": 50, "hide": "data.vtype.id != 'N'" },
-        { "prop": "def", "title": "$DefaultValue", "type": "input", "width": 50 },
+        {
+          "prop": "def",
+          "title": "$DefaultValue",
+          "type": "input",
+          "width": 50,
+          "hide": "data.op.id == 'cmd' || data.op.id == 'evnt'"
+        },
         { "prop": "dig", "title": "$Decdig", "type": "number", "width": 100, "hide": "data.vtype.id != 'N'" },
         { "prop": "mu", "title": "$Dev_Mu", "type": "input", "width": 50, "hide": "data.vtype.id != 'N'" },
         { "prop": "errstr", "title": "", "type": "text", "width": 150 }
