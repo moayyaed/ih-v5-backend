@@ -6,10 +6,10 @@ const util = require('util');
 const fs = require('fs');
 const path = require('path');
 
-const tut = require('./transfer_utils');
+const tut = require('./../transfer_utils');
 
-const hut = require('../lib/utils/hut');
-const appconfig = require('../lib/appconfig');
+const hut = require('../../lib/utils/hut');
+const appconfig = require('../../lib/appconfig');
 
 function createTypesFromHman(hmanData, pref) {
   let str = '';

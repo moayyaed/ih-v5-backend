@@ -6,9 +6,9 @@ const util = require('util');
 const fs = require('fs');
 const path = require('path');
 
-const tut = require('./transfer_utils');
+const tut = require('./../transfer_utils');
 
-const hut = require('../lib/utils/hut');
+const hut = require('../../lib/utils/hut');
 
 const Scripter = require('./scripter');
 

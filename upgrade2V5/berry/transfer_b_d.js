@@ -8,11 +8,11 @@ const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
 
-const appconfig = require('../lib/appconfig');
-const hut = require('../lib/utils/hut');
-const fileutil = require('../lib/utils/fileutil');
+const appconfig = require('../../lib/appconfig');
+const hut = require('../../lib/utils/hut');
+const fileutil = require('../../lib/utils/fileutil');
 
-const tut = require('./transfer_utils');
+const tut = require('./../transfer_utils');
 const tuberry = require('./transfer_berry_utils');
 const tuberry_scenes = require('./transfer_berry_scenes');
 
@@ -38,17 +38,23 @@ let project_d;
   // Если новый проект не существует, создать структуру папок
   // Папки и файлы проектов общедоступны
   process.umask(0);
-  const appdir = path.join(__dirname, '../'); // Это путь к app.js
+  // const appdir = path.join(__dirname, '../'); // Это путь к app.js
+  const appdir = path.resolve(process.cwd());
+
   const configdir = path.join(appdir, '../'); // Это путь к config.json в папке intrahouse-d
 
   // Но имя проекта будет другое, не из config!!!
-  appconfig.start(appdir, configdir, folder_d);
+  // appconfig.start(appdir, configdir, folder_d);
 
   console.log('Start trasfer from ' + project_c + ' to ' + project_d);
-  lang = appconfig.get('lang') || 'ru';
+  lang = 'ru';
   console.log('lang=' + lang);
 
   // transfer дописывает в один файл
+    // lists
+    add(formAllStr('places', 'jbase'), 'lists', 'jbase');
+    add(formAllStr('rooms', 'jbase'), 'lists', 'jbase');
+  
   /*
   transfer('classes', 'lists', 'jbase');
   transfer('places', 'lists', 'jbase');
@@ -57,12 +63,13 @@ let project_d;
   transferPluginGroups();
   */
   
+  
 
   // transfer('scengroups', 'lists', 'jbase'); // only Berry
 
   // create создает заново
-  // create('types', 'jbase');
-  // create('devices', 'jbase');
+  create('types', 'jbase');
+  create('devices', 'jbase');
   /*
   create('layouts', 'jbase');
   create('visconts', 'jbase');
@@ -104,6 +111,35 @@ function question(str) {
     });
   });
 }
+
+ /** add
+   * Добавляет записи в таблицу V5
+   *
+   * @param {String} str - строка сформированная для db
+   * @param {String} target - имя таблицы в V5 (db)
+   * @param {String} folder - имя папки
+   */
+  function add(str, target, folder) {
+    try {
+      const dfilename = path.join(project_d, folder, target + '.db');
+      fs.appendFileSync(dfilename, str);
+    } catch (e) {
+      console.log('ERROR: Transfer ' + target + ': ' + util.inspect(e));
+      // emitMes('ERROR: Transfer ' + target + ': ' + hut.getShortErrStr(e));
+    }
+  }
+
+  function formAllStr(source, folder) {
+    let str = '';
+    const data = tut.getSourceData(source, folder, project_c);
+    let order = 0;
+    data.forEach(item => {
+      order += 1000;
+      item.order = order;
+      str += tut.formRecord(source, item);
+    });
+    return str;
+  }
 
 function getSourceAsObj(source, folder) {
   // const extdata = getSourceData('subsystems', 'jbase');
