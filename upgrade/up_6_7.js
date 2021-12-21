@@ -11,6 +11,7 @@ const path = require('path');
 const fs = require('fs');
 const crypto = require('crypto');
 const si = require('systeminformation');
+const https = require('https');
 
 const newhwid = require('../lib/utils/hwid');
 const appcrypto = require('../lib/utils/appcrypto');
@@ -29,7 +30,7 @@ module.exports = async function() {
     const h_new = await newhwid();
     if (h_old != h_new) {
       // Отправить на сервер!!
-
+      upgrade_hwid(h_old, h_new).then(() => {}).catch(() => {});
       // Обработать лицензии
       await processLicenses(h_old, h_new);
     }
@@ -148,5 +149,43 @@ async function get_hdd() {
   }
 
   return { serialNum: '' };
+}
+
+
+function upgrade_hwid(prev, hwid) {
+  return new Promise((resolve, reject) => {
+    const data = new TextEncoder().encode(
+      JSON.stringify({ prev, hwid })
+    )
+  
+    const options = {
+      hostname: 'license.ih-systems.com',
+      port: 443,
+      path: '/restapi/upgrade_hwid?sec=799hDIlfgP0kGBXULjVRLswnhuHybRIZ',
+      method: 'post',
+      headers: {
+        'Content-Type': 'application/json',
+        'Content-Length': data.length
+      }
+    }
+  
+    const req = https.request(options, res => {
+      let buffer = '';
+      res.on('data', chunk => {
+        buffer = buffer + chunk;
+      })
+    
+      res.on('end', () => {
+        resolve(buffer)
+      })
+    })
+    
+    req.on('error', e => {
+      reject(e)
+    })
+    
+    req.write(data)
+    req.end()
+  });
 }
 
