@@ -16,8 +16,13 @@ const https = require('https');
 const newhwid = require('../lib/utils/hwid');
 const appcrypto = require('../lib/utils/appcrypto');
 const appconfig = require('../lib/appconfig');
+const hut = require('../lib/utils/hut');
 
-module.exports = async function() {
+module.exports = async function(projectPath) {
+  // Перенос private/users
+  // console.log('INFO: Update privates');
+  // transform(`${projectPath}/private`);
+
   try {
     const mainPath = appconfig.get('mainbasepath');
     const upLabel = path.join(mainPath, 'upgrade_v5_7.json');
@@ -31,10 +36,10 @@ module.exports = async function() {
     if (h_old != h_new) {
       // Отправить на сервер!!
       upgrade_hwid(h_old, h_new)
-        .then((res) => {
+        .then(res => {
           console.log('INFO: upgrade_hwid ' + res);
         })
-        .catch((e) => {
+        .catch(e => {
           console.log('ERROR: upgrade_hwid ' + util.inspect(e));
         });
       // Обработать лицензии
@@ -89,7 +94,7 @@ async function get_hw_id() {
   const params = [hdd, uuid, serial, osuuid];
   const check = params.map(i => (checkValue(i) ? '1' : '0')).join('');
 
-  console.log('up_6_7: OLD ' + JSON.stringify(params));
+  // console.log('up_6_7: OLD ' + JSON.stringify(params));
 
   if (check === '0000') {
     const mac = uuids.macs[0];
@@ -188,4 +193,53 @@ function upgrade_hwid(prev, hwid) {
     req.write(data);
     req.end();
   });
+}
+
+function transform(privatePath) {
+  try {
+    const filename = privatePath + '/users.db';
+    const old = getFile(filename);
+    const data = update(old);
+    if (data) saveFile(filename, data);
+  } catch (e) {
+    const errStr = typeof e == 'object' && e.message ? e.message : util.inspect(e);
+    console.log('ERROR: Upgrade project, file ' + path + ': ' + errStr + '. Skipped');
+  }
+}
+
+function getFile(filename) {
+  return fs.readFileSync(filename, 'utf8');
+}
+
+function update(data) {
+  if (!data) return;
+
+  const lines = data.split('\n');
+  const recObj = {};
+  try {
+    lines.forEach(line => {
+      const str = hut.allTrim(line);
+      if (str) {
+        const obj = JSON.parse(str);
+        if (obj && obj._id) {
+          if (obj.pwd) {
+            obj.pwdx = Buffer.from(obj.pwd).toString('base64');
+          }
+          recObj[obj._id] = obj;
+        }
+      }
+    });
+
+    let res = '';
+    Object.keys(recObj).forEach(id => {
+      res += JSON.stringify(recObj[id]) + '\n';
+    });
+    return res;
+  } catch (e) {
+    console.log('ERROR: Fail update users.db! ' + util.inspect(e));
+  }
+}
+
+function saveFile(filename, data) {
+  fs.writeFileSync(filename, data, 'utf8');
 }

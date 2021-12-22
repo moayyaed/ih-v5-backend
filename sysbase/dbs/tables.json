@@ -822,7 +822,7 @@
     "store": "db",
     "collection": "users",
     "ruleID": { "pref": "u", "len": 4 },
-    "default": { "name": "Name", "login": "Login", "pwd": "202020" },
+    "default": { "name": "Name", "login": "Login", "pwd": "" },
 
     "validator": {
       "main": {
