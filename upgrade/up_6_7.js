@@ -30,7 +30,13 @@ module.exports = async function() {
     const h_new = await newhwid();
     if (h_old != h_new) {
       // Отправить на сервер!!
-      upgrade_hwid(h_old, h_new).then(() => {}).catch(() => {});
+      upgrade_hwid(h_old, h_new)
+        .then((res) => {
+          console.log('INFO: upgrade_hwid ' + res);
+        })
+        .catch((e) => {
+          console.log('ERROR: upgrade_hwid ' + util.inspect(e));
+        });
       // Обработать лицензии
       await processLicenses(h_old, h_new);
     }
@@ -52,7 +58,7 @@ async function processLicenses(h_old, h_new) {
     try {
       const decData = appcrypto.decrypt(item, h_old);
       const resObj = JSON.parse(decData);
-      // {status: 1, payload: {id: 'qdHnMFRDF',key: '86b0ae73-79f1-44d5-a8ed-cffba40ae14d', 
+      // {status: 1, payload: {id: 'qdHnMFRDF',key: '86b0ae73-79f1-44d5-a8ed-cffba40ae14d',
       // userid: 'cOV6GFDTgl', platform: 'intrahouse', product: 'module_multichart', startActivation: 1631184378930 }}
 
       if (!resObj || !resObj.payload || !resObj.payload.key) throw { message: 'Missing payload.key!' };
@@ -64,7 +70,6 @@ async function processLicenses(h_old, h_new) {
     }
   }
 }
-
 
 // ------------------------------------------
 // Старый метод расчета hwid
@@ -109,7 +114,6 @@ async function get_hw_id() {
   return `${hash}-${check}`;
 }
 
-
 function checkValue(value) {
   return value && value !== '' && value !== '-' && value !== ' ';
 }
@@ -151,13 +155,10 @@ async function get_hdd() {
   return { serialNum: '' };
 }
 
-
 function upgrade_hwid(prev, hwid) {
   return new Promise((resolve, reject) => {
-    const data = new TextEncoder().encode(
-      JSON.stringify({ prev, hwid })
-    )
-  
+    const data = new TextEncoder().encode(JSON.stringify({ prev, hwid }));
+
     const options = {
       hostname: 'license.ih-systems.com',
       port: 443,
@@ -167,25 +168,24 @@ function upgrade_hwid(prev, hwid) {
         'Content-Type': 'application/json',
         'Content-Length': data.length
       }
-    }
-  
+    };
+
     const req = https.request(options, res => {
       let buffer = '';
       res.on('data', chunk => {
-        buffer = buffer + chunk;
-      })
-    
+        buffer += chunk;
+      });
+
       res.on('end', () => {
-        resolve(buffer)
-      })
-    })
-    
+        resolve(buffer);
+      });
+    });
+
     req.on('error', e => {
-      reject(e)
-    })
-    
-    req.write(data)
-    req.end()
+      reject(e);
+    });
+
+    req.write(data);
+    req.end();
   });
 }
-
