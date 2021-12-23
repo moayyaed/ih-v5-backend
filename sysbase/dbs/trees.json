@@ -660,7 +660,7 @@
   "allscenes": ["scenes", "schedrules"],
   "resources": ["sounds"],
   "datasource": ["plugins", "snippets", "restapihandlers"],
-  "analytics": ["charts", "timelinecharts"],
+  "analytics": ["charts", "timelinecharts", "journals", "alertjournals", "reports"],
   "database": ["dbagents"],
   "access": ["users", "agroups", "inforules"],
   "documentation": ["pages", "docimages"]
