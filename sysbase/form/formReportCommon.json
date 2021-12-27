@@ -24,7 +24,7 @@
       
         {
           "prop": "col_type",
-          "title": "$Type",
+          "title": "Столбец",
           "type": "droplist",
           "width": 150,
           "data": [
