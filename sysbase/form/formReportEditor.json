@@ -1,0 +1,11 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 12, "class": "main", "table": "report", "height":"fill", "padding":4 }
+   
+  ],
+  "spacing": 10,
+
+  "p1": [
+    { "prop": "reportmakeup", "title": "", "type": "reportmakeup" }
+  ]
+}

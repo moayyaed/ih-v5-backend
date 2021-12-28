@@ -1,6 +1,7 @@
 {
   "tabs": [
-    { "id": "tabReportCommon", "title": "$Common", "component": [{ "id": "formReportCommon", "type": "form" }] }
+    { "id": "tabReportCommon", "title": "$Common", "component": [{ "id": "formReportCommon", "type": "form" }] },
+    { "id": "tabReportEditor", "title": "$Editor", "component": [{ "id": "formReportEditor", "type": "form" }] }
    
   ],
   "defaultTab": "tabReportCommon"

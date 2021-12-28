@@ -8,11 +8,22 @@
 
   "p1": [
     { "prop": "_id", "title": "ID", "type": "input", "readonly": true },
-    { "prop": "name", "title": "$Name", "type": "input" }
+    { "prop": "name", "title": "$Name", "type": "input" },
+    {
+      "prop": "discrete",
+      "title": "Дискрета (интервал обработки)",
+      "type": "droplist",
+      "data": [
+        { "id": "", "title": "-" },
+        { "id": "min", "title": "$Minute" },
+        { "id": "hour", "title": "$Hour" },
+        { "id": "day", "title": "$Day" },
+        { "id": "month", "title": "$Month" },
+        { "id": "year", "title": "$Year" }
+      ]
+    }
   ],
-  "p2": [
-    { "prop": "txt", "title": "$Comment", "type": "textarea" }
-  ],
+  "p2": [{ "prop": "txt", "title": "$Comment", "type": "textarea" }],
   "p3": [
     {
       "title": "$Reports",
@@ -21,7 +32,6 @@
       "popupenable": true,
 
       "columns": [
-      
         {
           "prop": "col_type",
           "title": "Столбец",
@@ -79,7 +89,7 @@
             { "id": "justify", "title": "justify" }
           ]
         },
-       
+
         { "prop": "fontSize", "title": "$FontSize", "type": "number", "width": 50 },
         { "prop": "italics", "title": "$Italics", "type": "cb", "width": 50 },
         { "prop": "bold", "title": "$Bold", "type": "cb", "width": 50 },
